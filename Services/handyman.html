@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knight Group - Handyman Services</title> 
+    <link rel="stylesheet" href="../CSS/style.css"> 
+    <link rel="icon" href="../Images/Knight Group Logo.png" type="image/png">
+
+    <style>
+        /* Page-specific styles */
+        .hero-section {
+            background: url('../Images/HandymanBannerImg.webp') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .hero-text {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .hero-section .hero-text {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .page-title h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-top: 40px;
+            color: maroon;
+            margin: 0 auto;
+        }
+        .page-content h2 {
+            text-align: center;
+        }
+
+        .service-description {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        .experience-section {
+            width: 80%;
+            margin: 40px auto;
+            font-size: 1.1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .experience-text {
+            flex: 3;
+        }
+
+        .experience-section h3 {
+            font-size: 24px;
+            color: maroon;
+        }
+
+        .social-icons-small {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .social-icons-small a img {
+            height: 30px;
+            width: 30px;
+        }
+
+        .process-section {
+            width: 80%;
+            margin: 40px auto;
+            font-size: 1.1em;
+        }
+
+        .process-section h3 {
+            margin-top: 30px;
+            font-size: 24px;
+            color: maroon;
+        }
+
+        .service-list {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .service-item {
+            flex: 0 0 48%;
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 1.1em;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-section button {
+            background-color: maroon;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .cta-section button:hover {
+            background-color: darkred;
+        }
+
+        /* Gallery styling */
+        .gallery-section {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 10px;
+            justify-items: center;
+        }
+
+        .gallery-grid img, .gallery-grid video {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .service-item {
+                flex: 0 0 100%;
+            }
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .experience-section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .social-icons-small {
+                justify-content: center;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo-group">
+                <a href="../index.html" class="logo">
+                    <img src="../Images/Knight Group Logo.png" alt="Knight Group Logo" />
+                </a>
+                <h1>Knight Group</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">Services</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./handyman.html">Handyman Services</a></li>
+                            <li><a href="./programming&databases.html">Programming & Database Services</a></li>
+                            <li><a href="./handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li>                            
+                        </ul>
+                    </li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                    <li><a href="../galleries.html">Galleries</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="#"><img src="../Images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="../Images/GithubIcon.png" alt="Github Icon"></a>
+                <a href="#"><img src="../Images/twitter-icon.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-text">
+            <h2>Handyman Services</h2>
+            Servicing Pinellas County
+        </div>
+    </section>
+
+    <!-- Service Description -->
+    <section class="page-content">
+        <h2>Handyman Services You Can Trust</h2>
+        <p class="service-description">With over 15 years of experience in home repair and remodeling, Knight Group Handyman Services offers expert solutions for all your home improvement needs. Our primary handyman, Vincent Knight, brings a wealth of experience in plumbing, carpentry, drywall, electrical work, and more. Whether it’s a minor repair or a complete remodel, we have the expertise to get the job done right.</p>
+    </section>
+
+
+    <!-- Expertise and Experience -->
+    <section class="experience-section">
+
+        <div class="experience-text">
+            <h3>Vincent Knight - Expert Handyman</h3>
+            <p>Vincent Knight has over 10 years of experience as a journeyman plumber, working for Roto Rooter in Pittsburgh, PA. During his time there, he handled everything from commercial building maintenance to sewer line repairs, camera inspections, and large-scale excavation work. He has literally done it all—plumbing repairs, sewer systems, water heater installations, and more. In addition, he has over 15 years of experience in home repair and remodeling, managing properties throughout Pinellas County as part of our family’s property management business. He specializes in bathroom remodels, plumbing, and general home renovations, making him your go-to expert for any handyman project.</p>
+        </div>
+    </section>
+
+    <!-- Detailed Service List -->
+    <section class="service-list">
+        <div class="service-item">
+            <strong>Plumbing Repairs:</strong> Fix leaky faucets, clogged drains, install water heaters, and repair toilets and sewer lines.
+        </div>
+        <div class="service-item">
+            <strong>Electrical Work:</strong> Replace outlets, install light fixtures, ceiling fans, and troubleshoot wiring issues.
+        </div>
+        <div class="service-item">
+            <strong>Concrete and Masonry:</strong> Sidewalk repairs, concrete patios, and block walls.
+        </div>
+        <div class="service-item">
+            <strong>Bathroom Remodels:</strong> Full bathroom renovations including plumbing, tiling, fixture installations, and more.
+        </div>
+        <div class="service-item">
+            <strong>Carpentry:</strong> Door installations, baseboard trims, deck construction, fence repairs, and cabinetry work.
+        </div>
+        <div class="service-item">
+            <strong>Painting & Drywall:</strong> Drywall patching, full wall installations, interior painting, and exterior painting.
+        </div>
+        <div class="service-item">
+            <strong>Flooring:</strong> Install hardwood, laminate, vinyl, or tile flooring, and handle repairs.
+        </div>
+        <div class="service-item">
+            <strong>Exterior Work:</strong> Gutter cleaning, siding repair, deck staining, and general landscaping services.
+        </div>
+        <div class="service-item">
+            <strong>General Home Repairs:</strong> Install shelves, mount TVs, furniture assembly, fixture installations, and patch holes.
+        </div>
+        <div class="service-item">
+            <strong>Pressure Washing:</strong> Clean driveways, sidewalks, patios, and exterior walls to remove grime and buildup.
+        </div>
+    </section>
+
+    <!-- Workflow and Payment Process -->
+    <section class="process-section">
+        <h3>How We Work</h3>
+        <p>At Knight Group Handyman Services, we follow a straightforward process to ensure your satisfaction:</p>
+        <ul>
+            <li><strong>Step 1:</strong> Call or email us to schedule an appointment. Vincent will come to your property to assess the work needed and provide a free, no-obligation estimate.</li>
+            <li><strong>Step 2:</strong> We draft a contract detailing the scope of the work, estimated timeline, and cost.</li>
+            <li><strong>Step 3:</strong> After approval, work begins! Payments are typically split into a deposit at the start and the remainder upon completion. We accept PayPal, Venmo, and most major credit cards.</li>
+            <li><strong>Step 4:</strong> Upon completion, we walk you through the work done and ensure you're satisfied with the results before final payment is made.</li>
+        </ul>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <button onclick="window.location.href='tel:8134340783'">Call Now</button>
+        <button onclick="window.location.href='sms:8134340783'">Send a Text Message</button>
+        <button onclick="window.location.href='mailto:nknight@knightgroup.com'">Email Us</button>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <h2>Our Handyman Projects</h2>
+        <div class="gallery-grid">
+            <img src="../GalleryImages/20221111_115258.jpg" alt="Handyman Photo 1">
+            <img src="../GalleryImages/20221121_144308.jpg" alt="Handyman Photo 2">
+            <img src="../GalleryImages/20230111_121854.jpg" alt="Handyman Photo 3">
+            <img src="../GalleryImages/20230215_141043.jpg" alt="Handyman Photo 4">
+            <!-- Add more photos as necessary -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="left">
+            © 2024 Knight Group. All rights reserved.
+        </div>
+        <div class="center">
+            <a href="../PolicyPages/returnpolicy.html">Refund & Return Policy</a> |
+            <a href="../PolicyPages/privacy-policy.html">Privacy Policy</a> | 
+            <a href="../PolicyPages/terms.html">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

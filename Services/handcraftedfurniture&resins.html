@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knight Group - Handcrafted Wooden Furniture & Artistic Resins</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" href="../Images/Knight Group Logo.png" type="image/png">
+
+    <style>
+        /* Page-specific styles */
+        .hero-section {
+            background: url('../Images/HandcraftedFurnitureImg.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .hero-text {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .page-content h2 {
+            text-align: center;
+            margin-top: 40px;
+            color: maroon;
+        }
+
+        .service-description {
+            font-size: 1.2em;
+            margin: 20px auto;
+            width: 80%;
+            text-align: center;
+        }
+
+        .gallery-section {
+            margin: 40px auto;
+            width: 80%;
+            text-align: center;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 10px;
+            justify-items: center;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-section button {
+            background-color: maroon;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .cta-section button:hover {
+            background-color: darkred;
+        }
+
+        .contact-info {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .contact-info h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .contact-info button:hover {
+            background-color: maroon;
+        }
+
+        /* Sticky footer */
+        footer {
+            position: sticky;
+            bottom: 0;
+            height: auto;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 5px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: maroon;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo-group">
+                <a href="../index.html" class="logo">
+                    <img src="../Images/Knight Group Logo.png" alt="Knight Group Logo" />
+                </a>
+                <h1>Knight Group</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">Services</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./handyman.html">Handyman Services</a></li>
+                            <li><a href="./programming&databases.html">Programming & Database Services</a></li>
+                            <li><a href="./handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li>                            
+                        </ul>
+                    </li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                    <li><a href="../galleries.html">Galleries</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="#"><img src="../Images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="../Images/GithubIcon.png" alt="Github Icon"></a>
+                <a href="#"><img src="../Images/twitter-icon.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-text">
+            Custom Handcrafted Wooden Furniture & Artistic Resins
+        </div>
+    </section>
+
+    <!-- Service Description -->
+    <section class="page-content">
+        <h2>Handcrafted Creations for Your Space</h2>
+        <p class="service-description">
+            At Knight Group, we take pride in producing bespoke, handcrafted wooden furniture that transforms any space into something unique and personal. We specialize in using rare and exotic woods, carefully selected for their quality and beauty. Each piece is meticulously crafted by hand, ensuring that no two items are exactly alike.
+        </p>
+        <p class="service-description">
+            In addition to fine woodworking, we also offer artistic resin work. Our epoxy resin techniques allow us to encapsulate scenes or items into the furniture itself. Picture a beautifully crafted coffee table with intricate resin work, perhaps encasing natural elements like stones and wood fragments, or themed objects like figurines from a favorite collection. The possibilities are endless, making our furniture both a functional piece of art and a conversation starter in your home or office.
+        </p>
+        <p class="service-description">
+            Whether you're looking for a rustic dining table made from reclaimed wood or a modern piece that seamlessly integrates resin designs, our furniture is made to order and tailored specifically to your preferences. Our goal is to create furniture that is not only visually stunning but also durable enough to stand the test of time.
+        </p>
+    </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <h3>Bring Your Vision to Life</h3>
+            <p>At Knight Group, we understand that your space is a reflection of your personality. That’s why each of our furniture pieces is custom-made to fit your specific tastes and needs. Ready to transform your space? Contact us today for a free consultation and let’s create something truly special together.</p>
+            <button onclick="window.location.href='tel:8136008377'">Call Now</button>
+            <button onclick="window.location.href='sms:8136008377'">Send a Text Message</button>
+            <button onclick="window.location.href='mailto:jknight@knightgroup.com'">Email Us</button>
+        </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <h2>Our Craftsmanship in Action</h2>
+        <p>Explore some of our recent works. Each project showcases our commitment to excellence and attention to detail.</p>
+        <div class="gallery-grid">
+            <img src="../GalleryImages/wood1.jpg" alt="Furniture Photo 1">
+            <img src="../GalleryImages/wood2.jpg" alt="Furniture Photo 2">
+            <img src="../GalleryImages/wood3.jpg" alt="Furniture Photo 3">
+            <img src="../GalleryImages/wood4.jpg" alt="Furniture Photo 4">
+            <img src="../GalleryImages/wood5.jpg" alt="Furniture Photo 5">
+            <img src="../GalleryImages/wood6.jpg" alt="Furniture Photo 6">
+            <!-- Add more photos as necessary -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="left">
+            © 2024 Knight Group. All rights reserved.
+        </div>
+        <div class="center">
+            <a href="../PolicyPages/returnpolicy.html">Refund & Return Policy</a> |
+            <a href="../PolicyPages/privacy-policy.html">Privacy Policy</a> | 
+            <a href="../PolicyPages/terms.html">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

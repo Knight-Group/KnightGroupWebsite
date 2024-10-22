@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knight Group - Programming & Database Services</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" href="../Images/Knight Group Logo.png" type="image/png">
+
+    <style>
+        /* Page-specific styles */
+        .hero-section {
+            background: url('../Images/Programming&DatabaseImg.webp') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .hero-text {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .page-content h2 {
+            text-align: center;
+            margin-top: 40px;
+            color: maroon;
+        }
+
+        .service-description {
+            font-size: 1.2em;
+            margin: 20px auto;
+            width: 80%;
+            text-align: center;
+        }
+
+        .service-list {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .service-item {
+            flex: 0 0 48%;
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 1.1em;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-section button {
+            background-color: maroon;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .cta-section button:hover {
+            background-color: darkred;
+        }
+
+        /* Portfolio Showcase */
+        .portfolio-showcase {
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        .portfolio-item {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-item img {
+            width: 30%;
+            margin-right: 20px;
+        }
+
+        .portfolio-item p {
+            font-size: 1.2em;
+        }
+
+        /* Form Section */
+        .form-section {
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        form button {
+            background-color: maroon;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo-group">
+                <a href="../index.html" class="logo">
+                    <img src="../Images/Knight Group Logo.png" alt="Knight Group Logo" />
+                </a>
+                <h1>Knight Group</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">Services</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./handyman.html">Handyman Services</a></li>
+                            <li><a href="./programming&databases.html">Programming & Database Services</a></li>
+                            <li><a href="./handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li>                            
+                        </ul>
+                    </li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                    <li><a href="../galleries.html">Galleries</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="#"><img src="../Images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="../Images/GithubIcon.png" alt="Github Icon"></a>
+                <a href="#"><img src="../Images/twitter-icon.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-text">
+            Professional Programming & Database Solutions
+        </div>
+    </section>
+
+    <!-- Service Description -->
+    <section class="page-content">
+        <h2>Tailored Programming & Database Services</h2>
+        <p class="service-description">Our programming and database services are designed to help businesses improve efficiency, automate workflows, and drive data-driven decision-making. With extensive expertise in front-end and back-end web development, custom automation solutions, and database management, we provide end-to-end support for your business needs. From developing scalable, responsive websites to optimizing databases for maximum performance, our goal is to deliver results that exceed expectations.</p>
+    </section>
+
+    <!-- Detailed Service List -->
+    <section class="service-list">
+        <div class="service-item">
+            <strong>SQL & Database Management:</strong> Over 10 years of experience in SQL development, query optimization, and database management using T-SQL, MySQL, and Microsoft SQL Server. We specialize in designing complex relational databases, automating reporting, and creating data dashboards for business intelligence.
+        </div>
+        <div class="service-item">
+            <strong>Web Development:</strong> Extensive experience in creating responsive, dynamic web applications using HTML5, CSS3, and JavaScript. We provide full-stack development services including front-end design, back-end architecture, and database integration, ensuring your website performs seamlessly across devices.
+        </div>
+        <div class="service-item">
+            <strong>Python Automation:</strong> Expertise in Python scripting to automate routine tasks, build APIs, and integrate with third-party platforms. Whether it’s data extraction, transformation, or API development, we have the skills to streamline your workflows.
+        </div>
+        <div class="service-item">
+            <strong>PowerShell Scripting:</strong> We specialize in automating administrative tasks across Windows environments using PowerShell. From server management to file automation, we can write custom scripts to save you time and enhance operational efficiency.
+        </div>
+        <div class="service-item">
+            <strong>API Integration & Development:</strong> We have experience working with various APIs and developing custom APIs for our clients. Whether integrating payment gateways, social media APIs, or building custom data exchange solutions, our API services ensure seamless interaction between platforms.
+        </div>
+        <div class="service-item">
+            <strong>Data Analysis & Reporting:</strong> Skilled in transforming complex datasets into meaningful insights through custom SQL queries, Python analytics scripts, and data visualization tools like Tableau and Power BI. Our data solutions enable you to make informed business decisions.
+        </div>
+    </section>
+
+    <!-- Portfolio Showcase -->
+    <section class="portfolio-showcase">
+        <h2>Recent Projects</h2>
+        <div class="portfolio-item">
+            <img src="../Images/CovidQueries.png" alt="SQL Project Image">
+            <p>SQL Project: COVID-19 Analysis - A comprehensive project analyzing pandemic data using SQL queries to uncover insights. We processed thousands of records, extracted key metrics, and created dynamic dashboards with Tableau for real-time reporting. This project exemplifies our ability to handle large datasets and deliver actionable insights.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="../Images/AutoRecording.jpg" alt="PowerShell Project">
+            <p>PowerShell Automation: Developed a custom PowerShell script that automated screen recording and video file management. This project saved the client hours of manual work and improved operational efficiency by automating the recording of training sessions and seamless integration with their file storage system.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="../Images/TicTacToeGame.png" alt="JavaScript Project">
+            <p>JavaScript Game Development: Created an interactive Tic Tac Toe game using HTML, CSS, and JavaScript. This project demonstrates our front-end web development skills, including user interface design and logic-based programming. We can build custom web applications tailored to your specific needs.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="../Images/UltimaOnlineAPI.png" alt="Python API Project">
+            <p>Python API for Ultima Online: Developed an API for Ultima Online, automating in-game functions such as player data retrieval, in-game purchases, and more. Our experience with game development extends to API integration, allowing us to work with various third-party systems for comprehensive solutions.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="form-section">
+        <h2>Get a Free Quote</h2>
+        <form action="https://formspree.io/f/mvgogaaw" method="POST">
+            <input type="text" name="title" placeholder="Title or Topic of why you're messaging us today" required>
+            <textarea name="description" placeholder="Describe your project and we'll get back to you with a quote!" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+                <!-- Contact Information -->
+                <section class="contact-info">
+                    <h3>Programming & Database Services</h3>
+                    <p>Call: ‪(813) 649-3341‬</p>
+                    <button onclick="window.location.href='tel:8136493341'">Call</button>
+                    <button onclick="window.location.href='sms:8136493341'">Send Text Message</button>
+                    <p>Email: <a href="mailto:nknight@knightgroup.com">nknight@knightgroup.com</a></p>
+                </section>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="left">
+            © 2024 Knight Group. All rights reserved.
+        </div>
+        <div class="center">
+            <a href="../PolicyPages/returnpolicy.html">Refund & Return Policy</a> |
+            <a href="../PolicyPages/privacy-policy.html">Privacy Policy</a> | 
+            <a href="../PolicyPages/terms.html">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
