@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knight Group - Galleries</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="./Images/Knight Group Logo.png" type="image/png">
+
+    <style>
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+/* Galleries Section */
+        /* CSS to handle gallery grid */
+        .gallery-section {
+            margin-bottom: 50px;
+            text-align: center; /* Center-align all content */
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns */
+            gap: 10px;
+            justify-items: center; /* Center items inside the grid */
+        }
+
+        .gallery-grid img, .gallery-grid video {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .gallery-section h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center; /* Center the section title */
+        }
+
+        .gallery-section p {
+            margin-bottom: 20px;
+            text-align: center; /* Center the description */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header (same for all pages) -->
+    <header>
+        <div class="container">
+            <div class="logo-group">
+                <a href="../KnightGroup.com/index.html" class="logo">
+                    <img src="../KnightGroup.com/Images/Knight Group Logo.png" alt="Knight Group Logo" />
+                </a>
+                <h1>Knight Group</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../KnightGroup.com/about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">Services</a>
+                        <ul class="dropdown-content">
+                            <li><a href="../KnightGroup.com/Services/handyman.html">Handyman Services</a></li>
+                            <li><a href="../KnightGroup.com/Services/programming&databases.html">Programming & Database Services</a></li>
+                            <li><a href="../KnightGroup.com/Services/handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../KnightGroup.com/contact.html">Contact Us</a></li>
+                    <li><a href="../KnightGroup.com/galleries.html">Galleries</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="#"><img src="../KnightGroup.com/Images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="../KnightGroup.com/Images/GithubIcon.png" alt="Github Icon"></a>
+                <a href="#"><img src="../KnightGroup.com/Images/twitter-icon.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title Section -->
+    <section class="page-title">
+        <h2>Galleries</h2>
+    </section>
+
+    <!-- Handyman Services Gallery -->
+    <section class="gallery-section">
+        <h2>Handyman Services</h2>
+        <p>Here are some photos and videos of our handyman services, showcasing plumbing, electrical work, and general repairs.</p>
+        
+        <!-- Photos -->
+        <div class="gallery-grid">
+            <img src="GalleryImages/09101A71-.jpg" alt="Handyman Photo 1">
+            <img src="GalleryImages/0B25E8A2-.jpg" alt="Handyman Photo 2">
+            <img src="GalleryImages/0DA4B78A-.jpg" alt="Handyman Photo 3">
+            <img src="GalleryImages/20221111_115258.jpg" alt="Handyman Photo 4">
+            <img src="GalleryImages/20221121_144308.jpg" alt="Handyman Photo 5">
+            <img src="GalleryImages/20230111_121854.jpg" alt="Handyman Photo 6">
+            <img src="GalleryImages/20230215_141043.jpg" alt="Handyman Photo 7">
+            <img src="GalleryImages/20230216_184144.jpg" alt="Handyman Photo 8">
+            <img src="GalleryImages/20230713_115127.jpg" alt="Handyman Photo 9">
+            <img src="GalleryImages/MoldyWall.jpg" alt="Handyman Photo 10">
+            <img src="GalleryImages/36CF828F-.jpg" alt="Handyman Photo 11">
+            <img src="GalleryImages/3824DC9D-.jpg" alt="Handyman Photo 12">
+            <img src="GalleryImages/84E6C5B8-.jpg" alt="Handyman Photo 13">
+        </div>
+        
+        <!-- Videos -->
+        <h3>Handyman Videos</h3>
+        <div class="gallery-grid">
+            <video controls>
+                <source src="GalleryImages/IMG_2338.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Handcrafted Wooden Furniture & Artistic Resins -->
+    <section class="gallery-section">
+        <h2>Handcrafted Wooden Furniture & Artistic Resins</h2>
+        <p>Our gallery of beautiful handcrafted furniture and resin work. See the craftsmanship in every piece.</p>
+        
+        <!-- Photos -->
+        <div class="gallery-grid">
+            <img src="GalleryImages/wood1.jpg" alt="Furniture Photo 1">
+            <img src="GalleryImages/wood2.jpg" alt="Furniture Photo 2">
+            <img src="GalleryImages/wood3.jpg" alt="Furniture Photo 3">
+            <img src="GalleryImages/wood4.jpg" alt="Furniture Photo 4">
+            <img src="GalleryImages/wood5.jpg" alt="Furniture Photo 5">
+            <img src="GalleryImages/wood6.jpg" alt="Furniture Photo 6">
+        </div>
+    </section>
+
+    <!-- Programming & Database Services -->
+    <section class="gallery-section">
+        <h2>Programming & Database Services</h2>
+        <p>Examples of our programming projects, database implementations, and more.</p>
+        
+        <!-- Placeholder for now -->
+        <div class="gallery-grid">
+            <img src="GalleryImages/ProgrammingPlaceholder.jpg" alt="Programming Project 1">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="left">
+            © 2024 Knight Group. All rights reserved.
+        </div>
+        <div class="center">
+            <a href="./PolicyPages/returnpolicy.html">Refund & Return Policy</a> |
+            <a href="./PolicyPages/privacy-policy.html">Privacy Policy</a> | 
+            <a href="./PolicyPages/terms.html">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="../KnightGroup.com/JS/script.js"></script>
+</body>
+</html>
