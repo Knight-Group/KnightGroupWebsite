@@ -1,0 +1,281 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1c1c;
+    color: white;
+    max-width: 1990px;
+    margin: 0 auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: maroon;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #1d1c1c;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1990px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Ensure it takes up space on the left */
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    white-space: nowrap;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Center the navigation links */
+nav ul {
+    display: flex;
+    justify-content: center; /* Centers the links within the nav */
+    list-style: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    white-space: nowrap;
+    padding: 0; /* Remove any default padding */
+    margin: 0;  /* Remove any default margin */
+}
+
+nav ul li {
+    margin: 0 30px; /* Adjusts spacing between nav links */
+}
+
+
+.social-icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icons img {
+    height: 30px;
+    margin-left: 10px;
+}
+
+.social-icons img:hover {
+    background-color: maroon;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1d1d1c;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 10px 0;
+    font-size: medium;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Slideshow */
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.slideshow .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease;
+    opacity: 0; /* Make all slides invisible by default */
+    z-index: 0; /* Keep slides behind the content */
+}
+
+.slideshow .slide.active {
+    opacity: 1; /* Only the active slide will be visible */
+    z-index: 1; /* Active slide is shown */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Slide content and button positioning */
+.slide-content {
+    position: absolute;
+    padding: 10px 20px; /* Smaller padding for a tighter fit around the content */
+    border-radius: 10px;
+    background-color: rgba(29, 28, 28, 0.7); /* Keeps the transparent background around the content */
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto; /* Automatically adjust the width to fit the content */
+    text-align: center;
+}
+
+/* Ensuring each slide's button is properly placed */
+.slideshow .slide:nth-child(1) .slide-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slideshow .slide:nth-child(2) .slide-content {
+    left: 30%;
+    bottom: 30%;
+    transform: translate(0, 0);
+}
+
+.slideshow .slide:nth-child(3) .slide-content {
+    top: 30%;
+    right: 30%;
+    transform: translate(0, 0);
+}
+
+/* Button Styling */
+.slide-content .btn {
+    background-color: #1d1c1c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 20;
+    position: relative;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.slide-content .btn:hover {
+    background-color: maroon;
+    color: white;
+}
+
+/* Services Section */
+.services .service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.services .service img {
+    width: 30%;
+}
+
+.services .service .details {
+    padding-left: 50px;
+    width: 70%;
+    display: flex;  /* Make details a flex container */
+    flex-direction: column;  /* Stack the content vertically */
+    justify-content: center;  /* Center content vertically */
+    align-items: center;  /* Center content horizontally */
+}
+
+.services .details .btn {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px; /* Add margin for spacing from the content */
+    cursor: pointer;
+}
+
+.services .details .btn:hover {
+    background-color: maroon;
+    color: white;
+}
+
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 0 0 10% 0;
+}
+
+.about .btn {
+    background-color: #1d1c1c;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.about .btn:hover {
+    background-color: maroon;
+    color: white;
+}
+
+/* Sticky Footer */
+footer {
+    position: sticky;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .left {
+    margin-left: 20px;
+}
+
+footer .center {
+    text-align: center;
+    margin-right: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: maroon;
+}
