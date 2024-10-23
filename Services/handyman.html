@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MNHVDBHG');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knight Group - Handyman Services</title> 
@@ -30,6 +37,21 @@
             margin: 0 auto;
             text-align: center;
         }
+        .hero-section .hero-text button {
+    background-color: maroon; /* Maroon background */
+    color: white; /* White text */
+    padding: 15px 30px; /* Larger padding for a bigger button */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: 1.2em; /* Make the text larger */
+    cursor: pointer;
+    margin: 10px 0; /* Add some space between the buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+    .hero-section .hero-text button:hover {
+    background-color: black; /* Hover effect: change background to black */
+}
 
         .page-title h2 {
             text-align: center;
@@ -40,6 +62,9 @@
         }
         .page-content h2 {
             text-align: center;
+        }
+        .page-content p {
+            text-align: left;
         }
 
         .service-description {
@@ -91,23 +116,6 @@
             color: maroon;
         }
 
-        .service-list {
-            width: 80%;
-            margin: 20px auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .service-item {
-            flex: 0 0 48%;
-            margin-bottom: 20px;
-            background-color: rgba(0, 0, 0, 0.05);
-            padding: 10px;
-            border-radius: 10px;
-            font-size: 1.1em;
-        }
-
         .cta-section {
             text-align: center;
             margin: 40px 0;
@@ -149,9 +157,6 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .service-item {
-                flex: 0 0 100%;
-            }
             .gallery-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -169,16 +174,32 @@
 
         @media (max-width: 480px) {
             .gallery-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: 2fr;
             }
+            .service-item {
+                flex: 0 0 100%;
+            }
+            .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
         }
     </style>
 </head>
 <body>
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNHVDBHG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Header -->
     <header>
         <div class="container">
+            <!-- Hamburger menu icon (visible on small screens) -->
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776; <!-- Hamburger icon -->
+            </div>
             <div class="logo-group">
                 <a href="../index.html" class="logo">
                     <img src="../Images/Knight Group Logo.png" alt="Knight Group Logo" />
@@ -186,15 +207,15 @@
                 <h1>Knight Group</h1>
             </div>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../about.html">About</a></li>
                     <li class="dropdown">
                         <a href="#">Services</a>
                         <ul class="dropdown-content">
-                            <li><a href="../Services/handyman.html">Handyman Services</a></li>
-                            <li><a href="../Services/programming&databases.html">Programming & Database Services</a></li>
-                            <li><a href="../Services/handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li>                            
+                            <li><a href="./handyman.html">Handyman Services</a></li>
+                            <li><a href="./programming&databases.html">Programming & Database Services</a></li>
+                            <li><a href="./handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li>
                         </ul>
                     </li>
                     <li><a href="../contact.html">Contact Us</a></li>
@@ -203,69 +224,162 @@
             </nav>
             <div class="social-icons">
                 <a href="#"><img src="../Images/facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="../Images/GithubIcon.png" alt="Github Icon"></a>
+                <a href="#"><img src="../Images/GithubIcon.png" alt="Instagram"></a>
                 <a href="#"><img src="../Images/twitter-icon.png" alt="Twitter"></a>
             </div>
         </div>
     </header>
+    
+    <!-- Mobile Menu (hidden by default) -->
+    <div class="mobile-menu">
+        <span class="close-menu" onclick="toggleMenu()">&times;</span> <!-- X button -->
+        <ul class="mobile-nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="#">Services</a>
+                <ul class="dropdown-content">
+                    <li><a href="./handyman.html">Handyman Services</a></li>
+                    <li><a href="./programming&databases.html">Programming & Database Services</a></li>
+                    <li><a href="./handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li>
+                </ul>
+            </li>
+            <li><a href="../contact.html">Contact Us</a></li>
+            <li><a href="../galleries.html">Galleries</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#"><img src="../Images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="../Images/GithubIcon.png" alt="Instagram"></a>
+            <a href="#"><img src="../Images/twitter-icon.png" alt="Twitter"></a>
+        </div>
+    </div>
+    
 
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-text">
             <h2>Handyman Services</h2>
-            Servicing Pinellas County
+            <p>Servicing Pinellas County</p>
+            <button onclick="window.location.href='tel:8134340783'">Call Now</button>
+            <button onclick="window.location.href='sms:8134340783'">Send a Text Message</button>
         </div>
     </section>
 
     <!-- Service Description -->
     <section class="page-content">
         <h2>Handyman Services You Can Trust</h2>
-        <p class="service-description">With over 15 years of experience in home repair and remodeling, Knight Group Handyman Services offers expert solutions for all your home improvement needs. Our primary handyman, Vincent Knight, brings a wealth of experience in plumbing, carpentry, drywall, electrical work, and more. Whether it’s a minor repair or a complete remodel, we have the expertise to get the job done right.</p>
+        <p class="service-description indented-paragraph">With over 15 years of experience in home repair and remodeling, Knight Group Handyman Services offers expert solutions for all your home improvement needs. Our primary handyman, Vincent Knight, brings a wealth of experience in plumbing, carpentry, drywall, electrical work, and more. Whether it’s a minor repair or a complete remodel, we have the expertise to get the job done right.</p>
     </section>
 
 
     <!-- Expertise and Experience -->
     <section class="experience-section">
 
-        <div class="experience-text">
-            <h3>Vincent Knight - Expert Handyman</h3>
-            <p>Vincent Knight has over 10 years of experience as a journeyman plumber, working for Roto Rooter in Pittsburgh, PA. During his time there, he handled everything from commercial building maintenance to sewer line repairs, camera inspections, and large-scale excavation work. He has literally done it all—plumbing repairs, sewer systems, water heater installations, and more. In addition, he has over 15 years of experience in home repair and remodeling, managing properties throughout Pinellas County as part of our family’s property management business. He specializes in bathroom remodels, plumbing, and general home renovations, making him your go-to expert for any handyman project.</p>
-        </div>
-    </section>
+        <div class="experience-text " >
+            <h3>Vincent Knight - Expert Handyman </h3>
+            <button onclick="window.location.href='tel:8134340783'">Call Now</button>
+                <button onclick="window.location.href='sms:8134340783'">Send a Text Message</button>
+                <button onclick="window.location.href='mailto:nickknight488@gmail.com'">Email Us</button>
 
-    <!-- Detailed Service List -->
-    <section class="service-list">
-        <div class="service-item">
-            <strong>Plumbing Repairs:</strong> Fix leaky faucets, clogged drains, install water heaters, and repair toilets and sewer lines.
-        </div>
-        <div class="service-item">
-            <strong>Electrical Work:</strong> Replace outlets, install light fixtures, ceiling fans, and troubleshoot wiring issues.
-        </div>
-        <div class="service-item">
-            <strong>Concrete and Masonry:</strong> Sidewalk repairs, concrete patios, and block walls.
-        </div>
-        <div class="service-item">
-            <strong>Bathroom Remodels:</strong> Full bathroom renovations including plumbing, tiling, fixture installations, and more.
-        </div>
-        <div class="service-item">
-            <strong>Carpentry:</strong> Door installations, baseboard trims, deck construction, fence repairs, and cabinetry work.
-        </div>
-        <div class="service-item">
-            <strong>Painting & Drywall:</strong> Drywall patching, full wall installations, interior painting, and exterior painting.
-        </div>
-        <div class="service-item">
-            <strong>Flooring:</strong> Install hardwood, laminate, vinyl, or tile flooring, and handle repairs.
-        </div>
-        <div class="service-item">
-            <strong>Exterior Work:</strong> Gutter cleaning, siding repair, deck staining, and general landscaping services.
-        </div>
-        <div class="service-item">
-            <strong>General Home Repairs:</strong> Install shelves, mount TVs, furniture assembly, fixture installations, and patch holes.
-        </div>
-        <div class="service-item">
-            <strong>Pressure Washing:</strong> Clean driveways, sidewalks, patios, and exterior walls to remove grime and buildup.
+
+            <p class="indented-paragraph">Vincent Knight has over 10 years of experience as a journeyman plumber, working for Roto Rooter in Pittsburgh, PA. During his time there, he handled everything from commercial building maintenance to sewer line repairs, camera inspections, and large-scale excavation work. He has literally done it all—plumbing repairs, sewer systems, water heater installations, and more. In addition, he has over 15 years of experience in home repair and remodeling, managing properties throughout Pinellas County as part of our family’s property management business. He specializes in bathroom remodels, plumbing, and general home renovations, making him your go-to expert for any handyman project.</p>
         </div>
     </section>
+    
+
+    <section class="pricing-comparison">
+        <h2>Comprehensive Handyman Service Pricing</h2>
+        <p>At Knight Group Handyman Services, we offer a wide range of services to cater to every home maintenance and repair need. Below is a detailed breakdown of our services, including competitive pricing compared to other companies in Pinellas County.</p>
+    
+        <h3>Our Handyman Services Prices</h3>
+        <div class="comparison-container">
+            <div class="column">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Our Pricing</th>
+                            <th>Competitor Pricing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Plumbing Services -->
+                        <tr><th colspan="3">Plumbing Services</th></tr>
+                        <tr><td>Fixing Leaks</td><td>$100 - $300</td><td>$150 - $350</td></tr>
+                        <tr><td>Unclogging Drains (Simple Clogs)</td><td>$120 - $250</td><td>$150 - $300</td></tr>
+                        <tr><td>Installing Showerheads</td><td>$75 - $150</td><td>$100 - $200</td></tr>
+                        <tr><td>Replacing Sink Trap (P-Trap)</td><td>$80 - $120</td><td>$100 - $150</td></tr>
+                        <tr><td>Basic Toilet Repair</td><td>$80 - $200</td><td>$120 - $300</td></tr>
+                        <tr><td>Install Water Filters (Under Sink)</td><td>$150 - $300</td><td>$200 - $350</td></tr>
+                        <tr><td>Replace Washing Machine Hoses</td><td>$50 - $150</td><td>$100 - $200</td></tr>
+    
+                        <!-- Electrical Services -->
+                        <tr><th colspan="3">Electrical Services</th></tr>
+                        <tr><td>Installing Ceiling Fans</td><td>$120 - $250</td><td>$150 - $300</td></tr>
+                        <tr><td>Replacing Electrical Outlets</td><td>$80 - $150</td><td>$100 - $200</td></tr>
+                        <tr><td>Installing Motion Sensor Lights</td><td>$120 - $250</td><td>$150 - $300</td></tr>
+                        <tr><td>Replace Dimmer Switches</td><td>$80 - $200</td><td>$100 - $250</td></tr>
+                        <tr><td>Install Smart Light Bulbs</td><td>$50 - $150</td><td>$80 - $200</td></tr>
+    
+                        <!-- Carpentry Services -->
+                        <tr><th colspan="3">Carpentry Services</th></tr>
+                        <tr><td>Furniture Assembly</td><td>$75 - $150 per item</td><td>$100 - $200</td></tr>
+                        <tr><td>Custom Shelving Installation</td><td>$150 - $350</td><td>$200 - $500</td></tr>
+                        <tr><td>Install Sliding Barn Doors</td><td>$250 - $600</td><td>$300 - $800</td></tr>
+                        <tr><td>Window Frame Repair</td><td>$100 - $300</td><td>$200 - $400</td></tr>
+                        <tr><td>Install Crown Molding</td><td>$250 - $600 per room</td><td>$350 - $700</td></tr>
+    
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="column">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Our Pricing</th>
+                            <th>Competitor Pricing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Home Remodeling -->
+                        <tr><th colspan="3">Home Remodeling</th></tr>
+                        <tr><td>Install Backsplash in Kitchen</td><td>$300 - $800</td><td>$500 - $1,200</td></tr>
+                        <tr><td>Install Vinyl or Laminate Flooring</td><td>$2 - $5 per sq. ft.</td><td>$4 - $8 per sq. ft.</td></tr>
+                        <tr><td>Tile Repair and Replacement</td><td>$6 - $15 per sq. ft.</td><td>$8 - $20 per sq. ft.</td></tr>
+                        <tr><td>Bathroom Vanity Replacement</td><td>$400 - $1,000</td><td>$600 - $1,500</td></tr>
+                        <tr><td>Install Glass Shower Doors (Pre-Built)</td><td>$500 - $1,000</td><td>$700 - $1,500</td></tr>
+    
+                        <!-- Exterior and Yard Services -->
+                        <tr><th colspan="3">Exterior and Yard Services</th></tr>
+                        <tr><td>Pressure Wash House Siding</td><td>$200 - $500</td><td>$300 - $700</td></tr>
+                        <tr><td>Repair or Install Gutters</td><td>$200 - $600</td><td>$300 - $800</td></tr>
+                        <tr><td>Build Wooden Fences</td><td>$1,500 - $4,000</td><td>$2,000 - $5,500</td></tr>
+                        <tr><td>Yard Cleanup and Hauling</td><td>$200 - $600</td><td>$300 - $800</td></tr>
+                        <tr><td>Deck Sanding and Repainting</td><td>$300 - $1,000</td><td>$500 - $1,200</td></tr>
+    
+                        <!-- Concrete Services -->
+                        <tr><th colspan="3">Concrete Services</th></tr>
+                        <tr><td>Concrete Slab Pouring (Small)</td><td>$500 - $1,500</td><td>$800 - $2,000</td></tr>
+                        <tr><td>Concrete Driveway Repair</td><td>$800 - $2,500</td><td>$1,000 - $3,000</td></tr>
+    
+                        <!-- Miscellaneous Services -->
+                        <tr><th colspan="3">Miscellaneous Services</th></tr>
+                        <tr><td>Install Pet Doors (Interior/Exterior)</td><td>$100 - $300</td><td>$150 - $400</td></tr>
+                        <tr><td>Assemble Garden Sheds</td><td>$500 - $1,500</td><td>$700 - $2,000</td></tr>
+                        <tr><td>Install Keyless Entry Door Locks</td><td>$100 - $250</td><td>$150 - $350</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+        <p>Our pricing ensures you receive expert craftsmanship at a fraction of the cost compared to other local companies. Whether it’s a minor repair or a full remodel, Knight Group Handyman Services guarantees high-quality work at unbeatable rates.</p>
+    </section>
+    
+        
+    
+
+    
 
     <!-- Workflow and Payment Process -->
     <section class="process-section">
@@ -283,17 +397,26 @@
     <section class="cta-section">
         <button onclick="window.location.href='tel:8134340783'">Call Now</button>
         <button onclick="window.location.href='sms:8134340783'">Send a Text Message</button>
-        <button onclick="window.location.href='mailto:nknight@knightgroup.com'">Email Us</button>
     </section>
+    
 
     <!-- Gallery Section -->
     <section class="gallery-section">
         <h2>Our Handyman Projects</h2>
         <div class="gallery-grid">
-            <img src="../GalleryImages/20221111_115258.jpg" alt="Handyman Photo 1">
-            <img src="../GalleryImages/20221121_144308.jpg" alt="Handyman Photo 2">
-            <img src="../GalleryImages/20230111_121854.jpg" alt="Handyman Photo 3">
-            <img src="../GalleryImages/20230215_141043.jpg" alt="Handyman Photo 4">
+            <img src="../GalleryImages/09101A71-.jpg" alt="Handyman Photo 1" loading="lazy">
+            <img src="../GalleryImages/0B25E8A2-.jpg" alt="Handyman Photo 2" loading="lazy">
+            <img src="../GalleryImages/0DA4B78A-.jpg" alt="Handyman Photo 3" loading="lazy">
+            <img src="../GalleryImages/20221111_115258.jpg" alt="Handyman Photo 4" loading="lazy">
+            <img src="../GalleryImages/20221121_144308.jpg" alt="Handyman Photo 5" loading="lazy">
+            <img src="../GalleryImages/20230215_141043.jpg" alt="Handyman Photo 7" loading="lazy">
+            <img src="../GalleryImages/20230216_184144.jpg" alt="Handyman Photo 8" loading="lazy">
+            <img src="../GalleryImages/36CF828F-.jpg" alt="Handyman Photo 11" loading="lazy">
+            <img src="../GalleryImages/3824DC9D-.jpg" alt="Handyman Photo 12" loading="lazy">
+            <img src="../GalleryImages/84E6C5B8-.jpg" alt="Handyman Photo 13" loading="lazy">
+            <img src="../GalleryImages/20230111_121854.jpg" alt="Handyman Photo 6" loading="lazy">
+            <img src="../GalleryImages/20230713_115127.jpg" alt="Handyman Photo 9" loading="lazy">
+            <img src="../GalleryImages/MoldyWall.jpg" alt="Handyman Photo 10" loading="lazy">
             <!-- Add more photos as necessary -->
         </div>
     </section>
