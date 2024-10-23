@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MNHVDBHG');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knight Group - Galleries</title>
@@ -8,53 +15,106 @@
     <link rel="icon" href="./Images/Knight Group Logo.png" type="image/png">
 
     <style>
-@media (max-width: 768px) {
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
-    }
-}
-@media (max-width: 480px) {
-    .gallery-grid {
-        grid-template-columns: 1fr; /* 1 column on very small screens */
-    }
-}
-/* Galleries Section */
-        /* CSS to handle gallery grid */
-        .gallery-section {
-            margin-bottom: 50px;
-            text-align: center; /* Center-align all content */
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+            }
         }
-
+    
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr; /* 1 column on very small screens */
+            }
+        }
+        
+        /* Collapsible Section Styles */
+        .collapsible-header {
+            background-color: rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            padding: 10px;
+            text-align: left;
+            font-size: 1.5em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column; /* Stack the header and paragraph vertically */
+            flex-grow: 1; /* Make it take available space */
+        }
+    
+        .collapsible-header p {
+            margin-top: 10px;  /* Add space between the heading and the paragraph */
+            color: white;  /* Ensure the text remains white */
+            font-size: 1em; /* Adjust the font size if needed */
+        }
+    
+        .collapsible-header h2, .collapsible-header h3, .collapsible-header p {
+            margin: 0;
+        }
+    
+        .collapsible-content {
+            display: block; /* Open upon load */
+            padding: 10px 0;
+        }
+    
+        .collapsible-header .arrow {
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+        }
+    
+        .arrow-down {
+            transform: rotate(0deg);
+        }
+    
+        .arrow-up {
+            transform: rotate(180deg);
+        }
+    
+        /* Gallery Grid Styles */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr); /* 4 columns */
             gap: 10px;
             justify-items: center; /* Center items inside the grid */
         }
-
+    
         .gallery-grid img, .gallery-grid video {
             width: 100%;
             height: auto;
             object-fit: cover;
         }
-
+    
         .gallery-section h3 {
             font-size: 24px;
             margin-bottom: 10px;
-            text-align: center; /* Center the section title */
+            
         }
-
+    
         .gallery-section p {
             margin-bottom: 20px;
-            text-align: center; /* Center the description */
+            
         }
     </style>
+    
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNHVDBHG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
     <!-- Header (same for all pages) -->
     <header>
+        
         <div class="container">
+                <!-- Hamburger menu icon (visible on small screens) -->
+        <div class="hamburger" onclick="toggleMenu()">
+        &#9776; <!-- Hamburger icon -->
+        </div>
             <div class="logo-group">
                 <a href="./index.html" class="logo">
                     <img src="./Images/Knight Group Logo.png" alt="Knight Group Logo" />
@@ -62,7 +122,7 @@
                 <h1>Knight Group</h1>
             </div>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./about.html">About</a></li>
                     <li class="dropdown">
@@ -77,6 +137,7 @@
                     <li><a href="./galleries.html">Galleries</a></li>
                 </ul>
             </nav>
+            
             <div class="social-icons">
                 <a href="#"><img src="./Images/facebook-icon.png" alt="Facebook"></a>
                 <a href="#"><img src="./Images/GithubIcon.png" alt="Github Icon"></a>
@@ -84,6 +145,28 @@
             </div>
         </div>
     </header>
+    <!-- Mobile Menu (hidden by default) -->
+<div class="mobile-menu">
+    <span class="close-menu" onclick="toggleMenu()">&times;</span> <!-- X button -->
+    <ul class="mobile-nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="#">Services</a>
+            <ul class="dropdown-content">
+                <li><a href="./Services/handyman.html">Handyman Services</a></li>
+                <li><a href="./Services/programming&databases.html">Programming & Database Services</a></li>
+                <li><a href="./Services/handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li>
+            </ul>
+        </li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <li><a href="./galleries.html">Galleries</a></li>
+    </ul>
+    <div class="social-icons">
+        <a href="#"><img src="./Images/facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="./Images/GithubIcon.png" alt="Instagram"></a>
+        <a href="#"><img src="./Images/twitter-icon.png" alt="Twitter"></a>
+    </div>
+</div>
 
     <!-- Page Title Section -->
     <section class="page-title">
@@ -91,61 +174,96 @@
     </section>
 
     <!-- Handyman Services Gallery -->
-    <section class="gallery-section">
-        <h2>Handyman Services</h2>
-        <p>Here are some photos and videos of our handyman services, showcasing plumbing, electrical work, and general repairs.</p>
-        
-        <!-- Photos -->
-        <div class="gallery-grid">
-            <img src="./GalleryImages/09101A71-.jpg" alt="Handyman Photo 1">
-            <img src="./GalleryImages/0B25E8A2-.jpg" alt="Handyman Photo 2">
-            <img src="./GalleryImages/0DA4B78A-.jpg" alt="Handyman Photo 3">
-            <img src="./GalleryImages/20221111_115258.jpg" alt="Handyman Photo 4">
-            <img src="./GalleryImages/20221121_144308.jpg" alt="Handyman Photo 5">
-            <img src="./GalleryImages/20230111_121854.jpg" alt="Handyman Photo 6">
-            <img src="./GalleryImages/20230215_141043.jpg" alt="Handyman Photo 7">
-            <img src="./GalleryImages/20230216_184144.jpg" alt="Handyman Photo 8">
-            <img src="./GalleryImages/20230713_115127.jpg" alt="Handyman Photo 9">
-            <img src="./GalleryImages/MoldyWall.jpg" alt="Handyman Photo 10">
-            <img src="./GalleryImages/36CF828F-.jpg" alt="Handyman Photo 11">
-            <img src="./GalleryImages/3824DC9D-.jpg" alt="Handyman Photo 12">
-            <img src="./GalleryImages/84E6C5B8-.jpg" alt="Handyman Photo 13">
+    <div class="collapsible-header" onclick="toggleCollapsible('handyman')">
+        <div class="header-content">
+            <h2>Handyman Services</h2>
+            <p>Here are some photos and videos of our handyman services, showcasing plumbing, electrical work, and general repairs.</p>
         </div>
-        
-        <!-- Videos -->
-        <h3>Handyman Videos</h3>
-        <div class="gallery-grid">
-            <video controls>
-                <source src="./GalleryImages/IMG_2338.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+        <span class="arrow arrow-up">&#x25BC;</span> 
+    </div>
+    
+    
+        <div id="handyman" class="collapsible-content">
+
+            <!-- Photos Section -->
+            <div class="collapsible-header" onclick="toggleSubsection('handyman-photos', 'handyman-videos')">
+                <h3>Handyman Photos</h3>
+                <span class="arrow arrow-up">&#x25BC;</span>
+            </div>
+            <div id="handyman-photos" class="collapsible-content">
+                <div class="gallery-grid">
+                    <img src="./GalleryImages/09101A71-.jpg" alt="Handyman Photo 1" loading="lazy">
+                    <img src="./GalleryImages/0B25E8A2-.jpg" alt="Handyman Photo 2" loading="lazy">
+                    <img src="./GalleryImages/0DA4B78A-.jpg" alt="Handyman Photo 3" loading="lazy">
+                    <img src="./GalleryImages/20221111_115258.jpg" alt="Handyman Photo 4" loading="lazy">
+                    <img src="./GalleryImages/20221121_144308.jpg" alt="Handyman Photo 5" loading="lazy">
+                    <img src="./GalleryImages/20230111_121854.jpg" alt="Handyman Photo 6" loading="lazy">
+                    <img src="./GalleryImages/20230215_141043.jpg" alt="Handyman Photo 7" loading="lazy">
+                    <img src="./GalleryImages/20230216_184144.jpg" alt="Handyman Photo 8" loading="lazy">
+                    <img src="./GalleryImages/20230713_115127.jpg" alt="Handyman Photo 9" loading="lazy">
+                    <img src="./GalleryImages/MoldyWall.jpg" alt="Handyman Photo 10" loading="lazy">
+                    <img src="./GalleryImages/36CF828F-.jpg" alt="Handyman Photo 11" loading="lazy">
+                    <img src="./GalleryImages/3824DC9D-.jpg" alt="Handyman Photo 12" loading="lazy">
+                    <img src="./GalleryImages/84E6C5B8-.jpg" alt="Handyman Photo 13" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Videos Section -->
+            <div class="collapsible-header" onclick="toggleSubsection('handyman-videos', 'handyman-photos')">
+                <h3>Handyman Videos</h3>
+                <span class="arrow arrow-up">&#x25BC;</span>
+            </div>
+            <div id="handyman-videos" class="collapsible-content">
+                <div class="gallery-grid">
+                    <video controls loading="lazy">
+                        <source src="./GalleryImages/IMG_2338.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Handcrafted Wooden Furniture & Artistic Resins -->
     <section class="gallery-section">
-        <h2>Handcrafted Wooden Furniture & Artistic Resins</h2>
-        <p>Our gallery of beautiful handcrafted furniture and resin work. See the craftsmanship in every piece.</p>
-        
-        <!-- Photos -->
-        <div class="gallery-grid">
-            <img src="./GalleryImages/wood1.jpg" alt="Furniture Photo 1">
-            <img src="./GalleryImages/wood2.jpg" alt="Furniture Photo 2">
-            <img src="./GalleryImages/wood3.jpg" alt="Furniture Photo 3">
-            <img src="./GalleryImages/wood4.jpg" alt="Furniture Photo 4">
-            <img src="./GalleryImages/wood5.jpg" alt="Furniture Photo 5">
-            <img src="./GalleryImages/wood6.jpg" alt="Furniture Photo 6">
+        <div class="collapsible-header" onclick="toggleCollapsible('furniture')">
+            <div class="header-content">
+                <h2>Handcrafted Wooden Furniture & Artistic Resins</h2>
+                <p>Our gallery of beautiful handcrafted furniture and resin work. See the craftsmanship in every piece.</p>
+            </div>
+            <span class="arrow arrow-up">&#x25BC;</span>
+        </div>
+        <div id="furniture" class="collapsible-content">
+    
+
+            <!-- Photos -->
+            <div class="gallery-grid">
+                <img src="./GalleryImages/wood1.jpg" alt="Furniture Photo 1" loading="lazy">
+                <img src="./GalleryImages/wood2.jpg" alt="Furniture Photo 2" loading="lazy">
+                <img src="./GalleryImages/wood3.jpg" alt="Furniture Photo 3" loading="lazy">
+                <img src="./GalleryImages/wood4.jpg" alt="Furniture Photo 4" loading="lazy">
+                <img src="./GalleryImages/wood5.jpg" alt="Furniture Photo 5" loading="lazy">
+                <img src="./GalleryImages/wood6.jpg" alt="Furniture Photo 6" loading="lazy">
+            </div>
         </div>
     </section>
 
     <!-- Programming & Database Services -->
     <section class="gallery-section">
-        <h2>Programming & Database Services</h2>
-        <p>Examples of our programming projects, database implementations, and more.</p>
-        
-        <!-- Placeholder for now -->
-        <div class="gallery-grid">
-            <img src="./GalleryImages/ProgrammingPlaceholder.jpg" alt="Programming Project 1">
+        <div class="collapsible-header" onclick="toggleCollapsible('programming')">
+            <div class="header-content">
+                <h2>Programming & Database Services</h2>
+                <p>Examples of our programming projects, database implementations, and more.</p>
+            </div>
+            <span class="arrow arrow-up">&#x25BC;</span>
+        </div>
+        <div id="programming" class="collapsible-content">
+    
+            
+            <!-- Placeholder for now -->
+            <div class="gallery-grid">
+                <img src="./GalleryImages/ProgrammingPlaceholder.jpg" alt="Programming Project 1" loading="lazy">
+            </div>
         </div>
     </section>
 
@@ -161,6 +279,47 @@
         </div>
     </footer>
 
-    <script src="./JS/script.js"></script>
+    <script>
+        function toggleCollapsible(id) {
+            const content = document.getElementById(id);
+            const arrow = content.previousElementSibling.querySelector('.arrow');
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                arrow.classList.remove('arrow-up');
+                arrow.classList.add('arrow-down');
+            } else {
+                content.style.display = "block";
+                arrow.classList.remove('arrow-down');
+                arrow.classList.add('arrow-up');
+            }
+        }
+
+        function toggleSubsection(openId, closeId) {
+            const openContent = document.getElementById(openId);
+            const closeContent = document.getElementById(closeId);
+            const openArrow = openContent.previousElementSibling.querySelector('.arrow');
+            const closeArrow = closeContent.previousElementSibling.querySelector('.arrow');
+            
+            if (openContent.style.display === "block") {
+                openContent.style.display = "none";
+                openArrow.classList.remove('arrow-up');
+                openArrow.classList.add('arrow-down');
+            } else {
+                openContent.style.display = "block";
+                openArrow.classList.remove('arrow-down');
+                openArrow.classList.add('arrow-up');
+                closeContent.style.display = "none";
+                closeArrow.classList.remove('arrow-up');
+                closeArrow.classList.add('arrow-down');
+            }
+        }
+
+        // Open all collapsible content by default
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.collapsible-content').forEach(content => {
+                content.style.display = "block";
+            });
+        });
+    </script>
 </body>
 </html>
