@@ -121,7 +121,7 @@
             margin: 40px 0;
         }
 
-        .cta-section button {
+        button {
             background-color: maroon;
             color: white;
             padding: 15px 30px;
@@ -186,6 +186,31 @@
     margin: 0 auto;
 }
         }
+                /* Form Section */
+                .form-section {
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        form button {
+            background-color: maroon;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+       button:hover {
+            background-color: black;
+        }
     </style>
 </head>
 <body>
@@ -213,9 +238,9 @@
                     <li class="dropdown">
                         <a href="#">Services</a>
                         <ul class="dropdown-content">
-                            <li><a href="./handyman.html">Handyman Services</a></li>
-                            <li><a href="./programming&databases.html">Programming & Database Services</a></li>
-                            <li><a href="./handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li>
+                            <li><a href="../Services/handyman.html">Handyman Services</a></li>
+                            <li><a href="../Services/programming&databases.html">Programming & Database Services</a></li>
+                            <li><a href="../Services/handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li>
                         </ul>
                     </li>
                     <li><a href="../contact.html">Contact Us</a></li>
@@ -229,7 +254,6 @@
             </div>
         </div>
     </header>
-    
     <!-- Mobile Menu (hidden by default) -->
     <div class="mobile-menu">
         <span class="close-menu" onclick="toggleMenu()">&times;</span> <!-- X button -->
@@ -237,14 +261,15 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="../about.html">About</a></li>
             <li><a href="#">Services</a>
-                <ul class="dropdown-content">
-                    <li><a href="./handyman.html">Handyman Services</a></li>
-                    <li><a href="./programming&databases.html">Programming & Database Services</a></li>
-                    <li><a href="./handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li>
+                <ul class="side-content">
+                    <li><a href="../Services/handyman.html">Handyman Services</a></li>
+                    <li><a href="../Services/programming&databases.html">Programming & Database Services</a></li>
+                    <li><a href="../Services/handcraftedfurniture&resins.html">Handcrafted Wooden Furniture<br><span style="display: block; text-align: center;">& Artistic Resins</span></a></li>
+    
                 </ul>
             </li>
-            <li><a href="../contact.html">Contact Us</a></li>
-            <li><a href="../galleries.html">Galleries</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./galleries.html">Galleries</a></li>
         </ul>
         <div class="social-icons">
             <a href="#"><img src="../Images/facebook-icon.png" alt="Facebook"></a>
@@ -398,7 +423,23 @@
         <button onclick="window.location.href='tel:8134340783'">Call Now</button>
         <button onclick="window.location.href='sms:8134340783'">Send a Text Message</button>
     </section>
-    
+        <!-- Contact Form -->
+        <section class="form-section">
+            <h2>Get in Touch for Expert Help or a Free Estimate!</h2>
+            <form action="https://formspree.io/f/mvgogaaw" method="POST">
+                <input type="text" name="title" placeholder="Title or Topic of why you're messaging us today" required>
+                <textarea name="description" placeholder="Describe your project and we'll get back to you with a quote!" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+                    <!-- Contact Information -->
+                    <section class="contact-info">
+                        <h3>Handyman Services</h3>
+                        <p>Call: ‪(813) 434-0783‬</p>
+                        <button onclick="window.location.href='tel:8134340783'">Call</button>
+                        <button onclick="window.location.href='sms:8134340783'">Send Text Message</button>
+                        <button onclick="window.location.href='mailto:nickknight488@gmail.com,jknight@knightgroup.com'">Email Us</button>
+                    </section>
+        </section>
 
     <!-- Gallery Section -->
     <section class="gallery-section">
