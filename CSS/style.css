@@ -43,14 +43,17 @@ header {
 }
 
 .logo img {
-    height: 60px;
-    margin-right: 10px;
+    height: 5vw; /* Logo size is 10% of the viewport width */
+    max-height: 60px; /* Set a maximum height so it doesn't grow too large */
+    min-height: 40px; /* Set a minimum height for smaller screens */
 }
 
 h1 {
-    font-size: 2em;
-    margin: 0;
-    white-space: nowrap;
+    font-size: 2vw; /* Font size is 4% of the viewport width */
+    max-width: 36px; /* Set a maximum font size */
+    min-width: 24px; /* Set a minimum font size */
+    margin: 0 10px 10px 10px;
+    white-space: nowrap; /* Prevent wrapping of text */
 }
 
 nav {
@@ -210,20 +213,29 @@ nav ul li {
 }
 
 .services .service .details {
-    padding-left: 50px;
+    padding-left: 20px; /* Adjusted left padding for better spacing */
+    padding-right: 20px; /* Added right padding to ensure it doesn't hug the image */
     width: 70%;
     display: flex;  /* Make details a flex container */
     flex-direction: column;  /* Stack the content vertically */
     justify-content: center;  /* Center content vertically */
-    align-items: center;  /* Center content horizontally */
+    align-items: flex-start;  /* Align content to the left */
+    box-sizing: border-box; /* Include padding in total width calculation */
+}
+
+.services .details p {
+    margin: 0; /* Reset margins */
+    padding: 10px 10px; /* Add 10px padding on both sides for text */
+    text-align: left; /* Ensure text aligns left */
 }
 
 .services .details .btn {
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
+    padding: 10px 50px;
     border-radius: 5px;
     margin-top: 10px; /* Add margin for spacing from the content */
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .services .details .btn:hover {
@@ -232,14 +244,21 @@ nav ul li {
 }
 
 
+
 /* About Section */
 .about {
     text-align: center;
     padding: 0 0 10% 0;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 2;
+}
+.about p {
+    text-align: left;
 }
 
 .about .btn {
-    background-color: #1d1c1c;
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 10px 20px;
     border-radius: 5px;
 }
@@ -278,4 +297,278 @@ footer a {
 
 footer a:hover {
     color: maroon;
+}
+.indented-paragraph {
+    text-indent: 40px; /* Adjust the value to increase or decrease the indent */
+}
+/* Hamburger menu hidden by default */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+/* Mobile Menu styling */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 10%; /* Offset from the top to center it vertically */
+    left: 0; /* Align the menu fully to the left */
+    right: unset; /* Remove the right boundary so it doesn’t center horizontally */
+    max-width: fit-content; /* Adjust width to fit text */
+    height: 50%; /* Set height to 50% of the screen */
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    padding: 20px 15px; /* Add padding for spacing */
+    border-radius: 10px; /* Optional, to give rounded corners */
+    box-sizing: border-box; /* Ensure padding is included in total width */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Footer styling for small screens */
+@media (max-width: 840px) {
+    .mobile-nav-links a:hover {
+        background-color: maroon;
+        color: white;
+    }
+    body {
+        font-size: 0.9em; /* Slightly smaller font size for tablets */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Adjust h1 size */
+    }
+
+    h2 {
+        font-size: 1.8em; /* Adjust h2 size */
+    }
+
+    p {
+        font-size: 0.9em; /* Adjust paragraph text */
+    }
+
+    .services .details .btn {
+        font-size: 0.9em; /* Button text size for tablet */
+    }
+    .hamburger {
+        display: block;
+        position: relative;
+        z-index: 1001;
+    }
+
+    /* Adjust the logo and h1 to align with the hamburger menu */
+    .logo-group {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    /* Hide the original navigation links on small screens */
+    nav ul.nav-links {
+        display: none;
+    }
+    nav ul {
+        justify-content: center; /* Keep the nav centered on medium screens */
+        margin-left: 20px; /* Add space from the left */
+    }
+    /* Mobile Menu hidden by default */
+    .mobile-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+        padding-top: 60px;
+    }
+
+    /* Show mobile menu when active */
+    .mobile-menu.active {
+        display: block;
+    }
+
+    /* Mobile navigation links styling */
+    .mobile-nav-links {
+        list-style: none;
+        padding-left: 0;
+        text-align: center;
+        line-height: 3;
+    }
+
+    .mobile-nav-links li a {
+        display: block;
+        font-size: 1.5em;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    /* Close button styling */
+    .close-menu {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Position social media icons at the bottom of the mobile menu */
+    .mobile-menu .social-icons {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobile-menu .social-icons img {
+        margin: 0 10px;
+    }
+    footer {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align everything */
+    }
+
+    footer .left {
+        margin: 0 0 5px 0; /* Add some space between copyright and links */
+        text-align: center; /* Center the copyright text */
+    }
+
+    footer .center {
+        text-align: center; /* Center the links */
+        margin: 0; /* Remove extra margin on small screens */
+    }
+    .about .indented-paragraph:nth-of-type(2) {
+        display: none;
+    }
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    width: 100%; /* Make sure nav takes the full width */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px; /* Space between the links */
+    font-size: large;
+}
+
+
+/* Navigation styling for extra small screens like mobile phones */
+@media (max-width: 480px) {
+    nav ul {
+        font-size: 0.9em; /* Further decrease the font size for mobile screens */
+        flex-direction: column; /* Stack the navigation links vertically */
+        align-items: center; /* Center-align the links */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Add some space between vertically stacked items */
+    }
+    .about .indented-paragraph:nth-of-type(2) {
+        display: none;
+    }
+    body {
+        line-height: 1.3; /* Further reduce line height for mobile */
+    }
+}
+/* HANDYMAN PAGE ** THIS SHOULDNT BE HERE ** */
+/* Ensure tables are responsive */
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+    display: block;
+    text-align: left;
+    
+}
+
+/* Table header styling */
+table thead th {
+    font-weight: bold;
+    padding: 12px;
+    border-bottom: 2px solid #fff;
+}
+
+/* Table cell padding */
+table td, table th {
+    padding: 8px;
+    border-bottom: 1px solid #444;
+}
+
+/* For smaller screens (max-width: 768px) */
+
+/* Ensure columns are properly laid out */
+.comparison-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  /* Allows wrapping for smaller screens */
+    gap: 20px;  /* Adjust spacing between columns */
+    margin: 0 auto;
+}
+
+/* Each column should take 48% of the available width */
+.comparison-container .column {
+    flex: 1;
+    min-width: 48%;
+}
+.pricing-comparison {
+    margin: 0 auto;
+}
+/* Smaller screen adjustments */
+@media (max-width: 768px) {
+    .comparison-container .column {
+        min-width: 100%;
+    }
+}
+.pricing-comparison {
+    max-width: 1200px; /* Set a maximum width for the section */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 20px; /* Add some padding for spacing */
+    text-align: center; /* Center-align text inside the section */
+}
+
+.pricing-comparison table {
+    width: 100%; /* Ensure the table takes up the full width */
+    margin: 0 auto; /* Center the table itself */
+    border-collapse: collapse; /* Clean table look */
+}
+
+.pricing-comparison th, .pricing-comparison td {
+    padding: 12px 15px; /* Add padding for spacing in table cells */
+    text-align: left; /* Left-align text inside the table cells */
+    border: 1px solid #ddd; /* Border for table */
+}
+.hero-text{
+    font-size: 2vh;
+}
+.hero-text button {
+    height: auto;
+    width: auto;
+    padding: 10px 10px;
+    background-color: maroon;
+}
+.hero-text button:hover {
+    height: auto;
+    width: auto;
+    padding: 10px 10px;
+    background-color: (0,0,0,rgba(0, 0, 0, 0.7));
+}
+.experience-text {
+    text-align: center;
+
+}
+.experience-text p {
+    text-align: left;
+
 }
