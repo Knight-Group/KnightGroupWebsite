@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -17,12 +17,17 @@
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNHVDBHG"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNHVDBHG"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
 <!-- Header -->
 <header>
     <div class="container">
+        <!-- Hamburger menu icon (visible on small screens) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon -->
+        </div>
         <div class="logo-group">
             <a href="./index.html" class="logo">
                 <img src="./Images/Knight Group Logo.png" alt="Knight Group Logo" />
@@ -30,7 +35,7 @@
             <h1>Knight Group</h1>
         </div>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li class="dropdown">
@@ -53,65 +58,93 @@
     </div>
 </header>
 
-    <!-- Slideshow -->
-    <section class="slideshow">
-        <div class="slide">
-            <img src="./Images/HandymanBannerImg.webp" alt="Handyman Services">
-            <div class="slide-content">
-                <h2>Handyman Services</h2>
-                <a href="./Services/handyman.html" class="btn">View Now</a>
-            </div>
+<!-- Slideshow -->
+<section class="slideshow">
+    <div class="slide">
+        <img src="./Images/HandymanBannerImg.webp" alt="Handyman Services">
+        <div class="slide-content">
+            <h2>Handyman Services</h2>
+            <a href="./Services/handyman.html" class="btn">View Now</a>
         </div>
-        <div class="slide">
-            <img src="./Images/Programming&DatabaseImg.webp" alt="Programming Services">
-            <div class="slide-content">
-                <h2>Programming & Database Services</h2>
-                <a href="./Services/programming.html" class="btn">View Now</a>
-            </div>
+    </div>
+    <div class="slide">
+        <img src="./Images/Programming&DatabaseImg.webp" alt="Programming Services">
+        <div class="slide-content">
+            <h2>Programming & Database Services</h2>
+            <a href="./Services/programming.html" class="btn">View Now</a>
         </div>
-        <div class="slide">
-            <img src="./Images/HandcraftedFurnitureImg.jpg" alt="Handcrafted Wooden Furniture">
-            <div class="slide-content">
-                <h2>Handcrafted Wooden Furniture & Artistic Resins</h2>
-                <a href="./Services/handcraftedfurniture&resins.html" class="btn">View Now</a>
-            </div>
+    </div>
+    <div class="slide">
+        <img src="./Images/HandcraftedFurnitureImg.jpg" alt="Handcrafted Wooden Furniture">
+        <div class="slide-content">
+            <h2>Handcrafted Wooden Furniture & Artistic Resins</h2>
+            <a href="./Services/handcraftedfurniture&resins.html" class="btn">View Now</a>
         </div>
-    </section>
+    </div>
+</section>
 
-      <!-- About Us Section -->
-      <section class="about">
-        <h2>About Us</h2>
-        <p>Knight Group offers a range of services including handyman work, programming and database solutions, and handcrafted wooden furniture with artistic resin designs. We pride ourselves on quality craftsmanship and customer satisfaction.</p>
-        <a href="./about.html" class="btn">Read More About Us</a>
-    </section>  
+<!-- About Us Section -->
+<section class="about">
+    <h2>Welcome to Knight Group</h2>
+    <p class="indented-paragraph">
+        At Knight Group, we pride ourselves on offering a diverse array of services that cater to a wide range of client needs. From expert handyman solutions to advanced programming and database management, we bring technical expertise, precision, and reliability to every project. Whether it’s fixing, remodeling, or improving your home, our experienced handyman team ensures high-quality results for every task, big or small. For businesses, our programming and database services streamline operations with custom-built software and data solutions that enhance efficiency and drive growth.
+    </p>
+    <p class="indented-paragraph">
+        In addition to our technical services, we craft bespoke, handcrafted wooden furniture and artistic resin pieces. Using rare and exotic woods, we create unique furniture items that combine traditional craftsmanship with modern artistry. Our epoxy resin creations add an artistic touch, turning ordinary furniture into extraordinary conversation pieces. With each item customized to your vision, you can expect one-of-a-kind furniture that reflects your personal style.
+    </p>
+    <a href="./about.html" class="btn">Read More About Us</a>
+</section>  
 
-    <!-- Services Section -->
-    <section class="services">
-        <div class="service">
-            <img src="./Images/HandymanCatImg.webp" alt="Handyman Services">
-            <div class="details">
-                <h2>Handyman Services</h2>
-                <p>We offer professional handyman services for your home and business. Whether it’s plumbing, electrical, or general repairs, we’re here to help.</p>
-                <a href="./Services/handyman.html" class="btn">Click Here</a>
-            </div>
+<!-- Services Section -->
+<section class="services">
+    <div class="service">
+        <img src="./Images/HandymanCatImg.webp" alt="Handyman Services">
+        <div class="details">
+            <h2>Handyman Services</h2>
+            <p>Need reliable, professional handyman services for your home or business? We specialize in all types of repairs, including expert plumbing services, electrical work, and general maintenance. Whether it’s a quick fix or a larger renovation project, our experienced handymen are ready to tackle it all with precision and care. From fixing leaks and unclogging drains to installing fixtures and handling wiring, we guarantee quality workmanship at competitive rates. Don’t let small issues turn into big problems—call us today to schedule fast, affordable handyman services and keep your property running smoothly.</p>
+            <a href="./Services/handyman.html" class="btn">Click Here</a>
         </div>
-        <div class="service">
-            <div class="details">
-                <h2>Programming & Database Services</h2>
-                <p>Our experienced developers offer programming and database solutions for businesses of all sizes. From web development to database management, we provide quality services.</p>
-                <a href="./Services/programming&databases.html" class="btn">Click Here</a>
-            </div>
-            <img src="./Images/ProgrammingCatimg.webp" alt="Programming Services">
+    </div>
+    <div class="service">
+        <div class="details">
+            <h2>Programming & Database Services</h2>
+            <p>Elevate your business with our tailored web development and database management services. Our expert developers craft custom websites and web applications designed to enhance user experience and drive growth. Need secure, scalable database solutions? We handle everything from database design and optimization to ongoing management, ensuring your data is safe, organized, and accessible. Whether you're a small business or an enterprise, we build solutions that are built to grow with your company. Call us now to streamline your operations and get ahead with cutting-edge digital solutions.</p>
+            <a href="./Services/programming&databases.html" class="btn">Click Here</a>
         </div>
-        <div class="service">
-            <img src="./Images/WoodworkingCatImg.webp" alt="Handcrafted Wooden Furniture">
-            <div class="details">
-                <h2>Handcrafted Wooden Furniture & Artistic Resins</h2>
-                <p>Our custom-made furniture combines rare woods with artistic resin designs, bringing unique beauty and craftsmanship to every piece.</p>
-                <a href="./Services/handcraftedfurniture&resins.html" class="btn">Click Here</a>
-            </div>
+        <img src="./Images/ProgrammingCatimg.webp" alt="Programming Services">
+    </div>
+    <div class="service">
+        <img src="./Images/WoodworkingCatImg.webp" alt="Handcrafted Wooden Furniture">
+        <div class="details">
+            <h2>Handcrafted Wooden Furniture & Artistic Resins</h2>
+            <p>Discover our stunning range of handcrafted wooden furniture and custom resin designs, where craftsmanship meets artistic flair. Each piece is carefully crafted using premium, rare woods and artistic resin elements to create one-of-a-kind furniture that combines beauty with durability. From eye-catching coffee tables to unique wall art, our custom creations are built to last and make a bold statement in any space. Looking to transform your home or office with unique, handcrafted furniture? Contact us today to discuss your custom piece and elevate your interior with timeless designs.</p>
+            <a href="./Services/handcraftedfurniture&resins.html" class="btn">Click Here</a>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Mobile Menu (hidden by default) -->
+<div class="mobile-menu">
+    <span class="close-menu" onclick="toggleMenu()">&times;</span> <!-- X button -->
+    <ul class="mobile-nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="#">Services</a>
+            <ul class="dropdown-content">
+                <li><a href="./Services/handyman.html">Handyman Services</a></li>
+                <li><a href="./Services/programming&databases.html">Programming & Database Services</a></li>
+                <li><a href="./Services/handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li>
+            </ul>
+        </li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <li><a href="./galleries.html">Galleries</a></li>
+    </ul>
+    <div class="social-icons">
+        <a href="#"><img src="./Images/facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="./Images/GithubIcon.png" alt="Instagram"></a>
+        <a href="#"><img src="./Images/twitter-icon.png" alt="Twitter"></a>
+    </div>
+</div>
 
 <!-- Footer -->
 <footer>
@@ -125,6 +158,6 @@
     </div>
 </footer>
 
-    <script src="./JS/script.js"></script>
+<script src="./JS/script.js"></script>
 </body>
 </html>
