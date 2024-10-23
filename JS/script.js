@@ -21,3 +21,8 @@ function nextSlide() {
 
 // Automatically switch slides every 5 seconds
 setInterval(nextSlide, 5000);
+
+function toggleMenu() {
+    var mobileMenu = document.querySelector('.mobile-menu');
+    mobileMenu.classList.toggle('active');
+}
