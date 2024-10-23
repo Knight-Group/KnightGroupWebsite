@@ -47,29 +47,42 @@
             text-align: center;
         }
 
-        .service-list {
-            width: 80%;
-            margin: 20px auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
+/* Service List */
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 20px; /* Adds space between the columns and rows */
+    width: 80%;
+    margin: 20px auto;
+}
 
-        .service-item {
-            flex: 0 0 48%;
-            margin-bottom: 20px;
-            background-color: rgba(0, 0, 0, 0.05);
-            padding: 10px;
-            border-radius: 10px;
-            font-size: 1.1em;
-        }
+.service-item {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+
+/* Ensure two columns even on smaller screens */
+@media (max-width: 768px) {
+    .service-list {
+        grid-template-columns: repeat(2, 1fr); /* Keep two columns on smaller screens */
+    }
+}
+
+/* On very small screens, like mobile, stack into one column */
+@media (max-width: 480px) {
+    .service-list {
+        grid-template-columns: 1fr; /* Stack into one column on very small screens */
+    }
+}
 
         .cta-section {
             text-align: center;
             margin: 40px 0;
         }
 
-        .cta-section button {
+        button {
             background-color: maroon;
             color: white;
             padding: 15px 30px;
@@ -94,14 +107,21 @@
             display: flex;
             margin-bottom: 20px;
         }
+        
 
-        .portfolio-item img {
-            width: 30%;
-            margin-right: 20px;
-        }
+/* Portfolio Showcase */
+.portfolio-item img {
+    width: 250px;
+    height: 250px;
+
+    object-fit: fill;
+}
+
+        
 
         .portfolio-item p {
             font-size: 1.2em;
+            padding-left: 55px;
         }
 
         /* Form Section */
@@ -127,8 +147,12 @@
         }
 
         form button:hover {
-            background-color: darkred;
+            background-color: black;
         }
+        button:hover {
+            background-color: rgba(0, 0, 0);
+        }
+        
     </style>
 </head>
 <body>
@@ -156,9 +180,9 @@
                     <li class="dropdown">
                         <a href="#">Services</a>
                         <ul class="dropdown-content">
-                            <li><a href="./handyman.html">Handyman Services</a></li>
-                            <li><a href="./programming&databases.html">Programming & Database Services</a></li>
-                            <li><a href="./handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li>
+                            <li><a href="../Services/handyman.html">Handyman Services</a></li>
+                            <li><a href="../Services/programming&databases.html">Programming & Database Services</a></li>
+                            <li><a href="../Services/handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li>
                         </ul>
                     </li>
                     <li><a href="../contact.html">Contact Us</a></li>
@@ -166,13 +190,14 @@
                 </ul>
             </nav>
             <div class="social-icons">
-                <a href="#"><img src="../Images/facebook-icon.png" alt="Facebook"></a>
+                <a href="https://www.facebook.com/profile.php?id=61566961994226" target="_blank">
+                    <img src="../Images/facebook-icon.png" alt="Facebook">
+                </a>
                 <a href="#"><img src="../Images/GithubIcon.png" alt="Instagram"></a>
                 <a href="#"><img src="../Images/twitter-icon.png" alt="Twitter"></a>
             </div>
         </div>
     </header>
-    
     <!-- Mobile Menu (hidden by default) -->
     <div class="mobile-menu">
         <span class="close-menu" onclick="toggleMenu()">&times;</span> <!-- X button -->
@@ -180,14 +205,15 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="../about.html">About</a></li>
             <li><a href="#">Services</a>
-                <ul class="dropdown-content">
-                    <li><a href="./handyman.html">Handyman Services</a></li>
-                    <li><a href="./programming&databases.html">Programming & Database Services</a></li>
-                    <li><a href="./handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li>
+                <ul class="side-content">
+                    <li><a href="../Services/handyman.html">Handyman Services</a></li>
+                    <li><a href="../Services/programming&databases.html">Programming & Database Services</a></li>
+                    <li><a href="../Services/handcraftedfurniture&resins.html">Handcrafted Wooden Furniture<br><span style="display: block; text-align: center;">& Artistic Resins</span></a></li>
+    
                 </ul>
             </li>
-            <li><a href="../contact.html">Contact Us</a></li>
-            <li><a href="../galleries.html">Galleries</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./galleries.html">Galleries</a></li>
         </ul>
         <div class="social-icons">
             <a href="#"><img src="../Images/facebook-icon.png" alt="Facebook"></a>
@@ -200,14 +226,19 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-text">
-            Professional Programming & Database Solutions
+            Professional Programming & Database Solutions <br>
+            <button onclick="window.location.href='tel:8134340783'">Call Now</button>
+            <button onclick="window.location.href='sms:8134340783'">Send a Text Message</button>
+            <button onclick="window.location.href='mailto:nickknight488@gmail.com'">Email Us</button>
         </div>
+        
     </section>
 
     <!-- Service Description -->
     <section class="page-content">
         <h2>Tailored Programming & Database Services</h2>
         <p class="service-description">Our programming and database services are designed to help businesses improve efficiency, automate workflows, and drive data-driven decision-making. With extensive expertise in front-end and back-end web development, custom automation solutions, and database management, we provide end-to-end support for your business needs. From developing scalable, responsive websites to optimizing databases for maximum performance, our goal is to deliver results that exceed expectations.</p>
+        
     </section>
 
     <!-- Detailed Service List -->
@@ -236,19 +267,19 @@
     <section class="portfolio-showcase">
         <h2>Recent Projects</h2>
         <div class="portfolio-item">
-            <img src="../Images/CovidQueries.png" alt="SQL Project Image">
+            <img src="../Images/TableauDashboard.png" alt="SQL Project Image">
             <p>SQL Project: COVID-19 Analysis - A comprehensive project analyzing pandemic data using SQL queries to uncover insights. We processed thousands of records, extracted key metrics, and created dynamic dashboards with Tableau for real-time reporting. This project exemplifies our ability to handle large datasets and deliver actionable insights.</p>
         </div>
         <div class="portfolio-item">
-            <img src="../Images/AutoRecording.jpg" alt="PowerShell Project">
+            <img src="../Images/PS-ChangeResolution1080p.jpg" alt="PowerShell Project">
             <p>PowerShell Automation: Developed a custom PowerShell script that automated screen recording and video file management. This project saved the client hours of manual work and improved operational efficiency by automating the recording of training sessions and seamless integration with their file storage system.</p>
         </div>
         <div class="portfolio-item">
-            <img src="../Images/TicTacToeGame.png" alt="JavaScript Project">
-            <p>JavaScript Game Development: Created an interactive Tic Tac Toe game using HTML, CSS, and JavaScript. This project demonstrates our front-end web development skills, including user interface design and logic-based programming. We can build custom web applications tailored to your specific needs.</p>
+            <img src="../Images/chessposter.png" alt="JavaScript Project">
+            <p>JavaScript Game Development: Created an interactive Chess game using HTML, CSS, and JavaScript. This project demonstrates our front-end web development skills, including user interface design and logic-based programming. We can build custom web applications tailored to your specific needs.</p>
         </div>
         <div class="portfolio-item">
-            <img src="../Images/UltimaOnlineAPI.png" alt="Python API Project">
+            <img src="../Images/PythonAntiDisarmer.png" alt="Python API Project">
             <p>Python API for Ultima Online: Developed an API for Ultima Online, automating in-game functions such as player data retrieval, in-game purchases, and more. Our experience with game development extends to API integration, allowing us to work with various third-party systems for comprehensive solutions.</p>
         </div>
     </section>
