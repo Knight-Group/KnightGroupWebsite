@@ -10,7 +10,53 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knight Group - Handyman Services</title> 
+    <title>Handyman Services | Knight Group | Pinellas County Repairs & Maintenance</title>
+    <meta name="description" content="Knight Group offers reliable handyman services in Pinellas County. From repairs to maintenance, we handle all home improvement needs.">    <!--Meta Description-->
+        <!-- Local Business Schema Markup -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "Knight Group",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "7th St S",
+                    "addressLocality": "Safety Harbor",
+                    "addressRegion": "FL",
+                    "postalCode": "34695"
+                },
+                "description": "Providing professional handyman, programming, and custom furniture services.",
+                "email": "nknight@knightgroup.com",
+                "telephone": "+1-813-434-0783",
+                "openingHours": "Mo,Tu,We,Th,Fr 08:00-17:00"
+            }
+            </script>
+            
+        
+        <!-- Bread Crumbs-->
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.knightgroup.com/"
+              },{
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://www.knightgroup.com/services"
+              },{
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Handyman Services",
+                "item": "https://www.knightgroup.com/Services/handyman.html"
+              }]
+            }
+            </script>
+            
     <link rel="stylesheet" href="../CSS/style.css"> 
     <link rel="icon" href="../Images/Knight Group Logo.png" type="image/png">
 
@@ -89,7 +135,7 @@
 
         .experience-section h3 {
             font-size: 24px;
-            color: maroon;
+            color: white;
         }
 
         .social-icons-small {
@@ -229,7 +275,10 @@
                 <a href="../index.html" class="logo">
                     <img src="../Images/Knight Group Logo.png" alt="Knight Group Logo" />
                 </a>
-                <h1>Knight Group</h1>
+                <!-- Hidden SEO h1 tag -->
+                <h1 style="position: absolute; left: -9999px;">Professional Handyman Services in Pinellas County</h1>
+                <!-- Visible h1 for company branding -->
+                <h2>Knight Group</h2>
             </div>
             <nav>
                 <ul class="nav-links">
@@ -418,11 +467,6 @@
         </ul>
     </section>
 
-    <!-- Call to Action -->
-    <section class="cta-section">
-        <button onclick="window.location.href='tel:8134340783'">Call Now</button>
-        <button onclick="window.location.href='sms:8134340783'">Send a Text Message</button>
-    </section>
         <!-- Contact Form -->
         <section class="form-section">
             <h2>Get in Touch for Expert Help or a Free Estimate!</h2>
