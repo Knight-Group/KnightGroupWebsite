@@ -10,9 +10,10 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Knight Group | Handyman, Programming, and Custom Furniture in Pinellas County</title>
-    <meta name="description" content="Learn about Knight Group's history, expertise in handyman services, programming solutions, and handcrafted furniture in Pinellas County.">
-
+    <title>Galleries | Knight Group Handyman, Custom Furniture & Web Projects</title> <!--Meta Title-->
+    <meta name="description" content="Knight Group's image and video galleries showcase our handyman services, handcrafted furniture, and programming projects."> <!--Meta Description-->
+    
+    
         <!-- Local Business Schema Markup -->
         <script type="application/ld+json">
             {
@@ -33,156 +34,297 @@
             }
             </script>
             
-        
-        <!-- Bread Crumbs-->
-        <script type="application/ld+json">
+    <!-- Breadcrumbs Schema -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
             {
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.knightgroup.com/"
-              },{
-                "@type": "ListItem",
-                "position": 2,
-                "name": "About",
-                "item": "https://www.knightgroup.com/about.html"
-              }]
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.knightgroup.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Galleries",
+              "item": "https://www.knightgroup.com/galleries.html"
             }
-            </script>
-            
-    <link rel="stylesheet" href="./CSS/style.css">
+          ]
+        }
+        </script>
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="icon" href="./Images/Knight Group Logo.png" type="image/png">
-    <!-- Inline CSS for this page -->
+
     <style>
-        /* Ensure text is double-spaced */
-        body {
-            line-height: 2; /* Double spacing */
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+            }
         }
-
-        /* Center all <h2> headers */
-        h2 {
-            text-align: center;
-            font-size: 28px;
+    
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr; /* 1 column on very small screens */
+            }
+        }
+        
+        /* Collapsible Section Styles */
+        .collapsible-header {
+            background-color: rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            padding: 10px;
+            text-align: left;
+            font-size: 1.5em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column; /* Stack the header and paragraph vertically */
+            flex-grow: 1; /* Make it take available space */
+        }
+    
+        .collapsible-header p {
+            margin-top: 10px;  /* Add space between the heading and the paragraph */
+            color: white;  /* Ensure the text remains white */
+            font-size: 1em; /* Adjust the font size if needed */
+        }
+    
+        .collapsible-header h2, .collapsible-header h3, .collapsible-header p {
+            margin: 0;
+        }
+    
+        .collapsible-content {
+            display: block; /* Open upon load */
+            padding: 10px 0;
+        }
+    
+        .collapsible-header .arrow {
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+        }
+    
+        .arrow-down {
+            transform: rotate(0deg);
+        }
+    
+        .arrow-up {
+            transform: rotate(180deg);
+        }
+    
+        /* Gallery Grid Styles */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns */
+            gap: 10px;
+            justify-items: center; /* Center items inside the grid */
+        }
+    
+        .gallery-grid img, .gallery-grid video {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    
+        .gallery-section h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            
+        }
+    
+        .gallery-section p {
             margin-bottom: 20px;
-        }
-
-        /* Paragraph styling for consistency */
-        p {
-            font-size: 18px;
-            margin-bottom: 20px; /* Spacing between paragraphs */
-        }
-
-        /* Ensure the page content takes up only 80% of the screen width */
-        .page-content {
-            width: 80%;
-            margin: 0 auto; /* Center the content */
-            padding-top: 20px; /* Optional: add some space at the top */
+            
         }
     </style>
+    
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNHVDBHG"
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNHVDBHG"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <!-- Header (same for all pages) -->
-    <header>
-        <div class="container">
-            <!-- Hamburger menu icon (visible on small screens) -->
-            <div class="hamburger" onclick="toggleMenu()">
-                &#9776; <!-- Hamburger icon -->
-            </div>
-            <div class="logo-group">
-                <a href="./index.html" class="logo">
-                    <img src="./Images/Knight Group Logo.png" alt="Knight Group Logo" />
-                </a>
-                <!-- Hidden SEO h1 tag -->
-                <h1 style="position: absolute; left: -9999px;">About Knight Group - Handyman, Programming, and Custom Furniture Services</h1>
-                <!-- Visible h1 for company branding -->
-                <h2>Knight Group</h2>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li class="dropdown">
-                        <a href="#">Services</a>
-                        <ul class="dropdown-content">
-                            <li><a href="./Services/handyman.html">Handyman Services</a></li>
-                            <li><a href="./Services/programming&databases.html">Programming & Database Services</a></li>
-                            <li><a href="./Services/handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./contact.html">Contact Us</a></li>
-                    <li><a href="./galleries.html">Galleries</a></li>
-                </ul>
-            </nav>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=61567893472842"><img src="./Images/facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="./Images/GithubIcon.png" alt="Instagram"></a>
-                <a href="#"><img src="./Images/twitter-icon.png" alt="Twitter"></a>
-            </div>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <!-- Hamburger menu icon (visible on small screens) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon -->
         </div>
-    </header>
-    <!-- Mobile Menu (hidden by default) -->
-    <div class="mobile-menu">
-        <span class="close-menu" onclick="toggleMenu()">&times;</span> <!-- X button -->
-        <ul class="mobile-nav-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="#">Services</a>
-                <ul class="side-content">
-                    <li><a href="./Services/handyman.html">Handyman Services</a></li>
-                    <li><a href="./Services/programming&databases.html">Programming & Database Services</a></li>
-                    <li><a href="./Services/handcraftedfurniture&resins.html">Handcrafted Wooden Furniture<br><span style="display: block; text-align: center;">& Artistic Resins</span></a></li>
-    
-                </ul>
-            </li>
-            <li><a href="./contact.html">Contact Us</a></li>
-            <li><a href="./galleries.html">Galleries</a></li>
-        </ul>
+        <div class="logo-group">
+            <a href="./index.html" class="logo">
+                <img src="./Images/Knight Group Logo.png" alt="Knight Group Logo" />
+            </a>
+            <!-- Hidden SEO h1 tag -->
+            <h1 style="position: absolute; left: -9999px;">Professional Handyman, Programming, and Furniture Services - Knight Group</h1>
+            <!-- Visible h1 for company branding -->
+            <h2>Knight Group</h2>
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <ul class="dropdown-content">
+                        <li><a href="./Services/handyman.html">Handyman Services</a></li>
+                        <li><a href="./Services/programming&databases.html">Programming & Database Services</a></li>
+                        <li><a href="./Services/handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="./galleries.html">Galleries</a></li>
+            </ul>
+        </nav>
         <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=61567893472842"><img src="./Images/facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="./Images/GithubIcon.png" alt="Instagram"></a>
-            <a href="#"><img src="./Images/twitter-icon.png" alt="Twitter"></a>
+            <a href="https://www.facebook.com/KnightGroupServices/"><img src="./Images/Facebook_Logo_Primary.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/knight_group_services/"><img src="./Images/InstagramLogo.png" alt="Instagram"></a>
+            <a href="https://m.me/KnightGroupServices"><img src="./Images/Messenger.png" alt="Messenger"></a>
+            <a href="https://www.tiktok.com/@knightgroupservices"><img src="./Images/TikTokLogo.png" alt="TikTok"></a>
+            <a href="https://x.com/KnightGroupSvcs"><img src="./Images/XLogoWhite.png" alt="X"></a>
+            <a href="https://www.pinterest.com/KnightGroupService/"><img src="./Images/PintrestLogo.png" alt="Pintrest"></a>
         </div>
     </div>
-    
+</header>
+<!-- Mobile Menu (hidden by default) -->
+<div class="mobile-menu">
+    <span class="close-menu" onclick="toggleMenu()">&times;</span> <!-- X button -->
+    <ul class="mobile-nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="#">Services</a>
+            <ul class="side-content">
+                <li><a href="./Services/handyman.html">Handyman Services</a></li>
+                <li><a href="./Services/programming&databases.html">Programming & Database Services</a></li>
+                <li><a href="./Services/handcraftedfurniture&resins.html">Handcrafted Wooden Furniture<br><span style="display: block; text-align: center;">& Artistic Resins</span></a></li>
+
+            </ul>
+        </li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <li><a href="./galleries.html">Galleries</a></li>
+    </ul>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/KnightGroupServices/"><img src="./Images/Facebook_Logo_Primary.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/knight_group_services/"><img src="./Images/InstagramLogo.png" alt="Instagram"></a>
+        <a href="https://m.me/KnightGroupServices"><img src="./Images/Messenger.png" alt="Messenger"></a>
+        <a href="https://www.tiktok.com/@knightgroupservices"><img src="./Images/TikTokLogo.png" alt="TikTok"></a>
+        <a href="https://x.com/KnightGroupSvcs"><img src="./Images/XLogoWhite.png" alt="X"></a>
+        <a href="https://www.pinterest.com/KnightGroupService/"><img src="./Images/PintrestLogo.png" alt="Pintrest"></a>
+    </div>
+</div>
+
 
     <!-- Page Title Section -->
     <section class="page-title">
-        <h2>About Knight Group</h2>
+        <h2>Galleries</h2>
     </section>
 
-    <!-- About Us Content -->
-    <section class="page-content">
-        <h2>Our Mission</h2>
-        <p>At Knight Group, our mission is to bring expertise and dedication to every area we operate in, from technology services to property management and furniture craftsmanship. Our goal is to offer customized, reliable services while building long-term relationships with clients and communities alike. We continuously aim to bridge the gap between quality and affordability, delivering excellence with every project we undertake.</p>
+    <!-- Handyman Services Gallery -->
+    <div class="collapsible-header" onclick="toggleCollapsible('handyman')">
+        <div class="header-content">
+            <h2>Handyman Services</h2>
+            <p>Here are some photos and videos of our handyman services, showcasing plumbing, electrical work, and general repairs.</p>
+        </div>
+        <span class="arrow arrow-up">&#x25BC;</span> 
+    </div>
+    
+    
+        <div id="handyman" class="collapsible-content">
 
-        <h2>Our Story</h2>
-        <p>The Knight Group began its journey in 1995, founded as a computer networking company in the heart of Safety Harbor on Main Street. Back then, we specialized in managing mainframes and servers for businesses like <strong>Ruth Eckerd Hall</strong> and the <strong>Safety Harbor Spa</strong>. Over the years, as technology evolved, so did we. Our services expanded into database management, handling SQL and SSIS for clients seeking robust data solutions.</p>
+            <!-- Photos Section -->
+            <div class="collapsible-header" onclick="toggleSubsection('handyman-photos', 'handyman-videos')">
+                <h3>Handyman Photos</h3>
+                <span class="arrow arrow-up">&#x25BC;</span>
+            </div>
+            <div id="handyman-photos" class="collapsible-content">
+                <div class="gallery-grid">
+                    <img src="./GalleryImages/09101A71-.jpg" alt="Handyman Photo 1" loading="lazy">
+                    <img src="./GalleryImages/0B25E8A2-.jpg" alt="Handyman Photo 2" loading="lazy">
+                    <img src="./GalleryImages/0DA4B78A-.jpg" alt="Handyman Photo 3" loading="lazy">
+                    <img src="./GalleryImages/20221111_115258.jpg" alt="Handyman Photo 4" loading="lazy">
+                    <img src="./GalleryImages/20221121_144308.jpg" alt="Handyman Photo 5" loading="lazy">
+                    <img src="./GalleryImages/20230111_121854.jpg" alt="Handyman Photo 6" loading="lazy">
+                    <img src="./GalleryImages/20230215_141043.jpg" alt="Handyman Photo 7" loading="lazy">
+                    <img src="./GalleryImages/20230216_184144.jpg" alt="Handyman Photo 8" loading="lazy">
+                    <img src="./GalleryImages/20230713_115127.jpg" alt="Handyman Photo 9" loading="lazy">
+                    <img src="./GalleryImages/MoldyWall.jpg" alt="Handyman Photo 10" loading="lazy">
+                    <img src="./GalleryImages/36CF828F-.jpg" alt="Handyman Photo 11" loading="lazy">
+                    <img src="./GalleryImages/3824DC9D-.jpg" alt="Handyman Photo 12" loading="lazy">
+                    <img src="./GalleryImages/84E6C5B8-.jpg" alt="Handyman Photo 13" loading="lazy">
+                </div>
+            </div>
 
-        <p>As we achieved success in the tech sector, we leveraged this growth to acquire properties throughout Pinellas County, expanding into property management. This opened a new chapter for Knight Group, where we not only manage properties but also renovate and restore them. With years of experience under our belt, we seamlessly merged our technical background with hands-on management of real estate, providing comprehensive services for both property owners and tenants.</p>
-
-        <h2>Handyman Services</h2>
-        <p>Our handyman services are driven by over 10 years of experience in the field. Our primary handyman worked as a journeyman plumber with Roto Rooter in the Pittsburgh area of Pennsylvania. Although licensed in PA, we offer a wide range of handyman and contracting work without licensing here in Florida. This includes general repairs, home improvement projects, plumbing repairs, light carpentry, drywall installation, and remodeling work. Many tasks can legally be performed without needing a license, covering a significant range of repairs and improvements, making us a one-stop solution for homeowners and property managers alike.</p>
-
-        <h2>Programming & Database Services</h2>
-        <p>Our roots in computer networking have grown into advanced programming and database management. Whether you need customized programming solutions, database design, or SQL and SSIS implementations, Knight Group has the expertise. We specialize in streamlining data workflows, automating processes, and developing custom applications tailored to your business needs. Our technology services are built on decades of experience, ensuring top-notch results for every client.</p>
-
-        <h2>Handcrafted Wooden Furniture & Artistic Resins</h2>
-        <p>In addition to our tech and property services, our retired Knights have taken up a passion for woodworking. Our team sources rare and exotic woods, crafting unique pieces of furniture that combine traditional craftsmanship with modern creativity. Using epoxy resins, we create mesmerizing designs, encasing objects within the furniture to bring them to life. Our resins are also available in a wide variety of colors, resulting in a shiny and durable finish that adds elegance to any space.</p>
-
-        <p>Every piece is a work of art, reflecting the dedication and skill of our team. Whether it's a rustic dining table or an epoxy-encased masterpiece, our furniture stands out for its creativity and quality. This new division of the Knight Group represents the same attention to detail that has driven our success for decades in other industries.</p>
+            <!-- Videos Section -->
+            <div class="collapsible-header" onclick="toggleSubsection('handyman-videos', 'handyman-photos')">
+                <h3>Handyman Videos</h3>
+                <span class="arrow arrow-up">&#x25BC;</span>
+            </div>
+            <div id="handyman-videos" class="collapsible-content">
+                <div class="gallery-grid">
+                    <video controls loading="lazy">
+                        <source src="./GalleryImages/IMG_2338.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Footer (same for all pages) -->
+    <!-- Handcrafted Wooden Furniture & Artistic Resins -->
+    <section class="gallery-section">
+        <div class="collapsible-header" onclick="toggleCollapsible('furniture')">
+            <div class="header-content">
+                <h2>Handcrafted Wooden Furniture & Artistic Resins</h2>
+                <p>Our gallery of beautiful handcrafted furniture and resin work. See the craftsmanship in every piece.</p>
+            </div>
+            <span class="arrow arrow-up">&#x25BC;</span>
+        </div>
+        <div id="furniture" class="collapsible-content">
+    
+
+            <!-- Photos -->
+            <div class="gallery-grid">
+                <img src="./GalleryImages/wood1.jpg" alt="Furniture Photo 1" loading="lazy">
+                <img src="./GalleryImages/wood2.jpg" alt="Furniture Photo 2" loading="lazy">
+                <img src="./GalleryImages/wood3.jpg" alt="Furniture Photo 3" loading="lazy">
+                <img src="./GalleryImages/wood4.jpg" alt="Furniture Photo 4" loading="lazy">
+                <img src="./GalleryImages/wood5.jpg" alt="Furniture Photo 5" loading="lazy">
+                <img src="./GalleryImages/wood6.jpg" alt="Furniture Photo 6" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Programming & Database Services -->
+    <section class="gallery-section">
+        <div class="collapsible-header" onclick="toggleCollapsible('programming')">
+            <div class="header-content">
+                <h2>Programming & Database Services</h2>
+                <p>Examples of our programming projects, database implementations, and more.</p>
+            </div>
+            <span class="arrow arrow-up">&#x25BC;</span>
+        </div>
+        <div id="programming" class="collapsible-content">
+    
+            
+            <!-- Placeholder for now -->
+            <div class="gallery-grid">
+                <img src="./GalleryImages/ProgrammingPlaceholder.jpg" alt="Programming Project 1" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="left">
-            © 2024 Knight Group. All rights reserved.
+        © 1995 - 2024 Knight Group. All rights reserved.
         </div>
         <div class="center">
             <a href="./PolicyPages/returnpolicy.html">Refund & Return Policy</a> |
@@ -190,7 +332,48 @@
             <a href="./PolicyPages/terms.html">Terms of Service</a>
         </div>
     </footer>
+    <script src="./JS/script.js"></script>
+    <script>
+        function toggleCollapsible(id) {
+            const content = document.getElementById(id);
+            const arrow = content.previousElementSibling.querySelector('.arrow');
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                arrow.classList.remove('arrow-up');
+                arrow.classList.add('arrow-down');
+            } else {
+                content.style.display = "block";
+                arrow.classList.remove('arrow-down');
+                arrow.classList.add('arrow-up');
+            }
+        }
 
-    <script src="./JS/script.js"></script> <!-- Adjusted path to JS -->
+        function toggleSubsection(openId, closeId) {
+            const openContent = document.getElementById(openId);
+            const closeContent = document.getElementById(closeId);
+            const openArrow = openContent.previousElementSibling.querySelector('.arrow');
+            const closeArrow = closeContent.previousElementSibling.querySelector('.arrow');
+            
+            if (openContent.style.display === "block") {
+                openContent.style.display = "none";
+                openArrow.classList.remove('arrow-up');
+                openArrow.classList.add('arrow-down');
+            } else {
+                openContent.style.display = "block";
+                openArrow.classList.remove('arrow-down');
+                openArrow.classList.add('arrow-up');
+                closeContent.style.display = "none";
+                closeArrow.classList.remove('arrow-up');
+                closeArrow.classList.add('arrow-down');
+            }
+        }
+
+        // Open all collapsible content by default
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.collapsible-content').forEach(content => {
+                content.style.display = "block";
+            });
+        });
+    </script>
 </body>
 </html>
