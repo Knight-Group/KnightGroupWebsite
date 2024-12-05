@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: lightgrey;
-    color: #1d1c1c;
+    background-color: #1d1c1c;
+    color: white;
     max-width: 1990px;
     margin: 0 auto;
 }
