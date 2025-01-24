@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Knight Group | Handyman, Programming, and Custom Furniture in Pinellas County</title>
     <meta name="description" content="Learn about Knight Group's history, expertise in handyman services, programming solutions, and handcrafted furniture in Pinellas County.">
-    <link rel="icon" href="./Images/android-chrome-512x512.png" type="image/png">   
+    <link rel="icon" href="/Images/android-chrome-512x512.png" type="image/png">   
   
         <!-- Local Business Schema Markup -->
         <script type="application/ld+json">
@@ -54,7 +54,7 @@
             }
             </script>
             
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
 
     <!-- Inline CSS for this page -->
     <style>
@@ -82,6 +82,16 @@
             margin: 0 auto; /* Center the content */
             padding-top: 20px; /* Optional: add some space at the top */
         }
+        .button-group {
+        display: flex;
+        gap: 15px; /* Space between the buttons */
+        justify-content: right; /* Align buttons to the right */
+        align-items: center; /* Ensure vertical alignment */
+        margin-top: -30px; /* Adjust this value to align correctly with index.html */
+        position: relative;
+}
+
+
     </style>
 </head>
 <body>
@@ -97,56 +107,62 @@
                 &#9776; <!-- Hamburger icon -->
             </div>
             <div class="logo-group">
-                <a href="./index.html" class="logo">
-                    <img src="./Images/Knight Group Logo.png" alt="Knight Group Logo" />
+                <a href="/index.html" class="logo">
+                    <img src="/Images/Knight Group Logo.png" alt="Knight Group Logo" />
                 </a>
                 <!-- Hidden SEO h1 tag -->
-                <h1 style="position: absolute; left: -9999px;">About Knight Group - Handyman, Programming, and Custom Furniture Services</h1>
+                <h1 style="position: absolute; left: -9999px;">About Knight Group - Handyman Services & Software Development</h1>
                 <!-- Visible h1 for company branding -->
                 <h2>Knight Group</h2>
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
                     <li class="dropdown">
                         <a href="#">Services</a>
                         <ul class="dropdown-content">
-                            <li><a href="./Services/handyman.html">Handyman Services</a></li>
-                            <li><a href="./Services/programming&databases.html">Programming & Database Services</a></li>
-                            <li><a href="./Services/handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li>
+                            <li><a href="/Services/handyman.html">Handyman Services</a></li>
+                            <li><a href="/Services/programming&databases.html">Programming & Development Solutions</a></li>
+                        <!--    <li><a href="/Services/handcraftedfurniture&resins.html">Handcrafted Wooden Furniture & Artistic Resins</a></li> -->
                         </ul>
                     </li>
-                    <li><a href="./contact.html">Contact Us</a></li>
-                    <li><a href="./galleries.html">Galleries</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                    <li><a href="/galleries.html">Galleries</a></li>
                 </ul>
             </nav>
             <div class="social-icons">
-                <a href="https://www.facebook.com/KnightGroupServices/"><img src="./Images/Facebook_Logo_Primary.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/knight_group_services/"><img src="./Images/InstagramLogo.png" alt="Instagram"></a>
-                <a href="https://m.me/KnightGroupServices"><img src="./Images/Messenger.png" alt="Messenger"></a>
-                <a href="https://www.tiktok.com/@knightgroupservices"><img src="./Images/TikTokLogo.png" alt="TikTok"></a>
-                <a href="https://x.com/KnightGroupSvcs"><img src="./Images/XLogoWhite.png" alt="X"></a>
-                <a href="https://www.pinterest.com/KnightGroupService/"><img src="./Images/PintrestLogo.png" alt="Pintrest"></a>
+                <a href="https://www.facebook.com/KnightGroupServices/"><img src="/Images/Facebook_Logo_Primary.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/knight_group_services/"><img src="/Images/InstagramLogo.png" alt="Instagram"></a>
+                <a href="https://m.me/KnightGroupServices"><img src="/Images/Messenger.png" alt="Messenger"></a>
+                <a href="https://www.tiktok.com/@knightgroupservices"><img src="/Images/TikTokLogo.png" alt="TikTok"></a>
+                <a href="https://x.com/KnightGroupSvcs"><img src="/Images/XLogoWhite.png" alt="X"></a>
+                <a href="https://www.pinterest.com/KnightGroupService/"><img src="/Images/PintrestLogo.png" alt="Pintrest"></a>
             </div>
         </div>
+        <div class="button-group">
+            <button onclick="window.location.href='tel:8136493341'">Call Now</button>
+            <button onclick="window.location.href='sms:8136493341'">Text Msg</button>
+            <button onclick="window.location.href='mailto:nickknight488@gmail.com'">Email Us</button>
+        </div>
+    </div>
     </header>
     <!-- Mobile Menu (hidden by default) -->
     <div class="mobile-menu">
         <span class="close-menu" onclick="toggleMenu()">&times;</span> <!-- X button -->
         <ul class="mobile-nav-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
             <li><a href="#">Services</a>
                 <ul class="side-content">
-                    <li><a href="./Services/handyman.html">Handyman Services</a></li>
-                    <li><a href="./Services/programming&databases.html">Programming & Database Services</a></li>
-                    <li><a href="./Services/handcraftedfurniture&resins.html">Handcrafted Wooden Furniture<br><span style="display: block; text-align: center;">& Artistic Resins</span></a></li>
+                    <li><a href="/Services/handyman.html">Handyman Services</a></li>
+                    <li><a href="/Services/programming&databases.html">Programming & Development Solutions</a></li>
+                <!--    <li><a href="/Services/handcraftedfurniture&resins.html">Handcrafted Wooden Furniture<br><span style="display: block; text-align: center;">& Artistic Resins</span></a></li> -->
     
                 </ul>
             </li>
-            <li><a href="./contact.html">Contact Us</a></li>
-            <li><a href="./galleries.html">Galleries</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/galleries.html">Galleries</a></li>
         </ul>
         <div class="social-icons">
             <a href="https://www.facebook.com/KnightGroupServices/"><img src="./Images/Facebook_Logo_Primary.png" alt="Facebook"></a>
@@ -165,26 +181,58 @@
     </section>
 
     <!-- About Us Content -->
-    <section class="page-content">
-        <h2>Our Mission</h2>
-        <p>At Knight Group, our mission is to bring expertise and dedication to every area we operate in, from technology services to property management and furniture craftsmanship. Our goal is to offer customized, reliable services while building long-term relationships with clients and communities alike. We continuously aim to bridge the gap between quality and affordability, delivering excellence with every project we undertake.</p>
-
-        <h2>Our Story</h2>
-        <p>The Knight Group began its journey in 1995, founded as a computer networking company in the heart of Safety Harbor on Main Street. Back then, we specialized in managing mainframes and servers for businesses like <strong>Ruth Eckerd Hall</strong> and the <strong>Safety Harbor Spa</strong>. Over the years, as technology evolved, so did we. Our services expanded into database management, handling SQL and SSIS for clients seeking robust data solutions.</p>
-
-        <p>As we achieved success in the tech sector, we leveraged this growth to acquire properties throughout Pinellas County, expanding into property management. This opened a new chapter for Knight Group, where we not only manage properties but also renovate and restore them. With years of experience under our belt, we seamlessly merged our technical background with hands-on management of real estate, providing comprehensive services for both property owners and tenants.</p>
-
-        <h2>Handyman Services</h2>
-        <p>Our handyman services are driven by over 10 years of experience in the field. Our primary handyman worked as a journeyman plumber with Roto Rooter in the Pittsburgh area of Pennsylvania. Although licensed in PA, we offer a wide range of handyman and contracting work without licensing here in Florida. This includes general repairs, home improvement projects, plumbing repairs, light carpentry, drywall installation, and remodeling work. Many tasks can legally be performed without needing a license, covering a significant range of repairs and improvements, making us a one-stop solution for homeowners and property managers alike.</p>
-
-        <h2>Programming & Database Services</h2>
-        <p>Our roots in computer networking have grown into advanced programming and database management. Whether you need customized programming solutions, database design, or SQL and SSIS implementations, Knight Group has the expertise. We specialize in streamlining data workflows, automating processes, and developing custom applications tailored to your business needs. Our technology services are built on decades of experience, ensuring top-notch results for every client.</p>
-
-        <h2>Handcrafted Wooden Furniture & Artistic Resins</h2>
-        <p>In addition to our tech and property services, our retired Knights have taken up a passion for woodworking. Our team sources rare and exotic woods, crafting unique pieces of furniture that combine traditional craftsmanship with modern creativity. Using epoxy resins, we create mesmerizing designs, encasing objects within the furniture to bring them to life. Our resins are also available in a wide variety of colors, resulting in a shiny and durable finish that adds elegance to any space.</p>
-
-        <p>Every piece is a work of art, reflecting the dedication and skill of our team. Whether it's a rustic dining table or an epoxy-encased masterpiece, our furniture stands out for its creativity and quality. This new division of the Knight Group represents the same attention to detail that has driven our success for decades in other industries.</p>
-    </section>
+        <section class="page-content">
+            <h2>Our Mission</h2>
+            <p>At Knight Group, our mission is to provide high-quality, reliable, and affordable services that cater to both homeowners and businesses. We strive to offer comprehensive handyman solutions and innovative custom development services, ensuring our clients receive tailored solutions that enhance their spaces and operations. Whether it’s a home repair, an auto service, or a technology solution, we are committed to delivering excellence and building long-term relationships based on trust and satisfaction.</p>
+        
+            <h2>Our Story</h2>
+            <p>Originally established in 1995 in Safety Harbor, Florida, Knight Group started as a computer networking company providing mainframe and server management for clients such as <strong>Ruth Eckerd Hall</strong> and the <strong>Safety Harbor Spa</strong>. Over time, as technology evolved, we expanded our focus to include database management, IT consulting, and custom programming solutions to help businesses optimize their operations.</p>
+        
+            <p>Recognizing the growing need for property management services, we leveraged our success in IT to invest in and manage properties throughout Pinellas County. This transition led to the development of our handyman services, helping homeowners and businesses with maintenance, renovations, and general repairs.</p>
+        
+            <h2>Relaunching Knight Group Handyman Services LLC</h2>
+            <p>In 2024, we restructured Knight Group to better meet the demands of our clients, launching <strong>Knight Group Handyman Services LLC</strong>. Our experienced team now offers comprehensive home repair and improvement solutions, alongside specialized auto repair services for customers seeking reliable, cost-effective solutions.</p>
+        
+            <p>Our lead handyman, with extensive experience as a journeyman plumber with Roto Rooter in Pennsylvania, brings a wealth of industry knowledge. While we do not currently hold a general contractor’s license in Florida, we adhere to state regulations by providing services that do not require permits and partnering with licensed professionals when necessary.</p>
+        
+            <p>Our handyman and auto services include:</p>
+            <ul>
+                <li>General home repairs and maintenance</li>
+                <li>Plumbing repairs and installations</li>
+                <li>Drywall installation and patching</li>
+                <li>Small-scale remodeling projects</li>
+                <li>Installing fixtures and fans</li>
+                <li>Auto part replacements (alternators, starters, brakes, etc.)</li>
+                <li>Can do it all!</li>
+            </ul>
+            <p>We are fully insured and hold workers' compensation exemptions to provide our clients with peace of mind.</p>
+        
+            <h2>Knight Group Custom Development & IT Solutions</h2>
+            <p>In parallel with our handyman services, we continue to grow our technology offerings through <strong>Knight Group Custom Development & IT Solutions</strong>. We provide businesses and individuals with tailored solutions that range from web development to remote IT support and automation.</p>
+        
+            <p>Our technology services include:</p>
+            <ul>
+                <li>Custom web development and application design</li>
+                <li>Database design and optimization</li>
+                <li>Remote IT support and troubleshooting</li>
+                <li>API integrations and workflow automation</li>
+                <li>Cloud solutions and data security</li>
+            </ul>
+        
+            <p>Whether you're looking to optimize your business operations, improve your online presence, or secure your digital assets, Knight Group has the expertise to deliver innovative and scalable solutions.</p>
+        
+            <h2>Our Commitment to Excellence</h2>
+            <p>We are committed to delivering high-quality services and adapting to the evolving needs of our clients. Our comprehensive approach, combining practical experience with technical expertise, ensures that we offer a wide range of solutions under one trusted brand.</p>
+        
+            <p>At Knight Group, customer satisfaction is our priority. We work closely with each client to understand their needs and provide solutions that are both effective and affordable.</p>
+        
+            <h2>Looking to the Future</h2>
+            <p>As we continue to expand our services, our vision is to become the go-to provider for handyman and custom development services in Pinellas County and beyond. We aim to provide innovative, efficient, and high-quality solutions that empower our clients to focus on what matters most.</p>
+        
+            <p>Thank you for considering Knight Group. We look forward to serving you with integrity, professionalism, and a commitment to excellence.</p>
+        </section>
+           
+    
 
     <!-- Footer (same for all pages) -->
     <footer>
@@ -192,12 +240,12 @@
             © 1995 - 2024 Knight Group. All rights reserved.
         </div>
         <div class="center">
-            <a href="./PolicyPages/returnpolicy.html">Refund & Return Policy</a> |
-            <a href="./PolicyPages/privacy-policy.html">Privacy Policy</a> | 
-            <a href="./PolicyPages/terms.html">Terms of Service</a>
+            <a href="/PolicyPages/returnpolicy.html">Refund & Return Policy</a> |
+            <a href="/PolicyPages/privacy-policy.html">Privacy Policy</a> | 
+            <a href="/PolicyPages/terms.html">Terms of Service</a>
         </div>
     </footer>
 
-    <script src="./JS/script.js"></script> <!-- Adjusted path to JS -->
+    <script src="/JS/script.js"></script> <!-- Adjusted path to JS -->
 </body>
 </html>
