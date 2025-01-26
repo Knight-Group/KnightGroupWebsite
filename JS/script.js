@@ -36,3 +36,22 @@ window.addEventListener('load', function() {
         window.location.href = "https://KnightGroup.com";
     }
 });
+
+// Function to open the modal
+function openModal(imageSrc) {
+    document.getElementById("imageModal").style.display = "block";
+    document.getElementById("modalImage").src = imageSrc;
+}
+
+// Function to close the modal
+function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+}
+
+// Close modal when clicking outside of the image
+window.onclick = function(event) {
+    let modal = document.getElementById("imageModal");
+    if (event.target === modal) {
+        closeModal();
+    }
+}
