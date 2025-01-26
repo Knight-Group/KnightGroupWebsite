@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5;url=/">
+    <title>Page Not Found - Redirecting</title>
+    <script>
+        // Define URL mappings for old .html pages
+        var redirects = {
+            "/index.html": "/",
+            "/about.html": "/about",
+            "/contact.html": "/contact",
+            "/Services/handyman.html": "/Services/handyman",
+            "/Services/programming&databases.html": "/Services/programming&databases",
+            "/PolicyPages/returnpolicy.html": "/PolicyPages/returnpolicy",
+            "/PolicyPages/privacy-policy.html": "/PolicyPages/privacy-policy",
+            "/PolicyPages/terms.html": "/PolicyPages/terms"
+        };
+
+        // Get the current path
+        var path = window.location.pathname;
+
+        // Redirect if it matches a known old URL
+        if (redirects[path]) {
+            window.location.replace(redirects[path]);
+        } else {
+            // If the page is not found, redirect to the homepage
+            window.location.replace("/");
+        }
+    </script>
+</head>
+<body>
+    <h1>Oops! Page Not Found</h1>
+    <p>You will be redirected to the homepage shortly. If not, <a href="/">click here</a>.</p>
+</body>
+</html>
