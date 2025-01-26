@@ -21,17 +21,30 @@
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
                 "name": "Knight Group",
+                "image": "https://www.knightgroup.com/Images/android-chrome-512x512.png",
                 "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "7th St S",
                     "addressLocality": "Safety Harbor",
                     "addressRegion": "FL",
-                    "postalCode": "34695"
+                    "postalCode": "34695",
+                    "addressCountry": "US"
                 },
-                "description": "Providing professional handyman, programming, and custom furniture services.",
+                "serviceArea": {
+                    "@type": "AdministrativeArea",
+                    "name": "Pinellas County, FL"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "27.9906",
+                    "longitude": "-82.6933"
+                },
+                "description": "Knight Group offers custom programming, automation, and IT solutions tailored to your business needs. Specializing in web development, database management, workflow automation, and cloud integration, we help businesses streamline operations and maximize efficiency. Contact us today for expert IT services!"
                 "email": "nknight@knightgroup.com",
                 "telephone": "+1-813-649-3341",
-                "openingHours": "Mo,Tu,We,Th,Fr 08:00-17:00"
+                "openingHours": "Mo-Fr 08:00-17:00",
+                "url": "https://www.knightgroup.com",
+                "priceRange": "$$"
             }
             </script>
             
@@ -39,26 +52,25 @@
         <!-- Bread Crumbs-->
         <script type="application/ld+json">
             {
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.knightgroup.com/"
-              },{
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Services",
-                "item": "https://www.knightgroup.com/services"
-              },{
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Programming & IT Solutions",
-                "item": "https://www.knightgroup.com/Services/programming&databases.html"
-              }]
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.knightgroup.com/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Programming & IT Solutions",
+                        "item": "https://www.knightgroup.com/Services/programming&databases.html"
+                    }
+                ]
             }
-            </script>
+        </script>
+        
             
     <link rel="stylesheet" href="/CSS/style.css">
 
