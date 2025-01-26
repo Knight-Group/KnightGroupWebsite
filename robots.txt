@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /Services/handcraftedfurniture&resins.html
 
 Sitemap: https://www.knightgroup.com/sitemap.xml
