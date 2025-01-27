@@ -55,3 +55,23 @@ window.onclick = function(event) {
         closeModal();
     }
 }
+
+(function() {
+    // Check if we are running on GitHub Pages or your live domain
+    let isGitHubPages = window.location.hostname.includes('github.io') || window.location.hostname.includes('knightgroup.com');
+
+    if (isGitHubPages) {
+        document.querySelectorAll('a').forEach(link => {
+            let href = link.getAttribute('href');
+
+            // Convert /index.html to /
+            if (href === '/index.html') {
+                link.setAttribute('href', '/');
+            } 
+            // Remove .html for other internal links
+            else if (href && href.endsWith('.html') && !href.includes('http')) {
+                link.setAttribute('href', href.replace('.html', ''));
+            }
+        });
+    }
+})();
