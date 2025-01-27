@@ -56,7 +56,7 @@ window.onclick = function(event) {
     }
 }
 
-(function() {
+function adjustLinks() {
     // Check if we are running on GitHub Pages or your live domain
     let isGitHubPages = window.location.hostname.includes('github.io') || window.location.hostname.includes('knightgroup.com');
 
@@ -74,4 +74,7 @@ window.onclick = function(event) {
             }
         });
     }
-})();
+}
+
+// Call the function after DOM content is loaded
+document.addEventListener("DOMContentLoaded", adjustLinks);
