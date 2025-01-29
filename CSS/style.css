@@ -482,10 +482,11 @@ footer a:hover {
         background-color: maroon;
         color: white;
     }
-    .button-group {
-        display: flex;
-        gap: 15px;
-        margin-top: -15px;
+    .button-group button:not(#theme-toggle) {
+        display: none !important;
+    }
+    header {
+        height: 70px;
     }
     body {
         font-size: 0.9em; 
