@@ -75,6 +75,34 @@ function adjustLinks() {
         });
     }
 }
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("theme-toggle");
+    const body = document.body;
+    const header = document.querySelector("header");
+
+    // Check local storage for theme preference
+    if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+        header.classList.add("dark-mode");
+        toggleButton.textContent = "Light Mode";
+    }
+
+    toggleButton.addEventListener("click", function () {
+        if (body.classList.contains("dark-mode")) {
+            // Switch to light mode
+            body.classList.remove("dark-mode");
+            header.classList.remove("dark-mode");
+            toggleButton.textContent = "Dark Mode";
+            localStorage.setItem("theme", "light");
+        } else {
+            // Switch to dark mode
+            body.classList.add("dark-mode");
+            header.classList.add("dark-mode");
+            toggleButton.textContent = "Light Mode";
+            localStorage.setItem("theme", "dark");
+        }
+    });
+});
 
 // Call the function after DOM content is loaded
 document.addEventListener("DOMContentLoaded", adjustLinks);
