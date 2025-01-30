@@ -463,11 +463,9 @@ footer a:hover {
 .mobile-menu {
     display: none;
     position: fixed;
-    top: 10%; 
     left: 0; 
     right: unset; 
     max-width: fit-content; 
-    height: 50%; 
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1000;
     padding: 20px 15px; 
@@ -480,10 +478,29 @@ footer a:hover {
 @media (max-width: 840px) {
     .mobile-nav-links a:hover {
         background-color: maroon;
-        color: white;
+        color: white !important;
     }
-    .button-group button:not(#theme-toggle) {
+    .mobile-nav-links {
+        height: 90%;
+    }
+    header .button-group button:not(#theme-toggle) {
         display: none !important;
+    }
+    .mobile-menu .button-group {
+        bottom: 0 !important;
+    }
+    .dark-mode .hamburger {
+        color: rgb(252, 251, 251) !important;
+    }
+    .dark-mode .mobile-nav-links a:hover {
+        background-color: maroon;
+        color: white !important;
+    }
+    .dark-mode .mobile-nav-links a {
+        color: black !important;
+    }
+    .dark-mode .mobile-menu {
+        background-color: rgba(0, 0, 0, 0.7) !important;
     }
     header {
         height: 70px;
@@ -516,9 +533,12 @@ footer a:hover {
 
     /* Adjust the logo and h1 to align with the hamburger menu */
     .logo-group {
+        width: 100vw;
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        white-space: nowrap;
+        text-overflow: ellipsis; /* Shows "..." if text is too long */
     }
     .logo-group img {
         height: 5vh; 
