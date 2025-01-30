@@ -39,7 +39,11 @@ header {
     background: linear-gradient(to bottom right, rgba(15, 15, 15, 0.9) 20%, rgba(30, 30, 30, 0.9) 60%, rgba(10, 10, 10, 0.9) 100%);
     color: white;
 }
+.dark-mode tr{
+    color: white !important;
+    background: linear-gradient(to bottom right, rgb(202, 200, 200) 20%, rgba(250, 248, 248, 0.9) 60%, rgba(141, 139, 139, 0.8) 100%);
 
+}
 .dark-mode a {
     color: white !important;
 }
@@ -58,9 +62,7 @@ header {
 .dark-mode a {
     color: white !important;
 }
-.dark-mode a:hover {
-    color: maroon !important;
-}
+
 .dark-mode .hero-text {
     background: linear-gradient(to bottom right, rgba(15, 15, 15, 0.9) 20%, rgba(30, 30, 30, 0.9) 60%, rgba(10, 10, 10, 0.9) 100%);
 }
@@ -655,7 +657,7 @@ li a {
     color: black !important
 }
 li a:hover {
-    color: maroon !important;
+    color: red !important;
 }
 nav ul li {
     margin: 0 5px; 
