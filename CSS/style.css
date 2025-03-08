@@ -877,6 +877,11 @@ nav .dropdown-content {
     .pricing-section h2 {
         font-size: 1.8em;
     }
+    .qualification-container img {
+        max-width: 250px !important; /* Adjust image size */
+        height: auto;
+        border-radius: 5px; /* Optional: Rounded corners */
+    }
 }
 
 @media (max-width: 480px) {
@@ -886,6 +891,11 @@ nav .dropdown-content {
 
     .pricing-table table {
         width: 100%;
+    }
+    .qualification-container img {
+        max-width: 175px !important; /* Adjust image size */
+        height: auto;
+        border-radius: 5px; /* Optional: Rounded corners */
     }
 }
 
@@ -977,4 +987,44 @@ nav .dropdown-content {
 .portfolio-item {
     align-content: center;
     align-items: center;
+}
+.qualifications {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between each row */
+}
+
+.qualification-container {
+    display: flex;
+    flex-direction: column; /* Stacks H2 above the content */
+    align-items: flex-start; /* Aligns text content to the left */
+    gap: 10px; /* Space between elements */
+    max-width: 1000px; /* Adjust as needed */
+    margin: 0 auto; /* Centers the content */
+}
+
+.qualification-container h2 {
+    width: 100%; /* Ensures it spans the full width */
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.qualification-content {
+    display: flex;
+    align-items: center; /* Aligns image and text vertically */
+    gap: 20px; /* Space between image and text */
+}
+
+.qualification-container img {
+    width: 500px; /* Adjust image size */
+    height: auto;
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.qualification-container p {
+    flex: 1; /* Text expands to fill remaining space */
+    font-size: 16px;
+    line-height: 1.5;
 }
