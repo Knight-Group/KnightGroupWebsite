@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),
+            dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MNHVDBHG');
+    </script>
+    <!-- End Google Tag Manager -->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/android-chrome-512x512.png" type="image/png">   
+    <title>Project Gallery | Knight Group Handyman Services</title>
+    <meta name="description" content="Browse our project gallery showcasing quality handyman work in Pinellas County. See examples of our home repairs, renovations, and custom projects completed by Knight Group.">
+    <link rel="canonical" href="https://www.knightgroup.com/galleries">
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:url" content="https://www.knightgroup.com/galleries">
+    <meta property="og:title" content="Project Gallery | Knight Group Handyman Services">
+    <meta property="og:description" content="Browse our project gallery showcasing quality handyman work in Pinellas County. See examples of repairs, renovations, and custom projects.">
+    <meta property="og:image" content="https://www.knightgroup.com/Images/handyman.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Knight Group">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@KnightGroupSvcs">
+    <meta name="twitter:creator" content="@KnightGroupSvcs">
+    <meta name="twitter:title" content="Project Gallery | Knight Group Handyman Services">
+    <meta name="twitter:description" content="Browse our project gallery showcasing quality handyman work in Pinellas County. See examples of repairs, renovations, and custom projects.">
+    <meta name="twitter:image" content="https://www.knightgroup.com/Images/handyman.jpg">
+    <meta name="twitter:url" content="https://www.knightgroup.com/galleries">
+
+    <!-- Local Business Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Knight Group Handyman Services LLC",
+            "image": "https://www.knightgroup.com/Images/android-chrome-512x512.png",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "7th St S",
+                "addressLocality": "Safety Harbor",
+                "addressRegion": "FL",
+                "postalCode": "34695",
+                "addressCountry": "US"
+            },
+            "serviceArea": {
+                "@type": "AdministrativeArea",
+                "name": "Pinellas County, FL"
+            },              
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "27.9906",
+                "longitude": "-82.6933"
+            },
+            "description": "Knight Group Handyman Services LLC provides professional, registered and insured handyman services throughout Pinellas County. Specializing in home repairs, maintenance, renovations with over 15 years of experience.",
+            "email": "nknight@knightgroup.com",
+            "telephone": "+1-813-649-3341",
+            "openingHours": "Mo-Fr 08:00-17:00",
+            "url": "https://www.knightgroup.com",
+            "priceRange": "$$"
+        }        
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.knightgroup.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Gallery",
+                    "item": "https://www.knightgroup.com/galleries"
+                }
+            ]
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8fafc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Gallery Page Styles */
+
+        /* Gallery Section */
+
+        /* Page Hero */
+        .page-hero {
+            background: 
+                linear-gradient(rgba(0, 0, 0, 0.6), rgba(128, 0, 0, 0.7)),
+                url('Images/Knight-Hammer.png') center 10%/cover no-repeat;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        /* Gallery Categories */
+        .gallery-categories {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .gallery-categories h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #800000;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .category-card {
+            background: #f8fafc;
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            border-left: 4px solid #800000;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .category-card h3 {
+            color: #800000;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .category-card p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Gallery Grid */
+        .gallery-main {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+
+        .gallery-main h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #800000;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .gallery-item {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-item-info {
+            padding: 20px;
+        }
+
+        .gallery-item h3 {
+            color: #800000;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .gallery-item p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* Lightbox Modal */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .lightbox-content {
+            position: relative;
+            margin: 5% auto;
+            max-width: 90%;
+            max-height: 80%;
+        }
+
+        .lightbox-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .lightbox-close:hover {
+            color: #800000;
+        }
+
+        .lightbox-info {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 15px;
+            border-radius: 0 0 10px 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* CTA Section */
+        .gallery-cta {
+            padding: 80px 0;
+            background: #fff;
+            text-align: center;
+        }
+
+        .gallery-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #800000;
+            margin-bottom: 20px;
+        }
+
+        .gallery-cta p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .gallery-grid,
+            .categories-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .lightbox-content {
+                margin: 10% auto;
+                max-width: 95%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .page-hero {
+                padding: 60px 0;
+            }
+
+            .page-hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .gallery-categories,
+        body.dark-mode .gallery-cta {
+            background: #2d2d2d;
+        }
+
+        body.dark-mode .gallery-main {
+            background: #1a1a1a;
+        }
+
+        body.dark-mode .gallery-categories h2,
+        body.dark-mode .gallery-main h2,
+        body.dark-mode .gallery-cta h2 {
+            color: #ff6b6b;
+        }
+
+        body.dark-mode .gallery-cta p {
+            color: #b0b0b0;
+        }
+
+        body.dark-mode .category-card {
+            background: #333;
+        }
+
+        body.dark-mode .category-card h3 {
+            color: #ff6b6b;
+        }
+
+        body.dark-mode .category-card p {
+            color: #b0b0b0;
+        }
+
+        body.dark-mode .gallery-item {
+            background: #2d2d2d;
+        }
+
+        body.dark-mode .gallery-item h3 {
+            color: #ff6b6b;
+        }
+
+        body.dark-mode .gallery-item p {
+            color: #b0b0b0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNHVDBHG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header Include -->
+    <div id="header-include"></div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Project Gallery</h1>
+            <p class="subtitle">See Our Quality Work & Craftsmanship in Action</p>
+        </div>
+    </section>
+
+    <!-- Gallery Categories -->
+    <section class="gallery-categories">
+        <div class="container">
+            <h2>Browse Our Work by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <h3>🏠 Home Repairs</h3>
+                    <p>General maintenance, fixes, and repair work completed throughout Pinellas County homes.</p>
+                </div>
+                
+                <div class="category-card">
+                    <h3>🔨 Renovations</h3>
+                    <p>Kitchen updates, bathroom remodels, and complete room transformations.</p>
+                </div>
+                
+                <div class="category-card">
+                    <h3>🎨 Custom Projects</h3>
+                    <p>Built-in storage, custom furniture, and specialty handyman installations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery -->
+    <section class="gallery-main">
+        <div class="container">
+            <h2>Recent Projects</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('GalleryImages/20221111_115258.jpg', 'Drywall Repair & Paint', 'Professional drywall repair and fresh paint application in Safety Harbor home.')">
+                    <img src="GalleryImages/20221111_115258.jpg" alt="Drywall Repair & Paint" loading="lazy">
+                    <div class="gallery-item-info">
+                        <h3>Drywall Repair & Paint</h3>
+                        <p>Professional drywall repair and fresh paint application</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('GalleryImages/20221121_144308.jpg', 'Interior Wall Repair', 'Complete wall repair and finishing work in residential property.')">
+                    <img src="GalleryImages/20221121_144308.jpg" alt="Interior Wall Repair" loading="lazy">
+                    <div class="gallery-item-info">
+                        <h3>Interior Wall Repair</h3>
+                        <p>Complete wall repair and finishing work</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('GalleryImages/20230111_121854.jpg', 'Home Maintenance', 'Regular maintenance and upkeep services for local homeowner.')">
+                    <img src="GalleryImages/20230111_121854.jpg" alt="Home Maintenance" loading="lazy">
+                    <div class="gallery-item-info">
+                        <h3>Home Maintenance</h3>
+                        <p>Regular maintenance and upkeep services</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('GalleryImages/20230215_141043.jpg', 'Repair Project', 'Quality repair work completed with attention to detail.')">
+                    <img src="GalleryImages/20230215_141043.jpg" alt="Repair Project" loading="lazy">
+                    <div class="gallery-item-info">
+                        <h3>Repair Project</h3>
+                        <p>Quality repair work with attention to detail</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('GalleryImages/20230216_184144.jpg', 'Custom Installation', 'Custom installation project completed for satisfied customer.')">
+                    <img src="GalleryImages/20230216_184144.jpg" alt="Custom Installation" loading="lazy">
+                    <div class="gallery-item-info">
+                        <h3>Custom Installation</h3>
+                        <p>Custom installation project completed</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('GalleryImages/20230713_115127.jpg', 'Professional Service', 'Professional handyman service delivered with quality results.')">
+                    <img src="GalleryImages/20230713_115127.jpg" alt="Professional Service" loading="lazy">
+                    <div class="gallery-item-info">
+                        <h3>Professional Service</h3>
+                        <p>Quality handyman service delivered</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('GalleryImages/wood1.jpg', 'Woodworking Project', 'Custom woodworking and carpentry project showcase.')">
+                    <img src="GalleryImages/wood1.jpg" alt="Woodworking Project" loading="lazy">
+                    <div class="gallery-item-info">
+                        <h3>Woodworking Project</h3>
+                        <p>Custom woodworking and carpentry</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('GalleryImages/wood2.jpg', 'Carpentry Work', 'Professional carpentry and custom build project.')">
+                    <img src="GalleryImages/wood2.jpg" alt="Carpentry Work" loading="lazy">
+                    <div class="gallery-item-info">
+                        <h3>Carpentry Work</h3>
+                        <p>Professional carpentry and custom builds</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('GalleryImages/wood3.jpg', 'Wood Craftsmanship', 'Quality wood craftsmanship and finishing work.')">
+                    <img src="GalleryImages/wood3.jpg" alt="Wood Craftsmanship" loading="lazy">
+                    <div class="gallery-item-info">
+                        <h3>Wood Craftsmanship</h3>
+                        <p>Quality wood craftsmanship and finishing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery CTA -->
+    <section class="gallery-cta">
+        <div class="container">
+            <h2>Ready to Start Your Project?</h2>
+            <p>These are just a few examples of the quality work we deliver every day. Contact us today to discuss your project and get your free estimate.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="contact.html" class="btn-primary">Get Your Free Estimate</a>
+                <a href="tel:8136493341" class="btn-secondary">Call (813) 649-3341</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Include -->
+    <div id="footer-include"></div>
+
+    <!-- Include dynamic header/footer functionality -->
+    <script src="JS/includes.js"></script>
+    
+    <!-- Page-specific lightbox functionality -->
+    <script>
+        // Lightbox functionality
+        function openLightbox(imageSrc, title, description) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxTitle = document.getElementById('lightbox-title');
+            const lightboxDescription = document.getElementById('lightbox-description');
+            
+            lightboxImg.src = imageSrc;
+            lightboxImg.alt = title;
+            lightboxTitle.textContent = title;
+            lightboxDescription.textContent = description;
+            
+            lightbox.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+
+        // Close lightbox with escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        // Prevent lightbox from closing when clicking on the image
+        document.querySelector('.lightbox-content').addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    </script>
+</body>
+</html>
