@@ -77,6 +77,7 @@ function adjustLinks() {
 }
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById("theme-toggle");
+    const themeDisplay = document.getElementById("theme-display");
     const body = document.body;
     const header = document.querySelector("header");
 
@@ -84,7 +85,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (localStorage.getItem("theme") === "dark") {
         body.classList.add("dark-mode");
         header.classList.add("dark-mode");
-        toggleButton.textContent = "Light Mode";
+        themeDisplay.textContent = "🌙 Dark";
+    } else {
+        themeDisplay.textContent = "☀️ Light";
     }
 
     toggleButton.addEventListener("click", function () {
@@ -92,13 +95,13 @@ document.addEventListener("DOMContentLoaded", function () {
             // Switch to light mode
             body.classList.remove("dark-mode");
             header.classList.remove("dark-mode");
-            toggleButton.textContent = "Dark Mode";
+            themeDisplay.textContent = "☀️ Light";
             localStorage.setItem("theme", "light");
         } else {
             // Switch to dark mode
             body.classList.add("dark-mode");
             header.classList.add("dark-mode");
-            toggleButton.textContent = "Light Mode";
+            themeDisplay.textContent = "🌙 Dark";
             localStorage.setItem("theme", "dark");
         }
     });
