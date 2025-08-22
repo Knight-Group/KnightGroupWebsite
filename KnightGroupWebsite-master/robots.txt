@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /Services/handcraftedfurniture&resins.html
-Disallow: /404.html
-
-Sitemap: https://www.knightgroup.com/sitemap.xml
