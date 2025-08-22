@@ -1,9 +1,9 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom right, rgb(202, 200, 200) 20%, rgba(250, 248, 248, 0.9) 60%, rgba(141, 139, 139, 0.8) 100%);
+    background: linear-gradient(120deg, #232526 0%, #414345 100%);
     color: black;
     max-width: 1990px;
     margin: 0 auto;
@@ -27,40 +27,57 @@ header {
     top: 0;
     background: linear-gradient(to bottom right, rgba(92, 90, 90, 0.8) 20%, rgba(240, 250, 255, 0.9) 60%, rgba(34, 34, 34, 0.8) 100%);
     color: black !important;
-    padding: 10px 0;
+    padding: 24px 0 12px 0;
     z-index: 1000;
     backdrop-filter: blur(10px); 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
-    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 
 /* Dark Mode Styles */
 .dark-mode {
     background: linear-gradient(to bottom right, rgba(15, 15, 15, 0.9) 20%, rgba(30, 30, 30, 0.9) 60%, rgba(10, 10, 10, 0.9) 100%);
-    color: white;
+    color: #f0f0f0;
 }
 .dark-mode tr{
-    color: white !important;
+    color: #f0f0f0 !important;
     background: linear-gradient(to bottom right, rgb(202, 200, 200) 20%, rgba(250, 248, 248, 0.9) 60%, rgba(141, 139, 139, 0.8) 100%);
 
 }
 .dark-mode a {
-    color: white !important;
+    color: #e0e0e0 !important;
 }
 .dark-mode p {
-    color: white !important;
+    color: #ffffff !important;
 }
 .dark-mode h1 {
-    color: white !important;
+    color: #ffffff !important;
 }
 .dark-mode h2 {
-    color: white !important;
+    color: #ff6b6b !important;
 }
 .dark-mode h3 {
-    color: white !important;
+    color: #f0f0f0 !important;
 }
-.dark-mode a {
-    color: white !important;
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+    color: #e8e8e8 !important;
+}
+.dark-mode span,
+.dark-mode div,
+.dark-mode td,
+.dark-mode th,
+.dark-mode li {
+    color: #ffffff !important;
+}
+
+/* Additional dark mode overrides for specific elements */
+.dark-mode .credentials h3 {
+    color: #f0f0f0 !important;
+}
+
+.dark-mode .dropdown-trigger {
+    color: #e0e0e0 !important;
 }
 
 .dark-mode .hero-text {
@@ -72,7 +89,7 @@ header {
 
 .dark-mode a button:hover {
     background: maroon;
-    color: white !important;
+    color: #ffffff !important;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -80,7 +97,7 @@ header {
 .dark-mode button:hover,
 .dark-mode .button-group button:hover {
     background: maroon !important;
-    color: white !important;
+    color: #ffffff !important;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -89,7 +106,7 @@ header {
     background: linear-gradient(to bottom, rgba(53, 52, 52, 0.9) 10%, rgba(34, 33, 33, 0.6) 80%);
     padding: 0px 10px;
     border-radius: 5px;
-    color: white;
+    color: #f0f0f0;
     border: none;
     cursor: pointer;
     margin: 0px 10px;
@@ -97,7 +114,7 @@ header {
     z-index: 1000; 
 }
 .dark-mode .button-group button {
-    color: white !important;
+    color: #f0f0f0 !important;
 }
 .dark-mode .slide-content {
     position: absolute;
@@ -143,9 +160,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1990px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 32px;
 }
 
 .logo-group {
@@ -155,10 +172,9 @@ header {
 }
 
 .logo img {
-    height: 5vh; 
-    max-height: 100px; 
-    min-height: 80px; 
-    margin-bottom: -15px;
+    max-height: 60px;
+    min-height: 40px;
+    margin-bottom: 0;
 }
 
 h1 {
@@ -197,9 +213,29 @@ nav ul {
     margin: 0;  
 }
 
-nav ul li {
-    margin: 0 30px; 
-    padding: 0px 12px;
+nav ul.nav-links {
+    display: flex;
+    gap: 32px;
+    font-size: 1.1em;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.nav-links li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.nav-links a {
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+nav ul.nav-links a:hover {
+    background: rgba(128,0,0,0.12);
 }
 
 .social-icons {
@@ -420,18 +456,53 @@ nav ul li {
     color: white;
 }
 
+/* Credentials Section */
+.credentials {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 25px 0;
+    text-align: left;
+}
+
+.credentials h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.credentials ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.credentials li {
+    background: rgba(0, 100, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    border-left: 4px solid #28a745;
+}
+
 /* Sticky Footer */
 footer {
     position: sticky;
     bottom: 0;
     height: auto;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 5px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
+    background: linear-gradient(90deg, #800000 0%, #c0392b 100%);
+    color: #fff;
+    padding: 24px 0 12px 0;
+    text-align: center;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1em;
+    box-shadow: 0 -2px 12px rgba(128,0,0,0.10);
+    margin-top: 48px;
 }
 
 footer .left {
@@ -1050,5 +1121,126 @@ nav .dropdown-content {
 min-height: 5vh;
 height: auto;
 width: auto;
+}
+.btn, .hero-btn {
+    background: linear-gradient(90deg, #800000 0%, #c0392b 100%);
+    color: #fff;
+    padding: 12px 32px;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-family: 'Montserrat', Arial, sans-serif;
+    border: none;
+    box-shadow: 0 4px 16px rgba(128,0,0,0.15);
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    z-index: 1000;
+}
+
+.btn:hover, .hero-btn:hover {
+    background: linear-gradient(90deg, #c0392b 0%, #800000 100%);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(128,0,0,0.25);
+    transform: translateY(-2px) scale(1.04);
+}
+
+.slide-content.hero-overlay {
+    background: rgba(0,0,0,0.55);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    border-radius: 18px;
+    padding: 48px 32px;
+    color: #fff;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 2.5em;
+    margin-bottom: 12px;
+}
+.logo-group h2 {
+    font-size: 2.2em;
+    margin: 0 0 0 12px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+.hero-subtitle {
+    font-size: 1.2em;
+    margin-bottom: 18px;
+}
+
+.trust-badges {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 18px;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.service, .review {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(128,0,0,0.08);
+    padding: 32px;
+    margin: 32px 0;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    padding: 48px 0 32px 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid #222;
+}
+
+/* Dropdown trigger styles for non-clickable Services menu item */
+.dropdown-trigger {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.dropdown-trigger:hover {
+    background: #800000;
+    color: #fff;
+}
+
+.dropdown-trigger::after {
+    content: ' ▼';
+    font-size: 0.8rem;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* Ensure dropdown arrow appears for both old and new dropdown styles */
+.dropdown > .dropdown-trigger::after {
+    content: ' ▼';
+    font-size: 0.8rem;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* Higher specificity to ensure arrow shows */
+nav ul li.dropdown .dropdown-trigger::after {
+    content: ' ▼' !important;
+    font-size: 0.8rem !important;
+    margin-left: 5px !important;
+    vertical-align: middle !important;
 }
 
