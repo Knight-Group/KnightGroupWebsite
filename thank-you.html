@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Knight Group</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        .thank-you-container {
+            max-width: 600px;
+            margin: 100px auto;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .success-icon {
+            font-size: 4rem;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+        .thank-you-message h1 {
+            color: #800000;
+            margin-bottom: 20px;
+        }
+        .thank-you-message p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .back-home {
+            display: inline-block;
+            background: #800000;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+        .back-home:hover {
+            background: #600000;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <div class="success-icon">✓</div>
+        <div class="thank-you-message">
+            <h1>Thank You for Your Request!</h1>
+            <p>Your service request has been successfully submitted.</p>
+            <p>We've received your information and will respond within 24 hours with your free estimate.</p>
+            <p><strong>Need immediate assistance?</strong><br>
+            Call us at: <strong>(727) 735-7001</strong></p>
+            
+            <a href="index.html" class="back-home">← Back to Home</a>
+        </div>
+    </div>
+
+    <script>
+        // Auto redirect to home after 10 seconds
+        setTimeout(function() {
+            window.location.href = 'index.html';
+        }, 10000);
+    </script>
+</body>
+</html>
