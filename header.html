@@ -552,18 +552,18 @@ body.dark-mode .close-menu {
         margin: 0;
     }
     .mobile-menu li {
-        margin: 18px 0;
+        margin: 8px 0;
         border-bottom: 1px solid rgba(255,255,255,0.08);
-        padding-bottom: 8px;
+        padding-bottom: 4px;
     }
     .mobile-menu li:last-child {
         border-bottom: none;
     }
     .mobile-menu a {
         color: #fff;
-        font-size: 1.15rem;
+        font-size: 1.05rem;
         text-decoration: none;
-        padding: 10px 16px;
+        padding: 8px 14px;
         border-radius: 7px;
         display: flex;
         align-items: center;
@@ -628,17 +628,18 @@ body.dark-mode .close-menu {
         top: 70%;
         left: 100%;
         transform: translateY(-50%);
-        min-width: 260px;
-        max-width: 340px;
+        min-width: 200px;
+        max-width: 280px;
         background: #232323;
         color: #e0e0e0;
-        border-radius: 16px;
+        border-radius: 12px;
         box-shadow: 0 8px 32px rgba(0,0,0,0.25);
         flex-direction: column;
-        gap: 10px;
-        padding: 24px 18px;
+        gap: 6px;
+        padding: 16px 12px;
         z-index: 3000;
         overflow-y: auto;
+        font-size: 0.95rem;
     }
     .mobile-menu li.has-submenu:hover .mobile-submenu,
     .mobile-menu li.has-submenu:focus-within .mobile-submenu {
@@ -655,10 +656,16 @@ body.dark-mode .close-menu {
     }
     body.dark-mode .mobile-menu .mobile-submenu a {
         color: #e0e0e0 !important;
+        font-size: 0.95rem;
+        padding: 8px 12px;
     }
     body:not(.dark-mode) .mobile-menu .mobile-submenu {
         background: #fff;
         color: #222;
+    }
+    body:not(.dark-mode) .mobile-menu .mobile-submenu a {
+        font-size: 0.95rem;
+        padding: 8px 12px;
     }
 }
 @media (min-width: 1200px) {
@@ -694,7 +701,7 @@ body.dark-mode .close-menu {
     <div class="container">
         <div class="header-content">
             <div style="display: flex; align-items: center; gap: 16px;">
-                <div class="hamburger" onclick="toggleMobileMenu()">
+                <div class="hamburger" onclick="toggleMobileMenu()" style="margin-left: 8px;">
                     <span></span>
                     <span></span>
                     <span></span>
