@@ -86,11 +86,6 @@ header {
     transform: translateY(-50%);
     pointer-events: none;
 }
-.cta-buttons {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 .header-btn-primary {
     background: linear-gradient(135deg, #800000 0%, #a00000 100%);
     color: #fff;
@@ -180,9 +175,26 @@ header {
     border-color: #bbb;
 }
 @media (max-width: 1200px) {
-    .theme-toggle-desktop {
+    .header-btn-secondary {
         display: none !important;
     }
+    .header-actions {
+        width: 100%;
+        display: flex !important;
+        justify-content: flex-end;
+    }
+    .cta-buttons {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 10px !important;
+        width: auto;
+    }
+    .theme-toggle-desktop {
+        display: flex !important;
+        margin-left: 0 !important;
+    }
+
 }
 /* =============================
    HEADER & NAVIGATION STYLES
@@ -354,7 +366,7 @@ header {
     flex-direction: column;
     cursor: pointer;
     gap: 4px;
-    margin-left: -10px !important;
+    margin-left: -2.5em !important;
 }
 .hamburger span {
     width: 25px;
@@ -530,6 +542,9 @@ body.dark-mode .close-menu {
     }
     .mobile-menu {
         display: none;
+    }
+    .btn-secondary {
+        display: none !important;
     }
     .mobile-menu.active {
         display: block;
@@ -783,10 +798,12 @@ body.dark-mode .close-menu {
         <li><a href="contact.html" tabindex="0">Contact</a></li>
         <li><a href="galleries.html" tabindex="0">Gallery</a></li>
     </ul>
-    <div style="width:100%; display:flex; justify-content:center; align-items:center; margin-top:1em;">
+    <div style="width:100%; display:flex; flex-direction:column; align-items:center; margin-top:1em; gap:0.5em;">
         <button id="theme-toggle-mobile" class="theme-toggle theme-toggle-mobile" tabindex="0" style="margin-bottom:0.5em;">
             <span id="theme-display-mobile">☀️ Light</span>
         </button>
+        <a href="tel:8136493341" class="header-btn-primary" style="width:90%;margin:0 auto 0.5em auto;display:block;text-align:center;">Call Now</a>
+        <a href="mailto:nickknight488@gmail.com" class="header-btn-secondary" style="width:90%;margin:0 auto 0.5em auto;display:block;text-align:center;">Email Us</a>
     </div>
     <div class="social-icons">
         <a href="https://www.facebook.com/KnightGroupServices/" target="_blank" rel="noopener" aria-label="Facebook">
