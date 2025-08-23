@@ -175,6 +175,21 @@ header {
     border-color: #bbb;
 }
 @media (max-width: 1200px) {
+    .header-content {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+    .header-actions {
+        margin-left: auto !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+    .header-btn-primary {
+        margin-left: auto !important;
+        margin-right: 0 !important;
+        display: block !important;
+    }
     .header-btn-secondary {
         display: none !important;
     }
@@ -808,7 +823,6 @@ body.dark-mode .close-menu {
         <button id="theme-toggle-mobile" class="theme-toggle theme-toggle-mobile" tabindex="0" style="margin-bottom:0.5em;">
             <span id="theme-display-mobile">☀️ Light</span>
         </button>
-        <a href="tel:8136493341" class="header-btn-primary" style="width:90%;margin:0 auto 0.5em auto;display:block;text-align:center;">Call Now</a>
         <a href="mailto:nickknight488@gmail.com" class="header-btn-secondary" style="width:90%;margin:0 auto 0.5em auto;display:block;text-align:center;">Email Us</a>
     </div>
     <div class="social-icons">
