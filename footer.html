@@ -1,4 +1,23 @@
 <style>
+@media (min-width: 767px) and (max-width: 997px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        text-align: center;
+    }
+    .footer-left, .footer-center, .footer-right {
+        margin-bottom: 24px;
+    }
+    .footer-logo {
+        justify-content: center;
+    }
+    .footer-social.single-row {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+        max-width: 350px;
+        margin: 0 auto 20px auto;
+    }
+}
 /* Footer Styles */
 footer {
     background: linear-gradient(135deg, #800000 0%, #a00000 50%, #b30000 100%);
