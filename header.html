@@ -624,25 +624,24 @@ body.dark-mode .close-menu {
     }
     .mobile-menu .mobile-submenu {
         display: none;
-        position: absolute;
-        top: 70%;
-        left: 100%;
-        transform: translateY(-50%);
-        min-width: 200px;
-        max-width: 280px;
+        position: static;
+        width: 100%;
         background: #232323;
         color: #e0e0e0;
         border-radius: 12px;
-        box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+        box-shadow: 0 4px 16px rgba(0,0,0,0.18);
         flex-direction: column;
         gap: 6px;
-        padding: 16px 12px;
-        z-index: 3000;
+        padding: 12px 10px;
+        z-index: 1;
         overflow-y: auto;
         font-size: 0.95rem;
+        margin-top: 6px;
     }
+    
     .mobile-menu li.has-submenu:hover .mobile-submenu,
-    .mobile-menu li.has-submenu:focus-within .mobile-submenu {
+    .mobile-menu li.has-submenu:focus-within .mobile-submenu,
+    .mobile-menu .mobile-submenu.show {
         display: flex !important;
     }
     /* Mobile Menu Company Name - White in Light Mode */
