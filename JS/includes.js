@@ -83,30 +83,38 @@ class HTMLInclude {
         });
 
         // Theme Toggle functionality
-        const themeToggle = document.getElementById('theme-toggle');
-        const themeDisplay = document.getElementById('theme-display');
-        if (themeToggle && themeDisplay) {
-            // Load saved theme
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'dark') {
-                document.body.classList.add('dark-mode');
-                themeDisplay.textContent = '🌙 Dark';
-            } else {
-                themeDisplay.textContent = '☀️ Light';
-            }
+        // Support both desktop and mobile theme toggles
+        const themeToggleDesktop = document.getElementById('theme-toggle-desktop');
+        const themeDisplayDesktop = document.getElementById('theme-display-desktop');
+        const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+        const themeDisplayMobile = document.getElementById('theme-display-mobile');
 
-            // Add click event listener
-            themeToggle.addEventListener('click', () => {
-                document.body.classList.toggle('dark-mode');
-                
-                if (document.body.classList.contains('dark-mode')) {
-                    themeDisplay.textContent = '🌙 Dark';
-                    localStorage.setItem('theme', 'dark');
-                } else {
-                    themeDisplay.textContent = '☀️ Light';
-                    localStorage.setItem('theme', 'light');
-                }
-            });
+        function setThemeDisplay(isDark) {
+            if (themeDisplayDesktop) themeDisplayDesktop.textContent = isDark ? '🌙 Dark' : '☀️ Light';
+            if (themeDisplayMobile) themeDisplayMobile.textContent = isDark ? '🌙 Dark' : '☀️ Light';
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            setThemeDisplay(true);
+        } else {
+            setThemeDisplay(false);
+        }
+
+        function toggleTheme() {
+            const isDark = !document.body.classList.contains('dark-mode');
+            document.body.classList.toggle('dark-mode');
+            setThemeDisplay(isDark);
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        }
+
+        if (themeToggleDesktop) {
+            themeToggleDesktop.addEventListener('click', toggleTheme);
+        }
+        if (themeToggleMobile) {
+            themeToggleMobile.addEventListener('click', toggleTheme);
         }
     }
 
