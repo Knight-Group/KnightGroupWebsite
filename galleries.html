@@ -221,9 +221,16 @@
             cursor: pointer;
         }
 
-        .gallery-item:hover {
+        .gallery-item:hover,
+        .gallery-item:focus,
+        .gallery-item:focus-visible {
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .gallery-item:focus-visible {
+            outline: 2px solid #800000;
+            outline-offset: 2px;
         }
 
         .gallery-item img {
@@ -285,8 +292,18 @@
             transition: color 0.3s ease;
         }
 
-        .lightbox-close:hover {
+        .lightbox-close:hover,
+        .lightbox-close:focus,
+        .lightbox-close:focus-visible {
             color: #800000;
+        }
+        
+        .lightbox-close:focus-visible {
+            outline: 2px solid #800000;
+            outline-offset: 2px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            padding: 4px;
         }
 
         .lightbox-info {
@@ -403,12 +420,23 @@
             background: #2d2d2d;
         }
 
+        body.dark-mode .gallery-item:focus-visible {
+            outline: 2px solid #ff6b6b;
+            outline-offset: 2px;
+        }
+
         body.dark-mode .gallery-item h3 {
             color: #ff6b6b;
         }
 
         body.dark-mode .gallery-item p {
             color: #b0b0b0;
+        }
+
+        body.dark-mode .lightbox-close:focus-visible {
+            outline: 2px solid #ff6b6b;
+            outline-offset: 2px;
+            background-color: rgba(255, 107, 107, 0.1);
         }
     </style>
 </head>
@@ -456,16 +484,16 @@
         <div class="container">
             <h2>Recent Projects</h2>
             <div class="gallery-grid">
-                <div class="gallery-item" onclick="openLightbox('GalleryImages/20221111_115258.jpg', 'Drywall Repair & Paint', 'Professional drywall repair and fresh paint application in Safety Harbor home.')">
-                    <img src="GalleryImages/20221111_115258.jpg" alt="Drywall Repair & Paint" loading="lazy">
+                <div class="gallery-item" onclick="openLightbox('GalleryImages/20221111_115258.jpg', 'Drywall Repair & Paint', 'Professional drywall repair and fresh paint application in Safety Harbor home.')" tabindex="0" role="button" aria-label="Open image: Drywall Repair & Paint">
+                    <img src="GalleryImages/20221111_115258.jpg" alt="Drywall Repair & Paint" loading="lazy" width="400" height="300">
                     <div class="gallery-item-info">
                         <h3>Drywall Repair & Paint</h3>
                         <p>Professional drywall repair and fresh paint application</p>
                     </div>
                 </div>
 
-                <div class="gallery-item" onclick="openLightbox('GalleryImages/20221121_144308.jpg', 'Interior Wall Repair', 'Complete wall repair and finishing work in residential property.')">
-                    <img src="GalleryImages/20221121_144308.jpg" alt="Interior Wall Repair" loading="lazy">
+                <div class="gallery-item" onclick="openLightbox('GalleryImages/20221121_144308.jpg', 'Interior Wall Repair', 'Complete wall repair and finishing work in residential property.')" tabindex="0" role="button" aria-label="Open image: Interior Wall Repair">
+                    <img src="GalleryImages/20221121_144308.jpg" alt="Interior Wall Repair" loading="lazy" width="400" height="300">
                     <div class="gallery-item-info">
                         <h3>Interior Wall Repair</h3>
                         <p>Complete wall repair and finishing work</p>
@@ -473,7 +501,7 @@
                 </div>
 
                 <div class="gallery-item" onclick="openLightbox('GalleryImages/20230111_121854.jpg', 'Home Maintenance', 'Regular maintenance and upkeep services for local homeowner.')">
-                    <img src="GalleryImages/20230111_121854.jpg" alt="Home Maintenance" loading="lazy">
+                    <img src="GalleryImages/20230111_121854.jpg" alt="Home Maintenance" loading="lazy" width="400" height="300">
                     <div class="gallery-item-info">
                         <h3>Home Maintenance</h3>
                         <p>Regular maintenance and upkeep services</p>
@@ -481,7 +509,7 @@
                 </div>
 
                 <div class="gallery-item" onclick="openLightbox('GalleryImages/20230215_141043.jpg', 'Repair Project', 'Quality repair work completed with attention to detail.')">
-                    <img src="GalleryImages/20230215_141043.jpg" alt="Repair Project" loading="lazy">
+                    <img src="GalleryImages/20230215_141043.jpg" alt="Repair Project" loading="lazy" width="400" height="300">
                     <div class="gallery-item-info">
                         <h3>Repair Project</h3>
                         <p>Quality repair work with attention to detail</p>
@@ -489,7 +517,7 @@
                 </div>
 
                 <div class="gallery-item" onclick="openLightbox('GalleryImages/20230216_184144.jpg', 'Custom Installation', 'Custom installation project completed for satisfied customer.')">
-                    <img src="GalleryImages/20230216_184144.jpg" alt="Custom Installation" loading="lazy">
+                    <img src="GalleryImages/20230216_184144.jpg" alt="Custom Installation" loading="lazy" width="400" height="300">
                     <div class="gallery-item-info">
                         <h3>Custom Installation</h3>
                         <p>Custom installation project completed</p>
@@ -497,7 +525,7 @@
                 </div>
 
                 <div class="gallery-item" onclick="openLightbox('GalleryImages/20230713_115127.jpg', 'Professional Service', 'Professional handyman service delivered with quality results.')">
-                    <img src="GalleryImages/20230713_115127.jpg" alt="Professional Service" loading="lazy">
+                    <img src="GalleryImages/20230713_115127.jpg" alt="Professional Service" loading="lazy" width="400" height="300">
                     <div class="gallery-item-info">
                         <h3>Professional Service</h3>
                         <p>Quality handyman service delivered</p>
@@ -546,7 +574,7 @@
     <!-- Lightbox Modal -->
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
         <div class="lightbox-content">
-            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <span class="lightbox-close" onclick="closeLightbox()" tabindex="0" role="button" aria-label="Close image lightbox">&times;</span>
             <img id="lightbox-img" src="" alt="">
             <div class="lightbox-info">
                 <h3 id="lightbox-title"></h3>
@@ -559,7 +587,7 @@
     <div id="footer-include"></div>
 
     <!-- Include dynamic header/footer functionality -->
-    <script src="JS/includes.js"></script>
+    <script src="JS/includes.js" defer></script>
     
     <!-- Page-specific lightbox functionality -->
     <script>
@@ -595,6 +623,47 @@
         // Prevent lightbox from closing when clicking on the image
         document.querySelector('.lightbox-content').addEventListener('click', function(e) {
             e.stopPropagation();
+        });
+
+        // Add keyboard accessibility to all gallery items
+        document.addEventListener('DOMContentLoaded', function() {
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            galleryItems.forEach((item, index) => {
+                // Add keyboard accessibility attributes
+                if (!item.hasAttribute('tabindex')) {
+                    item.setAttribute('tabindex', '0');
+                    item.setAttribute('role', 'button');
+                    
+                    // Extract image title from onclick for aria-label
+                    const onclickAttr = item.getAttribute('onclick');
+                    if (onclickAttr) {
+                        const match = onclickAttr.match(/'([^']+)',\s*'([^']+)'/);
+                        if (match) {
+                            const imageTitle = match[2];
+                            item.setAttribute('aria-label', `Open image: ${imageTitle}`);
+                        }
+                    }
+                }
+
+                // Add keyboard event handler
+                item.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        item.click();
+                    }
+                });
+            });
+
+            // Add keyboard functionality to lightbox close button
+            const closeButton = document.querySelector('.lightbox-close');
+            if (closeButton) {
+                closeButton.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        closeLightbox();
+                    }
+                });
+            }
         });
     </script>
 </body>

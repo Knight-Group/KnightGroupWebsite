@@ -699,6 +699,15 @@
                 gap: 8px;
             }
         }
+        
+        /* Honeypot field - completely hidden from users */
+        .hp-field {
+            position: absolute;
+            left: -9999px;
+            height: 0;
+            width: 0;
+            opacity: 0;
+        }
     </style>
 </head>
 <body>
@@ -894,6 +903,9 @@
                     
                     <button type="submit" class="btn-primary form-submit">Send My Request</button>
                     
+                    <!-- Honeypot: bots fill this, humans never see it -->
+                    <input type="text" name="address_2" autocomplete="off" tabindex="-1" aria-hidden="true" class="hp-field">
+                    
                     <!-- FormSpree thank you redirect -->
                     <input type="hidden" name="_next" value="thank-you.html">
                     
@@ -961,7 +973,7 @@
     <div id="footer-include"></div>
 
     <!-- Load dynamic includes -->
-    <script src="JS/includes.js"></script>
+    <script src="JS/includes.js" defer></script>
     
     <script>
         // Simple form submission feedback

@@ -8,48 +8,93 @@
 
 <url>
   <loc>https://www.knightgroup.com/</loc>
-  <lastmod>2024-10-24T00:08:28+00:00</lastmod>
+  <lastmod>2025-08-23T00:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.knightgroup.com/about</loc>
-  <lastmod>2024-10-24T00:08:28+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.knightgroup.com/Services/handyman</loc>
-  <lastmod>2024-10-24T00:08:28+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.knightgroup.com/Services/programming-databases</loc> 
-  <lastmod>2024-10-24T00:08:28+00:00</lastmod>
+  <lastmod>2025-08-23T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.knightgroup.com/contact</loc>
-  <lastmod>2024-10-24T00:08:28+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.knightgroup.com/galleries</loc>
-  <lastmod>2024-10-24T00:08:28+00:00</lastmod>
+  <lastmod>2025-08-23T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.knightgroup.com/PolicyPages/returnpolicy</loc>
-  <lastmod>2024-10-24T00:08:28+00:00</lastmod>
+  <loc>https://www.knightgroup.com/pricing</loc>
+  <lastmod>2025-08-23T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.knightgroup.com/Services/general-repairs</loc>
+  <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.knightgroup.com/Services/plumbing-services</loc>
+  <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.knightgroup.com/Services/electrical-work</loc>
+  <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.knightgroup.com/Services/carpentry-framing</loc>
+  <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.knightgroup.com/Services/painting-finishing</loc>
+  <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.knightgroup.com/Services/home-renovations</loc>
+  <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.knightgroup.com/Services/doors-windows</loc>
+  <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.knightgroup.com/Services/custom-projects</loc>
+  <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.knightgroup.com/Services/emergency-services</loc>
+  <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.knightgroup.com/PolicyPages/privacy-policy</loc>
-  <lastmod>2024-10-24T00:08:28+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
 </url>
 <url>
   <loc>https://www.knightgroup.com/PolicyPages/terms</loc>
-  <lastmod>2024-10-24T00:08:28+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.knightgroup.com/PolicyPages/returnpolicy</loc>
+  <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.knightgroup.com/PolicyPages/payment-policy</loc>
+  <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
 </url>
 
 </urlset>

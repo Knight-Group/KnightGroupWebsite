@@ -11,10 +11,80 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.knightgroup.com/pricing">
     <link rel="icon" href="Images/android-chrome-512x512.png" type="image/png">
     <title>Pricing | Knight Group Professional Handyman Services in Pinellas County, FL</title>
     <meta name="description" content="Clear, honest pricing for handyman services. No 2-hour minimums, just fair rates for the time you actually need. Get transparent pricing from Knight Group.">
     <meta name="keywords" content="handyman pricing, transparent rates, honest pricing, no minimums, affordable handyman">
+    
+    <!-- JSON-LD Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Knight Group",
+      "image": "https://www.knightgroup.com/Images/Knight Group Logo.png",
+      "@id": "https://www.knightgroup.com/pricing",
+      "url": "https://www.knightgroup.com/pricing",
+      "telephone": "+1-813-649-3341",
+      "priceRange": "$80-$150",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pinellas County",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 27.7676,
+        "longitude": -82.6403
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday", 
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "07:00",
+        "closes": "19:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/KnightGroupServices/",
+        "https://www.instagram.com/knight_group_services/"
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data for Service Offers -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Offer",
+      "name": "Handyman Services Pricing",
+      "description": "Clear, honest pricing for handyman services. No 2-hour minimums, just fair rates for the time you actually need.",
+      "seller": {
+        "@type": "LocalBusiness",
+        "name": "Knight Group",
+        "telephone": "+1-813-649-3341"
+      },
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "USD",
+        "minPrice": "80",
+        "maxPrice": "150"
+      },
+      "availability": "https://schema.org/InStock",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Pinellas County, Florida"
+      }
+    }
+    </script>
     
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
@@ -518,6 +588,15 @@
         body.dark-theme .logo-section .company-name {
             color: #e0e0e0;
         }
+        
+        /* Honeypot field - completely hidden from users */
+        .hp-field {
+            position: absolute;
+            left: -9999px;
+            height: 0;
+            width: 0;
+            opacity: 0;
+        }
     </style>
 </head>
 <body>
@@ -719,6 +798,9 @@
                                 style="background: #800000; color: white; padding: 12px 30px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: 600; width: 100%; transition: background-color 0.3s;">
                             Get Free Estimate
                         </button>
+                        
+                        <!-- Honeypot: bots fill this, humans never see it -->
+                        <input type="text" name="address_2" autocomplete="off" tabindex="-1" aria-hidden="true" class="hp-field">
                     </form>
                 </div>
 

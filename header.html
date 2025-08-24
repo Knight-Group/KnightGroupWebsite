@@ -68,9 +68,15 @@ header {
 }
 .nav-section nav a.active,
 .nav-section nav a:focus,
+.nav-section nav a:focus-visible,
 .nav-section nav a:hover {
     background: #800000;
     color: #fff;
+    outline: 2px solid transparent;
+}
+.nav-section nav a:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
 }
 .nav-section nav .services-link {
     position: relative;
@@ -101,9 +107,16 @@ header {
     align-items: center;
     white-space: nowrap;
 }
-.header-btn-primary:hover {
+.header-btn-primary:hover,
+.header-btn-primary:focus,
+.header-btn-primary:focus-visible {
     background: linear-gradient(135deg, #a00000 0%, #c00000 100%);
     box-shadow: 0 4px 16px rgba(128,0,0,0.18);
+    outline: 2px solid transparent;
+}
+.header-btn-primary:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
 }
 .header-btn-secondary {
     background: #fff;
@@ -120,9 +133,16 @@ header {
     align-items: center;
     white-space: nowrap;
 }
-.header-btn-secondary:hover {
+.header-btn-secondary:hover,
+.header-btn-secondary:focus,
+.header-btn-secondary:focus-visible {
     background: #800000;
     color: #fff;
+    outline: 2px solid transparent;
+}
+.header-btn-secondary:focus-visible {
+    outline: 2px solid #800000;
+    outline-offset: 2px;
 }
 .btn-primary {
     background: #800000;
@@ -170,9 +190,16 @@ header {
     transition: background 0.2s, border-color 0.2s;
     white-space: nowrap;
 }
-.theme-toggle-desktop:hover {
+.theme-toggle-desktop:hover,
+.theme-toggle-desktop:focus,
+.theme-toggle-desktop:focus-visible {
     background: #f3f3f3;
     border-color: #bbb;
+    outline: 2px solid transparent;
+}
+.theme-toggle-desktop:focus-visible {
+    outline: 2px solid #800000;
+    outline-offset: 2px;
 }
 @media (max-width: 1200px) {
     .header-content {
@@ -194,11 +221,12 @@ header {
         display: none !important;
     }
     .logo-section{
-        margin-left: -.8em;
+        margin-left: -.5em;
     }
     .company-name{
-        margin-left: -.3em;
+        margin-left: -.1em;
     }
+    
     .header-actions {
         width: 100%;
         display: flex !important;
@@ -227,17 +255,6 @@ header {
     padding: 18px 32px;
     background: transparent;
     box-sizing: border-box;
-}
-.logo-section {
-    display: flex;
-    align-items: center;
-    gap: 2px;
-}
-.logo-section img {
-    height: 40px;
-    width: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(128,0,0,0.08);
 }
 .company-name {
     font-size: 1.22rem;
@@ -294,9 +311,16 @@ header {
     font-weight: 500;
     transition: background 0.2s, color 0.2s;
 }
-.dropdown-content a:hover {
+.dropdown-content a:hover,
+.dropdown-content a:focus,
+.dropdown-content a:focus-visible {
     background: #800000;
     color: #fff;
+    outline: 2px solid transparent;
+}
+.dropdown-content a:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: -2px;
 }
 /* =============================
    BUTTONS & ACTIONS
@@ -388,6 +412,15 @@ header {
     cursor: pointer;
     gap: 4px;
     margin-left: -2.5em !important;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+.hamburger:focus,
+.hamburger:focus-visible {
+    outline: 2px solid #800000;
+    outline-offset: 2px;
+    background-color: rgba(128, 0, 0, 0.1);
 }
 .hamburger span {
     width: 25px;
@@ -459,8 +492,11 @@ header {
     text-align: left;
     cursor: pointer;
 }
-.mobile-menu a:focus, .mobile-menu .submenu-toggle:focus {
+.mobile-menu a:focus, .mobile-menu .submenu-toggle:focus,
+.mobile-menu a:focus-visible, .mobile-menu .submenu-toggle:focus-visible {
     outline: 2px solid #800000;
+    outline-offset: 2px;
+    background-color: rgba(128, 0, 0, 0.1);
 }
 .mobile-menu a:hover, .mobile-menu .submenu-toggle:hover {
     background: #800000;
@@ -501,9 +537,18 @@ body.dark-mode .dropdown-trigger {
 }
 
 body.dark-mode nav a:hover,
-body.dark-mode .dropdown-trigger:hover {
+body.dark-mode nav a:focus,
+body.dark-mode nav a:focus-visible,
+body.dark-mode .dropdown-trigger:hover,
+body.dark-mode .dropdown-trigger:focus,
+body.dark-mode .dropdown-trigger:focus-visible {
     background: #800000;
     color: #fff;
+}
+body.dark-mode nav a:focus-visible,
+body.dark-mode .dropdown-trigger:focus-visible {
+    outline: 2px solid #ff6b6b;
+    outline-offset: 2px;
 }
 
 body.dark-mode .dropdown-content {
@@ -515,9 +560,15 @@ body.dark-mode .dropdown-content a {
     color: #e0e0e0 !important;
 }
 
-body.dark-mode .dropdown-content a:hover {
+body.dark-mode .dropdown-content a:hover,
+body.dark-mode .dropdown-content a:focus,
+body.dark-mode .dropdown-content a:focus-visible {
     background-color: #333 !important;
     color: #ff6b6b !important;
+}
+body.dark-mode .dropdown-content a:focus-visible {
+    outline: 2px solid #ff6b6b !important;
+    outline-offset: -2px;
 }
 
 body.dark-mode .theme-toggle {
@@ -526,13 +577,25 @@ body.dark-mode .theme-toggle {
     color: #e0e0e0;
 }
 
-body.dark-mode .theme-toggle:hover {
+body.dark-mode .theme-toggle:hover,
+body.dark-mode .theme-toggle:focus,
+body.dark-mode .theme-toggle:focus-visible {
     background: #444;
     border-color: #777;
+}
+body.dark-mode .theme-toggle:focus-visible {
+    outline: 2px solid #ff6b6b;
+    outline-offset: 2px;
 }
 
 body.dark-mode .hamburger span {
     background: #e0e0e0;
+}
+body.dark-mode .hamburger:focus,
+body.dark-mode .hamburger:focus-visible {
+    outline: 2px solid #e53e3e;
+    outline-offset: 2px;
+    background-color: rgba(229, 62, 62, 0.1);
 }
 
 body.dark-mode .mobile-menu.active {
@@ -543,8 +606,15 @@ body.dark-mode .mobile-menu a {
     color: #e0e0e0;
 }
 
-body.dark-mode .mobile-menu a:hover {
+body.dark-mode .mobile-menu a:hover,
+body.dark-mode .mobile-menu a:focus,
+body.dark-mode .mobile-menu a:focus-visible {
     color: #e53e3e;
+}
+body.dark-mode .mobile-menu a:focus-visible {
+    outline: 2px solid #e53e3e;
+    outline-offset: 2px;
+    background-color: rgba(229, 62, 62, 0.1);
 }
 
 body.dark-mode .close-menu {
@@ -736,13 +806,13 @@ body.dark-mode .close-menu {
     <div class="container">
         <div class="header-content">
             <div style="display: flex; align-items: center; gap: 16px;">
-                <div class="hamburger" onclick="toggleMobileMenu()" style="margin-left: 8px;">
+                <div class="hamburger" onclick="toggleMobileMenu()" tabindex="0" role="button" aria-label="Toggle mobile menu" style="margin-left: 8px;">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
                 <div class="logo-section">
-                    <img src="Images/Knight Group Logo.png" alt="Knight Group Logo">
+                    <img src="Images/Knight Group Logo.png" alt="Knight Group Logo" width="50" height="50">
                     <div class="company-name">Knight Group</div>
                 </div>
             </div>
@@ -765,7 +835,7 @@ body.dark-mode .close-menu {
                                 <a href="Services/emergency-services.html" style="color: #d63031; font-weight: bold;">🚨 Emergency Services</a>
                             </div>
                         </li>
-                        <li><a href="pricing.html">Pricing</a</li>
+                        <li><a href="pricing.html">Pricing</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="galleries.html">Gallery</a></li>
                     </ul>
@@ -790,7 +860,7 @@ body.dark-mode .close-menu {
 <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile menu">
     <div style="display: flex; align-items: center; justify-content: space-between; padding: 0 1em 0 0; margin-bottom: 1em;">
         <div class="logo-section">
-            <img src="Images/Knight Group Logo.png" alt="Knight Group Logo">
+            <img src="Images/Knight Group Logo.png" alt="Knight Group Logo" width="40" height="40">
             <div class="company-name">Knight Group</div>
         </div>
         <button class="close-menu" onclick="toggleMobileMenu()" aria-label="Close menu" tabindex="0">&times;</button>
@@ -827,22 +897,22 @@ body.dark-mode .close-menu {
     </div>
     <div class="social-icons">
         <a href="https://www.facebook.com/KnightGroupServices/" target="_blank" rel="noopener" aria-label="Facebook">
-            <img src="Images/Facebook_Logo_Primary.png" alt="Facebook">
+            <img src="Images/Facebook_Logo_Primary.png" alt="Facebook" width="28" height="28">
         </a>
         <a href="https://www.instagram.com/knight_group_services/" target="_blank" rel="noopener" aria-label="Instagram">
-            <img src="Images/InstagramLogo.png" alt="Instagram">
+            <img src="Images/InstagramLogo.png" alt="Instagram" width="28" height="28">
         </a>
         <a href="https://m.me/KnightGroupServices" target="_blank" rel="noopener" aria-label="Messenger">
-            <img src="Images/Messenger.png" alt="Messenger">
+            <img src="Images/Messenger.png" alt="Messenger" width="28" height="28">
         </a>
         <a href="https://www.tiktok.com/@knightgroupservices" target="_blank" rel="noopener" aria-label="TikTok">
-            <img src="Images/TikTokLogo.png" alt="TikTok">
+            <img src="Images/TikTokLogo.png" alt="TikTok" width="28" height="28">
         </a>
         <a href="https://x.com/KnightGroupSvcs" target="_blank" rel="noopener" aria-label="X">
-            <img src="Images/XLogoBlack.png" alt="X">
+            <img src="Images/XLogoBlack.png" alt="X" width="28" height="28">
         </a>
         <a href="https://www.pinterest.com/KnightGroupService/" target="_blank" rel="noopener" aria-label="Pinterest">
-            <img src="Images/PintrestLogo.png" alt="Pinterest">
+            <img src="Images/PintrestLogo.png" alt="Pinterest" width="28" height="28">
         </a>
     </div>
 </nav>
@@ -884,4 +954,4 @@ document.addEventListener('DOMContentLoaded', function() {
     closeMobileMenuOnResize();
 });
 </script>
-<script src="JS/menu.js"></script>
+<script src="JS/menu.js" defer></script>
