@@ -7,10 +7,69 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.knightgroup.com/Services/general-repairs">
     <title>General Repairs - Knight Group Handyman Services</title>
     <meta name="description" content="Professional general repair services in Pinellas County. Fix leaks, repair drywall, patch holes, and handle all your home maintenance needs with Knight Group.">
     <link rel="icon" type="image/x-icon" href="../Images/Knight-Group-Logo-Fav.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "LocalBusiness",
+                "name": "Knight Group",
+                "image": "https://www.knightgroup.com/Images/Knight Group Logo.png",
+                "@id": "https://www.knightgroup.com/#business",
+                "url": "https://www.knightgroup.com",
+                "telephone": "+17276421948",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "",
+                    "addressLocality": "St. Petersburg",
+                    "addressRegion": "FL",
+                    "postalCode": "33701",
+                    "addressCountry": "US"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 27.7676,
+                    "longitude": -82.6403
+                },
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                    "opens": "08:00",
+                    "closes": "17:00"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/people/Knight-Group/61556138899838/",
+                    "https://www.instagram.com/knightgroup.biz/",
+                    "https://discord.com/invite/kwNPMPVqc8"
+                ]
+            },
+            {
+                "@type": "Service",
+                "name": "General Repairs",
+                "description": "Professional general repair services including leak fixes, drywall repair, hole patching, and comprehensive home maintenance solutions.",
+                "provider": {
+                    "@id": "https://www.knightgroup.com/#business"
+                },
+                "areaServed": {
+                    "@type": "City",
+                    "name": "St. Petersburg",
+                    "containedInPlace": {
+                        "@type": "State",
+                        "name": "Florida"
+                    }
+                },
+                "url": "https://www.knightgroup.com/Services/general-repairs"
+            }
+        ]
+    }
+    </script>
     <style>
         * {
             margin: 0;
@@ -370,6 +429,9 @@
                                     style="background: #800000; color: white; padding: 12px 30px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: 600; width: 100%; transition: background-color 0.3s;">
                                 Get Free Estimate
                             </button>
+                            
+                            <!-- Honeypot: bots fill this, humans never see it -->
+                            <input type="text" name="address_2" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;height:0;width:0;opacity:0;">
                         </form>
                     </div>
 
@@ -400,6 +462,6 @@
     <div id="footer-include"></div>
 
     <!-- Load dynamic includes -->
-    <script src="../JS/includes.js"></script>
+    <script src="../JS/includes.js" defer></script>
 </body>
 </html>

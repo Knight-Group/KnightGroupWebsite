@@ -7,9 +7,84 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.knightgroup.com/Services/electrical-work">
     <title>Electrical Work - Knight Group Handyman Services</title>
     <meta name="description" content="Professional electrical services in Pinellas County. Outlet installation, light fixture mounting, ceiling fan installation, and electrical repairs with Knight Group.">
     <link rel="icon" type="image/x-icon" href="../Images/Knight-Group-Logo-Fav.ico">
+    
+    <!-- JSON-LD Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Knight Group",
+      "image": "https://www.knightgroup.com/Images/Knight Group Logo.png",
+      "@id": "https://www.knightgroup.com/Services/electrical-work",
+      "url": "https://www.knightgroup.com/Services/electrical-work",
+      "telephone": "+1-813-649-3341",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pinellas County",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 27.7676,
+        "longitude": -82.6403
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday", 
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "07:00",
+        "closes": "19:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/KnightGroupServices/",
+        "https://www.instagram.com/knight_group_services/"
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data for Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Electrical Work Services",
+      "description": "Professional electrical services in Pinellas County. Outlet installation, light fixture mounting, ceiling fan installation, and electrical repairs.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Knight Group",
+        "telephone": "+1-813-649-3341",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Pinellas County",
+          "addressRegion": "FL",
+          "addressCountry": "US"
+        }
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Pinellas County, Florida"
+      },
+      "serviceType": "Electrical Services",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -113,6 +188,33 @@
         body.dark-mode .warning-box h4,
         body.dark-mode .warning-box p {
             color: #000000 !important;
+        }
+
+        /* Universal Focus Styles for Accessibility */
+        a:focus-visible,
+        button:focus-visible,
+        [tabindex]:focus-visible {
+            outline: 2px solid #800000;
+            outline-offset: 2px;
+        }
+
+        body.dark-mode a:focus-visible,
+        body.dark-mode button:focus-visible,
+        body.dark-mode [tabindex]:focus-visible {
+            outline: 2px solid #e53e3e;
+            outline-offset: 2px;
+        }
+
+        .btn-primary:focus,
+        .btn-primary:focus-visible {
+            outline: 2px solid #fff;
+            outline-offset: 2px;
+        }
+
+        .btn-secondary:focus,
+        .btn-secondary:focus-visible {
+            outline: 2px solid #800000;
+            outline-offset: 2px;
         }
 
         .container {
@@ -394,6 +496,9 @@
                                     style="background: #800000; color: white; padding: 12px 30px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: 600; width: 100%; transition: background-color 0.3s;">
                                 Get Free Estimate
                             </button>
+                            
+                            <!-- Honeypot: bots fill this, humans never see it -->
+                            <input type="text" name="address_2" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;height:0;width:0;opacity:0;">
                         </form>
                     </div>
 

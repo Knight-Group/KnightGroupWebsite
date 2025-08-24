@@ -7,9 +7,84 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.knightgroup.com/Services/plumbing-services">
     <title>Plumbing Services - Knight Group Handyman Services</title>
     <meta name="description" content="Professional plumbing services in Pinellas County. Pipe repairs, fixture installation, toilet replacement, and supply line connections with Knight Group.">
     <link rel="icon" type="image/x-icon" href="../Images/Knight-Group-Logo-Fav.ico">
+    
+    <!-- JSON-LD Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Knight Group",
+      "image": "https://www.knightgroup.com/Images/Knight Group Logo.png",
+      "@id": "https://www.knightgroup.com/Services/plumbing-services",
+      "url": "https://www.knightgroup.com/Services/plumbing-services",
+      "telephone": "+1-813-649-3341",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pinellas County",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 27.7676,
+        "longitude": -82.6403
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday", 
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "07:00",
+        "closes": "19:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/KnightGroupServices/",
+        "https://www.instagram.com/knight_group_services/"
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data for Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Plumbing Services",
+      "description": "Professional plumbing services in Pinellas County. Pipe repairs, fixture installation, toilet replacement, and supply line connections.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Knight Group",
+        "telephone": "+1-813-649-3341",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Pinellas County",
+          "addressRegion": "FL",
+          "addressCountry": "US"
+        }
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Pinellas County, Florida"
+      },
+      "serviceType": "Plumbing Services",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -370,6 +445,9 @@
                                     style="background: #800000; color: white; padding: 12px 30px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: 600; width: 100%; transition: background-color 0.3s;">
                                 Get Free Estimate
                             </button>
+                            
+                            <!-- Honeypot: bots fill this, humans never see it -->
+                            <input type="text" name="address_2" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;height:0;width:0;opacity:0;">
                         </form>
                     </div>
 

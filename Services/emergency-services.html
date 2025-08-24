@@ -7,9 +7,85 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.knightgroup.com/Services/emergency-services">
     <title>Emergency Services - 24/7 Knight Group Handyman</title>
     <meta name="description" content="24/7 Emergency handyman services in Pinellas County. Urgent repairs, water damage prevention, emergency plumbing, electrical issues. Call (813) 649-3341 now!">
     <link rel="icon" type="image/x-icon" href="../Images/Knight-Group-Logo-Fav.ico">
+    
+    <!-- JSON-LD Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Knight Group",
+      "image": "https://www.knightgroup.com/Images/Knight Group Logo.png",
+      "@id": "https://www.knightgroup.com/Services/emergency-services",
+      "url": "https://www.knightgroup.com/Services/emergency-services",
+      "telephone": "+1-813-649-3341",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pinellas County",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 27.7676,
+        "longitude": -82.6403
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday", 
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.facebook.com/KnightGroupServices/",
+        "https://www.instagram.com/knight_group_services/"
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data for Emergency Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "24/7 Emergency Handyman Services",
+      "description": "24/7 Emergency handyman services in Pinellas County. Urgent repairs, water damage prevention, emergency plumbing, electrical issues.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Knight Group",
+        "telephone": "+1-813-649-3341",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Pinellas County",
+          "addressRegion": "FL",
+          "addressCountry": "US"
+        }
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Pinellas County, Florida"
+      },
+      "serviceType": "Emergency Handyman Services",
+      "availability": "24/7",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -615,10 +691,14 @@
                                           style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box; resize: vertical;"></textarea>
                             </div>
                             
-                            <button type="submit" 
-                                    style="background: #d63031; color: white; padding: 12px 30px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: 600; width: 100%; transition: background-color 0.3s;">
-                                Request Emergency Service
+                                                        <button type="submit" 
+                                    style="background: #800000; color: white; padding: 12px 30px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: 600; width: 100%; transition: background-color 0.3s;">
+                                Get Free Estimate
                             </button>
+                            
+                            <!-- Honeypot: bots fill this, humans never see it -->
+                            <input type="text" name="address_2" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;height:0;width:0;opacity:0;">
+                        </form>
                         </form>
                         <p style="font-size: 0.9rem; color: #666; margin-top: 10px; text-align: center;">
                             For immediate response, call (813) 649-3341
