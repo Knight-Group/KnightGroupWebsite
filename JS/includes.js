@@ -137,41 +137,6 @@ class HTMLInclude {
                 mobileMenu.classList.remove('active');
             }
         });
-
-        // Theme Toggle functionality
-        // Support both desktop and mobile theme toggles
-        const themeToggleDesktop = document.getElementById('theme-toggle-desktop');
-        const themeDisplayDesktop = document.getElementById('theme-display-desktop');
-        const themeToggleMobile = document.getElementById('theme-toggle-mobile');
-        const themeDisplayMobile = document.getElementById('theme-display-mobile');
-
-        function setThemeDisplay(isDark) {
-            if (themeDisplayDesktop) themeDisplayDesktop.textContent = isDark ? '🌙 Dark' : '☀️ Light';
-            if (themeDisplayMobile) themeDisplayMobile.textContent = isDark ? '🌙 Dark' : '☀️ Light';
-        }
-
-        // Load saved theme
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-            setThemeDisplay(true);
-        } else {
-            setThemeDisplay(false);
-        }
-
-        function toggleTheme() {
-            const isDark = !document.body.classList.contains('dark-mode');
-            document.body.classList.toggle('dark-mode');
-            setThemeDisplay(isDark);
-            localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        }
-
-        if (themeToggleDesktop) {
-            themeToggleDesktop.addEventListener('click', toggleTheme);
-        }
-        if (themeToggleMobile) {
-            themeToggleMobile.addEventListener('click', toggleTheme);
-        }
     }
 
     setActiveNavItem() {
