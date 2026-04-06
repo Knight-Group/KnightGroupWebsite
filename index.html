@@ -1,18 +1,16 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager -->
+    <!-- Google Tag Manager — deferred after load to reduce TBT -->
+    <script>window.dataLayer = window.dataLayer || [];</script>
     <script>
-    (function(w,d,s,l,i){
-        w[l]=w[l]||[];
-        w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
-        var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),
-            dl=l!='dataLayer'?'&l='+l:'';
-        j.async=true;
-        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-        f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MNHVDBHG');
+    window.addEventListener('load', function() {
+        var s = document.createElement('script');
+        s.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-MNHVDBHG';
+        s.async = true;
+        document.head.appendChild(s);
+        window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+    });
     </script>
     <!-- End Google Tag Manager -->
     
@@ -113,6 +111,15 @@
             color: #333;
             background: #f8fafc;
         }
+        /* Reserve header height to prevent CLS from async injection */
+        #header-include {
+            min-height: 86px;
+        }
+        /* Skip rendering of off-screen sections to reduce TBT */
+        .about, .services, .reviews, .map-section {
+            content-visibility: auto;
+            contain-intrinsic-size: 0 500px;
+        }
 
         .container {
             max-width: 1400px;
@@ -131,24 +138,6 @@
         }
         .hero .container {
             /* no override needed */
-        }
-        .hero-theme-toggle-wrap {
-            position: absolute;
-            top: 16px;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            max-width: 1400px;
-            padding-left: 104px;
-            padding-right: 20px;
-            box-sizing: border-box;
-            display: flex;
-            align-items: flex-start;
-            pointer-events: none;
-            z-index: 10;
-        }
-        .hero-theme-toggle-wrap button {
-            pointer-events: auto;
         }
         /* WebP fallback for browsers that do not support WebP */
         .no-webp .hero {
@@ -364,7 +353,7 @@
             border: 2px solid #e0e0e0;
             border-radius: 8px;
             font-size: 1rem;
-            transition: all 0.3s ease;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
             font-family: 'Inter', sans-serif;
             box-sizing: border-box;
         }
@@ -747,7 +736,7 @@
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNHVDBHG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNHVDBHG" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Header Include -->
@@ -755,11 +744,6 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-theme-toggle-wrap">
-            <button id="theme-toggle-desktop" class="theme-toggle theme-toggle-desktop">
-                <span id="theme-display-desktop">☀️ Light</span>
-            </button>
-        </div>
         <div class="container">
             <h1>Professional Handyman Services in Pinellas County</h1>
             <p class="subtitle">Registered • Insured • Professional</p>
@@ -827,6 +811,7 @@
             <h2>Serving Pinellas County</h2>
             <div class="map-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d450975.17752631585!2d-83.16637085978483!3d27.986443383936123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2ee5d19ac09e7%3A0x98d1805762c6e23c!2sKnight%20Group!5e0!3m2!1sen!2sus!4v1737644902610!5m2!1sen!2sus" 
+                    title="Knight Group location on Google Maps"
                     allowfullscreen="" 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade">

@@ -182,33 +182,6 @@ header {
     background: #800000;
     color: #fff;
 }
-.theme-toggle-desktop {
-    display: flex !important;
-    align-items: center;
-    background: #fff;
-    border: 2px solid #ddd;
-    border-radius: 16px;
-    padding: 5px 14px;
-    font-size: 0.88rem;
-    font-weight: 500;
-    color: #555;
-    box-shadow: 0 1px 4px rgba(128,0,0,0.06);
-    cursor: pointer;
-    transition: background 0.2s, border-color 0.2s;
-    white-space: nowrap;
-    align-self: flex-start;
-}
-.theme-toggle-desktop:hover,
-.theme-toggle-desktop:focus,
-.theme-toggle-desktop:focus-visible {
-    background: #f3f3f3;
-    border-color: #bbb;
-    outline: 2px solid transparent;
-}
-.theme-toggle-desktop:focus-visible {
-    outline: 2px solid #800000;
-    outline-offset: 2px;
-}
 @media (max-width: 1200px) {
     .header-btn-secondary {
         display: none !important;
@@ -336,31 +309,6 @@ header {
 .btn-secondary:hover {
     background: #800000;
     color: #fff;
-}
-.theme-toggle {
-    background: #f0f0f0;
-    border: 2px solid #ddd;
-    border-radius: 15px;
-    padding: 6px 10px;
-    cursor: pointer;
-    font-size: 0.8rem;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    height: 32px;
-    min-width: 70px;
-}
-.theme-toggle:hover {
-    background: #e0e0e0;
-}
-.theme-toggle-mobile {
-    display: flex !important;
-    margin: 1em auto 0 auto;
-    border-radius: 10px;
-    font-size: 1rem;
-    box-shadow: 0 2px 8px rgba(128,0,0,0.04);
 }
 
 /* =============================
@@ -541,23 +489,6 @@ body.dark-mode .dropdown-content a:focus-visible {
 body.dark-mode .dropdown-content a:focus-visible {
     outline: 2px solid #ff6b6b !important;
     outline-offset: -2px;
-}
-
-body.dark-mode .theme-toggle {
-    background: #333;
-    border-color: #555;
-    color: #e0e0e0;
-}
-
-body.dark-mode .theme-toggle:hover,
-body.dark-mode .theme-toggle:focus,
-body.dark-mode .theme-toggle:focus-visible {
-    background: #444;
-    border-color: #777;
-}
-body.dark-mode .theme-toggle:focus-visible {
-    outline: 2px solid #ff6b6b;
-    outline-offset: 2px;
 }
 
 body.dark-mode .hamburger span {
@@ -758,20 +689,8 @@ body.dark-mode .close-menu {
     .mobile-menu.active {
         display: none !important;
     }
-    .theme-toggle-desktop {
-        display: flex !important;
-    }
-    .theme-toggle-mobile {
-        display: none !important;
-    }
 }
 @media (max-width: 1199px) {
-    .theme-toggle-desktop {
-        display: none !important;
-    }
-    .theme-toggle-mobile {
-        display: flex !important;
-    }
 }
 </style>
 
@@ -861,9 +780,6 @@ body.dark-mode .close-menu {
         <li><a href="galleries.html" tabindex="0">Gallery</a></li>
     </ul>
     <div style="width:100%; display:flex; flex-direction:column; align-items:center; margin-top:1em; gap:0.5em;">
-        <button id="theme-toggle-mobile" class="theme-toggle theme-toggle-mobile" tabindex="0" style="margin-bottom:0.5em;">
-            <span id="theme-display-mobile">☀️ Light</span>
-        </button>
         <a href="tel:+18136493341" class="header-btn-primary" style="width:90%;margin:0 auto 0 auto;display:block;text-align:center;">📞 (813) 649-3341</a>
         <a href="mailto:nickknight488@gmail.com" class="header-btn-secondary" style="width:90%;margin:0 auto 0.5em auto;display:block;text-align:center;">✉️ Email Us</a>
     </div>
