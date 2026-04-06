@@ -89,8 +89,14 @@
         }
     </script>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Preload LCP hero image -->
+    <link rel="preload" as="image" href="Images/handyman.webp" fetchpriority="high">
+
+    <!-- Google Fonts - async to avoid render blocking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"></noscript>
     
     <style>
         * {
@@ -115,7 +121,7 @@
               /* Hero Section */
         .hero {
             background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(128,0,0,0.6) 100%), 
-                        url('Images/handyman.jpg') center/cover;
+                        url('Images/handyman.webp') center/cover;
             color: #fff;
             padding: 120px 0;
             text-align: center;
@@ -737,12 +743,12 @@
             <div class="hero-social">
                 <p>Follow us for project updates & tips:</p>
                 <div class="hero-social-icons">
-                    <a href="https://www.facebook.com/KnightGroupServices/" target="_blank" aria-label="Facebook"><img src="Images/Facebook_Logo_Primary.png" alt="Facebook"></a>
-                    <a href="https://www.instagram.com/knight_group_services/" target="_blank" aria-label="Instagram"><img src="Images/InstagramLogo.png" alt="Instagram"></a>
-                    <a href="https://m.me/KnightGroupServices" target="_blank" aria-label="Messenger"><img src="Images/Messenger.png" alt="Messenger"></a>
-                    <a href="https://www.tiktok.com/@knightgroupservices" target="_blank" aria-label="TikTok"><img src="Images/TikTokLogo.png" alt="TikTok"></a>
-                    <a href="https://x.com/KnightGroupSvcs" target="_blank" aria-label="X"><img src="Images/XLogoBlack.png" alt="X"></a>
-                    <a href="https://www.pinterest.com/KnightGroupService/" target="_blank" aria-label="Pinterest"><img src="Images/PintrestLogo.png" alt="Pinterest"></a>
+                    <a href="https://www.facebook.com/KnightGroupServices/" target="_blank" aria-label="Facebook"><img src="Images/Facebook_Logo_Primary.webp" alt="Facebook" width="40" height="40" loading="lazy"></a>
+                    <a href="https://www.instagram.com/knight_group_services/" target="_blank" aria-label="Instagram"><img src="Images/InstagramLogo.webp" alt="Instagram" width="40" height="40" loading="lazy"></a>
+                    <a href="https://m.me/KnightGroupServices" target="_blank" aria-label="Messenger"><img src="Images/Messenger.webp" alt="Messenger" width="40" height="40" loading="lazy"></a>
+                    <a href="https://www.tiktok.com/@knightgroupservices" target="_blank" aria-label="TikTok"><img src="Images/TikTokLogo.webp" alt="TikTok" width="40" height="40" loading="lazy"></a>
+                    <a href="https://x.com/KnightGroupSvcs" target="_blank" aria-label="X"><img src="Images/XLogoBlack.webp" alt="X" width="40" height="40" loading="lazy"></a>
+                    <a href="https://www.pinterest.com/KnightGroupService/" target="_blank" aria-label="Pinterest"><img src="Images/PintrestLogo.webp" alt="Pinterest" width="40" height="40" loading="lazy"></a>
                 </div>
             </div>
         </div>
@@ -792,7 +798,7 @@
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
                 <!-- Reviews image directly connected to map -->
-                <img src="Images/handymanReviews.jpg" alt="Customer Reviews" class="map-reviews-image">
+                <img src="Images/handymanReviews.webp" alt="Customer Reviews" class="map-reviews-image" width="1200" height="630" loading="lazy">
                 <!-- Reviews info centered below image -->
                 <div class="reviews-info">
                     <p>For live Google reviews, please visit our 
