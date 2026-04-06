@@ -1,7 +1,7 @@
-﻿<!-- Add Playfair Display font -->
+<!-- Add Playfair Display font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" media="print" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" onload="this.media='all';this.onload=null">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"></noscript>
 
 <style>
@@ -31,6 +31,11 @@ header {
     display: flex;
     align-items: center;
     gap: 2px;
+}
+.nav-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 .logo-section img {
     height: 38px;
@@ -183,15 +188,15 @@ header {
     background: #fff;
     border: 2px solid #ddd;
     border-radius: 16px;
-    padding: 7px 18px;
-    font-size: 0.98rem;
+    padding: 5px 14px;
+    font-size: 0.88rem;
     font-weight: 500;
     color: #555;
-    margin-left: 8px;
-    box-shadow: 0 2px 8px rgba(128,0,0,0.04);
+    box-shadow: 0 1px 4px rgba(128,0,0,0.06);
     cursor: pointer;
     transition: background 0.2s, border-color 0.2s;
     white-space: nowrap;
+    align-self: flex-start;
 }
 .theme-toggle-desktop:hover,
 .theme-toggle-desktop:focus,
@@ -205,48 +210,15 @@ header {
     outline-offset: 2px;
 }
 @media (max-width: 1200px) {
-    .header-content {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-    }
-    .header-actions {
-        margin-left: auto !important;
-        display: flex !important;
-        align-items: center !important;
-    }
-    .header-btn-primary {
-        right: 0;
-        margin-right: -2em !important;
-        display: block !important;
-    }
     .header-btn-secondary {
         display: none !important;
-    }
-    .logo-section{
-        margin-left: -.5em;
-    }
-    .company-name{
-        margin-left: -.1em;
-    }
-    
-    .header-actions {
-        width: 100%;
-        display: flex !important;
-        justify-content: flex-end;
     }
     .cta-buttons {
         display: flex !important;
         flex-direction: row !important;
         align-items: center !important;
         gap: 10px !important;
-        width: auto;
     }
-    .theme-toggle-desktop {
-        display: flex !important;
-        margin-left: 0 !important;
-    }
-
 }
 /* =============================
    HEADER & NAVIGATION STYLES
@@ -389,9 +361,6 @@ header {
     border-radius: 10px;
     font-size: 1rem;
     box-shadow: 0 2px 8px rgba(128,0,0,0.04);
-}
-.theme-toggle-desktop {
-    display: none !important;
 }
 
 /* =============================
@@ -782,6 +751,8 @@ body.dark-mode .close-menu {
     }
     .nav-section {
         display: flex !important;
+        flex: 1;
+        justify-content: center;
     }
     .mobile-menu,
     .mobile-menu.active {
@@ -815,7 +786,7 @@ body.dark-mode .close-menu {
                     <span></span>
                 </div>
                 <div class="logo-section">
-                    <img src="Images/KnightGroupLogo.webp" alt="Knight Group Logo" width="50" height="50">
+                    <picture><source srcset="Images/KnightGroupLogo.webp" type="image/webp"><img src="Images/KnightGroupLogo.png" alt="Knight Group Logo" width="50" height="50"></picture>
                     <div class="company-name">Knight Group</div>
                 </div>
             </div>
@@ -847,11 +818,8 @@ body.dark-mode .close-menu {
 
             <div class="header-actions">
                 <div class="cta-buttons">
-                    <a href="tel:8136493341" class="header-btn-primary">Call Now</a>
-                    <a href="mailto:nickknight488@gmail.com" class="header-btn-secondary">Email Us</a>
-                    <button id="theme-toggle-desktop" class="theme-toggle theme-toggle-desktop">
-                        <span id="theme-display-desktop">☀️ Light</span>
-                    </button>
+                    <a href="tel:+18136493341" class="header-btn-primary" title="Click to call on mobile, or dial (813) 649-3341">📞 (813) 649-3341</a>
+                    <a href="mailto:nickknight488@gmail.com" class="header-btn-secondary" title="nickknight488@gmail.com">Email Us</a>
                 </div>
             </div>
         </div>
@@ -863,7 +831,7 @@ body.dark-mode .close-menu {
 <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile menu">
     <div style="display: flex; align-items: center; justify-content: space-between; padding: 0 1em 0 0; margin-bottom: 1em;">
         <div class="logo-section">
-            <img src="Images/KnightGroupLogo.webp" alt="Knight Group Logo" width="40" height="40">
+            <picture><source srcset="Images/KnightGroupLogo.webp" type="image/webp"><img src="Images/KnightGroupLogo.png" alt="Knight Group Logo" width="40" height="40"></picture>
             <div class="company-name">Knight Group</div>
         </div>
         <button class="close-menu" onclick="toggleMobileMenu()" aria-label="Close menu" tabindex="0">&times;</button>
@@ -896,26 +864,27 @@ body.dark-mode .close-menu {
         <button id="theme-toggle-mobile" class="theme-toggle theme-toggle-mobile" tabindex="0" style="margin-bottom:0.5em;">
             <span id="theme-display-mobile">☀️ Light</span>
         </button>
-        <a href="mailto:nickknight488@gmail.com" class="header-btn-secondary" style="width:90%;margin:0 auto 0.5em auto;display:block;text-align:center;">Email Us</a>
+        <a href="tel:+18136493341" class="header-btn-primary" style="width:90%;margin:0 auto 0 auto;display:block;text-align:center;">📞 (813) 649-3341</a>
+        <a href="mailto:nickknight488@gmail.com" class="header-btn-secondary" style="width:90%;margin:0 auto 0.5em auto;display:block;text-align:center;">✉️ Email Us</a>
     </div>
     <div class="social-icons">
         <a href="https://www.facebook.com/KnightGroupServices/" target="_blank" rel="noopener" aria-label="Facebook">
-            <img src="Images/Facebook_Logo_Primary.webp" alt="Facebook" width="28" height="28">
+            <picture><source srcset="Images/Facebook_Logo_Primary.webp" type="image/webp"><img src="Images/Facebook_Logo_Primary.png" alt="Facebook" width="28" height="28"></picture>
         </a>
         <a href="https://www.instagram.com/knight_group_services/" target="_blank" rel="noopener" aria-label="Instagram">
-            <img src="Images/InstagramLogo.webp" alt="Instagram" width="28" height="28">
+            <picture><source srcset="Images/InstagramLogo.webp" type="image/webp"><img src="Images/InstagramLogo.png" alt="Instagram" width="28" height="28"></picture>
         </a>
         <a href="https://m.me/KnightGroupServices" target="_blank" rel="noopener" aria-label="Messenger">
-            <img src="Images/Messenger.webp" alt="Messenger" width="28" height="28">
+            <picture><source srcset="Images/Messenger.webp" type="image/webp"><img src="Images/Messenger.png" alt="Messenger" width="28" height="28"></picture>
         </a>
         <a href="https://www.tiktok.com/@knightgroupservices" target="_blank" rel="noopener" aria-label="TikTok">
-            <img src="Images/TikTokLogo.webp" alt="TikTok" width="28" height="28">
+            <picture><source srcset="Images/TikTokLogo.webp" type="image/webp"><img src="Images/TikTokLogo.png" alt="TikTok" width="28" height="28"></picture>
         </a>
         <a href="https://x.com/KnightGroupSvcs" target="_blank" rel="noopener" aria-label="X">
-            <img src="Images/XLogoBlack.webp" alt="X" width="28" height="28">
+            <picture><source srcset="Images/XLogoBlack.webp" type="image/webp"><img src="Images/XLogoBlack.png" alt="X" width="28" height="28"></picture>
         </a>
         <a href="https://www.pinterest.com/KnightGroupService/" target="_blank" rel="noopener" aria-label="Pinterest">
-            <img src="Images/PintrestLogo.webp" alt="Pinterest" width="28" height="28">
+            <picture><source srcset="Images/PintrestLogo.webp" type="image/webp"><img src="Images/PintrestLogo.png" alt="Pinterest" width="28" height="28"></picture>
         </a>
     </div>
 </nav>
@@ -955,6 +924,80 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     // Also check on initial load
     closeMobileMenuOnResize();
+
+    // Email picker — intercept all "Email Us" mailto links
+    var TO      = 'nickknight488@gmail.com';
+    var SUBJECT = encodeURIComponent('Knight Group Inquiry');
+    var BODY    = encodeURIComponent('Hi, I found your website and would like to inquire about your services.');
+
+    var emailLinks = document.querySelectorAll('a[href^="mailto:nickknight488"]');
+    emailLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('emailPickerModal').style.display = 'flex';
+        });
+    });
+
+    // Set dynamic compose URLs
+    document.getElementById('emailOptGmail').href =
+        'https://mail.google.com/mail/?view=cm&to=' + TO + '&su=' + SUBJECT + '&body=' + BODY;
+    document.getElementById('emailOptOutlook').href =
+        'https://outlook.live.com/mail/0/deeplink/compose?to=' + TO + '&subject=' + SUBJECT + '&body=' + BODY;
+    document.getElementById('emailOptYahoo').href =
+        'https://compose.mail.yahoo.com/?to=' + TO + '&subject=' + SUBJECT + '&body=' + BODY;
+    document.getElementById('emailOptDefault').href =
+        'mailto:' + TO + '?subject=' + SUBJECT + '&body=' + BODY;
+
+    // Close modal
+    document.getElementById('emailPickerClose').addEventListener('click', closeEmailModal);
+    document.getElementById('emailPickerModal').addEventListener('click', function(e) {
+        if (e.target === this) closeEmailModal();
+    });
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeEmailModal();
+    });
 });
+
+function closeEmailModal() {
+    document.getElementById('emailPickerModal').style.display = 'none';
+}
 </script>
-<script src="JS/menu.js" defer></script>
+
+<!-- Email Picker Modal -->
+<div id="emailPickerModal" role="dialog" aria-modal="true" aria-labelledby="emailPickerTitle"
+     style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:9999;align-items:center;justify-content:center;padding:20px;">
+    <div style="background:#fff;border-radius:14px;padding:32px 28px;max-width:380px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,0.3);position:relative;font-family:'Inter',sans-serif;">
+        <button id="emailPickerClose" aria-label="Close"
+                style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.4rem;cursor:pointer;color:#666;line-height:1;">&times;</button>
+        <h2 id="emailPickerTitle" style="font-size:1.2rem;color:#800000;margin:0 0 6px;">Send us an email</h2>
+        <p style="font-size:0.9rem;color:#666;margin:0 0 22px;">Choose how you'd like to open your email:</p>
+
+        <a id="emailOptGmail" href="#" target="_blank" rel="noopener"
+           style="display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:8px;text-decoration:none;color:#333;border:1px solid #e0e0e0;margin-bottom:10px;font-weight:500;transition:background 0.15s;"
+           onmouseover="this.style.background='#f5f5f5'" onmouseout="this.style.background=''">
+            <img src="https://www.google.com/favicon.ico" width="20" height="20" alt="" loading="lazy"> Gmail
+        </a>
+
+        <a id="emailOptOutlook" href="#" target="_blank" rel="noopener"
+           style="display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:8px;text-decoration:none;color:#333;border:1px solid #e0e0e0;margin-bottom:10px;font-weight:500;transition:background 0.15s;"
+           onmouseover="this.style.background='#f5f5f5'" onmouseout="this.style.background=''">
+            <img src="https://outlook.live.com/favicon.ico" width="20" height="20" alt="" loading="lazy"> Outlook.com
+        </a>
+
+        <a id="emailOptYahoo" href="#" target="_blank" rel="noopener"
+           style="display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:8px;text-decoration:none;color:#333;border:1px solid #e0e0e0;margin-bottom:10px;font-weight:500;transition:background 0.15s;"
+           onmouseover="this.style.background='#f5f5f5'" onmouseout="this.style.background=''">
+            <img src="https://www.yahoo.com/favicon.ico" width="20" height="20" alt="" loading="lazy"> Yahoo Mail
+        </a>
+
+        <a id="emailOptDefault" href="#"
+           style="display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:8px;text-decoration:none;color:#333;border:1px solid #e0e0e0;font-weight:500;transition:background 0.15s;"
+           onmouseover="this.style.background='#f5f5f5'" onmouseout="this.style.background=''">
+            <span style="font-size:1.2rem;">📧</span> Default Mail App
+        </a>
+
+        <p style="margin:18px 0 0;font-size:0.82rem;color:#999;text-align:center;">
+            Or copy our address: <strong style="color:#800000;user-select:all;">nickknight488@gmail.com</strong>
+        </p>
+    </div>
+</div>

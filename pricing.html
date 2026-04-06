@@ -95,7 +95,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" media="print" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" onload="this.media='all';this.onload=null">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"></noscript>
     
     <style>
@@ -211,12 +211,38 @@
         }
 
         .pricing-card {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 12px;
-            padding: 30px;
+            background: #fff;
+            border: 1px solid #e0e4ea;
+            border-radius: 14px;
+            padding: 32px 30px;
             margin: 30px 0;
             border-left: 5px solid #800000;
+            box-shadow: 0 3px 16px rgba(0,0,0,0.07), 0 1px 4px rgba(0,0,0,0.05);
+        }
+
+        /* Green checkmarks for all lists inside pricing cards */
+        .pricing-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .pricing-card ul li {
+            position: relative;
+            padding: 6px 0 6px 28px;
+            border-bottom: 1px solid #f0f0f0;
+            line-height: 1.5;
+        }
+
+        .pricing-card ul li:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-card ul li::before {
+            content: "✓";
+            color: #28a745;
+            font-weight: 700;
+            position: absolute;
+            left: 0;
         }
 
         .pricing-rate {
@@ -270,12 +296,19 @@
         }
 
         .comparison-box {
-            background: linear-gradient(135deg, #28a745, #20c997);
-            color: white;
-            border-radius: 12px;
-            padding: 30px;
+            background: linear-gradient(135deg, #145a20 0%, #1e7d32 50%, #166e2a 100%);
+            color: #fff;
+            border-radius: 14px;
+            padding: 36px 32px;
             margin: 30px 0;
             text-align: center;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.35), 0 2px 8px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.10);
+        }
+
+        .comparison-box,
+        .comparison-box * {
+            color: #fff !important;
         }
 
         .comparison-example {
@@ -692,11 +725,11 @@
 
                 <h3 class="comparison">Why We're More Affordable Than Our Competitors</h3>
                 <div class="comparison-box">
-                    <p style="font-size: 1.1rem; margin-bottom: 20px; color: #000;">Many national handyman franchises charge $120–$150 per hour with mandatory 2-hour minimums, meaning you pay $240–$300 even for a simple 45-minute job. Worse yet, they often add hidden fees that aren't disclosed upfront:</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 20px;">Many national handyman franchises charge $120–$150 per hour with mandatory 2-hour minimums, meaning you pay $240–$300 even for a simple 45-minute job. Worse yet, they often add hidden fees that aren't disclosed upfront:</p>
                     
                     <div style="margin: 20px 0;">
-                        <h4 style="color: #000 !important; margin-bottom: 15px;">Common Hidden Fees from Competitors:</h4>
-                        <div style="margin: 0; padding-left: 15px; color: #000; line-height: 1.8;">
+                        <h4 style="margin-bottom: 15px;">Common Hidden Fees from Competitors:</h4>
+                        <div style="margin: 0; padding-left: 15px; line-height: 1.8;">
                             <div style="margin-bottom: 8px;"><strong>Service call fees:</strong> $50-$100 just to show up</div>
                             <div style="margin-bottom: 8px;"><strong>Transportation charges:</strong> $25-$75 extra for travel</div>
                             <div style="margin-bottom: 8px;"><strong>Materials markup:</strong> 20-50% above retail cost</div>
@@ -705,12 +738,12 @@
                     </div>
                     
                     <div class="comparison-example">
-                        <h5 style="color: #000;">Real Example: 45-Minute Outlet Installation</h5>
-                        <div class="comparison-price" style="background: #e8f5e8; color: #000; font-weight: bold;">Knight Group: $150 total (no hidden fees)</div>
-                        <div class="comparison-price" style="background: #ffe8e8; color: #000;">Typical Competitor: $240 (2-hr min) + $75 service fee + $25 travel = $340+</div>
+                        <h5>Real Example: 45-Minute Outlet Installation</h5>
+                        <div class="comparison-price" style="background: rgba(255,255,255,0.18); font-weight: bold; border: 1px solid rgba(255,255,255,0.3);">✅ Knight Group: $150 total (no hidden fees)</div>
+                        <div class="comparison-price" style="background: rgba(220,50,50,0.35); border: 1px solid rgba(255,150,150,0.3);">❌ Typical Competitor: $240 (2-hr min) + $75 service fee + $25 travel = $340+</div>
                     </div>
                     
-                    <p style="margin-top: 20px; font-weight: 500; color: #000;">At Knight Group, our pricing is 100% transparent. What we quote is what you pay—no surprise charges, no service fees, no travel costs. For larger jobs, our hourly rates ($75-$100) remain significantly lower than most competitors, and we never require minimums that inflate your bill.</p>
+                    <p style="margin-top: 20px; font-weight: 500;">At Knight Group, our pricing is 100% transparent. What we quote is what you pay—no surprise charges, no service fees, no travel costs. For larger jobs, our hourly rates ($75-$100) remain significantly lower than most competitors, and we never require minimums that inflate your bill.</p>
                 </div>
 
                 <h3 class="materials">Materials & Parts</h3>
