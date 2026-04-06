@@ -5,45 +5,101 @@ class HTMLInclude {
         this.initializeAfterIncludes();
     }
 
+    // Security: only allow same-origin relative paths (no http:// or // URLs)
+    _isSafePartialPath(path) {
+        return !/^(https?:)?\/\//i.test(path);
+    }
+
+    // Sanitize a DOM element tree before injecting:
+    // - Removes script, iframe, object, embed, template elements
+    // - Strips javascript: and data: (non-image) URLs from href/src/action
+    // Note: on* event handlers are intentionally kept — header/footer are same-origin
+    // static files controlled by this repo; removing onclick breaks toggleMobileMenu().
+    _sanitizeElement(root) {
+        const BLOCKED_TAGS = ['script', 'iframe', 'object', 'embed', 'template'];
+        BLOCKED_TAGS.forEach(tag => {
+            root.querySelectorAll(tag).forEach(el => el.remove());
+        });
+        const UNSAFE_URL_ATTRS = ['href', 'src', 'action', 'formaction'];
+        root.querySelectorAll('*').forEach(el => {
+            // Strip javascript: and data: (non-image) URLs only
+            UNSAFE_URL_ATTRS.forEach(attrName => {
+                const val = el.getAttribute(attrName);
+                if (val && /^\s*(javascript:|data:(?!image\/))/i.test(val)) {
+                    el.removeAttribute(attrName);
+                }
+            });
+        });
+    }
+
+    // Fetch a partial, hoist its <link> and <style> tags to document.head,
+    // sanitize the remaining content, then inject into targetElement.
+    async _fetchAndInject(targetElement, path, pathPrefix) {
+        if (!this._isSafePartialPath(path)) return;
+        try {
+            const res = await fetch(path);
+            if (!res.ok) return;
+            const text = await res.text();
+
+            // Parse safely — DOMParser puts <link>/<style> found before body content into <head>
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(text, 'text/html');
+
+            // Hoist <link> tags (preconnect, preload, stylesheet) — deduplicated by href
+            doc.querySelectorAll('link').forEach(link => {
+                const href = link.getAttribute('href') || '';
+                const existing = document.head.querySelector(`link[href="${href.replace(/"/g, '\\"')}"]`);
+                if (!existing) {
+                    document.head.appendChild(link.cloneNode(true));
+                }
+            });
+
+            // Hoist <style> blocks — DOMParser puts them in <head> for fragment files,
+            // so they would be lost if we only inject doc.body.innerHTML.
+            // Use a data attribute to avoid re-hoisting on repeated loads.
+            doc.querySelectorAll('style').forEach(style => {
+                const id = style.textContent.trim().slice(0, 40); // fingerprint
+                const alreadyHoisted = Array.from(document.head.querySelectorAll('style'))
+                    .some(s => s.textContent.trim().slice(0, 40) === id);
+                if (!alreadyHoisted) {
+                    document.head.appendChild(style.cloneNode(true));
+                }
+            });
+
+            // Remove hoisted elements so they don't duplicate in body fragment
+            doc.querySelectorAll('link, style').forEach(el => el.remove());
+
+            // Sanitize body fragment before injection
+            this._sanitizeElement(doc.body);
+
+            // Inject remaining content
+            targetElement.innerHTML = doc.body.innerHTML;
+
+            if (pathPrefix) {
+                this.fixRelativePaths(targetElement, pathPrefix);
+            }
+        } catch (error) {
+            console.error('Error loading partial:', path, error);
+        }
+    }
+
     async loadIncludes() {
+        // Run-once guard — prevent double execution if constructor is called more than once
+        if (window._knightGroupIncludesLoaded) return;
+        window._knightGroupIncludesLoaded = true;
+
         // Determine if we're in a subdirectory
         const pathPrefix = window.location.pathname.includes('/Services/') || 
                           window.location.pathname.includes('/PolicyPages/') ? '../' : '';
 
-        // Load header
         const headerElement = document.getElementById('header-include');
         if (headerElement) {
-            try {
-                const headerResponse = await fetch(pathPrefix + 'header.html');
-                if (headerResponse.ok) {
-                    headerElement.innerHTML = await headerResponse.text();
-                    
-                    // Fix paths in header for subdirectory pages
-                    if (pathPrefix) {
-                        this.fixRelativePaths(headerElement, pathPrefix);
-                    }
-                }
-            } catch (error) {
-                console.error('Error loading header:', error);
-            }
+            await this._fetchAndInject(headerElement, pathPrefix + 'header.html', pathPrefix);
         }
 
-        // Load footer
         const footerElement = document.getElementById('footer-include');
         if (footerElement) {
-            try {
-                const footerResponse = await fetch(pathPrefix + 'footer.html');
-                if (footerResponse.ok) {
-                    footerElement.innerHTML = await footerResponse.text();
-                    
-                    // Fix paths in footer for subdirectory pages
-                    if (pathPrefix) {
-                        this.fixRelativePaths(footerElement, pathPrefix);
-                    }
-                }
-            } catch (error) {
-                console.error('Error loading footer:', error);
-            }
+            await this._fetchAndInject(footerElement, pathPrefix + 'footer.html', pathPrefix);
         }
 
         // Initialize scripts after includes are loaded
@@ -182,6 +238,19 @@ class HTMLInclude {
                 // Handle relative paths that need prefix
                 else if (!src.startsWith('http') && !src.startsWith('../') && !src.startsWith('/')) {
                     img.setAttribute('src', pathPrefix + src);
+                }
+            }
+        });
+
+        // Fix <source srcset> attributes (picture elements) — same logic as img src
+        const sources = element.querySelectorAll('source');
+        sources.forEach(source => {
+            const srcset = source.getAttribute('srcset');
+            if (srcset) {
+                if (srcset.startsWith('/') && (isInServices || isInPolicyPages)) {
+                    source.setAttribute('srcset', '..' + srcset);
+                } else if (!srcset.startsWith('http') && !srcset.startsWith('../') && !srcset.startsWith('/')) {
+                    source.setAttribute('srcset', pathPrefix + srcset);
                 }
             }
         });
