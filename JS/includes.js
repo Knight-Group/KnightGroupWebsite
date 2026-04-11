@@ -175,8 +175,7 @@ class HTMLInclude {
         if (currentPath.includes('/Services/') || 
             ['handyman.html', 'general-repairs.html', 'plumbing-services.html', 'electrical-work.html', 
              'carpentry-framing.html', 'painting-finishing.html', 'home-renovations.html', 
-             'doors-windows.html', 'custom-projects.html', 'handcraftedfurniture&resins.html',
-             'programming&databases.html'].includes(currentPage)) {
+             'doors-windows.html', 'custom-projects.html', 'handcraftedfurniture&resins.html'].includes(currentPage)) {
             
             const servicesLink = document.querySelector('nav a[href="#"]');
             if (servicesLink && servicesLink.textContent.trim() === 'Services') {

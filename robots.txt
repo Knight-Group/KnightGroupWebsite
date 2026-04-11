@@ -1,4 +1,24 @@
 User-agent: *
+Disallow: /404
 Disallow: /404.html
+Disallow: /header
+Disallow: /header.html
+Disallow: /footer
+Disallow: /footer.html
+Disallow: /head-gtm
+Disallow: /head-gtm.html
+Disallow: /socialCards
+Disallow: /socialCards.html
+Disallow: /page-template
+Disallow: /page-template.html
+Disallow: /thank-you
+Disallow: /thank-you.html
+Disallow: /PolicyPages/payment-policy-test
+Disallow: /PolicyPages/payment-policy-test.html
+Disallow: /Chess-Game-main/
+Disallow: /JS/header
+Disallow: /JS/header.html
+Disallow: /JS/footer
+Disallow: /JS/footer.html
 
 Sitemap: https://www.knightgroup.com/sitemap.xml
