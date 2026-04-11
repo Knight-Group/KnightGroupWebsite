@@ -812,33 +812,12 @@
         <div class="container">
             <h2>Serving Pinellas County</h2>
             <div class="map-container">
-                <!-- Maps facade: no Maps JS loads until user clicks -->
-                <div class="map-facade" id="mapFacade" role="button" tabindex="0" aria-label="Click to load interactive Google Map for Knight Group" onclick="loadMap()" onkeydown="if(event.key==='Enter'||event.key===' ')loadMap()">
-                    <div style="width:100%;height:450px;background:linear-gradient(135deg,#e8eaf0 0%,#d0d4df 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;cursor:pointer;">
-                        <div style="font-size:3rem;">📍</div>
-                        <div style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#800000;font-weight:700;">Knight Group</div>
-                        <div style="color:#555;font-size:1rem;">Serving Pinellas County, FL</div>
-                        <div style="margin-top:8px;background:#800000;color:#fff;padding:10px 24px;border-radius:22px;font-weight:600;font-size:0.95rem;">Click to View on Google Maps</div>
-                    </div>
-                </div>
-                <iframe id="mapIframe" src="" 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d450975.17752631585!2d-83.16637085978483!3d27.986443383936123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2ee5d19ac09e7%3A0x98d1805762c6e23c!2sKnight%20Group!5e0!3m2!1sen!2sus!4v1737644902610!5m2!1sen!2sus"
                     title="Knight Group location on Google Maps"
-                    allowfullscreen="" 
-                    referrerpolicy="no-referrer-when-downgrade"
-                    style="display:none;width:100%;height:450px;border:0;">
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
-                <style>
-                    .map-facade { border-radius:15px 15px 0 0; overflow:hidden; }
-                </style>
-                <script>
-                    function loadMap() {
-                        var facade = document.getElementById('mapFacade');
-                        var iframe = document.getElementById('mapIframe');
-                        iframe.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d450975.17752631585!2d-83.16637085978483!3d27.986443383936123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2ee5d19ac09e7%3A0x98d1805762c6e23c!2sKnight%20Group!5e0!3m2!1sen!2sus!4v1737644902610!5m2!1sen!2sus';
-                        iframe.style.display = 'block';
-                        facade.style.display = 'none';
-                    }
-                </script>
                 <!-- Reviews image directly connected to map -->
                 <picture>
                     <source srcset="Images/handymanReviews.webp" type="image/webp">
