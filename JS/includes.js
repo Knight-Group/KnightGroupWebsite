@@ -316,7 +316,7 @@ ${data.message}
         `.trim();
         
         // Create mailto link
-        const mailtoLink = `mailto:nickknight488@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:nickknight488@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         
         // Open default email client
         window.location.href = mailtoLink;
