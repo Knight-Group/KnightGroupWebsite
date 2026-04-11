@@ -1,0 +1,33 @@
+# HTTP Headers — Netlify / Cloudflare Pages ONLY
+#
+# GitHub Pages does NOT support custom HTTP headers. This file has no effect there.
+# The headers below will activate automatically if you:
+#   1. Migrate to Netlify (free) — just connect the same GitHub repo; Netlify reads _headers natively.
+#   2. Put Cloudflare (free) in front of GitHub Pages — use Transform Rules to inject these headers.
+#
+# WHY THIS MATTERS FOR LIGHTHOUSE:
+#   - Cache-Control on /Images/* extends TTL from GitHub's forced ~600s to 1 year (fixes "Use efficient cache lifetimes")
+#   - X-Frame-Options, CSP, COOP, HSTS push Best Practices from 96 to 100
+
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Cross-Origin-Opener-Policy: same-origin
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://maps.googleapis.com https://maps.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://maps.googleapis.com https://maps.gstatic.com https://lh3.googleusercontent.com; frame-src https://www.google.com https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://formspree.io https://www.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io; frame-ancestors 'self'
+
+# Cache images for 1 year (content-addressed filenames recommended for true immutability)
+/Images/*
+  Cache-Control: public, max-age=31536000, must-revalidate
+
+# Cache JS and CSS for 1 year
+/JS/*
+  Cache-Control: public, max-age=31536000, must-revalidate
+
+/CSS/*
+  Cache-Control: public, max-age=31536000, must-revalidate
+
+# HTML pages — short cache with revalidation so updates propagate quickly
+/*.html
+  Cache-Control: public, max-age=300, must-revalidate
