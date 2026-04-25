@@ -123,6 +123,10 @@ header {
     color: #fff;
     outline: none;
 }
+@media (hover: hover) {
+    .dropdown:hover .dropdown-content { display: block; }
+}
+.dropdown:focus-within .dropdown-content { display: block; }
 .cta-buttons {
     display: flex;
     gap: 10px;
