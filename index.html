@@ -1172,18 +1172,28 @@
                     border-color: #800000;
                 }
                 .review-carousel-dot {
-                    display: inline-block;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    background: transparent;
+                    border: none;
+                    padding: 0;
+                    margin: 0 2px;
+                    cursor: pointer;
+                }
+                .review-carousel-dot::before {
+                    content: '';
+                    display: block;
                     width: 8px;
                     height: 8px;
                     border-radius: 50%;
                     background: #ddd;
-                    border: none;
-                    padding: 0;
-                    margin: 0 4px;
-                    cursor: pointer;
                     transition: background 0.2s;
                 }
-                .review-carousel-dot.active {
+                .review-carousel-dot.active::before {
                     background: #800000;
                 }
                 @media (max-width: 768px) {
