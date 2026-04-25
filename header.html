@@ -4,9 +4,9 @@
 <link rel="stylesheet" media="print" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" onload="this.media='all';this.onload=null">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"></noscript>
 <style>
-/* =============================
-   HEADER - REDESIGNED
-   ============================= */
+/* ============================
+   HEADER — DESKTOP
+   ============================ */
 header {
     width: 100%;
     background: #fff;
@@ -24,15 +24,8 @@ header {
     padding: 0 40px;
     box-sizing: border-box;
 }
-.logo-section {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.logo-section img {
-    height: 44px;
-    width: auto;
-}
+.logo-section { display: flex; align-items: center; gap: 10px; }
+.logo-section img { height: 44px; width: auto; }
 .company-name {
     font-family: "Playfair Display", serif;
     font-size: 1.4rem;
@@ -41,60 +34,31 @@ header {
     letter-spacing: 0.01em;
     white-space: nowrap;
 }
-.nav-section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
+.nav-section { flex: 1; display: flex; justify-content: center; }
 .nav-section nav ul {
-    display: flex;
-    gap: 2px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    align-items: center;
+    display: flex; gap: 2px; list-style: none; margin: 0; padding: 0; align-items: center;
 }
 .nav-section nav a {
-    color: #333;
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 500;
-    padding: 7px 14px;
-    border-radius: 6px;
+    color: #333; text-decoration: none; font-size: 0.95rem; font-weight: 500;
+    padding: 7px 14px; border-radius: 6px;
     transition: background 0.18s, color 0.18s;
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
+    display: flex; align-items: center; white-space: nowrap;
 }
 .nav-section nav a:hover,
 .nav-section nav a.active,
-.nav-section nav a.nav-active {
-    background: #800000;
-    color: #fff;
-}
-.nav-section nav a:focus-visible {
-    outline: none;
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #800000;
-}
-.nav-section nav .services-link {
-    position: relative;
-    padding-right: 22px;
-}
-.nav-section nav .services-link::after {
-    content: "\25BE";
-    position: absolute;
-    right: 7px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 0.8em;
-    pointer-events: none;
-    color: #800000;
-}
+.nav-section nav a.nav-active { background: #800000; color: #fff; }
+.nav-section nav a:focus-visible { outline: none; box-shadow: 0 0 0 2px #fff, 0 0 0 4px #800000; }
+/* Dropdown — top:100% (no gap) keeps hover continuous */
 .dropdown { position: relative; }
+.nav-section nav .services-link { position: relative; padding-right: 22px; }
+.nav-section nav .services-link::after {
+    content: "\25BE"; position: absolute; right: 7px; top: 50%;
+    transform: translateY(-50%); font-size: 0.8em; pointer-events: none; color: #800000;
+}
 .dropdown-content {
     display: none;
     position: absolute;
-    top: calc(100% + 4px);
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     background: #fff;
@@ -103,416 +67,185 @@ header {
     box-shadow: 0 8px 30px rgba(0,0,0,0.12);
     border-radius: 0 0 10px 10px;
     min-width: 240px;
-    z-index: 1000;
+    z-index: 1001;
     padding: 8px 0;
 }
+@media (hover: hover) { .dropdown:hover .dropdown-content { display: block; } }
+.dropdown:focus-within .dropdown-content { display: block; }
 .dropdown-content a {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 9px 20px;
-    color: #333;
-    font-size: 0.92rem;
-    font-weight: 500;
-    text-decoration: none;
-    transition: background 0.15s, color 0.15s;
+    display: flex; align-items: center; gap: 8px; padding: 9px 20px;
+    color: #333; font-size: 0.92rem; font-weight: 500;
+    text-decoration: none; transition: background 0.15s, color 0.15s;
 }
 .dropdown-content a:hover,
-.dropdown-content a:focus-visible {
-    background: #800000;
-    color: #fff;
-    outline: none;
-}
-@media (hover: hover) {
-    .dropdown:hover .dropdown-content { display: block; }
-}
-.dropdown:focus-within .dropdown-content { display: block; }
-.cta-buttons {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
+.dropdown-content a:focus-visible { background: #800000; color: #fff; outline: none; }
+/* CTA */
+.cta-buttons { display: flex; gap: 10px; align-items: center; }
 .header-btn-primary {
-    background: #800000;
-    color: #fff;
-    padding: 9px 20px;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 0.92rem;
-    text-decoration: none;
+    background: #800000; color: #fff; padding: 9px 20px; border-radius: 6px;
+    font-weight: 600; font-size: 0.92rem; text-decoration: none;
     transition: background 0.18s, box-shadow 0.18s;
     box-shadow: 0 2px 8px rgba(128,0,0,0.22);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    white-space: nowrap;
-    border: 2px solid #800000;
+    display: flex; align-items: center; gap: 6px;
+    white-space: nowrap; border: 2px solid #800000;
 }
-.header-btn-primary:hover {
-    background: #600000;
-    border-color: #600000;
-    box-shadow: 0 4px 14px rgba(128,0,0,0.30);
-}
-.header-btn-primary:focus-visible {
-    outline: none;
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #800000;
-}
+.header-btn-primary:hover { background: #600000; border-color: #600000; box-shadow: 0 4px 14px rgba(128,0,0,0.30); }
+.header-btn-primary:focus-visible { outline: none; box-shadow: 0 0 0 2px #fff, 0 0 0 4px #800000; }
 .header-btn-secondary {
-    background: transparent;
-    color: #800000;
-    border: 2px solid #800000;
-    padding: 9px 20px;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 0.92rem;
-    text-decoration: none;
-    transition: background 0.18s, color 0.18s;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
+    background: transparent; color: #800000; border: 2px solid #800000;
+    padding: 9px 20px; border-radius: 6px; font-weight: 600; font-size: 0.92rem;
+    text-decoration: none; transition: background 0.18s, color 0.18s;
+    white-space: nowrap; display: flex; align-items: center;
 }
 .header-btn-secondary:hover,
-.header-btn-secondary:focus-visible {
-    background: #800000;
-    color: #fff;
-    outline: none;
-}
+.header-btn-secondary:focus-visible { background: #800000; color: #fff; outline: none; }
+/* Generic page buttons */
 .btn-primary {
-    background: #800000;
-    color: #fff;
-    padding: 10px 24px;
-    border: 2px solid #800000;
-    border-radius: 6px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background 0.2s;
-    font-size: 1rem;
-    display: inline-block;
+    background: #800000; color: #fff; padding: 10px 24px; border: 2px solid #800000;
+    border-radius: 6px; font-weight: 600; text-decoration: none;
+    transition: background 0.2s; font-size: 1rem; display: inline-block;
 }
 .btn-primary:hover { background: #600000; border-color: #600000; }
 .btn-secondary {
-    background: #fff;
-    color: #800000;
-    border: 2px solid #800000;
-    padding: 10px 24px;
-    border-radius: 6px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background 0.2s, color 0.2s;
-    font-size: 1rem;
-    display: inline-block;
+    background: #fff; color: #800000; border: 2px solid #800000; padding: 10px 24px;
+    border-radius: 6px; font-weight: 600; text-decoration: none;
+    transition: background 0.2s, color 0.2s; font-size: 1rem; display: inline-block;
 }
 .btn-secondary:hover { background: #800000; color: #fff; }
+/* Hamburger */
 .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-    padding: 8px;
-    border-radius: 6px;
-    border: none;
-    background: none;
-    transition: background 0.18s;
-    touch-action: manipulation;
+    display: none; flex-direction: column; cursor: pointer; gap: 5px;
+    padding: 8px; border-radius: 6px; border: none; background: none;
+    transition: background 0.18s; touch-action: manipulation;
 }
-.hamburger:focus,
-.hamburger:focus-visible {
-    outline: 2px solid #800000;
-    outline-offset: 2px;
+.hamburger:focus-visible { outline: 2px solid #800000; outline-offset: 2px; }
+.hamburger span { width: 24px; height: 2.5px; background: #800000; border-radius: 2px; transition: 0.3s; }
+/* Mobile backdrop */
+.mobile-backdrop {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.55); z-index: 1999;
+    backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px); cursor: pointer;
 }
-.hamburger span {
-    width: 24px;
-    height: 2.5px;
-    background: #800000;
-    border-radius: 2px;
-    transition: 0.3s;
-}
-@keyframes slideInMenu {
-    from { transform: translateX(-100%); opacity: 0; }
-    to   { transform: translateX(0);    opacity: 1; }
-}
-.visually-hidden {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
+.mobile-backdrop.active { display: block; }
+/* Mobile menu panel */
 .mobile-menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: min(300px, 88vw);
-    height: 100vh;
-    background: #1a0a0a;
-    box-shadow: 4px 0 24px rgba(0,0,0,0.30);
-    z-index: 2000;
+    position: fixed; top: 0; left: 0;
+    width: 290px; max-width: 90vw; height: 100vh;
+    background: #0f0a0a; z-index: 2000;
+    transform: translateX(-100%);
+    transition: transform 0.32s cubic-bezier(0.4,0,0.2,1);
+    overflow-y: auto; display: flex; flex-direction: column;
     border-right: 3px solid #800000;
-    border-radius: 0 16px 16px 0;
-    overflow-y: auto;
-    padding: 0;
 }
-.close-menu {
-    background: none;
-    border: none;
-    font-size: 2.1rem;
-    color: #fff;
-    position: absolute;
-    top: 18px;
-    right: 16px;
-    cursor: pointer;
-    padding: 4px 8px;
-    border-radius: 6px;
-    transition: background 0.2s;
-    line-height: 1;
+.mobile-menu.active { transform: translateX(0); }
+.mm-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 20px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.08); flex-shrink: 0;
 }
-.close-menu:hover { background: rgba(255,255,255,0.10); }
-.close-menu:focus { outline: 2px solid #800000; }
-.mobile-menu ul {
-    list-style: none;
-    padding: 0 14px;
-    margin: 16px 0 0;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    width: 100%;
-    box-sizing: border-box;
+.mm-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.mm-logo img { height: 36px; width: auto; }
+.mm-close {
+    background: none; border: 1px solid rgba(255,255,255,0.15);
+    color: #fff; font-size: 1.4rem;
+    width: 36px; height: 36px; display: flex; align-items: center;
+    justify-content: center; border-radius: 8px; cursor: pointer;
+    transition: background 0.18s; line-height: 1; flex-shrink: 0;
 }
-.mobile-menu a,
-.mobile-menu .submenu-toggle {
-    font-size: 1rem;
-    color: #fff;
-    text-decoration: none;
-    background: none;
-    border: none;
-    padding: 11px 14px;
-    border-radius: 8px;
-    transition: background 0.18s;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.mm-close:hover { background: rgba(128,0,0,0.5); border-color: #800000; }
+.mm-nav {
+    flex: 1; padding: 12px 12px 0; list-style: none; margin: 0;
+    display: flex; flex-direction: column; gap: 2px;
 }
-.mobile-menu a:hover,
-.mobile-menu .submenu-toggle:hover { background: rgba(128,0,0,0.55); }
-.mobile-menu a:focus-visible,
-.mobile-menu .submenu-toggle:focus-visible {
-    outline: 2px solid #800000;
-    outline-offset: 2px;
+.mm-nav li { margin: 0; padding: 0; }
+.mm-nav a {
+    display: flex; align-items: center; gap: 10px; padding: 12px 14px;
+    color: rgba(255,255,255,0.88); text-decoration: none;
+    font-size: 1rem; font-weight: 500; border-radius: 8px;
+    transition: background 0.18s, color 0.18s; letter-spacing: 0.01em;
 }
-.mobile-menu .submenu-toggle {
-    justify-content: space-between;
-    font-weight: 600;
+.mm-nav a:hover,
+.mm-nav a:focus-visible { background: rgba(128,0,0,0.55); color: #fff; }
+.mm-nav a:focus-visible { outline: 2px solid #800000; outline-offset: 2px; }
+.mm-services-toggle {
+    display: flex; align-items: center; justify-content: space-between;
+    width: 100%; padding: 12px 14px; background: none; border: none;
+    color: rgba(255,255,255,0.88); font-size: 1rem; font-weight: 500;
+    border-radius: 8px; cursor: pointer;
+    transition: background 0.18s, color 0.18s;
+    text-align: left; font-family: inherit; letter-spacing: 0.01em;
 }
-.mobile-submenu {
-    display: none;
-    flex-direction: column;
-    gap: 2px;
-    margin-top: 4px;
-    padding-left: 10px;
-    background: transparent;
+.mm-services-toggle:hover,
+.mm-services-toggle:focus-visible { background: rgba(128,0,0,0.55); color: #fff; }
+.mm-services-toggle:focus-visible { outline: 2px solid #800000; outline-offset: 2px; }
+.mm-chevron { font-size: 0.72rem; transition: transform 0.25s; opacity: 0.7; flex-shrink: 0; }
+.mm-services-toggle[aria-expanded="true"] .mm-chevron { transform: rotate(180deg); }
+.mm-services-toggle[aria-expanded="true"] { background: rgba(128,0,0,0.30); color: #fff; }
+.mm-submenu {
+    display: none; flex-direction: column; gap: 1px;
+    padding: 4px 0 4px 14px; margin-top: 2px;
 }
-.mobile-submenu.show { display: flex !important; }
-.mobile-menu .company-name { color: #ffffff !important; }
-body:not(.dark-mode) .mobile-menu .mobile-submenu a {
-    font-size: 0.95rem;
-    padding: 8px 12px;
-    color: #f0d6d6;
+.mm-submenu.open { display: flex; }
+.mm-submenu a {
+    font-size: 0.9rem; padding: 9px 12px;
+    color: rgba(255,255,255,0.72);
+    border-left: 2px solid rgba(128,0,0,0.4);
+    border-radius: 0 6px 6px 0;
 }
-body.dark-mode header {
-    background: #111620;
-    border-bottom: 3px solid #c0392b;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.45);
+.mm-submenu a:hover { background: rgba(128,0,0,0.4); color: #fff; border-left-color: #800000; }
+.mm-cta {
+    padding: 16px 16px 12px; display: flex; flex-direction: column; gap: 10px;
+    border-top: 1px solid rgba(255,255,255,0.08); flex-shrink: 0;
 }
+.mm-cta a {
+    display: flex; align-items: center; justify-content: center;
+    gap: 8px; padding: 11px 16px; border-radius: 8px;
+    font-weight: 600; font-size: 0.95rem; text-decoration: none; text-align: center;
+}
+.mm-call { background: #800000; color: #fff; border: 2px solid #800000; }
+.mm-call:hover { background: #600000; border-color: #600000; }
+.mm-email { background: transparent; color: rgba(255,255,255,0.8); border: 2px solid rgba(255,255,255,0.2); }
+.mm-email:hover { background: rgba(255,255,255,0.07); }
+.mm-social {
+    display: flex; align-items: center; justify-content: center;
+    gap: 10px; padding: 10px 16px 20px; flex-shrink: 0;
+}
+.mm-social a { display: flex; }
+.mm-social img {
+    width: 26px; height: 26px; border-radius: 6px;
+    opacity: 0.75; transition: opacity 0.18s, transform 0.18s; background: #fff;
+}
+.mm-social a:hover img { opacity: 1; transform: scale(1.1); }
+.visually-hidden { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+/* Dark mode */
+body.dark-mode header { background: #111620; border-bottom: 3px solid #c0392b; box-shadow: 0 2px 16px rgba(0,0,0,0.45); }
 body.dark-mode .company-name { color: #ff7070; }
 body.dark-mode .nav-section nav a { color: #e0e0e0; }
 body.dark-mode .nav-section nav a:hover,
 body.dark-mode .nav-section nav a.active,
 body.dark-mode .nav-section nav a.nav-active { background: #800000; color: #fff; }
-body.dark-mode .dropdown-content {
-    background: #1e2433;
-    border-color: #2d3748;
-    border-top-color: #c0392b;
-}
+body.dark-mode .dropdown-content { background: #1e2433; border-color: #2d3748; border-top-color: #c0392b; }
 body.dark-mode .dropdown-content a { color: #e0e0e0; }
 body.dark-mode .dropdown-content a:hover { background: #800000; color: #fff; }
 body.dark-mode .hamburger span { background: #ff7070; }
 body.dark-mode .header-btn-primary { background: #a00000; border-color: #a00000; }
 body.dark-mode .header-btn-secondary { color: #ff7070; border-color: #ff7070; }
 body.dark-mode .header-btn-secondary:hover { background: #800000; color: #fff; border-color: #800000; }
-body.dark-mode .mobile-menu { background: #0e0505; border-right-color: #c0392b; }
-body.dark-mode .mobile-menu .mobile-submenu a { color: #e0e0e0; font-size: 0.95rem; padding: 8px 12px; }
 </style>
-<!-- Inline CSS for hamburger/nav responsive visibility -->
+
+<!-- Mobile responsive -->
 <style>
 @media (max-width: 1200px) {
-    .hamburger {
-        display: flex !important;
-    }
-    .nav-section {
-        display: none !important;
-    }
-    .mobile-menu {
-        display: none;
-    }
-    .btn-secondary {
-        display: none !important;
-    }
-    .mobile-menu.active {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: linear-gradient(135deg, #232323 0%, #800000 100%);
-        z-index: 2000;
-        padding: 60px 28px 28px 28px;
-        text-align: left;
-        box-shadow: 2px 0 18px rgba(0,0,0,0.25);
-        border-top-right-radius: 22px;
-        border-bottom-right-radius: 22px;
-        overflow-y: auto;
-        animation: slideInMenu 0.25s cubic-bezier(.77,0,.18,1);
-    }
-    .mobile-menu ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    .mobile-menu li {
-        margin: 8px 0;
-        border-bottom: 1px solid rgba(255,255,255,0.08);
-        padding-bottom: 4px;
-    }
-    .mobile-menu li:last-child {
-        border-bottom: none;
-    }
-    .mobile-menu a {
-        color: #fff;
-        font-size: 1.05rem;
-        text-decoration: none;
-        padding: 8px 14px;
-        border-radius: 7px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        transition: background 0.2s, color 0.2s;
-        font-family: 'Segoe UI', 'Playfair Display', Arial, sans-serif;
-        font-weight: 500;
-        letter-spacing: 0.02em;
-        box-shadow: none;
-    }
-    .mobile-menu a:hover {
-        background: rgba(255,255,255,0.12);
-        color: #ffd6d6;
-    }
-    .close-menu {
-        position: absolute;
-        top: 18px;
-        right: 18px;
-        font-size: 2.2rem;
-        color: #fff;
-        cursor: pointer;
-        z-index: 2100;
-        transition: color 0.2s;
-    }
-    .close-menu:hover {
-        color: #ffd6d6;
-    }
-    /* Mobile Menu Social Icons - Single Row */
-    .mobile-menu .social-icons {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 5px !important;
-        padding-bottom: 1em;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        white-space: nowrap;
-        box-sizing: border-box;
-    }
-    .mobile-menu .social-icons img {
-        height: 28px;
-        width: 28px;
-        border-radius: 6px;
-        box-shadow: 0 2px 8px rgba(128,0,0,0.08);
-        transition: transform 0.2s;
-        background: #fff;
-        padding: 0px !important;
-    }
-    .mobile-menu .social-icons a:hover img {
-        transform: scale(1.12);
-        box-shadow: 0 4px 16px rgba(128,0,0,0.12);
-    }
-    /* Mobile Submenu Positioning */
-    .mobile-menu li.has-submenu {
-        position: relative;
-    }
-    .mobile-menu .mobile-submenu {
-        display: none;
-        position: static;
-        width: 100%;
-        background: #232323;
-        color: #e0e0e0;
-        border-radius: 12px;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.18);
-        flex-direction: column;
-        gap: 6px;
-        padding: 12px 10px;
-        z-index: 1;
-        overflow-y: auto;
-        font-size: 0.95rem;
-        margin-top: 6px;
-    }
-    
-    .mobile-menu li.has-submenu:hover .mobile-submenu,
-    .mobile-menu li.has-submenu:focus-within .mobile-submenu,
-    .mobile-menu .mobile-submenu.show {
-        display: flex !important;
-    }
-    /* Mobile Menu Company Name - White in Light Mode */
-    .mobile-menu .company-name {
-        color: #ffffff !important;
-    }
-    /* Dark Mode Mobile Submenu */
-    body.dark-mode .mobile-menu .mobile-submenu {
-        background: #232323;
-        color: #e0e0e0;
-    }
-    body.dark-mode .mobile-menu .mobile-submenu a {
-        color: #e0e0e0 !important;
-        font-size: 0.95rem;
-        padding: 8px 12px;
-    }
-    body:not(.dark-mode) .mobile-menu .mobile-submenu {
-        background: #fff;
-        color: #222;
-    }
-    body:not(.dark-mode) .mobile-menu .mobile-submenu a {
-        font-size: 0.95rem;
-        padding: 8px 12px;
-    }
+    .hamburger            { display: flex !important; }
+    .nav-section          { display: none !important; }
+    .header-btn-secondary { display: none !important; }
+    .header-content       { padding: 0 16px; }
 }
-@media (min-width: 1200px) {
-    .hamburger {
-        display: none !important;
-    }
-    .nav-section {
-        display: flex !important;
-        flex: 1;
-        justify-content: center;
-    }
-    .mobile-menu,
-    .mobile-menu.active {
-        display: none !important;
-    }
-}
-@media (max-width: 1199px) {
+@media (min-width: 1201px) {
+    .hamburger     { display: none !important; }
+    .nav-section   { display: flex !important; flex: 1; justify-content: center; }
+    .mobile-menu   { transform: translateX(-100%) !important; }
+    .mobile-backdrop { display: none !important; }
 }
 </style>
 
@@ -567,137 +300,134 @@ body.dark-mode .mobile-menu .mobile-submenu a { color: #e0e0e0; font-size: 0.95r
     </div>
 </header>
 
-<!-- Mobile Menu -->
+<!-- Mobile backdrop -->
+<div class="mobile-backdrop" id="mobileBackdrop" onclick="toggleMobileMenu()" aria-hidden="true"></div>
 
-<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile menu">
-    <div style="display: flex; align-items: center; justify-content: space-between; padding: 0 1em 0 0; margin-bottom: 1em;">
-        <div class="logo-section">
-            <picture><source srcset="Images/KnightGroupLogo.webp" type="image/webp"><img src="Images/KnightGroupLogo.png" alt="Knight Group Logo" width="40" height="40"></picture>
-            <div class="company-name">Knight Group</div>
-        </div>
-        <button class="close-menu" onclick="toggleMobileMenu()" aria-label="Close menu" tabindex="0">&times;</button>
+<!-- Mobile menu panel -->
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <div class="mm-header">
+        <a href="/" class="mm-logo">
+            <picture>
+                <source srcset="Images/KnightGroupLogo.webp" type="image/webp">
+                <img src="Images/KnightGroupLogo.png" alt="Knight Group Logo" width="36" height="36">
+            </picture>
+            <span class="company-name" style="color:#fff!important;">Knight Group</span>
+        </a>
+        <button class="mm-close" onclick="toggleMobileMenu()" aria-label="Close menu">&#x2715;</button>
     </div>
-    <h2 class="visually-hidden">Main Menu</h2>
-    <ul>
-        <li><a href="/" tabindex="0">Home</a></li>
-        <li><a href="/about" tabindex="0">About</a></li>
-        <li class="has-submenu">
-            <button class="submenu-toggle" aria-expanded="false" aria-controls="mobileServicesMenu" tabindex="0" style="touch-action:manipulation;">
-                    Services <span aria-hidden="true" style="margin-left:6px;">▼</span>
+
+    <ul class="mm-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li>
+            <button class="mm-services-toggle" aria-expanded="false" aria-controls="mmServicesMenu" onclick="toggleMmServices(this)">
+                Services <span class="mm-chevron">&#9660;</span>
             </button>
-            <div class="mobile-submenu" id="mobileServicesMenu" aria-hidden="true">
-                <a href="/Services/general-repairs" tabindex="0">🔧 General Repairs</a>
-                <a href="/Services/plumbing-services" tabindex="0">🚿 Plumbing Services</a>
-                <a href="/Services/electrical-work" tabindex="0">⚡ Electrical Work</a>
-                <a href="/Services/carpentry-framing" tabindex="0">🏠 Carpentry & Framing</a>
-                <a href="/Services/painting-finishing" tabindex="0">🎨 Painting & Finishing</a>
-                <a href="/Services/home-renovations" tabindex="0">🏗️ Home Renovations</a>
-                <a href="/Services/doors-windows" tabindex="0">🚪 Doors & Windows</a>
-                <a href="/Services/custom-projects" tabindex="0">🔨 Custom Projects</a>
-                <a href="/Services/emergency-services" style="color: #b71c1c; font-weight: bold; background: #fff3f3; border-radius: 6px;" tabindex="0">🚨 Emergency Services</a>
+            <div class="mm-submenu" id="mmServicesMenu">
+                <a href="/Services/general-repairs">&#x1F527; General Repairs</a>
+                <a href="/Services/plumbing-services">&#x1F6BF; Plumbing Services</a>
+                <a href="/Services/electrical-work">&#x26A1; Electrical Work</a>
+                <a href="/Services/carpentry-framing">&#x1F3E0; Carpentry &amp; Framing</a>
+                <a href="/Services/painting-finishing">&#x1F3A8; Painting &amp; Finishing</a>
+                <a href="/Services/home-renovations">&#x1F3D7;&#xFE0F; Home Renovations</a>
+                <a href="/Services/doors-windows">&#x1F6AA; Doors &amp; Windows</a>
+                <a href="/Services/custom-projects">&#x1F528; Custom Projects</a>
+                <a href="/Services/emergency-services" style="color:#ff6b6b;border-left-color:#c0392b;">&#x1F6A8; Emergency Services</a>
             </div>
         </li>
-        <li><a href="/pricing" tabindex="0">Pricing</a></li>
-        <li><a href="/contact" tabindex="0">Contact</a></li>
-        <li><a href="/galleries" tabindex="0">Gallery</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/galleries">Gallery</a></li>
     </ul>
-    <div style="width:100%; display:flex; flex-direction:column; align-items:center; margin-top:1em; gap:0.5em;">
-        <a href="tel:+18136493341" class="header-btn-primary" style="width:90%;margin:0 auto 0 auto;display:block;text-align:center;">📞 (813) 649-3341</a>
-        <a href="mailto:nknight@knightgroup.com" class="header-btn-secondary" style="width:90%;margin:0 auto 0.5em auto;display:block;text-align:center;">✉️ Email Us</a>
+
+    <div class="mm-cta">
+        <a href="tel:+18136493341" class="mm-call">&#x1F4DE;&nbsp; (813) 649-3341</a>
+        <a href="mailto:nknight@knightgroup.com" class="mm-email">&#x2709;&#xFE0F;&nbsp; Email Us</a>
     </div>
-    <div class="social-icons">
+
+    <div class="mm-social">
         <a href="https://www.facebook.com/KnightGroupServices/" target="_blank" rel="noopener" aria-label="Facebook">
-            <picture><source srcset="Images/Facebook_Logo_Primary.webp" type="image/webp"><img src="Images/Facebook_Logo_Primary.png" alt="Facebook" width="28" height="28"></picture>
+            <picture><source srcset="Images/Facebook_Logo_Primary.webp" type="image/webp"><img src="Images/Facebook_Logo_Primary.png" alt="Facebook" width="26" height="26"></picture>
         </a>
         <a href="https://www.instagram.com/knight_group_services/" target="_blank" rel="noopener" aria-label="Instagram">
-            <picture><source srcset="Images/InstagramLogo.webp" type="image/webp"><img src="Images/InstagramLogo.png" alt="Instagram" width="28" height="28"></picture>
+            <picture><source srcset="Images/InstagramLogo.webp" type="image/webp"><img src="Images/InstagramLogo.png" alt="Instagram" width="26" height="26"></picture>
         </a>
         <a href="https://m.me/KnightGroupServices" target="_blank" rel="noopener" aria-label="Messenger">
-            <picture><source srcset="Images/Messenger.webp" type="image/webp"><img src="Images/Messenger.png" alt="Messenger" width="28" height="28"></picture>
+            <picture><source srcset="Images/Messenger.webp" type="image/webp"><img src="Images/Messenger.png" alt="Messenger" width="26" height="26"></picture>
         </a>
         <a href="https://www.tiktok.com/@knightgroupservices" target="_blank" rel="noopener" aria-label="TikTok">
-            <picture><source srcset="Images/TikTokLogo.webp" type="image/webp"><img src="Images/TikTokLogo.png" alt="TikTok" width="28" height="28"></picture>
+            <picture><source srcset="Images/TikTokLogo.webp" type="image/webp"><img src="Images/TikTokLogo.png" alt="TikTok" width="26" height="26"></picture>
         </a>
         <a href="https://x.com/KnightGroupSvcs" target="_blank" rel="noopener" aria-label="X">
-            <picture><source srcset="Images/XLogoBlack.webp" type="image/webp"><img src="Images/XLogoBlack.png" alt="X" width="28" height="28"></picture>
+            <picture><source srcset="Images/XLogoBlack.webp" type="image/webp"><img src="Images/XLogoBlack.png" alt="X" width="26" height="26"></picture>
         </a>
         <a href="https://www.pinterest.com/KnightGroupService/" target="_blank" rel="noopener" aria-label="Pinterest">
-            <picture><source srcset="Images/PintrestLogo.webp" type="image/webp"><img src="Images/PintrestLogo.png" alt="Pinterest" width="28" height="28"></picture>
+            <picture><source srcset="Images/PintrestLogo.webp" type="image/webp"><img src="Images/PintrestLogo.png" alt="Pinterest" width="26" height="26"></picture>
         </a>
     </div>
 </nav>
 
-<script>
-function toggleMobileMenu() {
-    var menu = document.getElementById('mobileMenu');
-    menu.classList.toggle('active');
-}
 
-// Automatically close mobile menu if screen width exceeds 1200px
-function closeMobileMenuOnResize() {
-    var menu = document.getElementById('mobileMenu');
-    if (window.innerWidth > 1200) {
+<script>
+function toggleMobileMenu(forceClose) {
+    var menu     = document.getElementById('mobileMenu');
+    var backdrop = document.getElementById('mobileBackdrop');
+    var isOpen   = menu.classList.contains('active');
+    if (forceClose || isOpen) {
         menu.classList.remove('active');
-        menu.style.display = 'none';
+        backdrop.classList.remove('active');
+        document.body.style.overflow = '';
     } else {
-        menu.style.display = '';
+        menu.classList.add('active');
+        backdrop.classList.add('active');
+        document.body.style.overflow = 'hidden';
     }
 }
-window.addEventListener('resize', closeMobileMenuOnResize);
+
+function toggleMmServices(btn) {
+    var submenu  = document.getElementById('mmServicesMenu');
+    var expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    submenu.classList.toggle('open', !expanded);
+}
+
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 1200) toggleMobileMenu(true);
+});
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') toggleMobileMenu(true);
+});
 
 document.addEventListener('DOMContentLoaded', function() {
-    var toggleBtn = document.querySelector('.submenu-toggle');
-    if (toggleBtn) {
-        toggleBtn.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                // If toggleServicesMenu is not defined, fallback to toggling aria attributes and submenu visibility
-                var submenu = document.getElementById('mobileServicesMenu');
-                var expanded = toggleBtn.getAttribute('aria-expanded') === 'true';
-                toggleBtn.setAttribute('aria-expanded', !expanded);
-                submenu.setAttribute('aria-hidden', expanded);
-                submenu.classList.toggle('show');
-            }
-        });
-    }
-    // Also check on initial load
-    closeMobileMenuOnResize();
-
-    // Email picker — intercept all "Email Us" mailto links
     var TO      = 'nknight@knightgroup.com';
     var SUBJECT = encodeURIComponent('Knight Group Inquiry');
     var BODY    = encodeURIComponent('Hi, I found your website and would like to inquire about your services.');
 
-    var emailLinks = document.querySelectorAll('a[href^="mailto:nknight@knightgroup.com"]');
-    emailLinks.forEach(function(link) {
+    document.querySelectorAll('a[href^="mailto:nknight@knightgroup.com"]').forEach(function(link) {
         link.addEventListener('click', function(e) {
             e.preventDefault();
-            document.getElementById('emailPickerModal').style.display = 'flex';
+            var m = document.getElementById('emailPickerModal');
+            if (m) m.style.display = 'flex';
         });
     });
 
-    // Set dynamic compose URLs
-    document.getElementById('emailOptGmail').href =
-        'https://mail.google.com/mail/?view=cm&to=' + TO + '&su=' + SUBJECT + '&body=' + BODY;
-    document.getElementById('emailOptOutlook').href =
-        'https://outlook.live.com/mail/0/deeplink/compose?to=' + TO + '&subject=' + SUBJECT + '&body=' + BODY;
-    document.getElementById('emailOptYahoo').href =
-        'https://compose.mail.yahoo.com/?to=' + TO + '&subject=' + SUBJECT + '&body=' + BODY;
-    document.getElementById('emailOptDefault').href =
-        'mailto:' + TO + '?subject=' + SUBJECT + '&body=' + BODY;
+    function setHref(id, url) { var el = document.getElementById(id); if (el) el.href = url; }
+    setHref('emailOptGmail',   'https://mail.google.com/mail/?view=cm&to=' + TO + '&su=' + SUBJECT + '&body=' + BODY);
+    setHref('emailOptOutlook', 'https://outlook.live.com/mail/0/deeplink/compose?to=' + TO + '&subject=' + SUBJECT + '&body=' + BODY);
+    setHref('emailOptYahoo',   'https://compose.mail.yahoo.com/?to=' + TO + '&subject=' + SUBJECT + '&body=' + BODY);
+    setHref('emailOptDefault', 'mailto:' + TO + '?subject=' + SUBJECT + '&body=' + BODY);
 
-    // Close modal
-    document.getElementById('emailPickerClose').addEventListener('click', closeEmailModal);
-    document.getElementById('emailPickerModal').addEventListener('click', function(e) {
-        if (e.target === this) closeEmailModal();
-    });
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') closeEmailModal();
-    });
+    var closeBtn = document.getElementById('emailPickerClose');
+    var modal    = document.getElementById('emailPickerModal');
+    if (closeBtn) closeBtn.addEventListener('click', closeEmailModal);
+    if (modal)    modal.addEventListener('click', function(e) { if (e.target === this) closeEmailModal(); });
+    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeEmailModal(); });
 });
 
 function closeEmailModal() {
-    document.getElementById('emailPickerModal').style.display = 'none';
+    var modal = document.getElementById('emailPickerModal');
+    if (modal) modal.style.display = 'none';
 }
 </script>
 
