@@ -75,6 +75,7 @@ header {
     white-space: nowrap;
 }
 .nav-section nav a.active,
+.nav-section nav a.nav-active,
 .nav-section nav a:focus,
 .nav-section nav a:focus-visible,
 .nav-section nav a:hover {
@@ -245,7 +246,11 @@ header {
     z-index: 1000;
     padding: 12px 0;
 }
-.dropdown:hover .dropdown-content,
+@media (hover: hover) {
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
 .dropdown:focus-within .dropdown-content {
     display: block;
 }
@@ -335,6 +340,7 @@ header {
     padding: 8px;
     border-radius: 4px;
     transition: background-color 0.2s;
+    touch-action: manipulation;
 }
 .hamburger:focus,
 .hamburger:focus-visible {
@@ -712,25 +718,25 @@ body.dark-mode .close-menu {
             <div class="nav-section">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
                         <li class="dropdown">
                             <a href="#" onclick="return false;" class="services-link">Services</a>
                             <div class="dropdown-content">
-                                <a href="Services/general-repairs.html">🔧 General Repairs</a>
-                                <a href="Services/plumbing-services.html">🚿 Plumbing Services</a>
-                                <a href="Services/electrical-work.html">⚡ Electrical Work</a>
-                                <a href="Services/carpentry-framing.html">🏠 Carpentry & Framing</a>
-                                <a href="Services/painting-finishing.html">🎨 Painting & Finishing</a>
-                                <a href="Services/home-renovations.html">🏗️ Home Renovations</a>
-                                <a href="Services/doors-windows.html">🚪 Doors & Windows</a>
-                                <a href="Services/custom-projects.html">🔨 Custom Projects</a>
-                                <a href="Services/emergency-services.html" style="color: #d63031; font-weight: bold;">🚨 Emergency Services</a>
+                                <a href="/Services/general-repairs">🔧 General Repairs</a>
+                                <a href="/Services/plumbing-services">🚿 Plumbing Services</a>
+                                <a href="/Services/electrical-work">⚡ Electrical Work</a>
+                                <a href="/Services/carpentry-framing">🏠 Carpentry & Framing</a>
+                                <a href="/Services/painting-finishing">🎨 Painting & Finishing</a>
+                                <a href="/Services/home-renovations">🏗️ Home Renovations</a>
+                                <a href="/Services/doors-windows">🚪 Doors & Windows</a>
+                                <a href="/Services/custom-projects">🔨 Custom Projects</a>
+                                <a href="/Services/emergency-services" style="color: #d63031; font-weight: bold;">🚨 Emergency Services</a>
                             </div>
                         </li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="galleries.html">Gallery</a></li>
+                        <li><a href="/pricing">Pricing</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/galleries">Gallery</a></li>
                     </ul>
                 </nav>
             </div>
@@ -757,27 +763,27 @@ body.dark-mode .close-menu {
     </div>
     <h2 class="visually-hidden">Main Menu</h2>
     <ul>
-        <li><a href="index.html" tabindex="0">Home</a></li>
-        <li><a href="about.html" tabindex="0">About</a></li>
+        <li><a href="/" tabindex="0">Home</a></li>
+        <li><a href="/about" tabindex="0">About</a></li>
         <li class="has-submenu">
-            <button class="submenu-toggle" aria-expanded="false" aria-controls="mobileServicesMenu" tabindex="0">
+            <button class="submenu-toggle" aria-expanded="false" aria-controls="mobileServicesMenu" tabindex="0" style="touch-action:manipulation;">
                     Services <span aria-hidden="true" style="margin-left:6px;">▼</span>
             </button>
             <div class="mobile-submenu" id="mobileServicesMenu" aria-hidden="true">
-                <a href="Services/general-repairs.html" tabindex="0">🔧 General Repairs</a>
-                <a href="Services/plumbing-services.html" tabindex="0">🚿 Plumbing Services</a>
-                <a href="Services/electrical-work.html" tabindex="0">⚡ Electrical Work</a>
-                <a href="Services/carpentry-framing.html" tabindex="0">🏠 Carpentry & Framing</a>
-                <a href="Services/painting-finishing.html" tabindex="0">🎨 Painting & Finishing</a>
-                <a href="Services/home-renovations.html" tabindex="0">🏗️ Home Renovations</a>
-                <a href="Services/doors-windows.html" tabindex="0">🚪 Doors & Windows</a>
-                <a href="Services/custom-projects.html" tabindex="0">🔨 Custom Projects</a>
-                <a href="Services/emergency-services.html" style="color: #b71c1c; font-weight: bold; background: #fff3f3; border-radius: 6px;" tabindex="0">🚨 Emergency Services</a>
+                <a href="/Services/general-repairs" tabindex="0">🔧 General Repairs</a>
+                <a href="/Services/plumbing-services" tabindex="0">🚿 Plumbing Services</a>
+                <a href="/Services/electrical-work" tabindex="0">⚡ Electrical Work</a>
+                <a href="/Services/carpentry-framing" tabindex="0">🏠 Carpentry & Framing</a>
+                <a href="/Services/painting-finishing" tabindex="0">🎨 Painting & Finishing</a>
+                <a href="/Services/home-renovations" tabindex="0">🏗️ Home Renovations</a>
+                <a href="/Services/doors-windows" tabindex="0">🚪 Doors & Windows</a>
+                <a href="/Services/custom-projects" tabindex="0">🔨 Custom Projects</a>
+                <a href="/Services/emergency-services" style="color: #b71c1c; font-weight: bold; background: #fff3f3; border-radius: 6px;" tabindex="0">🚨 Emergency Services</a>
             </div>
         </li>
-        <li><a href="pricing.html" tabindex="0">Pricing</a></li>
-        <li><a href="contact.html" tabindex="0">Contact</a></li>
-        <li><a href="galleries.html" tabindex="0">Gallery</a></li>
+        <li><a href="/pricing" tabindex="0">Pricing</a></li>
+        <li><a href="/contact" tabindex="0">Contact</a></li>
+        <li><a href="/galleries" tabindex="0">Gallery</a></li>
     </ul>
     <div style="width:100%; display:flex; flex-direction:column; align-items:center; margin-top:1em; gap:0.5em;">
         <a href="tel:+18136493341" class="header-btn-primary" style="width:90%;margin:0 auto 0 auto;display:block;text-align:center;">📞 (813) 649-3341</a>

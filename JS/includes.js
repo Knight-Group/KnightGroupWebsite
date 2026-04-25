@@ -140,49 +140,37 @@ class HTMLInclude {
     }
 
     setActiveNavItem() {
-        // Get current page filename and path
         const currentPath = window.location.pathname;
-        const currentPage = currentPath.split('/').pop() || 'index.html';
-        
-        // Map page names to navigation items
-        const pageMap = {
-            'index.html': 'index.html',
-            'about.html': 'about.html', 
-            'pricing.html': 'pricing.html',
-            'contact.html': 'contact.html',
-            'galleries.html': 'galleries.html'
-        };
+        const currentSlug = currentPath.replace(/\.html$/, '').replace(/^\//, '') || 'index';
 
-        // Find and highlight the active navigation item
+        // Collect which links to activate (all reads first, then batch writes)
+        const toActivate = [];
         const navLinks = document.querySelectorAll('nav a');
         navLinks.forEach(link => {
             const href = link.getAttribute('href');
-            if (href) {
-                // Handle main page links
-                if (href === currentPage || href === pageMap[currentPage]) {
-                    link.style.background = '#800000';
-                    link.style.color = '#fff';
-                }
-                // Handle service page links - check if current page matches the service
-                if (currentPath.includes('/Services/') && href.includes(currentPage)) {
-                    link.style.background = '#800000';
-                    link.style.color = '#fff';
+            if (!href) return;
+            const hrefSlug = href.replace(/\.html$/, '').replace(/^\/+/, '') || 'index';
+            if (hrefSlug === currentSlug) {
+                toActivate.push(link);
+            }
+            if (currentPath.includes('/Services/')) {
+                const currentFile = currentSlug.split('/').pop();
+                const hrefFile = hrefSlug.split('/').pop();
+                if (hrefFile && hrefFile === currentFile) {
+                    toActivate.push(link);
                 }
             }
         });
 
-        // Handle services pages - highlight Services dropdown if on any service page
-        if (currentPath.includes('/Services/') || 
-            ['handyman.html', 'general-repairs.html', 'plumbing-services.html', 'electrical-work.html', 
-             'carpentry-framing.html', 'painting-finishing.html', 'home-renovations.html', 
-             'doors-windows.html', 'custom-projects.html', 'handcraftedfurniture&resins.html'].includes(currentPage)) {
-            
+        if (currentPath.includes('/Services/')) {
             const servicesLink = document.querySelector('nav a[href="#"]');
             if (servicesLink && servicesLink.textContent.trim() === 'Services') {
-                servicesLink.style.background = '#800000';
-                servicesLink.style.color = '#fff';
+                toActivate.push(servicesLink);
             }
         }
+
+        // Batch all writes via classList — avoids forced reflow from inline style churn
+        toActivate.forEach(link => link.classList.add('nav-active'));
     }
 
     fixRelativePaths(element, pathPrefix) {
