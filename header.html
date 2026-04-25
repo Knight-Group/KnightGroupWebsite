@@ -23,6 +23,7 @@ header {
     min-height: 68px;
     padding: 0 40px;
     box-sizing: border-box;
+    position: relative;
 }
 .logo-section { display: flex; align-items: center; gap: 10px; }
 .logo-section img { height: 44px; width: auto; }
@@ -239,7 +240,16 @@ body.dark-mode .header-btn-secondary:hover { background: #800000; color: #fff; b
     .hamburger            { display: flex !important; }
     .nav-section          { display: none !important; }
     .header-btn-secondary { display: none !important; }
+    .header-actions       { display: none !important; }
     .header-content       { padding: 0 16px; }
+    /* Center logo absolutely within the sticky header on mobile */
+    .logo-section {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        pointer-events: none;
+    }
+    .logo-section a { pointer-events: auto; }
 }
 @media (min-width: 1201px) {
     .hamburger     { display: none !important; }
@@ -253,16 +263,14 @@ body.dark-mode .header-btn-secondary:hover { background: #800000; color: #fff; b
 <header>
     <div class="container">
         <div class="header-content">
-            <div style="display: flex; align-items: center; gap: 16px;">
-                <div class="hamburger" onclick="toggleMobileMenu()" tabindex="0" role="button" aria-label="Toggle mobile menu" style="margin-left: 8px;">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="logo-section">
+            <div class="hamburger" onclick="toggleMobileMenu()" tabindex="0" role="button" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo-section">
                     <picture><source srcset="Images/KnightGroupLogo.webp" type="image/webp"><img src="Images/KnightGroupLogo.png" alt="Knight Group Logo" width="50" height="50"></picture>
-                    <div class="company-name">Knight Group</div>
-                </div>
+                <div class="company-name">Knight Group</div>
             </div>
             <div class="nav-section">
                 <nav>
