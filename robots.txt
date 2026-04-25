@@ -15,16 +15,15 @@ Disallow: /thank-you
 Disallow: /thank-you.html
 Disallow: /PolicyPages/payment-policy-test
 Disallow: /PolicyPages/payment-policy-test.html
-Disallow: /Chess-Game-main/
 Disallow: /JS/header
 Disallow: /JS/header.html
 Disallow: /JS/footer
 Disallow: /JS/footer.html
-Disallow: /programming&databases
-Disallow: /programming&databases.html
-Disallow: /Services/programming&databases
-Disallow: /Services/programming&databases.html
-Disallow: /Services/handcraftedfurniture&resins
-Disallow: /Services/handcraftedfurniture&resins.html
+Disallow: /programming%26databases
+Disallow: /programming%26databases.html
+Disallow: /Services/programming%26databases
+Disallow: /Services/programming%26databases.html
+Disallow: /Services/handcraftedfurniture%26resins
+Disallow: /Services/handcraftedfurniture%26resins.html
 
 Sitemap: https://www.knightgroup.com/sitemap.xml

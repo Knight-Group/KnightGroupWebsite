@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="canonical" href="https://www.knightgroup.com/thank-you">
-    <title>Thank You - Knight Group</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="Images/android-chrome-512x512.png" type="image/png">
+    <link rel="apple-touch-icon" href="/Images/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#c8242a">
+    <title>Thank You | Knight Group Handyman Services</title>
+    <meta name="description" content="Thank you for contacting Knight Group. We received your estimate request and will respond within 24 hours.">
     <style>
         .thank-you-container {
             max-width: 600px;
@@ -57,8 +62,10 @@
     </script>
 </head>
 <body>
+    <div id="header-include"></div>
+
     <div class="thank-you-container">
-        <div class="success-icon">âœ“</div>
+        <div class="success-icon">&#10003;</div>
         <div class="thank-you-message">
             <h1>Thank You for Your Request!</h1>
             <p>Your service request has been successfully submitted.</p>
@@ -66,16 +73,18 @@
             <p><strong>Need immediate assistance?</strong><br>
             Call us at: <strong>(813) 649-3341</strong></p>
             
-            <a href="index.html" class="back-home">â† Back to Home</a>
+            <a href="/" class="back-home">&#8592; Back to Home</a>
         </div>
     </div>
 
     <script>
         // Auto redirect to home after 10 seconds
         setTimeout(function() {
-            window.location.href = 'index.html';
+            window.location.href = '/';
         }, 10000);
     </script>
+    <div id="footer-include"></div>
+    <script src="JS/includes.js" defer></script>
 </body>
 </html>
 
