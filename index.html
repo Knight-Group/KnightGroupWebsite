@@ -194,7 +194,7 @@
     </script>
 
     <!-- Preload LCP hero image (parser-discoverable — must stay static) -->
-    <link rel="preload" as="image" href="Images/handyman.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="Images/KGHero.webp" fetchpriority="high">
     <!-- WebP feature detect: adds 'webp' or 'no-webp' class to <html> synchronously before CSS is applied -->
     <script>!function(){var c=document.createElement('canvas');c.width=c.height=1;var ok=c.toDataURL&&c.toDataURL('image/webp').match('^data:image/webp');document.documentElement.className+=ok?' webp':' no-webp';}();</script>
 
@@ -236,7 +236,7 @@
               /* Hero Section */
         .hero {
             background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(128,0,0,0.6) 100%), 
-                        url('Images/handyman.webp') center/cover;
+                        url('Images/KGHero.webp') center/cover;
             color: #fff;
             padding: 120px 0;
             text-align: center;
@@ -245,7 +245,7 @@
         /* WebP fallback for browsers that do not support WebP */
         .no-webp .hero {
             background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(128,0,0,0.6) 100%),
-                        url('Images/handyman.jpg') center/cover;
+                        url('Images/KGHero.jpg') center/cover;
         }
 
         .hero h1 {
