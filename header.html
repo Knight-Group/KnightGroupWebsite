@@ -265,10 +265,14 @@ body.dark-mode .header-btn-secondary:hover { background: #800000; color: #fff; b
     .logo-section {
         position: absolute;
         left: 50%;
-        transform: translateX(-50%);
+        top: 50%;
+        transform: translate(-50%, -50%);
         pointer-events: none;
     }
     .logo-section a { pointer-events: auto; }
+}
+@media (max-width: 380px) {
+    .company-name { display: none !important; }
 }
 @media (min-width: 1201px) {
     .hamburger     { display: none !important; }
