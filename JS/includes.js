@@ -110,33 +110,81 @@ class HTMLInclude {
     }
 
     initializeAfterIncludes() {
-        // Mobile menu functionality
-        window.toggleMobileMenu = function() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            if (mobileMenu) {
-                mobileMenu.classList.toggle('active');
+        // ── Mobile menu toggle ────────────────────────────────────────────────
+        window.toggleMobileMenu = function(forceClose) {
+            const menu     = document.getElementById('mobileMenu');
+            const backdrop = document.getElementById('mobileBackdrop');
+            if (!menu) return;
+            const isOpen = menu.classList.contains('active');
+            if (forceClose || isOpen) {
+                menu.classList.remove('active');
+                if (backdrop) backdrop.classList.remove('active');
+                document.body.style.overflow = '';
+            } else {
+                menu.classList.add('active');
+                if (backdrop) backdrop.classList.add('active');
+                document.body.style.overflow = 'hidden';
             }
         };
 
-        // Close mobile menu when clicking on a link
+        // ── Services submenu accordion ────────────────────────────────────────
+        window.toggleMmServices = function(btn) {
+            const submenu  = document.getElementById('mmServicesMenu');
+            if (!submenu) return;
+            const expanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', String(!expanded));
+            submenu.classList.toggle('open', !expanded);
+        };
+
+        // ── Close menu on backdrop click ──────────────────────────────────────
+        const backdrop = document.getElementById('mobileBackdrop');
+        if (backdrop) {
+            backdrop.addEventListener('click', () => window.toggleMobileMenu(true));
+        }
+
+        // ── Close menu when a nav link is tapped ─────────────────────────────
         document.querySelectorAll('.mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                const mobileMenu = document.getElementById('mobileMenu');
-                if (mobileMenu) {
-                    mobileMenu.classList.remove('active');
-                }
+            link.addEventListener('click', () => window.toggleMobileMenu(true));
+        });
+
+        // ── Close on Escape key ───────────────────────────────────────────────
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') window.toggleMobileMenu(true);
+        });
+
+        // ── Close when resized to desktop ─────────────────────────────────────
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 1200) window.toggleMobileMenu(true);
+        });
+
+        // ── Email picker modal ────────────────────────────────────────────────
+        const TO      = 'nknight@knightgroup.com';
+        const SUBJECT = encodeURIComponent('Knight Group Inquiry');
+        const BODY    = encodeURIComponent('Hi, I found your website and would like to inquire about your services.');
+
+        document.querySelectorAll('a[href^="mailto:nknight@knightgroup.com"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const m = document.getElementById('emailPickerModal');
+                if (m) m.style.display = 'flex';
             });
         });
 
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            const mobileMenu = document.getElementById('mobileMenu');
-            const hamburger = document.querySelector('.hamburger');
-            
-            if (mobileMenu && hamburger && !mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
-                mobileMenu.classList.remove('active');
-            }
-        });
+        function setHref(id, url) { const el = document.getElementById(id); if (el) el.href = url; }
+        setHref('emailOptGmail',   'https://mail.google.com/mail/?view=cm&to=' + TO + '&su=' + SUBJECT + '&body=' + BODY);
+        setHref('emailOptOutlook', 'https://outlook.live.com/mail/0/deeplink/compose?to=' + TO + '&subject=' + SUBJECT + '&body=' + BODY);
+        setHref('emailOptYahoo',   'https://compose.mail.yahoo.com/?to=' + TO + '&subject=' + SUBJECT + '&body=' + BODY);
+        setHref('emailOptDefault', 'mailto:' + TO + '?subject=' + SUBJECT + '&body=' + BODY);
+
+        window.closeEmailModal = function() {
+            const modal = document.getElementById('emailPickerModal');
+            if (modal) modal.style.display = 'none';
+        };
+
+        const closeBtn = document.getElementById('emailPickerClose');
+        const modal    = document.getElementById('emailPickerModal');
+        if (closeBtn) closeBtn.addEventListener('click', window.closeEmailModal);
+        if (modal)    modal.addEventListener('click', (e) => { if (e.target === modal) window.closeEmailModal(); });
     }
 
     setActiveNavItem() {
