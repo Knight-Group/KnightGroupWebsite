@@ -1371,5 +1371,31 @@ document.addEventListener('DOMContentLoaded', function() {
     closeMobileMenuOnResize();
 });
 </script>
+<style>
+/* perf: replace transition:all with composited-only properties to eliminate non-composited animations */
+nav a,
+.dropdown-trigger {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease !important;
+}
+.dropdown-content a {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease !important;
+}
+.dropdown-content a:hover {
+    padding-left: 24px !important; /* revert to base padding; shift handled by transform */
+    transform: translateX(4px) !important;
+}
+.btn-primary {
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+.btn-secondary {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease !important;
+}
+.theme-toggle {
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease !important;
+}
+.hamburger span {
+    transition: transform 0.3s, background-color 0.3s !important;
+}
+</style>
 <script src="JS/menu.js"></script>
 
