@@ -1,4 +1,4 @@
-﻿<style>
+<style>
 @media (min-width: 767px) and (max-width: 997px) {
     .footer-content {
         grid-template-columns: 1fr 1fr;
@@ -124,7 +124,7 @@ footer::before {
     text-decoration: none;
     font-weight: 500;
     font-size: 1rem;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, padding-left 0.3s ease;
     padding: 4px 0;
     border-radius: 4px;
     position: relative;
@@ -207,7 +207,7 @@ footer::before {
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.2);
@@ -318,6 +318,13 @@ body.dark-mode .footer-bottom {
         left: 50%;
         transform: translateX(-50%);
     }
+
+    .footer-contact {
+        text-align: center;
+    }
+    .footer-contact p {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -352,7 +359,7 @@ body.dark-mode .footer-bottom {
             <div class="footer-left">
                 <div class="footer-company">
                     <div class="footer-logo">
-                        <img src="Images/KnightGroupLogo.webp" alt="Knight Group Logo">
+                    <picture><source srcset="Images/KnightGroupLogo.webp" type="image/webp"><img src="Images/KnightGroupLogo.png" alt="Knight Group Logo" width="80" height="80"></picture>
                         <div>
                             <h3>Knight Group</h3>
                             <p>Handyman Services LLC</p>
@@ -366,10 +373,10 @@ body.dark-mode .footer-bottom {
             <div class="footer-center">
                 <h4>Quick Links</h4>
                 <div class="footer-links">
-                    <a href="/PolicyPages/payment-policy.html">Payment Policy</a>
-                    <a href="/PolicyPages/returnpolicy.html">Return Policy</a>
-                    <a href="/PolicyPages/privacy-policy.html">Privacy Policy</a>
-                    <a href="/PolicyPages/terms.html">Terms of Service</a>
+                    <a href="/PolicyPages/payment-policy">Payment Policy</a>
+                    <a href="/PolicyPages/returnpolicy">Return Policy</a>
+                    <a href="/PolicyPages/privacy-policy">Privacy Policy</a>
+                    <a href="/PolicyPages/terms">Terms of Service</a>
                 </div>
             </div>
             
@@ -381,22 +388,22 @@ body.dark-mode .footer-bottom {
                 </div>
                 <div class="footer-social single-row">
                     <a href="https://www.facebook.com/KnightGroupServices/" target="_blank" aria-label="Facebook">
-                        <img src="Images/Facebook_Logo_Primary.webp" alt="Facebook">
+                        <picture><source srcset="Images/Facebook_Logo_Primary.webp" type="image/webp"><img src="Images/Facebook_Logo_Primary.png" alt="Facebook" width="28" height="28" loading="lazy"></picture>
                     </a>
                     <a href="https://www.instagram.com/knight_group_services/" target="_blank" aria-label="Instagram">
-                        <img src="Images/InstagramLogo.webp" alt="Instagram">
+                        <picture><source srcset="Images/InstagramLogo.webp" type="image/webp"><img src="Images/InstagramLogo.png" alt="Instagram" width="28" height="28" loading="lazy"></picture>
                     </a>
                     <a href="https://m.me/KnightGroupServices" target="_blank" aria-label="Messenger">
-                        <img src="Images/Messenger.webp" alt="Messenger">
+                        <picture><source srcset="Images/Messenger.webp" type="image/webp"><img src="Images/Messenger.png" alt="Messenger" width="28" height="28" loading="lazy"></picture>
                     </a>
                     <a href="https://www.tiktok.com/@knightgroupservices" target="_blank" aria-label="TikTok">
-                        <img src="Images/TikTokLogo.webp" alt="TikTok">
+                        <picture><source srcset="Images/TikTokLogo.webp" type="image/webp"><img src="Images/TikTokLogo.png" alt="TikTok" width="28" height="28" loading="lazy"></picture>
                     </a>
                     <a href="https://x.com/KnightGroupSvcs" target="_blank" aria-label="X">
-                        <img src="Images/XLogoBlack.webp" alt="X">
+                        <picture><source srcset="Images/XLogoBlack.webp" type="image/webp"><img src="Images/XLogoBlack.png" alt="X" width="28" height="28" loading="lazy"></picture>
                     </a>
                     <a href="https://www.pinterest.com/KnightGroupService/" target="_blank" aria-label="Pinterest">
-                        <img src="Images/PintrestLogo.webp" alt="Pinterest">
+                        <picture><source srcset="Images/PintrestLogo.webp" type="image/webp"><img src="Images/PintrestLogo.png" alt="Pinterest" width="28" height="28" loading="lazy"></picture>
                     </a>
                 </div>
             </div>
@@ -407,4 +414,3 @@ body.dark-mode .footer-bottom {
         </div>
     </div>
 </footer>
-

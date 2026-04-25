@@ -750,6 +750,13 @@
         }
 
         /* Mobile Responsive */
+        @media (max-width: 900px) {
+            .review-contact-cta > div {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+        
         @media (max-width: 768px) {
             .hero-social-icons {
                 gap: 10px;
@@ -800,6 +807,15 @@
             .review-contact-cta > div {
                 grid-template-columns: 1fr;
                 gap: 20px;
+            }
+            
+            /* Trust badges mobile */
+            .trust-badges {
+                justify-content: center;
+                gap: 16px;
+            }
+            .trust-badge {
+                font-size: 0.9rem;
             }
             
             /* Combined Map Services Responsive */
@@ -947,7 +963,7 @@
             <h1>Handyman Services in Pinellas County, FL</h1>
             <p class="subtitle">Registered • Insured • Professional</p>
             <p class="description">Serving Pinellas County for Over 15 Years with Quality Home Improvement Services</p>
-            <a href="/Services/handyman" class="btn-primary">Get Your FREE Estimate Today</a>
+            <a href="/contact" class="btn-primary">Get Your FREE Estimate Today</a>
             
             <div class="trust-badges">
                 <span class="trust-badge">Registered & Insured</span>
@@ -1501,7 +1517,7 @@
                             Get a free estimate or schedule your service appointment today.
                         </p>
                         <div style="display: flex; flex-direction: column; gap: 15px;">
-                            <a href="#services" onclick="document.querySelector('.services').scrollIntoView({behavior: 'smooth'})" class="btn-primary">
+                            <a href="/contact" class="btn-primary">
                                 📋 Request Free Estimate
                             </a>
                             <a href="mailto:nknight@knightgroup.com" class="btn-secondary">

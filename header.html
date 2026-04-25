@@ -218,6 +218,23 @@ header {
 }
 .mm-social a:hover img { opacity: 1; transform: scale(1.1); }
 .visually-hidden { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+/* Mobile-only call icon button (hidden on desktop) */
+.header-call-mobile {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #800000;
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    flex-shrink: 0;
+    transition: background 0.18s, transform 0.18s;
+    box-shadow: 0 2px 8px rgba(128,0,0,0.30);
+}
+.header-call-mobile:hover { background: #600000; transform: scale(1.08); }
 /* Dark mode */
 body.dark-mode header { background: #111620; border-bottom: 3px solid #c0392b; box-shadow: 0 2px 16px rgba(0,0,0,0.45); }
 body.dark-mode .company-name { color: #ff7070; }
@@ -240,7 +257,9 @@ body.dark-mode .header-btn-secondary:hover { background: #800000; color: #fff; b
     .hamburger            { display: flex !important; }
     .nav-section          { display: none !important; }
     .header-btn-secondary { display: none !important; }
-    .header-actions       { display: none !important; }
+    /* Show only the icon call button on mobile; hide text button */
+    .header-actions .header-btn-primary { display: none !important; }
+    .header-call-mobile   { display: flex !important; }
     .header-content       { padding: 0 16px; }
     /* Center logo absolutely within the sticky header on mobile */
     .logo-section {
@@ -299,6 +318,8 @@ body.dark-mode .header-btn-secondary:hover { background: #800000; color: #fff; b
             </div>
 
             <div class="header-actions">
+                <!-- Mobile: icon-only call button -->
+                <a href="tel:+18136493341" class="header-call-mobile" aria-label="Call (813) 649-3341" title="Call (813) 649-3341">📞</a>
                 <div class="cta-buttons">
                     <a href="tel:+18136493341" class="header-btn-primary" title="Click to call on mobile, or dial (813) 649-3341">📞 (813) 649-3341</a>
                     <a href="mailto:nknight@knightgroup.com" class="header-btn-secondary" title="nknight@knightgroup.com">Email Us</a>
