@@ -1132,7 +1132,7 @@
                 }
                 .review-meta {
                     font-size: 0.8rem;
-                    color: #888;
+                    color: #666;
                 }
                 .review-stars {
                     color: #fbbc05;
@@ -1147,7 +1147,7 @@
                 }
                 .review-date {
                     font-size: 0.8rem;
-                    color: #aaa;
+                    color: #767676;
                 }
                 .review-carousel-btn {
                     background: #fff;
@@ -1177,6 +1177,8 @@
                     height: 8px;
                     border-radius: 50%;
                     background: #ddd;
+                    border: none;
+                    padding: 0;
                     margin: 0 4px;
                     cursor: pointer;
                     transition: background 0.2s;
@@ -1230,9 +1232,10 @@
                     dotsContainer.innerHTML = '';
                     var pages = Math.ceil(total / visibleCount());
                     for (var i = 0; i < pages; i++) {
-                        var dot = document.createElement('span');
+                        var dot = document.createElement('button');
                         dot.className = 'review-carousel-dot' + (i === 0 ? ' active' : '');
                         dot.setAttribute('aria-label', 'Go to review ' + (i + 1));
+                        dot.setAttribute('type', 'button');
                         dot.dataset.index = i;
                         dot.addEventListener('click', function() {
                             current = parseInt(this.dataset.index) * visibleCount();
