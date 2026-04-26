@@ -1,4 +1,7 @@
 <style>
+        /* CLS: reserve header height before JS injects */
+        #header-include { min-height: 74px; }
+
 @media (min-width: 767px) and (max-width: 997px) {
     .footer-content {
         grid-template-columns: 1fr 1fr;
@@ -241,41 +244,13 @@ footer::before {
 }
 
 /* Dark Mode Footer Styles */
-body.dark-mode footer {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #3d3d3d 100%);
-    box-shadow: 0 -10px 30px rgba(255,255,255,0.05);
-}
 
-body.dark-mode footer::before {
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-}
 
-body.dark-mode .footer-company h3 {
-    color: #ff6b6b;
-}
 
-body.dark-mode .footer-center h4,
-body.dark-mode .footer-right h4 {
-    color: #ff6b6b;
-}
 
-body.dark-mode .footer-center h4::after,
-body.dark-mode .footer-right h4::after {
-    background: rgba(255,107,107,0.4);
-}
 
-body.dark-mode .footer-social a {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
-}
 
-body.dark-mode .footer-social a:hover {
-    background: rgba(255,107,107,0.2);
-}
 
-body.dark-mode .footer-bottom {
-    background: rgba(0,0,0,0.2);
-}
 
 /* Mobile Footer Styles */
 @media (max-width: 768px) {
