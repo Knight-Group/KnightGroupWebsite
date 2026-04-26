@@ -169,182 +169,53 @@
         }
 
         /* Dark Mode Styles */
-        body.dark-mode {
-            background-color: #0f1419;
-            color: #e0e0e0;
-        }
 
-        body.dark-mode main {
-            background-color: #0f1419;
-        }
 
-        body.dark-mode .service-hero h1 {
-            color: #ff6b6b;
-        }
 
-        body.dark-mode .service-hero p {
-            color: #ffffff;
-        }
 
-        body.dark-mode .service-details h2 {
-            color: #ff6b6b;
-        }
 
-        body.dark-mode .service-details h3 {
-            color: #ff6b6b;
-        }
 
-        body.dark-mode .service-details p {
-            color: #ffffff;
-        }
 
-        body.dark-mode .service-list li {
-            color: #ffffff;
-        }
 
-        body.dark-mode .service-sidebar {
-            background: #181c22;
-            border: 1px solid #23272f;
-        }
 
-        body.dark-mode .contact-card {
-            background-color: #2d2d2d;
-            border: 1px solid #444;
-        }
 
-        body.dark-mode .contact-card h3 {
-            color: #ff6b6b;
-        }
 
-        body.dark-mode .contact-card p {
-            color: #ffffff;
-        }
 
-        body.dark-mode .contact-card a {
-            color: #ff6b6b;
-        }
 
-        body.dark-mode .cta-box h3 {
-            color: #ff6b6b;
-        }
 
-        body.dark-mode .cta-box p {
-            color: #ffffff;
-        }
 
-        body.dark-mode .contact-info h4 {
-            color: #ff6b6b;
-        }
 
-        body.dark-mode .contact-info p {
-            color: #ffffff;
-        }
 
-        body.dark-mode .service-details h3 {
-            color: #ff6b6b;
-        }
 
-        body.dark-mode .service-details p {
-            color: #ffffff;
-        }
 
-        body.dark-mode .service-list li {
-            color: #ffffff;
-        }
 
         /* Pricing box styling */
-        body.dark-mode .emergency-pricing {
-            background: #2a2a2a !important;
-            border-color: #ff6b6b !important;
-        }
 
-        body.dark-mode .emergency-pricing h4 {
-            color: #ff6b6b !important;
-        }
 
         /* Form styling */
-        body.dark-mode div[style*="border-left: 4px solid #800000"] {
-            background: #2a2a2a !important;
-            border-left-color: #ff6b6b !important;
-        }
         
-        body.dark-mode div[style*="border-left: 4px solid #800000"] h4 {
-            color: #ff6b6b !important;
-        }
         
-        body.dark-mode input, 
-        body.dark-mode select, 
-        body.dark-mode textarea {
-            background: #333 !important;
-            color: #ffffff !important;
-            border-color: #555 !important;
-        }
         
-        body.dark-mode input::placeholder,
-        body.dark-mode textarea::placeholder {
-            color: #bbb !important;
-        }
         
-        body.dark-mode button[type="submit"] {
-            background: #ff6b6b !important;
-        }
         
-        body.dark-mode button[type="submit"]:hover {
-            background: #ff5252 !important;
-        }
 
         /* Price colors in dark mode */
-        body.dark-mode .pricing-item .price {
-            color: #ff6b6b !important;
-        }
 
         /* Emergency pricing note text: force gray in dark mode, override inline styles and ensure strong is red */
-        body.dark-mode .emergency-pricing p[style][style*="color: #666"],
-        body.dark-mode .emergency-pricing p[style][style*="font-size: 0.9rem"],
-        body.dark-mode .emergency-pricing p[style],
-        body.dark-mode .emergency-pricing p,
-        body.dark-mode .emergency-pricing p[style*="color: #666"],
-        body.dark-mode .emergency-pricing p[style*="font-size: 0.9rem"] {
-            color: #e0e0e0 !important;
-        }
-        body.dark-mode .emergency-pricing p strong {
-            color: #ff6b6b !important;
-        }
 
         /* Service list items need black text in dark mode for readability */
-        body.dark-mode .service-list li {
-            color: #000000 !important;
-        }
 
         /* Important safety paragraph styling */
-        body.dark-mode .service-details p strong {
-            color: #ff6b6b !important;
-        }
 
         /* Paragraphs containing Important text should be black */
-        body.dark-mode .service-details p {
-            color: #000000 !important;
-        }
 
         /* EXCEPT emergency pricing note - this overrides the above */
-        body.dark-mode .service-details .emergency-pricing p {
-            color: #e0e0e0 !important;
-        }
 
         /* But make sure strong elements within them are red */
-        body.dark-mode .service-details strong {
-            color: #ff6b6b !important;
-        }
 
         /* Emergency page specific paragraphs that need black text in dark mode */
-        body.dark-mode .service-details p:first-of-type {
-            color: #000000 !important;
-        }
 
         /* Paragraphs after "Emergency Response Areas" and "Professional Referrals" headers */
-        body.dark-mode .service-details h3 + p {
-            color: #000000 !important;
-        }
 
         .container {
             max-width: 1400px;
@@ -519,19 +390,8 @@
         }
 
         /* Dark mode support for sidebar elements */
-        body.dark-mode .service-sidebar .contact-card {
-            background: #23272f;
-            border: 1px solid #2d3748;
-        }
 
-        body.dark-mode .service-sidebar .contact-card h3,
-        body.dark-mode .service-sidebar .contact-card h4 {
-            color: #e53e3e;
-        }
 
-        body.dark-mode .service-sidebar .contact-card p {
-            color: #b0b0b0;
-        }
 
         .service-sidebar .cta-box h3 {
             font-size: 1.5rem;
@@ -715,41 +575,54 @@
         color: #444;
         margin: 0;
     }
-    body.dark-mode .faq-section {
-        background: #111620;
-        border-top-color: #2d3748;
-    }
-    body.dark-mode .faq-item {
-        background: #1a1f2e;
-        border-color: #2d3748;
-    }
-    body.dark-mode .faq-item[open] {
-        border-color: #ff6b6b;
-    }
-    body.dark-mode .faq-item summary {
-        color: #f0f0f0;
-    }
-    body.dark-mode .faq-item summary::after {
-        background: #c0392b;
-    }
-    body.dark-mode .faq-item[open] > summary {
-        background: #1e1015;
-        color: #ff6b6b;
-        border-bottom-color: #3d1a1a;
-    }
-    body.dark-mode .faq-item > p {
-        color: #d0d0d0;
-    }
-    body.dark-mode .faq-section h2 {
-        color: #ff6b6b;
-    }
     @media (max-width: 600px) {
         .faq-section { padding: 56px 0; }
         .faq-section h2 { font-size: 1.7rem; }
         .faq-item summary { font-size: 0.97rem; padding: 16px 18px; }
         .faq-item > p { padding: 16px 18px 18px; }
     }
-    </style>
+    
+    /* Related Services */
+    .related-services {
+        padding: 56px 0 48px;
+        background: #f8f6f2;
+    }
+    .related-services h2 {
+        text-align: center;
+        font-size: clamp(1.4rem, 3vw, 1.9rem);
+        color: #2c2c2c;
+        margin-bottom: 32px;
+    }
+    .related-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+    }
+    .related-card {
+        background: #fff;
+        border: 1px solid #e0ddd7;
+        border-radius: 10px;
+        padding: 22px 18px;
+        text-align: center;
+        text-decoration: none;
+        color: #2c2c2c;
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: box-shadow 0.2s, transform 0.2s;
+        display: block;
+    }
+    .related-card:hover {
+        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        transform: translateY(-2px);
+        color: #800000;
+    }
+    @media (max-width: 700px) {
+        .related-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 400px) {
+        .related-grid { grid-template-columns: 1fr 1fr; }
+    }
+</style>
 
     <!-- FAQ Schema -->
     <script type="application/ld+json">
@@ -995,11 +868,25 @@
     </section>
 
 
+
+    <!-- Related Services -->
+    <section class="related-services" aria-labelledby="related-heading">
+        <div class="container">
+            <h2 id="related-heading">Other Services We Offer</h2>
+            <div class="related-grid">
+                <a href="/Services/general-repairs" class="related-card">General Repairs</a>
+                <a href="/Services/plumbing-services" class="related-card">Plumbing Services</a>
+                <a href="/Services/electrical-work" class="related-card">Electrical Work</a>
+                <a href="/Services/handyman" class="related-card">Handyman Services</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer Include -->
     <div id="footer-include"></div>
 
     <!-- Include dynamic header/footer functionality -->
-    <script src="../JS/includes.js"></script>
+    <script src="../JS/includes.js" defer></script>
     <script>
     // JS fallback: force dark mode color for emergency pricing note text
     document.addEventListener('DOMContentLoaded', function() {

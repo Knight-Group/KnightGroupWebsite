@@ -128,21 +128,6 @@
         }
 
         /* Dark Mode */
-        body.dark-mode { background-color: #0f1419; color: #e0e0e0; }
-        body.dark-mode main { background-color: #0f1419; }
-        body.dark-mode .service-hero h1 { color: #e53e3e; }
-        body.dark-mode .service-hero p { color: #ffffff; }
-        body.dark-mode .service-details h2, body.dark-mode .service-details h3 { color: #e53e3e; }
-        body.dark-mode .service-details p, body.dark-mode .service-list li { color: #b0b0b0; }
-        body.dark-mode .service-sidebar { background: #181c22; border: 1px solid #23272f; }
-        body.dark-mode .cta-box h3 { color: #e53e3e; }
-        body.dark-mode .cta-box p { color: #ffffff; }
-        body.dark-mode .contact-info h4 { color: #e53e3e; }
-        body.dark-mode .contact-info p { color: #ffffff; }
-        body.dark-mode .experience-card { background: #1e232b; border-color: #2d3748; }
-        body.dark-mode .experience-card h3 { color: #e53e3e; }
-        body.dark-mode .gallery-caption { color: #b0b0b0; }
-        body.dark-mode .process-step { background: #1e232b; border-left-color: #e53e3e; }
 
         .container {
             max-width: 1400px;
@@ -391,7 +376,48 @@
             main { padding: 50px 0; }
             .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
         }
-    </style>
+    
+    /* Related Services */
+    .related-services {
+        padding: 56px 0 48px;
+        background: #f8f6f2;
+    }
+    .related-services h2 {
+        text-align: center;
+        font-size: clamp(1.4rem, 3vw, 1.9rem);
+        color: #2c2c2c;
+        margin-bottom: 32px;
+    }
+    .related-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+    }
+    .related-card {
+        background: #fff;
+        border: 1px solid #e0ddd7;
+        border-radius: 10px;
+        padding: 22px 18px;
+        text-align: center;
+        text-decoration: none;
+        color: #2c2c2c;
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: box-shadow 0.2s, transform 0.2s;
+        display: block;
+    }
+    .related-card:hover {
+        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        transform: translateY(-2px);
+        color: #800000;
+    }
+    @media (max-width: 700px) {
+        .related-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 400px) {
+        .related-grid { grid-template-columns: 1fr 1fr; }
+    }
+</style>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -491,7 +517,7 @@
                     <!-- Quick Estimate Form -->
                     <div style="background: white; border-radius: 8px; padding: 20px; border: 1px solid #e9ecef; margin-bottom: 20px;">
                         <h4 style="color:#800000; margin-bottom: 12px;">Get a Free Estimate</h4>
-                        <form action="https://formspree.io/f/mvgogaaw" method="POST">
+                        <form action="https://formspree.io/f/xzzvnpne" method="POST">
                             <input type="text" name="name" placeholder="Your Name *" required
                                    style="width:100%;padding:10px;margin-bottom:10px;border:1px solid #ddd;border-radius:4px;font-size:14px;box-sizing:border-box;">
                             <input type="tel" name="phone" placeholder="Phone Number *" required
@@ -578,7 +604,7 @@
             <!-- Full Estimate Form -->
             <section class="estimate-form-section">
                 <h2>Get in Touch for Expert Help or a Free Estimate</h2>
-                <form action="https://formspree.io/f/mvgogaaw" method="POST">
+                <form action="https://formspree.io/f/xzzvnpne" method="POST">
                     <input type="text" name="title" placeholder="What do you need help with?" required>
                     <textarea name="description" placeholder="Describe your project and we'll get back to you with a quote!" rows="5" required></textarea>
                     <button type="submit">Send Message &rarr;</button>
@@ -587,6 +613,20 @@
 
         </div>
     </main>
+
+
+    <!-- Related Services -->
+    <section class="related-services" aria-labelledby="related-heading">
+        <div class="container">
+            <h2 id="related-heading">Other Services We Offer</h2>
+            <div class="related-grid">
+                <a href="/Services/general-repairs" class="related-card">General Repairs</a>
+                <a href="/Services/home-renovations" class="related-card">Home Renovations</a>
+                <a href="/Services/painting-finishing" class="related-card">Painting & Finishing</a>
+                <a href="/Services/carpentry-framing" class="related-card">Carpentry & Framing</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer Include -->
     <div id="footer-include"></div>
