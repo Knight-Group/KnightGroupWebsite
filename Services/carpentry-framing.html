@@ -157,7 +157,7 @@
 
         /* Main Content */
         main {
-            padding: 80px 0;
+            padding: 72px 0 56px;
         }
 
         .service-hero {
@@ -322,37 +322,40 @@
     
     /* Related Services */
     .related-services {
-        padding: 56px 0 48px;
-        background: #f8f6f2;
+        padding: 52px 0 48px;
+        background: linear-gradient(135deg, #800000 0%, #6b0000 100%);
     }
     .related-services h2 {
         text-align: center;
-        font-size: clamp(1.4rem, 3vw, 1.9rem);
-        color: #2c2c2c;
-        margin-bottom: 32px;
+        font-size: clamp(1.3rem, 2.8vw, 1.75rem);
+        color: #fff;
+        margin-bottom: 28px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
     }
     .related-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 16px;
+        gap: 14px;
     }
     .related-card {
-        background: #fff;
-        border: 1px solid #e0ddd7;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.22);
         border-radius: 10px;
         padding: 22px 18px;
         text-align: center;
         text-decoration: none;
-        color: #2c2c2c;
+        color: #fff;
         font-weight: 600;
         font-size: 0.95rem;
-        transition: box-shadow 0.2s, transform 0.2s;
+        transition: background 0.2s, transform 0.2s, border-color 0.2s;
         display: block;
     }
     .related-card:hover {
-        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-        transform: translateY(-2px);
-        color: #800000;
+        background: rgba(255,255,255,0.2);
+        border-color: rgba(255,255,255,0.5);
+        transform: translateY(-3px);
+        color: #fff;
     }
     @media (max-width: 700px) {
         .related-grid { grid-template-columns: repeat(2, 1fr); }
