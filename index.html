@@ -193,8 +193,9 @@
         }
     </script>
 
-    <!-- Preload LCP hero image (parser-discoverable — must stay static) -->
-    <link rel="preload" as="image" href="Images/KGHero.webp" fetchpriority="high">
+    <!-- Preload LCP hero image — desktop vs mobile crop -->
+    <link rel="preload" as="image" href="Images/KGHero.webp"        media="(min-width: 1151px)" fetchpriority="high">
+    <link rel="preload" as="image" href="Images/KGHero-mobile.webp" media="(max-width: 1150px)" fetchpriority="high">
     <!-- WebP feature detect: adds 'webp' or 'no-webp' class to <html> synchronously before CSS is applied -->
     <script>!function(){var c=document.createElement('canvas');c.width=c.height=1;var ok=c.toDataURL&&c.toDataURL('image/webp').match('^data:image/webp');document.documentElement.className+=ok?' webp':' no-webp';}();</script>
 
@@ -248,6 +249,19 @@
         .no-webp .hero {
             background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(128,0,0,0.6) 100%),
                         url('Images/KGHero.jpg') top center/cover;
+        }
+        /* Mobile hero — portrait crop centered on Vince (≤1150px) */
+        @media (max-width: 1150px) {
+            .hero {
+                background: linear-gradient(135deg, rgba(0,0,0,0.65) 0%, rgba(128,0,0,0.55) 100%),
+                            url('Images/KGHero-mobile.webp') center center/cover;
+                max-height: none;
+                overflow: visible;
+            }
+            .no-webp .hero {
+                background: linear-gradient(135deg, rgba(0,0,0,0.65) 0%, rgba(128,0,0,0.55) 100%),
+                            url('Images/KGHero-mobile.jpg') center center/cover;
+            }
         }
 
         .hero h1 {
