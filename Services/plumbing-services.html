@@ -1,14 +1,23 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s);j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MNHVDBHG');</script>
+    <!-- Google Tag Manager — deferred after load to reduce TBT -->
+    <script>window.dataLayer = window.dataLayer || [];</script>
+    <script>
+    window.addEventListener('load', function() {
+        var s = document.createElement('script');
+        s.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-MNHVDBHG';
+        s.async = true;
+        document.head.appendChild(s);
+        window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+    });
+    </script>
     <!-- End Google Tag Manager -->
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://www.knightgroup.com/Services/plumbing-services">
-    <title>Plumbing Services Pinellas County, FL | Knight Group Handyman Services</title>
+    <title>Plumbing Services Pinellas County, FL | Knight Group</title>
     <meta name="description" content="Professional plumbing services in Pinellas County. Pipe repairs, fixture installation, toilet replacement, and supply line connections with Knight Group.">
 
     <!-- Social Media Meta Tags -->
@@ -81,17 +90,9 @@
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday", 
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "07:00",
-        "closes": "19:00"
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
       },
       "aggregateRating": {
                 "@type": "AggregateRating",
@@ -597,7 +598,7 @@
         <p>Professional plumbing solutions for your home. From fixture replacements to minor repairs, we handle your basic plumbing needs.</p>
 
 </section>
-<main>
+<main id="main-content">
     <div class="container">
 
             <div class="service-content">

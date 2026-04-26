@@ -1,8 +1,17 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s);j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MNHVDBHG');</script>
+    <!-- Google Tag Manager — deferred after load to reduce TBT -->
+    <script>window.dataLayer = window.dataLayer || [];</script>
+    <script>
+    window.addEventListener('load', function() {
+        var s = document.createElement('script');
+        s.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-MNHVDBHG';
+        s.async = true;
+        document.head.appendChild(s);
+        window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+    });
+    </script>
     <!-- End Google Tag Manager -->
     
     <meta charset="UTF-8">
@@ -77,9 +86,8 @@
                     "closes": "17:00"
                 },
                 "sameAs": [
-                    "https://www.facebook.com/people/Knight-Group/61556138899838/",
-                    "https://www.instagram.com/knightgroup.biz/",
-                    "https://discord.com/invite/kwNPMPVqc8"
+                    "https://www.facebook.com/KnightGroupServices/",
+                    "https://www.instagram.com/knight_group_services/"
                 ]
             },
             {
@@ -381,7 +389,7 @@
         <p>Expert carpentry services for custom installations, repairs, and structural work. Quality craftsmanship for your home projects.</p>
 
 </section>
-<main>
+<main id="main-content">
     <div class="container">
 
             <div class="service-content">

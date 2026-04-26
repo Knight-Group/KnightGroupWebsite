@@ -4,6 +4,34 @@
 <link rel="stylesheet" media="print" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" onload="this.media='all';this.onload=null">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"></noscript>
 <style>
+.skip-nav {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: 9999;
+}
+.skip-nav:focus {
+    position: fixed;
+    left: 50%;
+    top: 12px;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+    overflow: visible;
+    background: #800000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    outline: 3px solid #fff;
+    z-index: 9999;
+}
 /* ============================
    HEADER — DESKTOP
    ============================ */
@@ -272,6 +300,7 @@ body.dark-mode .header-btn-primary { background: #a00000; border-color: #a00000;
 </style>
 
 <!-- Header -->
+<a href="#main-content" class="skip-nav">Skip to main content</a>
 <header>
     <div class="container">
         <div class="header-content">

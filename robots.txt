@@ -26,4 +26,9 @@ Disallow: /Services/programming%26databases.html
 Disallow: /Services/handcraftedfurniture%26resins
 Disallow: /Services/handcraftedfurniture%26resins.html
 
+Disallow: /_carpentry_corrupted
+Disallow: /_carpentry_corrupted.html
+Disallow: /_handyman_corrupted
+Disallow: /_handyman_corrupted.html
+
 Sitemap: https://www.knightgroup.com/sitemap.xml

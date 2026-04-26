@@ -1,13 +1,22 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s);j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MNHVDBHG');</script>
+    <!-- Google Tag Manager — deferred after load to reduce TBT -->
+    <script>window.dataLayer = window.dataLayer || [];</script>
+    <script>
+    window.addEventListener('load', function() {
+        var s = document.createElement('script');
+        s.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-MNHVDBHG';
+        s.async = true;
+        document.head.appendChild(s);
+        window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+    });
+    </script>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://www.knightgroup.com/Services/handyman">
-    <title>Handyman Services | Knight Group Handyman Services LLC | Pinellas County</title>
+    <title>Local Handyman Services Pinellas County, FL | Knight Group</title>
     <meta name="description" content="Knight Group Handyman Services LLC offers professional home repairs, remodeling, plumbing, and auto repair across Pinellas County. 15+ years experience. Honest, affordable pricing.">
     <link rel="icon" type="image/x-icon" href="../Images/Knight-Group-Logo-Fav.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -397,7 +406,7 @@
         <p>Professional home repairs, remodeling, plumbing &amp; auto services for Pinellas County. No job too big or too small - over 15 years of experience.</p>
 
 </section>
-<main>
+<main id="main-content">
     <div class="container">
 
             <div class="service-content">
