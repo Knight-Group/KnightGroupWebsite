@@ -5,7 +5,7 @@
     <script>window.dataLayer = window.dataLayer || [];</script>
     <script>
     var _gtmLoaded = false;
-    var _gtmEvents = ['pointerdown', 'keydown', 'touchstart', 'scroll'];
+    var _gtmEvents = ['pointerdown', 'keydown', 'touchstart'];
 
     function _cleanupGTMTriggers() {
         _gtmEvents.forEach(function(type) {
@@ -24,18 +24,9 @@
         window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
     }
 
-    function _queueGTM() {
-        if ('requestIdleCallback' in window) {
-            requestIdleCallback(_loadGTM, { timeout: 12000 });
-        } else {
-            setTimeout(_loadGTM, 12000);
-        }
-    }
-
     _gtmEvents.forEach(function(type) {
         window.addEventListener(type, _loadGTM, { passive: true, once: true });
     });
-    window.addEventListener('load', _queueGTM, { once: true });
     </script>
     <!-- End Google Tag Manager -->
     
@@ -1110,11 +1101,10 @@
             <h2>Serving Pinellas County</h2>
             <div class="map-container map-shell" data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d450975.17752631585!2d-83.16637085978483!3d27.986443383936123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2ee5d19ac09e7%3A0x98d1805762c6e23c!2sKnight%20Group!5e0!3m2!1sen!2sus!4v1737644902610!5m2!1sen!2sus">
                 <div class="map-placeholder">
-                    <span class="map-placeholder-badge">Interactive map available on demand</span>
+                    <span class="map-placeholder-badge">Interactive map loads automatically</span>
                     <h3>Serving Safety Harbor and all of Pinellas County</h3>
-                    <p>We keep the live Google map off the initial page load so the homepage stays faster on mobile. Load it only when you want directions or zoom controls.</p>
+                    <p>The live Google map stays interactive, but we delay it until this section is near the viewport so the homepage remains fast on mobile.</p>
                     <div class="map-placeholder-actions">
-                        <button class="map-placeholder-action" id="loadMapButton" type="button">Load Interactive Map</button>
                         <a class="map-open-link" href="https://maps.google.com/?cid=10508624668428370015" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
                     </div>
                 </div>
@@ -1689,24 +1679,43 @@
     <script>
         (function() {
             var mapShell = document.querySelector('.map-shell');
-            var loadButton = document.getElementById('loadMapButton');
 
-            if (!mapShell || !loadButton) return;
+            if (!mapShell) return;
 
-            loadButton.addEventListener('click', function() {
+            function injectMap() {
                 if (mapShell.dataset.loaded === 'true') return;
                 mapShell.dataset.loaded = 'true';
 
                 var iframe = document.createElement('iframe');
                 iframe.src = mapShell.dataset.mapSrc;
                 iframe.title = 'Knight Group location on Google Maps';
-                iframe.loading = 'eager';
+                iframe.loading = 'lazy';
                 iframe.referrerPolicy = 'no-referrer-when-downgrade';
                 iframe.setAttribute('allowfullscreen', '');
 
                 mapShell.innerHTML = '';
                 mapShell.appendChild(iframe);
-            });
+            }
+
+            if ('IntersectionObserver' in window) {
+                var mapObserver = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (!entry.isIntersecting) return;
+                        mapObserver.disconnect();
+                        injectMap();
+                    });
+                }, {
+                    rootMargin: '300px 0px'
+                });
+
+                mapObserver.observe(mapShell);
+            } else if (document.readyState === 'complete') {
+                setTimeout(injectMap, 1200);
+            } else {
+                window.addEventListener('load', function() {
+                    setTimeout(injectMap, 1200);
+                }, { once: true });
+            }
         })();
     </script>
     
