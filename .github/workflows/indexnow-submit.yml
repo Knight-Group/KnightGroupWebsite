@@ -1,0 +1,66 @@
+name: Submit IndexNow URLs
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  submit-indexnow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Submit sitemap URLs to IndexNow
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import pathlib
+          import urllib.request
+          import xml.etree.ElementTree as ET
+
+          key = "3beb9b131b3b4dc3b4b8e22f0e8ced4d"
+          host = "www.knightgroup.com"
+          key_location = f"https://{host}/{key}.txt"
+          sitemap_path = pathlib.Path("sitemap.xml")
+
+          tree = ET.parse(sitemap_path)
+          namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+          urls = [
+              loc.text.strip()
+              for loc in tree.findall(".//sm:loc", namespace)
+              if loc.text and loc.text.strip()
+          ]
+
+          if not urls:
+              raise SystemExit("No URLs found in sitemap.xml")
+
+          payload = json.dumps({
+              "host": host,
+              "key": key,
+              "keyLocation": key_location,
+              "urlList": urls,
+          }).encode("utf-8")
+
+          request = urllib.request.Request(
+              "https://api.indexnow.org/IndexNow",
+              data=payload,
+              headers={"Content-Type": "application/json; charset=utf-8"},
+              method="POST",
+          )
+
+          with urllib.request.urlopen(request, timeout=30) as response:
+              body = response.read().decode("utf-8", errors="replace")
+              print(f"IndexNow response status: {response.status}")
+              if body:
+                  print(body)
+          PY
