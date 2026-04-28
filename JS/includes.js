@@ -1,8 +1,68 @@
 // Dynamic HTML includes system
 class HTMLInclude {
     constructor() {
+        this.ensureCriticalSharedStyles();
         this.loadIncludes();
         this.initializeAfterIncludes();
+    }
+
+    ensureCriticalSharedStyles() {
+        if (document.getElementById('critical-shared-button-styles')) return;
+
+        const style = document.createElement('style');
+        style.id = 'critical-shared-button-styles';
+        style.textContent = `
+            .btn-primary {
+                background: #800000;
+                background-color: #800000;
+                background-image: none;
+                color: #fff;
+                padding: 10px 24px;
+                border: 2px solid #800000;
+                border-radius: 6px;
+                font-weight: 600;
+                text-decoration: none;
+                transition: background 0.2s;
+                font-size: 1rem;
+                display: inline-block;
+            }
+
+            .btn-primary:hover {
+                background: #600000;
+                background-color: #600000;
+                border-color: #600000;
+            }
+
+            .btn-secondary {
+                background: #fff;
+                background-color: #fff;
+                background-image: none;
+                color: #800000;
+                border: 2px solid #800000;
+                padding: 10px 24px;
+                border-radius: 6px;
+                font-weight: 600;
+                text-decoration: none;
+                transition: background 0.2s, color 0.2s;
+                font-size: 1rem;
+                display: inline-block;
+            }
+
+            .btn-secondary:hover {
+                background: #800000;
+                color: #fff;
+            }
+
+            button.btn-primary,
+            button.btn-secondary {
+                -webkit-appearance: none;
+                appearance: none;
+                cursor: pointer;
+                font-family: inherit;
+            }
+        `;
+
+        document.head.appendChild(style);
     }
 
     // Security: only allow same-origin relative paths (no http:// or // URLs)
