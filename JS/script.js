@@ -1,3 +1,26 @@
+// Production fallback for legacy .html URLs when the host serves both versions.
+(function redirectLegacyHtmlPath() {
+    const host = (window.location.hostname || '').toLowerCase();
+    const isProductionHost = host === 'www.knightgroup.com' || host === 'knightgroup.com';
+
+    if (!isProductionHost) {
+        return;
+    }
+
+    const path = window.location.pathname || '';
+    if (!/\.html$/i.test(path)) {
+        return;
+    }
+
+    const cleanPath = path.replace(/\/index\.html$/i, '/').replace(/\.html$/i, '') || '/';
+    const target = cleanPath + window.location.search + window.location.hash;
+    const current = path + window.location.search + window.location.hash;
+
+    if (target !== current) {
+        window.location.replace(target);
+    }
+})();
+
 // Slideshow Functionality
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;

@@ -33,26 +33,15 @@
     </style>
 
     <script>
-        // Define URL mappings for old .html pages
-        var redirects = {
-            "/index.html": "/",
-            "/about.html": "/about",
-            "/contact.html": "/contact",
-            "/Services/handyman.html": "/Services/handyman",
-            "/PolicyPages/returnpolicy.html": "/PolicyPages/returnpolicy",
-            "/PolicyPages/privacy-policy.html": "/PolicyPages/privacy-policy",
-            "/PolicyPages/terms.html": "/PolicyPages/terms"
-        };
+        var path = window.location.pathname || '';
+        var search = window.location.search || '';
+        var hash = window.location.hash || '';
 
-        // Get the current path
-        var path = window.location.pathname;
-
-        // Redirect if it matches a known old URL
-        if (redirects[path]) {
-            window.location.replace(redirects[path]);
+        if (/\.html$/i.test(path)) {
+            var cleanPath = path.replace(/\/index\.html$/i, '/').replace(/\.html$/i, '');
+            window.location.replace((cleanPath || '/') + search + hash);
         } else {
-            // If the page is not found, redirect to the homepage
-            window.location.replace("/");
+            window.location.replace('/');
         }
     </script>
 </head>
