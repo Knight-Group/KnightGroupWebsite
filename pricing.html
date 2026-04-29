@@ -474,6 +474,179 @@
             left: 0;
         }
 
+        .visit-package-section {
+            margin: 36px 0 20px;
+            padding: 32px 30px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #171214 0%, #2b171a 100%);
+            color: #fff7f1;
+            box-shadow: 0 12px 34px rgba(0, 0, 0, 0.18);
+        }
+
+        .visit-package-section h3 {
+            color: #fff7f1;
+            margin-top: 0;
+            margin-bottom: 14px;
+        }
+
+        .visit-package-section h3::before {
+            content: "";
+        }
+
+        .visit-package-intro {
+            max-width: 760px;
+            margin-bottom: 24px;
+        }
+
+        .visit-package-kicker {
+            display: inline-block;
+            margin-bottom: 10px;
+            color: #d6b57a;
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .visit-package-intro p {
+            margin: 0;
+            color: rgba(255, 247, 241, 0.82);
+            font-size: 1.02rem;
+            line-height: 1.7;
+        }
+
+        .visit-package-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .visit-package-card {
+            display: grid;
+            gap: 14px;
+            padding: 26px;
+            border: 1px solid rgba(128, 0, 0, 0.12);
+            border-radius: 16px;
+            background: rgba(255, 248, 244, 0.96);
+            color: #211819;
+        }
+
+        .visit-package-card--featured {
+            border-color: rgba(214, 181, 122, 0.55);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .visit-package-tag {
+            display: inline-flex;
+            width: fit-content;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: rgba(128, 0, 0, 0.1);
+            color: #800000;
+            font-size: 0.74rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .visit-package-card h4 {
+            margin: 0 0 8px;
+            color: #211819;
+            font-size: 1.3rem;
+            line-height: 1.25;
+        }
+
+        .visit-package-price {
+            margin: 0;
+            color: #800000;
+            font-size: 1.9rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .visit-package-subprice {
+            margin: 6px 0 0;
+            color: #5d4f50;
+            font-size: 0.96rem;
+            font-weight: 700;
+        }
+
+        .visit-package-desc {
+            margin: 0;
+            color: #4f4445;
+            line-height: 1.65;
+        }
+
+        .visit-package-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 10px;
+        }
+
+        .visit-package-list li {
+            position: relative;
+            padding-left: 18px;
+            color: #342a2b;
+            line-height: 1.5;
+        }
+
+        .visit-package-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.6em;
+            width: 7px;
+            height: 7px;
+            border-radius: 999px;
+            background: #800000;
+        }
+
+        .visit-package-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 4px;
+        }
+
+        .visit-package-cta,
+        .visit-package-call {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 164px;
+            padding: 12px 18px;
+            border-radius: 999px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+        }
+
+        .visit-package-cta {
+            background: #800000;
+            color: #ffffff;
+        }
+
+        .visit-package-call {
+            border: 1px solid rgba(33, 24, 25, 0.16);
+            background: rgba(255, 255, 255, 0.72);
+            color: #211819;
+        }
+
+        .visit-package-cta:hover,
+        .visit-package-call:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+        }
+
+        .visit-package-note {
+            margin-top: 18px;
+            color: rgba(255, 247, 241, 0.82);
+            font-size: 0.96rem;
+            line-height: 1.6;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .pricing-hero {
@@ -493,6 +666,10 @@
             .pricing-sidebar {
                 position: static;
             }
+
+            .visit-package-section {
+                padding: 26px 22px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -510,6 +687,24 @@
 
             .pricing-card {
                 padding: 20px;
+            }
+
+            .visit-package-section {
+                padding: 22px 18px;
+            }
+
+            .visit-package-card {
+                padding: 22px;
+            }
+
+            .visit-package-actions {
+                flex-direction: column;
+            }
+
+            .visit-package-cta,
+            .visit-package-call {
+                width: 100%;
+                min-width: 0;
             }
         }
 
@@ -752,6 +947,75 @@
                         </a>
                     </div>
                 </div>
+
+                <section class="visit-package-section" id="popular-service-visits">
+                    <div class="visit-package-intro">
+                        <span class="visit-package-kicker">Popular Service Visits</span>
+                        <h3>Simple starting points for the jobs homeowners usually need handled first.</h3>
+                        <p>These visit cards make it easier to book the kind of work we quote most often. If your project is larger or needs a custom scope, the same estimate form can still handle it.</p>
+                    </div>
+
+                    <div class="visit-package-grid">
+                        <article class="visit-package-card visit-package-card--featured">
+                            <span class="visit-package-tag">Most Common</span>
+                            <div>
+                                <h4>Standard Handyman Visit</h4>
+                                <p class="visit-package-price">$150 first hour</p>
+                                <p class="visit-package-subprice">$75 each additional hour</p>
+                            </div>
+                            <p class="visit-package-desc">Best fit for general repair, punch-list, and everyday handyman work around the home.</p>
+                            <ul class="visit-package-list">
+                                <li>Minor repairs and punch-list work</li>
+                                <li>Drywall patching, caulking, and fixture swaps</li>
+                                <li>Transparent pricing with no hidden service-call fees</li>
+                            </ul>
+                            <div class="visit-package-actions">
+                                <a class="visit-package-cta" href="/contact">Request Estimate</a>
+                                <a class="visit-package-call" href="tel:+18136493341">Call (813) 649-3341</a>
+                            </div>
+                        </article>
+
+                        <article class="visit-package-card">
+                            <span class="visit-package-tag">Plumbing-Led</span>
+                            <div>
+                                <h4>Minor Plumbing Repair Visit</h4>
+                                <p class="visit-package-price">$150 first hour</p>
+                                <p class="visit-package-subprice">$75 each additional hour</p>
+                            </div>
+                            <p class="visit-package-desc">Plumbing-focused handyman visit for common household issues that need a fast, practical fix.</p>
+                            <ul class="visit-package-list">
+                                <li>Faucets, showerheads, and fixture swaps</li>
+                                <li>Running toilets, minor leaks, and shutoff-related fixes</li>
+                                <li>Free written estimate and clear pricing</li>
+                            </ul>
+                            <div class="visit-package-actions">
+                                <a class="visit-package-cta" href="/contact">Book Plumbing Visit</a>
+                                <a class="visit-package-call" href="tel:+18136493341">Call (813) 649-3341</a>
+                            </div>
+                        </article>
+
+                        <article class="visit-package-card">
+                            <span class="visit-package-tag">Higher Complexity</span>
+                            <div>
+                                <h4>Specialty Install &amp; Repair Visit</h4>
+                                <p class="visit-package-price">$200 first hour</p>
+                                <p class="visit-package-subprice">$100 each additional hour</p>
+                            </div>
+                            <p class="visit-package-desc">Higher-liability or heavier install work that needs more care, setup, or complexity handling.</p>
+                            <ul class="visit-package-list">
+                                <li>TV mounting and heavier installs</li>
+                                <li>Ceiling fans, light fixtures, and appliance hookups</li>
+                                <li>Large drywall or more complex repair work</li>
+                            </ul>
+                            <div class="visit-package-actions">
+                                <a class="visit-package-cta" href="/contact">Request Specialty Visit</a>
+                                <a class="visit-package-call" href="tel:+18136493341">Call (813) 649-3341</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <p class="visit-package-note">Free written estimates. Materials and parts are separate from labor when needed. No hidden travel or service-call fees.</p>
+                </section>
             </div>
 
             <!-- Pricing Sidebar -->
