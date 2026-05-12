@@ -365,6 +365,91 @@
     @media (max-width: 400px) {
         .related-grid { grid-template-columns: 1fr 1fr; }
     }
+    .faq-section {
+        background: #f4f6f9;
+        padding: 72px 0 56px;
+        border-top: 1px solid #e2e8f0;
+    }
+    .faq-section .container {
+        max-width: 820px;
+    }
+    .faq-section h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.2rem;
+        color: #800000;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    .faq-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .faq-item {
+        background: #fff;
+        border-radius: 10px;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+        overflow: hidden;
+        transition: box-shadow 0.2s ease;
+    }
+    .faq-item:hover {
+        box-shadow: 0 4px 14px rgba(128,0,0,0.10);
+    }
+    .faq-item[open] {
+        border-color: #800000;
+        box-shadow: 0 4px 16px rgba(128,0,0,0.12);
+    }
+    .faq-item summary {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 20px 24px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1.05rem;
+        color: #1a1a2e;
+        user-select: none;
+        transition: background 0.15s ease, color 0.15s ease;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+        content: "+";
+        flex-shrink: 0;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: #800000;
+        color: #fff;
+        font-size: 1.2rem;
+        line-height: 28px;
+        text-align: center;
+        font-weight: 400;
+        transition: transform 0.25s ease, background 0.2s ease;
+    }
+    .faq-item[open] > summary {
+        background: #faf5f5;
+        color: #800000;
+        border-bottom: 1px solid #f0e0e0;
+    }
+    .faq-item[open] > summary::after {
+        content: "\2212";
+    }
+    .faq-item > p {
+        padding: 20px 24px 22px;
+        font-size: 1rem;
+        line-height: 1.75;
+        color: #444;
+        margin: 0;
+    }
+    @media (max-width: 600px) {
+        .faq-section { padding: 56px 0; }
+        .faq-section h2 { font-size: 1.7rem; }
+        .faq-item summary { font-size: 0.97rem; padding: 16px 18px; }
+        .faq-item > p { padding: 16px 18px 18px; }
+    }
 </style>
 
     <!-- FAQ Schema -->
@@ -545,7 +630,36 @@
                 </div>
             </div>
         </div>
+
+        <div class="container">
+             </div>        </div>
     </main>
+
+
+    <!-- FAQ -->
+    <section class="faq-section" aria-labelledby="faq-heading">
+        <div class="container">
+            <h2 id="faq-heading">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Can you build custom shelves or built-ins in Safety Harbor?</summary>
+                    <p>Yes. Knight Group builds custom shelving, built-ins, closet systems, and storage solutions for homeowners throughout Safety Harbor and Pinellas County. We handle design, framing, and finishing.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Do you do small carpentry jobs near me?</summary>
+                    <p>Yes. We specialize in small and medium carpentry jobs with no minimum — including single shelf installs, trim repairs, fence boards, and wood rot replacement. We serve all of Pinellas County.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can you repair rotted wood or damaged framing?</summary>
+                    <p>Yes. We handle wood rot repair, framing corrections, damaged fascia boards, and structural wood repairs for residential properties in Pinellas County.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What carpentry services does Knight Group offer in Pinellas County?</summary>
+                    <p>Our carpentry services include custom shelving and built-ins, framing, wood rot repair, trim installation, baseboards, closet systems, fence repair, deck boards, and general woodworking projects throughout Safety Harbor and Pinellas County.</p>
+                </details>
+            </div>
+        </div>
+    </section>
 
 
     <!-- Related Services -->
