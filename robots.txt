@@ -26,6 +26,28 @@ Disallow: /Services/programming%26databases.html
 Disallow: /Services/handcraftedfurniture%26resins
 Disallow: /Services/handcraftedfurniture%26resins.html
 
+# Block .html duplicate URLs — canonical tags on these point to clean URLs
+# Blocking prevents crawl budget waste on duplicate variants
+Disallow: /about.html
+Disallow: /galleries.html
+Disallow: /pricing.html
+Disallow: /booking.html
+Disallow: /services.html
+Disallow: /Services/handyman.html
+Disallow: /Services/general-repairs.html
+Disallow: /Services/plumbing-services.html
+Disallow: /Services/electrical-work.html
+Disallow: /Services/carpentry-framing.html
+Disallow: /Services/painting-finishing.html
+Disallow: /Services/home-renovations.html
+Disallow: /Services/doors-windows.html
+Disallow: /Services/custom-projects.html
+Disallow: /Services/emergency-services.html
+Disallow: /PolicyPages/privacy-policy.html
+Disallow: /PolicyPages/terms.html
+Disallow: /PolicyPages/returnpolicy.html
+Disallow: /PolicyPages/payment-policy.html
+
 Disallow: /_carpentry_corrupted
 Disallow: /_carpentry_corrupted.html
 Disallow: /_handyman_corrupted
