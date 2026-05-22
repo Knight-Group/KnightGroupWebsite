@@ -57,6 +57,7 @@ URL: https://www.knightgroup.com/Services/handyman
 - Contact / Free Estimate: https://www.knightgroup.com/contact
 - Pricing: https://www.knightgroup.com/pricing
 - Photo Galleries: https://www.knightgroup.com/galleries
+- Service Areas: https://www.knightgroup.com/service-areas
 - Privacy Policy: https://www.knightgroup.com/PolicyPages/privacy-policy.html
 - Terms of Service: https://www.knightgroup.com/PolicyPages/terms.html
 

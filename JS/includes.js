@@ -36,12 +36,12 @@ class HTMLInclude {
         style.id = 'critical-shared-button-styles';
         style.textContent = `
             .btn-primary {
-                background: #800000;
-                background-color: #800000;
+                background: #9a2f2f;
+                background-color: #9a2f2f;
                 background-image: none;
                 color: #fff;
                 padding: 10px 24px;
-                border: 2px solid #800000;
+                border: 2px solid #9a2f2f;
                 border-radius: 6px;
                 font-weight: 600;
                 text-decoration: none;
@@ -51,17 +51,17 @@ class HTMLInclude {
             }
 
             .btn-primary:hover {
-                background: #600000;
-                background-color: #600000;
-                border-color: #600000;
+                background: #6f2024;
+                background-color: #6f2024;
+                border-color: #6f2024;
             }
 
             .btn-secondary {
                 background: #fff;
                 background-color: #fff;
                 background-image: none;
-                color: #800000;
-                border: 2px solid #800000;
+                color: #9a2f2f;
+                border: 2px solid #9a2f2f;
                 padding: 10px 24px;
                 border-radius: 6px;
                 font-weight: 600;
@@ -72,7 +72,7 @@ class HTMLInclude {
             }
 
             .btn-secondary:hover {
-                background: #800000;
+                background: #9a2f2f;
                 color: #fff;
             }
 
@@ -171,18 +171,20 @@ class HTMLInclude {
         if (window._knightGroupIncludesLoaded) return;
         window._knightGroupIncludesLoaded = true;
 
+        const includeVersion = '20260521-red-header-footer-fix';
+
         // Determine if we're in a subdirectory
         const pathPrefix = window.location.pathname.includes('/Services/') || 
                           window.location.pathname.includes('/PolicyPages/') ? '../' : '';
 
         const headerElement = document.getElementById('header-include');
         if (headerElement) {
-            await this._fetchAndInject(headerElement, pathPrefix + 'header.html', pathPrefix);
+            await this._fetchAndInject(headerElement, pathPrefix + 'header.html?v=' + includeVersion, pathPrefix);
         }
 
         const footerElement = document.getElementById('footer-include');
         if (footerElement) {
-            await this._fetchAndInject(footerElement, pathPrefix + 'footer.html', pathPrefix);
+            await this._fetchAndInject(footerElement, pathPrefix + 'footer.html?v=' + includeVersion, pathPrefix);
         }
 
         // Initialize scripts after includes are loaded
@@ -294,7 +296,7 @@ class HTMLInclude {
         });
 
         if (currentPath.includes('/Services/')) {
-            const servicesLink = document.querySelector('nav a[href="#"]');
+            const servicesLink = document.querySelector('nav a[href="services.html"], nav a[href="../services.html"], nav a[href="/services"], nav a[href="/services.html"]');
             if (servicesLink && servicesLink.textContent.trim() === 'Services') {
                 toActivate.push(servicesLink);
             }

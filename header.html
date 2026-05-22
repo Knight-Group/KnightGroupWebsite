@@ -4,8 +4,7 @@
 <link rel="stylesheet" media="print" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" onload="this.media='all';this.onload=null">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"></noscript>
 <style>
-        /* CLS: reserve header height before JS injects */
-        #header-include { min-height: 74px; }
+#header-include { min-height: 96px; }
 
 .skip-nav {
     position: absolute;
@@ -24,278 +23,378 @@
     width: auto;
     height: auto;
     overflow: visible;
-    background: #800000;
+    background: #9a2f2f;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 6px;
-    font-weight: 600;
+    border-radius: 8px;
+    font-weight: 700;
     font-size: 1rem;
     text-decoration: none;
     box-shadow: 0 4px 16px rgba(0,0,0,0.3);
     outline: 3px solid #fff;
-    z-index: 9999;
 }
-/* ============================
-   HEADER — DESKTOP
-   ============================ */
+
 header {
     width: 100%;
-    background: #fff;
-    border-bottom: 3px solid #800000;
-    box-shadow: 0 2px 14px rgba(0,0,0,0.08);
+    background: rgba(18, 17, 19, 0.93);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.26);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 68px;
-    padding: 0 40px;
-    box-sizing: border-box;
+    gap: 24px;
+    min-height: 96px;
     position: relative;
 }
-.logo-section { display: flex; align-items: center; gap: 10px; }
-.logo-section img { height: 44px; width: auto; }
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 250px;
+}
+.logo-section picture,
+.logo-section img {
+    display: block;
+}
+.logo-section img {
+    height: 74px;
+    width: auto;
+}
 .company-name {
-    font-family: "Playfair Display", serif;
-    font-size: 1.12rem;
-    color: #800000;
+    color: #efe3de;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.02rem;
     font-weight: 700;
+    line-height: 1.12;
     letter-spacing: 0.01em;
-    white-space: nowrap;
+    max-width: 190px;
 }
-.nav-section { flex: 1; display: flex; justify-content: center; }
+.nav-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
 .nav-section nav ul {
-    display: flex; gap: 2px; list-style: none; margin: 0; padding: 0; align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-.nav-section nav a {
-    color: #333; text-decoration: none; font-size: 0.95rem; font-weight: 500;
-    padding: 7px 14px; border-radius: 6px;
-    transition: background 0.18s, color 0.18s;
-    display: flex; align-items: center; white-space: nowrap;
+.nav-section nav a,
+.services-link {
+    color: #bdb1b1;
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: color 0.18s ease;
 }
 .nav-section nav a:hover,
+.nav-section nav a:focus-visible,
 .nav-section nav a.active,
-.nav-section nav a.nav-active { background: #800000; color: #fff; }
-.nav-section nav a:focus-visible { outline: none; box-shadow: 0 0 0 2px #fff, 0 0 0 4px #800000; }
-/* Dropdown — top:100% (no gap) keeps hover continuous */
+.nav-section nav a.nav-active,
+.dropdown:focus-within .services-link {
+    color: #fff;
+    outline: none;
+}
 .dropdown { position: relative; }
-.nav-section nav .services-link { position: relative; padding-right: 22px; }
-.nav-section nav .services-link::after {
-    content: "\25BE"; position: absolute; right: 7px; top: 50%;
-    transform: translateY(-50%); font-size: 0.8em; pointer-events: none; color: #800000;
+.services-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+.services-link::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg) translateY(-2px);
+    opacity: 0.72;
 }
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;
+    top: calc(100% + 18px);
     left: 50%;
     transform: translateX(-50%);
-    background: #fff;
-    border: 1px solid #e2e8f0;
-    border-top: 3px solid #800000;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-    border-radius: 0 0 10px 10px;
-    min-width: 240px;
-    z-index: 1001;
-    padding: 8px 0;
+    min-width: 270px;
+    padding: 10px;
+    background: rgba(18,17,19,0.98);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 14px;
+    box-shadow: 0 18px 44px rgba(0,0,0,0.34);
 }
-@media (hover: hover) { .dropdown:hover .dropdown-content { display: block; } }
-.dropdown:focus-within .dropdown-content { display: block; }
+.dropdown-content::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -20px;
+    height: 20px;
+}
+@media (hover: hover) { .dropdown:hover .dropdown-content { display: grid; } }
+.dropdown:focus-within .dropdown-content { display: grid; }
 .dropdown-content a {
-    display: flex; align-items: center; gap: 8px; padding: 9px 20px;
-    color: #333; font-size: 0.92rem; font-weight: 500;
-    text-decoration: none; transition: background 0.15s, color 0.15s;
+    display: block;
+    padding: 11px 13px;
+    border-radius: 10px;
+    color: #cfc2c2;
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 .dropdown-content a:hover,
-.dropdown-content a:focus-visible { background: #800000; color: #fff; outline: none; }
-/* CTA */
-.cta-buttons { display: flex; gap: 10px; align-items: center; }
+.dropdown-content a:focus-visible {
+    background: rgba(154,47,47,0.22);
+    color: #fff;
+}
+.header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 210px;
+}
+.cta-buttons { display: flex; align-items: center; }
 .header-btn-primary {
-    background: #800000; color: #fff; padding: 9px 20px; border-radius: 6px;
-    font-weight: 600; font-size: 0.92rem; text-decoration: none;
-    transition: background 0.18s, box-shadow 0.18s;
-    box-shadow: 0 2px 8px rgba(128,0,0,0.22);
-    display: flex; align-items: center; gap: 6px;
-    white-space: nowrap; border: 2px solid #800000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #b23b3b 0%, #6f2024 100%);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    box-shadow: 0 10px 24px rgba(154,47,47,0.28);
+    transition: filter 0.18s ease, transform 0.18s ease;
 }
-.header-btn-primary:hover { background: #600000; border-color: #600000; box-shadow: 0 4px 14px rgba(128,0,0,0.30); }
-.header-btn-primary:focus-visible { outline: none; box-shadow: 0 0 0 2px #fff, 0 0 0 4px #800000; }
-/* Generic page buttons */
+.header-btn-primary::before {
+    content: "Call or Text";
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.72);
+}
+.header-btn-primary:hover,
+.header-btn-primary:focus-visible {
+    filter: brightness(1.08);
+    transform: translateY(-1px);
+    outline: none;
+}
 .btn-primary {
-    background: #800000; background-color: #800000; background-image: none;
-    color: #fff; padding: 10px 24px; border: 2px solid #800000;
-    border-radius: 6px; font-weight: 600; text-decoration: none;
-    transition: background 0.2s; font-size: 1rem; display: inline-block;
+    background: #9a2f2f;
+    color: #fff;
+    padding: 10px 24px;
+    border: 2px solid #9a2f2f;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
 }
-.btn-primary:hover { background: #600000; background-color: #600000; border-color: #600000; }
 .btn-secondary {
-    background: #fff; background-color: #fff; background-image: none;
-    color: #800000; border: 2px solid #800000; padding: 10px 24px;
-    border-radius: 6px; font-weight: 600; text-decoration: none;
-    transition: background 0.2s, color 0.2s; font-size: 1rem; display: inline-block;
+    background: #fff;
+    color: #9a2f2f;
+    border: 2px solid #9a2f2f;
+    padding: 10px 24px;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
 }
-.btn-secondary:hover { background: #800000; color: #fff; }
-button.btn-primary,
-button.btn-secondary {
-    -webkit-appearance: none;
-    appearance: none;
-    cursor: pointer;
-    font-family: inherit;
-}
-/* Hamburger */
 .hamburger {
-    display: none; flex-direction: column; cursor: pointer; gap: 5px;
-    padding: 8px; border-radius: 6px; border: none; background: none;
-    transition: background 0.18s; touch-action: manipulation;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    padding: 9px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.14);
+    background: rgba(255,255,255,0.06);
+    touch-action: manipulation;
 }
-.hamburger:focus-visible { outline: 2px solid #800000; outline-offset: 2px; }
-.hamburger span { width: 24px; height: 2.5px; background: #800000; border-radius: 2px; transition: 0.3s; }
-/* Mobile backdrop */
+.hamburger span {
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+}
+.hamburger:focus-visible { outline: 2px solid #d06a6a; outline-offset: 2px; }
 .mobile-backdrop {
-    display: none; position: fixed; inset: 0;
-    background: rgba(0,0,0,0.55); z-index: 1999;
-    backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px); cursor: pointer;
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 1999;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 }
 .mobile-backdrop.active { display: block; }
-/* Mobile menu panel */
 .mobile-menu {
-    position: fixed; top: 0; left: 0;
-    width: 290px; max-width: 90vw; height: 100vh;
-    background: #0f0a0a; z-index: 2000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    max-width: 90vw;
+    height: 100vh;
+    background: #121113;
+    z-index: 2000;
     transform: translateX(-100%);
     transition: transform 0.32s cubic-bezier(0.4,0,0.2,1);
-    overflow-y: auto; display: flex; flex-direction: column;
-    border-right: 3px solid #800000;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(255,255,255,0.12);
 }
 .mobile-menu.active { transform: translateX(0); }
 .mm-header {
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 18px 20px 16px;
-    border-bottom: 1px solid rgba(255,255,255,0.08); flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 18px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 .mm-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.mm-logo img { height: 36px; width: auto; }
+.mm-logo img { height: 38px; width: auto; }
 .mm-close {
-    background: none; border: 1px solid rgba(255,255,255,0.15);
-    color: #fff; font-size: 1.4rem;
-    width: 36px; height: 36px; display: flex; align-items: center;
-    justify-content: center; border-radius: 8px; cursor: pointer;
-    transition: background 0.18s; line-height: 1; flex-shrink: 0;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #fff;
+    font-size: 1.25rem;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
 }
-.mm-close:hover { background: rgba(128,0,0,0.5); border-color: #800000; }
 .mm-nav {
-    flex: 1; padding: 12px 12px 0; list-style: none; margin: 0;
-    display: flex; flex-direction: column; gap: 2px;
+    flex: 1;
+    padding: 12px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
-.mm-nav li { margin: 0; padding: 0; }
-.mm-nav a {
-    display: flex; align-items: center; gap: 10px; padding: 12px 14px;
-    color: rgba(255,255,255,0.88); text-decoration: none;
-    font-size: 1rem; font-weight: 500; border-radius: 8px;
-    transition: background 0.18s, color 0.18s; letter-spacing: 0.01em;
+.mm-nav a,
+.mm-services-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 14px;
+    color: rgba(255,255,255,0.86);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: 10px;
+    background: none;
+    border: 0;
+    text-align: left;
+    font-family: inherit;
 }
 .mm-nav a:hover,
-.mm-nav a:focus-visible { background: rgba(128,0,0,0.55); color: #fff; }
-.mm-nav a:focus-visible { outline: 2px solid #800000; outline-offset: 2px; }
-.mm-services-toggle {
-    display: flex; align-items: center; justify-content: space-between;
-    width: 100%; padding: 12px 14px; background: none; border: none;
-    color: rgba(255,255,255,0.88); font-size: 1rem; font-weight: 500;
-    border-radius: 8px; cursor: pointer;
-    transition: background 0.18s, color 0.18s;
-    text-align: left; font-family: inherit; letter-spacing: 0.01em;
-}
+.mm-nav a:focus-visible,
 .mm-services-toggle:hover,
-.mm-services-toggle:focus-visible { background: rgba(128,0,0,0.55); color: #fff; }
-.mm-services-toggle:focus-visible { outline: 2px solid #800000; outline-offset: 2px; }
-.mm-chevron { font-size: 0.72rem; transition: transform 0.25s; opacity: 0.7; flex-shrink: 0; }
-.mm-services-toggle[aria-expanded="true"] .mm-chevron { transform: rotate(180deg); }
-.mm-services-toggle[aria-expanded="true"] { background: rgba(128,0,0,0.30); color: #fff; }
-.mm-submenu {
-    display: none; flex-direction: column; gap: 1px;
-    padding: 4px 0 4px 14px; margin-top: 2px;
+.mm-services-toggle:focus-visible {
+    background: rgba(154,47,47,0.28);
+    color: #fff;
+    outline: none;
 }
+.mm-chevron { font-size: 0.72rem; transition: transform 0.25s; opacity: 0.7; }
+.mm-services-toggle[aria-expanded="true"] .mm-chevron { transform: rotate(180deg); }
+.mm-submenu { display: none; flex-direction: column; gap: 1px; padding: 4px 0 4px 14px; }
 .mm-submenu.open { display: flex; }
 .mm-submenu a {
-    font-size: 0.9rem; padding: 9px 12px;
-    color: rgba(255,255,255,0.72);
-    border-left: 2px solid rgba(128,0,0,0.4);
-    border-radius: 0 6px 6px 0;
+    font-size: 0.86rem;
+    padding: 9px 12px;
+    color: rgba(255,255,255,0.7);
+    border-left: 2px solid rgba(154,47,47,0.45);
+    border-radius: 0 8px 8px 0;
 }
-.mm-submenu a:hover { background: rgba(128,0,0,0.4); color: #fff; border-left-color: #800000; }
 .mm-cta {
-    padding: 16px 16px 12px; display: flex; flex-direction: column; gap: 10px;
-    border-top: 1px solid rgba(255,255,255,0.08); flex-shrink: 0;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid rgba(255,255,255,0.08);
 }
 .mm-cta a {
-    display: flex; align-items: center; justify-content: center;
-    gap: 8px; padding: 11px 16px; border-radius: 8px;
-    font-weight: 600; font-size: 0.95rem; text-decoration: none; text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 16px;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 0.92rem;
+    text-decoration: none;
 }
-.mm-call { background: #800000; color: #fff; border: 2px solid #800000; }
-.mm-call:hover { background: #600000; border-color: #600000; }
-.mm-email { background: transparent; color: rgba(255,255,255,0.8); border: 2px solid rgba(255,255,255,0.2); }
-.mm-email:hover { background: rgba(255,255,255,0.07); }
-.mm-social {
-    display: flex; align-items: center; justify-content: center;
-    gap: 10px; padding: 10px 16px 20px; flex-shrink: 0;
-}
+.mm-call { background: linear-gradient(135deg, #b23b3b, #6f2024); color: #fff; }
+.mm-email { color: rgba(255,255,255,0.82); border: 1px solid rgba(255,255,255,0.2); }
+.mm-social { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 10px 16px 20px; }
 .mm-social a { display: flex; }
-.mm-social img {
-    width: 26px; height: 26px; border-radius: 6px;
-    opacity: 0.75; transition: opacity 0.18s, transform 0.18s; background: #fff;
-}
-.mm-social a:hover img { opacity: 1; transform: scale(1.1); }
+.mm-social img { width: 26px; height: 26px; border-radius: 6px; opacity: 0.78; background: #fff; transition: opacity 0.18s, transform 0.18s; }
+.mm-social a:hover img { opacity: 1; transform: scale(1.08); }
 .visually-hidden { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
-/* Mobile-only call icon button (hidden on desktop) */
 .header-call-mobile {
     display: none;
     align-items: center;
     justify-content: center;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background: #800000;
+    min-width: 54px;
+    height: 40px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #b23b3b, #6f2024);
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 0.82rem;
+    font-weight: 800;
     text-decoration: none;
-    flex-shrink: 0;
-    transition: background 0.18s, transform 0.18s;
-    box-shadow: 0 2px 8px rgba(128,0,0,0.30);
 }
-.header-call-mobile:hover { background: #600000; transform: scale(1.08); }
-/* Dark mode */
-</style>
 
-<!-- Mobile responsive -->
-<style>
 @media (max-width: 1200px) {
-    .hamburger            { display: flex !important; }
-    .nav-section          { display: none !important; }
-    /* Show only the icon call button on mobile; hide text button */
+    #header-include { min-height: 78px; }
+    header .container { padding: 0 16px; }
+    .header-content { min-height: 78px; }
+    .hamburger { display: flex !important; }
+    .nav-section { display: none !important; }
     .header-actions .header-btn-primary { display: none !important; }
-    .header-call-mobile   { display: flex !important; }
-    .header-content       { padding: 0 16px; }
-    /* Center logo absolutely within the sticky header on mobile */
+    .header-call-mobile { display: flex !important; }
     .logo-section {
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
         pointer-events: none;
+        min-width: 0;
     }
+    .logo-section picture,
     .logo-section a { pointer-events: auto; }
-}
-@media (max-width: 380px) {
-    .company-name { display: none !important; }
+    .logo-section img { height: 56px; }
+    .company-name { display: none; }
 }
 @media (min-width: 1201px) {
-    .hamburger     { display: none !important; }
-    .nav-section   { display: flex !important; flex: 1; justify-content: center; }
-    .mobile-menu   { transform: translateX(-100%) !important; }
+    .hamburger { display: none !important; }
+    .nav-section { display: flex !important; }
+    .mobile-menu { transform: translateX(-100%) !important; }
     .mobile-backdrop { display: none !important; }
 }
 </style>
@@ -312,40 +411,40 @@ button.btn-secondary {
             </div>
             <div class="logo-section">
                     <picture><source srcset="Images/KnightGroupLogo.webp" type="image/webp"><img src="Images/KnightGroupLogo.png" alt="Knight Group Handyman Services Logo" width="50" height="50"></picture>
-                <div class="company-name">Knight Group Handyman Services</div>
+                <div class="company-name">Knight Group</div>
             </div>
             <div class="nav-section">
                 <nav>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li class="dropdown">
-                            <a href="/services" class="services-link">Services</a>
+                            <a href="services.html" class="services-link">Services</a>
                             <div class="dropdown-content">
-                                <a href="/Services/general-repairs">🔧 General Repairs</a>
-                                <a href="/Services/plumbing-services">🚿 Plumbing Services</a>
-                                <a href="/Services/electrical-work">⚡ Electrical Work</a>
-                                <a href="/Services/carpentry-framing">🏠 Carpentry & Framing</a>
-                                <a href="/Services/painting-finishing">🎨 Painting & Finishing</a>
-                                <a href="/Services/home-renovations">🏗️ Home Renovations</a>
-                                <a href="/Services/doors-windows">🚪 Doors & Windows</a>
-                                <a href="/Services/custom-projects">🔨 Custom Projects</a>
-                                <a href="/Services/emergency-services" style="color: #d63031; font-weight: bold;">🚨 Emergency Services</a>
+                                <a href="Services/general-repairs.html">General Repairs</a>
+                                <a href="Services/plumbing-services.html">Plumbing Services</a>
+                                <a href="Services/electrical-work.html">Electrical Work</a>
+                                <a href="Services/carpentry-framing.html">Carpentry & Framing</a>
+                                <a href="Services/painting-finishing.html">Painting & Finishing</a>
+                                <a href="Services/home-renovations.html">Home Renovations</a>
+                                <a href="Services/doors-windows.html">Doors & Windows</a>
+                                <a href="Services/custom-projects.html">Custom Projects</a>
+                                <a href="Services/emergency-services.html" style="color: #b13a3a; font-weight: bold;">Emergency Services</a>
                             </div>
                         </li>
-                        <li><a href="/contact">Book Estimate</a></li>
-                        <li><a href="/pricing">Pricing</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                        <li><a href="/galleries">Gallery</a></li>
+                        <li><a href="booking.html">Book Estimate</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="galleries.html">Gallery</a></li>
                     </ul>
                 </nav>
             </div>
 
             <div class="header-actions">
                 <!-- Mobile: icon-only call button -->
-                <a href="tel:+18136493341" class="header-call-mobile" aria-label="Call (813) 649-3341" title="Call (813) 649-3341">📞</a>
+                <a href="tel:+18136493341" class="header-call-mobile" aria-label="Call (813) 649-3341" title="Call (813) 649-3341">Call</a>
                 <div class="cta-buttons">
-                    <a href="tel:+18136493341" class="header-btn-primary" title="Click to call on mobile, or dial (813) 649-3341">📞 (813) 649-3341</a>
+                    <a href="tel:+18136493341" class="header-btn-primary" title="Click to call on mobile, or dial (813) 649-3341">(813) 649-3341</a>
                 </div>
             </div>
         </div>
@@ -358,45 +457,45 @@ button.btn-secondary {
 <!-- Mobile menu panel -->
 <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
     <div class="mm-header">
-        <a href="/" class="mm-logo">
+        <a href="index.html" class="mm-logo">
             <picture>
                 <source srcset="Images/KnightGroupLogo.webp" type="image/webp">
                 <img src="Images/KnightGroupLogo.png" alt="Knight Group Handyman Services Logo" width="36" height="36">
             </picture>
-            <span class="company-name" style="color:#fff!important;">Knight Group Handyman Services</span>
+            <span class="company-name" style="color:#efe3de!important;">Knight Group</span>
         </a>
         <button class="mm-close" onclick="toggleMobileMenu()" aria-label="Close menu">&#x2715;</button>
     </div>
 
     <ul class="mm-nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/services">Services Overview</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services Overview</a></li>
         <li>
             <button class="mm-services-toggle" aria-expanded="false" aria-controls="mmServicesMenu" onclick="toggleMmServices(this)">
                 Services <span class="mm-chevron">&#9660;</span>
             </button>
             <div class="mm-submenu" id="mmServicesMenu">
-                <a href="/Services/general-repairs">&#x1F527; General Repairs</a>
-                <a href="/Services/plumbing-services">&#x1F6BF; Plumbing Services</a>
-                <a href="/Services/electrical-work">&#x26A1; Electrical Work</a>
-                <a href="/Services/carpentry-framing">&#x1F3E0; Carpentry &amp; Framing</a>
-                <a href="/Services/painting-finishing">&#x1F3A8; Painting &amp; Finishing</a>
-                <a href="/Services/home-renovations">&#x1F3D7;&#xFE0F; Home Renovations</a>
-                <a href="/Services/doors-windows">&#x1F6AA; Doors &amp; Windows</a>
-                <a href="/Services/custom-projects">&#x1F528; Custom Projects</a>
-                <a href="/Services/emergency-services" style="color:#ff6b6b;border-left-color:#c0392b;">&#x1F6A8; Emergency Services</a>
+                <a href="Services/general-repairs.html">General Repairs</a>
+                <a href="Services/plumbing-services.html">Plumbing Services</a>
+                <a href="Services/electrical-work.html">Electrical Work</a>
+                <a href="Services/carpentry-framing.html">Carpentry &amp; Framing</a>
+                <a href="Services/painting-finishing.html">Painting &amp; Finishing</a>
+                <a href="Services/home-renovations.html">Home Renovations</a>
+                <a href="Services/doors-windows.html">Doors &amp; Windows</a>
+                <a href="Services/custom-projects.html">Custom Projects</a>
+                <a href="Services/emergency-services.html" style="color:#ff6b6b;border-left-color:#c0392b;">Emergency Services</a>
             </div>
         </li>
-        <li><a href="/contact">Book Estimate</a></li>
-        <li><a href="/pricing">Pricing</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/galleries">Gallery</a></li>
+        <li><a href="booking.html">Book Estimate</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="galleries.html">Gallery</a></li>
     </ul>
 
     <div class="mm-cta">
-        <a href="tel:+18136493341" class="mm-call">&#x1F4DE;&nbsp; (813) 649-3341</a>
-        <a href="mailto:nknight@knightgroup.com" class="mm-email">&#x2709;&#xFE0F;&nbsp; Email Us</a>
+        <a href="tel:+18136493341" class="mm-call">(813) 649-3341</a>
+        <a href="mailto:nknight@knightgroup.com" class="mm-email">Email Us</a>
     </div>
 
     <div class="mm-social">
@@ -491,7 +590,7 @@ function closeEmailModal() {
     <div style="background:#fff;border-radius:14px;padding:32px 28px;max-width:380px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,0.3);position:relative;font-family:'Inter',sans-serif;">
         <button id="emailPickerClose" aria-label="Close"
                 style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.4rem;cursor:pointer;color:#666;line-height:1;">&times;</button>
-        <h2 id="emailPickerTitle" style="font-size:1.2rem;color:#800000;margin:0 0 6px;">Send us an email</h2>
+        <h2 id="emailPickerTitle" style="font-size:1.2rem;color:#9a2f2f;margin:0 0 6px;">Send us an email</h2>
         <p style="font-size:0.9rem;color:#666;margin:0 0 22px;">Choose how you'd like to open your email:</p>
 
         <a id="emailOptGmail" href="#" target="_blank" rel="noopener"
@@ -515,11 +614,11 @@ function closeEmailModal() {
         <a id="emailOptDefault" href="#"
            style="display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:8px;text-decoration:none;color:#333;border:1px solid #e0e0e0;font-weight:500;transition:background 0.15s;"
            onmouseover="this.style.background='#f5f5f5'" onmouseout="this.style.background=''">
-            <span style="font-size:1.2rem;">📧</span> Default Mail App
+            <span style="font-size:1.2rem;">Mail</span> Default Mail App
         </a>
 
         <p style="margin:18px 0 0;font-size:0.82rem;color:#999;text-align:center;">
-            Or copy our address: <strong style="color:#800000;user-select:all;">nknight@knightgroup.com</strong>
+            Or copy our address: <strong style="color:#9a2f2f;user-select:all;">nknight@knightgroup.com</strong>
         </p>
     </div>
 </div>

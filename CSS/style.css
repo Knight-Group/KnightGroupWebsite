@@ -496,7 +496,7 @@ nav ul.nav-links a:hover {
 
 
 .btn, .hero-btn {
-    background: linear-gradient(90deg, #800000 0%, #c0392b 100%);
+    background: linear-gradient(90deg, #9a2f2f 0%, #c0392b 100%);
     color: #fff;
     padding: 12px 32px;
     border-radius: 30px;
@@ -514,7 +514,7 @@ nav ul.nav-links a:hover {
 }
 
 .btn:hover, .hero-btn:hover {
-    background: linear-gradient(90deg, #c0392b 0%, #800000 100%);
+    background: linear-gradient(90deg, #c0392b 0%, #9a2f2f 100%);
     color: #fff;
     box-shadow: 0 8px 24px rgba(128,0,0,0.25);
     transform: translateY(-2px) scale(1.04);
@@ -590,7 +590,7 @@ section {
 }
 
 .dropdown-trigger:hover {
-    background: #800000;
+    background: #9a2f2f;
     color: #fff;
 }
 

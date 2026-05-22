@@ -19,13 +19,6 @@ Disallow: /JS/header
 Disallow: /JS/header.html
 Disallow: /JS/footer
 Disallow: /JS/footer.html
-Disallow: /programming%26databases
-Disallow: /programming%26databases.html
-Disallow: /Services/programming%26databases
-Disallow: /Services/programming%26databases.html
-Disallow: /Services/handcraftedfurniture%26resins
-Disallow: /Services/handcraftedfurniture%26resins.html
-
 # Block .html duplicate URLs — canonical tags on these point to clean URLs
 # Blocking prevents crawl budget waste on duplicate variants
 Disallow: /about.html
@@ -47,10 +40,5 @@ Disallow: /PolicyPages/privacy-policy.html
 Disallow: /PolicyPages/terms.html
 Disallow: /PolicyPages/returnpolicy.html
 Disallow: /PolicyPages/payment-policy.html
-
-Disallow: /_carpentry_corrupted
-Disallow: /_carpentry_corrupted.html
-Disallow: /_handyman_corrupted
-Disallow: /_handyman_corrupted.html
 
 Sitemap: https://www.knightgroup.com/sitemap.xml
