@@ -64,6 +64,14 @@ header .container {
     gap: 14px;
     min-width: 250px;
 }
+.logo-home-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+    color: inherit;
+    text-decoration: none;
+}
 .logo-section picture,
 .logo-section img {
     display: block;
@@ -81,6 +89,80 @@ header .container {
     letter-spacing: 0.01em;
     max-width: 190px;
 }
+.logo-home-link:hover .company-name,
+.logo-home-link:focus-visible .company-name {
+    color: #fff;
+}
+.logo-home-link:focus-visible {
+    outline: 2px solid #d06a6a;
+    outline-offset: 6px;
+    border-radius: 12px;
+}
+
+@keyframes kgHeroGlimmerSweep {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    58% {
+        background-position: 0% 50%;
+    }
+
+    82% {
+        background-position: 165% 50%;
+    }
+
+    100% {
+        background-position: 165% 50%;
+    }
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+    .kg-hero h1,
+    .service-hero h1,
+    .page-hero h1,
+    .pricing-hero h1,
+    .area-hero h1 {
+        background-image: linear-gradient(
+            112deg,
+            #efe3de 0%,
+            #ffffff 24%,
+            #f2d5c2 37%,
+            #fff8f3 50%,
+            #e8c3ad 63%,
+            #ffffff 78%,
+            #efe3de 100%
+        );
+        background-size: 280% auto;
+        background-position: 0% 50%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        animation: kgHeroGlimmerSweep 12.5s ease-in-out infinite;
+    }
+
+    .thank-you-message h1 {
+        background-image: linear-gradient(
+            112deg,
+            #6f2024 0%,
+            #9a2f2f 24%,
+            #d9baa0 37%,
+            #77262b 50%,
+            #e2c5ab 63%,
+            #9a2f2f 78%,
+            #6f2024 100%
+        );
+        background-size: 280% auto;
+        background-position: 0% 50%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        animation: kgHeroGlimmerSweep 12.5s ease-in-out infinite;
+    }
+}
+
 .nav-section {
     flex: 1;
     display: flex;
@@ -410,8 +492,10 @@ header .container {
                 <span></span>
             </div>
             <div class="logo-section">
+                <a href="index.html" class="logo-home-link" aria-label="Knight Group home">
                     <picture><source srcset="Images/KnightGroupLogo.webp" type="image/webp"><img src="Images/KnightGroupLogo.png" alt="Knight Group Handyman Services Logo" width="50" height="50"></picture>
-                <div class="company-name">Knight Group</div>
+                    <span class="company-name">Knight Group</span>
+                </a>
             </div>
             <div class="nav-section">
                 <nav>

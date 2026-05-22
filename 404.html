@@ -30,6 +30,35 @@
         h1 { font-size: 2rem; color: #9a2f2f; margin-bottom: 12px; }
         p { color: #555; margin-bottom: 20px; }
         a { color: #9a2f2f; font-weight: 600; }
+
+        @keyframes kgHeroGlimmerSweep {
+            0% { background-position: 0% 50%; }
+            58% { background-position: 0% 50%; }
+            82% { background-position: 165% 50%; }
+            100% { background-position: 165% 50%; }
+        }
+
+        @supports ((-webkit-background-clip: text) or (background-clip: text)) {
+            h1 {
+                background-image: linear-gradient(
+                    112deg,
+                    #6f2024 0%,
+                    #9a2f2f 24%,
+                    #d9baa0 37%,
+                    #77262b 50%,
+                    #e2c5ab 63%,
+                    #9a2f2f 78%,
+                    #6f2024 100%
+                );
+                background-size: 280% auto;
+                background-position: 0% 50%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                -webkit-text-fill-color: transparent;
+                animation: kgHeroGlimmerSweep 12.5s ease-in-out infinite;
+            }
+        }
     </style>
 
     <script>
