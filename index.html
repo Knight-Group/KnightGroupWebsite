@@ -30,7 +30,21 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="JS/canonical-redirect.js"></script>
+    <script>
+    (function redirectHomepageHtmlPath() {
+        var host = (window.location.hostname || '').toLowerCase();
+        if (host !== 'www.knightgroup.com' && host !== 'knightgroup.com') {
+            return;
+        }
+
+        var path = window.location.pathname || '';
+        if (!/\/index\.html$/i.test(path)) {
+            return;
+        }
+
+        window.location.replace('/' + window.location.search + window.location.hash);
+    })();
+    </script>
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="icon" href="Images/android-chrome-512x512.png" type="image/png">
     <link rel="apple-touch-icon" href="/Images/apple-touch-icon.png">
@@ -1628,7 +1642,7 @@
                     <h1>Repairs, installs, and home projects handled without the runaround.</h1>
                     <p class="kg-hero__lead">Knight Group helps homeowners across Safety Harbor and Pinellas County get repairs handled clearly, quickly, and professionally, with direct paths to the service pages, estimate form, reviews, and local proof most people want before they book.</p>
                     <div class="kg-hero__actions">
-                        <a class="kg-btn kg-btn--solid" href="booking.html">Book a free estimate</a>
+                        <a class="kg-btn kg-btn--solid" href="booking">Book a free estimate</a>
                         <a class="kg-btn kg-btn--ghost" href="tel:+18136493341">Call (813) 649-3341</a>
                     </div>
                     <ul class="kg-proof-list">
@@ -1637,51 +1651,37 @@
                         <li>Practical help for plumbing fixes, drywall and painting, carpentry, door and window work, punch-list repairs, custom projects, and smaller renovations.</li>
                     </ul>
                 </div>
-
-
-                <aside class="kg-hero-card" aria-label="Request a free Knight Group estimate">
-                    <div class="kg-hero-card__kicker">Free local estimate</div>
-                    <h2>Tell us what needs fixing.</h2>
-                    <p>Send the basics and Knight Group will respond with the next step for repairs, installs, punch-list work, or small project scopes.</p>
-                    <form class="kg-form" action="https://formspree.io/f/xzzvnpne" method="POST">
-                        <div class="kg-field">
-                            <label for="hero-name">Full name *</label>
-                            <input type="text" id="hero-name" name="name" autocomplete="name" required>
-                        </div>
-                        <div class="kg-form-row">
-                            <div class="kg-field">
-                                <label for="hero-phone">Phone *</label>
-                                <input type="tel" id="hero-phone" name="phone" autocomplete="tel" required>
-                            </div>
-                            <div class="kg-field">
-                                <label for="hero-city">City or area</label>
-                                <input type="text" id="hero-city" name="area" placeholder="Safety Harbor, Clearwater..." autocomplete="address-level2">
+                <aside class="kg-hero-card" aria-label="Knight Group quick next steps">
+                    <div class="kg-hero-card__kicker">Quick next step</div>
+                    <h2>Use the fastest route for the job.</h2>
+                    <p>The full estimate form is already lower on the page. If you know the scope, jump straight there. If not, browse the service routes or call now for a faster fit check.</p>
+                    <div class="kg-stat-stack">
+                        <div class="kg-stat">
+                            <span class="kg-stat-mark">1</span>
+                            <div>
+                                <strong>Free written estimates</strong>
+                                <span>Describe the repair once and get a clear next step before work starts.</span>
                             </div>
                         </div>
-                        <div class="kg-field">
-                            <label for="hero-service">Service needed</label>
-                            <select id="hero-service" name="service">
-                                <option value="">Select a service</option>
-                                <option>General Repairs</option>
-                                <option>Plumbing Services</option>
-                                <option>Electrical Work</option>
-                                <option>Carpentry &amp; Framing</option>
-                                <option>Painting &amp; Finishing</option>
-                                <option>Doors &amp; Windows</option>
-                                <option>Custom Project</option>
-                                <option>Emergency Services</option>
-                            </select>
+                        <div class="kg-stat">
+                            <span class="kg-stat-mark">2</span>
+                            <div>
+                                <strong>Handyman-only scope</strong>
+                                <span>Repairs, plumbing fixes, drywall, paint, carpentry, windows, doors, and small renovation work.</span>
+                            </div>
                         </div>
-                        <div class="kg-field">
-                            <label for="hero-message">Project details *</label>
-                            <textarea id="hero-message" name="message" placeholder="Describe the repair, timeline, and anything urgent." required></textarea>
+                        <div class="kg-stat">
+                            <span class="kg-stat-mark">3</span>
+                            <div>
+                                <strong>Pinellas-first coverage</strong>
+                                <span>Built around Safety Harbor and the nearby Pinellas communities that actually send the calls.</span>
+                            </div>
                         </div>
-                        <input class="kg-hp" type="text" name="address_2" autocomplete="off" tabindex="-1" aria-hidden="true">
-                        <input type="hidden" name="_subject" value="Knight Group homepage estimate request">
-                        <input type="hidden" name="_next" value="https://www.knightgroup.com/thank-you">
-                        <button type="submit" class="kg-btn kg-btn--solid">Send estimate request</button>
-                        <p class="kg-form-note">Prefer to talk? Call <a href="tel:+18136493341">(813) 649-3341</a>.</p>
-                    </form>
+                    </div>
+                    <div class="kg-hero__actions" style="margin-top:22px;">
+                        <a class="kg-btn kg-btn--solid" href="#homepage-estimate">Jump to estimate form</a>
+                        <a class="kg-btn kg-btn--light" href="services">Browse services</a>
+                    </div>
                 </aside>
             </div>
         </section>
@@ -1699,17 +1699,17 @@
                     <button class="kg-job-btn" type="button" id="kg-job-prev" aria-label="Previous job">&#8249;</button>
                     <div class="kg-job-viewport">
                         <div class="kg-job-track" id="kg-job-track">
-                            <article class="kg-job-card"><img src="GalleryImages/20230713_115127.jpg" alt="Completed handyman repair project" loading="lazy" width="640" height="480"><div><h3>Repair and finish work</h3><p>Detail-focused work for visible areas of the home where clean closeout matters.</p></div></article>
-                            <article class="kg-job-card"><img src="GalleryImages/20230216_184144.jpg" alt="Completed home repair job" loading="lazy" width="640" height="480"><div><h3>Home repair support</h3><p>Practical fixes and improvements routed through one local handyman team.</p></div></article>
-                            <article class="kg-job-card"><img src="GalleryImages/20230215_141043.jpg" alt="Completed improvement project" loading="lazy" width="640" height="480"><div><h3>Improvement projects</h3><p>Small projects, maintenance work, and upgrades completed with a clear scope.</p></div></article>
-                            <article class="kg-job-card"><img src="GalleryImages/20230111_121854.jpg" alt="Completed carpentry and repair work" loading="lazy" width="640" height="480"><div><h3>Carpentry and repairs</h3><p>Support for repairs, build-outs, trim, doors, and other household problem areas.</p></div></article>
-                            <article class="kg-job-card"><img src="GalleryImages/FEB05A86-.jpg" alt="Knight Group gallery project photo" loading="lazy" width="640" height="480"><div><h3>Gallery project</h3><p>Examples from the broader job gallery for homeowners comparing fit before booking.</p></div></article>
-                            <article class="kg-job-card"><img src="GalleryImages/KnightGroupBeforeAfterPipes.jpg" alt="Custom wood and finish work" loading="lazy" width="640" height="480"><div><h3>Before and after repair</h3><p>Before-and-after project proof from the current gallery set.</p></div></article>
+                            <article class="kg-job-card"><picture><source srcset="GalleryImages/20230713_115127-home.webp" type="image/webp"><img src="GalleryImages/20230713_115127.jpg" alt="Completed handyman repair project" loading="lazy" decoding="async" width="640" height="480"></picture><div><h3>Repair and finish work</h3><p>Detail-focused work for visible areas of the home where clean closeout matters.</p></div></article>
+                            <article class="kg-job-card"><picture><source srcset="GalleryImages/20230216_184144-home.webp" type="image/webp"><img src="GalleryImages/20230216_184144.jpg" alt="Completed home repair job" loading="lazy" decoding="async" width="640" height="480"></picture><div><h3>Home repair support</h3><p>Practical fixes and improvements routed through one local handyman team.</p></div></article>
+                            <article class="kg-job-card"><picture><source srcset="GalleryImages/20230215_141043-home.webp" type="image/webp"><img src="GalleryImages/20230215_141043.jpg" alt="Completed improvement project" loading="lazy" decoding="async" width="640" height="480"></picture><div><h3>Improvement projects</h3><p>Small projects, maintenance work, and upgrades completed with a clear scope.</p></div></article>
+                            <article class="kg-job-card"><picture><source srcset="GalleryImages/20230111_121854-home.webp" type="image/webp"><img src="GalleryImages/20230111_121854.jpg" alt="Completed carpentry and repair work" loading="lazy" decoding="async" width="640" height="480"></picture><div><h3>Carpentry and repairs</h3><p>Support for repairs, build-outs, trim, doors, and other household problem areas.</p></div></article>
+                            <article class="kg-job-card"><picture><source srcset="GalleryImages/FEB05A86--home.webp" type="image/webp"><img src="GalleryImages/FEB05A86-.jpg" alt="Knight Group gallery project photo" loading="lazy" decoding="async" width="640" height="480"></picture><div><h3>Gallery project</h3><p>Examples from the broader job gallery for homeowners comparing fit before booking.</p></div></article>
+                            <article class="kg-job-card"><picture><source srcset="GalleryImages/KnightGroupBeforeAfterPipes-home.webp" type="image/webp"><img src="GalleryImages/KnightGroupBeforeAfterPipes.jpg" alt="Custom wood and finish work" loading="lazy" decoding="async" width="640" height="480"></picture><div><h3>Before and after repair</h3><p>Before-and-after project proof from the current gallery set.</p></div></article>
                         </div>
                     </div>
                     <button class="kg-job-btn" type="button" id="kg-job-next" aria-label="Next job">&#8250;</button>
                 </div>
-                <div class="kg-hero__actions" style="justify-content:center;margin-top:26px;"><a class="kg-btn kg-btn--light" href="galleries.html">View full gallery</a></div>
+                <div class="kg-hero__actions" style="justify-content:center;margin-top:26px;"><a class="kg-btn kg-btn--light" href="galleries">View full gallery</a></div>
             </div>
         </section>
 
@@ -1861,17 +1861,17 @@
                 <article class="kg-route-card">
                     <h3>Need a quote right now?</h3>
                     <p>Use the booking route if the job is already defined and you want to move straight into the estimate process.</p>
-                    <a href="booking.html">Go to booking</a>
+                    <a href="booking">Go to booking</a>
                 </article>
                 <article class="kg-route-card">
                     <h3>Need to find the right repair page?</h3>
                     <p>The service hub and service cards below route visitors into the exact job category instead of trapping everything inside the navigation menu.</p>
-                    <a href="services.html">Browse service routes</a>
+                    <a href="services">Browse service routes</a>
                 </article>
                 <article class="kg-route-card">
                     <h3>Need proof before you call?</h3>
                     <p>Pricing, gallery, reviews, and service-area details are all easier to reach from here before you commit to a quote.</p>
-                    <a href="galleries.html">See recent work</a>
+                    <a href="galleries">See recent work</a>
                 </article>
             </div>
         </section>
@@ -1928,47 +1928,47 @@
                     <article class="kg-service-card">
                         <h3>General Repairs</h3>
                         <p>Punch-list fixes, everyday repair calls, drywall patches, trim corrections, and practical problem-solving work around the home.</p>
-                        <a href="Services/general-repairs.html">View general repairs</a>
+                        <a href="Services/general-repairs">View general repairs</a>
                     </article>
                     <article class="kg-service-card">
                         <h3>Plumbing Services</h3>
                         <p>Faucets, shutoffs, drains, fixture replacements, and smaller plumbing repairs that need a fast, clear response.</p>
-                        <a href="Services/plumbing-services.html">View plumbing services</a>
+                        <a href="Services/plumbing-services">View plumbing services</a>
                     </article>
                     <article class="kg-service-card">
                         <h3>Electrical Work</h3>
                         <p>Household electrical tasks within the current service offering, including fixture swaps, switches, fans, and outlets.</p>
-                        <a href="Services/electrical-work.html">View electrical work</a>
+                        <a href="Services/electrical-work">View electrical work</a>
                     </article>
                     <article class="kg-service-card">
                         <h3>Carpentry and Framing</h3>
                         <p>Repair carpentry, framing corrections, trim, shelving, framing support, and handyman-level build work.</p>
-                        <a href="Services/carpentry-framing.html">View carpentry and framing</a>
+                        <a href="Services/carpentry-framing">View carpentry and framing</a>
                     </article>
                     <article class="kg-service-card">
                         <h3>Painting and Finishing</h3>
                         <p>Interior and exterior touch-ups, wall prep, paint correction, and finish work that improves the look of the whole room.</p>
-                        <a href="Services/painting-finishing.html">View painting and finishing</a>
+                        <a href="Services/painting-finishing">View painting and finishing</a>
                     </article>
                     <article class="kg-service-card">
                         <h3>Home Renovations</h3>
                         <p>Smaller renovation scopes, updates, refresh projects, and improvement work that needs one reliable point of contact.</p>
-                        <a href="Services/home-renovations.html">View home renovations</a>
+                        <a href="Services/home-renovations">View home renovations</a>
                     </article>
                     <article class="kg-service-card">
                         <h3>Doors and Windows</h3>
                         <p>Adjustments, repairs, replacement support, hardware updates, and fit or finish issues that affect function and security.</p>
-                        <a href="Services/doors-windows.html">View doors and windows</a>
+                        <a href="Services/doors-windows">View doors and windows</a>
                     </article>
                     <article class="kg-service-card">
                         <h3>Custom Projects</h3>
                         <p>Jobs that do not fit a single category but still fall inside practical handyman, repair, and improvement work.</p>
-                        <a href="Services/custom-projects.html">View custom projects</a>
+                        <a href="Services/custom-projects">View custom projects</a>
                     </article>
                     <article class="kg-service-card">
                         <h3>Emergency Services</h3>
                         <p>Urgent repair needs that require a direct call and a quick scope conversation before they turn into bigger damage.</p>
-                        <a href="Services/emergency-services.html">View emergency services</a>
+                        <a href="Services/emergency-services">View emergency services</a>
                     </article>
                 </div>
             </div>
@@ -2027,10 +2027,10 @@
                     <article class="kg-geo-card">
                         <h3>Best next routes from the homepage</h3>
                         <ul>
-                            <li><a href="services.html">services hub</a></li>
-                            <li><a href="pricing.html">pricing</a></li>
-                            <li><a href="galleries.html">gallery</a></li>
-                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="services">services hub</a></li>
+                            <li><a href="pricing">pricing</a></li>
+                            <li><a href="galleries">gallery</a></li>
+                            <li><a href="contact">contact</a></li>
                         </ul>
                     </article>
                 </div>
@@ -2038,7 +2038,7 @@
         </section>
 
         <section class="kg-section">
-            <div class="kg-shell kg-estimate-grid">
+            <div class="kg-shell kg-estimate-grid" id="homepage-estimate">
                 <div class="kg-panel">
                     <span class="kg-section-tag">Estimate path</span>
                     <h3>Make the first contact step obvious.</h3>
@@ -2051,7 +2051,7 @@
                     </ul>
                     <div class="kg-hero__actions" style="margin-top:24px;">
                         <a class="kg-btn kg-btn--solid" href="tel:+18136493341">Call now</a>
-                        <a class="kg-btn kg-btn--light" href="pricing.html">Review pricing</a>
+                        <a class="kg-btn kg-btn--light" href="pricing">Review pricing</a>
                     </div>
                 </div>
 
@@ -2171,27 +2171,27 @@
                         <h3>Primary business pages</h3>
                         <p>These are the first-stop routes for conversion and business-intent visitors.</p>
                         <ul class="kg-link-list">
-                            <li><a href="booking.html">Booking</a></li>
-                            <li><a href="services.html">Services hub</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="galleries.html">Galleries</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="booking">Booking</a></li>
+                            <li><a href="services">Services hub</a></li>
+                            <li><a href="pricing">Pricing</a></li>
+                            <li><a href="galleries">Galleries</a></li>
+                            <li><a href="about">About</a></li>
+                            <li><a href="contact">Contact</a></li>
                         </ul>
                     </article>
                     <article class="kg-link-cluster">
                         <h3>Priority service pages</h3>
                         <p>These links strengthen internal discovery for the repair categories most likely to earn local-intent traffic.</p>
                         <ul class="kg-link-list">
-                            <li><a href="Services/general-repairs.html">General Repairs</a></li>
-                            <li><a href="Services/plumbing-services.html">Plumbing Services</a></li>
-                            <li><a href="Services/electrical-work.html">Electrical Work</a></li>
-                            <li><a href="Services/carpentry-framing.html">Carpentry and Framing</a></li>
-                            <li><a href="Services/painting-finishing.html">Painting and Finishing</a></li>
-                            <li><a href="Services/home-renovations.html">Home Renovations</a></li>
-                            <li><a href="Services/doors-windows.html">Doors and Windows</a></li>
-                            <li><a href="Services/custom-projects.html">Custom Projects</a></li>
-                            <li><a href="Services/emergency-services.html">Emergency Services</a></li>
+                            <li><a href="Services/general-repairs">General Repairs</a></li>
+                            <li><a href="Services/plumbing-services">Plumbing Services</a></li>
+                            <li><a href="Services/electrical-work">Electrical Work</a></li>
+                            <li><a href="Services/carpentry-framing">Carpentry and Framing</a></li>
+                            <li><a href="Services/painting-finishing">Painting and Finishing</a></li>
+                            <li><a href="Services/home-renovations">Home Renovations</a></li>
+                            <li><a href="Services/doors-windows">Doors and Windows</a></li>
+                            <li><a href="Services/custom-projects">Custom Projects</a></li>
+                            <li><a href="Services/emergency-services">Emergency Services</a></li>
                         </ul>
                     </article>
                 </div>

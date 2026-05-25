@@ -67,6 +67,11 @@
         var path = window.location.pathname || '';
         var search = window.location.search || '';
         var hash = window.location.hash || '';
+        var legacyProgrammingPath = /\/Services\/programming(?:%26|&)databases(?:\.html)?$/i;
+
+        if (legacyProgrammingPath.test(path)) {
+            window.location.replace('https://knightlogics.com/service-ai-automation');
+        }
 
         if (/\.html$/i.test(path)) {
             var cleanPath = path.replace(/\/index\.html$/i, '/').replace(/\.html$/i, '');
@@ -80,7 +85,7 @@
     <div class="container">
     <img src="/Images/KnightGroupLogo.webp" alt="Knight Group Logo">
     <h1>Oops! Page Not Found</h1>
-    <p>You will be redirected to the homepage shortly. If not, <a href="index.html">click here</a>.</p>
+    <p>You will be redirected to the homepage shortly. If not, <a href="/">click here</a>.</p>
     </div>
 </body>
 </html>
