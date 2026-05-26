@@ -19,26 +19,7 @@ Disallow: /JS/header
 Disallow: /JS/header.html
 Disallow: /JS/footer
 Disallow: /JS/footer.html
-# Block .html duplicate URLs — canonical tags on these point to clean URLs
-# Blocking prevents crawl budget waste on duplicate variants
-Disallow: /about.html
-Disallow: /galleries.html
-Disallow: /pricing.html
-Disallow: /booking.html
-Disallow: /services.html
-Disallow: /Services/handyman.html
-Disallow: /Services/general-repairs.html
-Disallow: /Services/plumbing-services.html
-Disallow: /Services/electrical-work.html
-Disallow: /Services/carpentry-framing.html
-Disallow: /Services/painting-finishing.html
-Disallow: /Services/home-renovations.html
-Disallow: /Services/doors-windows.html
-Disallow: /Services/custom-projects.html
-Disallow: /Services/emergency-services.html
-Disallow: /PolicyPages/privacy-policy.html
-Disallow: /PolicyPages/terms.html
-Disallow: /PolicyPages/returnpolicy.html
-Disallow: /PolicyPages/payment-policy.html
+# Keep canonical duplicates crawlable so search engines can consolidate onto the clean URLs.
+# Index control for legal and utility pages is handled with page-level robots directives.
 
 Sitemap: https://www.knightgroup.com/sitemap.xml
