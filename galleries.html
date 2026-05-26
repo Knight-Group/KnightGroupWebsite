@@ -229,6 +229,27 @@
             margin-bottom: 20px;
         }
 
+        .category-service-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
+            padding: 11px 18px;
+            border-radius: 999px;
+            background: #9a2f2f;
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .category-service-link:hover,
+        .category-service-link:focus-visible {
+            background: #6f2024;
+            transform: translateY(-1px);
+            outline: none;
+        }
+
         /* Gallery Grid */
         .gallery-main {
             padding: 80px 0;
@@ -431,6 +452,7 @@
 
 
     </style>
+    <link rel="stylesheet" href="/CSS/crawl-hub.css">
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -439,6 +461,48 @@
 
     <!-- Header Include -->
     <div id="header-include"><div aria-hidden="true" id="header-skeleton" style="height:96px;background:rgba(18,17,19,.96);border-bottom:1px solid rgba(154,47,47,.35);box-shadow:0 16px 38px rgba(0,0,0,.22);position:sticky;top:0;z-index:1000;width:100%;box-sizing:content-box;"></div></div>
+
+    <nav class="kg-crawl-hub" aria-label="Knight Group site links">
+        <div class="kg-crawl-hub__shell">
+            <div class="kg-crawl-hub__intro">
+                <span class="kg-crawl-hub__eyebrow">Quick site links</span>
+                <h2>Jump to the right Knight Group page faster.</h2>
+                <p>Use these direct links to compare pricing, book an estimate, browse the service hub, or go straight to the repair category that matches the job.</p>
+            </div>
+            <div class="kg-crawl-hub__grid">
+                <div class="kg-crawl-hub__group">
+                    <h3>Core pages</h3>
+                    <p>Use the main business pages for estimates, project photos, pricing, contact details, and local coverage.</p>
+                    <ul class="kg-crawl-hub__links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/booking">Book Estimate</a></li>
+                        <li><a href="/services">Services Overview</a></li>
+                        <li><a href="/pricing">Pricing</a></li>
+                        <li><a href="/galleries">Gallery</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/service-areas">Service Areas</a></li>
+                    </ul>
+                </div>
+                <div class="kg-crawl-hub__group">
+                    <h3>Popular services</h3>
+                    <p>Jump straight to the repair and improvement pages most likely to match local handyman search intent.</p>
+                    <ul class="kg-crawl-hub__links kg-crawl-hub__links--services">
+                        <li><a href="/Services/handyman">Handyman Services</a></li>
+                        <li><a href="/Services/general-repairs">General Repairs</a></li>
+                        <li><a href="/Services/plumbing-services">Plumbing Services</a></li>
+                        <li><a href="/Services/electrical-work">Electrical Work</a></li>
+                        <li><a href="/Services/carpentry-framing">Carpentry &amp; Framing</a></li>
+                        <li><a href="/Services/painting-finishing">Painting &amp; Finishing</a></li>
+                        <li><a href="/Services/home-renovations">Home Renovations</a></li>
+                        <li><a href="/Services/doors-windows">Doors &amp; Windows</a></li>
+                        <li><a href="/Services/custom-projects">Custom Projects</a></li>
+                        <li><a href="/Services/emergency-services">Emergency Services</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <!-- Page Hero -->
     <section class="page-hero">
@@ -455,17 +519,32 @@
             <div class="categories-grid">
                 <div class="category-card">
                     <h3>🏠 Home Repairs</h3>
-                    <p>General maintenance, fixes, and repair work completed throughout Pinellas County homes.</p>
+                    <p>General maintenance, leak-related fixes, drywall work, and day-to-day repair calls completed across Pinellas County homes.</p>
+                    <a class="category-service-link" href="/Services/general-repairs">View General Repairs</a>
                 </div>
                 
+                <div class="category-card">
+                    <h3>🎨 Painting &amp; Surface Prep</h3>
+                    <p>Project photos that connect directly to interior refresh work, wall repair prep, trim painting, and finish updates.</p>
+                    <a class="category-service-link" href="/Services/painting-finishing">View Painting &amp; Finishing</a>
+                </div>
+                
+                <div class="category-card">
+                    <h3>🪚 Carpentry &amp; Trim Work</h3>
+                    <p>Repair carpentry, trim adjustments, framing-related fixes, and finishing work that needs a practical handyman build approach.</p>
+                    <a class="category-service-link" href="/Services/carpentry-framing">View Carpentry &amp; Framing</a>
+                </div>
+
                 <div class="category-card">
                     <h3>🔨 Renovations</h3>
-                    <p>Kitchen updates, bathroom remodels, and complete room transformations.</p>
+                    <p>Kitchen updates, bathroom remodels, rebuilds after damage, and room transformations that fit a smaller renovation scope.</p>
+                    <a class="category-service-link" href="/Services/home-renovations">View Home Renovations</a>
                 </div>
-                
+
                 <div class="category-card">
-                    <h3>🎨 Custom Projects</h3>
-                    <p>Built-in storage, custom furniture, and specialty handyman installations.</p>
+                    <h3>🧰 Custom Projects</h3>
+                    <p>Built-in storage, custom furniture, specialty installations, and one-off improvement work that does not fit a single category.</p>
+                    <a class="category-service-link" href="/Services/custom-projects">View Custom Projects</a>
                 </div>
             </div>
         </div>
