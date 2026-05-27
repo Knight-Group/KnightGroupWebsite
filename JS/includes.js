@@ -166,6 +166,21 @@ class HTMLInclude {
         }
     }
 
+    moveCrawlHubBeforeFooter() {
+        const crawlHub = document.querySelector('.kg-crawl-hub');
+        const footerElement = document.getElementById('footer-include');
+
+        if (!crawlHub || !footerElement || !footerElement.parentNode) {
+            return;
+        }
+
+        if (crawlHub.nextElementSibling === footerElement) {
+            return;
+        }
+
+        footerElement.parentNode.insertBefore(crawlHub, footerElement);
+    }
+
     async loadIncludes() {
         // Run-once guard — prevent double execution if constructor is called more than once
         if (window._knightGroupIncludesLoaded) return;
@@ -184,11 +199,15 @@ class HTMLInclude {
 
         const footerElement = document.getElementById('footer-include');
         if (footerElement) {
+            this.moveCrawlHubBeforeFooter();
             await this._fetchAndInject(footerElement, pathPrefix + 'footer.html?v=' + includeVersion, pathPrefix);
         }
 
+        this.moveCrawlHubBeforeFooter();
+
         // Initialize scripts after includes are loaded
         setTimeout(() => {
+            this.moveCrawlHubBeforeFooter();
             this.initializeAfterIncludes();
             this.setActiveNavItem();
         }, 100);
