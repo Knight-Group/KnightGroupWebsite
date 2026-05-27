@@ -166,11 +166,12 @@ These items should stay in place because they help Google understand the core pa
 - `IndexNow` is already active for Knight Group. Bing currently shows `18` URLs submitted in the last `17` hours from `Self`, with `321` total submitted URLs visible in the report.
 - Bing URL Inspection confirms `https://www.knightgroup.com/Services/handyman` is indexed successfully, can appear on Bing, and currently shows no SEO/GEO issues.
 - Bing URL Inspection for `https://www.knightgroup.com/Services/painting-finishing` shows the page as indexable but flags `Title tag missing` and `Meta Description tag missing` in both index and live-test views. This conflicts with direct raw-HTML fetches that still expose a title, canonical, and meta description on the public URL, so treat it as either a Bing inspection anomaly or a live deploy mismatch that should be rechecked before treating it as a true source-code defect.
+- After commit `9e989b7` was pushed to `origin/main`, live cache-busted HTTP checks confirmed the public homepage, booking, contact, handyman, general-repairs, painting-finishing, home-renovations, galleries, and service-areas routes are now serving the optimized title and meta description values from local source.
+- Because Bing still showed stale title/meta warnings on `https://www.knightgroup.com/Services/painting-finishing` after the public metadata matched source, that URL was manually submitted through Bing URL Inspection. Bing confirmed: `Success : URL submitted successfully. We will review the URL for indexation.`
 
 ## Live Publish Gap - May 27, 2026
 
-- A direct local-vs-live metadata comparison across the main Knight Group routes showed the same pattern on every checked page: `index`, `booking`, `contact`, `Services/handyman`, `Services/general-repairs`, `Services/painting-finishing`, `Services/home-renovations`, `galleries`, and `service-areas` all still serve older public titles and descriptions than the current local source.
-- The implication is that the current technical/CTR optimization work is ahead in local source but not yet reflected on the public site. Treat the remaining live inconsistency as a publish/deploy gap first, not as nine separate metadata defects.
+- The earlier publish gap is now closed. Commit `9e989b7` was pushed to `origin/main`, and live cache-busted HTTP checks confirmed the core homepage, booking, contact, service, gallery, and service-area routes are now serving the optimized public metadata.
 - Source cleanup is still progressing in parallel: the homepage no longer carries the dead inline estimate-form CSS hooks or the unused `initEstimateForm()` script path now that the page routes users to `booking` and `contact` instead of posting from the homepage.
 
 ## Submission Copy Pack
