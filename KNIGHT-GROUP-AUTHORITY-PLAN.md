@@ -10,6 +10,42 @@ This plan focuses on the pages Google is already surfacing in Search Console and
 - Geo baseline: Safety Harbor, FL 34695 / Pinellas County
 - Primary CTA: Message or call for a small repair estimate
 
+## May 27, 2026 Live GSC Prioritization
+
+The current authority plan should follow live Search Console evidence rather than broad homepage-only citation work.
+
+- Performance over the last 3 months: `12` clicks, `1,638` impressions, `0.7%` CTR, `18.2` average position.
+- External links remain thin: `17` total external links, with the homepage as the only currently top-linked target page in GSC.
+- `Crawled - currently not indexed` still affects `27` URLs, including core pages such as `painting-finishing`, `galleries`, `home-renovations`, and `carpentry-framing`.
+
+| GSC page | Clicks | Impressions | Off-site implication |
+| --- | --- | --- | --- |
+| https://www.knightgroup.com/ | 11 | 692 | Keep as the primary profile URL where only one link is allowed |
+| https://www.knightgroup.com/pricing | 1 | 294 | Do not build new citations here; treat this as a CTR/copy page, not the main off-site destination |
+| https://www.knightgroup.com/Services/handyman | 0 | 164 | Highest-priority service page for chamber/member profiles and partner referrals |
+| https://www.knightgroup.com/Services/painting-finishing | 0 | 112 | Priority deep link for painters, Realtors, and pre-listing repair referrals |
+| https://www.knightgroup.com/Services/plumbing-services | 0 | 84 | Good secondary deep link for mixed-scope repair listings and overflow referrals |
+| https://www.knightgroup.com/Services/carpentry-framing | 0 | 84 | Good secondary deep link for finish-work, trim, and small carpentry referral partners |
+| https://www.knightgroup.com/contact | 0 | 65 | Use only where a lighter message-first CTA is a better fit than booking |
+
+## Live External-Link Baseline
+
+Search Console currently shows a shallow and low-authority external profile.
+
+| Linking site | Linking pages | Target pages | Notes |
+| --- | --- | --- | --- |
+| knightlogics.com | 3 | 1 | Useful sister-site support, but not enough on its own |
+| bizlistusa.com | 2 | 1 | Existing low-tier directory footprint |
+| mapquest.com | 2 | 1 | Existing major listing signal worth keeping accurate |
+| bizzbucket.co | 1 | 1 | Low-tier directory |
+| datainsightsmarket.com | 1 | 1 | Low-value/unclear authority |
+| fixalways.com | 1 | 1 | Low-value/unclear authority |
+| floridadirectory.biz | 1 | 1 | Low-tier directory |
+| intelius.com | 1 | 1 | Data aggregator style mention |
+| lightbrd.com | 1 | 1 | Low-value/unclear authority |
+| nears.me | 1 | 1 | Low-tier directory |
+| nextdoor.com | 1 | 1 | Existing social/local mention; keep in blocked status for new work pending appeal |
+
 ## Priority Landing Pages
 
 Use these pages first for citations, backlinks, partner referrals, and internal authority support.
@@ -28,20 +64,20 @@ Use these pages first for citations, backlinks, partner referrals, and internal 
 
 Use homepage or booking for profiles that only allow one URL. Use service pages when a profile allows deep links or service-specific descriptions.
 
-| Priority | Target | URL | Link target |
-| --- | --- | --- | --- |
-| 1 | Google Business Profile | https://www.google.com/business/ | Homepage plus GBP posts linking to booking and service pages |
-| 1 | Bing Places | https://www.bingplaces.com/ | Homepage |
-| 1 | Apple Business Connect | https://businessconnect.apple.com/ | Homepage |
-| 1 | Yelp | https://biz.yelp.com/ | Homepage |
-| 1 | BBB | https://www.bbb.org/ | Homepage or contact |
-| 1 | MapQuest | https://listings.mapquest.com/ | Homepage |
-| 2 | Houzz | https://www.houzz.com/professionals/ | Galleries or home-renovations |
-| 2 | Porch | https://porch.com/ | Handyman or general-repairs |
-| 2 | Angi | https://www.angi.com/ | Handyman or booking |
-| 2 | MerchantCircle | https://www.merchantcircle.com/ | Homepage |
-| 2 | Hotfrog | https://www.hotfrog.com/ | Homepage |
-| 2 | ChamberofCommerce.com | https://www.chamberofcommerce.com/ | Homepage or booking |
+| Priority | Target | URL | Link target | Current status |
+| --- | --- | --- | --- | --- |
+| 1 | Google Business Profile | https://www.google.com/business/ | Homepage plus GBP posts linking to booking and service pages | Partially advanced in current pass through the managed Google Search business panel; a new GBP post is live with a `Book` CTA to `/booking`, while deeper dashboard-only edits remain constrained by Google's embedded UI |
+| 1 | Bing Places | https://www.bingplaces.com/ | Homepage | Blocked in current automation context; shared Bing Webmaster session did not carry into Bing Places management |
+| 1 | Apple Business Connect | https://businessconnect.apple.com/ | Homepage | Not started in this pass |
+| 1 | Yelp | https://biz.yelp.com/ | Homepage | Knight Group listing route identified, but current shared context still resolved to Yelp login |
+| 1 | BBB | https://www.bbb.org/ | Homepage or contact | Ready for manual submission/account work |
+| 1 | MapQuest | https://listings.mapquest.com/ | Homepage | Existing linking domain already visible in GSC; verify NAP before any edits |
+| 2 | Houzz | https://www.houzz.com/professionals/ | Galleries or home-renovations | Not started in this pass |
+| 2 | Porch | https://porch.com/ | Handyman or general-repairs | Not started in this pass |
+| 2 | Angi | https://www.angi.com/ | Handyman or booking | Not started in this pass |
+| 2 | MerchantCircle | https://www.merchantcircle.com/ | Homepage | Not started in this pass |
+| 2 | Hotfrog | https://www.hotfrog.com/ | Homepage | Not started in this pass |
+| 2 | ChamberofCommerce.com | https://www.chamberofcommerce.com/ | Homepage or booking | Not started in this pass |
 
 ## Verified Local Chamber Targets
 
@@ -98,6 +134,64 @@ These items should stay in place because they help Google understand the core pa
 3. Build partner referrals with property managers, Realtors, restoration companies, and showroom/vendor partners using service-page links instead of homepage-only links.
 4. Publish or refresh GBP posts, Facebook posts, and short project recaps that link to booking, general-repairs, painting-finishing, carpentry-framing, and home-renovations.
 5. Only after the 18-page core set is mostly indexed should new city pages be considered.
+
+## Execution Status - May 27, 2026
+
+| Work item | Status | Notes |
+| --- | --- | --- |
+| Core service-page strengthening | Complete | Homepage, booking, contact, handyman, general-repairs, painting-finishing, home-renovations, galleries, and service-areas now align better with live GSC intent |
+| GSC-backed authority prioritization | Complete | Current off-site targets are now mapped to the pages that actually hold impressions |
+| GBP management pass | Partial | Managed Google Search panel exposed Knight Group GBP actions; a new local-intent update was published with a `Book` button to `https://www.knightgroup.com/booking` |
+| Bing Webmaster refresh | Complete | `sitemap.xml` was resubmitted on May 27, 2026; Bing confirms IndexNow is active with recent self-submitted URLs and the sitemap is back in processing |
+| Bing Places management pass | Blocked | Shared Bing Webmaster session did not translate into Bing Places management |
+| Yelp management pass | Blocked | Knight Group Yelp business ID is known, but current browser context still prompted login |
+| Chamber target verification | Complete | Public join/directory targets already verified and retained in this plan |
+| Paid chamber joins or renewals | Pending manual approval/payment | Not executed by automation |
+| Partner referral outreach | Ready | Best landing pages and partner categories are defined below |
+
+## Live GBP Notes - May 27, 2026
+
+- Managed Google Search confirms the Knight Group business profile is live and owned in the current account context.
+- Public-facing NAP visible in the managed panel matches the verified registry baseline: `1225 7th St S, Safety Harbor, FL 34695`, `(813) 649-3341`, and `https://www.knightgroup.com/`.
+- A new GBP update is now published with local handyman/repair copy and a `Book` button pointing to `https://www.knightgroup.com/booking`.
+- The previously mismatched `General construction` service was removed live from the GBP services editor during this pass.
+- The GBP bookings editor now stores the clean estimate URL `https://www.knightgroup.com/booking` instead of the older `https://www.knightgroup.com/booking.html` path.
+- Broader additional-category review can still happen later, but the high-risk live drift item that directly implied a construction-company positioning has been cleaned.
+
+## Live Bing Webmaster Notes - May 27, 2026
+
+- Knight Group's Bing Webmaster property is live in the shared signed-in session and currently shows `0` clicks and `28` impressions.
+- `Sitemaps` showed one known sitemap with `0` errors, `0` warnings, `19` discovered URLs, `Success` status, and a stale `Last crawl` of `4/29/2026` before refresh.
+- `https://www.knightgroup.com/sitemap.xml` was resubmitted on May 27, 2026 and Bing accepted it immediately with the confirmation: `Success: https://www.knightgroup.com/sitemap.xml is successfully submitted for processing.`
+- `IndexNow` is already active for Knight Group. Bing currently shows `18` URLs submitted in the last `17` hours from `Self`, with `321` total submitted URLs visible in the report.
+- Bing URL Inspection confirms `https://www.knightgroup.com/Services/handyman` is indexed successfully, can appear on Bing, and currently shows no SEO/GEO issues.
+- Bing URL Inspection for `https://www.knightgroup.com/Services/painting-finishing` shows the page as indexable but flags `Title tag missing` and `Meta Description tag missing` in both index and live-test views. This conflicts with direct raw-HTML fetches that still expose a title, canonical, and meta description on the public URL, so treat it as either a Bing inspection anomaly or a live deploy mismatch that should be rechecked before treating it as a true source-code defect.
+
+## Live Publish Gap - May 27, 2026
+
+- A direct local-vs-live metadata comparison across the main Knight Group routes showed the same pattern on every checked page: `index`, `booking`, `contact`, `Services/handyman`, `Services/general-repairs`, `Services/painting-finishing`, `Services/home-renovations`, `galleries`, and `service-areas` all still serve older public titles and descriptions than the current local source.
+- The implication is that the current technical/CTR optimization work is ahead in local source but not yet reflected on the public site. Treat the remaining live inconsistency as a publish/deploy gap first, not as nine separate metadata defects.
+- Source cleanup is still progressing in parallel: the homepage no longer carries the dead inline estimate-form CSS hooks or the unused `initEstimateForm()` script path now that the page routes users to `booking` and `contact` instead of posting from the homepage.
+
+## Submission Copy Pack
+
+Use these when chamber directories, citations, or profile forms ask for short brand copy.
+
+- Short description: Knight Group handles small home repairs, handyman work, painting prep, trim, fixture swaps, and room updates for homeowners in Safety Harbor and across Pinellas County.
+- Medium description: Knight Group Handyman Services helps homeowners in Safety Harbor and surrounding Pinellas County areas with small repair jobs, punch lists, painting and drywall prep, trim and carpentry fixes, fixture replacements, and room-refresh renovation work. Use the homepage to qualify the job, booking for a full estimate request, and contact for lighter questions or service-area checks.
+- Primary categories: Handyman, Home Repair, Carpentry, Painting, Property Maintenance.
+- Preferred primary profile URL: https://www.knightgroup.com/
+- Preferred estimate CTA URL: https://www.knightgroup.com/booking
+- Preferred contact CTA URL: https://www.knightgroup.com/contact
+- Preferred deep links for partners: handyman, painting-finishing, plumbing-services, carpentry-framing, and home-renovations.
+
+## Outreach Copy Starters
+
+Use these for chamber inquiries, partner outreach emails, or quick directory bios when a manual touch is required.
+
+- Chamber intro: Knight Group Handyman Services is based in Safety Harbor and serves homeowners across Pinellas County with small repairs, punch-list work, trim and carpentry fixes, painting and drywall prep, fixture swaps, and room-refresh renovation work. We are interested in membership and a directory profile that points local homeowners to our homepage and estimate route.
+- Realtor / home-stager intro: Knight Group helps with the smaller repair scopes that delay listings or closings: wall and trim fixes, paint prep, punch lists, fixture replacements, and cosmetic refresh work. The best pages to send are painting-finishing, general-repairs, and booking for estimate-ready jobs.
+- Property-manager intro: Knight Group is a strong fit for turnover repairs, small unit punch lists, trim and fixture replacements, paint prep, and mixed-scope handyman jobs that do not need a large GC. The best pages to send are handyman, general-repairs, emergency-services, and contact for quick scheduling questions.
 
 ## What Not To Do
 
