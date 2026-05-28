@@ -193,8 +193,10 @@ class HTMLInclude {
                           window.location.pathname.includes('/PolicyPages/') ? '../' : '';
 
         const headerElement = document.getElementById('header-include');
-        // Skip fetch+inject if header is already inlined in the HTML (static build)
-        if (headerElement && !headerElement.hasChildNodes()) {
+        // Inject if empty OR only contains the skeleton placeholder (not a real static build)
+        const headerHasRealContent = headerElement && headerElement.hasChildNodes() &&
+            !headerElement.querySelector('#header-skeleton');
+        if (headerElement && !headerHasRealContent) {
             await this._fetchAndInject(headerElement, pathPrefix + 'header.html?v=' + includeVersion, pathPrefix);
         }
 
