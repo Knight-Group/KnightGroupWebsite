@@ -26,7 +26,8 @@
     margin-bottom: 18px;
 }
 
-.kg-crawl-hub__intro h2 {
+.kg-crawl-hub__intro h2,
+.kg-crawl-hub__intro .kg-crawl-hub__heading {
     margin: 12px 0 10px;
     color: #1f1a1c;
     font-family: "Playfair Display", Georgia, serif;
@@ -56,7 +57,8 @@
     box-shadow: 0 14px 28px rgba(18, 17, 19, 0.06);
 }
 
-.kg-crawl-hub__group h3 {
+.kg-crawl-hub__group h3,
+.kg-crawl-hub__group .kg-crawl-hub__subheading {
     margin: 0 0 8px;
     color: #6f2024;
     font-family: "Playfair Display", Georgia, serif;
