@@ -1,0 +1,12 @@
+# Lighthouse / audit outputs
+lighthouse*.json
+lh-report.json
+lighthouse_report.json
+desktop.report.json
+mobile.report.json
+
+# Local utility/helper scripts
+_*.py
+
+# Node
+node_modules/
