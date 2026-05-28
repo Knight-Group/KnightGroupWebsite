@@ -36,7 +36,7 @@
 
 header {
     width: 100%;
-    background: rgba(18, 17, 19, 0.93);
+    background: rgba(18, 17, 19, 0.98);
     border-bottom: 1px solid rgba(255,255,255,0.08);
     box-shadow: 0 12px 32px rgba(0,0,0,0.26);
     backdrop-filter: blur(18px);
@@ -183,7 +183,7 @@ header .container {
 }
 .nav-section nav a,
 .services-link {
-    color: #bdb1b1;
+    color: #f2e7e7;
     text-decoration: none;
     font-size: 0.82rem;
     font-weight: 800;
@@ -213,7 +213,7 @@ header .container {
     border-right: 2px solid currentColor;
     border-bottom: 2px solid currentColor;
     transform: rotate(45deg) translateY(-2px);
-    opacity: 0.72;
+    opacity: 1;
 }
 .dropdown-content {
     display: none;
@@ -242,7 +242,7 @@ header .container {
     display: block;
     padding: 11px 13px;
     border-radius: 10px;
-    color: #cfc2c2;
+    color: #fff5f5;
     font-size: 0.82rem;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -278,7 +278,7 @@ header .container {
     font-size: 0.68rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.72);
+    color: rgba(255,255,255,0.92);
 }
 .header-btn-primary:hover,
 .header-btn-primary:focus-visible {
@@ -316,6 +316,7 @@ header .container {
     border: 1px solid rgba(255,255,255,0.14);
     background: rgba(255,255,255,0.06);
     touch-action: manipulation;
+    appearance: none;
 }
 .hamburger span {
     width: 24px;
@@ -346,11 +347,18 @@ header .container {
     transform: translateX(-100%);
     transition: transform 0.32s cubic-bezier(0.4,0,0.2,1);
     overflow-y: auto;
-    display: flex;
+    display: none;
     flex-direction: column;
     border-right: 1px solid rgba(255,255,255,0.12);
 }
-.mobile-menu.active { transform: translateX(0); }
+.mobile-menu.active {
+    display: flex;
+    transform: translateX(0);
+}
+.mobile-menu[hidden],
+.mobile-backdrop[hidden] {
+    display: none !important;
+}
 .mm-header {
     display: flex;
     align-items: center;
@@ -389,7 +397,7 @@ header .container {
     justify-content: space-between;
     width: 100%;
     padding: 12px 14px;
-    color: rgba(255,255,255,0.86);
+    color: #fff;
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 700;
@@ -407,14 +415,14 @@ header .container {
     color: #fff;
     outline: none;
 }
-.mm-chevron { font-size: 0.72rem; transition: transform 0.25s; opacity: 0.7; }
+.mm-chevron { font-size: 0.72rem; transition: transform 0.25s; opacity: 1; }
 .mm-services-toggle[aria-expanded="true"] .mm-chevron { transform: rotate(180deg); }
 .mm-submenu { display: none; flex-direction: column; gap: 1px; padding: 4px 0 4px 14px; }
 .mm-submenu.open { display: flex; }
 .mm-submenu a {
     font-size: 0.86rem;
     padding: 9px 12px;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255,255,255,0.94);
     border-left: 2px solid rgba(154,47,47,0.45);
     border-radius: 0 8px 8px 0;
 }
@@ -436,11 +444,12 @@ header .container {
     text-decoration: none;
 }
 .mm-call { background: linear-gradient(135deg, #b23b3b, #6f2024); color: #fff; }
-.mm-email { color: rgba(255,255,255,0.82); border: 1px solid rgba(255,255,255,0.2); }
+.mm-email { color: #fff; border: 1px solid rgba(255,255,255,0.36); background: rgba(255,255,255,0.08); }
 .mm-social { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 10px 16px 20px; }
 .mm-social a { display: flex; }
-.mm-social img { width: 26px; height: 26px; border-radius: 6px; opacity: 0.78; background: #fff; transition: opacity 0.18s, transform 0.18s; }
-.mm-social a:hover img { opacity: 1; transform: scale(1.08); }
+.mm-social img { width: 26px; height: 26px; border-radius: 6px; opacity: 1; background: #fff; transition: opacity 0.18s, transform 0.18s; }
+.mm-social a:hover img,
+.mm-social a:focus-visible img { opacity: 1; transform: scale(1.08); }
 .visually-hidden { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
 .header-call-mobile {
     display: none;
@@ -490,13 +499,14 @@ header .container {
 <header>
     <div class="container">
         <div class="header-content">
-            <div class="hamburger" onclick="toggleMobileMenu()" tabindex="0" role="button" aria-label="Toggle mobile menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="hamburger" id="mobileMenuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu">
+                <span class="visually-hidden">Open menu</span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
             <div class="logo-section">
-                <a href="/" class="logo-home-link" aria-label="Knight Group home">
+                <a href="/" class="logo-home-link">
                     <picture><source srcset="Images/KnightGroupLogo.webp" type="image/webp"><img src="Images/KnightGroupLogo.png" alt="Knight Group Handyman Services Logo" width="50" height="50"></picture>
                     <span class="company-name">Knight Group</span>
                 </a>
@@ -512,12 +522,12 @@ header .container {
                                 <a href="Services/general-repairs">General Repairs</a>
                                 <a href="Services/plumbing-services">Plumbing Services</a>
                                 <a href="Services/electrical-work">Electrical Work</a>
-                                <a href="Services/carpentry-framing">Carpentry & Framing</a>
-                                <a href="Services/painting-finishing">Painting & Finishing</a>
+                                <a href="Services/carpentry-framing">Carpentry &amp; Framing</a>
+                                <a href="Services/painting-finishing">Painting &amp; Finishing</a>
                                 <a href="Services/home-renovations">Home Renovations</a>
-                                <a href="Services/doors-windows">Doors & Windows</a>
+                                <a href="Services/doors-windows">Doors &amp; Windows</a>
                                 <a href="Services/custom-projects">Custom Projects</a>
-                                <a href="Services/emergency-services" style="color: #b13a3a; font-weight: bold;">Emergency Services</a>
+                                <a href="Services/emergency-services" style="color: #f4c6c6; font-weight: bold;">Emergency Services</a>
                             </div>
                         </li>
                         <li><a href="booking">Book Estimate</a></li>
@@ -540,10 +550,10 @@ header .container {
 </header>
 
 <!-- Mobile backdrop -->
-<div class="mobile-backdrop" id="mobileBackdrop" onclick="toggleMobileMenu()" aria-hidden="true"></div>
+<div class="mobile-backdrop" id="mobileBackdrop" aria-hidden="true" hidden></div>
 
 <!-- Mobile menu panel -->
-<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation" aria-hidden="true" hidden>
     <div class="mm-header">
         <a href="/" class="mm-logo">
             <picture>
@@ -552,7 +562,7 @@ header .container {
             </picture>
             <span class="company-name" style="color:#efe3de!important;">Knight Group</span>
         </a>
-        <button class="mm-close" onclick="toggleMobileMenu()" aria-label="Close menu">&#x2715;</button>
+        <button class="mm-close" id="mobileMenuClose" type="button"><span aria-hidden="true">&#x2715;</span><span class="visually-hidden">Close menu</span></button>
     </div>
 
     <ul class="mm-nav">
@@ -560,7 +570,7 @@ header .container {
         <li><a href="about">About</a></li>
         <li><a href="services">Services Overview</a></li>
         <li>
-            <button class="mm-services-toggle" aria-expanded="false" aria-controls="mmServicesMenu" onclick="toggleMmServices(this)">
+            <button class="mm-services-toggle" type="button" aria-expanded="false" aria-controls="mmServicesMenu">
                 Services <span class="mm-chevron">&#9660;</span>
             </button>
             <div class="mm-submenu" id="mmServicesMenu">
@@ -572,7 +582,7 @@ header .container {
                 <a href="Services/home-renovations">Home Renovations</a>
                 <a href="Services/doors-windows">Doors &amp; Windows</a>
                 <a href="Services/custom-projects">Custom Projects</a>
-                <a href="Services/emergency-services" style="color:#ff6b6b;border-left-color:#c0392b;">Emergency Services</a>
+                <a href="Services/emergency-services" style="color:#ffd4d4;border-left-color:#c0392b;">Emergency Services</a>
             </div>
         </li>
         <li><a href="booking">Book Estimate</a></li>
@@ -587,22 +597,22 @@ header .container {
     </div>
 
     <div class="mm-social">
-        <a href="https://www.facebook.com/KnightGroupServices/" target="_blank" rel="noopener" aria-label="Facebook">
+        <a href="https://www.facebook.com/KnightGroupServices/" target="_blank" rel="noopener">
             <picture><source srcset="Images/Facebook_Logo_Primary.webp" type="image/webp"><img src="Images/Facebook_Logo_Primary.png" alt="Facebook" width="26" height="26"></picture>
         </a>
-        <a href="https://www.instagram.com/knight_group_services/" target="_blank" rel="noopener" aria-label="Instagram">
+        <a href="https://www.instagram.com/knight_group_services/" target="_blank" rel="noopener">
             <picture><source srcset="Images/InstagramLogo.webp" type="image/webp"><img src="Images/InstagramLogo.png" alt="Instagram" width="26" height="26"></picture>
         </a>
-        <a href="https://m.me/KnightGroupServices" target="_blank" rel="noopener" aria-label="Messenger">
+        <a href="https://m.me/KnightGroupServices" target="_blank" rel="noopener">
             <picture><source srcset="Images/Messenger.webp" type="image/webp"><img src="Images/Messenger.png" alt="Messenger" width="26" height="26"></picture>
         </a>
-        <a href="https://www.tiktok.com/@knightgroupservices" target="_blank" rel="noopener" aria-label="TikTok">
+        <a href="https://www.tiktok.com/@knightgroupservices" target="_blank" rel="noopener">
             <picture><source srcset="Images/TikTokLogo.webp" type="image/webp"><img src="Images/TikTokLogo.png" alt="TikTok" width="26" height="26"></picture>
         </a>
-        <a href="https://x.com/KnightGroupSvcs" target="_blank" rel="noopener" aria-label="X">
+        <a href="https://x.com/KnightGroupSvcs" target="_blank" rel="noopener">
             <picture><source srcset="Images/XLogoBlack.webp" type="image/webp"><img src="Images/XLogoBlack.png" alt="X" width="26" height="26"></picture>
         </a>
-        <a href="https://www.pinterest.com/KnightGroupService/" target="_blank" rel="noopener" aria-label="Pinterest">
+        <a href="https://www.pinterest.com/KnightGroupService/" target="_blank" rel="noopener">
             <picture><source srcset="Images/PintrestLogo.webp" type="image/webp"><img src="Images/PintrestLogo.png" alt="Pinterest" width="26" height="26"></picture>
         </a>
     </div>
@@ -672,6 +682,13 @@ function closeEmailModal() {
 }
 </script>
 
+<style>
+.email-picker-option:hover,
+.email-picker-option:focus-visible {
+    background: #f5f5f5;
+}
+</style>
+
 <!-- Email Picker Modal -->
 <div id="emailPickerModal" role="dialog" aria-modal="true" aria-labelledby="emailPickerTitle"
      style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:9999;align-items:center;justify-content:center;padding:20px;">
@@ -681,27 +698,23 @@ function closeEmailModal() {
         <h2 id="emailPickerTitle" style="font-size:1.2rem;color:#9a2f2f;margin:0 0 6px;">Send us an email</h2>
         <p style="font-size:0.9rem;color:#666;margin:0 0 22px;">Choose how you'd like to open your email:</p>
 
-        <a id="emailOptGmail" href="#" target="_blank" rel="noopener"
-           style="display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:8px;text-decoration:none;color:#333;border:1px solid #e0e0e0;margin-bottom:10px;font-weight:500;transition:background 0.15s;"
-           onmouseover="this.style.background='#f5f5f5'" onmouseout="this.style.background=''">
+        <a id="emailOptGmail" href="#" target="_blank" rel="noopener" class="email-picker-option"
+           style="display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:8px;text-decoration:none;color:#333;border:1px solid #e0e0e0;margin-bottom:10px;font-weight:500;transition:background 0.15s;">
             <img src="https://www.google.com/favicon.ico" width="20" height="20" alt="" loading="lazy"> Gmail
         </a>
 
-        <a id="emailOptOutlook" href="#" target="_blank" rel="noopener"
-           style="display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:8px;text-decoration:none;color:#333;border:1px solid #e0e0e0;margin-bottom:10px;font-weight:500;transition:background 0.15s;"
-           onmouseover="this.style.background='#f5f5f5'" onmouseout="this.style.background=''">
+        <a id="emailOptOutlook" href="#" target="_blank" rel="noopener" class="email-picker-option"
+           style="display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:8px;text-decoration:none;color:#333;border:1px solid #e0e0e0;margin-bottom:10px;font-weight:500;transition:background 0.15s;">
             <img src="https://outlook.live.com/favicon.ico" width="20" height="20" alt="" loading="lazy"> Outlook.com
         </a>
 
-        <a id="emailOptYahoo" href="#" target="_blank" rel="noopener"
-           style="display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:8px;text-decoration:none;color:#333;border:1px solid #e0e0e0;margin-bottom:10px;font-weight:500;transition:background 0.15s;"
-           onmouseover="this.style.background='#f5f5f5'" onmouseout="this.style.background=''">
+        <a id="emailOptYahoo" href="#" target="_blank" rel="noopener" class="email-picker-option"
+           style="display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:8px;text-decoration:none;color:#333;border:1px solid #e0e0e0;margin-bottom:10px;font-weight:500;transition:background 0.15s;">
             <img src="https://www.yahoo.com/favicon.ico" width="20" height="20" alt="" loading="lazy"> Yahoo Mail
         </a>
 
-        <a id="emailOptDefault" href="#"
-           style="display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:8px;text-decoration:none;color:#333;border:1px solid #e0e0e0;font-weight:500;transition:background 0.15s;"
-           onmouseover="this.style.background='#f5f5f5'" onmouseout="this.style.background=''">
+        <a id="emailOptDefault" href="#" class="email-picker-option"
+           style="display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:8px;text-decoration:none;color:#333;border:1px solid #e0e0e0;font-weight:500;transition:background 0.15s;">
             <span style="font-size:1.2rem;">Mail</span> Default Mail App
         </a>
 

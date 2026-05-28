@@ -186,7 +186,7 @@ class HTMLInclude {
         if (window._knightGroupIncludesLoaded) return;
         window._knightGroupIncludesLoaded = true;
 
-        const includeVersion = '20260521-logo-glimmer-fix';
+        const includeVersion = '20260528-a11y-fixes';
 
         // Determine if we're in a subdirectory
         const pathPrefix = window.location.pathname.includes('/Services/') || 
@@ -218,15 +218,32 @@ class HTMLInclude {
         window.toggleMobileMenu = function(forceClose) {
             const menu     = document.getElementById('mobileMenu');
             const backdrop = document.getElementById('mobileBackdrop');
+            const toggle   = document.getElementById('mobileMenuToggle');
             if (!menu) return;
             const isOpen = menu.classList.contains('active');
             if (forceClose || isOpen) {
                 menu.classList.remove('active');
                 if (backdrop) backdrop.classList.remove('active');
+                menu.setAttribute('aria-hidden', 'true');
+                menu.hidden = true;
+                menu.inert = true;
+                if (backdrop) {
+                    backdrop.hidden = true;
+                    backdrop.setAttribute('aria-hidden', 'true');
+                }
+                if (toggle) toggle.setAttribute('aria-expanded', 'false');
                 document.body.style.overflow = '';
             } else {
+                menu.hidden = false;
+                menu.inert = false;
+                menu.setAttribute('aria-hidden', 'false');
+                if (backdrop) {
+                    backdrop.hidden = false;
+                    backdrop.setAttribute('aria-hidden', 'false');
+                }
                 menu.classList.add('active');
                 if (backdrop) backdrop.classList.add('active');
+                if (toggle) toggle.setAttribute('aria-expanded', 'true');
                 document.body.style.overflow = 'hidden';
             }
         };
@@ -245,6 +262,31 @@ class HTMLInclude {
         if (backdrop) {
             backdrop.addEventListener('click', () => window.toggleMobileMenu(true));
         }
+
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', () => window.toggleMobileMenu());
+        }
+
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+        if (mobileMenuClose) {
+            mobileMenuClose.addEventListener('click', () => window.toggleMobileMenu(true));
+        }
+
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenu) {
+            mobileMenu.hidden = true;
+            mobileMenu.inert = true;
+            mobileMenu.setAttribute('aria-hidden', 'true');
+        }
+        if (backdrop) {
+            backdrop.hidden = true;
+            backdrop.setAttribute('aria-hidden', 'true');
+        }
+
+        document.querySelectorAll('.mm-services-toggle').forEach(btn => {
+            btn.addEventListener('click', () => window.toggleMmServices(btn));
+        });
 
         // ── Close menu when a nav link is tapped ─────────────────────────────
         document.querySelectorAll('.mobile-menu a').forEach(link => {
