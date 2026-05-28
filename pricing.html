@@ -766,6 +766,8 @@
             width: 0;
             opacity: 0;
         }
+
+        .vh { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
     </style>
 
      <!-- Microsoft Clarity - deferred to protect first paint -->
@@ -1125,22 +1127,26 @@
                         <input type="hidden" name="_subject" value="Pricing Page Contact Form">
                         
                         <div style="margin-bottom: 15px;">
-                            <input type="text" name="name" placeholder="Your Name *" required 
+                            <label for="pr-name" class="vh">Your name (required)</label>
+                            <input type="text" id="pr-name" name="name" placeholder="Your Name *" required 
                                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box;">
                         </div>
                         
                         <div style="margin-bottom: 15px;">
-                            <input type="tel" name="phone" placeholder="Phone Number *" required 
+                            <label for="pr-phone" class="vh">Phone number (required)</label>
+                            <input type="tel" id="pr-phone" name="phone" placeholder="Phone Number *" required 
                                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box;">
                         </div>
                         
                         <div style="margin-bottom: 15px;">
-                            <input type="email" name="email" placeholder="Email Address" 
+                            <label for="pr-email" class="vh">Email address</label>
+                            <input type="email" id="pr-email" name="email" placeholder="Email Address" 
                                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box;">
                         </div>
                         
                         <div style="margin-bottom: 15px;">
-                            <select name="service" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box; background: white;">
+                            <label for="pr-service" class="vh">Service type</label>
+                            <select id="pr-service" name="service" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box; background: white;">
                                 <option value="">Select Service Type</option>
                                 <option value="General Repairs">General Repairs</option>
                                 <option value="Home Renovations">Home Renovations</option>
@@ -1155,7 +1161,8 @@
                         </div>
                         
                         <div style="margin-bottom: 20px;">
-                            <textarea name="message" rows="3" placeholder="Brief description of your project..." 
+                            <label for="pr-message" class="vh">Project description</label>
+                            <textarea id="pr-message" name="message" rows="3" placeholder="Brief description of your project..." 
                                       style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box; resize: vertical;"></textarea>
                         </div>
                         
