@@ -490,7 +490,18 @@
     @media (max-width: 400px) {
         .related-grid { grid-template-columns: 1fr 1fr; }
     }
-</style>
+
+        /* Critical header: prevents CLS before header.css async loads */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(18, 17, 19, 0.96);
+            min-height: 74px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        </style>
 
     <!-- FAQ Schema -->
     <script type="application/ld+json">
@@ -548,7 +559,8 @@
         }, { once: true });
     </script>
     <link rel="stylesheet" href="/CSS/crawl-hub.css">
-    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="preload" as="style" href="../CSS/header.css" onload="this.rel='stylesheet';this.onload=null">
+    <noscript><link rel="stylesheet" href="../CSS/header.css"></noscript>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -997,7 +1009,69 @@ function closeEmailModal() {
     </section>
 
     <!-- Footer Include -->
-    <div id="footer-include"></div>
+    <div id="footer-include">
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-company">
+                    <div class="footer-logo">
+                    <picture><source srcset="Images/KnightGroupLogo.webp" type="image/webp"><img src="/Images/KnightGroupLogo.png" alt="Knight Group Logo" width="80" height="80"></picture>
+                        <div>
+                            <h3>Knight Group</h3>
+                            <p>Handyman Services LLC</p>
+                        </div>
+                    </div>
+                    <p>Professional handyman services in Pinellas County</p>
+                    <p class="company-description">Over 15+ years of experience in home repairs, renovations, and handyman services.</p>
+                </div>
+            </div>
+            
+            <div class="footer-center">
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="/contact">Contact</a>
+                    <a href="/PolicyPages/privacy-policy">Privacy Policy</a>
+                    <a href="/PolicyPages/terms">Terms of Service</a>
+                </div>
+            </div>
+            
+            <div class="footer-right">
+                <h4>Connect With Us</h4>
+                <div class="footer-contact">
+                    <p><span class="contact-icon">Phone</span> (813) 649-3341</p>
+                    <p><span class="contact-icon">Email</span> nknight@knightgroup.com</p>
+                </div>
+                <div class="footer-social single-row">
+                    <a href="https://www.facebook.com/KnightGroupServices/" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
+                        <picture><source srcset="Images/Facebook_Logo_Primary.webp" type="image/webp"><img src="/Images/Facebook_Logo_Primary.png" alt="Facebook" width="28" height="28" loading="lazy"></picture>
+                    </a>
+                    <a href="https://www.instagram.com/knight_group_services/" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+                        <picture><source srcset="Images/InstagramLogo.webp" type="image/webp"><img src="/Images/InstagramLogo.png" alt="Instagram" width="28" height="28" loading="lazy"></picture>
+                    </a>
+                    <a href="https://m.me/KnightGroupServices" target="_blank" aria-label="Messenger" rel="noopener noreferrer">
+                        <picture><source srcset="Images/Messenger.webp" type="image/webp"><img src="/Images/Messenger.png" alt="Messenger" width="28" height="28" loading="lazy"></picture>
+                    </a>
+                    <a href="https://www.tiktok.com/@knightgroupservices" target="_blank" aria-label="TikTok" rel="noopener noreferrer">
+                        <picture><source srcset="Images/TikTokLogo.webp" type="image/webp"><img src="/Images/TikTokLogo.png" alt="TikTok" width="28" height="28" loading="lazy"></picture>
+                    </a>
+                    <a href="https://x.com/KnightGroupSvcs" target="_blank" aria-label="X" rel="noopener noreferrer">
+                        <picture><source srcset="Images/XLogoBlack.webp" type="image/webp"><img src="/Images/XLogoBlack.png" alt="X" width="28" height="28" loading="lazy"></picture>
+                    </a>
+                    <a href="https://www.pinterest.com/KnightGroupService/" target="_blank" aria-label="Pinterest" rel="noopener noreferrer">
+                        <picture><source srcset="Images/PintrestLogo.webp" type="image/webp"><img src="/Images/PintrestLogo.png" alt="Pinterest" width="28" height="28" loading="lazy"></picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 1995 - 2026 Knight Group. All rights reserved. &nbsp;&middot;&nbsp; <a href="https://knightlogics.com" rel="noopener noreferrer" style="color:inherit;text-decoration:none;opacity:.7;">Site by Knight Logics</a></p>
+        </div>
+    </div>
+</footer>
+</div>
 
     <!-- Load dynamic includes -->
     <script src="../JS/includes.js?v=20260528-a11y-fixes" defer></script>

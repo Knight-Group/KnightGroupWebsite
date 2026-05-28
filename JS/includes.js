@@ -201,7 +201,10 @@ class HTMLInclude {
         const footerElement = document.getElementById('footer-include');
         if (footerElement) {
             this.moveCrawlHubBeforeFooter();
-            await this._fetchAndInject(footerElement, pathPrefix + 'footer.html?v=' + includeVersion, pathPrefix);
+            // Skip fetch+inject if footer is already inlined in the HTML (static build)
+            if (!footerElement.hasChildNodes()) {
+                await this._fetchAndInject(footerElement, pathPrefix + 'footer.html?v=' + includeVersion, pathPrefix);
+            }
         }
 
         this.moveCrawlHubBeforeFooter();
