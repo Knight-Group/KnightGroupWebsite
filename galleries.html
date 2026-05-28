@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager — deferred after load to reduce TBT -->
+    <!-- Google Tag Manager &mdash; deferred after load to reduce TBT -->
     <script>window.dataLayer = window.dataLayer || [];</script>
     <script>
     var _gtmLoaded = false;
@@ -317,10 +317,18 @@
             padding: 20px;
         }
 
-        .gallery-item h3 {
+        .gallery-item-title {
             color: #9a2f2f;
             margin-bottom: 10px;
             font-size: 1.2rem;
+            margin-top: 0;
+        }
+
+        .lightbox-title-text {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 0 0 6px;
         }
 
         .gallery-item p {
@@ -551,7 +559,7 @@
                 </div>
 
                 <div class="category-card">
-                    <h3>🔨 Renovations</h3>
+                    <h3>&#128296; Renovations</h3>
                     <p>Kitchen refreshes, bathroom updates, rebuilds after damage, and room transformations that fit a smaller renovation scope.</p>
                     <a class="category-service-link" href="/Services/home-renovations">View Home Renovations</a>
                 </div>
@@ -572,48 +580,42 @@
             <div class="gallery-grid">
                 <div class="gallery-item" onclick="openLightbox('GalleryImages/20221111_115258.jpg', 'Drywall repair and paint blend', 'Wall repair and repaint work completed for a Pinellas County homeowner who needed the damaged area blended back into the room.')" tabindex="0" role="button" aria-label="Open image: Drywall repair and paint blend">
                     <img src="GalleryImages/20221111_115258.jpg" alt="Drywall Repair & Paint" loading="lazy" width="400" height="300">
-                    <div class="gallery-item-info">
-                        <h3>Drywall repair and paint blend</h3>
+                    <div class="gallery-item-info"><p class="gallery-item-title">Drywall repair and paint blend</p>
                         <p>Wall repair and repaint work for a local Pinellas County home.</p>
                     </div>
                 </div>
 
                 <div class="gallery-item" onclick="openLightbox('GalleryImages/20221121_144308.jpg', 'Interior wall repair and finish work', 'Wall repair and finishing work completed after visible interior damage needed a cleaner closeout before the room could be used normally again.')" tabindex="0" role="button" aria-label="Open image: Interior wall repair and finish work">
                     <img src="GalleryImages/20221121_144308.jpg" alt="Interior Wall Repair" loading="lazy" width="400" height="300">
-                    <div class="gallery-item-info">
-                        <h3>Interior wall repair and finish work</h3>
+                    <div class="gallery-item-info"><p class="gallery-item-title">Interior wall repair and finish work</p>
                         <p>Repair correction with a cleaner finish-ready result.</p>
                     </div>
                 </div>
 
                 <div class="gallery-item" onclick="openLightbox('GalleryImages/20230111_121854.jpg', 'Maintenance and correction work', 'A local maintenance call where the project needed practical correction work instead of a full replacement route.')" tabindex="0" role="button" aria-label="Open image: Maintenance and correction work">
                     <img src="GalleryImages/20230111_121854.jpg" alt="Home Maintenance" loading="lazy" width="400" height="300">
-                    <div class="gallery-item-info">
-                        <h3>Maintenance and correction work</h3>
+                    <div class="gallery-item-info"><p class="gallery-item-title">Maintenance and correction work</p>
                         <p>Practical repair work completed without overcomplicating the fix.</p>
                     </div>
                 </div>
 
                 <div class="gallery-item" onclick="openLightbox('GalleryImages/20230215_141043.jpg', 'Window-area damage rebuild', 'Repair and rebuild work after damage around a window opening had to be corrected before the room could be closed back up properly.')" tabindex="0" role="button" aria-label="Open image: Window-area damage rebuild">
                     <img src="GalleryImages/20230215_141043.jpg" alt="Repair Project" loading="lazy" width="400" height="300">
-                    <div class="gallery-item-info">
-                        <h3>Window-area damage rebuild</h3>
+                    <div class="gallery-item-info"><p class="gallery-item-title">Window-area damage rebuild</p>
                         <p>Repair work tied to a larger interior damage correction.</p>
                     </div>
                 </div>
 
                 <div class="gallery-item" onclick="openLightbox('GalleryImages/20230216_184144.jpg', 'Interior rebuild and finish reset', 'Interior rebuild work completed after damaged sections were removed and the room needed to be brought back into usable condition.')" tabindex="0" role="button" aria-label="Open image: Interior rebuild and finish reset">
                     <img src="GalleryImages/20230216_184144.jpg" alt="Custom Installation" loading="lazy" width="400" height="300">
-                    <div class="gallery-item-info">
-                        <h3>Interior rebuild and finish reset</h3>
+                    <div class="gallery-item-info"><p class="gallery-item-title">Interior rebuild and finish reset</p>
                         <p>Repair, rebuild, and finish work brought back into one route.</p>
                     </div>
                 </div>
 
                 <div class="gallery-item" onclick="openLightbox('GalleryImages/20230713_115127.jpg', 'Damage closeout after tear-out', 'A project where the visible finish work mattered as much as the structural correction, so the closeout had to look clean and intentional.')" tabindex="0" role="button" aria-label="Open image: Damage closeout after tear-out">
                     <img src="GalleryImages/20230713_115127.jpg" alt="Professional Service" loading="lazy" width="400" height="300">
-                    <div class="gallery-item-info">
-                        <h3>Damage closeout after tear-out</h3>
+                    <div class="gallery-item-info"><p class="gallery-item-title">Damage closeout after tear-out</p>
                         <p>Visible finish work completed after the damaged material was removed.</p>
                     </div>
                 </div>
@@ -640,9 +642,9 @@
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
         <div class="lightbox-content">
             <span class="lightbox-close" onclick="closeLightbox()" tabindex="0" role="button" aria-label="Close image lightbox">&times;</span>
-            <img id="lightbox-img" src="" alt="">
+            <img id="lightbox-img" alt="">
             <div class="lightbox-info">
-                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-title" class="lightbox-title-text"></p>
                 <p id="lightbox-description"></p>
             </div>
         </div>
