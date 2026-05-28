@@ -25,7 +25,16 @@
 class HTMLInclude {
     constructor() {
         this.ensureCriticalSharedStyles();
-        this.loadIncludes();
+        // Defer header/footer injection until the browser is idle (post-LCP).
+        // The skeleton header reserves layout space immediately; the real header
+        // replaces it once the compositor has committed the LCP paint, eliminating
+        // the ~1400ms render delay caused by 200+ DOM nodes injected mid-render.
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(() => this.loadIncludes(), { timeout: 3000 });
+        } else {
+            // Fallback: setTimeout(100) gives at least one paint frame on non-rIC browsers
+            setTimeout(() => this.loadIncludes(), 100);
+        }
         this.initializeAfterIncludes();
     }
 
