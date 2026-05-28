@@ -9,7 +9,10 @@
     <link rel="icon" href="/Images/android-chrome-512x512.png" type="image/png">
     <style>
         /* CLS: reserve header height before JS injects */
-        #header-include { min-height: 74px; }
+        #header-include { min-height: 74px;
+            contain: layout style paint;
+        }
+        #footer-include { contain: layout style paint; }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -85,7 +88,8 @@
     </script>
     <link rel="preload" as="fetch" href="header.html?v=20260528-a11y-fixes" crossorigin>
     <link rel="preload" as="style" href="CSS/header.css" onload="this.rel='stylesheet';this.onload=null">
-    <noscript><link rel="stylesheet" href="CSS/header.css"></noscript>
+    <noscript><link rel="preload" as="style" href="CSS/header.css" onload="this.rel='stylesheet';this.onload=null">
+    <noscript><link rel="stylesheet" href="CSS/header.css"></noscript></noscript>
 </head>
 <body>
     <main id="main-content" class="container">
