@@ -7,65 +7,7 @@
     <title>Page Not Found - Redirecting</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" href="/Images/android-chrome-512x512.png" type="image/png">
-    <style>
-        /* CLS: reserve header height before JS injects */
-        #header-include { min-height: 74px;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            background: #f8fafc;
-            color: #333;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-            padding: 20px;
-        }
-        .container {
-            max-width: 480px;
-        }
-        img { max-width: 200px; height: auto; margin-bottom: 24px; }
-        h1 { font-size: 2rem; color: #9a2f2f; margin-bottom: 12px; }
-        p { color: #555; margin-bottom: 20px; }
-        a { color: #9a2f2f; font-weight: 600; }
-
-        @keyframes kgHeroGlimmerSweep {
-            0% { background-position: 0% 50%; }
-            34% { background-position: 0% 50%; }
-            66% { background-position: 188% 50%; }
-            100% { background-position: 188% 50%; }
-        }
-
-        @supports ((-webkit-background-clip: text) or (background-clip: text)) {
-            h1 {
-                background-image: linear-gradient(
-                    112deg,
-                    #6f2024 0%,
-                    #9a2f2f 20%,
-                    #d7b18d 32%,
-                    #fff3e8 44%,
-                    #84272b 50%,
-                    #fff1e4 57%,
-                    #d5ae87 68%,
-                    #9a2f2f 82%,
-                    #6f2024 100%
-                );
-                background-size: 330% auto;
-                background-position: 0% 50%;
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-                animation: kgHeroGlimmerSweep 8.4s ease-in-out infinite;
-            }
-
-            @media (prefers-reduced-motion: reduce) {
-                h1 { animation: none; background-position: 60% 50%; }
-            }
-        }
-    </style>
+    <style>#header-include{min-height:74px}*{margin:0;padding:0;box-sizing:border-box}body{font-family:system-ui,-apple-system,sans-serif;background:#f8fafc;color:#333;display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:center;padding:20px}.container{max-width:480px}img{max-width:200px;height:auto;margin-bottom:24px}h1{font-size:2rem;color:#9a2f2f;margin-bottom:12px}p{color:#555;margin-bottom:20px}a{color:#9a2f2f;font-weight:600}@keyframes kgHeroGlimmerSweep{0%{background-position:0 50%}34%{background-position:0 50%}66%{background-position:188% 50%}100%{background-position:188% 50%}}@supports ((-webkit-background-clip:text) or (background-clip:text)){h1{background-image:linear-gradient(112deg,#6f2024 0,#9a2f2f 20%,#d7b18d 32%,#fff3e8 44%,#84272b 50%,#fff1e4 57%,#d5ae87 68%,#9a2f2f 82%,#6f2024 100%);background-size:330% auto;background-position:0 50%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:kgHeroGlimmerSweep 8.4s ease-in-out infinite}@media (prefers-reduced-motion:reduce){h1{animation:none;background-position:60% 50%}}}</style>
 
     <script>
         var path = window.location.pathname || '';
