@@ -155,8 +155,17 @@ class HTMLInclude {
             // Sanitize body fragment before injection
             this._sanitizeElement(doc.body);
 
+            // Freeze element height during swap to prevent CLS.
+            // When innerHTML is replaced, the element briefly collapses to 0px
+            // before new content renders, causing sticky header to shift page content.
+            const prevHeight = targetElement.offsetHeight;
+            if (prevHeight > 0) targetElement.style.minHeight = prevHeight + 'px';
+
             // Inject remaining content
             targetElement.innerHTML = doc.body.innerHTML;
+
+            // Clear the freeze — real content now defines the height
+            if (prevHeight > 0) targetElement.style.minHeight = '';
 
             if (pathPrefix) {
                 this.fixRelativePaths(targetElement, pathPrefix);
