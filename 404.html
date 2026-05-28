@@ -59,6 +59,10 @@
                 -webkit-text-fill-color: transparent;
                 animation: kgHeroGlimmerSweep 8.4s ease-in-out infinite;
             }
+
+            @media (prefers-reduced-motion: reduce) {
+                h1 { animation: none; background-position: 60% 50%; }
+            }
         }
     </style>
 

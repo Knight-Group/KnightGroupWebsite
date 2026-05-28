@@ -100,21 +100,10 @@ header .container {
 }
 
 @keyframes kgHeroGlimmerSweep {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    34% {
-        background-position: 0% 50%;
-    }
-
-    66% {
-        background-position: 188% 50%;
-    }
-
-    100% {
-        background-position: 188% 50%;
-    }
+    0%   { background-position: 0% 50%; }
+    34%  { background-position: 0% 50%; }
+    66%  { background-position: 188% 50%; }
+    100% { background-position: 188% 50%; }
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
@@ -162,6 +151,18 @@ header .container {
         background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: kgHeroGlimmerSweep 8.4s ease-in-out infinite;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .kg-hero h1,
+        .service-hero h1,
+        .page-hero h1,
+        .pricing-hero h1,
+        .area-hero h1,
+        .thank-you-message h1 {
+            animation: none;
+            background-position: 60% 50%;
+        }
     }
 }
 
