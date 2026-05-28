@@ -54,7 +54,7 @@
     <meta name="author" content="Knight Group Handyman Services LLC">
 
     <title>Safety Harbor Handyman &amp; Home Repairs | Knight Group</title>
-    <meta name="description" content="Safety Harbor handyman ��&rdquo; drywall, plumbing, painting, carpentry, doors & windows across Pinellas County. Free written estimates. Get a quote today.">
+    <meta name="description" content="Safety Harbor handyman &mdash; drywall, plumbing, painting, carpentry, doors & windows across Pinellas County. Free written estimates. Get a quote today.">
     <meta name="keywords" content="handyman Safety Harbor FL, handyman Pinellas County, home repair Clearwater, drywall repair Pinellas County, plumber handyman Safety Harbor, painting handyman Clearwater, door and window repair Pinellas County, small renovations Safety Harbor, emergency handyman Pinellas County">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="geo.region" content="US-FL">
@@ -1240,20 +1240,32 @@
         .kg-review-dots {
             display: flex;
             justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
+            gap: 0;
+            margin-top: 12px;
         }
 
         .kg-review-dot {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 0;
+            background: transparent;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .kg-review-dot::after {
+            content: '';
             width: 11px;
             height: 11px;
             border-radius: 50%;
-            border: 0;
             background: rgba(154, 47, 47, 0.24);
-            cursor: pointer;
+            transition: transform 0.2s;
         }
 
-        .kg-review-dot.is-active {
+        .kg-review-dot.is-active::after {
             background: var(--kg-accent);
             transform: scale(1.12);
         }
@@ -1575,7 +1587,8 @@
         }, 6000);
     }, { once: true });
     </script>
-    <link rel="stylesheet" href="/CSS/crawl-hub.css">
+    <link rel="stylesheet" href="/CSS/crawl-hub.css" media="print" onload="this.media='all';this.onload=null">
+    <noscript><link rel="stylesheet" href="/CSS/crawl-hub.css"></noscript>
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNHVDBHG" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
@@ -2262,8 +2275,15 @@
 
         document.addEventListener('DOMContentLoaded', function () {
             initMapLoader();
-            initJobCarousel();
-            initReviewCarousel();
+            function runCarousels() {
+                initJobCarousel();
+                initReviewCarousel();
+            }
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(runCarousels, { timeout: 3000 });
+            } else {
+                setTimeout(runCarousels, 0);
+            }
         });
     })();
     </script>
