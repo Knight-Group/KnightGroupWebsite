@@ -195,7 +195,7 @@ class HTMLInclude {
         if (window._knightGroupIncludesLoaded) return;
         window._knightGroupIncludesLoaded = true;
 
-        const includeVersion = '20260528-a11y-fixes';
+        const includeVersion = '20260530-social-cleanup';
 
         // Determine if we're in a subdirectory
         const pathPrefix = window.location.pathname.includes('/Services/') || 
