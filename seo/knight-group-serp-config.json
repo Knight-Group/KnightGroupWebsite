@@ -1,0 +1,50 @@
+{
+  "business_id": "knightgroup",
+  "depth": 10,
+  "notes": "Knight Group handyman SERP tracking — Pinellas County",
+  "runs": [
+    {
+      "keyword": "handyman pinellas county",
+      "location": "Pinellas County, Florida, United States",
+      "priority": 1,
+      "gsc_note": "GSC query cluster — handyman company pinellas"
+    },
+    {
+      "keyword": "handyman clearwater fl",
+      "location": "Clearwater, Florida, United States",
+      "priority": 1
+    },
+    {
+      "keyword": "handyman safety harbor",
+      "location": "Safety Harbor, Florida, United States",
+      "priority": 1
+    },
+    {
+      "keyword": "handyman near me",
+      "location": "Safety Harbor, Florida, United States",
+      "priority": 2
+    },
+    {
+      "keyword": "handyman services near me",
+      "location": "Clearwater, Florida, United States",
+      "priority": 2
+    },
+    {
+      "keyword": "sink repair clearwater",
+      "location": "Clearwater, Florida, United States",
+      "priority": 2,
+      "gsc_note": "GSC query — plumbing page target"
+    },
+    {
+      "keyword": "home repair services pinellas county",
+      "location": "Pinellas County, Florida, United States",
+      "priority": 3
+    },
+    {
+      "keyword": "knight group handyman",
+      "location": "Safety Harbor, Florida, United States",
+      "priority": 3,
+      "gsc_note": "Brand monitoring"
+    }
+  ]
+}

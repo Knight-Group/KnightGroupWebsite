@@ -89,11 +89,37 @@ Requires Knight Logics GSC auth once: `python E:\KnightLogics-Growth-System\Main
 
 ---
 
+## Weekly growth script (audit → report → next actions)
+
+```powershell
+cd E:\All Client Websites\KnightGroupWebsite
+.\scripts\knight-group-weekly-growth.ps1
+```
+
+This runs:
+
+1. GSC queries + pages export (`seo-audit/<date>/`)
+2. GBP review sync → `data/google-reviews.json`
+3. **Serper.dev** SERP snapshot via `seo/knight-group-serp-config.json` (same `SERPER_API_KEY` as Knight Logics OutreachEngine)
+4. `WEEKLY-ACTION-REPORT.md` with top queries and a manual action checklist
+
+Audits do **not** auto-edit GBP or page copy yet — the report tells you what to fix. Phase 2 can auto-deploy review JSON to the homepage.
+
+## Serper.dev (competitor / SERP intelligence)
+
+Knight Logics already uses Serper in `CRM/OutreachEngine` (`serp_intel.py`). Knight Group config:
+
+- `seo/knight-group-serp-config.json` — handyman keywords for Pinellas / Clearwater / Safety Harbor
+
+Requires `SERPER_API_KEY` in `E:\KnightLogics-Growth-System\CRM\OutreachEngine\.env`.
+
+Use Serper to see **who ranks above you** for target terms (not to spam links). Compare titles and page types, then adjust Knight Group pages manually or via approved copy changes.
+
 ## Phase 2 (not built yet)
 
 - Homepage review carousel reads `data/google-reviews.json` instead of static HTML.
 - GBP **posts** API (create local update + link to `/booking`).
-- Wire Knight Group into `seo_weekly_baseline.py` as a second site profile.
+- Auto-deploy when review count changes; CTR regression alerts vs prior week.
 
 Manual GBP posts and review asks still drive **calls** fastest until Phase 2 is live.
 
