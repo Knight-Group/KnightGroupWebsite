@@ -7,6 +7,13 @@
     }
 
     var path = window.location.pathname || '';
+    var legacyProgrammingPath = /\/Services\/programming(?:%26|&)databases(?:\.html)?$/i;
+
+    if (legacyProgrammingPath.test(path)) {
+        window.location.replace('https://knightlogics.com/service-ai-automation');
+        return;
+    }
+
     if (!/\.html$/i.test(path)) {
         return;
     }
