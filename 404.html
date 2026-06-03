@@ -17,6 +17,13 @@
 
         if (legacyProgrammingPath.test(path)) {
             window.location.replace('https://knightlogics.com/service-ai-automation');
+            return;
+        }
+
+        var lowercaseServicesPath = path.match(/^\/services\/([^/]+)\/?$/);
+        if (lowercaseServicesPath) {
+            window.location.replace('/Services/' + lowercaseServicesPath[1] + search + hash);
+            return;
         }
 
         if (/\.html$/i.test(path)) {

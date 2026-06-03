@@ -14,6 +14,12 @@
         return;
     }
 
+    var lowercaseServicesPath = path.match(/^\/services\/([^/]+)\/?$/);
+    if (lowercaseServicesPath) {
+        window.location.replace('/Services/' + lowercaseServicesPath[1] + window.location.search + window.location.hash);
+        return;
+    }
+
     if (!/\.html$/i.test(path)) {
         return;
     }
