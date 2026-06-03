@@ -8,5 +8,5 @@
     "locationTitle": "Knight Group Handyman Services LLC"
   },
   "reviews": [],
-  "_note": "Run npm run reviews:sync-google after GBP env vars are set. Homepage carousel is still static HTML until Phase 2 wires this JSON feed."
+  "_note": "Run npm run reviews:sync-google after KNIGHTGROUP_GBP_ACCOUNT_NAME and KNIGHTGROUP_GBP_LOCATION_NAME are set in accounts.env. Homepage uses static HTML until this feed has reviews."
 }

@@ -1,0 +1,55 @@
+{
+  "@type": "HomeAndConstructionBusiness",
+  "@id": "https://www.knightgroup.com/#business",
+  "name": "Knight Group Handyman Services LLC",
+  "url": "https://www.knightgroup.com/",
+  "description": "Knight Group Handyman Services LLC provides registered and insured handyman services across Safety Harbor and Pinellas County, Florida.",
+  "image": [
+    "https://www.knightgroup.com/Images/handyman.jpg",
+    "https://www.knightgroup.com/Images/KGHero.webp"
+  ],
+  "logo": "https://www.knightgroup.com/Images/KnightGroupLogo.webp",
+  "telephone": "+18136493341",
+  "email": "nknight@knightgroup.com",
+  "priceRange": "$$",
+  "hasMap": "https://maps.google.com/?cid=10508624668428370015",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1225 7th St S",
+    "addressLocality": "Safety Harbor",
+    "addressRegion": "FL",
+    "postalCode": "34695",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 27.9906,
+    "longitude": -82.6933
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Pinellas County, Florida"
+  },
+  "sameAs": [
+    "https://www.facebook.com/KnightGroupServices/",
+    "https://www.instagram.com/knight_group_services/",
+    "https://x.com/KnightGroupSvcs",
+    "https://www.tiktok.com/@knightgroupservices",
+    "https://www.pinterest.com/KnightGroupService/"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "7",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}

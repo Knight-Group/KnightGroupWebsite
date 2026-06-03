@@ -67,19 +67,82 @@
     <noscript><link rel="stylesheet" href="../CSS/hero-fx.min.css"></noscript>
 <noscript>
 </noscript>
-<!-- JSON-LD Structured Data (WebSite, WebPage, Service, FAQPage) -->
+    <!-- JSON-LD Structured Data (Business, WebSite, WebPage, Service, FAQPage) -->
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@graph": [
         {
+            "@type": "HomeAndConstructionBusiness",
+            "@id": "https://www.knightgroup.com/#business",
+            "name": "Knight Group Handyman Services LLC",
+            "url": "https://www.knightgroup.com/",
+            "description": "Knight Group Handyman Services LLC provides registered and insured handyman services across Safety Harbor and Pinellas County, Florida.",
+            "image": [
+                "https://www.knightgroup.com/Images/handyman.jpg",
+                "https://www.knightgroup.com/Images/KGHero.webp"
+            ],
+            "logo": "https://www.knightgroup.com/Images/KnightGroupLogo.webp",
+            "telephone": "+18136493341",
+            "email": "nknight@knightgroup.com",
+            "priceRange": "$$",
+            "hasMap": "https://maps.google.com/?cid=10508624668428370015",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1225 7th St S",
+                "addressLocality": "Safety Harbor",
+                "addressRegion": "FL",
+                "postalCode": "34695",
+                "addressCountry": "US"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 27.9906,
+                "longitude": -82.6933
+            },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "08:00",
+                    "closes": "17:00"
+                }
+            ],
+            "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Pinellas County, Florida"
+            },
+            "sameAs": [
+                "https://www.facebook.com/KnightGroupServices/",
+                "https://www.instagram.com/knight_group_services/",
+                "https://x.com/KnightGroupSvcs",
+                "https://www.tiktok.com/@knightgroupservices",
+                "https://www.pinterest.com/KnightGroupService/"
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "reviewCount": "7",
+                "bestRating": "5",
+                "worstRating": "1"
+            }
+        },
+        {
             "@type": "WebSite",
             "@id": "https://www.knightgroup.com/#website",
             "url": "https://www.knightgroup.com/",
             "name": "Knight Group Handyman Services",
+            "description": "Registered and insured handyman services in Safety Harbor and Pinellas County, Florida.",
             "publisher": {
                 "@id": "https://www.knightgroup.com/#business"
-            }
+            },
+            "inLanguage": "en-US"
         },
         {
             "@type": "BreadcrumbList",
@@ -119,7 +182,15 @@
             },
             "breadcrumb": {
                 "@id": "https://www.knightgroup.com/Services/custom-projects#breadcrumb"
-            }
+            },
+            "mainEntity": {
+                "@id": "https://www.knightgroup.com/Services/custom-projects#service"
+            },
+            "primaryImageOfPage": {
+                "@type": "ImageObject",
+                "url": "https://www.knightgroup.com/Images/custom-projects.jpg"
+            },
+            "inLanguage": "en-US"
         },
         {
             "@type": "Service",
@@ -131,6 +202,7 @@
             },
             "url": "https://www.knightgroup.com/Services/custom-projects",
             "serviceType": "Custom Projects",
+            "image": "https://www.knightgroup.com/Images/custom-projects.jpg",
             "areaServed": [
                 {
                     "@type": "City",
@@ -172,47 +244,16 @@
                     "@type": "AdministrativeArea",
                     "name": "Pinellas County, FL"
                 }
-            ]
-        },
-        {
-            "@type": "FAQPage",
-            "@id": "https://www.knightgroup.com/Services/custom-projects#faq",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "What kinds of custom projects do you take on?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "We build custom shelving, entertainment centers, closet systems, Murphy beds, outdoor storage, window seats, and other specialty woodworking or handyman projects tailored to your space."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Can you work from a design I found online?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Absolutely. Bring us a photo, sketch, or Pinterest reference and we will work with you to adapt it to your specific space and budget."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Do you handle both indoor and outdoor custom work?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Yes &mdash; we build custom features for interiors (built-ins, storage, trim accents) and exteriors (pergolas, benches, planters, storage sheds) across Pinellas County."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "How do I get a quote for a custom project?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Call (813) 649-3341 or submit the contact form for a free consultation. We come to your home, measure the space, and provide a written estimate."
-                    }
-                }
             ],
-            "isPartOf": {
-                "@id": "https://www.knightgroup.com/Services/custom-projects#webpage"
+            "offers": {
+                "@type": "Offer",
+                "url": "https://www.knightgroup.com/booking",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "eligibleRegion": {
+                    "@type": "AdministrativeArea",
+                    "name": "Pinellas County, Florida"
+                }
             }
         }
     ]

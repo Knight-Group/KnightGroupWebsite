@@ -67,19 +67,82 @@
     <noscript><link rel="stylesheet" href="../CSS/hero-fx.min.css"></noscript>
 <noscript>
 </noscript>
-<!-- JSON-LD Structured Data (WebSite, WebPage, Service, FAQPage) -->
+    <!-- JSON-LD Structured Data (Business, WebSite, WebPage, Service, FAQPage) -->
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@graph": [
         {
+            "@type": "HomeAndConstructionBusiness",
+            "@id": "https://www.knightgroup.com/#business",
+            "name": "Knight Group Handyman Services LLC",
+            "url": "https://www.knightgroup.com/",
+            "description": "Knight Group Handyman Services LLC provides registered and insured handyman services across Safety Harbor and Pinellas County, Florida.",
+            "image": [
+                "https://www.knightgroup.com/Images/handyman.jpg",
+                "https://www.knightgroup.com/Images/KGHero.webp"
+            ],
+            "logo": "https://www.knightgroup.com/Images/KnightGroupLogo.webp",
+            "telephone": "+18136493341",
+            "email": "nknight@knightgroup.com",
+            "priceRange": "$$",
+            "hasMap": "https://maps.google.com/?cid=10508624668428370015",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1225 7th St S",
+                "addressLocality": "Safety Harbor",
+                "addressRegion": "FL",
+                "postalCode": "34695",
+                "addressCountry": "US"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 27.9906,
+                "longitude": -82.6933
+            },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "08:00",
+                    "closes": "17:00"
+                }
+            ],
+            "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Pinellas County, Florida"
+            },
+            "sameAs": [
+                "https://www.facebook.com/KnightGroupServices/",
+                "https://www.instagram.com/knight_group_services/",
+                "https://x.com/KnightGroupSvcs",
+                "https://www.tiktok.com/@knightgroupservices",
+                "https://www.pinterest.com/KnightGroupService/"
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "reviewCount": "7",
+                "bestRating": "5",
+                "worstRating": "1"
+            }
+        },
+        {
             "@type": "WebSite",
             "@id": "https://www.knightgroup.com/#website",
             "url": "https://www.knightgroup.com/",
             "name": "Knight Group Handyman Services",
+            "description": "Registered and insured handyman services in Safety Harbor and Pinellas County, Florida.",
             "publisher": {
                 "@id": "https://www.knightgroup.com/#business"
-            }
+            },
+            "inLanguage": "en-US"
         },
         {
             "@type": "BreadcrumbList",
@@ -119,7 +182,15 @@
             },
             "breadcrumb": {
                 "@id": "https://www.knightgroup.com/Services/general-repairs#breadcrumb"
-            }
+            },
+            "mainEntity": {
+                "@id": "https://www.knightgroup.com/Services/general-repairs#service"
+            },
+            "primaryImageOfPage": {
+                "@type": "ImageObject",
+                "url": "https://www.knightgroup.com/Images/general-repairs.jpg"
+            },
+            "inLanguage": "en-US"
         },
         {
             "@type": "Service",
@@ -131,6 +202,7 @@
             },
             "url": "https://www.knightgroup.com/Services/general-repairs",
             "serviceType": "General Repairs",
+            "image": "https://www.knightgroup.com/Images/general-repairs.jpg",
             "areaServed": [
                 {
                     "@type": "City",
@@ -172,47 +244,16 @@
                     "@type": "AdministrativeArea",
                     "name": "Pinellas County, FL"
                 }
-            ]
-        },
-        {
-            "@type": "FAQPage",
-            "@id": "https://www.knightgroup.com/Services/general-repairs#faq",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "What kinds of general repairs do you handle?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "We handle a wide range of home repairs including drywall and sheetrock repair, patching holes, fixing leaks, caulking, door hardware, cabinet adjustments, and general household maintenance throughout Pinellas County."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Can you repair water-damaged drywall?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Yes. We assess the moisture source first, then repair or replace the damaged drywall, texture-match, and prep it for paint &mdash; all in one visit for most jobs."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Do you charge a minimum service fee?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "No &mdash; unlike many competitors, Knight Group does not charge a two-hour minimum. You only pay for the actual time your repair takes."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "How quickly can I schedule a general repair?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Most standard repairs can be scheduled within 48 hours. For urgent situations, call (813) 649-3341 and we'll do our best to get to you same day."
-                    }
-                }
             ],
-            "isPartOf": {
-                "@id": "https://www.knightgroup.com/Services/general-repairs#webpage"
+            "offers": {
+                "@type": "Offer",
+                "url": "https://www.knightgroup.com/booking",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "eligibleRegion": {
+                    "@type": "AdministrativeArea",
+                    "name": "Pinellas County, Florida"
+                }
             }
         }
     ]

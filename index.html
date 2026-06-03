@@ -484,7 +484,7 @@ function closeEmailModal() {
                     <span class="kg-section-tag">Google reviews</span>
                     <strong>Knight Group review carousel</strong>
                     <span class="kg-stars" role="img" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                    <span class="kg-review-meta">5.0 average from 7 published reviews</span>
+                    <span class="kg-review-meta" id="kg-review-summary">5.0 average from 7 published reviews</span>
                 </div>
 
                 <div class="kg-review-carousel">
@@ -941,6 +941,7 @@ function closeEmailModal() {
     <div id="footer-include"></div>
 
     <script src="JS/includes.min.js?v=20260530-social-cleanup" defer></script>
+    <script src="JS/kg-google-reviews.js?v=20260603" defer></script>
     <script>
     (function () {
         function initMapLoader() { return; }
@@ -974,81 +975,10 @@ function closeEmailModal() {
             window.addEventListener('resize', update);
             update();
         }
-        function initReviewCarousel() {
-            var track = document.getElementById('kg-review-track');
-            var dotsWrap = document.getElementById('kg-review-dots');
-            var prev = document.getElementById('kg-review-prev');
-            var next = document.getElementById('kg-review-next');
-            if (!track || !dotsWrap || !prev || !next) return;
-
-            var cards = Array.prototype.slice.call(track.children);
-            var index = 0;
-
-            function perView() {
-                if (window.innerWidth < 760) return 1;
-                if (window.innerWidth < 1100) return 2;
-                return 3;
-            }
-
-            function pageCount() {
-                return Math.max(1, Math.ceil(cards.length / perView()));
-            }
-
-            function renderDots() {
-                dotsWrap.innerHTML = '';
-                for (var i = 0; i < pageCount(); i += 1) {
-                    var dot = document.createElement('button');
-                    dot.type = 'button';
-                    dot.className = 'kg-review-dot' + (i === index ? ' is-active' : '');
-                    dot.setAttribute('aria-label', 'Go to review set ' + (i + 1));
-                    (function (target) {
-                        dot.addEventListener('click', function () {
-                            index = target;
-                            update();
-                        });
-                    })(i);
-                    dotsWrap.appendChild(dot);
-                }
-            }
-
-            function update() {
-                var pages = pageCount();
-                if (index > pages - 1) index = pages - 1;
-                if (index < 0) index = 0;
-                var sample = cards[0];
-                var gap = window.innerWidth < 760 ? 18 : 18;
-                var width = sample ? sample.getBoundingClientRect().width : 0;
-                var offset = index * (width + gap) * perView();
-                track.style.transform = 'translateX(' + (-offset) + 'px)';
-                Array.prototype.forEach.call(dotsWrap.children, function (dot, dotIndex) {
-                    dot.classList.toggle('is-active', dotIndex === index);
-                });
-                prev.disabled = index === 0;
-                next.disabled = index === pages - 1;
-            }
-
-            prev.addEventListener('click', function () {
-                index -= 1;
-                update();
-            });
-            next.addEventListener('click', function () {
-                index += 1;
-                update();
-            });
-            window.addEventListener('resize', function () {
-                renderDots();
-                update();
-            });
-
-            renderDots();
-            update();
-        }
-
         document.addEventListener('DOMContentLoaded', function () {
             initMapLoader();
             function runCarousels() {
                 initJobCarousel();
-                initReviewCarousel();
             }
             if ('requestIdleCallback' in window) {
                 requestIdleCallback(runCarousels, { timeout: 3000 });

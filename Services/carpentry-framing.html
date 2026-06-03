@@ -52,19 +52,82 @@
     <noscript><link rel="stylesheet" href="../CSS/hero-fx.min.css"></noscript>
 <noscript>
 </noscript>
-<!-- JSON-LD Structured Data (WebSite, WebPage, Service, FAQPage) -->
+    <!-- JSON-LD Structured Data (Business, WebSite, WebPage, Service, FAQPage) -->
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@graph": [
         {
+            "@type": "HomeAndConstructionBusiness",
+            "@id": "https://www.knightgroup.com/#business",
+            "name": "Knight Group Handyman Services LLC",
+            "url": "https://www.knightgroup.com/",
+            "description": "Knight Group Handyman Services LLC provides registered and insured handyman services across Safety Harbor and Pinellas County, Florida.",
+            "image": [
+                "https://www.knightgroup.com/Images/handyman.jpg",
+                "https://www.knightgroup.com/Images/KGHero.webp"
+            ],
+            "logo": "https://www.knightgroup.com/Images/KnightGroupLogo.webp",
+            "telephone": "+18136493341",
+            "email": "nknight@knightgroup.com",
+            "priceRange": "$$",
+            "hasMap": "https://maps.google.com/?cid=10508624668428370015",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1225 7th St S",
+                "addressLocality": "Safety Harbor",
+                "addressRegion": "FL",
+                "postalCode": "34695",
+                "addressCountry": "US"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 27.9906,
+                "longitude": -82.6933
+            },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "08:00",
+                    "closes": "17:00"
+                }
+            ],
+            "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Pinellas County, Florida"
+            },
+            "sameAs": [
+                "https://www.facebook.com/KnightGroupServices/",
+                "https://www.instagram.com/knight_group_services/",
+                "https://x.com/KnightGroupSvcs",
+                "https://www.tiktok.com/@knightgroupservices",
+                "https://www.pinterest.com/KnightGroupService/"
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "reviewCount": "7",
+                "bestRating": "5",
+                "worstRating": "1"
+            }
+        },
+        {
             "@type": "WebSite",
             "@id": "https://www.knightgroup.com/#website",
             "url": "https://www.knightgroup.com/",
             "name": "Knight Group Handyman Services",
+            "description": "Registered and insured handyman services in Safety Harbor and Pinellas County, Florida.",
             "publisher": {
                 "@id": "https://www.knightgroup.com/#business"
-            }
+            },
+            "inLanguage": "en-US"
         },
         {
             "@type": "BreadcrumbList",
@@ -104,7 +167,15 @@
             },
             "breadcrumb": {
                 "@id": "https://www.knightgroup.com/Services/carpentry-framing#breadcrumb"
-            }
+            },
+            "mainEntity": {
+                "@id": "https://www.knightgroup.com/Services/carpentry-framing#service"
+            },
+            "primaryImageOfPage": {
+                "@type": "ImageObject",
+                "url": "https://www.knightgroup.com/Images/carpentry.jpg"
+            },
+            "inLanguage": "en-US"
         },
         {
             "@type": "Service",
@@ -116,6 +187,7 @@
             },
             "url": "https://www.knightgroup.com/Services/carpentry-framing",
             "serviceType": "Carpentry & Framing",
+            "image": "https://www.knightgroup.com/Images/carpentry.jpg",
             "areaServed": [
                 {
                     "@type": "City",
@@ -157,47 +229,16 @@
                     "@type": "AdministrativeArea",
                     "name": "Pinellas County, FL"
                 }
-            ]
-        },
-        {
-            "@type": "FAQPage",
-            "@id": "https://www.knightgroup.com/Services/carpentry-framing#faq",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "Can you build custom shelves or built-ins in Safety Harbor?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Yes. Knight Group builds custom shelving, built-ins, closet systems, and storage solutions for homeowners throughout Safety Harbor and Pinellas County. We handle design, framing, and finishing."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Do you do small carpentry jobs near me?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Yes. We specialize in small and medium carpentry jobs with no minimum &mdash; including single shelf installs, trim repairs, fence boards, and wood rot replacement. We serve all of Pinellas County."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Can you repair rotted wood or damaged framing?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Yes. We handle wood rot repair, framing corrections, damaged fascia boards, and structural wood repairs for residential properties in Pinellas County."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "What carpentry services does Knight Group offer in Pinellas County?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Our carpentry services include custom shelving and built-ins, framing, wood rot repair, trim installation, baseboards, closet systems, fence repair, deck boards, and general woodworking projects throughout Safety Harbor and Pinellas County."
-                    }
-                }
             ],
-            "isPartOf": {
-                "@id": "https://www.knightgroup.com/Services/carpentry-framing#webpage"
+            "offers": {
+                "@type": "Offer",
+                "url": "https://www.knightgroup.com/booking",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "eligibleRegion": {
+                    "@type": "AdministrativeArea",
+                    "name": "Pinellas County, Florida"
+                }
             }
         }
     ]

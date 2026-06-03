@@ -59,53 +59,7 @@
     <meta name="theme-color" content="#c8242a">
     <meta name="msapplication-TileColor" content="#1a1a2e">
     <meta name="author" content="Knight Group Handyman Services LLC">
-<!-- JSON-LD Structured Data for Local Business -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Knight Group Handyman Services LLC",
-      "image": "https://www.knightgroup.com/Images/KnightGroupLogo.webp",
-      "@id": "https://www.knightgroup.com/#business",
-      "url": "https://www.knightgroup.com",
-      "telephone": "+18136493341",
-      "address": {
-        "@type": "PostalAddress",
-                "streetAddress": "1225 7th St S",
-                "addressLocality": "Safety Harbor",
-        "addressRegion": "FL",
-                "postalCode": "34695",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 27.9906,
-        "longitude": -82.6933
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "08:00",
-        "closes": "17:00"
-      },
-      "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "5.0",
-                "reviewCount": "7",
-                "bestRating": "5",
-                "worstRating": "1"
-            },
-            "sameAs": [
-                                "https://www.facebook.com/KnightGroupServices/",
-                                "https://www.instagram.com/knight_group_services/",
-                                "https://x.com/KnightGroupSvcs",
-                                "https://www.tiktok.com/@knightgroupservices",
-                                "https://www.pinterest.com/KnightGroupService/"
-                        ]
-    }
-    </script>
-
-    <!-- JSON-LD Structured Data for Service -->
+<!-- JSON-LD Structured Data for Service -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -291,6 +245,199 @@
             ],
             "isPartOf": {
                 "@id": "https://www.knightgroup.com/Services/plumbing-services#webpage"
+            }
+        }
+    ]
+}
+    </script>
+
+    <!-- JSON-LD Structured Data (Business, WebSite, WebPage, Service, FAQPage) -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "HomeAndConstructionBusiness",
+            "@id": "https://www.knightgroup.com/#business",
+            "name": "Knight Group Handyman Services LLC",
+            "url": "https://www.knightgroup.com/",
+            "description": "Knight Group Handyman Services LLC provides registered and insured handyman services across Safety Harbor and Pinellas County, Florida.",
+            "image": [
+                "https://www.knightgroup.com/Images/handyman.jpg",
+                "https://www.knightgroup.com/Images/KGHero.webp"
+            ],
+            "logo": "https://www.knightgroup.com/Images/KnightGroupLogo.webp",
+            "telephone": "+18136493341",
+            "email": "nknight@knightgroup.com",
+            "priceRange": "$$",
+            "hasMap": "https://maps.google.com/?cid=10508624668428370015",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1225 7th St S",
+                "addressLocality": "Safety Harbor",
+                "addressRegion": "FL",
+                "postalCode": "34695",
+                "addressCountry": "US"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 27.9906,
+                "longitude": -82.6933
+            },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "08:00",
+                    "closes": "17:00"
+                }
+            ],
+            "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Pinellas County, Florida"
+            },
+            "sameAs": [
+                "https://www.facebook.com/KnightGroupServices/",
+                "https://www.instagram.com/knight_group_services/",
+                "https://x.com/KnightGroupSvcs",
+                "https://www.tiktok.com/@knightgroupservices",
+                "https://www.pinterest.com/KnightGroupService/"
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "reviewCount": "7",
+                "bestRating": "5",
+                "worstRating": "1"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://www.knightgroup.com/#website",
+            "url": "https://www.knightgroup.com/",
+            "name": "Knight Group Handyman Services",
+            "description": "Registered and insured handyman services in Safety Harbor and Pinellas County, Florida.",
+            "publisher": {
+                "@id": "https://www.knightgroup.com/#business"
+            },
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.knightgroup.com/Services/plumbing-services#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.knightgroup.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services",
+                    "item": "https://www.knightgroup.com/services"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Plumbing Services",
+                    "item": "https://www.knightgroup.com/Services/plumbing-services"
+                }
+            ]
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://www.knightgroup.com/Services/plumbing-services#webpage",
+            "url": "https://www.knightgroup.com/Services/plumbing-services",
+            "name": "Plumbing &amp; Sink Repair Clearwater FL | Pinellas County | Knight Group",
+            "description": "Sink, faucet &amp; fixture repairs in Clearwater, Safety Harbor &amp; Pinellas County. Leaks, toilets, shutoffs &amp; handyman plumbing. Free estimate &mdash; (813) 649-3341.",
+            "isPartOf": {
+                "@id": "https://www.knightgroup.com/#website"
+            },
+            "about": {
+                "@id": "https://www.knightgroup.com/#business"
+            },
+            "breadcrumb": {
+                "@id": "https://www.knightgroup.com/Services/plumbing-services#breadcrumb"
+            },
+            "mainEntity": {
+                "@id": "https://www.knightgroup.com/Services/plumbing-services#service"
+            },
+            "primaryImageOfPage": {
+                "@type": "ImageObject",
+                "url": "https://www.knightgroup.com/Images/plumbing.jpg"
+            },
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "Service",
+            "@id": "https://www.knightgroup.com/Services/plumbing-services#service",
+            "name": "Plumbing Services",
+            "description": "Professional plumbing services in Pinellas County. Pipe repairs, fixture installation, toilet replacement, and supply line connections.",
+            "provider": {
+                "@id": "https://www.knightgroup.com/#business"
+            },
+            "url": "https://www.knightgroup.com/Services/plumbing-services",
+            "serviceType": "Plumbing Services",
+            "image": "https://www.knightgroup.com/Images/plumbing.jpg",
+            "areaServed": [
+                {
+                    "@type": "City",
+                    "name": "Safety Harbor, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Clearwater, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Dunedin, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Palm Harbor, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Largo, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Oldsmar, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Tarpon Springs, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Seminole, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "St. Petersburg, FL"
+                },
+                {
+                    "@type": "AdministrativeArea",
+                    "name": "Pinellas County, FL"
+                }
+            ],
+            "offers": {
+                "@type": "Offer",
+                "url": "https://www.knightgroup.com/booking",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "eligibleRegion": {
+                    "@type": "AdministrativeArea",
+                    "name": "Pinellas County, Florida"
+                }
             }
         }
     ]

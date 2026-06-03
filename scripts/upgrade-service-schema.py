@@ -9,6 +9,20 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SERVICES = ROOT / "Services"
+BUSINESS_ENTITY_PATH = ROOT / "seo" / "knight-group-business-entity.json"
+
+SERVICE_IMAGES = {
+    "handyman": "handyman.jpg",
+    "plumbing-services": "plumbing.jpg",
+    "electrical-work": "electrical.jpg",
+    "painting-finishing": "painting.jpg",
+    "carpentry-framing": "carpentry.jpg",
+    "doors-windows": "doors-windows.jpg",
+    "home-renovations": "renovations.jpg",
+    "general-repairs": "general-repairs.jpg",
+    "custom-projects": "custom-projects.jpg",
+    "emergency-services": "emergency.jpg",
+}
 
 AREA_SERVED = [
     {"@type": "City", "name": "Safety Harbor, FL"},
@@ -68,18 +82,32 @@ def breadcrumb_name_from_path(canonical: str) -> str:
     return slug.replace("-", " ").title()
 
 
+def load_business_entity() -> dict:
+    return json.loads(BUSINESS_ENTITY_PATH.read_text(encoding="utf-8"))
+
+
+def service_image_url(canonical: str) -> str:
+    slug = canonical.rstrip("/").split("/")[-1]
+    filename = SERVICE_IMAGES.get(slug, "handyman.jpg")
+    return f"https://www.knightgroup.com/Images/{filename}"
+
+
 def build_graph(meta: dict, service: dict, faq_entities: list[dict]) -> dict:
     url = meta["canonical"]
     slug = url.rstrip("/").split("/")[-1]
     crumb_label = service["name"] if service["name"] else breadcrumb_name_from_path(url)
+    image_url = service_image_url(url)
 
     graph: list[dict] = [
+        load_business_entity(),
         {
             "@type": "WebSite",
             "@id": "https://www.knightgroup.com/#website",
             "url": "https://www.knightgroup.com/",
             "name": "Knight Group Handyman Services",
+            "description": "Registered and insured handyman services in Safety Harbor and Pinellas County, Florida.",
             "publisher": {"@id": "https://www.knightgroup.com/#business"},
+            "inLanguage": "en-US",
         },
         {
             "@type": "BreadcrumbList",
@@ -114,6 +142,12 @@ def build_graph(meta: dict, service: dict, faq_entities: list[dict]) -> dict:
             "isPartOf": {"@id": "https://www.knightgroup.com/#website"},
             "about": {"@id": "https://www.knightgroup.com/#business"},
             "breadcrumb": {"@id": f"{url}#breadcrumb"},
+            "mainEntity": {"@id": f"{url}#service"},
+            "primaryImageOfPage": {
+                "@type": "ImageObject",
+                "url": image_url,
+            },
+            "inLanguage": "en-US",
         },
         {
             "@type": "Service",
@@ -123,7 +157,18 @@ def build_graph(meta: dict, service: dict, faq_entities: list[dict]) -> dict:
             "provider": {"@id": "https://www.knightgroup.com/#business"},
             "url": url,
             "serviceType": service["name"],
+            "image": image_url,
             "areaServed": AREA_SERVED,
+            "offers": {
+                "@type": "Offer",
+                "url": "https://www.knightgroup.com/booking",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "eligibleRegion": {
+                    "@type": "AdministrativeArea",
+                    "name": "Pinellas County, Florida",
+                },
+            },
         },
     ]
 
@@ -143,7 +188,7 @@ def build_graph(meta: dict, service: dict, faq_entities: list[dict]) -> dict:
 def replace_schema(html: str, graph: dict) -> str:
     graph_json = json.dumps(graph, indent=4, ensure_ascii=False)
     graph_script = (
-        '    <!-- JSON-LD Structured Data (WebSite, WebPage, Service, FAQPage) -->\n'
+        '    <!-- JSON-LD Structured Data (Business, WebSite, WebPage, Service, FAQPage) -->\n'
         f'    <script type="application/ld+json">\n{graph_json}\n    </script>\n'
     )
 
@@ -155,7 +200,7 @@ def replace_schema(html: str, graph: dict) -> str:
         flags=re.S | re.I,
     )
     html = re.sub(
-        r"\s*<!-- JSON-LD Structured Data -->\s*<script type=\"application/ld\+json\">.*?</script>\s*",
+        r"\s*<!-- JSON-LD Structured Data[^>]*-->\s*<script type=\"application/ld\+json\">.*?</script>\s*",
         "\n",
         html,
         count=1,

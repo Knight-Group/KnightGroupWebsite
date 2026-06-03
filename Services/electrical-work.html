@@ -59,53 +59,7 @@
     <meta name="theme-color" content="#c8242a">
     <meta name="msapplication-TileColor" content="#1a1a2e">
     <meta name="author" content="Knight Group Handyman Services LLC">
-<!-- JSON-LD Structured Data for Local Business -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Knight Group Handyman Services LLC",
-      "image": "https://www.knightgroup.com/Images/KnightGroupLogo.webp",
-      "@id": "https://www.knightgroup.com/#business",
-      "url": "https://www.knightgroup.com",
-      "telephone": "+18136493341",
-      "address": {
-        "@type": "PostalAddress",
-                "streetAddress": "1225 7th St S",
-                "addressLocality": "Safety Harbor",
-        "addressRegion": "FL",
-                "postalCode": "34695",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 27.9906,
-        "longitude": -82.6933
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "08:00",
-        "closes": "17:00"
-      },
-      "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "5.0",
-                "reviewCount": "7",
-                "bestRating": "5",
-                "worstRating": "1"
-            },
-            "sameAs": [
-                                "https://www.facebook.com/KnightGroupServices/",
-                                "https://www.instagram.com/knight_group_services/",
-                                "https://x.com/KnightGroupSvcs",
-                                "https://www.tiktok.com/@knightgroupservices",
-                                "https://www.pinterest.com/KnightGroupService/"
-                        ]
-    }
-    </script>
-
-    <!-- JSON-LD Structured Data for Service -->
+<!-- JSON-LD Structured Data for Service -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -291,6 +245,199 @@
             ],
             "isPartOf": {
                 "@id": "https://www.knightgroup.com/Services/electrical-work#webpage"
+            }
+        }
+    ]
+}
+    </script>
+
+    <!-- JSON-LD Structured Data (Business, WebSite, WebPage, Service, FAQPage) -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "HomeAndConstructionBusiness",
+            "@id": "https://www.knightgroup.com/#business",
+            "name": "Knight Group Handyman Services LLC",
+            "url": "https://www.knightgroup.com/",
+            "description": "Knight Group Handyman Services LLC provides registered and insured handyman services across Safety Harbor and Pinellas County, Florida.",
+            "image": [
+                "https://www.knightgroup.com/Images/handyman.jpg",
+                "https://www.knightgroup.com/Images/KGHero.webp"
+            ],
+            "logo": "https://www.knightgroup.com/Images/KnightGroupLogo.webp",
+            "telephone": "+18136493341",
+            "email": "nknight@knightgroup.com",
+            "priceRange": "$$",
+            "hasMap": "https://maps.google.com/?cid=10508624668428370015",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1225 7th St S",
+                "addressLocality": "Safety Harbor",
+                "addressRegion": "FL",
+                "postalCode": "34695",
+                "addressCountry": "US"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 27.9906,
+                "longitude": -82.6933
+            },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "08:00",
+                    "closes": "17:00"
+                }
+            ],
+            "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Pinellas County, Florida"
+            },
+            "sameAs": [
+                "https://www.facebook.com/KnightGroupServices/",
+                "https://www.instagram.com/knight_group_services/",
+                "https://x.com/KnightGroupSvcs",
+                "https://www.tiktok.com/@knightgroupservices",
+                "https://www.pinterest.com/KnightGroupService/"
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "reviewCount": "7",
+                "bestRating": "5",
+                "worstRating": "1"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://www.knightgroup.com/#website",
+            "url": "https://www.knightgroup.com/",
+            "name": "Knight Group Handyman Services",
+            "description": "Registered and insured handyman services in Safety Harbor and Pinellas County, Florida.",
+            "publisher": {
+                "@id": "https://www.knightgroup.com/#business"
+            },
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.knightgroup.com/Services/electrical-work#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.knightgroup.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services",
+                    "item": "https://www.knightgroup.com/services"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Electrical Work Services",
+                    "item": "https://www.knightgroup.com/Services/electrical-work"
+                }
+            ]
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://www.knightgroup.com/Services/electrical-work#webpage",
+            "url": "https://www.knightgroup.com/Services/electrical-work",
+            "name": "Electrical Work &amp; Fixtures in Pinellas County FL | Knight Group",
+            "description": "Outlet installs, ceiling fans, light fixtures &amp; electrical work in Safety Harbor &amp; Pinellas County. Registered &amp; insured &mdash; free estimate, (813) 649-3341.",
+            "isPartOf": {
+                "@id": "https://www.knightgroup.com/#website"
+            },
+            "about": {
+                "@id": "https://www.knightgroup.com/#business"
+            },
+            "breadcrumb": {
+                "@id": "https://www.knightgroup.com/Services/electrical-work#breadcrumb"
+            },
+            "mainEntity": {
+                "@id": "https://www.knightgroup.com/Services/electrical-work#service"
+            },
+            "primaryImageOfPage": {
+                "@type": "ImageObject",
+                "url": "https://www.knightgroup.com/Images/electrical.jpg"
+            },
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "Service",
+            "@id": "https://www.knightgroup.com/Services/electrical-work#service",
+            "name": "Electrical Work Services",
+            "description": "Professional electrical services in Pinellas County. Outlet installation, light fixture mounting, ceiling fan installation, and electrical repairs.",
+            "provider": {
+                "@id": "https://www.knightgroup.com/#business"
+            },
+            "url": "https://www.knightgroup.com/Services/electrical-work",
+            "serviceType": "Electrical Work Services",
+            "image": "https://www.knightgroup.com/Images/electrical.jpg",
+            "areaServed": [
+                {
+                    "@type": "City",
+                    "name": "Safety Harbor, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Clearwater, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Dunedin, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Palm Harbor, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Largo, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Oldsmar, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Tarpon Springs, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Seminole, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "St. Petersburg, FL"
+                },
+                {
+                    "@type": "AdministrativeArea",
+                    "name": "Pinellas County, FL"
+                }
+            ],
+            "offers": {
+                "@type": "Offer",
+                "url": "https://www.knightgroup.com/booking",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "eligibleRegion": {
+                    "@type": "AdministrativeArea",
+                    "name": "Pinellas County, Florida"
+                }
             }
         }
     ]
