@@ -1,0 +1,8 @@
+{
+  "name": "knightgroup-website",
+  "private": true,
+  "scripts": {
+    "reviews:sync-google": "node scripts/sync-google-reviews.js",
+    "reviews:sync-google:dry-run": "node scripts/sync-google-reviews.js --dry-run"
+  }
+}
