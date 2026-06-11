@@ -1,0 +1,74 @@
+{
+  "services": [
+    {
+      "slug": "handyman",
+      "name": "Handyman Services",
+      "serviceType": "Handyman services",
+      "description": "Professional home repairs, remodeling, plumbing fixture work, drywall, carpentry, doors, windows, and general maintenance services across Pinellas County.",
+      "image": "handyman.jpg"
+    },
+    {
+      "slug": "general-repairs",
+      "name": "General Repairs",
+      "serviceType": "General home repairs",
+      "description": "Drywall patching, trim repair, caulking, sealing, fixture swaps, punch-list corrections, and mixed repair work for Pinellas County homes.",
+      "image": "general-repairs.jpg"
+    },
+    {
+      "slug": "plumbing-services",
+      "name": "Plumbing Services",
+      "serviceType": "Handyman plumbing fixture repair and minor plumbing repair",
+      "description": "Handyman-level plumbing fixture repair, faucet and showerhead swaps, shutoff valves, small leak corrections, and drain-related fixes — not licensed plumbing contractor work.",
+      "image": "plumbing.jpg"
+    },
+    {
+      "slug": "electrical-work",
+      "name": "Electrical Work",
+      "serviceType": "Handyman electrical fixture work",
+      "description": "Like-for-like outlet and switch swaps, ceiling fan installs, light fixture replacements, and minor electrical fixture work within handyman scope.",
+      "image": "electrical.jpg"
+    },
+    {
+      "slug": "carpentry-framing",
+      "name": "Carpentry & Framing",
+      "serviceType": "Carpentry and framing repairs",
+      "description": "Trim, shelving, framing repairs, subfloor corrections, custom carpentry, and structural woodwork support for residential repair projects.",
+      "image": "carpentry.jpg"
+    },
+    {
+      "slug": "painting-finishing",
+      "name": "Painting & Finishing",
+      "serviceType": "Painting and finishing",
+      "description": "Interior paint touch-ups, texture matching, trim painting, room refreshes, and finish restoration after repairs in Pinellas County homes.",
+      "image": "painting.jpg"
+    },
+    {
+      "slug": "home-renovations",
+      "name": "Home Renovations",
+      "serviceType": "Small home renovations",
+      "description": "Bathroom refreshes, flooring updates, tile work, room remodel support, and smaller renovation scopes for occupied Florida homes.",
+      "image": "renovations.jpg"
+    },
+    {
+      "slug": "doors-windows",
+      "name": "Doors & Windows",
+      "serviceType": "Door and window repair",
+      "description": "Door adjustments, hardware fixes, weatherstripping, window repairs, lock corrections, and like-for-like door and window maintenance.",
+      "image": "doors-windows.jpg"
+    },
+    {
+      "slug": "custom-projects",
+      "name": "Custom Projects",
+      "serviceType": "Custom handyman projects",
+      "description": "Built-ins, custom shelving, accent walls, specialty installs, and one-off homeowner projects that need a dependable local handyman.",
+      "image": "custom-projects.jpg"
+    },
+    {
+      "slug": "emergency-services",
+      "name": "Emergency Services",
+      "serviceType": "Emergency handyman repairs",
+      "description": "Urgent water shutoffs, temporary weatherproofing, security repairs, storm follow-up fixes, and after-hours handyman response in Pinellas County.",
+      "image": "emergency.jpg"
+    }
+  ]
+}

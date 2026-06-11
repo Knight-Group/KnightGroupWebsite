@@ -1,0 +1,18 @@
+{
+  "@type": "Person",
+  "@id": "https://www.knightgroup.com/#founder",
+  "name": "Vincent Knight",
+  "alternateName": "Vince Knight",
+  "jobTitle": "Owner",
+  "description": "Owner of Knight Group Handyman Services LLC with journeyman plumbing experience and Florida property management background.",
+  "url": "https://www.knightgroup.com/about#vince-knight",
+  "worksFor": { "@id": "https://www.knightgroup.com/#organization" },
+  "knowsAbout": [
+    "Handyman services",
+    "Minor plumbing repair",
+    "Drywall repair",
+    "Home renovations",
+    "Property maintenance",
+    "Pinellas County home repair"
+  ]
+}

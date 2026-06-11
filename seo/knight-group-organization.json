@@ -1,0 +1,19 @@
+{
+  "@type": "Organization",
+  "@id": "https://www.knightgroup.com/#organization",
+  "name": "Knight Group Handyman Services LLC",
+  "legalName": "Knight Group Handyman Services LLC",
+  "url": "https://www.knightgroup.com/",
+  "logo": "https://www.knightgroup.com/Images/KnightGroupLogo.webp",
+  "image": "https://www.knightgroup.com/Images/KnightGroupLogo.webp",
+  "email": "nknight@knightgroup.com",
+  "telephone": "+18136493341",
+  "founder": { "@id": "https://www.knightgroup.com/#founder" },
+  "sameAs": [
+    "https://www.facebook.com/KnightGroupServices/",
+    "https://www.instagram.com/knight_group_services/",
+    "https://x.com/KnightGroupSvcs",
+    "https://www.tiktok.com/@knightgroupservices",
+    "https://www.pinterest.com/KnightGroupService/"
+  ]
+}

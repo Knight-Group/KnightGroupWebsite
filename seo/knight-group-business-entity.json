@@ -3,7 +3,7 @@
   "@id": "https://www.knightgroup.com/#business",
   "name": "Knight Group Handyman Services LLC",
   "url": "https://www.knightgroup.com/",
-  "description": "Knight Group Handyman Services LLC provides registered and insured handyman services across Safety Harbor and Pinellas County, Florida.",
+  "description": "Knight Group Handyman Services LLC provides registered and insured handyman services across Safety Harbor and Pinellas County, Florida for repairs, plumbing fixture work, drywall, carpentry, painting, doors, windows, and smaller renovation projects.",
   "image": [
     "https://www.knightgroup.com/Images/handyman.jpg",
     "https://www.knightgroup.com/Images/KGHero.webp"
@@ -11,8 +11,10 @@
   "logo": "https://www.knightgroup.com/Images/KnightGroupLogo.webp",
   "telephone": "+18136493341",
   "email": "nknight@knightgroup.com",
-  "priceRange": "$$",
+  "priceRange": "$75-$200",
   "hasMap": "https://maps.google.com/?cid=10508624668428370015",
+  "parentOrganization": { "@id": "https://www.knightgroup.com/#organization" },
+  "founder": { "@id": "https://www.knightgroup.com/#founder" },
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "1225 7th St S",
@@ -34,10 +36,29 @@
       "closes": "17:00"
     }
   ],
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "Pinellas County, Florida"
-  },
+  "areaServed": [
+    { "@type": "City", "name": "Safety Harbor, FL" },
+    { "@type": "City", "name": "Clearwater, FL" },
+    { "@type": "City", "name": "Dunedin, FL" },
+    { "@type": "City", "name": "Palm Harbor, FL" },
+    { "@type": "City", "name": "Largo, FL" },
+    { "@type": "City", "name": "Oldsmar, FL" },
+    { "@type": "City", "name": "Tarpon Springs, FL" },
+    { "@type": "City", "name": "Seminole, FL" },
+    { "@type": "City", "name": "St. Petersburg, FL" },
+    { "@type": "AdministrativeArea", "name": "Pinellas County, Florida" }
+  ],
+  "knowsAbout": [
+    "Handyman services",
+    "General home repairs",
+    "Plumbing fixture repair",
+    "Drywall repair",
+    "Carpentry",
+    "Painting and finishing",
+    "Door and window repair",
+    "Home renovations",
+    "Emergency handyman repairs"
+  ],
   "sameAs": [
     "https://www.facebook.com/KnightGroupServices/",
     "https://www.instagram.com/knight_group_services/",

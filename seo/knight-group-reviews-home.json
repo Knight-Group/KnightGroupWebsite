@@ -1,0 +1,35 @@
+[
+  {
+    "@type": "Review",
+    "author": { "@type": "Person", "name": "Patricia Farrell" },
+    "datePublished": "2025-02-05",
+    "reviewBody": "Great service, fast response, Vince was really professional and the pricing was extremely fair. Very quality experience and I will definitely be recommending them to my friends and using them for future projects.",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    }
+  },
+  {
+    "@type": "Review",
+    "author": { "@type": "Person", "name": "Dan M" },
+    "datePublished": "2025-01-27",
+    "reviewBody": "By far the best plumbing experience I've had. Good communication, he arrived on time, completed the work quickly, and was professional throughout. Highly recommended!",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    }
+  },
+  {
+    "@type": "Review",
+    "author": { "@type": "Person", "name": "Nicholas Moser" },
+    "datePublished": "2025-01-20",
+    "reviewBody": "Had a pipe burst at my restaurant and Vinny showed up early and replaced it in a little over an hour. Not to mention the fact that it was the best work done in this place and at a great price. Highly recommend!",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    }
+  }
+]

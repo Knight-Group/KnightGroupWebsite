@@ -1,0 +1,295 @@
+{
+  "pages": [
+    {
+      "page": "index.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "services.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "HomeAndConstructionBusiness",
+        "ItemList",
+        "Organization",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "pricing.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "OfferCatalog",
+        "Organization",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "booking.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactAction",
+        "ContactPage",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "Service",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "contact.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactAction",
+        "ContactPage",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "about.html",
+      "status": "ok",
+      "types": [
+        "AboutPage",
+        "BreadcrumbList",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "galleries.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "CreativeWork",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "ImageGallery",
+        "ImageObject",
+        "Organization",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "service-areas.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "pinellas-handyman.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "clearwater-handyman.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "Services/carpentry-framing.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "Services/custom-projects.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "Services/doors-windows.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "Services/electrical-work.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "Services/emergency-services.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "Services/general-repairs.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "Services/handyman.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "Services/home-renovations.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "Services/painting-finishing.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "Services/plumbing-services.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    }
+  ],
+  "failed": 0
+}
