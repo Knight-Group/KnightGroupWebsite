@@ -48,7 +48,7 @@ class HTMLInclude {
     ensureKgMotionAssets() {
         const pathPrefix = window.location.pathname.includes('/Services/') ||
             window.location.pathname.includes('/PolicyPages/') ? '../' : '';
-        const motionVersion = '20260611-glow-shimmer';
+        const motionVersion = '20260611-mobile-call-text';
 
         if (!document.getElementById('kg-redesign-css') && !document.querySelector('link[href*="kg-redesign.css"]')) {
             const link = document.createElement('link');

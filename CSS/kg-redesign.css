@@ -2403,11 +2403,15 @@ body:has(main.kg-home) {
 @media (max-width: 900px) {
   .kg-recent-jobs-intro {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+  }
+
+  .kg-recent-jobs-intro__copy {
+    width: 100%;
   }
 
   .kg-logo-coin {
-    align-self: flex-end;
+    align-self: center;
     margin-top: 0;
   }
 }
@@ -4755,16 +4759,38 @@ footer.kg-site-footer .footer-contact__phone .header-btn-primary.kg-header-call 
 
   header a.header-btn-primary.kg-header-call {
     display: inline-flex !important;
-    gap: 0;
+    align-items: center;
+    gap: 0.4rem;
     min-height: 0;
+    min-width: 0;
+    flex-shrink: 1;
   }
 
   header a.header-btn-primary.kg-header-call .kg-header-call__text {
-    display: none !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+  }
+
+  header a.header-btn-primary.kg-header-call .kg-header-call__label {
+    font-size: 0.48rem;
+    letter-spacing: 0.08em;
+  }
+
+  header a.header-btn-primary.kg-header-call .kg-header-call__number {
+    font-size: clamp(0.66rem, 2.8vw, 0.78rem);
+    white-space: nowrap;
   }
 
   header .kg-header-call__icon {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+
+  header .kg-header-call__icon svg {
+    width: 16px;
+    height: 16px;
   }
 }
