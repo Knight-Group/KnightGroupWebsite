@@ -19,9 +19,29 @@ Google returns **429 quota-blocked** on the account-list API when called too oft
 
 ## How to get the IDs (one time)
 
-1. Open [Google Business Profile](https://business.google.com/) for Knight Group.
-2. Or run account discovery once when quota resets (script prints `accounts/...` and `locations/...`).
-3. Paste the two `KNIGHTGROUP_*` lines into `accounts.env`.
+### Location ID (confirmed 2026-06-11)
+
+Knight Group → GBP **Advanced settings** → **Business Profile ID** (for Support):
+
+```
+15551195498878135337
+```
+
+Map to:
+
+```env
+KNIGHTGROUP_GBP_LOCATION_NAME=locations/15551195498878135337
+```
+
+### Account ID
+
+Still required for review sync. Options:
+
+1. Run `npm run reviews:sync-google:dry-run` when Google lifts API quota (prints `accounts/...`).
+2. Ask Google Support for the **Account ID** when contacting them (give them the Business Profile ID above).
+3. After enabling `mybusiness.googleapis.com` in GCP, try `KNIGHTGROUP_GBP_ACCOUNT_NAME=accounts/-` (wildcard) — the reviews endpoint accepted that path shape in testing.
+
+Paste both `KNIGHTGROUP_*` lines into `C:\Users\nknig\.copilot-secrets\accounts.env`.
 4. Run: `npm run reviews:sync-google`
 5. Commit `data/google-reviews.json` when the feed updates (or let the weekly growth script refresh it).
 
