@@ -1,77 +1,37 @@
 # Knight Group Handyman Services LLC
-> Professional, registered & insured handyman services in Pinellas County, FL. Serving Safety Harbor, Clearwater, Dunedin, Palm Harbor, Largo, Tarpon Springs, and surrounding areas. 15+ years of experience.
+# https://www.knightgroup.com
 
-## Contact
-- Website: https://www.knightgroup.com
-- Phone: +1-813-649-3341
-- Email: nknight@knightgroup.com
-- Address: 7th St S, Safety Harbor, FL 34695
-- Service Area: Pinellas County, FL (Safety Harbor, Clearwater, Dunedin, Palm Harbor, Largo, Tarpon Springs, Oldsmar)
-- Hours: Mon–Fri 8AM–5PM | Emergency: 24/7
+> Registered and insured handyman services in Safety Harbor and Pinellas County, Florida.
+> Free written estimates. Call or text (813) 649-3341.
 
-## Services
-
-### General Repairs
-Drywall repair, hole patching, leak fixes, caulking, door hardware, cabinet adjustments, and general home maintenance throughout Pinellas County.
-URL: https://www.knightgroup.com/Services/general-repairs
-
-### Plumbing Services
-Faucet and fixture replacement, toilet repair, shutoff valve replacement, water heater installation, drain clearing throughout Pinellas County.
-URL: https://www.knightgroup.com/Services/plumbing-services
-
-### Electrical Work
-Outlet replacement, GFCI installation, ceiling fan installation, light fixture swaps, switch replacement throughout Pinellas County.
-URL: https://www.knightgroup.com/Services/electrical-work
-
-### Carpentry & Framing
-Custom shelving, cabinet installation, trim and molding, door frame repair, deck repairs, wood rot replacement throughout Pinellas County.
-URL: https://www.knightgroup.com/Services/carpentry-framing
-
-### Painting & Finishing
-Interior and exterior painting, texture matching, drywall finishing, priming, and accent walls throughout Pinellas County.
-URL: https://www.knightgroup.com/Services/painting-finishing
-
-### Home Renovations
-Bathroom remodels, kitchen updates, flooring installation (LVP, tile, laminate), fixture upgrades throughout Pinellas County.
-URL: https://www.knightgroup.com/Services/home-renovations
-
-### Doors & Windows
-Exterior door installation, storm door install, window replacement, frame repair, weatherstripping throughout Pinellas County.
-URL: https://www.knightgroup.com/Services/doors-windows
-
-### Custom Projects
-Built-in shelves, entertainment centers, closet systems, outdoor storage, window seats, and specialty woodworking throughout Pinellas County.
-URL: https://www.knightgroup.com/Services/custom-projects
-
-### Emergency Services (24/7)
-Around-the-clock emergency home repairs for burst pipes, active leaks, storm damage, broken doors, and urgent electrical issues in Pinellas County.
-URL: https://www.knightgroup.com/Services/emergency-services
-
-### Handyman Services (General)
-Professional handyman services for all home repair and maintenance needs in Pinellas County, FL.
-URL: https://www.knightgroup.com/Services/handyman
-
-## Key Pages
-- Homepage: https://www.knightgroup.com/
-- About: https://www.knightgroup.com/about
-- Contact / Free Estimate: https://www.knightgroup.com/contact
+## Primary pages
+- Home: https://www.knightgroup.com/
+- Services hub: https://www.knightgroup.com/services
+- Book estimate: https://www.knightgroup.com/booking
 - Pricing: https://www.knightgroup.com/pricing
-- Photo Galleries: https://www.knightgroup.com/galleries
-- Service Areas: https://www.knightgroup.com/service-areas
-- Privacy Policy: https://www.knightgroup.com/PolicyPages/privacy-policy.html
-- Terms of Service: https://www.knightgroup.com/PolicyPages/terms.html
+- Contact: https://www.knightgroup.com/contact
+- About: https://www.knightgroup.com/about
+- Gallery: https://www.knightgroup.com/galleries
+- Service areas: https://www.knightgroup.com/service-areas
 
-## Business Details
-- Legal Name: Knight Group Handyman Services LLC
-- State: Florida
-- Registration: Registered & Insured
-- Founded: 2010 (15+ years experience)
-- GBP Place ID: ChIJ5wmsGV3uwogRPOLGYleA0Zg
-- Google Maps: https://maps.google.com/?cid=10508624668428370015
+## Service categories
+- Handyman: https://www.knightgroup.com/Services/handyman
+- General repairs: https://www.knightgroup.com/Services/general-repairs
+- Plumbing: https://www.knightgroup.com/Services/plumbing-services
+- Electrical: https://www.knightgroup.com/Services/electrical-work
+- Carpentry & framing: https://www.knightgroup.com/Services/carpentry-framing
+- Painting & finishing: https://www.knightgroup.com/Services/painting-finishing
+- Home renovations: https://www.knightgroup.com/Services/home-renovations
+- Doors & windows: https://www.knightgroup.com/Services/doors-windows
+- Custom projects: https://www.knightgroup.com/Services/custom-projects
+- Emergency services: https://www.knightgroup.com/Services/emergency-services
 
-## Social Media
-- Facebook: https://www.facebook.com/KnightGroupServices/
-- Instagram: https://www.instagram.com/knight_group_services/
-- X (Twitter): https://x.com/KnightGroupSvcs
-- TikTok: https://www.tiktok.com/@knightgroupservices
-- Pinterest: https://www.pinterest.com/KnightGroupServices
+## Local landing pages
+- Pinellas handyman: https://www.knightgroup.com/pinellas-handyman
+- Clearwater handyman: https://www.knightgroup.com/clearwater-handyman
+
+## Business facts
+- Phone: (813) 649-3341
+- Email: nknight@knightgroup.com
+- Service area: Safety Harbor, Clearwater, Dunedin, Palm Harbor, Largo, Oldsmar, Seminole, St. Petersburg, Pinellas County FL
+- Sitemap: https://www.knightgroup.com/sitemap.xml

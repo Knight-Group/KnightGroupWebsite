@@ -14,6 +14,18 @@
         return;
     }
 
+    var legacyFurniturePath = /\/Services\/handcraftedfurniture(?:%26|&)resins(?:\.html)?$/i;
+    if (legacyFurniturePath.test(path)) {
+        window.location.replace('/Services/custom-projects' + window.location.search + window.location.hash);
+        return;
+    }
+
+    // /Services/ directory index stub → real services hub
+    if (/^\/Services\/?$/i.test(path) || /\/Services\/index\.html$/i.test(path)) {
+        window.location.replace('/services' + window.location.search + window.location.hash);
+        return;
+    }
+
     var lowercaseServicesPath = path.match(/^\/services\/([^/]+)\/?$/);
     if (lowercaseServicesPath) {
         window.location.replace('/Services/' + lowercaseServicesPath[1] + window.location.search + window.location.hash);

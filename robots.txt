@@ -1,4 +1,6 @@
 User-agent: *
+Allow: /
+
 Disallow: /404
 Disallow: /404.html
 Disallow: /header
@@ -13,13 +15,22 @@ Disallow: /page-template
 Disallow: /page-template.html
 Disallow: /thank-you
 Disallow: /thank-you.html
+Disallow: /Chess-Game-main/
+Disallow: /scripts/
+Disallow: /seo-audit/
+Disallow: /gsc-export-2026-06-03/
 Disallow: /PolicyPages/payment-policy-test
 Disallow: /PolicyPages/payment-policy-test.html
 Disallow: /JS/header
 Disallow: /JS/header.html
 Disallow: /JS/footer
 Disallow: /JS/footer.html
-# Keep canonical duplicates crawlable so search engines can consolidate onto the clean URLs.
-# Index control for legal and utility pages is handled with page-level robots directives.
+Disallow: /Services/index.html
+Disallow: /Services/programming&databases
+Disallow: /Services/programming%26databases
+Disallow: /Services/handcraftedfurniture&resins
+Disallow: /Services/handcraftedfurniture%26resins
+
+# Policy pages use noindex on-page; kept crawlable for link discovery only.
 
 Sitemap: https://www.knightgroup.com/sitemap.xml
