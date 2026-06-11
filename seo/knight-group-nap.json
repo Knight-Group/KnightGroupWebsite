@@ -1,0 +1,21 @@
+{
+  "name": "Knight Group Handyman Services LLC",
+  "serviceArea": "Safety Harbor, FL / Pinellas County service area",
+  "phoneDisplay": "(813) 649-3341",
+  "phoneTel": "+18136493341",
+  "email": "nknight@knightgroup.com",
+  "website": "https://www.knightgroup.com/",
+  "address": {
+    "streetAddress": "1225 7th St S",
+    "addressLocality": "Safety Harbor",
+    "addressRegion": "FL",
+    "postalCode": "34695",
+    "addressCountry": "US"
+  },
+  "deprecatedPhones": [
+    "727-215-7685",
+    "727 215 7685",
+    "(727) 215-7685",
+    "+17272157685"
+  ]
+}
