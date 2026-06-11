@@ -11,7 +11,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 REQUIREMENTS: dict[str, set[str]] = {
-    "index.html": {"Organization", "HomeAndConstructionBusiness", "WebSite", "WebPage", "BreadcrumbList"},
+    "index.html": {
+        "Organization",
+        "HomeAndConstructionBusiness",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "ContactPoint",
+    },
     "services.html": {
         "Organization",
         "HomeAndConstructionBusiness",
@@ -75,6 +82,14 @@ def load_types(path: Path) -> tuple[set[str], list[str]]:
             action = node.get("potentialAction")
             if isinstance(action, dict) and action.get("@type"):
                 types.add(action["@type"])
+            contact_point = node.get("contactPoint")
+            if contact_point:
+                if isinstance(contact_point, list):
+                    for item in contact_point:
+                        if isinstance(item, dict) and item.get("@type"):
+                            types.add(item["@type"])
+                elif isinstance(contact_point, dict) and contact_point.get("@type"):
+                    types.add(contact_point["@type"])
 
     return types, issues
 
