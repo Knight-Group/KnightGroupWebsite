@@ -20,8 +20,8 @@
         return;
     }
 
-    // /Services/ directory index stub → real services hub
-    if (/^\/Services\/?$/i.test(path) || /\/Services\/index\.html$/i.test(path)) {
+    // Capital-S /Services/ folder stub only — do NOT use /i or /services hub loops forever
+    if (path === '/Services' || path === '/Services/' || /^\/Services\/index\.html$/i.test(path)) {
         window.location.replace('/services' + window.location.search + window.location.hash);
         return;
     }
