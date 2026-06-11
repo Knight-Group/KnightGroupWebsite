@@ -1,0 +1,150 @@
+{
+  "serper_research": "seo/serp-meta-research.json",
+  "serper_generated_at": "2026-06-11T17:27:14+00:00",
+  "pages": [
+    {
+      "path": "index.html",
+      "gsc_queries": ["knight group", "knightgroup", "handyman pinellas county"],
+      "serper_note": "Brand queries are noisy (auto/real estate). Lead with Handyman + Safety Harbor to disambiguate.",
+      "description": "Knight Group Handyman Services in Safety Harbor & Pinellas County. Repairs, plumbing, drywall & paint. Free estimate."
+    },
+    {
+      "path": "Services/handyman.html",
+      "gsc_queries": ["handyman company pinellas", "handyman pinellas county fl", "handyman near me small jobs"],
+      "serper_note": "Mr. Handyman and Handyman Company dominate. Differentiate with small jobs and no minimum.",
+      "description": "Pinellas County handyman company. Small jobs, no 2-hour minimum. Safety Harbor based. Free estimate."
+    },
+    {
+      "path": "Services/plumbing-services.html",
+      "gsc_queries": ["sink repair clearwater", "plumbing services in pinellas county", "plumbing repair"],
+      "serper_note": "Licensed plumbers own generic plumbing SERPs. Position fixture-level handyman plumbing.",
+      "description": "Handyman sink & faucet repairs in Clearwater & Pinellas County. Fixture work, not repipes. Free estimate."
+    },
+    {
+      "path": "about.html",
+      "gsc_queries": ["knight group", "knight services llc", "knights handyman services"],
+      "serper_note": "Ranks #1 for knight group handyman. Support brand trust and local owner story.",
+      "description": "About Knight Group: registered Safety Harbor handyman business serving Pinellas County with 15+ years of experience."
+    },
+    {
+      "path": "contact.html",
+      "gsc_queries": ["knight group contact"],
+      "serper_note": "Ranks #1 for knight group handyman contact.",
+      "description": "Contact Knight Group in Safety Harbor & Pinellas County. Call, text, or email for service-area checks & quick questions."
+    },
+    {
+      "path": "booking.html",
+      "gsc_queries": ["knight group estimate"],
+      "serper_note": "Estimate-intent page. Keep short form CTA.",
+      "description": "Book a free handyman estimate in Safety Harbor & Pinellas County. Quick form for name, phone, location & project details."
+    },
+    {
+      "path": "Services/general-repairs.html",
+      "gsc_queries": ["handyman pinellas county", "general repairs"],
+      "serper_note": "Ranks #9 for general home repairs pinellas.",
+      "description": "Drywall, leaks, doors & punch-list repairs in Safety Harbor & Pinellas County. Practical home fixes. Free estimate."
+    },
+    {
+      "path": "galleries.html",
+      "gsc_queries": ["knight group projects"],
+      "serper_note": "Ranks #5 for handyman projects pinellas county. Proof-focused snippet.",
+      "description": "Handyman project photos in Pinellas County: bathroom updates, drywall, plumbing & before-and-after proof."
+    },
+    {
+      "path": "service-areas.html",
+      "gsc_queries": ["handyman pinellas county"],
+      "serper_note": "Ranks #6 for service areas query.",
+      "description": "Handyman service areas in Pinellas County: Safety Harbor, Clearwater, Dunedin, Palm Harbor & Largo. Confirm your city."
+    },
+    {
+      "path": "pinellas-handyman.html",
+      "gsc_queries": ["handyman pinellas county", "handyman company pinellas"],
+      "serper_note": "Geo landing page for county-wide handyman intent.",
+      "description": "Handyman company in Pinellas County FL. Safety Harbor, Clearwater, Dunedin & nearby cities. Free estimates."
+    },
+    {
+      "path": "clearwater-handyman.html",
+      "gsc_queries": ["sink repair clearwater", "clearwater handyman"],
+      "serper_note": "Sink repair SERP is plumber-heavy. Lead with Clearwater + Pinellas handyman scope.",
+      "description": "Clearwater handyman in Pinellas County. Sink repairs, fixtures, drywall & punch-list work. Free estimate."
+    },
+    {
+      "path": "services.html",
+      "gsc_queries": ["handyman services pinellas county"],
+      "serper_note": "Hub page for service discovery.",
+      "description": "Handyman services in Pinellas County: repairs, plumbing, electrical, carpentry, painting, doors, windows & more."
+    },
+    {
+      "path": "pricing.html",
+      "gsc_queries": ["handyman near me prices"],
+      "serper_note": "Pricing transparency is the CTR hook.",
+      "description": "Handyman pricing in Safety Harbor & Pinellas County. $150 first hour, $75 after. No 2-hour minimum. Free estimates."
+    },
+    {
+      "path": "Services/carpentry-framing.html",
+      "gsc_queries": ["carpentry services near me"],
+      "serper_note": "Local carpentry SERP mixes directories and contractors.",
+      "description": "Carpentry & framing in Safety Harbor & Pinellas County. Trim, shelving, built-ins & wood repair. Free estimate."
+    },
+    {
+      "path": "Services/doors-windows.html",
+      "gsc_queries": ["door repair pinellas county"],
+      "serper_note": "Door/window repair local intent.",
+      "description": "Door & window repair in Safety Harbor & Pinellas County. Install, adjustment & screen work. Free estimate."
+    },
+    {
+      "path": "Services/electrical-work.html",
+      "gsc_queries": ["electrical handyman near me"],
+      "serper_note": "Stay inside handyman electrical fixture scope.",
+      "description": "Electrical fixture work in Pinellas County. Outlets, fans, switches & light installs within handyman scope."
+    },
+    {
+      "path": "Services/emergency-services.html",
+      "gsc_queries": ["emergency handyman pinellas"],
+      "serper_note": "Urgency + phone CTA.",
+      "description": "Emergency handyman in Safety Harbor & Pinellas County. Urgent leaks, damage & structural fixes. Call (813) 649-3341."
+    },
+    {
+      "path": "Services/home-renovations.html",
+      "gsc_queries": ["small home renovations pinellas"],
+      "serper_note": "Smaller renovation scope, not GC positioning.",
+      "description": "Small home renovations in Safety Harbor & Pinellas County. Bathroom updates, flooring, tile & room refreshes."
+    },
+    {
+      "path": "Services/painting-finishing.html",
+      "gsc_queries": ["painting handyman pinellas"],
+      "serper_note": "Painting + finishing local intent.",
+      "description": "Painting & finishing in Safety Harbor & Pinellas County. Interior/exterior touch-ups, drywall prep & trim work."
+    },
+    {
+      "path": "Services/custom-projects.html",
+      "gsc_queries": ["custom handyman projects"],
+      "serper_note": "Custom project differentiation.",
+      "description": "Custom handyman projects in Pinellas County. Built-ins, storage, media walls & specialty installs. Free estimate."
+    },
+    {
+      "path": "PolicyPages/privacy-policy.html",
+      "gsc_queries": [],
+      "serper_note": "",
+      "description": "Knight Group privacy policy for handyman services in Safety Harbor and Pinellas County, Florida."
+    },
+    {
+      "path": "PolicyPages/terms.html",
+      "gsc_queries": [],
+      "serper_note": "",
+      "description": "Knight Group terms of service for handyman repairs and projects in Safety Harbor and Pinellas County, Florida."
+    },
+    {
+      "path": "PolicyPages/payment-policy.html",
+      "gsc_queries": [],
+      "serper_note": "",
+      "description": "Knight Group payment policy: accepted methods, billing terms, and payment options for Pinellas County handyman work."
+    },
+    {
+      "path": "PolicyPages/returnpolicy.html",
+      "gsc_queries": [],
+      "serper_note": "",
+      "description": "Knight Group 30-day workmanship guarantee for handyman services in Safety Harbor and Pinellas County, Florida."
+    }
+  ]
+}
