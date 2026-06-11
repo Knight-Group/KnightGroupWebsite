@@ -20,6 +20,11 @@
             return;
         }
 
+        if (path === '/services/' || path === '/services/index.html') {
+            window.location.replace('/services' + search + hash);
+            return;
+        }
+
         var lowercaseServicesPath = path.match(/^\/services\/([^/]+)\/?$/);
         if (lowercaseServicesPath) {
             window.location.replace('/Services/' + lowercaseServicesPath[1] + search + hash);

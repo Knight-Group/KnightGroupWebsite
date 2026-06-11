@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="kg-js">
 <head>
     <script>window.dataLayer = window.dataLayer || [];</script>
@@ -248,8 +248,8 @@
     <link rel="preload" as="font" href="https://fonts.gstatic.com/s/playfairdisplay/v40/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiunDXbtM.woff2" crossorigin>
     <style>@font-face{font-family:'Playfair Display';font-style:normal;font-weight:700;font-display:optional;src:url('https://fonts.gstatic.com/s/playfairdisplay/v40/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiunDXbtM.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
 
-    <link rel="stylesheet" href="../CSS/header.min.css?v=20260610-service-polish">
-    <link rel="stylesheet" href="../CSS/kg-redesign.css?v=20260611-header-call-fix">
+    <link rel="stylesheet" href="../CSS/header.min.css?v=20260611-wave-a11y">
+    <link rel="stylesheet" href="../CSS/kg-redesign.css?v=20260611-wave-a11y">
     <script src="../JS/kg-redesign.js?v=20260610-service-polish" defer></script>
     <script>window.addEventListener('load',function(){setTimeout(function(){var l=document.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional';document.head.appendChild(l)},1500)})</script>
 </head>
@@ -300,7 +300,7 @@
                 <div class="kg-shell">
                     <div class="kg-service-layout">
                         <div class="kg-service-prose" data-kg-enter="left">
-                            <h2>Room updates, flooring, tile, and finish improvements</h2>
+                            <h2 id="home-renovations-detail-heading">Room updates, flooring, tile, and finish improvements</h2>
                     <p>Knight Group focuses on smaller renovation scopes that improve how a room looks, functions, and holds up over time. This page is for projects that are more involved than a one-off repair, but do not need a broad general-contractor buildout.</p>
 
                     <h3>Our smaller renovation services include:</h3>
@@ -348,7 +348,7 @@
 
                         <aside class="kg-service-sidebar" data-kg-enter="right" aria-labelledby="home-renovations-sidebar-heading">
                             <div class="kg-pricing-sidebar-form">
-                                <h4 id="home-renovations-sidebar-heading">Get your free estimate</h4>
+                                <h2 class="kg-sidebar-title" id="home-renovations-sidebar-heading">Get your free estimate</h2>
                                 <p>Send the basics and we will follow up with clear pricing for your Pinellas County project.</p>
                                 <form class="kg-contact-form" action="https://formspree.io/f/xzzvnpne" method="POST">
                                     <div class="kg-field">
@@ -366,13 +366,13 @@
                                     <input type="hidden" name="_subject" value="Knight Group Home Renovations Estimate Request">
                                     <input type="hidden" name="request_type" value="Home Renovations / Estimate Request">
                                     <input type="hidden" name="_next" value="https://www.knightgroup.com/thank-you">
-                                    <input class="kg-hp" type="text" name="address_2" autocomplete="off" tabindex="-1" aria-hidden="true">
+                                    <label class="visually-hidden" for="kg-hp-field">Leave this field blank</label><input class="kg-hp" id="kg-hp-field" type="text" name="address_2" autocomplete="off" tabindex="-1">
                                     <button type="submit" class="kg-contact-form__submit">Get free estimate</button>
                                 </form>
                             </div>
 
                             <div class="pricing-highlights">
-                                <h4>Why homeowners choose Knight Group</h4>
+                                <h3>Why homeowners choose Knight Group</h3>
                                 <ul>
                                     <li>No 2-hour minimums</li>
                                     <li>Transparent, upfront pricing</li>
@@ -486,6 +486,6 @@
 
     <div id="footer-include"></div>
 
-    <script src="../JS/includes.min.js?v=20260610-service-polish" defer></script>
+    <script src="../JS/includes.min.js?v=20260611-wave-a11y" defer></script>
 </body>
 </html>

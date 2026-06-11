@@ -1,6 +1,8 @@
 <style>
 /* Knight Group footer — matches homepage dark band theme */
 footer.kg-site-footer {
+  --kg-footer-link: #9a2f2f;
+  --kg-footer-link-hover: #ffffff;
   background:
     radial-gradient(circle at 12% 0, rgba(154, 47, 47, 0.16), transparent 28%),
     radial-gradient(circle at 88% 12%, rgba(111, 32, 36, 0.12), transparent 24%),
@@ -118,7 +120,7 @@ footer.kg-site-footer .footer-links {
 }
 
 footer.kg-site-footer .footer-links a {
-  color: rgba(255, 235, 235, 0.82);
+  color: var(--kg-footer-link);
   text-decoration: none;
   font-weight: 600;
   font-size: 0.94rem;
@@ -131,7 +133,7 @@ footer.kg-site-footer .footer-links a {
 
 footer.kg-site-footer .footer-links a:hover,
 footer.kg-site-footer .footer-links a:focus-visible {
-  color: #fff;
+  color: var(--kg-footer-link-hover);
   transform: translateX(4px);
   outline: none;
 }
@@ -158,23 +160,24 @@ footer.kg-site-footer .footer-contact p {
 footer.kg-site-footer .footer-contact .contact-icon {
   flex: 0 0 auto;
   min-width: 48px;
-  font-size: 0.78rem;
+  font-size: 0.875rem;
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: rgba(245, 214, 214, 0.9);
+  color: var(--kg-footer-link);
 }
 
 footer.kg-site-footer .footer-email-link {
-  color: #f5d6d6;
+  color: var(--kg-footer-link);
   font-weight: 700;
   text-decoration: none;
   word-break: break-word;
+  transition: color 0.2s ease;
 }
 
 footer.kg-site-footer .footer-email-link:hover,
 footer.kg-site-footer .footer-email-link:focus-visible {
-  color: #fff;
+  color: var(--kg-footer-link-hover);
   text-decoration: underline;
   outline: none;
 }
@@ -229,9 +232,9 @@ footer.kg-site-footer .footer-legal nav {
 }
 
 footer.kg-site-footer .footer-legal a {
-  color: rgba(255, 235, 235, 0.78);
+  color: var(--kg-footer-link);
   text-decoration: none;
-  font-size: 0.88rem;
+  font-size: 0.9375rem;
   font-weight: 600;
   padding: 6px 4px;
   white-space: nowrap;
@@ -240,13 +243,13 @@ footer.kg-site-footer .footer-legal a {
 
 footer.kg-site-footer .footer-legal a:hover,
 footer.kg-site-footer .footer-legal a:focus-visible {
-  color: #fff;
+  color: var(--kg-footer-link-hover);
   outline: none;
 }
 
 footer.kg-site-footer .footer-legal span[aria-hidden="true"] {
   color: rgba(255, 255, 255, 0.28);
-  font-size: 0.82rem;
+  font-size: 0.875rem;
   user-select: none;
 }
 

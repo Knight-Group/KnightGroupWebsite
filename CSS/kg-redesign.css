@@ -750,17 +750,22 @@ html.kg-js [data-kg-enter].is-visible {
   background: linear-gradient(135deg, rgba(255, 250, 247, 0.98), rgba(255, 239, 226, 0.96));
 }
 
+.pricing-rate-card__label,
 .pricing-rate-card span {
+  margin: 0;
   color: var(--kg-red);
-  font-size: 0.76rem;
+  font-size: 0.8125rem;
   font-weight: 900;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
+.pricing-rate-card__amount,
 .pricing-rate-card strong {
+  margin: 0;
   font-size: clamp(1.55rem, 3vw, 2.15rem);
   line-height: 1.05;
+  font-weight: 800;
 }
 
 .pricing-rate-card p {
@@ -800,14 +805,17 @@ html.kg-js [data-kg-enter].is-visible {
   transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
-.kg-pricing-page .pricing-snapshot__grid strong {
+.kg-pricing-page .pricing-snapshot__grid strong,
+.kg-pricing-page .pricing-snapshot__title {
   font-size: 1rem;
+  font-weight: 800;
+  color: #fff;
 }
 
-.kg-pricing-page .pricing-snapshot__grid span {
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 0.88rem;
-  font-weight: 700;
+.kg-pricing-page .pricing-snapshot__grid a > span:not(.pricing-snapshot__title) {
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .kg-pricing-page .pricing-snapshot__grid a:hover,
@@ -889,10 +897,14 @@ html.kg-js [data-kg-enter].is-visible {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
+.kg-pricing-page .pricing-highlights h3,
 .kg-pricing-page .pricing-highlights h4,
+.kg-service-sidebar .pricing-highlights h3,
 .kg-service-sidebar .pricing-highlights h4 {
   color: #fff;
-  margin-bottom: 12px;
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+  font-weight: 800;
 }
 
 .kg-pricing-page .pricing-sidebar p,
@@ -903,7 +915,7 @@ html.kg-js [data-kg-enter].is-visible {
 
 .kg-pricing-page .pricing-sidebar a:not(.kg-call-cta),
 .kg-service-sidebar a:not(.kg-call-cta):not(.header-btn-primary) {
-  color: #f5d6d6;
+  color: #fce8e8;
   font-weight: 700;
 }
 
@@ -958,9 +970,9 @@ html.kg-js [data-kg-enter].is-visible {
 
 .kg-pricing-page .visit-package-kicker {
   display: inline-block;
-  margin-bottom: 10px;
-  color: #d6b57a;
-  font-size: 0.82rem;
+  margin: 0 0 10px;
+  color: #e8c992;
+  font-size: 0.875rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -995,7 +1007,7 @@ html.kg-js [data-kg-enter].is-visible {
 
 .kg-pricing-page .visit-package-subprice {
   margin: 6px 0 0;
-  color: #5d4f50;
+  color: #453b3d;
   font-size: 0.96rem;
   font-weight: 700;
 }
@@ -1408,11 +1420,14 @@ html.kg-js [data-kg-enter].is-visible {
   overflow: hidden;
 }
 
-.kg-pricing-sidebar-form h4 {
+.kg-pricing-sidebar-form h4,
+.kg-pricing-sidebar-form .kg-sidebar-title {
   margin: 0 0 8px;
   color: var(--kg-red-dark);
   font-family: "Playfair Display", Georgia, serif;
   font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .kg-pricing-sidebar-form > p {
@@ -1892,8 +1907,8 @@ body:has(main.kg-home) {
 
 .kg-local-trust .kg-review-sub,
 .kg-about-reviews .kg-review-sub {
-  color: #666;
-  font-size: 0.8rem;
+  color: #595959;
+  font-size: 0.875rem;
 }
 
 .kg-local-trust .kg-stars,
@@ -1916,8 +1931,8 @@ body:has(main.kg-home) {
 
 .kg-local-trust .kg-review-date,
 .kg-about-reviews .kg-review-date {
-  color: #767676;
-  font-size: 0.8rem;
+  color: #5c5c5c;
+  font-size: 0.875rem;
   margin-top: auto;
 }
 
@@ -2045,17 +2060,17 @@ body:has(main.kg-home) {
   }
 
   .kg-map-overlay strong {
-    font-size: 0.74rem;
+    font-size: 0.8125rem;
     line-height: 1.15;
   }
 
   .kg-map-overlay span {
-    font-size: 0.68rem;
+    font-size: 0.75rem;
     line-height: 1.2;
   }
 
   .kg-map-rating {
-    font-size: 0.68rem !important;
+    font-size: 0.75rem !important;
     letter-spacing: 0.01em;
   }
 }
@@ -2071,7 +2086,7 @@ body:has(main.kg-home) {
   }
 
   .kg-map-overlay strong {
-    font-size: 0.66rem;
+    font-size: 0.75rem;
     line-height: 1.12;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -2080,7 +2095,7 @@ body:has(main.kg-home) {
   }
 
   .kg-map-overlay span {
-    font-size: 0.6rem;
+    font-size: 0.6875rem;
     line-height: 1.15;
   }
 
@@ -3304,8 +3319,8 @@ footer.kg-site-footer .footer-contact__phone .header-btn-primary.kg-header-call 
   padding: 10px 16px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.14);
-  color: rgba(255, 255, 255, 0.92);
-  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.96);
+  font-size: 0.875rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -3563,8 +3578,8 @@ footer.kg-site-footer .footer-contact__phone .header-btn-primary.kg-header-call 
 
 .kg-about-metric span {
   display: block;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: clamp(0.8rem, 1.1vw, 0.92rem);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(0.875rem, 1.1vw, 0.95rem);
   font-weight: 700;
   line-height: 1.4;
   max-width: 16ch;
@@ -3620,8 +3635,8 @@ footer.kg-site-footer .footer-contact__phone .header-btn-primary.kg-header-call 
 }
 
 .kg-about-founder__role {
-  color: #f5d6d6;
-  font-size: 0.98rem;
+  color: #f0d8d8;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 18px;
 }
@@ -3741,7 +3756,7 @@ footer.kg-site-footer .footer-contact__phone .header-btn-primary.kg-header-call 
 }
 
 .kg-about-stack .kg-about-prose a {
-  color: #f5d6d6;
+  color: #fce8e8;
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -4050,56 +4065,75 @@ footer.kg-site-footer .footer-contact__phone .header-btn-primary.kg-header-call 
 .kg-services-hub-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  grid-auto-rows: minmax(220px, auto);
+  gap: clamp(16px, 2vw, 20px);
+  align-items: stretch;
 }
 
 .kg-services-hub-card {
+  position: relative;
+  z-index: 0;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  min-height: 100%;
+  justify-content: space-between;
+  gap: 14px;
+  min-width: 0;
+  min-height: 220px;
+  height: auto;
   padding: clamp(22px, 2.5vw, 28px);
   border-radius: 18px;
   border: 1px solid rgba(240, 196, 196, 0.14);
-  background: rgba(24, 18, 19, 0.62);
+  background: rgba(24, 18, 19, 0.82);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  color: inherit;
   text-decoration: none;
-  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+  overflow: hidden;
+  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .kg-services-hub-card:hover,
 .kg-services-hub-card:focus-visible {
+  z-index: 1;
   transform: translateY(-2px);
   border-color: rgba(240, 196, 196, 0.32);
-  background: rgba(34, 24, 26, 0.82);
+  background: rgba(34, 24, 26, 0.92);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.28);
 }
 
 .kg-services-hub-card strong {
+  display: block;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: 1.28rem;
+  font-size: clamp(1.12rem, 1.5vw, 1.28rem);
   color: #f5d6d6;
-  line-height: 1.15;
+  line-height: 1.2;
 }
 
 .kg-services-hub-card span {
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
   color: rgba(255, 255, 255, 0.72);
   font-size: 0.96rem;
   line-height: 1.65;
-  flex: 1;
 }
 
 .kg-services-hub-card em {
+  display: block;
+  margin-top: auto;
   color: #fff;
   font-style: normal;
   font-size: 0.88rem;
   font-weight: 800;
+  letter-spacing: 0.01em;
 }
 
 .kg-services-hub-metrics {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: minmax(0, auto);
   gap: 16px;
   margin-top: clamp(28px, 4vw, 40px);
+  align-items: stretch;
 }
 
 .kg-services-hub-metric {
@@ -4135,6 +4169,15 @@ footer.kg-site-footer .footer-contact__phone .header-btn-primary.kg-header-call 
 .kg-services-hub-stack .kg-section-tag {
   background: rgba(154, 47, 47, 0.22);
   color: #f5d6d6;
+}
+
+.kg-services-hub-stack .kg-heading-block h2,
+.kg-services-hub-stack .kg-heading-block p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.kg-services-hub-stack .kg-heading-block p {
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .kg-services-hub-stack .kg-faq-item a,
@@ -4492,7 +4535,7 @@ footer.kg-site-footer .footer-contact__phone .header-btn-primary.kg-header-call 
 
 .kg-contact-form .kg-field--optional label span {
   font-weight: 600;
-  color: #8a8184;
+  color: #5f585b;
 }
 
 .kg-contact-form__actions {
@@ -4774,12 +4817,12 @@ footer.kg-site-footer .footer-contact__phone .header-btn-primary.kg-header-call 
   }
 
   header a.header-btn-primary.kg-header-call .kg-header-call__label {
-    font-size: 0.48rem;
+    font-size: 0.75rem;
     letter-spacing: 0.08em;
   }
 
   header a.header-btn-primary.kg-header-call .kg-header-call__number {
-    font-size: clamp(0.66rem, 2.8vw, 0.78rem);
+    font-size: clamp(0.8125rem, 2.8vw, 0.9rem);
     white-space: nowrap;
   }
 
@@ -4793,4 +4836,46 @@ footer.kg-site-footer .footer-contact__phone .header-btn-primary.kg-header-call 
     width: 16px;
     height: 16px;
   }
+}
+
+/* WAVE accessibility polish — 2026-06-11 */
+.visually-hidden,
+.kg-hp {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.kg-crawl-hub__heading,
+.kg-crawl-hub__subheading {
+  margin: 0;
+  font-weight: inherit;
+}
+
+.kg-crawl-hub__subheading {
+  font-size: inherit;
+}
+
+.kg-band-black .kg-section-tag,
+.kg-about-stack .kg-section-tag,
+.kg-closing-stack .kg-section-tag,
+.kg-pricing-faq-band .kg-section-tag {
+  color: #fff0f0;
+  font-size: 0.875rem;
+}
+
+.mobile-menu .mm-footer p {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.kg-map-overlay span {
+  color: rgba(255, 255, 255, 0.84);
 }
