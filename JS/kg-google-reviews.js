@@ -74,7 +74,12 @@
         if (!count && track.children.length) {
             count = track.children.length;
         }
-        summaryEl.textContent = rating + ' average from ' + count + ' published reviews';
+        summaryEl.textContent = rating + ' \u00b7 ' + count + ' reviews';
+        var mapRating = document.querySelector('.kg-map-rating');
+        if (mapRating) {
+            mapRating.textContent = '\u2605\u2605\u2605\u2605\u2605 ' + rating + ' \u00b7 ' + count + ' Google reviews';
+            mapRating.setAttribute('aria-label', rating + ' out of 5 stars, ' + count + ' Google reviews');
+        }
     }
 
     function startCarousel() {
@@ -121,7 +126,7 @@
                 index = 0;
             }
             var sample = cards[0];
-            var gap = 18;
+            var gap = 24;
             var width = sample ? sample.getBoundingClientRect().width : 0;
             var offset = index * (width + gap) * perView();
             track.style.transform = 'translateX(' + (-offset) + 'px)';

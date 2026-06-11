@@ -67,12 +67,21 @@ header .container {
     text-decoration: none;
 }
 .logo-section picture,
-.logo-section img {
+.logo-section img,
+.logo-section .kg-logo-coin {
     display: block;
 }
 .logo-section img {
     height: 74px;
     width: auto;
+}
+.logo-section .kg-logo-coin--header .kg-logo-coin__face img {
+    height: 100%;
+    width: 100%;
+}
+.mm-logo .kg-logo-coin--menu .kg-logo-coin__face img {
+    height: 100%;
+    width: 100%;
 }
 .company-name {
     color: #efe3de;
@@ -94,10 +103,10 @@ header .container {
 }
 
 @keyframes kgHeroGlimmerSweep {
-    0%   { background-position: 0% 50%; }
-    34%  { background-position: 0% 50%; }
-    66%  { background-position: 188% 50%; }
-    100% { background-position: 188% 50%; }
+    0%,
+    88%  { background-position: 0% 50%; }
+    94%  { background-position: 188% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
@@ -123,7 +132,7 @@ header .container {
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: kgHeroGlimmerSweep 8.4s ease-in-out infinite;
+        animation: kgHeroGlimmerSweep 10s ease-in-out infinite;
     }
 
     .thank-you-message h1 {
@@ -144,7 +153,7 @@ header .container {
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: kgHeroGlimmerSweep 8.4s ease-in-out infinite;
+        animation: kgHeroGlimmerSweep 10s ease-in-out infinite;
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -361,6 +370,10 @@ header .container {
 }
 .mm-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
 .mm-logo img { height: 38px; width: auto; }
+.mm-logo .kg-logo-coin--menu .kg-logo-coin__face img {
+    height: 100%;
+    width: 100%;
+}
 .mm-close {
     background: rgba(255,255,255,0.06);
     border: 1px solid rgba(255,255,255,0.15);
@@ -443,6 +456,18 @@ header .container {
 .mm-social img { width: 26px; height: 26px; border-radius: 6px; opacity: 1; background: #fff; transition: opacity 0.18s, transform 0.18s; }
 .mm-social a:hover img,
 .mm-social a:focus-visible img { opacity: 1; transform: scale(1.08); }
+.mm-footer {
+    margin-top: auto;
+    padding: 14px 16px 18px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    text-align: center;
+}
+.mm-footer p {
+    margin: 0;
+    font-size: 0.72rem;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.55);
+}
 .visually-hidden { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
 .header-call-mobile {
     display: none;
@@ -461,22 +486,35 @@ header .container {
 @media (max-width: 1200px) {
     #header-include { min-height: 78px; }
     header .container { padding: 0 16px; }
-    .header-content { min-height: 78px; }
-    .hamburger { display: flex !important; }
+    .header-content {
+        min-height: 78px;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .hamburger {
+        display: flex !important;
+        flex: 0 0 auto;
+    }
     .nav-section { display: none !important; }
-    .header-actions .header-btn-primary { display: none !important; }
+    .header-actions {
+        min-width: 0;
+        margin-left: auto;
+        flex: 0 0 auto;
+    }
+    .header-actions .header-btn-primary:not(.kg-header-call) { display: none !important; }
     .header-call-mobile { display: flex !important; }
     .logo-section {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        pointer-events: none;
+        position: static;
+        transform: none;
+        pointer-events: auto;
         min-width: 0;
+        flex: 0 0 auto;
     }
-    .logo-section picture,
-    .logo-section a { pointer-events: auto; }
-    .logo-section img { height: 56px; }
+    .logo-section img { height: 50px; }
+    .logo-section .kg-logo-coin--header .kg-logo-coin__scene {
+        width: 50px;
+        height: 50px;
+    }
     .company-name { display: none; }
 }
 @media (min-width: 1201px) {

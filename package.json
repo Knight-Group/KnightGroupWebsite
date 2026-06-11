@@ -2,6 +2,8 @@
   "name": "knightgroup-website",
   "private": true,
   "scripts": {
+    "dev": "python scripts/dev-server.py",
+    "start": "python scripts/dev-server.py",
     "reviews:sync-google": "node scripts/sync-google-reviews.js",
     "reviews:sync-google:dry-run": "node scripts/sync-google-reviews.js --dry-run"
   }

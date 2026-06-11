@@ -1,0 +1,583 @@
+{
+  "generated": true,
+  "categories": [
+    {
+      "id": "all",
+      "label": "All projects"
+    },
+    {
+      "id": "plumbing",
+      "label": "Plumbing"
+    },
+    {
+      "id": "mold-remediation",
+      "label": "Mold & drywall"
+    },
+    {
+      "id": "carpentry",
+      "label": "Carpentry & floors"
+    },
+    {
+      "id": "renovations",
+      "label": "Renovations"
+    },
+    {
+      "id": "painting",
+      "label": "Painting & finishing"
+    },
+    {
+      "id": "general-repairs",
+      "label": "General repairs"
+    }
+  ],
+  "groups": [
+    {
+      "id": "bathroom-tub-window-remodel",
+      "title": "Bathroom tub surround, window, and floor work",
+      "description": "Tile work around the tub and window, plus faucet replacement, window replacement, and new flooring on the same bathroom remodel.",
+      "category": "renovations",
+      "serviceLink": "/Services/home-renovations",
+      "beforeAfter": false,
+      "progression": true,
+      "images": [
+        {
+          "src": "GalleryImages/Refinished Bathroom_Window.webp",
+          "filename": "Refinished Bathroom_Window.webp",
+          "step": 1,
+          "title": "Tub surround tile and window area",
+          "seoAlt": "Tub surround tile and window area \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Tile installed around the tub and window opening as part of a broader bathroom update.",
+          "beforeAfter": false
+        },
+        {
+          "src": "GalleryImages/Refinishing_Bathroom_Window2.webp",
+          "filename": "Refinishing_Bathroom_Window2.webp",
+          "step": 2,
+          "title": "Bathroom remodel \u2014 later stage",
+          "seoAlt": "Bathroom remodel \u2014 later stage \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Follow-up from the same job showing additional progress on the tub area, window work, faucet replacement, and new floor.",
+          "beforeAfter": false
+        }
+      ]
+    },
+    {
+      "id": "bathroom-remodel-cobblestone",
+      "title": "Complete bathroom remodel",
+      "description": "Full bathroom remodel with cobblestone flooring laid in the space and tile installed in the shower.",
+      "category": "renovations",
+      "serviceLink": "/Services/home-renovations",
+      "beforeAfter": false,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/Refinished_Bathroom.webp",
+          "filename": "Refinished_Bathroom.webp",
+          "step": 1,
+          "title": "Complete bathroom remodel",
+          "seoAlt": "Complete bathroom remodel \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Finished bathroom remodel with cobblestone flooring and shower tile installed throughout the space.",
+          "beforeAfter": false
+        }
+      ]
+    },
+    {
+      "id": "garbage-disposal-install",
+      "title": "Garbage disposal installation",
+      "description": "Under-sink disposal work completed as part of a practical plumbing repair call.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": false,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/GarbageDisposal.webp",
+          "filename": "GarbageDisposal.webp",
+          "step": 1,
+          "title": "Garbage disposal installed",
+          "seoAlt": "Garbage disposal installed \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Completed disposal installation and hookup under the kitchen sink.",
+          "beforeAfter": false
+        }
+      ]
+    },
+    {
+      "id": "hvac-vent-boxing",
+      "title": "HVAC vent boxing and sealing",
+      "description": "Vent opening boxed, sealed, and finished so the repair blends cleanly into the surrounding wall.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": false,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/AC_Vent_Box.webp",
+          "filename": "AC_Vent_Box.webp",
+          "step": 1,
+          "title": "Vent area prepped and boxed",
+          "seoAlt": "Vent area prepped and boxed \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "HVAC vent work with the surrounding area built out for a cleaner, more finished look.",
+          "beforeAfter": false
+        }
+      ]
+    },
+    {
+      "id": "room-refinish",
+      "title": "Interior room refinish",
+      "description": "Room refinishing shown from the first completed view through a later stage of the same project.",
+      "category": "painting",
+      "serviceLink": "/Services/painting-finishing",
+      "beforeAfter": false,
+      "progression": true,
+      "images": [
+        {
+          "src": "GalleryImages/Refinished_Room.webp",
+          "filename": "Refinished_Room.webp",
+          "step": 1,
+          "title": "Refinished room \u2014 first view",
+          "seoAlt": "Refinished room \u2014 first view \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "First photo from a room refinish with updated walls and a cleaner finished appearance.",
+          "beforeAfter": false
+        },
+        {
+          "src": "GalleryImages/Refinished_Room2.webp",
+          "filename": "Refinished_Room2.webp",
+          "step": 2,
+          "title": "Refinished room \u2014 later stage",
+          "seoAlt": "Refinished room \u2014 later stage \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Second view from the same room refinish, showing later progress or another angle of the finished space.",
+          "beforeAfter": false
+        }
+      ]
+    },
+    {
+      "id": "mold-wall-repair",
+      "title": "Mold damage on interior wall",
+      "description": "Mold-affected wall shown from the initial discovery through later correction work on the same area.",
+      "category": "mold-remediation",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": false,
+      "progression": true,
+      "images": [
+        {
+          "src": "GalleryImages/Moldy_Wall.webp",
+          "filename": "Moldy_Wall.webp",
+          "step": 1,
+          "title": "Mold damage discovered on wall",
+          "seoAlt": "Mold damage discovered on wall \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Starting point of the job with visible mold damage that needed to be corrected before finish work could begin.",
+          "beforeAfter": false
+        },
+        {
+          "src": "GalleryImages/Moldy_Wall2.webp",
+          "filename": "Moldy_Wall2.webp",
+          "step": 2,
+          "title": "Mold wall repair \u2014 later stage",
+          "seoAlt": "Mold wall repair \u2014 later stage \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Follow-up photo from the same mold wall job showing later progress on the correction.",
+          "beforeAfter": false
+        }
+      ]
+    },
+    {
+      "id": "pipe-repair-before-after",
+      "title": "Pipe repair \u2014 before & after",
+      "description": "Plumbing correction shown from the original problem through the finished repair.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/KnightGroupBeforeAfterPipes.webp",
+          "filename": "KnightGroupBeforeAfterPipes.webp",
+          "step": 1,
+          "title": "Pipe repair before and after",
+          "seoAlt": "Pipe repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after photo from a pipe repair job in a local Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
+      "id": "room-restoration-before-after",
+      "title": "Room restoration \u2014 before & after",
+      "description": "Interior room work shown from damage and tear-out through the restored finish.",
+      "category": "renovations",
+      "serviceLink": "/Services/home-renovations",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/KnightGroup_before_after_room.webp",
+          "filename": "KnightGroup_before_after_room.webp",
+          "step": 1,
+          "title": "Room restoration before and after",
+          "seoAlt": "Room restoration before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after proof from a room rebuild and finish reset.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
+      "id": "floor-subfloor-repair",
+      "title": "Rotted floor and subfloor repair",
+      "description": "Damaged flooring torn back to sound material, then rebuilt so the repair could be closed out properly.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": false,
+      "progression": true,
+      "images": [
+        {
+          "src": "GalleryImages/Fixing_floor.webp",
+          "filename": "Fixing_floor.webp",
+          "step": 1,
+          "title": "Damaged flooring opened up",
+          "seoAlt": "Damaged flooring opened up \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "First stage of the job with rotted flooring removed and the repair area exposed.",
+          "beforeAfter": false
+        },
+        {
+          "src": "GalleryImages/fixing_floor2.webp",
+          "filename": "fixing_floor2.webp",
+          "step": 2,
+          "title": "Subfloor repair in progress",
+          "seoAlt": "Subfloor repair in progress \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Later stage of the same floor repair with new support and rebuild work underway.",
+          "beforeAfter": false
+        }
+      ]
+    },
+    {
+      "id": "tub-drain-before-after",
+      "title": "Tub drain repair \u2014 before & after",
+      "description": "Side-by-side proof of a tub drain correction from the failed condition through the completed fix.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/KnightGroup_before_after_drain.webp",
+          "filename": "KnightGroup_before_after_drain.webp",
+          "step": 1,
+          "title": "Tub drain before and after",
+          "seoAlt": "Tub drain before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a tub drain repair completed by Knight Group.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
+      "id": "tub-drain-replacement",
+      "title": "Tub drain replacement",
+      "description": "Failed tub drain removed and replaced \u2014 shown from the old assembly through the new install.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": false,
+      "progression": true,
+      "images": [
+        {
+          "src": "GalleryImages/OldTubDrain.webp",
+          "filename": "OldTubDrain.webp",
+          "step": 1,
+          "title": "Original tub drain assembly",
+          "seoAlt": "Original tub drain assembly \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Starting point of the job with the old tub drain that needed replacement.",
+          "beforeAfter": false
+        },
+        {
+          "src": "GalleryImages/NewTubDrain.webp",
+          "filename": "NewTubDrain.webp",
+          "step": 2,
+          "title": "New tub drain installed",
+          "seoAlt": "New tub drain installed \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Completed tub drain replacement after the new assembly was installed.",
+          "beforeAfter": false
+        }
+      ]
+    },
+    {
+      "id": "window-wall-repair",
+      "title": "Window wall repair and rebuild",
+      "description": "Window-area wall damage opened up, corrected, and rebuilt across multiple stages of the same job.",
+      "category": "mold-remediation",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": false,
+      "progression": true,
+      "images": [
+        {
+          "src": "GalleryImages/Window_Wall.webp",
+          "filename": "Window_Wall.webp",
+          "step": 1,
+          "title": "Window wall opened for repair",
+          "seoAlt": "Window wall opened for repair \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "First stage with the window wall opened so damaged material could be removed and rebuilt.",
+          "beforeAfter": false
+        },
+        {
+          "src": "GalleryImages/Window_Wall2.webp",
+          "filename": "Window_Wall2.webp",
+          "step": 2,
+          "title": "Window wall rebuild progressing",
+          "seoAlt": "Window wall rebuild progressing \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Later stage of the same window-wall repair moving toward a finish-ready closeout.",
+          "beforeAfter": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "GalleryImages/AC_Vent_Box.webp",
+      "filename": "AC_Vent_Box.webp",
+      "group": "hvac-vent-boxing",
+      "step": 1,
+      "title": "Vent area prepped and boxed",
+      "seoAlt": "Vent area prepped and boxed \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "HVAC vent work with the surrounding area built out for a cleaner, more finished look.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": false,
+      "groupTitle": "HVAC vent boxing and sealing",
+      "groupDescription": "Vent opening boxed, sealed, and finished so the repair blends cleanly into the surrounding wall."
+    },
+    {
+      "src": "GalleryImages/Fixing_floor.webp",
+      "filename": "Fixing_floor.webp",
+      "group": "floor-subfloor-repair",
+      "step": 1,
+      "title": "Damaged flooring opened up",
+      "seoAlt": "Damaged flooring opened up \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "First stage of the job with rotted flooring removed and the repair area exposed.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": false,
+      "groupTitle": "Rotted floor and subfloor repair",
+      "groupDescription": "Damaged flooring torn back to sound material, then rebuilt so the repair could be closed out properly."
+    },
+    {
+      "src": "GalleryImages/GarbageDisposal.webp",
+      "filename": "GarbageDisposal.webp",
+      "group": "garbage-disposal-install",
+      "step": 1,
+      "title": "Garbage disposal installed",
+      "seoAlt": "Garbage disposal installed \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Completed disposal installation and hookup under the kitchen sink.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": false,
+      "groupTitle": "Garbage disposal installation",
+      "groupDescription": "Under-sink disposal work completed as part of a practical plumbing repair call."
+    },
+    {
+      "src": "GalleryImages/KnightGroupBeforeAfterPipes.webp",
+      "filename": "KnightGroupBeforeAfterPipes.webp",
+      "group": "pipe-repair-before-after",
+      "step": 1,
+      "title": "Pipe repair before and after",
+      "seoAlt": "Pipe repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after photo from a pipe repair job in a local Pinellas County home.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "groupTitle": "Pipe repair \u2014 before & after",
+      "groupDescription": "Plumbing correction shown from the original problem through the finished repair."
+    },
+    {
+      "src": "GalleryImages/KnightGroup_before_after_drain.webp",
+      "filename": "KnightGroup_before_after_drain.webp",
+      "group": "tub-drain-before-after",
+      "step": 1,
+      "title": "Tub drain before and after",
+      "seoAlt": "Tub drain before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a tub drain repair completed by Knight Group.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "groupTitle": "Tub drain repair \u2014 before & after",
+      "groupDescription": "Side-by-side proof of a tub drain correction from the failed condition through the completed fix."
+    },
+    {
+      "src": "GalleryImages/KnightGroup_before_after_room.webp",
+      "filename": "KnightGroup_before_after_room.webp",
+      "group": "room-restoration-before-after",
+      "step": 1,
+      "title": "Room restoration before and after",
+      "seoAlt": "Room restoration before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after proof from a room rebuild and finish reset.",
+      "category": "renovations",
+      "serviceLink": "/Services/home-renovations",
+      "beforeAfter": true,
+      "groupTitle": "Room restoration \u2014 before & after",
+      "groupDescription": "Interior room work shown from damage and tear-out through the restored finish."
+    },
+    {
+      "src": "GalleryImages/Moldy_Wall.webp",
+      "filename": "Moldy_Wall.webp",
+      "group": "mold-wall-repair",
+      "step": 1,
+      "title": "Mold damage discovered on wall",
+      "seoAlt": "Mold damage discovered on wall \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Starting point of the job with visible mold damage that needed to be corrected before finish work could begin.",
+      "category": "mold-remediation",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": false,
+      "groupTitle": "Mold damage on interior wall",
+      "groupDescription": "Mold-affected wall shown from the initial discovery through later correction work on the same area."
+    },
+    {
+      "src": "GalleryImages/Moldy_Wall2.webp",
+      "filename": "Moldy_Wall2.webp",
+      "group": "mold-wall-repair",
+      "step": 2,
+      "title": "Mold wall repair \u2014 later stage",
+      "seoAlt": "Mold wall repair \u2014 later stage \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Follow-up photo from the same mold wall job showing later progress on the correction.",
+      "category": "mold-remediation",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": false,
+      "groupTitle": "Mold damage on interior wall",
+      "groupDescription": "Mold-affected wall shown from the initial discovery through later correction work on the same area."
+    },
+    {
+      "src": "GalleryImages/NewTubDrain.webp",
+      "filename": "NewTubDrain.webp",
+      "group": "tub-drain-replacement",
+      "step": 2,
+      "title": "New tub drain installed",
+      "seoAlt": "New tub drain installed \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Completed tub drain replacement after the new assembly was installed.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": false,
+      "groupTitle": "Tub drain replacement",
+      "groupDescription": "Failed tub drain removed and replaced \u2014 shown from the old assembly through the new install."
+    },
+    {
+      "src": "GalleryImages/OldTubDrain.webp",
+      "filename": "OldTubDrain.webp",
+      "group": "tub-drain-replacement",
+      "step": 1,
+      "title": "Original tub drain assembly",
+      "seoAlt": "Original tub drain assembly \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Starting point of the job with the old tub drain that needed replacement.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": false,
+      "groupTitle": "Tub drain replacement",
+      "groupDescription": "Failed tub drain removed and replaced \u2014 shown from the old assembly through the new install."
+    },
+    {
+      "src": "GalleryImages/Refinished Bathroom_Window.webp",
+      "filename": "Refinished Bathroom_Window.webp",
+      "group": "bathroom-tub-window-remodel",
+      "step": 1,
+      "title": "Tub surround tile and window area",
+      "seoAlt": "Tub surround tile and window area \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Tile installed around the tub and window opening as part of a broader bathroom update.",
+      "category": "renovations",
+      "serviceLink": "/Services/home-renovations",
+      "beforeAfter": false,
+      "groupTitle": "Bathroom tub surround, window, and floor work",
+      "groupDescription": "Tile work around the tub and window, plus faucet replacement, window replacement, and new flooring on the same bathroom remodel."
+    },
+    {
+      "src": "GalleryImages/Refinished_Bathroom.webp",
+      "filename": "Refinished_Bathroom.webp",
+      "group": "bathroom-remodel-cobblestone",
+      "step": 1,
+      "title": "Complete bathroom remodel",
+      "seoAlt": "Complete bathroom remodel \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Finished bathroom remodel with cobblestone flooring and shower tile installed throughout the space.",
+      "category": "renovations",
+      "serviceLink": "/Services/home-renovations",
+      "beforeAfter": false,
+      "groupTitle": "Complete bathroom remodel",
+      "groupDescription": "Full bathroom remodel with cobblestone flooring laid in the space and tile installed in the shower."
+    },
+    {
+      "src": "GalleryImages/Refinished_Room.webp",
+      "filename": "Refinished_Room.webp",
+      "group": "room-refinish",
+      "step": 1,
+      "title": "Refinished room \u2014 first view",
+      "seoAlt": "Refinished room \u2014 first view \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "First photo from a room refinish with updated walls and a cleaner finished appearance.",
+      "category": "painting",
+      "serviceLink": "/Services/painting-finishing",
+      "beforeAfter": false,
+      "groupTitle": "Interior room refinish",
+      "groupDescription": "Room refinishing shown from the first completed view through a later stage of the same project."
+    },
+    {
+      "src": "GalleryImages/Refinished_Room2.webp",
+      "filename": "Refinished_Room2.webp",
+      "group": "room-refinish",
+      "step": 2,
+      "title": "Refinished room \u2014 later stage",
+      "seoAlt": "Refinished room \u2014 later stage \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Second view from the same room refinish, showing later progress or another angle of the finished space.",
+      "category": "painting",
+      "serviceLink": "/Services/painting-finishing",
+      "beforeAfter": false,
+      "groupTitle": "Interior room refinish",
+      "groupDescription": "Room refinishing shown from the first completed view through a later stage of the same project."
+    },
+    {
+      "src": "GalleryImages/Refinishing_Bathroom_Window2.webp",
+      "filename": "Refinishing_Bathroom_Window2.webp",
+      "group": "bathroom-tub-window-remodel",
+      "step": 2,
+      "title": "Bathroom remodel \u2014 later stage",
+      "seoAlt": "Bathroom remodel \u2014 later stage \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Follow-up from the same job showing additional progress on the tub area, window work, faucet replacement, and new floor.",
+      "category": "renovations",
+      "serviceLink": "/Services/home-renovations",
+      "beforeAfter": false,
+      "groupTitle": "Bathroom tub surround, window, and floor work",
+      "groupDescription": "Tile work around the tub and window, plus faucet replacement, window replacement, and new flooring on the same bathroom remodel."
+    },
+    {
+      "src": "GalleryImages/Window_Wall.webp",
+      "filename": "Window_Wall.webp",
+      "group": "window-wall-repair",
+      "step": 1,
+      "title": "Window wall opened for repair",
+      "seoAlt": "Window wall opened for repair \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "First stage with the window wall opened so damaged material could be removed and rebuilt.",
+      "category": "mold-remediation",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": false,
+      "groupTitle": "Window wall repair and rebuild",
+      "groupDescription": "Window-area wall damage opened up, corrected, and rebuilt across multiple stages of the same job."
+    },
+    {
+      "src": "GalleryImages/Window_Wall2.webp",
+      "filename": "Window_Wall2.webp",
+      "group": "window-wall-repair",
+      "step": 2,
+      "title": "Window wall rebuild progressing",
+      "seoAlt": "Window wall rebuild progressing \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Later stage of the same window-wall repair moving toward a finish-ready closeout.",
+      "category": "mold-remediation",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": false,
+      "groupTitle": "Window wall repair and rebuild",
+      "groupDescription": "Window-area wall damage opened up, corrected, and rebuilt across multiple stages of the same job."
+    },
+    {
+      "src": "GalleryImages/fixing_floor2.webp",
+      "filename": "fixing_floor2.webp",
+      "group": "floor-subfloor-repair",
+      "step": 2,
+      "title": "Subfloor repair in progress",
+      "seoAlt": "Subfloor repair in progress \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Later stage of the same floor repair with new support and rebuild work underway.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": false,
+      "groupTitle": "Rotted floor and subfloor repair",
+      "groupDescription": "Damaged flooring torn back to sound material, then rebuilt so the repair could be closed out properly."
+    }
+  ]
+}

@@ -25,8 +25,46 @@
 class HTMLInclude {
     constructor() {
         this.ensureCriticalSharedStyles();
+        this.ensureHeaderStyles();
+        this.ensureKgMotionAssets();
         this.loadIncludes();
         this.initializeAfterIncludes();
+    }
+
+    ensureHeaderStyles() {
+        const pathPrefix = window.location.pathname.includes('/Services/') ||
+            window.location.pathname.includes('/PolicyPages/') ? '../' : '';
+        const headerVersion = '20260610-mobile-header-hero';
+
+        if (!document.getElementById('kg-header-css') && !document.querySelector('link[href*="header.min.css"]')) {
+            const link = document.createElement('link');
+            link.id = 'kg-header-css';
+            link.rel = 'stylesheet';
+            link.href = pathPrefix + 'CSS/header.min.css?v=' + headerVersion;
+            document.head.appendChild(link);
+        }
+    }
+
+    ensureKgMotionAssets() {
+        const pathPrefix = window.location.pathname.includes('/Services/') ||
+            window.location.pathname.includes('/PolicyPages/') ? '../' : '';
+        const motionVersion = '20260611-glow-shimmer';
+
+        if (!document.getElementById('kg-redesign-css') && !document.querySelector('link[href*="kg-redesign.css"]')) {
+            const link = document.createElement('link');
+            link.id = 'kg-redesign-css';
+            link.rel = 'stylesheet';
+            link.href = pathPrefix + 'CSS/kg-redesign.css?v=' + motionVersion;
+            document.head.appendChild(link);
+        }
+
+        if (!document.getElementById('kg-redesign-js') && !document.querySelector('script[src*="kg-redesign.js"]')) {
+            const script = document.createElement('script');
+            script.id = 'kg-redesign-js';
+            script.src = pathPrefix + 'JS/kg-redesign.js?v=' + motionVersion;
+            script.defer = true;
+            document.head.appendChild(script);
+        }
     }
 
     ensureCriticalSharedStyles() {
@@ -183,6 +221,11 @@ class HTMLInclude {
             return;
         }
 
+        // Homepage closing stack (and other in-page placements) control crawl hub order.
+        if (crawlHub.closest('#kg-closing-stack, .kg-closing-stack, main, #main-content')) {
+            return;
+        }
+
         if (crawlHub.nextElementSibling === footerElement) {
             return;
         }
@@ -195,7 +238,7 @@ class HTMLInclude {
         if (window._knightGroupIncludesLoaded) return;
         window._knightGroupIncludesLoaded = true;
 
-        const includeVersion = '20260530-social-cleanup';
+        const includeVersion = '20260610-mobile-header-hero';
 
         // Determine if we're in a subdirectory
         const pathPrefix = window.location.pathname.includes('/Services/') || 
@@ -225,10 +268,17 @@ class HTMLInclude {
             this.moveCrawlHubBeforeFooter();
             this.initializeAfterIncludes();
             this.setActiveNavItem();
+            if (typeof window.kgInitEnterAnimations === 'function') {
+                window.kgInitEnterAnimations();
+            }
+            document.dispatchEvent(new CustomEvent('kg-includes-ready'));
         }, 100);
     }
 
     initializeAfterIncludes() {
+        if (this._kgAfterIncludesInit) return;
+        this._kgAfterIncludesInit = true;
+
         // ── Mobile menu toggle ────────────────────────────────────────────────
         window.toggleMobileMenu = function(forceClose) {
             const menu     = document.getElementById('mobileMenu');
