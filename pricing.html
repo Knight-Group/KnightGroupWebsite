@@ -41,6 +41,14 @@
             "image": "https://www.knightgroup.com/Images/KnightGroupLogo.webp",
             "email": "nknight@knightgroup.com",
             "telephone": "+18136493341",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1225 7th St S",
+                "addressLocality": "Safety Harbor",
+                "addressRegion": "FL",
+                "postalCode": "34695",
+                "addressCountry": "US"
+            },
             "founder": {
                 "@id": "https://www.knightgroup.com/#founder"
             },
@@ -186,51 +194,7 @@
                 "reviewCount": "7",
                 "bestRating": "5",
                 "worstRating": "1"
-            },
-            "review": [
-                {
-                    "@type": "Review",
-                    "author": {
-                        "@type": "Person",
-                        "name": "Patricia Farrell"
-                    },
-                    "datePublished": "2025-02-05",
-                    "reviewBody": "Great service, fast response, Vince was really professional and the pricing was extremely fair. Very quality experience and I will definitely be recommending them to my friends and using them for future projects.",
-                    "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5"
-                    }
-                },
-                {
-                    "@type": "Review",
-                    "author": {
-                        "@type": "Person",
-                        "name": "Dan M"
-                    },
-                    "datePublished": "2025-01-27",
-                    "reviewBody": "By far the best plumbing experience I've had. Good communication, he arrived on time, completed the work quickly, and was professional throughout. Highly recommended!",
-                    "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5"
-                    }
-                },
-                {
-                    "@type": "Review",
-                    "author": {
-                        "@type": "Person",
-                        "name": "Nicholas Moser"
-                    },
-                    "datePublished": "2025-01-20",
-                    "reviewBody": "Had a pipe burst at my restaurant and Vinny showed up early and replaced it in a little over an hour. Not to mention the fact that it was the best work done in this place and at a great price. Highly recommend!",
-                    "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5"
-                    }
-                }
-            ]
+            }
         },
         {
             "@type": "WebSite",
@@ -412,10 +376,6 @@
             "inLanguage": "en-US",
             "mainEntity": {
                 "@id": "https://www.knightgroup.com/pricing#offer-catalog"
-            },
-            "primaryImageOfPage": {
-                "@type": "ImageObject",
-                "url": "https://www.knightgroup.com/Images/KGHero.webp"
             }
         },
         {
@@ -427,15 +387,15 @@
                     "name": "Does Knight Group charge a 2-hour minimum?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "No. Knight Group does not charge a 2-hour minimum for handyman work in Pinellas County. You pay for the time the job actually takes."
+                        "text": "No. Unlike many handyman services in Pinellas County, Knight Group does not charge a 2-hour minimum. You pay for the time your job actually takes."
                     }
                 },
                 {
                     "@type": "Question",
-                    "name": "How much does Knight Group charge per hour?",
+                    "name": "How much does a handyman cost per hour?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Standard handyman visits are $150 for the first hour and $75 for each additional hour. Specialty or higher-liability work is $200 for the first hour and $100 for each additional hour."
+                        "text": "Standard visits are $150 for the first hour and $75 for each additional hour . Specialty or higher-liability work is $200 first hour and $100 additional . Request a free written estimate for your specific scope."
                     }
                 },
                 {
@@ -443,31 +403,31 @@
                     "name": "Do you offer free estimates?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes. Knight Group provides free written estimates for projects in Safety Harbor and throughout Pinellas County. Book online or call (813) 649-3341."
+                        "text": "Yes. Knight Group provides free written estimates across Safety Harbor and Pinellas County. Book online or call (813) 649-3341."
                     }
                 },
                 {
                     "@type": "Question",
-                    "name": "Are materials included in handyman pricing?",
+                    "name": "Are materials included in the price?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Labor is billed hourly. Materials are separate at cost plus a modest 10% markup for purchasing and handling. All material costs are disclosed in your written estimate."
+                        "text": "Labor is hourly. Materials are billed separately at cost plus a modest 10% markup. Everything is disclosed upfront in your written estimate."
                     }
                 },
                 {
                     "@type": "Question",
-                    "name": "What areas does Knight Group price handyman work in?",
+                    "name": "What cities do you serve?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Knight Group quotes handyman work across Safety Harbor, Clearwater, Dunedin, Palm Harbor, Largo, Oldsmar, Seminole, St. Petersburg, and nearby Pinellas County communities."
+                        "text": "Safety Harbor, Clearwater, Dunedin, Palm Harbor, Largo, Oldsmar, Seminole, St. Petersburg, and nearby Pinellas County communities."
                     }
                 },
                 {
                     "@type": "Question",
-                    "name": "What payment methods does Knight Group accept?",
+                    "name": "What payment methods do you accept?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Knight Group accepts major credit and debit cards, Apple Pay, Google Pay, Venmo, Cash App, PayPal, and cash. Payment is typically due upon project completion."
+                        "text": "Cards, Apple Pay, Google Pay, Venmo, Cash App, PayPal, and cash. See our payment policy for full terms."
                     }
                 }
             ],
@@ -478,7 +438,7 @@
     ]
 }
     </script>
-    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/Images/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
     <meta name="theme-color" content="#9a2f2f">
@@ -491,10 +451,16 @@
     <meta property="og:url" content="https://www.knightgroup.com/pricing">
     <meta property="og:title" content="Handyman Pricing | Knight Group Handyman Services">
     <meta property="og:description" content="Clear hourly handyman rates, no 2-hour minimums, and transparent pricing for repairs, installations, and emergency calls in Pinellas County.">
-    <meta property="og:image" content="https://www.knightgroup.com/Images/handyman.jpg">
+    <meta property="og:image" content="https://www.knightgroup.com/Images/knightgroup-og-card-1200x630-clean.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Knight Group Handyman Services - Professional Home Repair in Pinellas County, FL">
+    <meta property="og:image" content="https://www.knightgroup.com/Images/knightgroup-og-card-1200x630-phone.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image" content="https://www.knightgroup.com/Images/knightgroup-social-square-1200x1200-phone.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="1200">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Knight Group Handyman Services">
     <meta property="og:locale" content="en_US">
@@ -504,7 +470,7 @@
     <meta name="twitter:creator" content="@KnightGroupSvcs">
     <meta name="twitter:title" content="Handyman Pricing | Knight Group Handyman Services">
     <meta name="twitter:description" content="Clear hourly handyman rates, no 2-hour minimums, and transparent pricing for repairs, installations, and emergency calls in Pinellas County.">
-    <meta name="twitter:image" content="https://www.knightgroup.com/Images/handyman.jpg">
+    <meta name="twitter:image" content="https://www.knightgroup.com/Images/knightgroup-twitter-card-1200x628-phone.png">
     <meta name="twitter:url" content="https://www.knightgroup.com/pricing">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="geo.region" content="US-FL">

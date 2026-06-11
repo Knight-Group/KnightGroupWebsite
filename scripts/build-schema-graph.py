@@ -7,8 +7,8 @@ from pathlib import Path
 
 from schema_graph import (
     build_graph_for_page,
-    extract_faq_entities,
     extract_meta,
+    extract_page_faq,
     replace_schema_blocks,
     service_by_slug,
 )
@@ -54,7 +54,7 @@ def update_file(path: Path, page_key: str, service: dict | None = None) -> bool:
     if not meta["canonical"]:
         print(f"skip (no canonical): {path.name}")
         return False
-    faq = extract_faq_entities(html)
+    faq = extract_page_faq(html)
     graph = build_graph_for_page(
         page_key=page_key,
         meta=meta,

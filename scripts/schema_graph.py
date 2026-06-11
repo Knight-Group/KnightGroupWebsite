@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import copy
+import html
 import json
 import re
 from pathlib import Path
@@ -52,6 +53,14 @@ def extract_meta(html: str) -> dict[str, str]:
     }
 
 
+def _clean_text(value: str) -> str:
+    text = re.sub(r"<a[^>]*>(.*?)</a>", r"\1", value, flags=re.S | re.I)
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = html.unescape(text)
+    text = text.replace("\ufffd", "-")
+    return re.sub(r"\s+", " ", text).strip()
+
+
 def extract_faq_entities(html: str) -> list[dict[str, Any]]:
     entities: list[dict[str, Any]] = []
     for block in re.findall(
@@ -70,6 +79,67 @@ def extract_faq_entities(html: str) -> list[dict[str, Any]]:
             if node.get("@type") == "FAQPage" and node.get("mainEntity"):
                 entities = node["mainEntity"]
     return entities
+
+
+def extract_faq_from_html(html_content: str) -> list[dict[str, Any]]:
+    entities: list[dict[str, Any]] = []
+    for summary, answer in re.findall(
+        r"<summary>(.*?)</summary>\s*<p>(.*?)</p>",
+        html_content,
+        flags=re.S | re.I,
+    ):
+        question = _clean_text(summary)
+        text = _clean_text(answer)
+        if not question or not text:
+            continue
+        entities.append(
+            {
+                "@type": "Question",
+                "name": question,
+                "acceptedAnswer": {"@type": "Answer", "text": text},
+            }
+        )
+    return entities
+
+
+def extract_page_faq(html_content: str) -> list[dict[str, Any]]:
+    html_faq = extract_faq_from_html(html_content)
+    if html_faq:
+        return html_faq
+    return extract_faq_entities(html_content)
+
+
+def image_rights_metadata() -> dict[str, Any]:
+    return {
+        "creditText": "Knight Group Handyman Services LLC",
+        "copyrightNotice": "Copyright 2026 Knight Group Handyman Services LLC. All rights reserved.",
+        "license": f"{BASE}/PolicyPages/terms",
+        "acquireLicensePage": f"{BASE}/contact",
+        "creator": {
+            "@type": "Organization",
+            "@id": ORG_ID,
+            "name": "Knight Group Handyman Services LLC",
+        },
+    }
+
+
+def build_image_object(
+    *,
+    image_id: str,
+    image_url: str,
+    name: str,
+    description: str,
+) -> dict[str, Any]:
+    node = {
+        "@type": "ImageObject",
+        "@id": image_id,
+        "url": image_url,
+        "contentUrl": image_url,
+        "name": name,
+        "description": description,
+    }
+    node.update(image_rights_metadata())
+    return node
 
 
 def business_entity(*, include_reviews: bool = False) -> dict[str, Any]:
@@ -307,15 +377,12 @@ def gallery_entities(manifest: dict[str, Any], meta: dict[str, str]) -> list[dic
         image_url = f"{BASE}/{src}"
         image_id = f"{url}#image-{group['id']}"
         project_id = f"{url}#project-{group['id']}"
-        image_node = {
-            "@type": "ImageObject",
-            "@id": image_id,
-            "url": image_url,
-            "contentUrl": image_url,
-            "name": image.get("title") or group["title"],
-            "description": image.get("description") or group["description"],
-            "creator": {"@id": BUSINESS_ID},
-        }
+        image_node = build_image_object(
+            image_id=image_id,
+            image_url=image_url,
+            name=image.get("title") or group["title"],
+            description=image.get("description") or group["description"],
+        )
         project_node = {
             "@type": "CreativeWork",
             "@id": project_id,
@@ -353,7 +420,24 @@ def gallery_entities(manifest: dict[str, Any], meta: dict[str, str]) -> list[dic
         "image": image_refs,
         "hasPart": part_refs,
     }
-    return [gallery, *image_nodes, *project_nodes]
+    project_list = {
+        "@type": "ItemList",
+        "@id": f"{url}#project-list",
+        "name": "Knight Group handyman project gallery",
+        "description": "Completed handyman project photos across Pinellas County, Florida.",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": index + 1,
+                "name": group["title"],
+                "url": f"{url}#project-{group['id']}",
+                "item": {"@id": f"{url}#project-{group['id']}"},
+            }
+            for index, group in enumerate(manifest.get("groups", [])[:12])
+            if group.get("images")
+        ],
+    }
+    return [gallery, project_list, *image_nodes, *project_nodes]
 
 
 def base_graph(*, include_reviews: bool = False) -> list[dict[str, Any]]:
@@ -375,19 +459,21 @@ def build_graph_for_page(
     url = meta["canonical"].rstrip("/")
     if page_key == "home":
         url = f"{BASE}/"
-    graph = base_graph(include_reviews=True)
+    graph = base_graph(include_reviews=page_key == "home")
     crumbs = [{"name": "Home", "item": f"{BASE}/"}]
     main_entity_id: str | None = BUSINESS_ID
     page_type = "WebPage"
-    extra: dict[str, Any] = {
-        "primaryImageOfPage": {
-            "@type": "ImageObject",
-            "url": f"{BASE}/Images/KGHero.webp",
-        }
-    }
+    extra: dict[str, Any] = {}
 
     if page_key == "home":
-        pass
+        hero_image = build_image_object(
+            image_id=f"{url}#primary-image",
+            image_url=f"{BASE}/Images/KGHero.webp",
+            name="Knight Group Handyman Services project photo",
+            description="Knight Group Handyman Services serving Safety Harbor and Pinellas County, Florida.",
+        )
+        graph.append(hero_image)
+        extra["primaryImageOfPage"] = {"@id": hero_image["@id"]}
     elif page_key == "services-hub":
         crumbs.append({"name": "Services", "item": f"{BASE}/services"})
         main_entity_id = f"{BASE}/services#itemlist"
@@ -496,10 +582,14 @@ def build_graph_for_page(
         assert service is not None
         graph.append(service_entity(url=url, service=service))
         main_entity_id = f"{url}#service"
-        extra["primaryImageOfPage"] = {
-            "@type": "ImageObject",
-            "url": f"{BASE}/Images/{service['image']}",
-        }
+        service_image = build_image_object(
+            image_id=f"{url}#primary-image",
+            image_url=f"{BASE}/Images/{service['image']}",
+            name=f"{service['name']} project photo",
+            description=service["description"],
+        )
+        graph.append(service_image)
+        extra["primaryImageOfPage"] = {"@id": service_image["@id"]}
     else:
         raise ValueError(f"Unknown page key: {page_key}")
 

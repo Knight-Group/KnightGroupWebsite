@@ -136,6 +136,7 @@
     function createProjectCard(group, groupIndex, categories) {
         var card = document.createElement('article');
         card.className = 'gallery-project';
+        card.id = 'project-' + group.id;
         card.dataset.category = group.category;
 
         if (group.beforeAfter) card.classList.add('gallery-project--before-after');
@@ -226,32 +227,6 @@
         });
     }
 
-    function injectGalleryStructuredData(groups) {
-        if (!groups.length || document.getElementById('gallery-image-schema')) return;
-
-        var itemList = {
-            '@context': 'https://schema.org',
-            '@type': 'ItemList',
-            name: 'Knight Group handyman project gallery',
-            description: 'Completed handyman project photos across Pinellas County, Florida.',
-            itemListElement: groups.map(function (group, index) {
-                return {
-                    '@type': 'ListItem',
-                    position: index + 1,
-                    name: group.title,
-                    description: group.description,
-                    url: 'https://www.knightgroup.com' + (group.serviceLink || '/galleries')
-                };
-            })
-        };
-
-        var script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.id = 'gallery-image-schema';
-        script.textContent = JSON.stringify(itemList);
-        document.head.appendChild(script);
-    }
-
     function bindLightbox() {
         var lightbox = document.getElementById('gallery-lightbox');
         var closeBtn = document.getElementById('gallery-lightbox-close');
@@ -295,7 +270,6 @@
             .then(function (data) {
                 var categories = data.categories || [{ id: 'all', label: 'All projects' }];
                 state.groups = data.groups || [];
-                injectGalleryStructuredData(state.groups);
                 var activeFilter = 'all';
 
                 function setFilter(nextFilter) {

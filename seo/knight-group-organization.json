@@ -8,6 +8,14 @@
   "image": "https://www.knightgroup.com/Images/KnightGroupLogo.webp",
   "email": "nknight@knightgroup.com",
   "telephone": "+18136493341",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1225 7th St S",
+    "addressLocality": "Safety Harbor",
+    "addressRegion": "FL",
+    "postalCode": "34695",
+    "addressCountry": "US"
+  },
   "founder": { "@id": "https://www.knightgroup.com/#founder" },
   "sameAs": [
     "https://www.facebook.com/KnightGroupServices/",

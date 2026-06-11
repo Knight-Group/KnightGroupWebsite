@@ -12,7 +12,15 @@ ROOT = Path(__file__).resolve().parents[1]
 
 REQUIREMENTS: dict[str, set[str]] = {
     "index.html": {"Organization", "HomeAndConstructionBusiness", "WebSite", "WebPage", "BreadcrumbList"},
-    "services.html": {"Organization", "HomeAndConstructionBusiness", "WebSite", "WebPage", "BreadcrumbList", "ItemList"},
+    "services.html": {
+        "Organization",
+        "HomeAndConstructionBusiness",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "ItemList",
+        "FAQPage",
+    },
     "pricing.html": {"Organization", "OfferCatalog", "BreadcrumbList", "WebPage"},
     "booking.html": {"Organization", "ContactPage", "ContactAction", "BreadcrumbList"},
     "contact.html": {"Organization", "ContactPage", "BreadcrumbList"},
@@ -23,7 +31,15 @@ REQUIREMENTS: dict[str, set[str]] = {
     "clearwater-handyman.html": {"Organization", "HomeAndConstructionBusiness", "Service", "BreadcrumbList"},
 }
 
-SERVICE_REQUIREMENTS = {"Organization", "HomeAndConstructionBusiness", "WebSite", "WebPage", "Service", "BreadcrumbList"}
+SERVICE_REQUIREMENTS = {
+    "Organization",
+    "HomeAndConstructionBusiness",
+    "WebSite",
+    "WebPage",
+    "Service",
+    "BreadcrumbList",
+    "FAQPage",
+}
 
 
 def load_types(path: Path) -> tuple[set[str], list[str]]:
