@@ -58,7 +58,7 @@
     });
 
     document.querySelectorAll('.kg-intent-strip__inner').forEach(function (el) {
-      prepareEnter(el, 'top', 0, false);
+      prepareEnter(el, 'top', 1100, true);
     });
 
     document.querySelectorAll('.kg-map-review-shell').forEach(function (el) {
@@ -157,7 +157,7 @@
     if (hero) {
       var restTop = getHeaderHeight() || hero.getBoundingClientRect().top;
 
-      bindParallaxShift(hero, '--kg-hero-shift', 1.22, {
+      bindParallaxShift(hero, '--kg-hero-shift', 0.45, {
         mode: 'scroll',
         layer: '.kg-hero__bg',
         getScrollAnchor: function () {
