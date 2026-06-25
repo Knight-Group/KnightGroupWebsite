@@ -260,7 +260,11 @@ header .container {
     justify-content: flex-end;
     min-width: 210px;
 }
-.cta-buttons { display: flex; align-items: center; }
+.cta-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 .header-btn-primary {
     display: flex;
     flex-direction: column;
@@ -501,7 +505,9 @@ header .container {
         margin-left: auto;
         flex: 0 0 auto;
     }
-    .header-actions .header-btn-primary:not(.kg-header-call) { display: none !important; }
+    .header-actions .header-btn-primary:not(.kg-header-call):not(.kg-header-estimate) {
+        display: none !important;
+    }
     .header-call-mobile { display: flex !important; }
     .logo-section {
         position: static;
@@ -516,6 +522,16 @@ header .container {
         height: 50px;
     }
     .company-name { display: none; }
+}
+
+@media (max-width: 600px) {
+    #header-include .header-actions .kg-header-estimate {
+        display: none !important;
+    }
+
+    #header-include .logo-section .company-name {
+        display: none !important;
+    }
 }
 @media (min-width: 1201px) {
     .hamburger { display: none !important; }

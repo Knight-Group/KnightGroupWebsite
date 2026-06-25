@@ -147,19 +147,12 @@ IMAGE_CATALOG: dict[str, dict] = {
     "Refinished Bathroom_Window.webp": {
         "group": "bathroom-tub-window-remodel",
         "groupTitle": "Bathroom tub surround, window, and floor work",
-        "groupDescription": "Tile work around the tub and window, plus faucet replacement, window replacement, and new flooring on the same bathroom remodel.",
+        "groupDescription": "Finished bathroom remodel with tile around the tub and window, updated faucet, window replacement, and new flooring.",
         "category": "renovations",
         "serviceLink": "/Services/home-renovations",
         "step": 1,
-        "title": "Tub surround tile and window area",
-        "description": "Tile installed around the tub and window opening as part of a broader bathroom update.",
-        "beforeAfter": False,
-    },
-    "Refinishing_Bathroom_Window2.webp": {
-        "group": "bathroom-tub-window-remodel",
-        "step": 2,
-        "title": "Bathroom remodel — later stage",
-        "description": "Follow-up from the same job showing additional progress on the tub area, window work, faucet replacement, and new floor.",
+        "title": "Finished bathroom tub, window, and floor remodel",
+        "description": "Completed bathroom update with tub surround tile, window work, faucet replacement, and new flooring.",
         "beforeAfter": False,
     },
     "Refinished_Bathroom.webp": {
@@ -191,11 +184,56 @@ IMAGE_CATALOG: dict[str, dict] = {
         "description": "Second view from the same room refinish, showing later progress or another angle of the finished space.",
         "beforeAfter": False,
     },
+    "before-after-fridge-wouldnt-close-does-now.webp": {
+        "group": "fridge-door-alignment-before-after",
+        "groupTitle": "Refrigerator door alignment — before & after",
+        "groupDescription": "Refrigerator that would not close properly corrected so the door seals and operates normally again.",
+        "category": "general-repairs",
+        "serviceLink": "/Services/general-repairs",
+        "step": 1,
+        "title": "Refrigerator door alignment before and after",
+        "description": "Before-and-after proof from a fridge door repair so the unit closes and seals correctly.",
+        "beforeAfter": True,
+    },
+    "before-after-broken-stove-burner-fixed.webp": {
+        "group": "stove-burner-repair-before-after",
+        "groupTitle": "Stove burner repair — before & after",
+        "groupDescription": "Broken stove burner restored to safe, working condition.",
+        "category": "general-repairs",
+        "serviceLink": "/Services/general-repairs",
+        "step": 1,
+        "title": "Stove burner repair before and after",
+        "description": "Before-and-after photo from a kitchen stove burner repair completed in a Pinellas County home.",
+        "beforeAfter": True,
+    },
+    "before-after-broken-blinds-replaced.webp": {
+        "group": "blinds-replacement-before-after",
+        "groupTitle": "Broken blinds replacement — before & after",
+        "groupDescription": "Damaged window blinds removed and replaced with a clean, working set.",
+        "category": "carpentry",
+        "serviceLink": "/Services/carpentry-framing",
+        "step": 1,
+        "title": "Broken blinds replacement before and after",
+        "description": "Before-and-after comparison from a window blind replacement job.",
+        "beforeAfter": True,
+    },
+    "before-after-horney-removal-wall-sealed.webp": {
+        "group": "hornet-removal-wall-sealed-before-after",
+        "groupTitle": "Hornet nest removal and wall sealed — before & after",
+        "groupDescription": "Hornet nest removed from the wall and the opening sealed and finished cleanly.",
+        "category": "general-repairs",
+        "serviceLink": "/Services/general-repairs",
+        "step": 1,
+        "title": "Hornet nest removal and wall sealed before and after",
+        "description": "Before-and-after proof from hornet nest removal with the wall opening sealed and repaired.",
+        "beforeAfter": True,
+    },
 }
 
 SKIP_WEBP = {
     "MoldyWall.webp",  # Superseded by Moldy_Wall.webp
     "KnightGroup_before_after_after_pipes.webp",  # Duplicate of KnightGroupBeforeAfterPipes.webp
+    "Refinishing_Bathroom_Window2.webp",  # Duplicate finished photo of bathroom-tub-window-remodel
 }
 LEGACY_NAME = re.compile(
     r"^(?:\d{8}_\d{6}|[0-9a-f]{8}-?)$",

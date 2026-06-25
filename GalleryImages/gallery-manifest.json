@@ -34,29 +34,40 @@
     {
       "id": "bathroom-tub-window-remodel",
       "title": "Bathroom tub surround, window, and floor work",
-      "description": "Tile work around the tub and window, plus faucet replacement, window replacement, and new flooring on the same bathroom remodel.",
+      "description": "Finished bathroom remodel with tile around the tub and window, updated faucet, window replacement, and new flooring.",
       "category": "renovations",
       "serviceLink": "/Services/home-renovations",
       "beforeAfter": false,
-      "progression": true,
+      "progression": false,
       "images": [
         {
           "src": "GalleryImages/Refinished Bathroom_Window.webp",
           "filename": "Refinished Bathroom_Window.webp",
           "step": 1,
-          "title": "Tub surround tile and window area",
-          "seoAlt": "Tub surround tile and window area \u2014 handyman project photo in Pinellas County FL by Knight Group",
-          "description": "Tile installed around the tub and window opening as part of a broader bathroom update.",
+          "title": "Finished bathroom tub, window, and floor remodel",
+          "seoAlt": "Finished bathroom tub, window, and floor remodel \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Completed bathroom update with tub surround tile, window work, faucet replacement, and new flooring.",
           "beforeAfter": false
-        },
+        }
+      ]
+    },
+    {
+      "id": "blinds-replacement-before-after",
+      "title": "Broken blinds replacement \u2014 before & after",
+      "description": "Damaged window blinds removed and replaced with a clean, working set.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
         {
-          "src": "GalleryImages/Refinishing_Bathroom_Window2.webp",
-          "filename": "Refinishing_Bathroom_Window2.webp",
-          "step": 2,
-          "title": "Bathroom remodel \u2014 later stage",
-          "seoAlt": "Bathroom remodel \u2014 later stage \u2014 handyman project photo in Pinellas County FL by Knight Group",
-          "description": "Follow-up from the same job showing additional progress on the tub area, window work, faucet replacement, and new floor.",
-          "beforeAfter": false
+          "src": "GalleryImages/before-after-broken-blinds-replaced.webp",
+          "filename": "before-after-broken-blinds-replaced.webp",
+          "step": 1,
+          "title": "Broken blinds replacement before and after",
+          "seoAlt": "Broken blinds replacement before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a window blind replacement job.",
+          "beforeAfter": true
         }
       ]
     },
@@ -117,6 +128,26 @@
           "seoAlt": "Vent area prepped and boxed \u2014 handyman project photo in Pinellas County FL by Knight Group",
           "description": "HVAC vent work with the surrounding area built out for a cleaner, more finished look.",
           "beforeAfter": false
+        }
+      ]
+    },
+    {
+      "id": "hornet-removal-wall-sealed-before-after",
+      "title": "Hornet nest removal and wall sealed \u2014 before & after",
+      "description": "Hornet nest removed from the wall and the opening sealed and finished cleanly.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-horney-removal-wall-sealed.webp",
+          "filename": "before-after-horney-removal-wall-sealed.webp",
+          "step": 1,
+          "title": "Hornet nest removal and wall sealed before and after",
+          "seoAlt": "Hornet nest removal and wall sealed before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after proof from hornet nest removal with the wall opening sealed and repaired.",
+          "beforeAfter": true
         }
       ]
     },
@@ -199,6 +230,26 @@
       ]
     },
     {
+      "id": "fridge-door-alignment-before-after",
+      "title": "Refrigerator door alignment \u2014 before & after",
+      "description": "Refrigerator that would not close properly corrected so the door seals and operates normally again.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-fridge-wouldnt-close-does-now.webp",
+          "filename": "before-after-fridge-wouldnt-close-does-now.webp",
+          "step": 1,
+          "title": "Refrigerator door alignment before and after",
+          "seoAlt": "Refrigerator door alignment before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after proof from a fridge door repair so the unit closes and seals correctly.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "room-restoration-before-after",
       "title": "Room restoration \u2014 before & after",
       "description": "Interior room work shown from damage and tear-out through the restored finish.",
@@ -244,6 +295,26 @@
           "seoAlt": "Subfloor repair in progress \u2014 handyman project photo in Pinellas County FL by Knight Group",
           "description": "Later stage of the same floor repair with new support and rebuild work underway.",
           "beforeAfter": false
+        }
+      ]
+    },
+    {
+      "id": "stove-burner-repair-before-after",
+      "title": "Stove burner repair \u2014 before & after",
+      "description": "Broken stove burner restored to safe, working condition.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-broken-stove-burner-fixed.webp",
+          "filename": "before-after-broken-stove-burner-fixed.webp",
+          "step": 1,
+          "title": "Stove burner repair before and after",
+          "seoAlt": "Stove burner repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after photo from a kitchen stove burner repair completed in a Pinellas County home.",
+          "beforeAfter": true
         }
       ]
     },
@@ -472,14 +543,14 @@
       "filename": "Refinished Bathroom_Window.webp",
       "group": "bathroom-tub-window-remodel",
       "step": 1,
-      "title": "Tub surround tile and window area",
-      "seoAlt": "Tub surround tile and window area \u2014 handyman project photo in Pinellas County FL by Knight Group",
-      "description": "Tile installed around the tub and window opening as part of a broader bathroom update.",
+      "title": "Finished bathroom tub, window, and floor remodel",
+      "seoAlt": "Finished bathroom tub, window, and floor remodel \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Completed bathroom update with tub surround tile, window work, faucet replacement, and new flooring.",
       "category": "renovations",
       "serviceLink": "/Services/home-renovations",
       "beforeAfter": false,
       "groupTitle": "Bathroom tub surround, window, and floor work",
-      "groupDescription": "Tile work around the tub and window, plus faucet replacement, window replacement, and new flooring on the same bathroom remodel."
+      "groupDescription": "Finished bathroom remodel with tile around the tub and window, updated faucet, window replacement, and new flooring."
     },
     {
       "src": "GalleryImages/Refinished_Bathroom.webp",
@@ -524,20 +595,6 @@
       "groupDescription": "Room refinishing shown from the first completed view through a later stage of the same project."
     },
     {
-      "src": "GalleryImages/Refinishing_Bathroom_Window2.webp",
-      "filename": "Refinishing_Bathroom_Window2.webp",
-      "group": "bathroom-tub-window-remodel",
-      "step": 2,
-      "title": "Bathroom remodel \u2014 later stage",
-      "seoAlt": "Bathroom remodel \u2014 later stage \u2014 handyman project photo in Pinellas County FL by Knight Group",
-      "description": "Follow-up from the same job showing additional progress on the tub area, window work, faucet replacement, and new floor.",
-      "category": "renovations",
-      "serviceLink": "/Services/home-renovations",
-      "beforeAfter": false,
-      "groupTitle": "Bathroom tub surround, window, and floor work",
-      "groupDescription": "Tile work around the tub and window, plus faucet replacement, window replacement, and new flooring on the same bathroom remodel."
-    },
-    {
       "src": "GalleryImages/Window_Wall.webp",
       "filename": "Window_Wall.webp",
       "group": "window-wall-repair",
@@ -564,6 +621,62 @@
       "beforeAfter": false,
       "groupTitle": "Window wall repair and rebuild",
       "groupDescription": "Window-area wall damage opened up, corrected, and rebuilt across multiple stages of the same job."
+    },
+    {
+      "src": "GalleryImages/before-after-broken-blinds-replaced.webp",
+      "filename": "before-after-broken-blinds-replaced.webp",
+      "group": "blinds-replacement-before-after",
+      "step": 1,
+      "title": "Broken blinds replacement before and after",
+      "seoAlt": "Broken blinds replacement before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a window blind replacement job.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Broken blinds replacement \u2014 before & after",
+      "groupDescription": "Damaged window blinds removed and replaced with a clean, working set."
+    },
+    {
+      "src": "GalleryImages/before-after-broken-stove-burner-fixed.webp",
+      "filename": "before-after-broken-stove-burner-fixed.webp",
+      "group": "stove-burner-repair-before-after",
+      "step": 1,
+      "title": "Stove burner repair before and after",
+      "seoAlt": "Stove burner repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after photo from a kitchen stove burner repair completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Stove burner repair \u2014 before & after",
+      "groupDescription": "Broken stove burner restored to safe, working condition."
+    },
+    {
+      "src": "GalleryImages/before-after-fridge-wouldnt-close-does-now.webp",
+      "filename": "before-after-fridge-wouldnt-close-does-now.webp",
+      "group": "fridge-door-alignment-before-after",
+      "step": 1,
+      "title": "Refrigerator door alignment before and after",
+      "seoAlt": "Refrigerator door alignment before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after proof from a fridge door repair so the unit closes and seals correctly.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Refrigerator door alignment \u2014 before & after",
+      "groupDescription": "Refrigerator that would not close properly corrected so the door seals and operates normally again."
+    },
+    {
+      "src": "GalleryImages/before-after-horney-removal-wall-sealed.webp",
+      "filename": "before-after-horney-removal-wall-sealed.webp",
+      "group": "hornet-removal-wall-sealed-before-after",
+      "step": 1,
+      "title": "Hornet nest removal and wall sealed before and after",
+      "seoAlt": "Hornet nest removal and wall sealed before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after proof from hornet nest removal with the wall opening sealed and repaired.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Hornet nest removal and wall sealed \u2014 before & after",
+      "groupDescription": "Hornet nest removed from the wall and the opening sealed and finished cleanly."
     },
     {
       "src": "GalleryImages/fixing_floor2.webp",

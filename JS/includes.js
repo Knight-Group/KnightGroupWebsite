@@ -238,7 +238,7 @@ class HTMLInclude {
         if (window._knightGroupIncludesLoaded) return;
         window._knightGroupIncludesLoaded = true;
 
-        const includeVersion = '20260611-wave-a11y';
+        const includeVersion = '20260624-footer-red';
 
         // Determine if we're in a subdirectory
         const pathPrefix = window.location.pathname.includes('/Services/') || 

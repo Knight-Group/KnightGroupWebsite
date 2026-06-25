@@ -1,7 +1,7 @@
 <style>
 /* Knight Group footer — matches homepage dark band theme */
 footer.kg-site-footer {
-  --kg-footer-link: #9a2f2f;
+  --kg-footer-link: #ff3333;
   --kg-footer-link-hover: #ffffff;
   background:
     radial-gradient(circle at 12% 0, rgba(154, 47, 47, 0.16), transparent 28%),
@@ -89,6 +89,20 @@ footer.kg-site-footer .company-description {
   padding-left: 16px;
   border-left: 2px solid rgba(154, 47, 47, 0.55);
   color: rgba(255, 255, 255, 0.72);
+}
+
+footer.kg-site-footer .company-description a {
+  color: var(--kg-footer-link);
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer.kg-site-footer .company-description a:hover,
+footer.kg-site-footer .company-description a:focus-visible {
+  color: #ffffff;
+  outline: none;
 }
 
 footer.kg-site-footer .footer-center h4,
