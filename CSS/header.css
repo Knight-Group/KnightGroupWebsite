@@ -543,3 +543,198 @@ header .container {
 .email-picker-option:focus-visible {
     background: #f5f5f5;
 }
+
+/* ---- Knight Group mega-menu (Faith Works flyout pattern) ---- */
+.nav-dropdown-wrap {
+    position: relative;
+}
+.nav-dropdown-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    color: #f2e7e7;
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    font-family: inherit;
+}
+.nav-dropdown-btn::after,
+.areas-link::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg) translateY(-2px);
+}
+.nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 14px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1200;
+}
+.nav-dropdown-wrap.kg-nav-open .nav-dropdown-menu,
+.nav-dropdown-wrap:focus-within .nav-dropdown-menu {
+    display: block;
+}
+@media (hover: hover) {
+    .nav-dropdown-wrap:hover .nav-dropdown-menu {
+        display: block;
+    }
+}
+.fw-services-mega {
+    min-width: 248px;
+    max-width: 280px;
+    padding: 8px;
+    background: rgba(18, 17, 19, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.34);
+}
+.fw-services-mega__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.fw-services-mega__item {
+    position: relative;
+}
+.fw-services-mega__overview,
+.fw-services-mega__flyout-item a {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 10px;
+    color: #fff5f5;
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.fw-services-mega__overview:hover,
+.fw-services-mega__overview:focus-visible,
+.fw-services-mega__flyout-item a:hover,
+.fw-services-mega__flyout-item a:focus-visible {
+    background: rgba(154, 47, 47, 0.22);
+    color: #fff;
+    outline: none;
+}
+.fw-services-mega__emphasis,
+a.fw-services-mega__emphasis {
+    color: #ffd4d4 !important;
+}
+.fw-services-mega__trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    padding: 10px 12px;
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+    color: #fff5f5;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: left;
+    font-family: inherit;
+}
+.fw-services-mega__trigger:hover,
+.fw-services-mega__trigger:focus-visible,
+.fw-services-mega__item--branch.subnav-open > .fw-services-mega__trigger {
+    background: rgba(154, 47, 47, 0.22);
+    color: #fff;
+    outline: none;
+}
+.fw-services-mega__chevron {
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(-45deg);
+    flex: 0 0 auto;
+    opacity: 0.85;
+}
+.fw-services-mega__flyout {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 4px);
+    min-width: 240px;
+    margin: 0;
+    padding: 8px;
+    list-style: none;
+    background: rgba(18, 17, 19, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.34);
+    z-index: 1210;
+}
+@media (hover: hover) {
+    .fw-services-mega__item--branch:hover > .fw-services-mega__flyout,
+    .fw-services-mega__item--branch:focus-within > .fw-services-mega__flyout {
+        display: block;
+    }
+}
+.fw-services-mega__item--branch.subnav-open > .fw-services-mega__flyout {
+    display: block;
+}
+.fw-mm-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.fw-mm-item > a,
+.fw-mm-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 12px;
+    color: rgba(255, 255, 255, 0.94);
+    text-decoration: none;
+    font-size: 0.86rem;
+    font-weight: 700;
+    border-radius: 8px;
+    background: none;
+    border: 0;
+    text-align: left;
+    font-family: inherit;
+}
+.fw-mm-item > a:hover,
+.fw-mm-trigger:hover,
+.fw-mm-trigger:focus-visible {
+    background: rgba(154, 47, 47, 0.28);
+    color: #fff;
+    outline: none;
+}
+.fw-mm-submenu .fw-mm-item > a,
+.fw-mm-submenu a {
+    font-size: 0.82rem;
+    padding: 8px 12px 8px 18px;
+    border-left: 2px solid rgba(154, 47, 47, 0.45);
+    border-radius: 0 8px 8px 0;
+}
+.fw-mm-item--open > .fw-mm-trigger .mm-chevron {
+    transform: rotate(180deg);
+}
+.fw-mm-emphasis {
+    color: #ffd4d4 !important;
+}

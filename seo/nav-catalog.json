@@ -1,0 +1,131 @@
+{
+  "servicesMega": {
+    "overviewHref": "/services",
+    "overviewLabel": "All Services",
+    "categories": [
+      {
+        "id": "handyman",
+        "label": "Handyman",
+        "links": [
+          { "label": "Handyman Services", "href": "/Services/handyman" },
+          { "label": "Home Repair Near Me", "href": "/Services/home-repair-near-me" },
+          { "label": "Small Jobs", "href": "/Services/small-jobs" }
+        ]
+      },
+      {
+        "id": "general-repairs",
+        "label": "General Repairs",
+        "links": [
+          { "label": "General Repairs", "href": "/Services/general-repairs" },
+          { "label": "Drywall Repair", "href": "/Services/drywall-repair" },
+          { "label": "Water Damage Repair", "href": "/Services/water-damage-repair" },
+          { "label": "Mobile Home Repairs", "href": "/Services/mobile-home-repairs" },
+          { "label": "Hole in Wall Repair", "href": "/Services/hole-in-wall-repair" },
+          { "label": "Caulking Repair", "href": "/Services/caulking-repair" }
+        ]
+      },
+      {
+        "id": "plumbing",
+        "label": "Plumbing",
+        "links": [
+          { "label": "Plumbing Services", "href": "/Services/plumbing-services" },
+          { "label": "Sink & Faucet Repair", "href": "/Services/sink-faucet-repair" },
+          { "label": "Faucet Replacement", "href": "/Services/faucet-replacement" },
+          { "label": "Toilet Repair", "href": "/Services/toilet-repair" },
+          { "label": "Garbage Disposal", "href": "/Services/garbage-disposal-replacement" },
+          { "label": "Shutoff Valve Repair", "href": "/Services/shutoff-valve-repair" },
+          { "label": "Drain Unclogging", "href": "/Services/drain-unclogging" }
+        ]
+      },
+      {
+        "id": "electrical",
+        "label": "Electrical",
+        "links": [
+          { "label": "Electrical Work", "href": "/Services/electrical-work" }
+        ]
+      },
+      {
+        "id": "carpentry",
+        "label": "Carpentry",
+        "links": [
+          { "label": "Carpentry & Framing", "href": "/Services/carpentry-framing" },
+          { "label": "Small Job Carpenter", "href": "/Services/small-job-carpenter" },
+          { "label": "Trim Repair", "href": "/Services/trim-repair" },
+          { "label": "Custom Shelving", "href": "/Services/custom-shelving" },
+          { "label": "Cabinet Repair", "href": "/Services/cabinet-repair" },
+          { "label": "Door Frame Repair", "href": "/Services/door-frame-repair" }
+        ]
+      },
+      {
+        "id": "doors-windows",
+        "label": "Doors & Windows",
+        "links": [
+          { "label": "Doors & Windows", "href": "/Services/doors-windows" },
+          { "label": "Sliding Door Repair", "href": "/Services/sliding-door-repair" },
+          { "label": "Screen Door Repair", "href": "/Services/screen-door-repair" },
+          { "label": "Door Adjustment", "href": "/Services/door-adjustment" },
+          { "label": "Window Screen Repair", "href": "/Services/window-screen-repair" }
+        ]
+      },
+      {
+        "id": "painting",
+        "label": "Painting",
+        "links": [
+          { "label": "Painting & Finishing", "href": "/Services/painting-finishing" },
+          { "label": "Drywall Paint Repair", "href": "/Services/drywall-paint-repair" },
+          { "label": "Interior Painting", "href": "/Services/interior-painting" },
+          { "label": "Texture Matching", "href": "/Services/texture-matching" },
+          { "label": "Trim Painting", "href": "/Services/trim-painting" }
+        ]
+      },
+      {
+        "id": "renovations",
+        "label": "Renovations",
+        "links": [
+          { "label": "Home Renovations", "href": "/Services/home-renovations" },
+          { "label": "Custom Projects", "href": "/Services/custom-projects" }
+        ]
+      },
+      {
+        "id": "pricing",
+        "label": "Pricing",
+        "links": [
+          { "label": "Pricing Overview", "href": "/pricing" },
+          { "label": "Handyman by the Hour", "href": "/pricing-handyman-by-the-hour" },
+          { "label": "Flat Rate Handyman", "href": "/pricing-flat-rate-handyman" },
+          { "label": "Plumbing Repair Prices", "href": "/pricing-plumbing-repair-prices" }
+        ]
+      },
+      {
+        "id": "emergency",
+        "label": "Emergency",
+        "links": [
+          { "label": "Emergency Services", "href": "/Services/emergency-services", "emphasis": true }
+        ]
+      }
+    ]
+  },
+  "areasMega": {
+    "overviewHref": "/service-areas",
+    "overviewLabel": "All Service Areas",
+    "regions": [
+      {
+        "id": "pinellas",
+        "label": "Pinellas County",
+        "overviewHref": "/pinellas-handyman",
+        "overviewLabel": "All Pinellas County",
+        "cities": [
+          { "label": "Safety Harbor", "href": "/safety-harbor-handyman" },
+          { "label": "Clearwater", "href": "/clearwater-handyman" },
+          { "label": "Dunedin", "href": "/dunedin-handyman" },
+          { "label": "Palm Harbor", "href": "/palm-harbor-handyman" },
+          { "label": "Largo", "href": "/largo-handyman" },
+          { "label": "Oldsmar", "href": "/oldsmar-handyman" },
+          { "label": "Tarpon Springs", "href": "/tarpon-springs-handyman" },
+          { "label": "Seminole", "href": "/seminole-handyman" },
+          { "label": "St. Petersburg", "href": "/st-petersburg-handyman" }
+        ]
+      }
+    ]
+  }
+}

@@ -34,7 +34,7 @@ class HTMLInclude {
     ensureHeaderStyles() {
         const pathPrefix = window.location.pathname.includes('/Services/') ||
             window.location.pathname.includes('/PolicyPages/') ? '../' : '';
-        const headerVersion = '20260611-wave-a11y';
+        const headerVersion = '20260622-seo-nav';
 
         if (!document.getElementById('kg-header-css') && !document.querySelector('link[href*="header.min.css"]')) {
             const link = document.createElement('link');
@@ -48,7 +48,7 @@ class HTMLInclude {
     ensureKgMotionAssets() {
         const pathPrefix = window.location.pathname.includes('/Services/') ||
             window.location.pathname.includes('/PolicyPages/') ? '../' : '';
-        const motionVersion = '20260611-wave-a11y';
+        const motionVersion = '20260622-seo';
 
         if (!document.getElementById('kg-redesign-css') && !document.querySelector('link[href*="kg-redesign.css"]')) {
             const link = document.createElement('link');
@@ -238,7 +238,7 @@ class HTMLInclude {
         if (window._knightGroupIncludesLoaded) return;
         window._knightGroupIncludesLoaded = true;
 
-        const includeVersion = '20260624-footer-red';
+        const includeVersion = '20260622-seo-nav';
 
         // Determine if we're in a subdirectory
         const pathPrefix = window.location.pathname.includes('/Services/') || 

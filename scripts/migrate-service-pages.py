@@ -16,7 +16,7 @@ from service_expansions import EXPANSIONS, EXTRA_FAQ  # noqa: E402
 
 ROOT = SCRIPT_DIR.parent
 SERVICES = ROOT / "Services"
-VERSION = "20260610-service-polish"
+VERSION = "20260622-seo"
 
 SKIP = {
     "handcraftedfurniture&resins.html",
@@ -24,25 +24,20 @@ SKIP = {
     "index.html",
 }
 
-HERO_LOGO = """
-                <div class="kg-logo-coin kg-page-hero__logo" aria-hidden="true">
-                    <div class="kg-logo-coin__scene">
-                        <div class="kg-logo-coin__spinner">
-                            <div class="kg-logo-coin__face kg-logo-coin__face--front">
-                                <picture>
-                                    <source srcset="../Images/KnightGroupLogo.webp" type="image/webp">
-                                    <img src="../Images/KnightGroupLogo.png" alt="" width="240" height="240" loading="lazy" decoding="async">
-                                </picture>
-                            </div>
-                            <div class="kg-logo-coin__face kg-logo-coin__face--back">
-                                <picture>
-                                    <source srcset="../Images/KnightGroupLogo.webp" type="image/webp">
-                                    <img src="../Images/KnightGroupLogo.png" alt="" width="240" height="240" loading="lazy" decoding="async">
-                                </picture>
-                            </div>
-                        </div>
-                    </div>
+HERO_IMAGE_TEMPLATE = """
+                <div class="kg-page-hero__media" data-kg-enter="right">
+                    <picture>
+                        <source srcset="../Images/services/{image}?v={version}" type="image/webp">
+                        <img src="../Images/services/{image_jpg}" alt="{alt}" width="640" height="480" loading="eager" decoding="async">
+                    </picture>
                 </div>"""
+
+SCOPE_DISCLAIMER_HTML = """
+                            <div class="kg-scope-disclaimer">
+                                <p><strong>Handyman scope notice:</strong> Knight Group provides handyman-scope fixture replacement, minor repairs, and troubleshooting using existing connections. We do not perform work requiring a licensed plumbing, electrical, HVAC, or general contractor license. If a job requires a permit or licensed trade contractor, we identify that before work begins and refer or coordinate appropriately.</p>
+                            </div>"""
+
+SCOPE_SLUGS = {"plumbing-services", "electrical-work", "emergency-services"}
 
 SERVICE_CARD_IMAGES = {
     "handyman": "handyman.webp",
@@ -262,6 +257,8 @@ def render_page(slug: str, page_html: str) -> str:
     prose = legacy_prose
     if expansion:
         prose = f"{legacy_prose}\n\n{expansion}" if legacy_prose else expansion
+    if slug in SCOPE_SLUGS:
+        prose = f"{SCOPE_DISCLAIMER_HTML}\n{prose}"
     gallery = extract_gallery_block(page_html)
     faq_items = merge_faq_items(extract_faq_items(page_html), EXTRA_FAQ.get(slug, []))
     related = extract_related(page_html)
@@ -271,6 +268,13 @@ def render_page(slug: str, page_html: str) -> str:
         hero_lead = description
 
     canonical = f"https://www.knightgroup.com/Services/{slug}"
+    hero_image = SERVICE_CARD_IMAGES.get(slug, "handyman.webp")
+    hero_block = HERO_IMAGE_TEMPLATE.format(
+        image=hero_image,
+        image_jpg=hero_image.replace(".webp", ".jpg"),
+        alt=esc(f"{label} project photo in Pinellas County"),
+        version=VERSION,
+    )
 
     return f"""<!DOCTYPE html>
 <html lang="en" class="kg-js">
@@ -359,7 +363,7 @@ def render_page(slug: str, page_html: str) -> str:
                     <h1 id="{slug}-hero-heading" data-kg-enter="left">{esc(hero_h1)}</h1>
                     <p class="kg-page-hero__lead" data-kg-enter="left" style="--kg-enter-delay: 80ms;">{esc(hero_lead)}</p>
                 </div>
-{HERO_LOGO}
+{hero_block}
             </div>
         </section>
 

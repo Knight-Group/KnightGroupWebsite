@@ -1,0 +1,391 @@
+{
+  "generated": true,
+  "version": "20260622-seo",
+  "pages": [
+    {
+      "pageType": "niche-service",
+      "slug": "home-repair-near-me",
+      "path": "Services/home-repair-near-me.html",
+      "canonical": "https://www.knightgroup.com/Services/home-repair-near-me",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "small-jobs",
+      "path": "Services/small-jobs.html",
+      "canonical": "https://www.knightgroup.com/Services/small-jobs",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "small-job-carpenter",
+      "path": "Services/small-job-carpenter.html",
+      "canonical": "https://www.knightgroup.com/Services/small-job-carpenter",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "sink-faucet-repair",
+      "path": "Services/sink-faucet-repair.html",
+      "canonical": "https://www.knightgroup.com/Services/sink-faucet-repair",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "drywall-repair",
+      "path": "Services/drywall-repair.html",
+      "canonical": "https://www.knightgroup.com/Services/drywall-repair",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "sliding-door-repair",
+      "path": "Services/sliding-door-repair.html",
+      "canonical": "https://www.knightgroup.com/Services/sliding-door-repair",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "drywall-paint-repair",
+      "path": "Services/drywall-paint-repair.html",
+      "canonical": "https://www.knightgroup.com/Services/drywall-paint-repair",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "water-damage-repair",
+      "path": "Services/water-damage-repair.html",
+      "canonical": "https://www.knightgroup.com/Services/water-damage-repair",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "screen-door-repair",
+      "path": "Services/screen-door-repair.html",
+      "canonical": "https://www.knightgroup.com/Services/screen-door-repair",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "trim-repair",
+      "path": "Services/trim-repair.html",
+      "canonical": "https://www.knightgroup.com/Services/trim-repair",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "faucet-replacement",
+      "path": "Services/faucet-replacement.html",
+      "canonical": "https://www.knightgroup.com/Services/faucet-replacement",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "toilet-repair",
+      "path": "Services/toilet-repair.html",
+      "canonical": "https://www.knightgroup.com/Services/toilet-repair",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "garbage-disposal-replacement",
+      "path": "Services/garbage-disposal-replacement.html",
+      "canonical": "https://www.knightgroup.com/Services/garbage-disposal-replacement",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "shutoff-valve-repair",
+      "path": "Services/shutoff-valve-repair.html",
+      "canonical": "https://www.knightgroup.com/Services/shutoff-valve-repair",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "drain-unclogging",
+      "path": "Services/drain-unclogging.html",
+      "canonical": "https://www.knightgroup.com/Services/drain-unclogging",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "hole-in-wall-repair",
+      "path": "Services/hole-in-wall-repair.html",
+      "canonical": "https://www.knightgroup.com/Services/hole-in-wall-repair",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "caulking-repair",
+      "path": "Services/caulking-repair.html",
+      "canonical": "https://www.knightgroup.com/Services/caulking-repair",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "mobile-home-repairs",
+      "path": "Services/mobile-home-repairs.html",
+      "canonical": "https://www.knightgroup.com/Services/mobile-home-repairs",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "custom-shelving",
+      "path": "Services/custom-shelving.html",
+      "canonical": "https://www.knightgroup.com/Services/custom-shelving",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "cabinet-repair",
+      "path": "Services/cabinet-repair.html",
+      "canonical": "https://www.knightgroup.com/Services/cabinet-repair",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "door-frame-repair",
+      "path": "Services/door-frame-repair.html",
+      "canonical": "https://www.knightgroup.com/Services/door-frame-repair",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "door-adjustment",
+      "path": "Services/door-adjustment.html",
+      "canonical": "https://www.knightgroup.com/Services/door-adjustment",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "window-screen-repair",
+      "path": "Services/window-screen-repair.html",
+      "canonical": "https://www.knightgroup.com/Services/window-screen-repair",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "interior-painting",
+      "path": "Services/interior-painting.html",
+      "canonical": "https://www.knightgroup.com/Services/interior-painting",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "texture-matching",
+      "path": "Services/texture-matching.html",
+      "canonical": "https://www.knightgroup.com/Services/texture-matching",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
+      "slug": "trim-painting",
+      "path": "Services/trim-painting.html",
+      "canonical": "https://www.knightgroup.com/Services/trim-painting",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "city",
+      "slug": "safety-harbor-handyman",
+      "path": "safety-harbor-handyman.html",
+      "canonical": "https://www.knightgroup.com/safety-harbor-handyman",
+      "priority": "0.82"
+    },
+    {
+      "pageType": "city",
+      "slug": "clearwater-handyman",
+      "path": "clearwater-handyman.html",
+      "canonical": "https://www.knightgroup.com/clearwater-handyman",
+      "priority": "0.82"
+    },
+    {
+      "pageType": "city",
+      "slug": "dunedin-handyman",
+      "path": "dunedin-handyman.html",
+      "canonical": "https://www.knightgroup.com/dunedin-handyman",
+      "priority": "0.80"
+    },
+    {
+      "pageType": "city",
+      "slug": "palm-harbor-handyman",
+      "path": "palm-harbor-handyman.html",
+      "canonical": "https://www.knightgroup.com/palm-harbor-handyman",
+      "priority": "0.80"
+    },
+    {
+      "pageType": "city",
+      "slug": "largo-handyman",
+      "path": "largo-handyman.html",
+      "canonical": "https://www.knightgroup.com/largo-handyman",
+      "priority": "0.80"
+    },
+    {
+      "pageType": "city",
+      "slug": "oldsmar-handyman",
+      "path": "oldsmar-handyman.html",
+      "canonical": "https://www.knightgroup.com/oldsmar-handyman",
+      "priority": "0.80"
+    },
+    {
+      "pageType": "city",
+      "slug": "tarpon-springs-handyman",
+      "path": "tarpon-springs-handyman.html",
+      "canonical": "https://www.knightgroup.com/tarpon-springs-handyman",
+      "priority": "0.80"
+    },
+    {
+      "pageType": "city",
+      "slug": "seminole-handyman",
+      "path": "seminole-handyman.html",
+      "canonical": "https://www.knightgroup.com/seminole-handyman",
+      "priority": "0.80"
+    },
+    {
+      "pageType": "city",
+      "slug": "st-petersburg-handyman",
+      "path": "st-petersburg-handyman.html",
+      "canonical": "https://www.knightgroup.com/st-petersburg-handyman",
+      "priority": "0.80"
+    },
+    {
+      "pageType": "city",
+      "slug": "pinellas-handyman",
+      "path": "pinellas-handyman.html",
+      "canonical": "https://www.knightgroup.com/pinellas-handyman",
+      "priority": "0.82"
+    },
+    {
+      "pageType": "pricing-niche",
+      "slug": "handyman-by-the-hour",
+      "path": "pricing-handyman-by-the-hour.html",
+      "canonical": "https://www.knightgroup.com/pricing-handyman-by-the-hour",
+      "priority": "0.76"
+    },
+    {
+      "pageType": "pricing-niche",
+      "slug": "flat-rate-handyman",
+      "path": "pricing-flat-rate-handyman.html",
+      "canonical": "https://www.knightgroup.com/pricing-flat-rate-handyman",
+      "priority": "0.76"
+    },
+    {
+      "pageType": "pricing-niche",
+      "slug": "plumbing-repair-prices",
+      "path": "pricing-plumbing-repair-prices.html",
+      "canonical": "https://www.knightgroup.com/pricing-plumbing-repair-prices",
+      "priority": "0.76"
+    },
+    {
+      "pageType": "city-service",
+      "slug": "clearwater-sink-repair",
+      "path": "clearwater-sink-repair.html",
+      "canonical": "https://www.knightgroup.com/clearwater-sink-repair",
+      "priority": "0.77"
+    },
+    {
+      "pageType": "city-service",
+      "slug": "clearwater-drywall-repair",
+      "path": "clearwater-drywall-repair.html",
+      "canonical": "https://www.knightgroup.com/clearwater-drywall-repair",
+      "priority": "0.77"
+    },
+    {
+      "pageType": "city-service",
+      "slug": "safety-harbor-home-repair",
+      "path": "safety-harbor-home-repair.html",
+      "canonical": "https://www.knightgroup.com/safety-harbor-home-repair",
+      "priority": "0.77"
+    },
+    {
+      "pageType": "city-service",
+      "slug": "palm-harbor-drywall-repair",
+      "path": "palm-harbor-drywall-repair.html",
+      "canonical": "https://www.knightgroup.com/palm-harbor-drywall-repair",
+      "priority": "0.77"
+    },
+    {
+      "pageType": "city-service",
+      "slug": "largo-toilet-repair",
+      "path": "largo-toilet-repair.html",
+      "canonical": "https://www.knightgroup.com/largo-toilet-repair",
+      "priority": "0.77"
+    },
+    {
+      "pageType": "city-service",
+      "slug": "oldsmar-door-adjustment",
+      "path": "oldsmar-door-adjustment.html",
+      "canonical": "https://www.knightgroup.com/oldsmar-door-adjustment",
+      "priority": "0.77"
+    },
+    {
+      "pageType": "city-service",
+      "slug": "dunedin-trim-repair",
+      "path": "dunedin-trim-repair.html",
+      "canonical": "https://www.knightgroup.com/dunedin-trim-repair",
+      "priority": "0.77"
+    },
+    {
+      "pageType": "city-service",
+      "slug": "seminole-interior-painting",
+      "path": "seminole-interior-painting.html",
+      "canonical": "https://www.knightgroup.com/seminole-interior-painting",
+      "priority": "0.77"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "bathroom-tub-window-remodel",
+      "path": "gallery/bathroom-tub-window-remodel.html",
+      "canonical": "https://www.knightgroup.com/gallery/bathroom-tub-window-remodel",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "blinds-replacement-before-after",
+      "path": "gallery/blinds-replacement-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/blinds-replacement-before-after",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "bathroom-remodel-cobblestone",
+      "path": "gallery/bathroom-remodel-cobblestone.html",
+      "canonical": "https://www.knightgroup.com/gallery/bathroom-remodel-cobblestone",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "garbage-disposal-install",
+      "path": "gallery/garbage-disposal-install.html",
+      "canonical": "https://www.knightgroup.com/gallery/garbage-disposal-install",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "mold-wall-repair",
+      "path": "gallery/mold-wall-repair.html",
+      "canonical": "https://www.knightgroup.com/gallery/mold-wall-repair",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "pipe-repair-before-after",
+      "path": "gallery/pipe-repair-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/pipe-repair-before-after",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "floor-subfloor-repair",
+      "path": "gallery/floor-subfloor-repair.html",
+      "canonical": "https://www.knightgroup.com/gallery/floor-subfloor-repair",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "tub-drain-replacement",
+      "path": "gallery/tub-drain-replacement.html",
+      "canonical": "https://www.knightgroup.com/gallery/tub-drain-replacement",
+      "priority": "0.62"
+    }
+  ]
+}
