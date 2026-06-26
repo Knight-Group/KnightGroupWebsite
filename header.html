@@ -382,7 +382,7 @@
 <li><a href="/pricing">Pricing</a></li>
 <li><a href="/contact">Contact</a></li>
 <li><a href="/galleries">Gallery</a></li>
-</ul><div class="mm-cta"><a href="tel:+18136493341" class="mm-call">(813) 649-3341</a><a href="mailto:nknight@knightgroup.com" class="mm-email">Email Us</a></div><div class="mm-social"><a href="https://www.facebook.com/KnightGroupServices/" target="_blank" rel="noopener"><picture><source srcset="/Images/Facebook_Logo_Primary.webp" type="image/webp"><img src="/Images/Facebook_Logo_Primary.png" alt="Facebook" width="26" height="26" loading="lazy"></picture></a><a href="https://www.instagram.com/knight_group_services/" target="_blank" rel="noopener"><picture><source srcset="/Images/InstagramLogo.webp" type="image/webp"><img src="/Images/InstagramLogo.png" alt="Instagram" width="26" height="26" loading="lazy"></picture></a><a href="https://www.tiktok.com/@knightgroupservices" target="_blank" rel="noopener"><picture><source srcset="/Images/TikTokLogo.webp" type="image/webp"><img src="/Images/TikTokLogo.png" alt="TikTok" width="26" height="26" loading="lazy"></picture></a><a href="https://x.com/KnightGroupSvcs" target="_blank" rel="noopener"><picture><source srcset="/Images/XLogoBlack.webp" type="image/webp"><img src="/Images/XLogoBlack.png" alt="X" width="26" height="26" loading="lazy"></picture></a><a href="https://www.pinterest.com/KnightGroupService/" target="_blank" rel="noopener"><picture><source srcset="/Images/PintrestLogo.webp" type="image/webp"><img src="/Images/PintrestLogo.png" alt="Pinterest" width="26" height="26" loading="lazy"></picture></a></div><div class="mm-footer"><p>&copy; 1995 - 2026 Knight Group. All rights reserved.</p></div></nav><script src="/JS/kg-nav-mega.js?v=20260622-nav-fit" defer></script><script>
+</ul><div class="mm-cta"><a href="tel:+18136493341" class="mm-call">(813) 649-3341</a><a href="mailto:nknight@knightgroup.com" class="mm-email">Email Us</a></div><div class="mm-social"><a href="https://www.facebook.com/KnightGroupServices/" target="_blank" rel="noopener"><picture><source srcset="/Images/Facebook_Logo_Primary.webp" type="image/webp"><img src="/Images/Facebook_Logo_Primary.png" alt="Facebook" width="26" height="26" loading="lazy"></picture></a><a href="https://www.instagram.com/knight_group_services/" target="_blank" rel="noopener"><picture><source srcset="/Images/InstagramLogo.webp" type="image/webp"><img src="/Images/InstagramLogo.png" alt="Instagram" width="26" height="26" loading="lazy"></picture></a><a href="https://www.tiktok.com/@knightgroupservices" target="_blank" rel="noopener"><picture><source srcset="/Images/TikTokLogo.webp" type="image/webp"><img src="/Images/TikTokLogo.png" alt="TikTok" width="26" height="26" loading="lazy"></picture></a><a href="https://x.com/KnightGroupSvcs" target="_blank" rel="noopener"><picture><source srcset="/Images/XLogoBlack.webp" type="image/webp"><img src="/Images/XLogoBlack.png" alt="X" width="26" height="26" loading="lazy"></picture></a><a href="https://www.pinterest.com/KnightGroupService/" target="_blank" rel="noopener"><picture><source srcset="/Images/PintrestLogo.webp" type="image/webp"><img src="/Images/PintrestLogo.png" alt="Pinterest" width="26" height="26" loading="lazy"></picture></a></div><div class="mm-footer"><p>&copy; 1995 - 2026 Knight Group. All rights reserved.</p></div></nav><script src="/JS/kg-nav-mega.js?v=20260624-mobile-submenu-fix" defer></script><script>
 function toggleMobileMenu(forceClose) {
   var menu     = document.getElementById('mobileMenu');
   var backdrop = document.getElementById('mobileBackdrop');
@@ -391,19 +391,14 @@ function toggleMobileMenu(forceClose) {
     menu.classList.remove('active');
     backdrop.classList.remove('active');
     document.body.style.overflow = '';
+    if (typeof window.resetKgMobileSubmenus === 'function') window.resetKgMobileSubmenus();
   } else {
     menu.classList.add('active');
     backdrop.classList.add('active');
     document.body.style.overflow = 'hidden';
   }
 }
-function toggleMmServices(btn) {
-  var submenu  = document.getElementById('mmServicesMenu');
-  var expanded = btn.getAttribute('aria-expanded') === 'true';
-  btn.setAttribute('aria-expanded', String(!expanded));
-  submenu.classList.toggle('open', !expanded);
-}
-window.addEventListener('resize', function() {
+document.addEventListener('resize', function() {
   if (window.innerWidth > 1200) toggleMobileMenu(true);
 });
 document.addEventListener('keydown', function(e) {

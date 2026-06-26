@@ -34,7 +34,7 @@ class HTMLInclude {
     ensureHeaderStyles() {
         const pathPrefix = window.location.pathname.includes('/Services/') ||
             window.location.pathname.includes('/PolicyPages/') ? '../' : '';
-        const headerVersion = '20260624-header-company-name';
+        const headerVersion = '20260624-mobile-menu-fit';
 
         if (!document.getElementById('kg-header-css') && !document.querySelector('link[href*="header.min.css"]')) {
             const link = document.createElement('link');
@@ -70,7 +70,7 @@ class HTMLInclude {
     ensureKgNavMegaScript() {
         const pathPrefix = window.location.pathname.includes('/Services/') ||
             window.location.pathname.includes('/PolicyPages/') ? '../' : '';
-        const navVersion = '20260623-nav-mega-fix';
+        const navVersion = '20260624-mobile-submenu-fix';
 
         if (!document.getElementById('kg-nav-mega-js') && !document.querySelector('script[src*="kg-nav-mega.js"]')) {
             const script = document.createElement('script');
@@ -252,7 +252,7 @@ class HTMLInclude {
         if (window._knightGroupIncludesLoaded) return;
         window._knightGroupIncludesLoaded = true;
 
-        const includeVersion = '20260624-mobile-menu-gallery-fix';
+        const includeVersion = '20260624-mobile-menu-fit';
 
         // Determine if we're in a subdirectory
         const pathPrefix = window.location.pathname.includes('/Services/') || 
@@ -320,6 +320,9 @@ class HTMLInclude {
                     backdrop.setAttribute('aria-hidden', 'true');
                 }
                 if (toggle) toggle.setAttribute('aria-expanded', 'false');
+                if (typeof window.resetKgMobileSubmenus === 'function') {
+                    window.resetKgMobileSubmenus();
+                }
                 document.body.style.overflow = '';
             } else {
                 menu.hidden = false;
@@ -334,15 +337,6 @@ class HTMLInclude {
                 if (toggle) toggle.setAttribute('aria-expanded', 'true');
                 document.body.style.overflow = 'hidden';
             }
-        };
-
-        // ── Services submenu accordion ────────────────────────────────────────
-        window.toggleMmServices = function(btn) {
-            const submenu  = document.getElementById('mmServicesMenu');
-            if (!submenu) return;
-            const expanded = btn.getAttribute('aria-expanded') === 'true';
-            btn.setAttribute('aria-expanded', String(!expanded));
-            submenu.classList.toggle('open', !expanded);
         };
 
         // ── Close menu on backdrop click ──────────────────────────────────────
@@ -371,10 +365,6 @@ class HTMLInclude {
             backdrop.hidden = true;
             backdrop.setAttribute('aria-hidden', 'true');
         }
-
-        document.querySelectorAll('.mm-services-toggle').forEach(btn => {
-            btn.addEventListener('click', () => window.toggleMmServices(btn));
-        });
 
         // ── Close menu when a nav link is tapped ─────────────────────────────
         document.querySelectorAll('.mobile-menu a').forEach(link => {

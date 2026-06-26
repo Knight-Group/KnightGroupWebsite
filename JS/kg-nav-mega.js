@@ -55,6 +55,12 @@
     });
   }
 
+  function setMobileSubmenuState(submenu, open) {
+    if (!submenu) return;
+    submenu.hidden = !open;
+    submenu.classList.toggle("open", open);
+  }
+
   function bindMobileBranch(btn) {
     if (btn.getAttribute("data-kg-mm-bound") === "1") return;
     btn.setAttribute("data-kg-mm-bound", "1");
@@ -72,14 +78,14 @@
           if (other === item) return;
           other.classList.remove("fw-mm-item--open");
           var otherBtn = other.querySelector(".fw-mm-trigger");
-          var otherSub = other.querySelector(".fw-mm-submenu");
+          var otherSub = other.querySelector(":scope > .fw-mm-submenu");
           if (otherBtn) otherBtn.setAttribute("aria-expanded", "false");
-          if (otherSub) otherSub.hidden = true;
+          setMobileSubmenuState(otherSub, false);
         });
       }
       item.classList.toggle("fw-mm-item--open", opening);
       btn.setAttribute("aria-expanded", String(opening));
-      if (submenu) submenu.hidden = !opening;
+      setMobileSubmenuState(submenu, opening);
     });
   }
 
@@ -92,9 +98,9 @@
     document.querySelectorAll(".fw-mm-item--branch.fw-mm-item--open").forEach(function (item) {
       item.classList.remove("fw-mm-item--open");
       var btn = item.querySelector(".fw-mm-trigger");
-      var submenu = item.querySelector(".fw-mm-submenu");
+      var submenu = item.querySelector(":scope > .fw-mm-submenu");
       if (btn) btn.setAttribute("aria-expanded", "false");
-      if (submenu) submenu.hidden = true;
+      setMobileSubmenuState(submenu, false);
     });
   }
 
