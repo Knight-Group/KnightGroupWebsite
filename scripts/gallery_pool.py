@@ -8,6 +8,7 @@ import html
 import json
 import re
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 GALLERY_DIR = ROOT / "GalleryImages"
@@ -262,9 +263,9 @@ def render_inline_figure(
     align = "left" if align == "left" else "right"
     version = f"?v={cache_bust}" if cache_bust else ""
     if src_rel.startswith("Images/cities/"):
-        src = f"{prefix}{src_rel}{version}"
+        src = f"/{src_rel.lstrip('/')}{version}"
     else:
-        src = f"{prefix}GalleryImages/{filename}{version}"
+        src = f"/GalleryImages/{quote(filename)}{version}"
     return (
         f'\n<figure class="kg-prose-photo kg-prose-photo--{align}">'
         f'<img src="{src}" alt="{alt}" width="480" height="360" loading="lazy" decoding="async">'

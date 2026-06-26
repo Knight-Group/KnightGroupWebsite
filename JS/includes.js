@@ -32,50 +32,44 @@ class HTMLInclude {
     }
 
     ensureHeaderStyles() {
-        const pathPrefix = window.location.pathname.includes('/Services/') ||
-            window.location.pathname.includes('/PolicyPages/') ? '../' : '';
-        const headerVersion = '20260624-mobile-menu-fit';
+        const headerVersion = '20260626-root-asset-paths';
 
         if (!document.getElementById('kg-header-css') && !document.querySelector('link[href*="header.min.css"]')) {
             const link = document.createElement('link');
             link.id = 'kg-header-css';
             link.rel = 'stylesheet';
-            link.href = pathPrefix + 'CSS/header.min.css?v=' + headerVersion;
+            link.href = '/CSS/header.min.css?v=' + headerVersion;
             document.head.appendChild(link);
         }
     }
 
     ensureKgMotionAssets() {
-        const pathPrefix = window.location.pathname.includes('/Services/') ||
-            window.location.pathname.includes('/PolicyPages/') ? '../' : '';
-        const motionVersion = '20260624-inline-prose-gallery';
+        const motionVersion = '20260626-carousel-image-fix';
 
         if (!document.getElementById('kg-redesign-css') && !document.querySelector('link[href*="kg-redesign.css"]')) {
             const link = document.createElement('link');
             link.id = 'kg-redesign-css';
             link.rel = 'stylesheet';
-            link.href = pathPrefix + 'CSS/kg-redesign.css?v=' + motionVersion;
+            link.href = '/CSS/kg-redesign.css?v=' + motionVersion;
             document.head.appendChild(link);
         }
 
         if (!document.getElementById('kg-redesign-js') && !document.querySelector('script[src*="kg-redesign.js"]')) {
             const script = document.createElement('script');
             script.id = 'kg-redesign-js';
-            script.src = pathPrefix + 'JS/kg-redesign.js?v=' + motionVersion;
+            script.src = '/JS/kg-redesign.js?v=' + motionVersion;
             script.defer = true;
             document.head.appendChild(script);
         }
     }
 
     ensureKgNavMegaScript() {
-        const pathPrefix = window.location.pathname.includes('/Services/') ||
-            window.location.pathname.includes('/PolicyPages/') ? '../' : '';
-        const navVersion = '20260624-mobile-submenu-fix';
+        const navVersion = '20260626-root-asset-paths';
 
         if (!document.getElementById('kg-nav-mega-js') && !document.querySelector('script[src*="kg-nav-mega.js"]')) {
             const script = document.createElement('script');
             script.id = 'kg-nav-mega-js';
-            script.src = pathPrefix + 'JS/kg-nav-mega.js?v=' + navVersion;
+            script.src = '/JS/kg-nav-mega.js?v=' + navVersion;
             script.defer = true;
             document.head.appendChild(script);
         }
@@ -252,7 +246,7 @@ class HTMLInclude {
         if (window._knightGroupIncludesLoaded) return;
         window._knightGroupIncludesLoaded = true;
 
-        const includeVersion = '20260624-mobile-menu-fit';
+        const includeVersion = '20260626-root-asset-paths';
 
         // Determine if we're in a subdirectory
         const pathPrefix = window.location.pathname.includes('/Services/') || 
@@ -445,6 +439,21 @@ class HTMLInclude {
         toActivate.forEach(link => link.classList.add('nav-active'));
     }
 
+    toRootAssetPath(path) {
+        if (!path || /^(?:https?:)?\/\//i.test(path) || path.startsWith('data:')) {
+            return path;
+        }
+        if (path.startsWith('/')) {
+            return path;
+        }
+        const normalized = path.replace(/^(\.\.\/)+/, '');
+        if (/^(Images|GalleryImages|CSS|JS)\//.test(normalized)) {
+            const parts = normalized.split('?');
+            return '/' + parts[0] + (parts.length > 1 ? '?' + parts.slice(1).join('?') : '');
+        }
+        return path;
+    }
+
     fixRelativePaths(element, pathPrefix) {
         const currentPath = window.location.pathname;
         const isInServices = currentPath.includes('/Services/');
@@ -455,12 +464,10 @@ class HTMLInclude {
         images.forEach(img => {
             const src = img.getAttribute('src');
             if (src) {
-                // Handle absolute paths that need to be made relative for subdirectories
-                if (src.startsWith('/') && (isInServices || isInPolicyPages)) {
-                    img.setAttribute('src', '..' + src);
-                }
-                // Handle relative paths that need prefix
-                else if (!src.startsWith('http') && !src.startsWith('../') && !src.startsWith('/')) {
+                const rootAsset = this.toRootAssetPath(src);
+                if (rootAsset !== src) {
+                    img.setAttribute('src', rootAsset);
+                } else if (!src.startsWith('http') && !src.startsWith('../') && !src.startsWith('/') && !src.startsWith('data:')) {
                     img.setAttribute('src', pathPrefix + src);
                 }
             }
@@ -471,8 +478,15 @@ class HTMLInclude {
         sources.forEach(source => {
             const srcset = source.getAttribute('srcset');
             if (srcset) {
-                if (srcset.startsWith('/') && (isInServices || isInPolicyPages)) {
-                    source.setAttribute('srcset', '..' + srcset);
+                const pieces = srcset.split(',').map(part => {
+                    const tokens = part.trim().split(/\s+/);
+                    if (!tokens.length) return part;
+                    tokens[0] = this.toRootAssetPath(tokens[0]);
+                    return tokens.join(' ');
+                });
+                const rootSrcset = pieces.join(', ');
+                if (rootSrcset !== srcset) {
+                    source.setAttribute('srcset', rootSrcset);
                 } else if (!srcset.startsWith('http') && !srcset.startsWith('../') && !srcset.startsWith('/')) {
                     source.setAttribute('srcset', pathPrefix + srcset);
                 }

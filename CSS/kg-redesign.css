@@ -3627,6 +3627,27 @@ body:has(main.kg-home) {
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
 }
 
+.kg-recent-jobs-band .kg-job-card picture {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: rgba(8, 6, 7, 0.55);
+  overflow: hidden;
+}
+
+.kg-recent-jobs-band .kg-job-card img,
+.kg-recent-jobs-band .kg-job-card img[data-kg-enter] {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 180px;
+  object-fit: cover;
+  object-position: center;
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+}
+
 .kg-recent-jobs-band .kg-job-card h3 {
   color: #fff;
 }

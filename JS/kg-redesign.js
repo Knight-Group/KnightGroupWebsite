@@ -16,6 +16,14 @@
   var marked = new WeakSet();
   var heroPanelsReady = false;
 
+  function assetUrl(path) {
+    if (!path || /^(?:https?:)?\/\//i.test(path) || path.charAt(0) === '/') {
+      return path;
+    }
+    var normalized = String(path).replace(/^(\.\.\/)+/, '');
+    return '/' + normalized.replace(/^\/+/, '');
+  }
+
   function prefersReducedMotion() {
     return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   }
@@ -42,7 +50,7 @@
     panel.className = 'kg-hero-panel kg-hero-panel--photo kg-hero-panel--' + slot.slot + ' kg-hero-panel--from-' + slot.dir;
 
     var img = document.createElement('img');
-    img.src = image.src;
+    img.src = assetUrl(image.src);
     img.alt = '';
     img.decoding = 'async';
     img.loading = 'eager';
@@ -94,22 +102,25 @@
     if (!hero || hero.dataset.heroPanelsInit) return;
     hero.dataset.heroPanelsInit = '1';
 
-    fetch('Images/hero-panels/manifest.json')
+    fetch(assetUrl('Images/hero-panels/manifest.json'))
       .then(function (response) {
         if (!response.ok) throw new Error('hero manifest load failed');
         return response.json();
       })
       .then(function (data) {
-        renderHeroPanels(hero, data.images || []);
+        var images = (data.images || []).map(function (image) {
+          return Object.assign({}, image, { src: assetUrl(image.src) });
+        });
+        renderHeroPanels(hero, images);
         fitHeroPills();
         syncHeroColumnHeights();
       })
       .catch(function () {
         renderHeroPanels(hero, [
-          { src: 'Images/hero-panels/fixed.webp' },
-          { src: 'Images/hero-panels/after.webp' },
-          { src: 'Images/hero-panels/5e07b6f70709456ca2c12b02ecc44ed9.webp' },
-          { src: 'Images/hero-panels/8616534258664c79aace7cfccd4bec96.webp' }
+          { src: assetUrl('Images/hero-panels/fixed.webp') },
+          { src: assetUrl('Images/hero-panels/after.webp') },
+          { src: assetUrl('Images/hero-panels/5e07b6f70709456ca2c12b02ecc44ed9.webp') },
+          { src: assetUrl('Images/hero-panels/8616534258664c79aace7cfccd4bec96.webp') }
         ]);
         fitHeroPills();
         syncHeroColumnHeights();
@@ -117,7 +128,7 @@
   }
 
   function prepareEnter(el, direction, delayMs, immediate) {
-    if (!el || marked.has(el)) return;
+    if (!el || marked.has(el) || el.getAttribute('data-kg-static') === 'true') return;
     marked.add(el);
     el.setAttribute('data-kg-enter', direction);
     el.style.setProperty('--kg-enter-delay', (delayMs || 0) + 'ms');
@@ -173,9 +184,7 @@
       prepareEnter(el, 'top', 0, false);
     });
 
-    document.querySelectorAll('.kg-job-card img').forEach(function (el, index) {
-      prepareEnter(el, VAR_DIRECTIONS[index % VAR_DIRECTIONS.length], index * 90, false);
-    });
+    // Carousel slides are translated off-screen; scroll enter animations break image paint/load.
 
     document.querySelectorAll('.kg-overview-grid .kg-panel').forEach(function (el, index) {
       prepareEnter(el, index === 0 ? 'left' : 'right', index * 80, false);

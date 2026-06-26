@@ -4,22 +4,22 @@
   "mobileCount": 2,
   "images": [
     {
-      "src": "Images/hero-panels/5e07b6f70709456ca2c12b02ecc44ed9.webp",
+      "src": "/Images/hero-panels/5e07b6f70709456ca2c12b02ecc44ed9.webp",
       "filename": "5e07b6f70709456ca2c12b02ecc44ed9.webp",
       "source": "5e07b6f70709456ca2c12b02ecc44ed9.jpeg"
     },
     {
-      "src": "Images/hero-panels/8616534258664c79aace7cfccd4bec96.webp",
+      "src": "/Images/hero-panels/8616534258664c79aace7cfccd4bec96.webp",
       "filename": "8616534258664c79aace7cfccd4bec96.webp",
       "source": "8616534258664c79aace7cfccd4bec96.jpg"
     },
     {
-      "src": "Images/hero-panels/after.webp",
+      "src": "/Images/hero-panels/after.webp",
       "filename": "after.webp",
       "source": "after.jpeg"
     },
     {
-      "src": "Images/hero-panels/fixed.webp",
+      "src": "/Images/hero-panels/fixed.webp",
       "filename": "fixed.webp",
       "source": "fixed.jpg"
     }

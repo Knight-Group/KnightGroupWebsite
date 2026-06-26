@@ -75,7 +75,7 @@ def convert_sources() -> list[dict]:
 
         images.append(
             {
-                "src": f"Images/hero-panels/{target.name}",
+                "src": f"/Images/hero-panels/{target.name}",
                 "filename": target.name,
                 "source": path.name,
             }

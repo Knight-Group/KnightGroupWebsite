@@ -132,9 +132,9 @@ def render_related(links: list[tuple[str, str]], prefix: str) -> str:
             continue
         image = resolve_card_image(href)
         if image.startswith("cities/"):
-            img_src = f"{prefix}Images/{image}"
+            img_src = f"/Images/{image}"
         else:
-            img_src = f"{prefix}Images/services/{image}"
+            img_src = f"/Images/services/{image}"
         cards.append(
             f"""                        <a class="kg-service-related-card" href="{href}">
                             <img src="{img_src}?v={VERSION}" alt="" width="400" height="300" loading="lazy" decoding="async">
@@ -253,12 +253,12 @@ def build_pricing_prose(defn: dict) -> str:
     )
 
 
-def vince_cutout_hero_wrap(prefix: str) -> str:
+def vince_cutout_hero_wrap() -> str:
     return f"""
             <div class="kg-page-hero__cutout-wrap" aria-hidden="true" data-kg-enter="right">
                 <picture>
-                    <source srcset="{prefix}Images/knight-hero-cutout.webp?v={VERSION}" type="image/webp">
-                    <img class="kg-page-hero-cutout" src="{prefix}Images/knight-hero-cutout.png" alt="" width="1200" height="800" decoding="async" loading="eager">
+                    <source srcset="/Images/knight-hero-cutout.webp?v={VERSION}" type="image/webp">
+                    <img class="kg-page-hero-cutout" src="/Images/knight-hero-cutout.png" alt="" width="1200" height="800" decoding="async" loading="eager">
                 </picture>
             </div>"""
 
@@ -293,7 +293,7 @@ def page_shell(
             crumbs.append(f'<span aria-current="page">{esc(label)}</span>')
     scope_block = SCOPE_DISCLAIMER if scope else ""
     graph_json = json.dumps(json_ld, indent=4, ensure_ascii=False)
-    cutout_wrap = vince_cutout_hero_wrap(prefix)
+    cutout_wrap = vince_cutout_hero_wrap()
     sidebar_html = render_service_sidebar(slug, sidebar_label, sidebar_lead, sidebar_county)
 
     return f"""<!DOCTYPE html>
@@ -302,8 +302,8 @@ def page_shell(
     <script>window.dataLayer = window.dataLayer || [];</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="{prefix}JS/canonical-redirect.js"></script>
-    <link rel="icon" type="image/png" sizes="32x32" href="{prefix}Images/favicon-32x32.png">
+    <script src="/JS/canonical-redirect.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="/Images/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/Images/apple-touch-icon.png">
     <meta name="theme-color" content="#9a2f2f">
     <meta name="author" content="Knight Group Handyman Services LLC">
@@ -314,9 +314,9 @@ def page_shell(
     <script type="application/ld+json">
 {graph_json}
     </script>
-    <link rel="stylesheet" href="{prefix}CSS/header.min.css?v={VERSION}">
-    <link rel="stylesheet" href="{prefix}CSS/kg-redesign.css?v={VERSION}">
-    <script src="{prefix}JS/kg-redesign.js?v={VERSION}" defer></script>
+    <link rel="stylesheet" href="/CSS/header.min.css?v={VERSION}">
+    <link rel="stylesheet" href="/CSS/kg-redesign.css?v={VERSION}">
+    <script src="/JS/kg-redesign.js?v={VERSION}" defer></script>
 </head>
 <body class="kg-page kg-service">
     <div id="header-include"></div>
@@ -363,7 +363,7 @@ def page_shell(
         </div>
     </main>
     <div id="footer-include"></div>
-    <script src="{prefix}JS/includes.min.js?v={VERSION}" defer></script>
+    <script src="/JS/includes.min.js?v={VERSION}" defer></script>
 </body>
 </html>
 """
@@ -697,7 +697,8 @@ def generate_gallery_project(group: dict, manifest: list) -> None:
         filename = src.rsplit("/", 1)[-1]
         if not filename.endswith(".webp") or not (ROOT / "GalleryImages" / filename).is_file():
             continue
-        img_html += f'<figure><img src="{prefix}{src}" alt="{esc(img.get("seoAlt", group["title"]))}" loading="lazy" width="800" height="600"></figure>'
+        img_src = src if src.startswith("/") else f"/{src.lstrip('/')}"
+        img_html += f'<figure><img src="{img_src}" alt="{esc(img.get("seoAlt", group["title"]))}" loading="lazy" width="800" height="600"></figure>'
     body = prose_block(
         [
             group["description"],
@@ -778,6 +779,10 @@ def main() -> int:
         encoding="utf-8",
     )
     print(f"Wrote {len(manifest)} pages to manifest.")
+    import subprocess
+    import sys
+
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "encode-asset-paths.py")], check=True)
     from audit_gallery_refs import main as audit_gallery_refs
     from audit_image_refs import main as audit_image_refs
 
