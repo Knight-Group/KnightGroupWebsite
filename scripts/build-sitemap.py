@@ -23,6 +23,7 @@ STATIC_PAGES = [
     ("/about", "0.82", "monthly"),
     ("/galleries", "0.80", "weekly"),
     ("/service-areas", "0.85", "monthly"),
+    ("/llms.txt", "0.40", "monthly"),
 ]
 
 MAJOR_SERVICES = [
@@ -36,6 +37,13 @@ MAJOR_SERVICES = [
     "doors-windows",
     "custom-projects",
     "emergency-services",
+]
+
+POLICY_PAGES = [
+    ("PolicyPages/privacy-policy", "0.35", "yearly"),
+    ("PolicyPages/terms", "0.35", "yearly"),
+    ("PolicyPages/payment-policy", "0.35", "yearly"),
+    ("PolicyPages/returnpolicy", "0.35", "yearly"),
 ]
 
 
@@ -61,6 +69,12 @@ def main() -> int:
         loc = f"{BASE}/Services/{slug}"
         if loc not in seen:
             add_url(urlset, loc, "0.86", "monthly")
+            seen.add(loc)
+
+    for path, priority, changefreq in POLICY_PAGES:
+        loc = f"{BASE}/{path}"
+        if loc not in seen:
+            add_url(urlset, loc, priority, changefreq)
             seen.add(loc)
 
     if MANIFEST.exists():

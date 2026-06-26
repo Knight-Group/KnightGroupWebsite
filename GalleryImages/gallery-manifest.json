@@ -28,6 +28,10 @@
     {
       "id": "general-repairs",
       "label": "General repairs"
+    },
+    {
+      "id": "electrical",
+      "label": "Electrical & fixtures"
     }
   ],
   "groups": [
@@ -392,6 +396,80 @@
           "title": "Window wall rebuild progressing",
           "seoAlt": "Window wall rebuild progressing \u2014 handyman project photo in Pinellas County FL by Knight Group",
           "description": "Later stage of the same window-wall repair moving toward a finish-ready closeout.",
+          "beforeAfter": false
+        }
+      ]
+    },
+    {
+      "id": "fixtures-fans-electrical",
+      "title": "Light fixtures and ceiling fan installation",
+      "description": "Fixture and ceiling fan installs on existing electrical connections across Pinellas County homes.",
+      "category": "electrical",
+      "serviceLink": "/Services/electrical-work",
+      "beforeAfter": false,
+      "progression": true,
+      "images": [
+        {
+          "src": "GalleryImages/fixtures-fans-01.webp",
+          "filename": "fixtures-fans-01.webp",
+          "step": 1,
+          "title": "Ceiling junction prepped for fixture install",
+          "seoAlt": "Ceiling junction prepped for fixture or fan install \u2014 electrical work in Pinellas County FL by Knight Group",
+          "description": "Existing ceiling box and wiring ready for a new light fixture or fan mount.",
+          "beforeAfter": false
+        },
+        {
+          "src": "GalleryImages/fixtures-fans-02.webp",
+          "filename": "fixtures-fans-02.webp",
+          "step": 2,
+          "title": "Ceiling fan installed",
+          "seoAlt": "Ceiling fan installed on existing connection \u2014 electrical work in Pinellas County FL by Knight Group",
+          "description": "Completed ceiling fan installation with proper mounting on an existing box.",
+          "beforeAfter": false
+        },
+        {
+          "src": "GalleryImages/fixtures-fans-03.webp",
+          "filename": "fixtures-fans-03.webp",
+          "step": 3,
+          "title": "Fixture mounting location prepared",
+          "seoAlt": "Light fixture mounting location prepared \u2014 electrical work in Pinellas County FL by Knight Group",
+          "description": "Wall or ceiling area prepared for a new fixture using existing wiring.",
+          "beforeAfter": false
+        },
+        {
+          "src": "GalleryImages/fixtures-fans-04.webp",
+          "filename": "fixtures-fans-04.webp",
+          "step": 4,
+          "title": "Light fixture installed",
+          "seoAlt": "Light fixture installed \u2014 electrical work in Pinellas County FL by Knight Group",
+          "description": "New light fixture mounted and connected on existing electrical supply.",
+          "beforeAfter": false
+        },
+        {
+          "src": "GalleryImages/fixtures-fans-05.webp",
+          "filename": "fixtures-fans-05.webp",
+          "step": 5,
+          "title": "Light fixture installation completed",
+          "seoAlt": "Light fixture installation completed \u2014 electrical work in Pinellas County FL by Knight Group",
+          "description": "Finished fixture install with trim and connection tested.",
+          "beforeAfter": false
+        },
+        {
+          "src": "GalleryImages/fixtures-fans-06.webp",
+          "filename": "fixtures-fans-06.webp",
+          "step": 6,
+          "title": "Fixture box ready for install",
+          "seoAlt": "Electrical box ready for fixture swap \u2014 Pinellas County FL by Knight Group",
+          "description": "Existing box and wiring prepared before a like-for-like fixture replacement.",
+          "beforeAfter": false
+        },
+        {
+          "src": "GalleryImages/fixtures-fans-07.webp",
+          "filename": "fixtures-fans-07.webp",
+          "step": 7,
+          "title": "Fan or fixture connection point",
+          "seoAlt": "Ceiling connection point for fan or fixture \u2014 electrical work Pinellas County FL by Knight Group",
+          "description": "Ceiling location staged for fan or light fixture installation.",
           "beforeAfter": false
         }
       ]

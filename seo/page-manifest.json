@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "version": "20260622-seo",
+  "version": "20260622-serper-schema-full",
   "pages": [
     {
       "pageType": "niche-service",
@@ -185,6 +185,13 @@
       "priority": "0.78"
     },
     {
+      "pageType": "county",
+      "slug": "pinellas-handyman",
+      "path": "pinellas-handyman.html",
+      "canonical": "https://www.knightgroup.com/pinellas-handyman",
+      "priority": "0.84"
+    },
+    {
       "pageType": "city",
       "slug": "safety-harbor-handyman",
       "path": "safety-harbor-handyman.html",
@@ -203,55 +210,181 @@
       "slug": "dunedin-handyman",
       "path": "dunedin-handyman.html",
       "canonical": "https://www.knightgroup.com/dunedin-handyman",
-      "priority": "0.80"
+      "priority": "0.82"
     },
     {
       "pageType": "city",
       "slug": "palm-harbor-handyman",
       "path": "palm-harbor-handyman.html",
       "canonical": "https://www.knightgroup.com/palm-harbor-handyman",
-      "priority": "0.80"
+      "priority": "0.82"
     },
     {
       "pageType": "city",
       "slug": "largo-handyman",
       "path": "largo-handyman.html",
       "canonical": "https://www.knightgroup.com/largo-handyman",
-      "priority": "0.80"
+      "priority": "0.82"
     },
     {
       "pageType": "city",
       "slug": "oldsmar-handyman",
       "path": "oldsmar-handyman.html",
       "canonical": "https://www.knightgroup.com/oldsmar-handyman",
-      "priority": "0.80"
+      "priority": "0.82"
     },
     {
       "pageType": "city",
       "slug": "tarpon-springs-handyman",
       "path": "tarpon-springs-handyman.html",
       "canonical": "https://www.knightgroup.com/tarpon-springs-handyman",
-      "priority": "0.80"
+      "priority": "0.82"
     },
     {
       "pageType": "city",
       "slug": "seminole-handyman",
       "path": "seminole-handyman.html",
       "canonical": "https://www.knightgroup.com/seminole-handyman",
-      "priority": "0.80"
+      "priority": "0.82"
     },
     {
       "pageType": "city",
       "slug": "st-petersburg-handyman",
       "path": "st-petersburg-handyman.html",
       "canonical": "https://www.knightgroup.com/st-petersburg-handyman",
-      "priority": "0.80"
+      "priority": "0.82"
+    },
+    {
+      "pageType": "county",
+      "slug": "hillsborough-handyman",
+      "path": "hillsborough-handyman.html",
+      "canonical": "https://www.knightgroup.com/hillsborough-handyman",
+      "priority": "0.84"
     },
     {
       "pageType": "city",
-      "slug": "pinellas-handyman",
-      "path": "pinellas-handyman.html",
-      "canonical": "https://www.knightgroup.com/pinellas-handyman",
+      "slug": "tampa-handyman",
+      "path": "tampa-handyman.html",
+      "canonical": "https://www.knightgroup.com/tampa-handyman",
+      "priority": "0.82"
+    },
+    {
+      "pageType": "city",
+      "slug": "town-n-country-handyman",
+      "path": "town-n-country-handyman.html",
+      "canonical": "https://www.knightgroup.com/town-n-country-handyman",
+      "priority": "0.82"
+    },
+    {
+      "pageType": "city",
+      "slug": "westchase-handyman",
+      "path": "westchase-handyman.html",
+      "canonical": "https://www.knightgroup.com/westchase-handyman",
+      "priority": "0.82"
+    },
+    {
+      "pageType": "city",
+      "slug": "citrus-park-handyman",
+      "path": "citrus-park-handyman.html",
+      "canonical": "https://www.knightgroup.com/citrus-park-handyman",
+      "priority": "0.82"
+    },
+    {
+      "pageType": "city",
+      "slug": "carrollwood-handyman",
+      "path": "carrollwood-handyman.html",
+      "canonical": "https://www.knightgroup.com/carrollwood-handyman",
+      "priority": "0.82"
+    },
+    {
+      "pageType": "city",
+      "slug": "northdale-handyman",
+      "path": "northdale-handyman.html",
+      "canonical": "https://www.knightgroup.com/northdale-handyman",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "city",
+      "slug": "egypt-lake-leto-handyman",
+      "path": "egypt-lake-leto-handyman.html",
+      "canonical": "https://www.knightgroup.com/egypt-lake-leto-handyman",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "city",
+      "slug": "temple-terrace-handyman",
+      "path": "temple-terrace-handyman.html",
+      "canonical": "https://www.knightgroup.com/temple-terrace-handyman",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "county",
+      "slug": "pasco-handyman",
+      "path": "pasco-handyman.html",
+      "canonical": "https://www.knightgroup.com/pasco-handyman",
+      "priority": "0.84"
+    },
+    {
+      "pageType": "city",
+      "slug": "holiday-handyman",
+      "path": "holiday-handyman.html",
+      "canonical": "https://www.knightgroup.com/holiday-handyman",
+      "priority": "0.82"
+    },
+    {
+      "pageType": "city",
+      "slug": "trinity-handyman",
+      "path": "trinity-handyman.html",
+      "canonical": "https://www.knightgroup.com/trinity-handyman",
+      "priority": "0.82"
+    },
+    {
+      "pageType": "city",
+      "slug": "new-port-richey-handyman",
+      "path": "new-port-richey-handyman.html",
+      "canonical": "https://www.knightgroup.com/new-port-richey-handyman",
+      "priority": "0.82"
+    },
+    {
+      "pageType": "city",
+      "slug": "elfers-handyman",
+      "path": "elfers-handyman.html",
+      "canonical": "https://www.knightgroup.com/elfers-handyman",
+      "priority": "0.82"
+    },
+    {
+      "pageType": "city",
+      "slug": "seven-springs-handyman",
+      "path": "seven-springs-handyman.html",
+      "canonical": "https://www.knightgroup.com/seven-springs-handyman",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "city",
+      "slug": "jasmine-estates-handyman",
+      "path": "jasmine-estates-handyman.html",
+      "canonical": "https://www.knightgroup.com/jasmine-estates-handyman",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "city",
+      "slug": "beacon-square-handyman",
+      "path": "beacon-square-handyman.html",
+      "canonical": "https://www.knightgroup.com/beacon-square-handyman",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "city",
+      "slug": "port-richey-handyman",
+      "path": "port-richey-handyman.html",
+      "canonical": "https://www.knightgroup.com/port-richey-handyman",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "city",
+      "slug": "land-o-lakes-handyman",
+      "path": "land-o-lakes-handyman.html",
+      "canonical": "https://www.knightgroup.com/land-o-lakes-handyman",
       "priority": "0.82"
     },
     {

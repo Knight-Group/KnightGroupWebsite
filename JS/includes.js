@@ -27,14 +27,14 @@ class HTMLInclude {
         this.ensureCriticalSharedStyles();
         this.ensureHeaderStyles();
         this.ensureKgMotionAssets();
+        this.ensureKgNavMegaScript();
         this.loadIncludes();
-        this.initializeAfterIncludes();
     }
 
     ensureHeaderStyles() {
         const pathPrefix = window.location.pathname.includes('/Services/') ||
             window.location.pathname.includes('/PolicyPages/') ? '../' : '';
-        const headerVersion = '20260622-seo-nav';
+        const headerVersion = '20260624-header-company-name';
 
         if (!document.getElementById('kg-header-css') && !document.querySelector('link[href*="header.min.css"]')) {
             const link = document.createElement('link');
@@ -48,7 +48,7 @@ class HTMLInclude {
     ensureKgMotionAssets() {
         const pathPrefix = window.location.pathname.includes('/Services/') ||
             window.location.pathname.includes('/PolicyPages/') ? '../' : '';
-        const motionVersion = '20260622-seo';
+        const motionVersion = '20260624-inline-prose-gallery';
 
         if (!document.getElementById('kg-redesign-css') && !document.querySelector('link[href*="kg-redesign.css"]')) {
             const link = document.createElement('link');
@@ -62,6 +62,20 @@ class HTMLInclude {
             const script = document.createElement('script');
             script.id = 'kg-redesign-js';
             script.src = pathPrefix + 'JS/kg-redesign.js?v=' + motionVersion;
+            script.defer = true;
+            document.head.appendChild(script);
+        }
+    }
+
+    ensureKgNavMegaScript() {
+        const pathPrefix = window.location.pathname.includes('/Services/') ||
+            window.location.pathname.includes('/PolicyPages/') ? '../' : '';
+        const navVersion = '20260623-nav-mega-fix';
+
+        if (!document.getElementById('kg-nav-mega-js') && !document.querySelector('script[src*="kg-nav-mega.js"]')) {
+            const script = document.createElement('script');
+            script.id = 'kg-nav-mega-js';
+            script.src = pathPrefix + 'JS/kg-nav-mega.js?v=' + navVersion;
             script.defer = true;
             document.head.appendChild(script);
         }
@@ -238,7 +252,7 @@ class HTMLInclude {
         if (window._knightGroupIncludesLoaded) return;
         window._knightGroupIncludesLoaded = true;
 
-        const includeVersion = '20260622-seo-nav';
+        const includeVersion = '20260624-mobile-menu-gallery-fix';
 
         // Determine if we're in a subdirectory
         const pathPrefix = window.location.pathname.includes('/Services/') || 
@@ -270,6 +284,15 @@ class HTMLInclude {
             this.setActiveNavItem();
             if (typeof window.kgInitEnterAnimations === 'function') {
                 window.kgInitEnterAnimations();
+            }
+            if (typeof window.kgInitNavMegaMenus === 'function') {
+                window.kgInitNavMegaMenus();
+            }
+            if (typeof window.kgFitHeaderNav === 'function') {
+                window.requestAnimationFrame(function () {
+                    window.kgFitHeaderNav();
+                    window.requestAnimationFrame(window.kgFitHeaderNav);
+                });
             }
             document.dispatchEvent(new CustomEvent('kg-includes-ready'));
         }, 100);

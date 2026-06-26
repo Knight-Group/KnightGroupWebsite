@@ -1,8 +1,8 @@
 <style>
 /* Knight Group footer — matches homepage dark band theme */
 footer.kg-site-footer {
-  --kg-footer-link: #ff3333;
-  --kg-footer-link-hover: #ffffff;
+  --kg-footer-link: #ffffff;
+  --kg-footer-link-hover: #e84a4a;
   background:
     radial-gradient(circle at 12% 0, rgba(154, 47, 47, 0.16), transparent 28%),
     radial-gradient(circle at 88% 12%, rgba(111, 32, 36, 0.12), transparent 24%),
@@ -41,6 +41,12 @@ footer.kg-site-footer .footer-content {
   margin-bottom: clamp(32px, 4vw, 48px);
 }
 
+footer.kg-site-footer .footer-left,
+footer.kg-site-footer .footer-center,
+footer.kg-site-footer .footer-right {
+  min-width: 0;
+}
+
 footer.kg-site-footer .footer-company {
   text-align: left;
 }
@@ -77,8 +83,8 @@ footer.kg-site-footer .footer-brand-lockup p {
 }
 
 footer.kg-site-footer .footer-company > p {
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 1rem;
+  color: #ffffff;
+  font-size: 1.08rem;
   line-height: 1.65;
   margin: 8px 0;
 }
@@ -88,11 +94,12 @@ footer.kg-site-footer .company-description {
   margin-top: 14px;
   padding-left: 16px;
   border-left: 2px solid rgba(154, 47, 47, 0.55);
-  color: rgba(255, 255, 255, 0.72);
+  color: #ffffff;
+  font-size: 1.08rem;
 }
 
 footer.kg-site-footer .company-description a {
-  color: var(--kg-footer-link);
+  color: #ffffff;
   font-style: normal;
   font-weight: 700;
   text-decoration: none;
@@ -101,7 +108,7 @@ footer.kg-site-footer .company-description a {
 
 footer.kg-site-footer .company-description a:hover,
 footer.kg-site-footer .company-description a:focus-visible {
-  color: #ffffff;
+  color: var(--kg-footer-link-hover);
   outline: none;
 }
 
@@ -137,9 +144,9 @@ footer.kg-site-footer .footer-links a {
   color: var(--kg-footer-link);
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.94rem;
+  font-size: 1.08rem;
   padding: 8px 0;
-  min-height: 40px;
+  min-height: 44px;
   display: flex;
   align-items: center;
   transition: color 0.2s ease, transform 0.2s ease;
@@ -161,9 +168,9 @@ footer.kg-site-footer .footer-contact__phone {
 }
 
 footer.kg-site-footer .footer-contact p {
-  color: rgba(255, 255, 255, 0.86);
+  color: #ffffff;
   margin: 0 0 10px;
-  font-size: 0.95rem;
+  font-size: 1.08rem;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -173,16 +180,24 @@ footer.kg-site-footer .footer-contact p {
 
 footer.kg-site-footer .footer-contact .contact-icon {
   flex: 0 0 auto;
-  min-width: 48px;
-  font-size: 0.875rem;
+  min-width: 52px;
+  font-size: 1rem;
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--kg-footer-link);
+  color: #ffffff;
+  transition: color 0.2s ease;
+}
+
+footer.kg-site-footer .footer-contact p:hover .contact-icon,
+footer.kg-site-footer .footer-contact p:has(.footer-email-link:hover) .contact-icon,
+footer.kg-site-footer .footer-contact p:has(.footer-email-link:focus-visible) .contact-icon {
+  color: var(--kg-footer-link-hover);
 }
 
 footer.kg-site-footer .footer-email-link {
-  color: var(--kg-footer-link);
+  color: #ffffff;
+  font-size: 1.08rem;
   font-weight: 700;
   text-decoration: none;
   word-break: break-word;
@@ -233,6 +248,7 @@ footer.kg-site-footer .footer-legal {
   padding: 16px 20px;
   border-top: 1px solid rgba(240, 196, 196, 0.12);
   background: rgba(0, 0, 0, 0.14);
+  box-sizing: border-box;
 }
 
 footer.kg-site-footer .footer-legal nav {
@@ -248,9 +264,9 @@ footer.kg-site-footer .footer-legal nav {
 footer.kg-site-footer .footer-legal a {
   color: var(--kg-footer-link);
   text-decoration: none;
-  font-size: 0.9375rem;
+  font-size: 1.05rem;
   font-weight: 600;
-  padding: 6px 4px;
+  padding: 8px 6px;
   white-space: nowrap;
   transition: color 0.2s ease;
 }
@@ -262,8 +278,8 @@ footer.kg-site-footer .footer-legal a:focus-visible {
 }
 
 footer.kg-site-footer .footer-legal span[aria-hidden="true"] {
-  color: rgba(255, 255, 255, 0.28);
-  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 1rem;
   user-select: none;
 }
 
@@ -298,10 +314,14 @@ footer.kg-site-footer .footer-bottom a:focus-visible {
   text-decoration: underline;
 }
 
-@media (min-width: 767px) and (max-width: 997px) {
+@media (min-width: 769px) and (max-width: 997px) {
   footer.kg-site-footer .footer-content {
     grid-template-columns: 1fr 1fr;
     text-align: center;
+  }
+
+  footer.kg-site-footer .footer-left {
+    grid-column: 1 / -1;
   }
 
   footer.kg-site-footer .footer-left,
@@ -322,6 +342,15 @@ footer.kg-site-footer .footer-bottom a:focus-visible {
 
   footer.kg-site-footer .footer-social {
     margin: 0 auto;
+  }
+
+  footer.kg-site-footer .footer-contact__phone {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer.kg-site-footer .footer-contact p {
+    justify-content: center;
   }
 
   footer.kg-site-footer .footer-center h4::after,

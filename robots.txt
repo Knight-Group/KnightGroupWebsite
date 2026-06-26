@@ -1,36 +1,5 @@
-User-agent: *
-Allow: /
-
-Disallow: /404
-Disallow: /404.html
-Disallow: /header
-Disallow: /header.html
-Disallow: /footer
-Disallow: /footer.html
-Disallow: /head-gtm
-Disallow: /head-gtm.html
-Disallow: /socialCards
-Disallow: /socialCards.html
-Disallow: /page-template
-Disallow: /page-template.html
-Disallow: /thank-you
-Disallow: /thank-you.html
-Disallow: /Chess-Game-main/
+Disallow: /admin/
+Disallow: /.venv/
+Disallow: /node_modules/
+Disallow: /seo/
 Disallow: /scripts/
-Disallow: /seo-audit/
-Disallow: /gsc-export-2026-06-03/
-Disallow: /PolicyPages/payment-policy-test
-Disallow: /PolicyPages/payment-policy-test.html
-Disallow: /JS/header
-Disallow: /JS/header.html
-Disallow: /JS/footer
-Disallow: /JS/footer.html
-Disallow: /Services/index.html
-Disallow: /Services/programming&databases
-Disallow: /Services/programming%26databases
-Disallow: /Services/handcraftedfurniture&resins
-Disallow: /Services/handcraftedfurniture%26resins
-
-# Policy pages use noindex on-page; kept crawlable for link discovery only.
-
-Sitemap: https://www.knightgroup.com/sitemap.xml

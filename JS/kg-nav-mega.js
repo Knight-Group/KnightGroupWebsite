@@ -1,4 +1,4 @@
-(function initKgNavMegaMenus() {
+(function initKgNavMegaMenusModule() {
   function closeDesktopBranches(menu, except) {
     if (!menu) return;
     menu.querySelectorAll(".fw-services-mega__item--branch.subnav-open").forEach(function (item) {
@@ -20,7 +20,10 @@
     });
   }
 
-  document.querySelectorAll(".nav-dropdown-wrap").forEach(function (wrap) {
+  function bindDesktopMega(wrap) {
+    if (wrap.getAttribute("data-kg-mega-bound") === "1") return;
+    wrap.setAttribute("data-kg-mega-bound", "1");
+
     var dropdownBtn = wrap.querySelector(".nav-dropdown-btn");
     var dropdownMenu = wrap.querySelector(".nav-dropdown-menu");
     if (!dropdownBtn || !dropdownMenu) return;
@@ -50,29 +53,12 @@
     dropdownMenu.addEventListener("click", function (e) {
       e.stopPropagation();
     });
-  });
-
-  document.addEventListener("click", function () {
-    closeAllDesktopDropdowns();
-    document.querySelectorAll(".nav-dropdown-wrap .nav-dropdown-btn").forEach(function (btn) {
-      btn.setAttribute("aria-expanded", "false");
-    });
-    document.querySelectorAll(".nav-dropdown-wrap").forEach(function (wrap) {
-      wrap.classList.remove("kg-nav-open");
-    });
-  });
-
-  function resetMobileBranches() {
-    document.querySelectorAll(".fw-mm-item--branch.fw-mm-item--open").forEach(function (item) {
-      item.classList.remove("fw-mm-item--open");
-      var btn = item.querySelector(".fw-mm-trigger");
-      var submenu = item.querySelector(".fw-mm-submenu");
-      if (btn) btn.setAttribute("aria-expanded", "false");
-      if (submenu) submenu.hidden = true;
-    });
   }
 
-  document.querySelectorAll(".fw-mm-item--branch > .fw-mm-trigger").forEach(function (btn) {
+  function bindMobileBranch(btn) {
+    if (btn.getAttribute("data-kg-mm-bound") === "1") return;
+    btn.setAttribute("data-kg-mm-bound", "1");
+
     btn.addEventListener("click", function (e) {
       e.preventDefault();
       e.stopPropagation();
@@ -95,7 +81,39 @@
       btn.setAttribute("aria-expanded", String(opening));
       if (submenu) submenu.hidden = !opening;
     });
-  });
+  }
 
+  function initKgNavMegaMenus() {
+    document.querySelectorAll(".nav-dropdown-wrap").forEach(bindDesktopMega);
+    document.querySelectorAll(".fw-mm-item--branch > .fw-mm-trigger").forEach(bindMobileBranch);
+  }
+
+  function resetMobileBranches() {
+    document.querySelectorAll(".fw-mm-item--branch.fw-mm-item--open").forEach(function (item) {
+      item.classList.remove("fw-mm-item--open");
+      var btn = item.querySelector(".fw-mm-trigger");
+      var submenu = item.querySelector(".fw-mm-submenu");
+      if (btn) btn.setAttribute("aria-expanded", "false");
+      if (submenu) submenu.hidden = true;
+    });
+  }
+
+  if (!window.__kgNavMegaDocClickBound) {
+    window.__kgNavMegaDocClickBound = true;
+    document.addEventListener("click", function () {
+      closeAllDesktopDropdowns();
+      document.querySelectorAll(".nav-dropdown-wrap .nav-dropdown-btn").forEach(function (btn) {
+        btn.setAttribute("aria-expanded", "false");
+      });
+      document.querySelectorAll(".nav-dropdown-wrap").forEach(function (wrap) {
+        wrap.classList.remove("kg-nav-open");
+      });
+    });
+  }
+
+  window.kgInitNavMegaMenus = initKgNavMegaMenus;
   window.resetKgMobileSubmenus = resetMobileBranches;
+
+  initKgNavMegaMenus();
+  document.addEventListener("kg-includes-ready", initKgNavMegaMenus);
 })();

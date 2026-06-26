@@ -111,7 +111,7 @@
     "regions": [
       {
         "id": "pinellas",
-        "label": "Pinellas County",
+        "label": "Pinellas County Handyman Services",
         "overviewHref": "/pinellas-handyman",
         "overviewLabel": "All Pinellas County",
         "cities": [
@@ -124,6 +124,39 @@
           { "label": "Tarpon Springs", "href": "/tarpon-springs-handyman" },
           { "label": "Seminole", "href": "/seminole-handyman" },
           { "label": "St. Petersburg", "href": "/st-petersburg-handyman" }
+        ]
+      },
+      {
+        "id": "hillsborough",
+        "label": "Hillsborough County Handyman Services",
+        "overviewHref": "/hillsborough-handyman",
+        "overviewLabel": "All Hillsborough County",
+        "cities": [
+          { "label": "Tampa", "href": "/tampa-handyman" },
+          { "label": "Town 'n' Country", "href": "/town-n-country-handyman" },
+          { "label": "Westchase", "href": "/westchase-handyman" },
+          { "label": "Citrus Park", "href": "/citrus-park-handyman" },
+          { "label": "Carrollwood", "href": "/carrollwood-handyman" },
+          { "label": "Northdale", "href": "/northdale-handyman" },
+          { "label": "Egypt Lake-Leto", "href": "/egypt-lake-leto-handyman" },
+          { "label": "Temple Terrace", "href": "/temple-terrace-handyman" }
+        ]
+      },
+      {
+        "id": "pasco",
+        "label": "Pasco County Handyman Services",
+        "overviewHref": "/pasco-handyman",
+        "overviewLabel": "All Pasco County",
+        "cities": [
+          { "label": "Holiday", "href": "/holiday-handyman" },
+          { "label": "Trinity", "href": "/trinity-handyman" },
+          { "label": "New Port Richey", "href": "/new-port-richey-handyman" },
+          { "label": "Elfers", "href": "/elfers-handyman" },
+          { "label": "Seven Springs", "href": "/seven-springs-handyman" },
+          { "label": "Jasmine Estates", "href": "/jasmine-estates-handyman" },
+          { "label": "Beacon Square", "href": "/beacon-square-handyman" },
+          { "label": "Port Richey", "href": "/port-richey-handyman" },
+          { "label": "Land O' Lakes", "href": "/land-o-lakes-handyman" }
         ]
       }
     ]

@@ -174,17 +174,39 @@ header .container {
     display: flex;
     justify-content: center;
 }
-.nav-section nav ul {
+.nav-section nav > ul {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     gap: 30px;
     list-style: none;
     margin: 0;
     padding: 0;
+    flex-wrap: nowrap;
+}
+/* Legacy hub pages embed old header CSS with `.nav-section nav ul` — keep mega lists vertical */
+.nav-section nav ul.fw-services-mega__list,
+.nav-section nav ul.fw-services-mega__flyout {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 2px;
+}
+.nav-section nav > ul > li {
+    display: flex;
+    align-items: baseline;
+    flex-shrink: 0;
+}
+.nav-section nav > ul > li.nav-dropdown-wrap {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    flex-shrink: 0;
 }
 .nav-section nav a,
-.services-link {
+.nav-section nav .nav-dropdown-btn {
+    display: inline-flex;
+    align-items: center;
     color: #f2e7e7;
     text-decoration: none;
     font-size: 0.82rem;
@@ -192,30 +214,70 @@ header .container {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     white-space: nowrap;
+    line-height: 1;
+    vertical-align: baseline;
     transition: color 0.18s ease;
 }
 .nav-section nav a:hover,
 .nav-section nav a:focus-visible,
 .nav-section nav a.active,
 .nav-section nav a.nav-active,
-.dropdown:focus-within .services-link {
+.nav-section nav .nav-dropdown-btn:hover,
+.nav-section nav .nav-dropdown-btn:focus-visible,
+.dropdown:focus-within .services-link,
+.nav-dropdown-wrap.kg-nav-open > .nav-dropdown-btn,
+.nav-dropdown-wrap:focus-within > .nav-dropdown-btn {
     color: #fff;
     outline: none;
 }
 .dropdown { position: relative; }
-.services-link {
+.nav-dropdown-btn {
     display: inline-flex;
     align-items: center;
-    gap: 7px;
+    position: relative;
+    gap: 0;
+    padding: 0 0.75em 0 0;
+    margin: 0;
+    min-height: 0;
+    height: auto;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    color: inherit;
+    -webkit-appearance: none;
+    appearance: none;
+    vertical-align: baseline;
 }
-.services-link::after {
-    content: "";
-    width: 6px;
-    height: 6px;
-    border-right: 2px solid currentColor;
-    border-bottom: 2px solid currentColor;
-    transform: rotate(45deg) translateY(-2px);
-    opacity: 1;
+.kg-nav-dropdown-label {
+    white-space: nowrap;
+    line-height: 1;
+}
+.kg-nav-dropdown-chevron {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    box-sizing: border-box;
+    transform: translateY(calc(-50% + 1px)) rotate(45deg);
+    flex: 0 0 auto;
+    opacity: 0.9;
+    transition: transform 0.2s ease;
+    pointer-events: none;
+}
+.nav-dropdown-wrap.kg-nav-open > .nav-dropdown-btn .kg-nav-dropdown-chevron,
+.nav-dropdown-wrap:focus-within > .nav-dropdown-btn .kg-nav-dropdown-chevron {
+    transform: translateY(calc(-50% + 1px)) rotate(225deg);
+}
+.nav-section nav .nav-dropdown-btn::after {
+    display: none;
 }
 .dropdown-content {
     display: none;
@@ -521,7 +583,6 @@ header .container {
         width: 50px;
         height: 50px;
     }
-    .company-name { display: none; }
 }
 
 @media (max-width: 600px) {
@@ -548,37 +609,22 @@ header .container {
 .nav-dropdown-wrap {
     position: relative;
 }
-.nav-dropdown-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    background: none;
-    border: 0;
-    padding: 0;
-    cursor: pointer;
-    color: #f2e7e7;
-    font-size: inherit;
-    font-weight: inherit;
-    letter-spacing: inherit;
-    text-transform: inherit;
-    font-family: inherit;
-}
-.nav-dropdown-btn::after,
-.areas-link::after {
-    content: "";
-    width: 6px;
-    height: 6px;
-    border-right: 2px solid currentColor;
-    border-bottom: 2px solid currentColor;
-    transform: rotate(45deg) translateY(-2px);
-}
 .nav-dropdown-menu {
     display: none;
     position: absolute;
-    top: calc(100% + 14px);
-    left: 50%;
-    transform: translateX(-50%);
+    top: calc(100% + 6px);
+    left: 0;
+    right: auto;
+    transform: none;
     z-index: 1200;
+}
+.nav-dropdown-menu::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    height: 10px;
 }
 .nav-dropdown-wrap.kg-nav-open .nav-dropdown-menu,
 .nav-dropdown-wrap:focus-within .nav-dropdown-menu {
@@ -683,6 +729,10 @@ a.fw-services-mega__emphasis {
     border-radius: 14px;
     box-shadow: 0 18px 44px rgba(0, 0, 0, 0.34);
     z-index: 1210;
+}
+.fw-services-mega__flyout-item {
+    display: block;
+    margin: 0;
 }
 @media (hover: hover) {
     .fw-services-mega__item--branch:hover > .fw-services-mega__flyout,

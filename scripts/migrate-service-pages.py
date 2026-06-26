@@ -12,11 +12,16 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
+from gallery_pool import (  # noqa: E402
+    SERVICE_PARENT_TO_CATEGORY,
+    prose_with_inline_gallery,
+)
 from service_expansions import EXPANSIONS, EXTRA_FAQ  # noqa: E402
+from service_sidebar import render_service_sidebar  # noqa: E402
 
 ROOT = SCRIPT_DIR.parent
 SERVICES = ROOT / "Services"
-VERSION = "20260622-seo"
+VERSION = "20260622-compact-buttons"
 
 SKIP = {
     "handcraftedfurniture&resins.html",
@@ -24,13 +29,13 @@ SKIP = {
     "index.html",
 }
 
-HERO_IMAGE_TEMPLATE = """
-                <div class="kg-page-hero__media" data-kg-enter="right">
-                    <picture>
-                        <source srcset="../Images/services/{image}?v={version}" type="image/webp">
-                        <img src="../Images/services/{image_jpg}" alt="{alt}" width="640" height="480" loading="eager" decoding="async">
-                    </picture>
-                </div>"""
+HERO_CUTOUT_TEMPLATE = """
+            <div class="kg-page-hero__cutout-wrap" aria-hidden="true" data-kg-enter="right">
+                <picture>
+                    <source srcset="../Images/knight-hero-cutout.webp?v={version}" type="image/webp">
+                    <img class="kg-page-hero-cutout" src="../Images/knight-hero-cutout.png" alt="" width="1200" height="800" decoding="async" loading="eager">
+                </picture>
+            </div>"""
 
 SCOPE_DISCLAIMER_HTML = """
                             <div class="kg-scope-disclaimer">
@@ -39,18 +44,7 @@ SCOPE_DISCLAIMER_HTML = """
 
 SCOPE_SLUGS = {"plumbing-services", "electrical-work", "emergency-services"}
 
-SERVICE_CARD_IMAGES = {
-    "handyman": "handyman.webp",
-    "general-repairs": "general-repairs.webp",
-    "plumbing-services": "plumbing-services.webp",
-    "electrical-work": "electrical-work.webp",
-    "carpentry-framing": "carpentry-framing.webp",
-    "painting-finishing": "painting-finishing.webp",
-    "home-renovations": "home-renovations.webp",
-    "doors-windows": "doors-windows.webp",
-    "custom-projects": "custom-projects.webp",
-    "emergency-services": "emergency-services.webp",
-}
+from service_related import SERVICE_CARD_IMAGES, resolve_card_image  # noqa: E402
 
 SERVICE_LABELS = {
     "general-repairs": "General Repairs",
@@ -144,6 +138,10 @@ def transform_prose(raw_html: str) -> str:
     raw_html = re.sub(r'<div class="experience-card">', '<div class="kg-service-callout">', raw_html)
     raw_html = re.sub(r'<div class="process-steps">', '<div class="kg-service-steps">', raw_html)
     raw_html = re.sub(r'<div class="process-step">', '<div class="kg-service-step">', raw_html)
+    raw_html = re.sub(r'<div class="warning-box">', '<div class="kg-service-callout">', raw_html)
+    raw_html = re.sub(r"(<h[1-6][^>]*>)\s*\?\?\s*", r"\1", raw_html)
+    raw_html = re.sub(r"\?\?\s*Safety First", "Safety First", raw_html)
+    raw_html = re.sub(r"\ufffd+", "", raw_html)
     raw_html = fix_content_links(raw_html, "")
     raw_html = re.sub(r'\s*style="[^"]*"', "", raw_html)
     raw_html = re.sub(r"\s+</ul>", "</ul>", raw_html)
@@ -214,23 +212,26 @@ def render_faq(items: list[tuple[str, str]], slug: str) -> str:
             </section>"""
 
 
-def related_slug(href: str) -> str:
-    return href.rstrip("/").split("/")[-1].replace(".html", "")
-
-
 def render_related(links: list[tuple[str, str]]) -> str:
     if not links:
         return ""
     cards = []
     for href, label in links:
-        slug = related_slug(href)
-        image = SERVICE_CARD_IMAGES.get(slug, "handyman.webp")
+        if not href.startswith("/Services/"):
+            continue
+        image = resolve_card_image(href)
+        if image.startswith("cities/"):
+            img_src = f"../Images/{image}"
+        else:
+            img_src = f"../Images/services/{image}"
         cards.append(
             f"""                        <a class="kg-service-related-card" href="{href}">
-                            <img src="../Images/services/{image}?v=20260610-service-images" alt="" width="400" height="300" loading="lazy" decoding="async">
+                            <img src="{img_src}?v={VERSION}" alt="" width="400" height="300" loading="lazy" decoding="async">
                             <span class="kg-service-related-card__label">{html.escape(label)}</span>
                         </a>"""
         )
+    if not cards:
+        return ""
     return f"""
             <section class="kg-section kg-service-related" aria-labelledby="related-services-heading">
                 <div class="kg-shell">
@@ -259,7 +260,13 @@ def render_page(slug: str, page_html: str) -> str:
         prose = f"{legacy_prose}\n\n{expansion}" if legacy_prose else expansion
     if slug in SCOPE_SLUGS:
         prose = f"{SCOPE_DISCLAIMER_HTML}\n{prose}"
-    gallery = extract_gallery_block(page_html)
+    prose = prose_with_inline_gallery(
+        prose,
+        slug,
+        "../",
+        category=SERVICE_PARENT_TO_CATEGORY.get(slug),
+        alt_fallback=f"{label} project photo in Pinellas County",
+    )
     faq_items = merge_faq_items(extract_faq_items(page_html), EXTRA_FAQ.get(slug, []))
     related = extract_related(page_html)
     json_ld = extract_json_ld(page_html)
@@ -268,13 +275,8 @@ def render_page(slug: str, page_html: str) -> str:
         hero_lead = description
 
     canonical = f"https://www.knightgroup.com/Services/{slug}"
-    hero_image = SERVICE_CARD_IMAGES.get(slug, "handyman.webp")
-    hero_block = HERO_IMAGE_TEMPLATE.format(
-        image=hero_image,
-        image_jpg=hero_image.replace(".webp", ".jpg"),
-        alt=esc(f"{label} project photo in Pinellas County"),
-        version=VERSION,
-    )
+    cutout_wrap = HERO_CUTOUT_TEMPLATE.format(version=VERSION)
+    sidebar_html = render_service_sidebar(slug, label)
 
     return f"""<!DOCTYPE html>
 <html lang="en" class="kg-js">
@@ -350,6 +352,7 @@ def render_page(slug: str, page_html: str) -> str:
 
     <main id="main-content">
         <section class="kg-page-hero kg-service-hero" aria-labelledby="{slug}-hero-heading">
+{cutout_wrap}
             <div class="kg-shell kg-page-hero__grid">
                 <div class="kg-page-hero__copy">
                     <nav class="kg-breadcrumb" aria-label="Breadcrumb">
@@ -363,7 +366,6 @@ def render_page(slug: str, page_html: str) -> str:
                     <h1 id="{slug}-hero-heading" data-kg-enter="left">{esc(hero_h1)}</h1>
                     <p class="kg-page-hero__lead" data-kg-enter="left" style="--kg-enter-delay: 80ms;">{esc(hero_lead)}</p>
                 </div>
-{hero_block}
             </div>
         </section>
 
@@ -371,29 +373,14 @@ def render_page(slug: str, page_html: str) -> str:
             <section class="kg-section kg-service-detail" aria-labelledby="{slug}-detail-heading">
                 <div class="kg-shell">
                     <div class="kg-service-layout">
-                        <div class="kg-service-prose" data-kg-enter="left">
+                        <div class="kg-service-prose">
                             {prose}
                         </div>
 
-                        <aside class="kg-service-sidebar" data-kg-enter="right" aria-labelledby="{slug}-sidebar-heading">
-                            <h3 id="{slug}-sidebar-heading">Book {esc(label.lower())}</h3>
-                            <p class="kg-service-sidebar__lead">Call, book online, or send a quick message for a free written estimate across Pinellas County.</p>
-                            <div class="kg-service-sidebar__actions">
-                                <a href="/booking" class="kg-btn kg-btn--solid">Request free estimate</a>
-                                <a href="tel:+18136493341" class="kg-btn kg-btn--ghost">Call (813) 649-3341</a>
-                                <a href="/contact" class="kg-btn kg-btn--ghost">Ask a question</a>
-                            </div>
-                            <ul class="kg-service-sidebar__list">
-                                <li>Registered &amp; insured</li>
-                                <li>Free written estimates</li>
-                                <li>Safety Harbor &amp; Pinellas County</li>
-                                <li>5.0 Google rating · 7 reviews</li>
-                            </ul>
-                        </aside>
+{sidebar_html}
                     </div>
                 </div>
             </section>
-            {gallery}
 {render_faq(faq_items, slug)}
 {render_related(related)}
             <section class="kg-section kg-service-cta" aria-labelledby="{slug}-cta-heading">
@@ -403,7 +390,7 @@ def render_page(slug: str, page_html: str) -> str:
                         <h2 id="{slug}-cta-heading">Ready to schedule {esc(label.lower())}?</h2>
                         <p>Tell us what needs attention, where the property is located, and when you would like help. We will confirm scope and pricing before work starts.</p>
                     </div>
-                    <div class="kg-service-cta__actions" data-kg-enter="left">
+                    <div class="kg-service-cta__actions">
                         <a href="/booking" class="kg-btn kg-btn--solid">Book a free estimate</a>
                         <a href="/services" class="kg-btn kg-btn--ghost">Browse all services</a>
                         <a href="/galleries" class="kg-btn kg-btn--ghost">See project gallery</a>
@@ -439,6 +426,12 @@ def main() -> int:
         updated += 1
         print(f"migrated: {path.name}")
     print(f"Done. Updated {updated} service pages.")
+    from audit_gallery_refs import main as audit_gallery_refs
+
+    if audit_gallery_refs() != 0:
+        print("Gallery audit failed.", file=sys.stderr)
+        return 1
+    print("Gallery audit passed.")
     return 0
 
 

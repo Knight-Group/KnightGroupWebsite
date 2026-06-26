@@ -188,6 +188,16 @@
     document.querySelectorAll('.kg-services-mosaic .kg-service-card').forEach(function (el, index) {
       prepareEnter(el, VAR_DIRECTIONS[index % VAR_DIRECTIONS.length], (index % 3) * 80, false);
     });
+
+    document.querySelectorAll('.kg-page-hero__cutout-wrap[data-kg-enter]').forEach(function (el) {
+      prepareEnter(el, 'right', 0, true);
+    });
+
+    document.querySelectorAll(
+      '.kg-service-stack .kg-service-prose[data-kg-enter], .kg-service-stack .kg-service-sidebar[data-kg-enter], .kg-service-stack .kg-service-cta__actions[data-kg-enter]'
+    ).forEach(function (el) {
+      el.setAttribute('data-kg-enter-immediate', 'true');
+    });
   }
 
   function revealImmediate() {
@@ -530,7 +540,7 @@
   var headerNavFitBound = false;
 
   function fitHeaderNav() {
-    var navList = document.querySelector('#header-include .nav-section nav ul');
+    var navList = document.querySelector('#header-include .nav-section > nav > ul');
     var logo = document.querySelector('#header-include .logo-section');
     var actions = document.querySelector('#header-include .header-actions');
     if (!navList || !logo || !actions) return;
@@ -542,8 +552,8 @@
       return;
     }
 
-    var sizes = [12.48, 11.84, 11.2, 10.56, 9.92, 9.28];
-    var gaps = [18, 14, 11, 8, 6];
+    var sizes = [12.48, 11.84, 11.2, 10.56, 9.92, 9.28, 8.64, 8.0, 7.36, 6.72];
+    var gaps = [18, 14, 11, 8, 6, 4, 2];
     var available = actions.getBoundingClientRect().left - logo.getBoundingClientRect().right - 12;
     var i;
     var j;
@@ -559,6 +569,9 @@
         if (navList.scrollWidth <= navList.clientWidth + 1) return;
       }
     }
+
+    navList.style.setProperty('--kg-header-nav-size', (sizes[sizes.length - 1] / 16) + 'rem');
+    navList.style.setProperty('--kg-header-nav-gap', gaps[gaps.length - 1] + 'px');
   }
 
   function initHeaderNavFit() {
@@ -620,6 +633,9 @@
     initEnterAnimations();
     initStickyHeader();
     fitHeaderNav();
+    if (typeof window.kgInitNavMegaMenus === 'function') {
+      window.kgInitNavMegaMenus();
+    }
     initHeroColumnHeightSync();
   });
 })();

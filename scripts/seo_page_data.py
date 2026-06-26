@@ -9,16 +9,67 @@ SCOPE_DISCLAIMER = """
 </div>
 """
 
+COUNTY_REGIONS = [
+    {
+        "id": "pinellas",
+        "hub_slug": "pinellas",
+        "hub_name": "Pinellas County",
+        "nav_label": "Pinellas County Handyman Services",
+        "overview_label": "All Pinellas County",
+        "cities": [
+            {"slug": "safety-harbor", "name": "Safety Harbor", "seo_primary": True},
+            {"slug": "clearwater", "name": "Clearwater", "seo_primary": True},
+            {"slug": "dunedin", "name": "Dunedin", "seo_primary": True},
+            {"slug": "palm-harbor", "name": "Palm Harbor", "seo_primary": True},
+            {"slug": "largo", "name": "Largo", "seo_primary": True},
+            {"slug": "oldsmar", "name": "Oldsmar", "seo_primary": True},
+            {"slug": "tarpon-springs", "name": "Tarpon Springs", "seo_primary": True},
+            {"slug": "seminole", "name": "Seminole", "seo_primary": True},
+            {"slug": "st-petersburg", "name": "St. Petersburg", "seo_primary": True},
+        ],
+    },
+    {
+        "id": "hillsborough",
+        "hub_slug": "hillsborough",
+        "hub_name": "Hillsborough County",
+        "nav_label": "Hillsborough County Handyman Services",
+        "overview_label": "All Hillsborough County",
+        "cities": [
+            {"slug": "tampa", "name": "Tampa", "seo_primary": True},
+            {"slug": "town-n-country", "name": "Town 'n' Country", "seo_primary": True},
+            {"slug": "westchase", "name": "Westchase", "seo_primary": True},
+            {"slug": "citrus-park", "name": "Citrus Park", "seo_primary": True},
+            {"slug": "carrollwood", "name": "Carrollwood", "seo_primary": True},
+            {"slug": "northdale", "name": "Northdale", "seo_primary": False},
+            {"slug": "egypt-lake-leto", "name": "Egypt Lake-Leto", "seo_primary": False},
+            {"slug": "temple-terrace", "name": "Temple Terrace", "seo_primary": False},
+        ],
+    },
+    {
+        "id": "pasco",
+        "hub_slug": "pasco",
+        "hub_name": "Pasco County",
+        "nav_label": "Pasco County Handyman Services",
+        "overview_label": "All Pasco County",
+        "cities": [
+            {"slug": "holiday", "name": "Holiday", "seo_primary": True},
+            {"slug": "trinity", "name": "Trinity", "seo_primary": True},
+            {"slug": "new-port-richey", "name": "New Port Richey", "seo_primary": True},
+            {"slug": "elfers", "name": "Elfers", "seo_primary": True},
+            {"slug": "seven-springs", "name": "Seven Springs", "seo_primary": False},
+            {"slug": "jasmine-estates", "name": "Jasmine Estates", "seo_primary": False},
+            {"slug": "beacon-square", "name": "Beacon Square", "seo_primary": False},
+            {"slug": "port-richey", "name": "Port Richey", "seo_primary": False},
+            {"slug": "land-o-lakes", "name": "Land O' Lakes", "seo_primary": True},
+        ],
+    },
+]
+
+# Backward-compatible flat list used by combo pages and legacy imports.
 CITIES = [
-    ("safety-harbor", "Safety Harbor"),
-    ("clearwater", "Clearwater"),
-    ("dunedin", "Dunedin"),
-    ("palm-harbor", "Palm Harbor"),
-    ("largo", "Largo"),
-    ("oldsmar", "Oldsmar"),
-    ("tarpon-springs", "Tarpon Springs"),
-    ("seminole", "Seminole"),
-    ("st-petersburg", "St. Petersburg"),
+    (city["slug"], city["name"])
+    for region in COUNTY_REGIONS
+    for city in region["cities"]
 ]
 
 NICHE_SERVICES = [

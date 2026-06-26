@@ -1,54 +1,85 @@
 #!/usr/bin/env python3
-"""Inject unified JSON-LD entity graphs across Knight Group canonical pages."""
+"""Inject unified JSON-LD entity graphs across all Knight Group canonical pages."""
 
 from __future__ import annotations
 
+import json
+import sys
 from pathlib import Path
 
-from schema_graph import (
+SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+from schema_graph import (  # noqa: E402
     build_graph_for_page,
     extract_meta,
     extract_page_faq,
     replace_schema_blocks,
     service_by_slug,
 )
+from seo_page_data import NICHE_SERVICES  # noqa: E402
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = SCRIPT_DIR.parent
+SEO = ROOT / "seo"
+MANIFEST = SEO / "page-manifest.json"
 SKIP_SERVICES = {"programming&databases.html", "handcraftedfurniture&resins.html", "index.html"}
 
-PAGE_MAP: list[tuple[str, str, dict | None]] = [
-    ("index.html", "home", None),
-    ("services.html", "services-hub", None),
-    ("pricing.html", "pricing", None),
-    ("booking.html", "booking", None),
-    ("contact.html", "contact", None),
-    ("about.html", "about", None),
-    ("galleries.html", "galleries", None),
-    ("service-areas.html", "service-areas", None),
-    (
-        "pinellas-handyman.html",
-        "geo-handyman",
-        {
-            "name": "Handyman services in Pinellas County",
-            "serviceType": "Handyman services in Pinellas County",
-            "description": "Handyman company serving Pinellas County with repairs, drywall, plumbing fixture work, painting, carpentry, and punch-list projects.",
-            "image": "handyman.jpg",
-        },
-    ),
-    (
-        "clearwater-handyman.html",
-        "geo-handyman",
-        {
-            "name": "Clearwater handyman services",
-            "serviceType": "Clearwater handyman services",
-            "description": "Local handyman services for Clearwater homeowners including fixture swaps, drywall repair, painting touch-ups, and general home repairs.",
-            "image": "handyman.jpg",
-        },
-    ),
+CORE_PAGES: list[tuple[str, str]] = [
+    ("index.html", "home"),
+    ("services.html", "services-hub"),
+    ("pricing.html", "pricing"),
+    ("booking.html", "booking"),
+    ("contact.html", "contact"),
+    ("about.html", "about"),
+    ("galleries.html", "galleries"),
+    ("service-areas.html", "service-areas"),
 ]
 
+POLICY_PAGES = [
+    "PolicyPages/privacy-policy.html",
+    "PolicyPages/terms.html",
+    "PolicyPages/payment-policy.html",
+    "PolicyPages/returnpolicy.html",
+]
 
-def update_file(path: Path, page_key: str, service: dict | None = None) -> bool:
+NICHE_BY_SLUG = {item["slug"]: item for item in NICHE_SERVICES}
+
+PAGE_TYPE_TO_KEY = {
+    "county": "geo-county",
+    "city": "geo-city",
+    "city-service": "geo-combo",
+    "pricing-niche": "pricing-niche",
+    "gallery-project": "gallery-project",
+    "niche-service": "service-detail",
+}
+
+
+def niche_service_payload(defn: dict, description: str) -> dict[str, str]:
+    hero = defn.get("hero", "handyman.webp")
+    return {
+        "name": defn["h1"],
+        "serviceType": defn["h1"],
+        "description": description,
+        "image": hero.replace(".webp", ".jpg"),
+    }
+
+
+def service_from_html(path: Path, meta: dict[str, str]) -> dict[str, str] | None:
+    slug = path.stem
+    try:
+        return service_by_slug(slug)
+    except KeyError:
+        pass
+    if slug in NICHE_BY_SLUG:
+        return niche_service_payload(NICHE_BY_SLUG[slug], meta["description"])
+    return None
+
+
+def update_file(path: Path, page_key: str, service: dict[str, str] | None = None) -> bool:
+    if not path.is_file():
+        print(f"skip (missing): {path.relative_to(ROOT)}")
+        return False
     html = path.read_text(encoding="utf-8")
     meta = extract_meta(html)
     if not meta["canonical"]:
@@ -72,21 +103,52 @@ def update_file(path: Path, page_key: str, service: dict | None = None) -> bool:
 
 def main() -> int:
     changed = 0
-    for rel_path, page_key, service in PAGE_MAP:
-        if update_file(ROOT / rel_path, page_key, service=service):
+
+    for rel_path, page_key in CORE_PAGES:
+        if update_file(ROOT / rel_path, page_key):
+            changed += 1
+
+    for rel_path in POLICY_PAGES:
+        if update_file(ROOT / rel_path, "policy"):
             changed += 1
 
     for path in sorted((ROOT / "Services").glob("*.html")):
         if path.name in SKIP_SERVICES:
             continue
-        slug = path.stem
-        try:
-            service = service_by_slug(slug)
-        except KeyError:
-            print(f"skip (no catalog entry): {path.name}")
+        html = path.read_text(encoding="utf-8")
+        meta = extract_meta(html)
+        service = service_from_html(path, meta)
+        if not service:
+            print(f"skip (no service payload): {path.name}")
             continue
         if update_file(path, "service-detail", service=service):
             changed += 1
+
+    if MANIFEST.exists():
+        manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+        for entry in manifest.get("pages", []):
+            page_type = entry.get("pageType", "")
+            page_key = PAGE_TYPE_TO_KEY.get(page_type)
+            if not page_key:
+                continue
+            rel_path = entry["path"]
+            path = ROOT / rel_path
+            service = None
+            if page_type in {"city", "county", "city-service", "niche-service"}:
+                html = path.read_text(encoding="utf-8") if path.is_file() else ""
+                meta = extract_meta(html) if html else {"description": ""}
+                slug = entry.get("slug", path.stem)
+                if page_type == "niche-service" and slug in NICHE_BY_SLUG:
+                    service = niche_service_payload(NICHE_BY_SLUG[slug], meta.get("description", ""))
+                elif page_type in {"city", "county", "city-service"}:
+                    service = {
+                        "name": meta.get("title", slug).split("|")[0].strip(),
+                        "serviceType": "Handyman services",
+                        "description": meta.get("description", ""),
+                        "image": "handyman.jpg",
+                    }
+            if update_file(path, page_key, service=service):
+                changed += 1
 
     print(f"Done. {changed} pages updated.")
     return 0

@@ -47,7 +47,7 @@ def render_services_mega(catalog: dict) -> str:
         </li>"""
         )
     return f"""<li class="nav-dropdown-wrap kg-nav-mega-wrap">
-  <button type="button" class="nav-dropdown-btn services-link" aria-expanded="false" aria-haspopup="true">Services</button>
+  <button type="button" class="nav-dropdown-btn services-link" aria-expanded="false" aria-haspopup="true"><span class="kg-nav-dropdown-label">Services</span><span class="kg-nav-dropdown-chevron" aria-hidden="true"></span></button>
   <div class="nav-dropdown-menu fw-services-mega" role="menu">
     <ul class="fw-services-mega__list">
 {chr(10).join(rows)}
@@ -85,7 +85,7 @@ def render_areas_mega(catalog: dict) -> str:
         </li>"""
         )
     return f"""<li class="nav-dropdown-wrap kg-nav-mega-wrap">
-  <button type="button" class="nav-dropdown-btn areas-link" aria-expanded="false" aria-haspopup="true">Service Areas</button>
+  <button type="button" class="nav-dropdown-btn areas-link" aria-expanded="false" aria-haspopup="true"><span class="kg-nav-dropdown-label">Service Areas</span><span class="kg-nav-dropdown-chevron" aria-hidden="true"></span></button>
   <div class="nav-dropdown-menu fw-services-mega kg-areas-mega" role="menu">
     <ul class="fw-services-mega__list">
 {chr(10).join(rows)}
@@ -138,7 +138,6 @@ def build_desktop_nav(catalog: dict) -> str:
 <li><a href="/about">About</a></li>
 {services}
 {areas}
-<li><a href="/booking">Book Estimate</a></li>
 <li><a href="/pricing">Pricing</a></li>
 <li><a href="/contact">Contact</a></li>
 <li><a href="/galleries">Gallery</a></li>
