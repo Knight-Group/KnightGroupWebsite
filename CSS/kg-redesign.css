@@ -357,7 +357,7 @@ html.kg-js [data-kg-enter].is-visible {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: rgba(8, 8, 10, 0.24);
+  background: rgba(8, 8, 10, 0.36);
   z-index: 1;
 }
 
@@ -503,10 +503,10 @@ html.kg-js [data-kg-enter].is-visible {
     transform: none;
     background: linear-gradient(
       180deg,
-      rgba(12, 12, 14, 0.86) 0%,
-      rgba(12, 12, 14, 0.62) 42%,
-      rgba(12, 12, 14, 0.34) 72%,
-      rgba(12, 12, 14, 0.18) 100%
+      rgba(12, 12, 14, 0.88) 0%,
+      rgba(12, 12, 14, 0.72) 42%,
+      rgba(12, 12, 14, 0.58) 72%,
+      rgba(12, 12, 14, 0.5) 100%
     ) !important;
   }
 
@@ -836,12 +836,12 @@ html.kg-js .kg-home .kg-hero:not(.kg-hero-panels-ready) [data-kg-enter-immediate
   background:
     linear-gradient(
       90deg,
-      rgba(10, 10, 12, 0.84) 0%,
-      rgba(10, 10, 12, 0.58) 36%,
-      rgba(10, 10, 12, 0.34) 58%,
-      rgba(10, 10, 12, 0.2) 100%
+      rgba(10, 10, 12, 0.86) 0%,
+      rgba(10, 10, 12, 0.66) 36%,
+      rgba(10, 10, 12, 0.52) 58%,
+      rgba(10, 10, 12, 0.44) 100%
     ),
-    linear-gradient(180deg, rgba(8, 8, 10, 0.42) 0%, rgba(8, 8, 10, 0.12) 48%, rgba(8, 8, 10, 0.28) 100%);
+    linear-gradient(180deg, rgba(8, 8, 10, 0.58) 0%, rgba(8, 8, 10, 0.5) 52%, rgba(8, 8, 10, 0.62) 100%);
   transform: translate3d(0, var(--kg-hero-shift, 0px), 0);
   will-change: transform;
 }
@@ -1253,13 +1253,15 @@ html.kg-js .kg-home .kg-hero:not(.kg-hero-panels-ready) [data-kg-enter-immediate
     display: flex;
     align-items: stretch;
     justify-content: center;
-    overflow: visible;
+    overflow: hidden;
   }
 
   .kg-home .kg-hero-panels,
   .kg-home .kg-hero__overlay {
-    height: 100%;
-    min-height: 100%;
+    top: -18%;
+    bottom: -22%;
+    height: auto;
+    min-height: auto;
   }
 
   .kg-home .kg-shell.kg-hero__grid {
