@@ -155,7 +155,7 @@
     }
 
     function loadFeed() {
-        return fetch('./data/google-reviews.json?v=20260603', { cache: 'no-store' })
+        return fetch('./data/google-reviews.json?v=20260603')
             .then(function (response) {
                 if (!response.ok) {
                     return null;

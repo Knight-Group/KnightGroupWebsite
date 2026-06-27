@@ -24,6 +24,14 @@ html.kg-js [data-kg-enter] {
   will-change: transform, opacity;
 }
 
+html.kg-js [data-kg-enter-immediate="true"] {
+  opacity: 1;
+}
+
+html.kg-js [data-kg-enter-immediate="true"].is-visible {
+  animation-duration: 0.42s;
+}
+
 html.kg-js [data-kg-enter="left"] {
   transform: translate3d(calc(-1 * min(34vw, 128px)), 0, 0);
 }
@@ -56,7 +64,7 @@ html.kg-js .kg-intent-strip__inner[data-kg-enter="top"] {
 }
 
 html.kg-js .kg-intent-strip__inner[data-kg-enter="top"].is-visible {
-  animation-duration: 1.05s;
+  animation-duration: 0.48s;
 }
 
 html.kg-js [data-kg-enter="bottom"] {
