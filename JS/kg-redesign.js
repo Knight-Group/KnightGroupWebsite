@@ -310,10 +310,6 @@
       });
     }
 
-    bindParallaxShift(document.querySelector('.kg-route-band'), '--kg-route-shift', 0.72, {
-      mode: 'scroll',
-      layer: '.kg-route-band__bg'
-    });
     bindParallaxShift(document.querySelector('.kg-process-band'), '--kg-process-shift', 0.72, {
       mode: 'scroll',
       layer: '.kg-process-band__bg'
