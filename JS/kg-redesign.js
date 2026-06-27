@@ -159,7 +159,7 @@
       prepareEnter(h1, 'left', 0, true);
       var lead = findLeadAfterH1(h1);
       if (lead) {
-        prepareEnter(lead, 'left', 1000, true);
+        prepareEnter(lead, 'left', 80, true);
       }
     });
 
@@ -168,16 +168,16 @@
     });
 
     document.querySelectorAll('.kg-hero-form-card').forEach(function (el) {
-      prepareEnter(el, 'right', 120, true);
+      prepareEnter(el, 'right', 60, true);
     });
 
     document.querySelectorAll('.header-btn-primary').forEach(function (el) {
       if (el.closest('.kg-hero-form-phone-row') || el.closest('#header-include')) return;
-      prepareEnter(el, 'right', 180, true);
+      prepareEnter(el, 'right', 100, true);
     });
 
     document.querySelectorAll('.kg-intent-strip__inner').forEach(function (el) {
-      prepareEnter(el, 'top', 1100, true);
+      prepareEnter(el, 'top', 150, true);
     });
 
     document.querySelectorAll('.kg-map-review-shell').forEach(function (el) {
@@ -211,6 +211,7 @@
 
   function revealImmediate() {
     document.querySelectorAll('[data-kg-enter-immediate="true"]').forEach(function (el) {
+      el.style.setProperty('--kg-enter-delay', '0ms');
       el.classList.add('is-visible');
     });
   }

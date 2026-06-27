@@ -32,7 +32,9 @@ class HTMLInclude {
     }
 
     ensureHeaderStyles() {
-        const headerVersion = '20260626-root-asset-paths';
+        const pathPrefix = window.location.pathname.includes('/Services/') ||
+            window.location.pathname.includes('/PolicyPages/') ? '../' : '';
+        const headerVersion = '20260627-perf-merge';
 
         if (!document.getElementById('kg-header-css') && !document.querySelector('link[href*="header.min.css"]')) {
             const link = document.createElement('link');
@@ -41,10 +43,24 @@ class HTMLInclude {
             link.href = '/CSS/header.min.css?v=' + headerVersion;
             document.head.appendChild(link);
         }
+
+        this.prefetchPartial(pathPrefix + 'header.html?v=' + headerVersion, 'kg-preload-header');
+        this.prefetchPartial(pathPrefix + 'footer.html?v=' + headerVersion, 'kg-preload-footer');
+    }
+
+    prefetchPartial(url, marker) {
+        if (document.querySelector(`link[data-${marker}]`)) return;
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'fetch';
+        link.href = url;
+        link.crossOrigin = 'anonymous';
+        link.setAttribute(`data-${marker}`, '');
+        document.head.appendChild(link);
     }
 
     ensureKgMotionAssets() {
-        const motionVersion = '20260626-carousel-image-fix';
+        const motionVersion = '20260627-perf-merge';
 
         if (!document.getElementById('kg-redesign-css') && !document.querySelector('link[href*="kg-redesign.css"]')) {
             const link = document.createElement('link');
@@ -53,18 +69,10 @@ class HTMLInclude {
             link.href = '/CSS/kg-redesign.css?v=' + motionVersion;
             document.head.appendChild(link);
         }
-
-        if (!document.getElementById('kg-redesign-js') && !document.querySelector('script[src*="kg-redesign.js"]')) {
-            const script = document.createElement('script');
-            script.id = 'kg-redesign-js';
-            script.src = '/JS/kg-redesign.js?v=' + motionVersion;
-            script.defer = true;
-            document.head.appendChild(script);
-        }
     }
 
     ensureKgNavMegaScript() {
-        const navVersion = '20260626-root-asset-paths';
+        const navVersion = '20260627-perf-merge';
 
         if (!document.getElementById('kg-nav-mega-js') && !document.querySelector('script[src*="kg-nav-mega.js"]')) {
             const script = document.createElement('script');
@@ -246,7 +254,7 @@ class HTMLInclude {
         if (window._knightGroupIncludesLoaded) return;
         window._knightGroupIncludesLoaded = true;
 
-        const includeVersion = '20260626-root-asset-paths';
+        const includeVersion = '20260627-perf-merge';
 
         // Determine if we're in a subdirectory
         const pathPrefix = window.location.pathname.includes('/Services/') || 
@@ -256,40 +264,40 @@ class HTMLInclude {
         // Inject if empty OR only contains the skeleton placeholder (not a real static build)
         const headerHasRealContent = headerElement && headerElement.hasChildNodes() &&
             !headerElement.querySelector('#header-skeleton');
+        const footerElement = document.getElementById('footer-include');
+        const includeTasks = [];
+
         if (headerElement && !headerHasRealContent) {
-            await this._fetchAndInject(headerElement, pathPrefix + 'header.html?v=' + includeVersion, pathPrefix);
+            includeTasks.push(this._fetchAndInject(headerElement, pathPrefix + 'header.html?v=' + includeVersion, pathPrefix));
         }
 
-        const footerElement = document.getElementById('footer-include');
         if (footerElement) {
             this.moveCrawlHubBeforeFooter();
-            // Skip fetch+inject if footer is already inlined in the HTML (static build)
             if (!footerElement.hasChildNodes()) {
-                await this._fetchAndInject(footerElement, pathPrefix + 'footer.html?v=' + includeVersion, pathPrefix);
+                includeTasks.push(this._fetchAndInject(footerElement, pathPrefix + 'footer.html?v=' + includeVersion, pathPrefix));
             }
+        }
+
+        if (includeTasks.length) {
+            await Promise.all(includeTasks);
         }
 
         this.moveCrawlHubBeforeFooter();
-
-        // Initialize scripts after includes are loaded
-        setTimeout(() => {
-            this.moveCrawlHubBeforeFooter();
-            this.initializeAfterIncludes();
-            this.setActiveNavItem();
-            if (typeof window.kgInitEnterAnimations === 'function') {
-                window.kgInitEnterAnimations();
-            }
-            if (typeof window.kgInitNavMegaMenus === 'function') {
-                window.kgInitNavMegaMenus();
-            }
-            if (typeof window.kgFitHeaderNav === 'function') {
-                window.requestAnimationFrame(function () {
-                    window.kgFitHeaderNav();
-                    window.requestAnimationFrame(window.kgFitHeaderNav);
-                });
-            }
-            document.dispatchEvent(new CustomEvent('kg-includes-ready'));
-        }, 100);
+        this.initializeAfterIncludes();
+        this.setActiveNavItem();
+        if (typeof window.kgInitEnterAnimations === 'function') {
+            window.kgInitEnterAnimations();
+        }
+        if (typeof window.kgInitNavMegaMenus === 'function') {
+            window.kgInitNavMegaMenus();
+        }
+        if (typeof window.kgFitHeaderNav === 'function') {
+            window.requestAnimationFrame(function () {
+                window.kgFitHeaderNav();
+                window.requestAnimationFrame(window.kgFitHeaderNav);
+            });
+        }
+        document.dispatchEvent(new CustomEvent('kg-includes-ready'));
     }
 
     initializeAfterIncludes() {
