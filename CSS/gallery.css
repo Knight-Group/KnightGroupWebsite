@@ -172,13 +172,30 @@
     aspect-ratio: 4 / 3;
     overflow: hidden;
     background: #ece7e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery-shot__media img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
+}
+
+.gallery-project--before-after .gallery-shot__media {
+    aspect-ratio: auto;
+    min-height: 240px;
+    max-height: min(520px, 72vw);
+}
+
+.gallery-project--before-after .gallery-shot__media img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: min(520px, 72vw);
+    object-fit: contain;
 }
 
 .gallery-shot__step,

@@ -1,150 +1,731 @@
 {
   "serper_research": "seo/serp-meta-research.json",
-  "serper_generated_at": "2026-06-11T17:27:14+00:00",
+  "serper_generated_at": "2026-06-26T05:42:19+00:00",
   "pages": [
     {
-      "path": "index.html",
-      "gsc_queries": ["knight group", "knightgroup", "handyman pinellas county"],
-      "serper_note": "Brand queries are noisy (auto/real estate). Lead with Handyman + Safety Harbor to disambiguate.",
-      "description": "Knight Group Handyman Services in Safety Harbor & Pinellas County. Repairs, plumbing, drywall & paint. Free estimate."
-    },
-    {
-      "path": "Services/handyman.html",
-      "gsc_queries": ["handyman company pinellas", "handyman pinellas county fl", "handyman near me small jobs"],
-      "serper_note": "Mr. Handyman and Handyman Company dominate. Differentiate with small jobs and no minimum.",
-      "description": "Pinellas County handyman company. Small jobs, no 2-hour minimum. Safety Harbor based. Free estimate."
-    },
-    {
-      "path": "Services/plumbing-services.html",
-      "gsc_queries": ["sink repair clearwater", "plumbing services in pinellas county", "plumbing repair"],
-      "serper_note": "Licensed plumbers own generic plumbing SERPs. Position fixture-level handyman plumbing.",
-      "description": "Handyman sink & faucet repairs in Clearwater & Pinellas County. Fixture work, not repipes. Free estimate."
-    },
-    {
-      "path": "about.html",
-      "gsc_queries": ["knight group", "knight services llc", "knights handyman services"],
-      "serper_note": "Ranks #1 for knight group handyman. Support brand trust and local owner story.",
-      "description": "About Knight Group: registered Safety Harbor handyman business serving Pinellas County with 15+ years of experience."
-    },
-    {
-      "path": "contact.html",
-      "gsc_queries": ["knight group contact"],
-      "serper_note": "Ranks #1 for knight group handyman contact.",
-      "description": "Contact Knight Group in Safety Harbor & Pinellas County. Call, text, or email for service-area checks & quick questions."
-    },
-    {
-      "path": "booking.html",
-      "gsc_queries": ["knight group estimate"],
-      "serper_note": "Estimate-intent page. Keep short form CTA.",
-      "description": "Book a free handyman estimate in Safety Harbor & Pinellas County. Quick form for name, phone, location & project details."
-    },
-    {
-      "path": "Services/general-repairs.html",
-      "gsc_queries": ["handyman pinellas county", "general repairs"],
-      "serper_note": "Ranks #9 for general home repairs pinellas.",
-      "description": "Drywall, leaks, doors & punch-list repairs in Safety Harbor & Pinellas County. Practical home fixes. Free estimate."
-    },
-    {
-      "path": "galleries.html",
-      "gsc_queries": ["knight group projects"],
-      "serper_note": "Ranks #5 for handyman projects pinellas county. Proof-focused snippet.",
-      "description": "Handyman project photos in Pinellas County: bathroom updates, drywall, plumbing & before-and-after proof."
-    },
-    {
-      "path": "service-areas.html",
-      "gsc_queries": ["handyman pinellas county"],
-      "serper_note": "Ranks #6 for service areas query.",
-      "description": "Handyman service areas in Pinellas County: Safety Harbor, Clearwater, Dunedin, Palm Harbor & Largo. Confirm your city."
-    },
-    {
-      "path": "pinellas-handyman.html",
-      "gsc_queries": ["handyman pinellas county", "handyman company pinellas"],
-      "serper_note": "Geo landing page for county-wide handyman intent.",
-      "description": "Handyman company in Pinellas County FL. Safety Harbor, Clearwater, Dunedin & nearby cities. Free estimates."
-    },
-    {
-      "path": "clearwater-handyman.html",
-      "gsc_queries": ["sink repair clearwater", "clearwater handyman"],
-      "serper_note": "Sink repair SERP is plumber-heavy. Lead with Clearwater + Pinellas handyman scope.",
-      "description": "Clearwater handyman in Pinellas County. Sink repairs, fixtures, drywall & punch-list work. Free estimate."
-    },
-    {
-      "path": "services.html",
-      "gsc_queries": ["handyman services pinellas county"],
-      "serper_note": "Hub page for service discovery.",
-      "description": "Handyman services in Pinellas County: repairs, plumbing, electrical, carpentry, painting, doors, windows & more."
-    },
-    {
-      "path": "pricing.html",
-      "gsc_queries": ["handyman near me prices"],
-      "serper_note": "Pricing transparency is the CTR hook.",
-      "description": "Handyman pricing in Safety Harbor & Pinellas County. $150 first hour, $75 after. No 2-hour minimum. Free estimates."
+      "path": "Services/cabinet-repair.html",
+      "gsc_queries": [
+        "cabinet repair handyman"
+      ],
+      "serper_note": "cabinet repair handyman: compete with Cabinet Repair and More LLC (352)502-0655 - \"Shaker kitchen ...",
+      "description": "Cabinet Repair in Pinellas County. \"Cabinet Repair and More LLC provides professional cabinet r. Registered & insured. Free estimate."
     },
     {
       "path": "Services/carpentry-framing.html",
-      "gsc_queries": ["carpentry services near me"],
-      "serper_note": "Local carpentry SERP mixes directories and contractors.",
-      "description": "Carpentry & framing in Safety Harbor & Pinellas County. Trim, shelving, built-ins & wood repair. Free estimate."
+      "gsc_queries": [
+        "carpentry services near me",
+        "carpenter pinellas county"
+      ],
+      "serper_note": "carpentry services near me: compete with Carpentry Services in Memphis, TN | Five Star Painting; carpenter pinellas county: compete with Christy Carpenter - Director of Facilities Operations | LinkedIn",
+      "description": "Carpentry Framing in Pinellas County. Quality carpentry services in Memphis, TN! From trim to cust. Registered & insured. Free estimate."
     },
     {
-      "path": "Services/doors-windows.html",
-      "gsc_queries": ["door repair pinellas county"],
-      "serper_note": "Door/window repair local intent.",
-      "description": "Door & window repair in Safety Harbor & Pinellas County. Install, adjustment & screen work. Free estimate."
-    },
-    {
-      "path": "Services/electrical-work.html",
-      "gsc_queries": ["electrical handyman near me"],
-      "serper_note": "Stay inside handyman electrical fixture scope.",
-      "description": "Electrical fixture work in Pinellas County. Outlets, fans, switches & light installs within handyman scope."
-    },
-    {
-      "path": "Services/emergency-services.html",
-      "gsc_queries": ["emergency handyman pinellas"],
-      "serper_note": "Urgency + phone CTA.",
-      "description": "Emergency handyman in Safety Harbor & Pinellas County. Urgent leaks, damage & structural fixes. Call (813) 649-3341."
-    },
-    {
-      "path": "Services/home-renovations.html",
-      "gsc_queries": ["small home renovations pinellas"],
-      "serper_note": "Smaller renovation scope, not GC positioning.",
-      "description": "Small home renovations in Safety Harbor & Pinellas County. Bathroom updates, flooring, tile & room refreshes."
-    },
-    {
-      "path": "Services/painting-finishing.html",
-      "gsc_queries": ["painting handyman pinellas"],
-      "serper_note": "Painting + finishing local intent.",
-      "description": "Painting & finishing in Safety Harbor & Pinellas County. Interior/exterior touch-ups, drywall prep & trim work."
+      "path": "Services/caulking-repair.html",
+      "gsc_queries": [
+        "caulking repair handyman"
+      ],
+      "serper_note": "caulking repair handyman: compete with Caulking Service | Colorado Springs - Mr. Handyman",
+      "description": "Caulking Repair in Pinellas County. Stop air drafts and moisture incursion with expert colorado-. Registered & insured. Free estimate."
     },
     {
       "path": "Services/custom-projects.html",
-      "gsc_queries": ["custom handyman projects"],
-      "serper_note": "Custom project differentiation.",
-      "description": "Custom handyman projects in Pinellas County. Built-ins, storage, media walls & specialty installs. Free estimate."
+      "gsc_queries": [
+        "custom handyman projects pinellas county"
+      ],
+      "serper_note": "custom handyman projects pinellas county: compete with Handyman Services | Pinellas Park, FL",
+      "description": "Custom Projects in Pinellas County. We provide a comprehensive range of handyman services specif. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/custom-shelving.html",
+      "gsc_queries": [
+        "custom shelving handyman"
+      ],
+      "serper_note": "custom shelving handyman: compete with Custom Shelving and Bookcases | Mr. Handyman",
+      "description": "Custom Shelving in Pinellas County. Whether you're looking for floating shelves, built-in shelve. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/door-adjustment.html",
+      "gsc_queries": [
+        "door adjustment handyman"
+      ],
+      "serper_note": "door adjustment handyman: compete with Door Repair & Installation Services in Baltimore - TaskRabbit",
+      "description": "Door Adjustment in Pinellas County. If you need door repair near Baltimore, try Taskrabbit! Task. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/door-frame-repair.html",
+      "gsc_queries": [
+        "door frame repair"
+      ],
+      "serper_note": "door frame repair: compete with Fix Rotted Doors and Frames: Easy DIY Repair - Lowe's",
+      "description": "Door Frame Repair in Pinellas County. Discover our complete DIY guide for fixing a rotted front do. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/doors-windows.html",
+      "gsc_queries": [
+        "door repair pinellas county",
+        "window repair clearwater"
+      ],
+      "serper_note": "door repair pinellas county: compete with Sliding Glass Door Repair & Maintenance in Pinellas County | Paul's ...; window repair clearwater: compete with Window Repair & Window Replacement Clearwater - Mr. Handyman",
+      "description": "Doors Windows in Pinellas County. Paul's Sliding Glass Door Maintenance Inc provides professio. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/drain-unclogging.html",
+      "gsc_queries": [
+        "drain unclogging handyman"
+      ],
+      "serper_note": "drain unclogging handyman: compete with Drain Clearing in Baltimore, MD - Michael & Son",
+      "description": "Drain Unclogging in Pinellas County. Available 24/7 for emergency service, our expert plumbers ar. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/drywall-paint-repair.html",
+      "gsc_queries": [
+        "drywall and paint repair"
+      ],
+      "serper_note": "drywall and paint repair: compete with Floyd's Painting & Drywall Repair LLC - Top Rated Painter ...",
+      "description": "Drywall Paint Repair in Pinellas County. We repair, replace, and install drywall with meticulous atte. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/drywall-repair.html",
+      "gsc_queries": [
+        "drywall repair near me"
+      ],
+      "serper_note": "drywall repair near me: compete with Reliable Handyman Monroeville, PA",
+      "description": "Drywall Repair in Pinellas County. Our wide range of service offerings ensure that whether it's. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/electrical-work.html",
+      "gsc_queries": [
+        "handyman electrical work pinellas county"
+      ],
+      "serper_note": "handyman electrical work pinellas county: compete with Handyman Services | Pinellas Park, FL",
+      "description": "Electrical Work in Pinellas County. Expert handyman services in Pinellas Park, FL. Quality home . Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/emergency-services.html",
+      "gsc_queries": [
+        "emergency handyman pinellas county"
+      ],
+      "serper_note": "emergency handyman pinellas county: compete with THE BEST 10 HANDYMAN IN PINELLAS PARK, FL - Yelp",
+      "description": "Emergency Services in Pinellas County. Sunpro Handyman \u00b7 Drywall Installation & Repair. 4.7 mi \u00b7 43. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/faucet-replacement.html",
+      "gsc_queries": [
+        "faucet replacement handyman"
+      ],
+      "serper_note": "faucet replacement handyman: compete with Faucet Replacement at The Home Depot",
+      "description": "Faucet Replacement in Pinellas County. We can install it for you. Just call or visit the Service De. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/garbage-disposal-replacement.html",
+      "gsc_queries": [
+        "garbage disposal replacement"
+      ],
+      "serper_note": "garbage disposal replacement: compete with Garbage Disposals - The Home Depot",
+      "description": "Garbage Disposal Replacement in Pinellas County. GARBAGE DISPOSALS ; Model# BADGER 500 \u00b7 $149.00. Buy 2 or mo. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/general-repairs.html",
+      "gsc_queries": [
+        "handyman pinellas county",
+        "general home repairs pinellas"
+      ],
+      "serper_note": "handyman pinellas county: compete with THE BEST 10 HANDYMAN IN PINELLAS PARK, FL - Yelp; general home repairs pinellas: compete with Pinellas Home Repair (@PinellasHome) - Facebook",
+      "description": "General Repairs in Pinellas County. Top 10 Best Handyman Near Pinellas Park, Florida - With Real. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/handyman.html",
+      "gsc_queries": [
+        "handyman company pinellas",
+        "handyman pinellas county fl",
+        "handyman near me small jobs"
+      ],
+      "serper_note": "handyman pinellas county fl: compete with Handyman Services | Pinellas Park, FL; handyman company pinellas: compete with BEST Handyman Services in Clearwater, FL",
+      "description": "Handyman in Pinellas County. Expert handyman services in Pinellas Park, FL. Quality home . Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/hole-in-wall-repair.html",
+      "gsc_queries": [
+        "hole in wall repair"
+      ],
+      "serper_note": "hole in wall repair: compete with How to Patch and Repair Drywall - The Home Depot",
+      "description": "Hole In Wall Repair in Pinellas County. Fill dents and tiny holes with lightweight spackle using you. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/home-renovations.html",
+      "gsc_queries": [
+        "small home renovations pinellas county"
+      ],
+      "serper_note": "small home renovations pinellas county: compete with Reel Construction Resources | General Contractor in Pinellas ...",
+      "description": "Home Renovations in Pinellas County. Reel Construction Resources is a trusted general contractor . Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/home-repair-near-me.html",
+      "gsc_queries": [
+        "home repair near me",
+        "knights home repair"
+      ],
+      "serper_note": "home repair near me: compete with TOP 10 BEST Home Repair Services in Denver, CO - Yelp; knights home repair: compete with Knights Home Repair",
+      "description": "Home Repair Near Me in Pinellas County. Top 10 Best Home Repair Services Near Denver, Colorado ; Pun. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/interior-painting.html",
+      "gsc_queries": [
+        "interior painting handyman"
+      ],
+      "serper_note": "interior painting handyman: compete with Painting Services | Interior & Exterior Painting - Mr. Handyman",
+      "description": "Interior Painting in Pinellas County. Mr. Handyman's paint specialists are skilled experts with an. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/mobile-home-repairs.html",
+      "gsc_queries": [
+        "mobile home repairs pinellas"
+      ],
+      "serper_note": "mobile home repairs pinellas: compete with Home Repair & Independent Living Programs - Pinellas County",
+      "description": "Mobile Home Repairs in Pinellas County. UPDATE (5/4/2026): The County's Home Repair Program has CLOS. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/painting-finishing.html",
+      "gsc_queries": [
+        "handyman painting pinellas county"
+      ],
+      "serper_note": "handyman painting pinellas county: compete with Handyman Services | Pinellas Park, FL",
+      "description": "Painting Finishing in Pinellas County. Expert handyman services in Pinellas Park, FL. Quality home . Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/plumbing-services.html",
+      "gsc_queries": [
+        "sink repair clearwater",
+        "plumbing services in pinellas county",
+        "plumbing repair clearwater fl"
+      ],
+      "serper_note": "sink repair clearwater: compete with Sink Repair & Replacement Clearwater - Dunedin Plumbing; plumbing services in pinellas county: compete with THE BEST 10 PLUMBING IN PINELLAS PARK, FL - Yelp",
+      "description": "Plumbing Services in Pinellas County. Dunedin Plumbing performs sink repair & replacement in Clear. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/screen-door-repair.html",
+      "gsc_queries": [
+        "screen door repair"
+      ],
+      "serper_note": "screen door repair: compete with Screen Door Repair Kit - Amazon.com",
+      "description": "Screen Door Repair in Pinellas County. Upgrade your windows, doors, and porches with durable fiberg. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/shutoff-valve-repair.html",
+      "gsc_queries": [
+        "shutoff valve replacement"
+      ],
+      "serper_note": "shutoff valve replacement: compete with Shut-off Valves - The Home Depot",
+      "description": "Shutoff Valve Repair in Pinellas County. We offer same-day emergency plumbing repair in most areas, f. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/sink-faucet-repair.html",
+      "gsc_queries": [
+        "sink repair clearwater",
+        "handyman plumbing prices"
+      ],
+      "serper_note": "sink repair clearwater: compete with Sink Repair & Replacement Clearwater - Dunedin Plumbing; handyman plumbing prices: compete with Handyman Price Guide 2026: Hourly Rates & How To Set Prices",
+      "description": "Sink Faucet Repair in Pinellas County. Dunedin Plumbing performs sink repair & replacement in Clear. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/sliding-door-repair.html",
+      "gsc_queries": [
+        "sliding door repair"
+      ],
+      "serper_note": "sliding door repair: compete with TOP 10 BEST Sliding Glass Door Repair in Indianapolis, IN - Yelp",
+      "description": "Sliding Door Repair in Pinellas County. Glass Guru installed a beautiful front entry beveled glass d. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/small-job-carpenter.html",
+      "gsc_queries": [
+        "small job carpenter near me",
+        "carpentry services near me"
+      ],
+      "serper_note": "small job carpenter near me: compete with The 10 Best Carpenters Near Me (with Free Estimates) - Thumbtack; carpentry services near me: compete with THE BEST 10 Carpenters near PALMER, AK 99645 - Yelp",
+      "description": "Small Job Carpenter in Pinellas County. Here is the definitive list of carpenters near your location. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/small-jobs.html",
+      "gsc_queries": [
+        "handyman near me small jobs"
+      ],
+      "serper_note": "handyman near me small jobs: compete with Quick Handyman Services San Antonio | Same-Day Repairs",
+      "description": "Small Jobs in Pinellas County. For minor fixes or larger projects, handymen Taskers in San . Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/texture-matching.html",
+      "gsc_queries": [
+        "texture matching drywall"
+      ],
+      "serper_note": "texture matching drywall: compete with How do I match texture of new drywall repair to years of paint texture ...",
+      "description": "Texture Matching in Pinellas County. You could run studs to match the old wall depth and then pla. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/toilet-repair.html",
+      "gsc_queries": [
+        "toilet repair handyman"
+      ],
+      "serper_note": "toilet repair handyman: compete with Toilet Services in Orland Park and Oak Lawn - Mr. Handyman",
+      "description": "Toilet Repair in Pinellas County. Looking for toilet repair or installation services? Our depe. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/trim-painting.html",
+      "gsc_queries": [
+        "trim painting handyman"
+      ],
+      "serper_note": "trim painting handyman: compete with Top-Rated Trim Installation Yonkers, NY - Mr. Handyman",
+      "description": "Trim Painting in Pinellas County. Yonkers, NY handyman experts will meticulously address any c. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/trim-repair.html",
+      "gsc_queries": [
+        "trim repair handyman"
+      ],
+      "serper_note": "trim repair handyman: compete with Handyman Las Vegas, NV | Home Repair Services & Improvement",
+      "description": "Trim Repair in Pinellas County. CARPENTRY. Highest quality finish carpentry, including insta. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/water-damage-repair.html",
+      "gsc_queries": [
+        "water damage repair handyman"
+      ],
+      "serper_note": "water damage repair handyman: compete with SHINTANI'S HANDYMAN SERVICES - Updated June 2026 - Yelp",
+      "description": "Water Damage Repair in Pinellas County. Specialties: We are family based construction company with a. Registered & insured. Free estimate."
+    },
+    {
+      "path": "Services/window-screen-repair.html",
+      "gsc_queries": [
+        "window screen repair"
+      ],
+      "serper_note": "window screen repair: compete with Window Screen Repair Kit - Amazon.com",
+      "description": "Window Screen Repair in Pinellas County. Upgrade your windows, doors, and patios with high-quality fi. Registered & insured. Free estimate."
+    },
+    {
+      "path": "about.html",
+      "gsc_queries": [
+        "knight group handyman",
+        "knight services llc",
+        "knights handyman services"
+      ],
+      "serper_note": "knight group handyman: compete with Knight Group | Safety Harbor FL - Facebook; knight services llc: compete with Knights Services | Experience Quality Restroom Rentals Today.",
+      "description": "Knight Group Handyman Services in Safety Harbor & Tampa Bay. Registered, insured repairs. Free estimate."
+    },
+    {
+      "path": "beacon-square-handyman.html",
+      "gsc_queries": [
+        "general home repairs pinellas",
+        "handyman beacon square fl"
+      ],
+      "serper_note": "general home repairs pinellas: compete with Pinellas Home Repair (@PinellasHome) - Facebook; handyman beacon square fl: compete with TOP 10 BEST Handyman Services in Beacon Square, FL - Updated ...",
+      "description": "Beacon Square general home repairs pinellas: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "booking.html",
+      "gsc_queries": [
+        "handyman estimate pinellas county"
+      ],
+      "serper_note": "handyman estimate pinellas county: compete with What are the estimates for home renovation and repair ... - Facebook",
+      "description": "Handyman pricing in Pinellas County. $150 first hour, $75 after. No 2-hour minimum. Free written estimates."
+    },
+    {
+      "path": "carrollwood-handyman.html",
+      "gsc_queries": [
+        "handyman near me small jobs",
+        "handyman carrollwood fl"
+      ],
+      "serper_note": "handyman near me small jobs: compete with Chicago Handyman Services - TaskRabbit; handyman carrollwood fl: compete with Experienced Handyman Tampa, FL",
+      "description": "Carrollwood handyman near me small jobs: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "citrus-park-handyman.html",
+      "gsc_queries": [
+        "general home repairs pinellas",
+        "handyman citrus park fl"
+      ],
+      "serper_note": "general home repairs pinellas: compete with Pinellas Home Repair (@PinellasHome) - Facebook; handyman citrus park fl: compete with Experienced Handyman Tampa, FL",
+      "description": "Citrus Park general home repairs pinellas: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "clearwater-handyman.html",
+      "gsc_queries": [
+        "clearwater handyman",
+        "sink repair clearwater"
+      ],
+      "serper_note": "sink repair clearwater: compete with Sink Repair & Replacement Clearwater - Dunedin Plumbing; clearwater handyman: compete with The 10 Best Handyman Services in Clearwater, FL ... - Thumbtack",
+      "description": "Clearwater Handyman: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "contact.html",
+      "gsc_queries": [
+        "knight group handyman contact"
+      ],
+      "serper_note": "knight group handyman contact: compete with Knight Group | Safety Harbor FL - Facebook",
+      "description": "Knight Group Handyman Services in Safety Harbor & Tampa Bay. Registered, insured repairs. Free estimate."
+    },
+    {
+      "path": "dunedin-handyman.html",
+      "gsc_queries": [
+        "handyman company pinellas"
+      ],
+      "serper_note": "handyman company pinellas: compete with BEST Handyman Services in Clearwater, FL",
+      "description": "Dunedin handyman company pinellas: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "dunedin-trim-repair.html",
+      "gsc_queries": [
+        "carpenter pinellas county"
+      ],
+      "serper_note": "carpenter pinellas county: compete with Christy Carpenter - Director of Facilities Operations | LinkedIn",
+      "description": "carpenter pinellas county in Dunedin: handyman-scope trim repair. Registered and insured. Free written estimate."
+    },
+    {
+      "path": "egypt-lake-leto-handyman.html",
+      "gsc_queries": [
+        "emergency handyman pinellas county",
+        "landlord handyman tampa"
+      ],
+      "serper_note": "emergency handyman pinellas county: compete with THE BEST 10 HANDYMAN IN PINELLAS PARK, FL - Yelp; landlord handyman tampa: compete with Hello, I'm looking for a handyman that works with landlords/property ...",
+      "description": "Egypt Lake-Leto emergency handyman pinellas county: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "elfers-handyman.html",
+      "gsc_queries": [
+        "handyman near me small jobs",
+        "handyman elfers fl"
+      ],
+      "serper_note": "handyman near me small jobs: compete with Handyman Wichita KS | Mr. Handyman of the Wichita Metro Area; handyman elfers fl: compete with New Port Richey, FL - Mr. Handyman",
+      "description": "Elfers handyman near me small jobs: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "galleries.html",
+      "gsc_queries": [
+        "handyman projects pinellas county"
+      ],
+      "serper_note": "handyman projects pinellas county: compete with Handyman Services | Pinellas Park, FL",
+      "description": "Handyman Projects Pinellas County in Pinellas County. Knight Group \u2014 registered Safety Harbor handyman team. Free estimate."
+    },
+    {
+      "path": "hillsborough-handyman.html",
+      "gsc_queries": [
+        "handyman near me small jobs",
+        "handyman tampa bay",
+        "handyman hillsborough county fl"
+      ],
+      "serper_note": "handyman near me small jobs: compete with THE BEST 10 HANDYMAN IN BEAR, DE - UPDATED JUNE 2026; handyman tampa bay: compete with Experienced Handyman Tampa, FL",
+      "description": "handyman near me small jobs and handyman tampa bay: drywall, fixture plumbing, doors. Registered and insured. Free estimate."
+    },
+    {
+      "path": "holiday-handyman.html",
+      "gsc_queries": [
+        "plumbing services in pinellas county",
+        "handyman holiday fl"
+      ],
+      "serper_note": "plumbing services in pinellas county: compete with THE BEST 10 PLUMBING IN PINELLAS PARK, FL - Yelp; handyman holiday fl: compete with Handyman Holiday, FL",
+      "description": "Holiday plumbing services in pinellas county: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "index.html",
+      "gsc_queries": [
+        "knight group",
+        "knightgroup",
+        "handyman pinellas county",
+        "plumber knights fl",
+        "general contractors pinellas county",
+        "knight & sons mobile home repairs website",
+        "knight furniture",
+        "knight maintenance",
+        "knight company",
+        "david reitmeyer safety harbor fl",
+        "plumbing repair",
+        "gutter installation safety harbor fl",
+        "construction company pinellas county",
+        "fast response toilet repair maitland",
+        "knight contracting group",
+        "roof replacement service"
+      ],
+      "serper_note": "handyman pinellas county: compete with THE BEST 10 HANDYMAN IN PINELLAS PARK, FL - Yelp; plumber knights fl: compete with Knights Plumbing LLC | Plumbing Services South Florida | 1521 ...",
+      "description": "Handyman Pinellas County in Pinellas County. Knight Group \u2014 registered Safety Harbor handyman team. Free estimate."
+    },
+    {
+      "path": "jasmine-estates-handyman.html",
+      "gsc_queries": [
+        "handyman painting pinellas county",
+        "handyman jasmine estates fl"
+      ],
+      "serper_note": "handyman painting pinellas county: compete with Handyman Services | Pinellas Park, FL; handyman jasmine estates fl: compete with Handyman Jasmine Estates, FL - Last Updated March 2026 - Yelp",
+      "description": "Jasmine Estates handyman painting pinellas county: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "land-o-lakes-handyman.html",
+      "gsc_queries": [
+        "handyman estimate pinellas county",
+        "handyman land o lakes fl"
+      ],
+      "serper_note": "handyman estimate pinellas county: compete with What are the estimates for home renovation and repair ... - Facebook; handyman land o lakes fl: compete with Your Local Handyman | Land O' Lakes, FL",
+      "description": "Land O' Lakes handyman estimate pinellas county: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "largo-handyman.html",
+      "gsc_queries": [
+        "handyman pinellas county fl",
+        "handyman near me small jobs"
+      ],
+      "serper_note": "handyman pinellas county fl: compete with Handyman Services | Pinellas Park, FL; handyman near me small jobs: compete with THE BEST 10 HANDYMAN IN AMARILLO, TX - UPDATED JUNE 2026",
+      "description": "Largo handyman pinellas county fl: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "largo-toilet-repair.html",
+      "gsc_queries": [
+        "plumbing services in pinellas county"
+      ],
+      "serper_note": "plumbing services in pinellas county: compete with THE BEST 10 PLUMBING IN PINELLAS PARK, FL - Yelp",
+      "description": "plumbing services in pinellas county in Largo: handyman-scope toilet repair. Registered and insured. Free written estimate."
+    },
+    {
+      "path": "new-port-richey-handyman.html",
+      "gsc_queries": [
+        "plumbing repair clearwater fl",
+        "handyman new port richey fl"
+      ],
+      "serper_note": "plumbing repair clearwater fl: compete with Clearwater Plumbing | Clearwater Plumbers | Residential Plumbers; handyman new port richey fl: compete with Trusted Handyman Services in New Port Richey & Holiday, FL",
+      "description": "New Port Richey plumbing repair clearwater fl: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "northdale-handyman.html",
+      "gsc_queries": [
+        "handyman painting pinellas county",
+        "handyman northdale fl"
+      ],
+      "serper_note": "handyman painting pinellas county: compete with Handyman Services | Pinellas Park, FL; handyman northdale fl: compete with THE BEST 10 HANDYMAN NEAR GREATER NORTHDALE, FL 33624",
+      "description": "Northdale handyman painting pinellas county: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "oldsmar-door-adjustment.html",
+      "gsc_queries": [
+        "door repair pinellas county"
+      ],
+      "serper_note": "door repair pinellas county: compete with Sliding Glass Door Repair & Maintenance in Pinellas County | Paul's ...",
+      "description": "door repair pinellas county in Oldsmar: handyman-scope door adjustment. Registered and insured. Free written estimate."
+    },
+    {
+      "path": "oldsmar-handyman.html",
+      "gsc_queries": [
+        "handyman near me small jobs",
+        "door repair pinellas county"
+      ],
+      "serper_note": "handyman near me small jobs: compete with THE BEST 10 Handyman in PENSACOLA, FL - Updated 2026 - Yelp; door repair pinellas county: compete with Sliding Glass Door Repair & Maintenance in Pinellas County | Paul's ...",
+      "description": "Oldsmar handyman near me small jobs: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "palm-harbor-drywall-repair.html",
+      "gsc_queries": [
+        "handyman pinellas county"
+      ],
+      "serper_note": "handyman pinellas county: compete with THE BEST 10 HANDYMAN IN PINELLAS PARK, FL - Yelp",
+      "description": "handyman pinellas county in Palm Harbor: handyman-scope drywall repair. Registered and insured. Free written estimate."
+    },
+    {
+      "path": "palm-harbor-handyman.html",
+      "gsc_queries": [
+        "handyman pinellas county",
+        "handyman pinellas county fl"
+      ],
+      "serper_note": "handyman pinellas county: compete with THE BEST 10 HANDYMAN IN PINELLAS PARK, FL - Yelp; handyman pinellas county fl: compete with Handyman Services | Pinellas Park, FL",
+      "description": "Palm Harbor handyman pinellas county: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "pasco-handyman.html",
+      "gsc_queries": [
+        "plumbing services in pinellas county",
+        "handyman pasco county fl",
+        "plumbing repair pasco"
+      ],
+      "serper_note": "plumbing services in pinellas county: compete with THE BEST 10 PLUMBING IN PINELLAS PARK, FL - Yelp; handyman pasco county fl: compete with Pasco County Handyman & Home Repair Services - Mr Level Head",
+      "description": "plumbing services in pinellas county and handyman pasco county fl: drywall, fixture plumbing, doors. Registered and insured. Free estimate."
+    },
+    {
+      "path": "pinellas-handyman.html",
+      "gsc_queries": [
+        "handyman pinellas county",
+        "handyman company pinellas",
+        "handyman pinellas county fl"
+      ],
+      "serper_note": "handyman pinellas county: compete with THE BEST 10 HANDYMAN IN PINELLAS PARK, FL - Yelp; handyman pinellas county fl: compete with Handyman Services | Pinellas Park, FL",
+      "description": "handyman pinellas county and handyman company pinellas: drywall, fixture plumbing, doors. Registered and insured. Free estimate."
+    },
+    {
+      "path": "port-richey-handyman.html",
+      "gsc_queries": [
+        "door repair pinellas county",
+        "handyman port richey fl"
+      ],
+      "serper_note": "door repair pinellas county: compete with Sliding Glass Door Repair & Maintenance in Pinellas County | Paul's ...; handyman port richey fl: compete with THE BEST 10 HANDYMAN NEAR PORT RICHEY, FL 34668 - Yelp",
+      "description": "Port Richey door repair pinellas county: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "pricing-flat-rate-handyman.html",
+      "gsc_queries": [
+        "flat rate handyman pricing",
+        "handyman near me prices"
+      ],
+      "serper_note": "flat rate handyman pricing: compete with How do you price your work? : r/handyman - Reddit; handyman near me prices: compete with Handyman Wichita KS | Mr. Handyman of the Wichita Metro Area",
+      "description": "Pricing Flat Rate handyman in Pinellas County. Drywall, fixtures, doors & punch-list repairs. Free estimate."
+    },
+    {
+      "path": "pricing-handyman-by-the-hour.html",
+      "gsc_queries": [
+        "handyman by the hour",
+        "handyman near me prices"
+      ],
+      "serper_note": "handyman by the hour: compete with Handyman Services | Hire a Local Handyman | TaskRabbit; handyman near me prices: compete with Handymen near Richmond, VA - Thumbtack",
+      "description": "Handyman By The Hour in Pinellas County. Knight Group \u2014 registered Safety Harbor handyman team. Free estimate."
+    },
+    {
+      "path": "pricing-plumbing-repair-prices.html",
+      "gsc_queries": [
+        "handyman plumbing repair prices",
+        "handyman near me prices"
+      ],
+      "serper_note": "handyman plumbing repair prices: compete with Anyone have a Rate cheat sheet : r/handyman - Reddit; handyman near me prices: compete with Local Handyman Help in White Plains - Book Today - TaskRabbit",
+      "description": "Handyman pricing in Pinellas County. $150 first hour, $75 after. No 2-hour minimum. Free written estimates."
+    },
+    {
+      "path": "pricing.html",
+      "gsc_queries": [
+        "handyman prices pinellas county",
+        "handyman near me prices"
+      ],
+      "serper_note": "handyman prices pinellas county: compete with The 10 Best Handyman Services in Pinellas Park, FL 2026; handyman near me prices: compete with Local Handyman Services in Washington DC - TaskRabbit",
+      "description": "Handyman pricing in Pinellas County. $150 first hour, $75 after. No 2-hour minimum. Free written estimates."
+    },
+    {
+      "path": "safety-harbor-handyman.html",
+      "gsc_queries": [
+        "knight group handyman",
+        "handyman pinellas county"
+      ],
+      "serper_note": "knight group handyman: compete with Knight Group | Safety Harbor FL - Facebook; handyman pinellas county: compete with THE BEST 10 HANDYMAN IN PINELLAS PARK, FL - Yelp",
+      "description": "Safety Harbor knight group handyman: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "seminole-handyman.html",
+      "gsc_queries": [
+        "handyman painting pinellas county"
+      ],
+      "serper_note": "handyman painting pinellas county: compete with Handyman Services | Pinellas Park, FL",
+      "description": "Seminole handyman painting pinellas county: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "seminole-interior-painting.html",
+      "gsc_queries": [
+        "handyman painting pinellas county"
+      ],
+      "serper_note": "handyman painting pinellas county: compete with Handyman Services | Pinellas Park, FL",
+      "description": "handyman painting pinellas county in Seminole: handyman-scope interior painting. Registered and insured. Free written estimate."
+    },
+    {
+      "path": "service-areas.html",
+      "gsc_queries": [
+        "handyman service areas pinellas county"
+      ],
+      "serper_note": "handyman service areas pinellas county: compete with Handyman Services | Pinellas Park, FL",
+      "description": "Handyman Service Areas Pinellas County in Pinellas County. Knight Group \u2014 registered Safety Harbor handyman team. Free estimate."
+    },
+    {
+      "path": "services.html",
+      "gsc_queries": [
+        "handyman services pinellas county"
+      ],
+      "serper_note": "handyman services pinellas county: compete with THE BEST 10 HANDYMAN IN PINELLAS PARK, FL - Yelp",
+      "description": "Handyman Services Pinellas County in Pinellas County. Knight Group \u2014 registered Safety Harbor handyman team. Free estimate."
+    },
+    {
+      "path": "seven-springs-handyman.html",
+      "gsc_queries": [
+        "carpenter pinellas county",
+        "handyman seven springs fl"
+      ],
+      "serper_note": "handyman seven springs fl: compete with Handyman Seven Springs, FL - Last Updated May 2026 - Yelp; carpenter pinellas county: compete with Christy Carpenter - Director of Facilities Operations | LinkedIn",
+      "description": "Seven Springs carpenter pinellas county: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "st-petersburg-handyman.html",
+      "gsc_queries": [
+        "handyman services pinellas county",
+        "handyman projects pinellas county"
+      ],
+      "serper_note": "handyman services pinellas county: compete with THE BEST 10 HANDYMAN IN PINELLAS PARK, FL - Yelp; handyman projects pinellas county: compete with Handyman Services | Pinellas Park, FL",
+      "description": "St. Petersburg handyman services pinellas county: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "tampa-handyman.html",
+      "gsc_queries": [
+        "handyman near me small jobs",
+        "handyman tampa fl"
+      ],
+      "serper_note": "handyman near me small jobs: compete with The 10 Best Handyman Services in Kansas City, MO 2026; handyman tampa fl: compete with Experienced Handyman Tampa, FL",
+      "description": "Tampa handyman near me small jobs: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "tarpon-springs-handyman.html",
+      "gsc_queries": [
+        "plumbing services in pinellas county",
+        "plumbing repair clearwater fl"
+      ],
+      "serper_note": "plumbing services in pinellas county: compete with THE BEST 10 PLUMBING IN PINELLAS PARK, FL - Yelp; plumbing repair clearwater fl: compete with Clearwater Plumbing | Clearwater Plumbers | Residential Plumbers",
+      "description": "Tarpon Springs plumbing services in pinellas county: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "temple-terrace-handyman.html",
+      "gsc_queries": [
+        "carpentry services near me",
+        "handyman temple terrace fl"
+      ],
+      "serper_note": "carpentry services near me: compete with Carpentry Services St. Louis | Interior & Exterior - Kennedy Painting; handyman temple terrace fl: compete with Rely On Our Professional Handyman | Temple Terrace, FL",
+      "description": "Temple Terrace carpentry services near me: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "town-n-country-handyman.html",
+      "gsc_queries": [
+        "handyman near me small jobs",
+        "handyman tampa fl"
+      ],
+      "serper_note": "handyman near me small jobs: compete with Handymen near New York, NY - Thumbtack; handyman tampa fl: compete with Experienced Handyman Tampa, FL",
+      "description": "Town 'n' Country handyman near me small jobs: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "trinity-handyman.html",
+      "gsc_queries": [
+        "handyman estimate pinellas county",
+        "handyman trinity fl"
+      ],
+      "serper_note": "handyman estimate pinellas county: compete with Serving Pinellas County Call 727-688-6670 today to schedule your ...; handyman trinity fl: compete with Trusted and Efficient Handyman Trinity, FL",
+      "description": "Trinity handyman estimate pinellas county: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
+    },
+    {
+      "path": "westchase-handyman.html",
+      "gsc_queries": [
+        "small home renovations pinellas county",
+        "handyman westchase fl"
+      ],
+      "serper_note": "small home renovations pinellas county: compete with General Contractor Pinellas Park FL; handyman westchase fl: compete with Westchase Handyman",
+      "description": "Westchase small home renovations pinellas county: drywall, fixture plumbing, doors and punch-list repairs. Registered and insured. Free estimate."
     },
     {
       "path": "PolicyPages/privacy-policy.html",
-      "gsc_queries": [],
-      "serper_note": "",
-      "description": "Knight Group privacy policy for handyman services in Safety Harbor and Pinellas County, Florida."
+      "description": "Knight Group privacy policy for handyman services in Safety Harbor and Tampa Bay, Florida."
     },
     {
       "path": "PolicyPages/terms.html",
-      "gsc_queries": [],
-      "serper_note": "",
-      "description": "Knight Group terms of service for handyman repairs and projects in Safety Harbor and Pinellas County, Florida."
+      "description": "Knight Group terms of service for handyman repairs and projects in Safety Harbor and Tampa Bay, Florida."
     },
     {
       "path": "PolicyPages/payment-policy.html",
-      "gsc_queries": [],
-      "serper_note": "",
-      "description": "Knight Group payment policy: accepted methods, billing terms, and payment options for Pinellas County handyman work."
+      "description": "Knight Group payment policy: billing terms and accepted methods for Tampa Bay handyman work."
     },
     {
       "path": "PolicyPages/returnpolicy.html",
-      "gsc_queries": [],
-      "serper_note": "",
-      "description": "Knight Group 30-day workmanship guarantee for handyman services in Safety Harbor and Pinellas County, Florida."
+      "description": "Knight Group 30-day workmanship guarantee for handyman services in Safety Harbor and Tampa Bay, Florida."
     }
   ]
 }

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Run Serper.dev SERP research for Knight Group meta description work."""
+"""Run Serper.dev SERP research for Knight Group — counties, services, geo, and core pages."""
 
 from __future__ import annotations
 
 import csv
 import json
-import re
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -13,45 +13,17 @@ from urllib.parse import urlparse
 
 import requests
 
+from serp_query_map import DEFAULT_LOCATION, build_full_page_query_map, query_locations
+
 ROOT = Path(__file__).resolve().parents[1]
 SEO = ROOT / "seo"
 OUTREACH_ENV = Path(r"E:\KnightLogics-Growth-System\CRM\OutreachEngine\.env")
 GSC_QUERIES = ROOT / "gsc-export-2026-06-03" / "Queries.csv"
-META_CONFIG = SEO / "meta-descriptions.json"
 SERPER_ENDPOINT = "https://google.serper.dev/search"
 SITE_DOMAIN = "knightgroup.com"
-DEFAULT_LOCATION = "Pinellas County, Florida, United States"
+REQUEST_DELAY_SEC = 1.0
 
-PAGE_QUERY_MAP: dict[str, list[str]] = {
-    "index.html": ["knight group", "knightgroup", "handyman pinellas county"],
-    "Services/handyman.html": [
-        "handyman company pinellas",
-        "handyman pinellas county fl",
-        "handyman near me small jobs",
-    ],
-    "Services/plumbing-services.html": [
-        "sink repair clearwater",
-        "plumbing services in pinellas county",
-        "plumbing repair clearwater fl",
-    ],
-    "about.html": ["knight group handyman", "knight services llc", "knights handyman services"],
-    "contact.html": ["knight group handyman contact"],
-    "booking.html": ["handyman estimate pinellas county"],
-    "Services/general-repairs.html": ["handyman pinellas county", "general home repairs pinellas"],
-    "galleries.html": ["handyman projects pinellas county"],
-    "service-areas.html": ["handyman service areas pinellas county"],
-    "pinellas-handyman.html": ["handyman pinellas county", "handyman company pinellas"],
-    "clearwater-handyman.html": ["sink repair clearwater", "clearwater handyman"],
-    "services.html": ["handyman services pinellas county"],
-    "pricing.html": ["handyman prices pinellas county", "handyman near me prices"],
-    "Services/carpentry-framing.html": ["carpentry services near me", "carpenter pinellas county"],
-    "Services/doors-windows.html": ["door repair pinellas county", "window repair clearwater"],
-    "Services/electrical-work.html": ["handyman electrical work pinellas county"],
-    "Services/emergency-services.html": ["emergency handyman pinellas county"],
-    "Services/home-renovations.html": ["small home renovations pinellas county"],
-    "Services/painting-finishing.html": ["handyman painting pinellas county"],
-    "Services/custom-projects.html": ["custom handyman projects pinellas county"],
-}
+PAGE_QUERY_MAP = build_full_page_query_map()
 
 
 def load_serper_key() -> str:
@@ -100,9 +72,9 @@ def collect_queries() -> list[dict[str, Any]]:
     seen: set[str] = set()
     items: list[dict[str, Any]] = []
 
-    def add(query: str, *, page: str, source: str, impressions: str = "") -> None:
-        key = query.strip().lower()
-        if not key or key in seen:
+    def add(query: str, *, page: str, source: str, impressions: str = "", location: str = "") -> None:
+        key = f"{query.strip().lower()}|{page}|{location or DEFAULT_LOCATION}"
+        if not query.strip() or key in seen:
             return
         seen.add(key)
         items.append(
@@ -111,12 +83,14 @@ def collect_queries() -> list[dict[str, Any]]:
                 "target_page": page,
                 "source": source,
                 "gsc_impressions": impressions,
+                "location": location or query_locations(page),
             }
         )
 
     for page, queries in PAGE_QUERY_MAP.items():
+        location = query_locations(page)
         for query in queries:
-            add(query, page=page, source="page_map")
+            add(query, page=page, source="page_map", location=location)
 
     for row in load_gsc_queries():
         query = row["query"]
@@ -125,7 +99,18 @@ def collect_queries() -> list[dict[str, Any]]:
             if query.lower() in {q.lower() for q in candidate_queries}:
                 page = candidate_page
                 break
-        add(query, page=page, source="gsc", impressions=row["impressions"])
+        # Avoid GSC mis-mapping to non-existent short city filenames.
+        if not (ROOT / page).is_file() and page.endswith(".html") and not page.startswith("Services/"):
+            page = f"{page.removesuffix('.html')}-handyman.html"
+        if not (ROOT / page).is_file():
+            page = "index.html"
+        add(
+            query,
+            page=page,
+            source="gsc",
+            impressions=row["impressions"],
+            location=query_locations(page),
+        )
 
     return items
 
@@ -192,12 +177,57 @@ def infer_intent(query: str, organic: list[dict[str, Any]], places: list[dict[st
         return "pricing_estimate"
     if any(token in q for token in ("knight group", "knightgroup", "knight services")):
         return "brand_navigational"
-    if "near me" in q or "pinellas" in q or "clearwater" in q or "safety harbor" in q:
+    if any(
+        token in q
+        for token in (
+            "near me",
+            "pinellas",
+            "clearwater",
+            "safety harbor",
+            "tampa",
+            "hillsborough",
+            "pasco",
+            "holiday",
+            "trinity",
+        )
+    ):
         return "local_service"
     domains = {row["domain"] for row in organic[:5]}
     if any("bbb.org" in d or "yelp." in d for d in domains):
         return "local_directory_mix"
     return "general_service"
+
+
+def suggested_meta_description(row: dict[str, Any]) -> str:
+    """Craft a SERP-informed meta description suggestion for the target page."""
+    query = str(row.get("query") or "")
+    page = str(row.get("target_page") or "")
+    snippets = [s for s in (row.get("competitor_snippet_angles") or []) if s]
+    intent = str(row.get("intent") or "")
+
+    locality = "Pinellas County"
+    if "hillsborough" in query.lower() or "tampa" in query.lower():
+        locality = "Hillsborough County"
+    elif "pasco" in query.lower() or "holiday" in query.lower() or "trinity" in query.lower():
+        locality = "Pasco County"
+
+    if intent == "brand_navigational":
+        return "Knight Group Handyman Services in Safety Harbor & Tampa Bay. Registered, insured repairs. Free estimate."
+    if intent == "pricing_estimate":
+        return f"Handyman pricing in {locality}. $150 first hour, $75 after. No 2-hour minimum. Free written estimates."
+
+    if page.startswith("Services/"):
+        service = page.split("/")[-1].replace(".html", "").replace("-", " ")
+        hook = snippets[0][:60] if snippets else f"{service} in {locality}"
+        return f"{service.title()} in {locality}. {hook}. Registered & insured. Free estimate."[:159]
+
+    if page.endswith("-handyman.html"):
+        city = page.replace("-handyman.html", "").replace("-", " ").title()
+        return f"{city} handyman in {locality}. Drywall, fixtures, doors & punch-list repairs. Free estimate."[:159]
+
+    if "sink repair" in query.lower():
+        return "Sink & faucet repair in Clearwater & Pinellas County. Fixture-level handyman plumbing. Free estimate."
+    return f"{query.title()} in {locality}. Knight Group — registered Safety Harbor handyman team. Free estimate."[:159]
 
 
 def main() -> int:
@@ -206,13 +236,17 @@ def main() -> int:
     generated_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     results: list[dict[str, Any]] = []
 
-    for item in queries:
+    print(f"Running {len(queries)} Serper queries across {len(PAGE_QUERY_MAP)} pages...")
+    for index, item in enumerate(queries):
         query = item["query"]
+        location = item.get("location") or DEFAULT_LOCATION
+        if index > 0:
+            time.sleep(REQUEST_DELAY_SEC)
         try:
-            data = fetch_serp(api_key, query, DEFAULT_LOCATION)
+            data = fetch_serp(api_key, query, location)
         except requests.RequestException as exc:
             results.append({**item, "error": str(exc)})
-            print(f"ERROR {query}: {exc}")
+            print(f"ERROR {query} ({location}): {exc}")
             continue
 
         organic = summarize_organic(data)
@@ -222,7 +256,6 @@ def main() -> int:
 
         payload = {
             **item,
-            "location": DEFAULT_LOCATION,
             "intent": infer_intent(query, organic, places),
             "knightgroup_rank": knight_hit["position"] if knight_hit else None,
             "knightgroup_result": knight_hit,
@@ -237,13 +270,15 @@ def main() -> int:
             ][:3],
             "search_information": data.get("searchInformation"),
         }
+        payload["suggested_meta_description"] = suggested_meta_description(payload)
         results.append(payload)
         rank = payload["knightgroup_rank"]
-        print(f"OK   {query} -> rank {rank if rank else 'not in top 10'}")
+        print(f"OK   {query} @ {location} -> rank {rank if rank else 'not in top 10'}")
 
     report = {
         "generated_at": generated_at,
         "location_default": DEFAULT_LOCATION,
+        "page_count": len(PAGE_QUERY_MAP),
         "query_count": len(results),
         "results": results,
     }
@@ -253,15 +288,19 @@ def main() -> int:
     md_lines = [
         "# Knight Group Serper meta research",
         f"Generated: {generated_at}",
-        f"Location: {DEFAULT_LOCATION}",
+        f"Pages mapped: {len(PAGE_QUERY_MAP)}",
+        f"Queries run: {len(results)}",
         "",
     ]
     for row in results:
         md_lines.append(f"## {row['query']}")
         md_lines.append(f"- Target page: `{row.get('target_page', '')}`")
+        md_lines.append(f"- Location: {row.get('location', DEFAULT_LOCATION)}")
         md_lines.append(f"- GSC impressions: {row.get('gsc_impressions') or 'n/a'}")
         md_lines.append(f"- Intent: {row.get('intent', 'n/a')}")
         md_lines.append(f"- Knight Group rank: {row.get('knightgroup_rank') or 'not in top 10'}")
+        if row.get("suggested_meta_description"):
+            md_lines.append(f"- Suggested meta: {row['suggested_meta_description']}")
         if row.get("knightgroup_result"):
             hit = row["knightgroup_result"]
             md_lines.append(f"- Current title: {hit.get('title')}")
@@ -270,10 +309,10 @@ def main() -> int:
             md_lines.append("- Top competitors:")
             for comp in row["top_competitors"][:3]:
                 md_lines.append(f"  - {comp.get('title')} | {comp.get('domain')}")
-        if row.get("map_pack"):
-            md_lines.append("- Map pack:")
-            for place in row["map_pack"]:
-                md_lines.append(f"  - {place.get('title')} ({place.get('rating')})")
+        if row.get("people_also_ask"):
+            md_lines.append("- People also ask:")
+            for question in row["people_also_ask"]:
+                md_lines.append(f"  - {question}")
         if row.get("error"):
             md_lines.append(f"- Error: {row['error']}")
         md_lines.append("")

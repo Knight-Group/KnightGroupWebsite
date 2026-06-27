@@ -29,7 +29,16 @@ AREA_SERVED = [
     {"@type": "City", "name": "Tarpon Springs, FL"},
     {"@type": "City", "name": "Seminole, FL"},
     {"@type": "City", "name": "St. Petersburg, FL"},
+    {"@type": "City", "name": "Tampa, FL"},
+    {"@type": "City", "name": "Town 'n' Country, FL"},
+    {"@type": "City", "name": "Westchase, FL"},
+    {"@type": "City", "name": "Holiday, FL"},
+    {"@type": "City", "name": "Trinity, FL"},
+    {"@type": "City", "name": "New Port Richey, FL"},
+    {"@type": "City", "name": "Land O' Lakes, FL"},
     {"@type": "AdministrativeArea", "name": "Pinellas County, Florida"},
+    {"@type": "AdministrativeArea", "name": "Hillsborough County, Florida"},
+    {"@type": "AdministrativeArea", "name": "Pasco County, Florida"},
 ]
 
 SERVICE_IMAGES = {
@@ -201,6 +210,70 @@ def webpage_entity(
     if extra:
         node.update(extra)
     return node
+
+
+def _combo_city_slug(url_slug: str) -> str:
+    try:
+        from seo_page_data import COUNTY_REGIONS
+
+        city_slugs = sorted(
+            (city["slug"] for region in COUNTY_REGIONS for city in region["cities"]),
+            key=len,
+            reverse=True,
+        )
+        for city_slug in city_slugs:
+            if url_slug.startswith(f"{city_slug}-"):
+                return city_slug
+    except ImportError:
+        pass
+    return url_slug.split("-")[0]
+
+
+def _url_slug(url: str) -> str:
+    return url.rstrip("/").split("/")[-1]
+
+
+def _geo_breadcrumb_label(url: str, meta: dict[str, str], service: dict[str, str] | None) -> str:
+    if service and service.get("name"):
+        return str(service["name"])
+    title = meta.get("title", "")
+    if "|" in title:
+        return title.split("|")[0].strip()
+    return _url_slug(url).replace("-", " ").title()
+
+
+def _append_geo_service_graph(
+    graph: list[dict[str, Any]],
+    *,
+    url: str,
+    meta: dict[str, str],
+    service: dict[str, str] | None,
+    crumbs: list[dict[str, str]],
+    hero_image_file: str = "handyman.webp",
+) -> str:
+    label = _geo_breadcrumb_label(url, meta, service)
+    crumbs.extend(
+        [
+            {"name": "Service Areas", "item": f"{BASE}/service-areas"},
+            {"name": label, "item": url},
+        ]
+    )
+    service_payload = service or {
+        "name": label,
+        "serviceType": "Handyman services",
+        "description": meta["description"],
+        "image": hero_image_file.replace(".webp", ".jpg"),
+    }
+    graph.append(service_entity(url=url, service=service_payload))
+    service_id = f"{url}#service"
+    image_node = build_image_object(
+        image_id=f"{url}#primary-image",
+        image_url=f"{BASE}/Images/{service_payload['image']}",
+        name=f"{service_payload['name']} project photo",
+        description=service_payload["description"],
+    )
+    graph.append(image_node)
+    return service_id
 
 
 def service_entity(
@@ -549,29 +622,88 @@ def build_graph_for_page(
     elif page_key == "service-areas":
         crumbs.append({"name": "Service Areas", "item": f"{BASE}/service-areas"})
         service = {
-            "name": "Pinellas County handyman service areas",
+            "name": "Tampa Bay handyman service areas",
             "serviceType": "Handyman service areas",
             "description": meta["description"],
             "image": "handyman.jpg",
         }
         graph.append(service_entity(url=url, service=service))
         main_entity_id = f"{url}#service"
-    elif page_key == "geo-handyman":
-        label = "Pinellas Handyman" if url.endswith("/pinellas-handyman") else "Clearwater Handyman"
+    elif page_key == "geo-county":
+        main_entity_id = _append_geo_service_graph(
+            graph, url=url, meta=meta, service=service, crumbs=crumbs
+        )
+        extra["primaryImageOfPage"] = {"@id": f"{url}#primary-image"}
+    elif page_key == "geo-city":
+        main_entity_id = _append_geo_service_graph(
+            graph, url=url, meta=meta, service=service, crumbs=crumbs
+        )
+        extra["primaryImageOfPage"] = {"@id": f"{url}#primary-image"}
+    elif page_key == "geo-combo":
+        slug = _url_slug(url)
+        city_slug = _combo_city_slug(slug)
+        city_label = city_slug.replace("-", " ").title()
         crumbs.extend(
             [
                 {"name": "Service Areas", "item": f"{BASE}/service-areas"},
-                {"name": label, "item": url},
+                {"name": f"{city_label} handyman", "item": f"{BASE}/{city_slug}-handyman"},
+                {"name": _geo_breadcrumb_label(url, meta, service), "item": url},
             ]
         )
-        service = service or {
-            "name": label,
+        service_payload = service or {
+            "name": meta["title"].split("|")[0].strip(),
             "serviceType": "Handyman services",
             "description": meta["description"],
             "image": "handyman.jpg",
         }
-        graph.append(service_entity(url=url, service=service))
+        graph.append(service_entity(url=url, service=service_payload))
         main_entity_id = f"{url}#service"
+        image_node = build_image_object(
+            image_id=f"{url}#primary-image",
+            image_url=f"{BASE}/Images/{service_payload['image']}",
+            name=f"{service_payload['name']} photo",
+            description=service_payload["description"],
+        )
+        graph.append(image_node)
+        extra["primaryImageOfPage"] = {"@id": image_node["@id"]}
+    elif page_key == "geo-handyman":
+        main_entity_id = _append_geo_service_graph(
+            graph, url=url, meta=meta, service=service, crumbs=crumbs
+        )
+        extra["primaryImageOfPage"] = {"@id": f"{url}#primary-image"}
+    elif page_key == "pricing-niche":
+        crumbs.append({"name": "Pricing", "item": f"{BASE}/pricing"})
+        crumbs.append({"name": meta["title"].split("|")[0].strip(), "item": url})
+        main_entity_id = PRICING_CATALOG_ID
+        graph.append(pricing_offer_catalog())
+    elif page_key == "gallery-project":
+        crumbs.extend(
+            [
+                {"name": "Gallery", "item": f"{BASE}/galleries"},
+                {"name": meta["title"].split("|")[0].strip(), "item": url},
+            ]
+        )
+        project_id = f"{url}#project"
+        graph.append(
+            {
+                "@type": "CreativeWork",
+                "@id": project_id,
+                "name": meta["title"].split("|")[0].strip(),
+                "description": meta["description"],
+                "provider": {"@id": BUSINESS_ID},
+                "about": {"@id": BUSINESS_ID},
+                "locationCreated": {
+                    "@type": "AdministrativeArea",
+                    "name": "Pinellas County, Florida",
+                },
+            }
+        )
+        main_entity_id = project_id
+    elif page_key == "policy":
+        label = meta["title"].split("|")[0].strip() if "|" in meta["title"] else "Policy"
+        crumbs.append({"name": label, "item": url})
+        page_type = "WebPage"
+        main_entity_id = BUSINESS_ID
     elif page_key == "service-detail":
         crumbs.extend(
             [

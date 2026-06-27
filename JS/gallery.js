@@ -175,8 +175,14 @@
         link.href = group.serviceLink;
         link.textContent = 'Related service';
 
+        var projectPage = document.createElement('a');
+        projectPage.className = 'gallery-project__link gallery-project__link--page';
+        projectPage.href = '/gallery/' + group.id;
+        projectPage.textContent = 'View project page';
+
         head.appendChild(copy);
         head.appendChild(link);
+        head.appendChild(projectPage);
 
         var shots = document.createElement('div');
         shots.className = 'gallery-project__shots';

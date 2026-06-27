@@ -174,17 +174,39 @@ header .container {
     display: flex;
     justify-content: center;
 }
-.nav-section nav ul {
+.nav-section nav > ul {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     gap: 30px;
     list-style: none;
     margin: 0;
     padding: 0;
+    flex-wrap: nowrap;
+}
+/* Legacy hub pages embed old header CSS with `.nav-section nav ul` — keep mega lists vertical */
+.nav-section nav ul.fw-services-mega__list,
+.nav-section nav ul.fw-services-mega__flyout {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 2px;
+}
+.nav-section nav > ul > li {
+    display: flex;
+    align-items: baseline;
+    flex-shrink: 0;
+}
+.nav-section nav > ul > li.nav-dropdown-wrap {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    flex-shrink: 0;
 }
 .nav-section nav a,
-.services-link {
+.nav-section nav .nav-dropdown-btn {
+    display: inline-flex;
+    align-items: center;
     color: #f2e7e7;
     text-decoration: none;
     font-size: 0.82rem;
@@ -192,30 +214,70 @@ header .container {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     white-space: nowrap;
+    line-height: 1;
+    vertical-align: baseline;
     transition: color 0.18s ease;
 }
 .nav-section nav a:hover,
 .nav-section nav a:focus-visible,
 .nav-section nav a.active,
 .nav-section nav a.nav-active,
-.dropdown:focus-within .services-link {
+.nav-section nav .nav-dropdown-btn:hover,
+.nav-section nav .nav-dropdown-btn:focus-visible,
+.dropdown:focus-within .services-link,
+.nav-dropdown-wrap.kg-nav-open > .nav-dropdown-btn,
+.nav-dropdown-wrap:focus-within > .nav-dropdown-btn {
     color: #fff;
     outline: none;
 }
 .dropdown { position: relative; }
-.services-link {
+.nav-dropdown-btn {
     display: inline-flex;
     align-items: center;
-    gap: 7px;
+    position: relative;
+    gap: 0;
+    padding: 0 0.75em 0 0;
+    margin: 0;
+    min-height: 0;
+    height: auto;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    color: inherit;
+    -webkit-appearance: none;
+    appearance: none;
+    vertical-align: baseline;
 }
-.services-link::after {
-    content: "";
-    width: 6px;
-    height: 6px;
-    border-right: 2px solid currentColor;
-    border-bottom: 2px solid currentColor;
-    transform: rotate(45deg) translateY(-2px);
-    opacity: 1;
+.kg-nav-dropdown-label {
+    white-space: nowrap;
+    line-height: 1;
+}
+.kg-nav-dropdown-chevron {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    box-sizing: border-box;
+    transform: translateY(calc(-50% + 1px)) rotate(45deg);
+    flex: 0 0 auto;
+    opacity: 0.9;
+    transition: transform 0.2s ease;
+    pointer-events: none;
+}
+.nav-dropdown-wrap.kg-nav-open > .nav-dropdown-btn .kg-nav-dropdown-chevron,
+.nav-dropdown-wrap:focus-within > .nav-dropdown-btn .kg-nav-dropdown-chevron {
+    transform: translateY(calc(-50% + 1px)) rotate(225deg);
+}
+.nav-section nav .nav-dropdown-btn::after {
+    display: none;
 }
 .dropdown-content {
     display: none;
@@ -260,7 +322,11 @@ header .container {
     justify-content: flex-end;
     min-width: 210px;
 }
-.cta-buttons { display: flex; align-items: center; }
+.cta-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 .header-btn-primary {
     display: flex;
     flex-direction: column;
@@ -344,14 +410,17 @@ header .container {
     width: 300px;
     max-width: 90vw;
     height: 100vh;
+    height: 100dvh;
     background: #121113;
     z-index: 2000;
     transform: translateX(-100%);
     transition: transform 0.32s cubic-bezier(0.4,0,0.2,1);
+    overflow-x: hidden;
     overflow-y: auto;
     display: none;
     flex-direction: column;
     border-right: 1px solid rgba(255,255,255,0.12);
+    box-sizing: border-box;
 }
 .mobile-menu.active {
     display: flex;
@@ -365,10 +434,18 @@ header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
     padding: 18px 18px 16px;
     border-bottom: 1px solid rgba(255,255,255,0.08);
+    min-width: 0;
 }
-.mm-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.mm-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; min-width: 0; flex: 1; }
+.mm-logo .company-name {
+    max-width: none;
+    font-size: 0.88rem;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
 .mm-logo img { height: 38px; width: auto; }
 .mm-logo .kg-logo-coin--menu .kg-logo-coin__face img {
     height: 100%;
@@ -386,6 +463,7 @@ header .container {
     justify-content: center;
     border-radius: 10px;
     cursor: pointer;
+    flex-shrink: 0;
 }
 .mm-nav {
     flex: 1;
@@ -395,13 +473,18 @@ header .container {
     display: flex;
     flex-direction: column;
     gap: 2px;
+    min-width: 0;
+    overflow-x: hidden;
 }
 .mm-nav a,
 .mm-services-toggle {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    gap: 8px;
     width: 100%;
+    max-width: 100%;
+    min-width: 0;
     padding: 12px 14px;
     color: #fff;
     text-decoration: none;
@@ -412,6 +495,10 @@ header .container {
     border: 0;
     text-align: left;
     font-family: inherit;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    line-height: 1.3;
 }
 .mm-nav a:hover,
 .mm-nav a:focus-visible,
@@ -421,16 +508,19 @@ header .container {
     color: #fff;
     outline: none;
 }
-.mm-chevron { font-size: 0.72rem; transition: transform 0.25s; opacity: 1; }
+.mm-chevron { font-size: 0.72rem; transition: transform 0.25s; opacity: 1; flex-shrink: 0; margin-top: 0.2em; }
 .mm-services-toggle[aria-expanded="true"] .mm-chevron { transform: rotate(180deg); }
-.mm-submenu { display: none; flex-direction: column; gap: 1px; padding: 4px 0 4px 14px; }
-.mm-submenu.open { display: flex; }
+.mm-submenu { display: none; flex-direction: column; gap: 1px; padding: 4px 0 4px 10px; min-width: 0; max-width: 100%; overflow: hidden; box-sizing: border-box; }
+.mm-submenu.open,
+.fw-mm-item--open > .fw-mm-submenu { display: flex; }
 .mm-submenu a {
     font-size: 0.86rem;
-    padding: 9px 12px;
+    padding: 9px 10px;
     color: rgba(255,255,255,0.94);
     border-left: 2px solid rgba(154,47,47,0.45);
     border-radius: 0 8px 8px 0;
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 .mm-cta {
     padding: 16px;
@@ -501,7 +591,9 @@ header .container {
         margin-left: auto;
         flex: 0 0 auto;
     }
-    .header-actions .header-btn-primary:not(.kg-header-call) { display: none !important; }
+    .header-actions .header-btn-primary:not(.kg-header-call):not(.kg-header-estimate) {
+        display: none !important;
+    }
     .header-call-mobile { display: flex !important; }
     .logo-section {
         position: static;
@@ -515,7 +607,16 @@ header .container {
         width: 50px;
         height: 50px;
     }
-    .company-name { display: none; }
+}
+
+@media (max-width: 600px) {
+    #header-include .header-actions .kg-header-estimate {
+        display: none !important;
+    }
+
+    #header-include .logo-section .company-name {
+        display: none !important;
+    }
 }
 @media (min-width: 1201px) {
     .hamburger { display: none !important; }
@@ -526,4 +627,205 @@ header .container {
 .email-picker-option:hover,
 .email-picker-option:focus-visible {
     background: #f5f5f5;
+}
+
+/* ---- Knight Group mega-menu (Faith Works flyout pattern) ---- */
+.nav-dropdown-wrap {
+    position: relative;
+}
+.nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: auto;
+    transform: none;
+    z-index: 1200;
+}
+.nav-dropdown-menu::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    height: 10px;
+}
+.nav-dropdown-wrap.kg-nav-open .nav-dropdown-menu,
+.nav-dropdown-wrap:focus-within .nav-dropdown-menu {
+    display: block;
+}
+@media (hover: hover) {
+    .nav-dropdown-wrap:hover .nav-dropdown-menu {
+        display: block;
+    }
+}
+.fw-services-mega {
+    min-width: 248px;
+    max-width: 280px;
+    padding: 8px;
+    background: rgba(18, 17, 19, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.34);
+}
+.fw-services-mega__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.fw-services-mega__item {
+    position: relative;
+}
+.fw-services-mega__overview,
+.fw-services-mega__flyout-item a {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 10px;
+    color: #fff5f5;
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.fw-services-mega__overview:hover,
+.fw-services-mega__overview:focus-visible,
+.fw-services-mega__flyout-item a:hover,
+.fw-services-mega__flyout-item a:focus-visible {
+    background: rgba(154, 47, 47, 0.22);
+    color: #fff;
+    outline: none;
+}
+.fw-services-mega__emphasis,
+a.fw-services-mega__emphasis {
+    color: #ffd4d4 !important;
+}
+.fw-services-mega__trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    padding: 10px 12px;
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+    color: #fff5f5;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: left;
+    font-family: inherit;
+}
+.fw-services-mega__trigger:hover,
+.fw-services-mega__trigger:focus-visible,
+.fw-services-mega__item--branch.subnav-open > .fw-services-mega__trigger {
+    background: rgba(154, 47, 47, 0.22);
+    color: #fff;
+    outline: none;
+}
+.fw-services-mega__chevron {
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(-45deg);
+    flex: 0 0 auto;
+    opacity: 0.85;
+}
+.fw-services-mega__flyout {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 4px);
+    min-width: 240px;
+    margin: 0;
+    padding: 8px;
+    list-style: none;
+    background: rgba(18, 17, 19, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.34);
+    z-index: 1210;
+}
+.fw-services-mega__flyout-item {
+    display: block;
+    margin: 0;
+}
+@media (hover: hover) {
+    .fw-services-mega__item--branch:hover > .fw-services-mega__flyout,
+    .fw-services-mega__item--branch:focus-within > .fw-services-mega__flyout {
+        display: block;
+    }
+}
+.fw-services-mega__item--branch.subnav-open > .fw-services-mega__flyout {
+    display: block;
+}
+.fw-mm-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    min-width: 0;
+    max-width: 100%;
+}
+.fw-mm-item {
+    min-width: 0;
+    max-width: 100%;
+}
+.fw-mm-item > a,
+.fw-mm-trigger {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 10px 10px;
+    color: rgba(255, 255, 255, 0.94);
+    text-decoration: none;
+    font-size: 0.84rem;
+    font-weight: 700;
+    border-radius: 8px;
+    background: none;
+    border: 0;
+    text-align: left;
+    font-family: inherit;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    line-height: 1.3;
+}
+.fw-mm-item > a:hover,
+.fw-mm-trigger:hover,
+.fw-mm-trigger:focus-visible {
+    background: rgba(154, 47, 47, 0.28);
+    color: #fff;
+    outline: none;
+}
+.fw-mm-submenu .fw-mm-item > a,
+.fw-mm-submenu a {
+    font-size: 0.8rem;
+    padding: 8px 8px 8px 12px;
+    border-left: 2px solid rgba(154, 47, 47, 0.45);
+    border-radius: 0 8px 8px 0;
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    box-sizing: border-box;
+}
+.fw-mm-item--open > .fw-mm-trigger .mm-chevron {
+    transform: rotate(180deg);
+}
+.fw-mm-emphasis {
+    color: #ffd4d4 !important;
 }

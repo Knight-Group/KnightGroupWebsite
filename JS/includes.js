@@ -27,20 +27,20 @@ class HTMLInclude {
         this.ensureCriticalSharedStyles();
         this.ensureHeaderStyles();
         this.ensureKgMotionAssets();
+        this.ensureKgNavMegaScript();
         this.loadIncludes();
-        this.initializeAfterIncludes();
     }
 
     ensureHeaderStyles() {
         const pathPrefix = window.location.pathname.includes('/Services/') ||
             window.location.pathname.includes('/PolicyPages/') ? '../' : '';
-        const headerVersion = '20260619-perf';
+        const headerVersion = '20260627-perf-merge';
 
         if (!document.getElementById('kg-header-css') && !document.querySelector('link[href*="header.min.css"]')) {
             const link = document.createElement('link');
             link.id = 'kg-header-css';
             link.rel = 'stylesheet';
-            link.href = pathPrefix + 'CSS/header.min.css?v=' + headerVersion;
+            link.href = '/CSS/header.min.css?v=' + headerVersion;
             document.head.appendChild(link);
         }
 
@@ -60,16 +60,26 @@ class HTMLInclude {
     }
 
     ensureKgMotionAssets() {
-        const pathPrefix = window.location.pathname.includes('/Services/') ||
-            window.location.pathname.includes('/PolicyPages/') ? '../' : '';
-        const motionVersion = '20260619-perf';
+        const motionVersion = '20260627-perf-merge';
 
         if (!document.getElementById('kg-redesign-css') && !document.querySelector('link[href*="kg-redesign.css"]')) {
             const link = document.createElement('link');
             link.id = 'kg-redesign-css';
             link.rel = 'stylesheet';
-            link.href = pathPrefix + 'CSS/kg-redesign.css?v=' + motionVersion;
+            link.href = '/CSS/kg-redesign.css?v=' + motionVersion;
             document.head.appendChild(link);
+        }
+    }
+
+    ensureKgNavMegaScript() {
+        const navVersion = '20260627-perf-merge';
+
+        if (!document.getElementById('kg-nav-mega-js') && !document.querySelector('script[src*="kg-nav-mega.js"]')) {
+            const script = document.createElement('script');
+            script.id = 'kg-nav-mega-js';
+            script.src = '/JS/kg-nav-mega.js?v=' + navVersion;
+            script.defer = true;
+            document.head.appendChild(script);
         }
     }
 
@@ -244,7 +254,7 @@ class HTMLInclude {
         if (window._knightGroupIncludesLoaded) return;
         window._knightGroupIncludesLoaded = true;
 
-        const includeVersion = '20260619-perf';
+        const includeVersion = '20260627-perf-merge';
 
         // Determine if we're in a subdirectory
         const pathPrefix = window.location.pathname.includes('/Services/') || 
@@ -278,6 +288,15 @@ class HTMLInclude {
         if (typeof window.kgInitEnterAnimations === 'function') {
             window.kgInitEnterAnimations();
         }
+        if (typeof window.kgInitNavMegaMenus === 'function') {
+            window.kgInitNavMegaMenus();
+        }
+        if (typeof window.kgFitHeaderNav === 'function') {
+            window.requestAnimationFrame(function () {
+                window.kgFitHeaderNav();
+                window.requestAnimationFrame(window.kgFitHeaderNav);
+            });
+        }
         document.dispatchEvent(new CustomEvent('kg-includes-ready'));
     }
 
@@ -303,6 +322,9 @@ class HTMLInclude {
                     backdrop.setAttribute('aria-hidden', 'true');
                 }
                 if (toggle) toggle.setAttribute('aria-expanded', 'false');
+                if (typeof window.resetKgMobileSubmenus === 'function') {
+                    window.resetKgMobileSubmenus();
+                }
                 document.body.style.overflow = '';
             } else {
                 menu.hidden = false;
@@ -317,15 +339,6 @@ class HTMLInclude {
                 if (toggle) toggle.setAttribute('aria-expanded', 'true');
                 document.body.style.overflow = 'hidden';
             }
-        };
-
-        // ── Services submenu accordion ────────────────────────────────────────
-        window.toggleMmServices = function(btn) {
-            const submenu  = document.getElementById('mmServicesMenu');
-            if (!submenu) return;
-            const expanded = btn.getAttribute('aria-expanded') === 'true';
-            btn.setAttribute('aria-expanded', String(!expanded));
-            submenu.classList.toggle('open', !expanded);
         };
 
         // ── Close menu on backdrop click ──────────────────────────────────────
@@ -354,10 +367,6 @@ class HTMLInclude {
             backdrop.hidden = true;
             backdrop.setAttribute('aria-hidden', 'true');
         }
-
-        document.querySelectorAll('.mm-services-toggle').forEach(btn => {
-            btn.addEventListener('click', () => window.toggleMmServices(btn));
-        });
 
         // ── Close menu when a nav link is tapped ─────────────────────────────
         document.querySelectorAll('.mobile-menu a').forEach(link => {
@@ -438,6 +447,21 @@ class HTMLInclude {
         toActivate.forEach(link => link.classList.add('nav-active'));
     }
 
+    toRootAssetPath(path) {
+        if (!path || /^(?:https?:)?\/\//i.test(path) || path.startsWith('data:')) {
+            return path;
+        }
+        if (path.startsWith('/')) {
+            return path;
+        }
+        const normalized = path.replace(/^(\.\.\/)+/, '');
+        if (/^(Images|GalleryImages|CSS|JS)\//.test(normalized)) {
+            const parts = normalized.split('?');
+            return '/' + parts[0] + (parts.length > 1 ? '?' + parts.slice(1).join('?') : '');
+        }
+        return path;
+    }
+
     fixRelativePaths(element, pathPrefix) {
         const currentPath = window.location.pathname;
         const isInServices = currentPath.includes('/Services/');
@@ -448,12 +472,10 @@ class HTMLInclude {
         images.forEach(img => {
             const src = img.getAttribute('src');
             if (src) {
-                // Handle absolute paths that need to be made relative for subdirectories
-                if (src.startsWith('/') && (isInServices || isInPolicyPages)) {
-                    img.setAttribute('src', '..' + src);
-                }
-                // Handle relative paths that need prefix
-                else if (!src.startsWith('http') && !src.startsWith('../') && !src.startsWith('/')) {
+                const rootAsset = this.toRootAssetPath(src);
+                if (rootAsset !== src) {
+                    img.setAttribute('src', rootAsset);
+                } else if (!src.startsWith('http') && !src.startsWith('../') && !src.startsWith('/') && !src.startsWith('data:')) {
                     img.setAttribute('src', pathPrefix + src);
                 }
             }
@@ -464,8 +486,15 @@ class HTMLInclude {
         sources.forEach(source => {
             const srcset = source.getAttribute('srcset');
             if (srcset) {
-                if (srcset.startsWith('/') && (isInServices || isInPolicyPages)) {
-                    source.setAttribute('srcset', '..' + srcset);
+                const pieces = srcset.split(',').map(part => {
+                    const tokens = part.trim().split(/\s+/);
+                    if (!tokens.length) return part;
+                    tokens[0] = this.toRootAssetPath(tokens[0]);
+                    return tokens.join(' ');
+                });
+                const rootSrcset = pieces.join(', ');
+                if (rootSrcset !== srcset) {
+                    source.setAttribute('srcset', rootSrcset);
                 } else if (!srcset.startsWith('http') && !srcset.startsWith('../') && !srcset.startsWith('/')) {
                     source.setAttribute('srcset', pathPrefix + srcset);
                 }

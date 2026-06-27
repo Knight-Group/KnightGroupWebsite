@@ -5,6 +5,13 @@
     "dev": "python scripts/dev-server.py",
     "start": "python scripts/dev-server.py",
     "reviews:sync-google": "node scripts/sync-google-reviews.js",
-    "reviews:sync-google:dry-run": "node scripts/sync-google-reviews.js --dry-run"
+    "reviews:sync-google:dry-run": "node scripts/sync-google-reviews.js --dry-run",
+    "hero:build": "python scripts/build-hero-panels.py",
+    "seo:nav": "python scripts/build-nav.py",
+    "seo:pages": "python scripts/build-seo-pages.py",
+    "seo:sitemap": "python scripts/build-sitemap.py",
+    "seo:encoding": "python scripts/fix-encoding.py",
+    "seo:services": "python scripts/migrate-service-pages.py",
+    "seo:all": "python scripts/fix-encoding.py && python scripts/migrate-service-pages.py && python scripts/build-nav.py && python scripts/build-seo-pages.py && python scripts/build-sitemap.py"
   }
 }
