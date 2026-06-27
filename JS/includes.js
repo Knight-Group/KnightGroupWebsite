@@ -21,6 +21,17 @@
     }
 })();
 
+(function kgEarlyPartialPrefetch() {
+    window.__kgPartialCache = window.__kgPartialCache || {};
+    var version = '20260628-mobile-perf';
+    ['/header.html?v=' + version, '/footer.html?v=' + version].forEach(function (path) {
+        if (window.__kgPartialCache[path]) return;
+        window.__kgPartialCache[path] = fetch(path, { credentials: 'same-origin' })
+            .then(function (res) { return res.ok ? res.text() : ''; })
+            .catch(function () { return ''; });
+    });
+})();
+
 // Dynamic HTML includes system
 class HTMLInclude {
     constructor() {
@@ -34,7 +45,7 @@ class HTMLInclude {
     ensureHeaderStyles() {
         const pathPrefix = window.location.pathname.includes('/Services/') ||
             window.location.pathname.includes('/PolicyPages/') ? '../' : '';
-        const headerVersion = '20260627-perf-merge';
+        const headerVersion = '20260628-mobile-perf';
 
         if (!document.getElementById('kg-header-css') && !document.querySelector('link[href*="header.min.css"]')) {
             const link = document.createElement('link');
@@ -60,7 +71,7 @@ class HTMLInclude {
     }
 
     ensureKgMotionAssets() {
-        const motionVersion = '20260627-perf-merge';
+        const motionVersion = '20260628-mobile-perf';
 
         if (!document.getElementById('kg-redesign-css') && !document.querySelector('link[href*="kg-redesign.css"]')) {
             const link = document.createElement('link');
@@ -72,7 +83,7 @@ class HTMLInclude {
     }
 
     ensureKgNavMegaScript() {
-        const navVersion = '20260627-perf-merge';
+        const navVersion = '20260628-mobile-perf';
 
         if (!document.getElementById('kg-nav-mega-js') && !document.querySelector('script[src*="kg-nav-mega.js"]')) {
             const script = document.createElement('script');
@@ -171,12 +182,26 @@ class HTMLInclude {
 
     // Fetch a partial, hoist its <link> and <style> tags to document.head,
     // sanitize the remaining content, then inject into targetElement.
+    async _fetchPartialText(path) {
+        if (!this._isSafePartialPath(path)) return '';
+
+        const cache = window.__kgPartialCache;
+        if (cache && cache[path]) {
+            return cache[path];
+        }
+
+        const res = await fetch(path);
+        if (!res.ok) return '';
+        const text = await res.text();
+        if (cache) cache[path] = Promise.resolve(text);
+        return text;
+    }
+
     async _fetchAndInject(targetElement, path, pathPrefix) {
         if (!this._isSafePartialPath(path)) return;
         try {
-            const res = await fetch(path);
-            if (!res.ok) return;
-            const text = await res.text();
+            const text = await this._fetchPartialText(path);
+            if (!text) return;
 
             // Parse safely — DOMParser puts <link>/<style> found before body content into <head>
             const parser = new DOMParser();
@@ -254,7 +279,7 @@ class HTMLInclude {
         if (window._knightGroupIncludesLoaded) return;
         window._knightGroupIncludesLoaded = true;
 
-        const includeVersion = '20260627-perf-merge';
+        const includeVersion = '20260628-mobile-perf';
 
         // Determine if we're in a subdirectory
         const pathPrefix = window.location.pathname.includes('/Services/') || 

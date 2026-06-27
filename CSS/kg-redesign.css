@@ -532,7 +532,7 @@ html.kg-js [data-kg-enter].is-visible {
   }
 
   .kg-home .kg-hero.kg-hero-panels-ready .kg-hero-cutout-wrap--mobile-flow .kg-hero-cutout {
-    animation: kgHeroCutoutEnterMobile 1s var(--kg-ease-out) 0.5s forwards;
+    animation: kgHeroCutoutEnterMobile 0.72s var(--kg-ease-out) 0.12s forwards;
   }
 
   @keyframes kgHeroCutoutEnterMobile {
@@ -767,7 +767,7 @@ html.kg-js [data-kg-enter].is-visible {
 }
 
 .kg-home .kg-hero.kg-hero-panels-ready .kg-hero-cutout {
-  animation: kgHeroCutoutEnter 1s var(--kg-ease-out) 0.5s forwards;
+  animation: kgHeroCutoutEnter 0.82s var(--kg-ease-out) 0.12s forwards;
 }
 
 @media (max-width: 900px) {
