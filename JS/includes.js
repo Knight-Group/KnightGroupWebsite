@@ -21,6 +21,17 @@
     }
 })();
 
+(function kgEarlyPartialPrefetch() {
+    window.__kgPartialCache = window.__kgPartialCache || {};
+    var version = '20260701-unified-includes';
+    ['/header.html?v=' + version, '/footer.html?v=' + version].forEach(function (path) {
+        if (window.__kgPartialCache[path]) return;
+        window.__kgPartialCache[path] = fetch(path, { credentials: 'same-origin' })
+            .then(function (res) { return res.ok ? res.text() : ''; })
+            .catch(function () { return ''; });
+    });
+})();
+
 // Dynamic HTML includes system
 class HTMLInclude {
     constructor() {
@@ -41,6 +52,20 @@ class HTMLInclude {
             link.href = '/CSS/header.min.css?v=' + headerVersion;
             document.head.appendChild(link);
         }
+
+        this.prefetchPartial('/header.html?v=' + headerVersion, 'kg-preload-header');
+        this.prefetchPartial('/footer.html?v=' + headerVersion, 'kg-preload-footer');
+    }
+
+    prefetchPartial(url, marker) {
+        if (document.querySelector(`link[data-${marker}]`)) return;
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'fetch';
+        link.href = url;
+        link.crossOrigin = 'anonymous';
+        link.setAttribute(`data-${marker}`, '');
+        document.head.appendChild(link);
     }
 
     ensureKgMotionAssets() {
@@ -52,14 +77,6 @@ class HTMLInclude {
             link.rel = 'stylesheet';
             link.href = '/CSS/kg-redesign.css?v=' + motionVersion;
             document.head.appendChild(link);
-        }
-
-        if (!document.getElementById('kg-redesign-js') && !document.querySelector('script[src*="kg-redesign.js"]')) {
-            const script = document.createElement('script');
-            script.id = 'kg-redesign-js';
-            script.src = '/JS/kg-redesign.js?v=' + motionVersion;
-            script.defer = true;
-            document.head.appendChild(script);
         }
     }
 
@@ -163,12 +180,26 @@ class HTMLInclude {
 
     // Fetch a partial, hoist its <link> and <style> tags to document.head,
     // sanitize the remaining content, then inject into targetElement.
+    async _fetchPartialText(path) {
+        if (!this._isSafePartialPath(path)) return '';
+
+        const cache = window.__kgPartialCache;
+        if (cache && cache[path]) {
+            return cache[path];
+        }
+
+        const res = await fetch(path);
+        if (!res.ok) return '';
+        const text = await res.text();
+        if (cache) cache[path] = Promise.resolve(text);
+        return text;
+    }
+
     async _fetchAndInject(targetElement, path, pathPrefix) {
         if (!this._isSafePartialPath(path)) return;
         try {
-            const res = await fetch(path);
-            if (!res.ok) return;
-            const text = await res.text();
+            const text = await this._fetchPartialText(path);
+            if (!text) return;
 
             // Parse safely — DOMParser puts <link>/<style> found before body content into <head>
             const parser = new DOMParser();
@@ -247,37 +278,38 @@ class HTMLInclude {
         const includeVersion = '20260701-unified-includes';
 
         const headerElement = document.getElementById('header-include');
+        const footerElement = document.getElementById('footer-include');
+        const includeTasks = [];
+
         if (headerElement) {
-            await this._fetchAndInject(headerElement, '/header.html?v=' + includeVersion, '');
+            includeTasks.push(this._fetchAndInject(headerElement, '/header.html?v=' + includeVersion, ''));
         }
 
-        const footerElement = document.getElementById('footer-include');
         if (footerElement) {
             this.moveCrawlHubBeforeFooter();
-            await this._fetchAndInject(footerElement, '/footer.html?v=' + includeVersion, '');
+            includeTasks.push(this._fetchAndInject(footerElement, '/footer.html?v=' + includeVersion, ''));
+        }
+
+        if (includeTasks.length) {
+            await Promise.all(includeTasks);
         }
 
         this.moveCrawlHubBeforeFooter();
-
-        // Initialize scripts after includes are loaded
-        setTimeout(() => {
-            this.moveCrawlHubBeforeFooter();
-            this.initializeAfterIncludes();
-            this.setActiveNavItem();
-            if (typeof window.kgInitEnterAnimations === 'function') {
-                window.kgInitEnterAnimations();
-            }
-            if (typeof window.kgInitNavMegaMenus === 'function') {
-                window.kgInitNavMegaMenus();
-            }
-            if (typeof window.kgFitHeaderNav === 'function') {
-                window.requestAnimationFrame(function () {
-                    window.kgFitHeaderNav();
-                    window.requestAnimationFrame(window.kgFitHeaderNav);
-                });
-            }
-            document.dispatchEvent(new CustomEvent('kg-includes-ready'));
-        }, 100);
+        this.initializeAfterIncludes();
+        this.setActiveNavItem();
+        if (typeof window.kgInitEnterAnimations === 'function') {
+            window.kgInitEnterAnimations();
+        }
+        if (typeof window.kgInitNavMegaMenus === 'function') {
+            window.kgInitNavMegaMenus();
+        }
+        if (typeof window.kgFitHeaderNav === 'function') {
+            window.requestAnimationFrame(function () {
+                window.kgFitHeaderNav();
+                window.requestAnimationFrame(window.kgFitHeaderNav);
+            });
+        }
+        document.dispatchEvent(new CustomEvent('kg-includes-ready'));
     }
 
     initializeAfterIncludes() {
