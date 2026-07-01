@@ -416,6 +416,34 @@
       "priority": "0.76"
     },
     {
+      "pageType": "trust-guide",
+      "slug": "plumber-background-handyman",
+      "path": "plumber-background-handyman.html",
+      "canonical": "https://www.knightgroup.com/plumber-background-handyman",
+      "priority": "0.74"
+    },
+    {
+      "pageType": "trust-guide",
+      "slug": "rental-turnover-handyman",
+      "path": "rental-turnover-handyman.html",
+      "canonical": "https://www.knightgroup.com/rental-turnover-handyman",
+      "priority": "0.74"
+    },
+    {
+      "pageType": "trust-guide",
+      "slug": "handyman-scope-florida",
+      "path": "handyman-scope-florida.html",
+      "canonical": "https://www.knightgroup.com/handyman-scope-florida",
+      "priority": "0.74"
+    },
+    {
+      "pageType": "trust-guide",
+      "slug": "hurricane-repair-handyman-pinellas",
+      "path": "hurricane-repair-handyman-pinellas.html",
+      "canonical": "https://www.knightgroup.com/hurricane-repair-handyman-pinellas",
+      "priority": "0.74"
+    },
+    {
       "pageType": "city-service",
       "slug": "clearwater-sink-repair",
       "path": "clearwater-sink-repair.html",

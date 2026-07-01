@@ -49,7 +49,9 @@ from seo_page_data import (  # noqa: E402
     PARENT_LABELS,
     PRICING_PAGES,
     SCOPE_DISCLAIMER,
+    TRUST_PAGES,
 )
+from trust_content import build_trust_prose, trust_faqs, trust_related_links  # noqa: E402
 
 ROOT = SCRIPT_DIR.parent
 SEO = ROOT / "seo"
@@ -89,7 +91,7 @@ def default_faqs(topic: str, city: str = "Pinellas County") -> list[tuple[str, s
             "Request a free written estimate online or call (813) 649-3341. For defined small scopes we can often quote a flat rate; mixed punch lists may be hourly depending on access and materials.",
         ),
         (
-            "Are you licensed and insured?",
+            "Are you registered and insured?",
             "Knight Group Handyman Services LLC is registered and insured in Florida. We perform handyman-scope repairs and refer licensed trades when a permit or specialist is required.",
         ),
         (
@@ -649,6 +651,48 @@ def generate_pricing(defn: dict, manifest: list) -> None:
     manifest.append(manifest_entry("pricing-niche", slug, filename, canonical, "0.76"))
 
 
+def generate_trust(defn: dict, manifest: list) -> None:
+    slug = defn["slug"]
+    filename = f"{slug}.html"
+    output = ROOT / filename
+    rel_path = filename
+    canonical = f"{BASE}/{slug}"
+    description = resolve_description(rel_path, defn["lead"])
+    faqs = trust_faqs(slug) or default_faqs(defn["h1"].lower())
+    service = {
+        "name": defn["h1"],
+        "serviceType": defn["h1"],
+        "description": description,
+        "image": defn.get("hero", "handyman.webp"),
+    }
+    meta = {"title": clip_title(defn["title"]), "description": description, "canonical": canonical}
+    graph = build_graph_for_page(
+        page_key="service-detail",
+        meta=meta,
+        faq_entities=faq_entities(faqs),
+        service=service,
+    )
+    related = trust_related_links(slug)
+    html_text = page_shell(
+        output=output,
+        title=clip_title(defn["title"]),
+        description=description,
+        canonical=canonical,
+        breadcrumb=defn.get("breadcrumb") or [("/", "Home"), ("", defn["h1"])],
+        h1=defn["h1"],
+        lead=defn["lead"],
+        hero_image=defn.get("hero", "handyman.webp"),
+        body_html=build_trust_prose(defn),
+        faq_html=render_faq(faqs, slug),
+        related_html=render_related(related, ""),
+        json_ld=graph,
+        sidebar_label=defn["h1"],
+        eyebrow="Registered · Insured · Pinellas County",
+    )
+    write_page(output, html_text)
+    manifest.append(manifest_entry("trust-guide", slug, filename, canonical, "0.74"))
+
+
 def generate_combo(city_slug: str, service_slug: str, city_name: str, service_label: str, parent: str, niche_slug: str, manifest: list) -> None:
     slug = f"{city_slug}-{service_slug}"
     output = ROOT / f"{slug}.html"
@@ -786,6 +830,8 @@ def build_manifest() -> list[dict]:
             )
     for defn in PRICING_PAGES:
         generate_pricing(defn, manifest)
+    for defn in TRUST_PAGES:
+        generate_trust(defn, manifest)
     for city_slug, service_slug, city_name, service_label, parent, niche_slug in CITY_COMBOS:
         generate_combo(city_slug, service_slug, city_name, service_label, parent, niche_slug, manifest)
     extra_combos = [

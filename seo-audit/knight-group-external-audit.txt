@@ -1,0 +1,298 @@
+SEO Audit — Knight Group Handyman Services
+knightgroup.com  ·  Safety Harbor / Pinellas County, FL  ·  Full site audit
+Prepared July 1, 2026
+Executive summary
+Knight Group&apos;s site has a genuinely strong technical and content foundation for a business of its size: clean URL structure, per-service and per-city landing pages (over 30 location/service combinations), free written estimates and transparent pricing spelled out on-page, and consistent NAP (name, address, phone) across Yelp, Facebook, and Nextdoor. That is more programmatic SEO infrastructure than most local handyman competitors bother building.
+Three things are holding that foundation back. First, live searches for the site&apos;s own core terms — “handyman Safety Harbor FL” and “handyman Clearwater FL” — do not surface knightgroup.com in the top organic results at all; national franchise Mr. Handyman and directory listings (Yelp, Angi, Thumbtack) currently own that real estate. Second, Google&apos;s indexed titles and snippets for the homepage and several service pages still reflect the site&apos;s old identity as an “Auto Services &amp; Remote IT Solutions” business — a rebrand that happened in 2024 but hasn&apos;t fully propagated through Google&apos;s index, which actively hurts click-through on a stale, confusing snippet. Third, there is a real, verifiable text-encoding bug (mojibake) corrupting em dashes and punctuation in meta descriptions and visible FAQ copy across multiple pages — this is not a cosmetic nitpick, it will show as garbled characters directly in Google search snippets and on the live page.
+Overall assessment: needs work, but from a good base. The quick wins below (fixing the encoding bug, requesting re-indexing on stale titles, tightening duplicate meta descriptions) are low-effort and should be done this week. The strategic priority is building topical authority and review volume to actually rank the location pages that already exist — right now Knight Group has the pages but not the visibility.
+Keyword opportunity table
+Search-volume and difficulty figures below are directional estimates based on live SERP composition and competitor density observed during this audit, not pulled from a connected keyword-data platform (Ahrefs/Semrush weren&apos;t connected in this session). Treat difficulty and opportunity scores as relative signals for prioritization, not exact metrics.
+Keyword
+Est. difficulty
+Opportunity
+Current ranking
+Intent
+Recommended content
+handyman Safety Harbor FL
+Medium
+High
+Not in top 10
+Commercial
+Strengthen existing homepage + /safety-harbor-handyman
+handyman Pinellas County
+Medium-High
+High
+Not in top 10
+Commercial
+Consolidate /pinellas-handyman as pillar page
+handyman Clearwater FL
+High (national franchise present)
+Medium
+Not in top 10
+Commercial
+Expand /clearwater-handyman with more proof/reviews
+sink repair Clearwater
+Low
+High
+Unranked, page exists
+Transactional
+Existing plumbing-services page; add dedicated schema
+handyman by the hour
+Low
+Medium
+Page exists (pricing-handyman-by-the-hour)
+Commercial
+Expand with calculator/comparison content
+flat rate handyman Pinellas
+Low
+Medium
+Page exists
+Commercial
+Add case studies with real invoice examples
+caulking repair Pinellas County
+Very low
+Medium
+Page exists, thin backlinks
+Transactional
+Add before/after photos, fix meta description bug
+drywall repair Clearwater
+Low
+High
+Page exists
+Transactional
+Add pricing ranges + FAQ schema
+water damage repair Pinellas County
+Low-Medium
+High
+Page exists
+Transactional/urgent
+Promote in emergency-services internal links
+emergency handyman Pinellas County
+Medium
+High
+Page exists
+Transactional/urgent
+Add response-time guarantees, reviews
+handyman no 2 hour minimum
+Very low
+Medium
+Unranked, concept on pricing page
+Commercial
+Turn into standalone landing page — genuine differentiator
+Dunedin handyman
+Low
+Medium
+Page exists (dunedin-handyman)
+Commercial
+Add local project photos specific to Dunedin
+Palm Harbor handyman
+Low
+Medium
+Page exists
+Commercial
+Same — localize proof content
+Largo toilet repair
+Very low
+Medium
+Page exists
+Transactional
+Good long-tail; add schema + reviews
+Oldsmar door adjustment
+Very low
+Low-Medium
+Page exists
+Transactional
+Niche but nearly zero competition
+Tampa handyman
+Very high (major metro)
+Low
+Page exists
+Commercial
+Deprioritize — outside core differentiation, high competition
+journeyman plumber handyman Florida
+Low
+Medium
+Mentioned in About/Plumbing copy only
+Trust/differentiator
+New content: “why a plumber-background handyman matters”
+rental turnover punch list Pinellas
+Low
+Medium
+Mentioned, no dedicated page
+Commercial (property managers)
+New landing page targeting landlords/PMs
+small job handyman no minimum Safety Harbor
+Very low
+Medium
+Concept exists on pricing page
+Commercial
+Dedicated page — competitors bury this in fine print
+is a handyman allowed to do plumbing in Florida
+Low
+Medium
+Answered in plumbing-services FAQ
+Informational
+Expand into own guide; strong AI-answer-engine candidate
+how much does a handyman cost Pinellas County
+Low
+High
+Answered on pricing page
+Informational/commercial
+Already good — reinforce with schema
+Knight Group Handyman reviews
+Very low (branded)
+High
+Ranking via Yelp/GBP, not owned domain
+Navigational
+Add more Google reviews; embed schema-marked reviews
+licensed vs unlicensed handyman Florida
+Low
+Medium
+Not covered
+Informational/trust
+New content — high AI-citation potential
+hurricane repair handyman Pinellas County
+Medium
+Medium
+Not covered directly
+Seasonal/transactional
+Timely content ahead of hurricane season
+On-page SEO issues
+Page
+Issue
+Severity
+Recommended fix
+Site-wide (meta descriptions)
+Character-encoding corruption (mojibake): em dashes and punctuation render as “—” or “—” in meta descriptions on homepage, /services, /about, /service-areas, and others.
+Critical
+Re-save source content as clean UTF-8 (not double-encoded). Audit CMS export/import pipeline for double-encoding. This will otherwise show as garbled text directly in Google&apos;s search snippets.
+/Services/plumbing-services (FAQ body copy)
+Same encoding bug appears in visible page text, not just metadata — “1—2 business days” instead of “1–2 business days.”
+Critical
+Fix at the content-management level; this is visible to real visitors, not just search engines.
+/pricing (materials markup paragraph)
+Encoding bug renders as a literal “?” character mid-sentence (“warranty responsibility — well below the 20–50% markups”).
+High
+Same root-cause fix as above; proofread all body copy after the fix.
+Homepage + most service pages
+Meta descriptions are templated near-duplicates (“[X] in Pinellas County. Knight Group — registered Safety Harbor handyman team. Free estimate.”) with only the leading phrase varying.
+Medium
+Write unique, page-specific descriptions that lead with the distinct value prop of that page (price point, service specifics, or city) rather than the shared boilerplate.
+/Services/caulking-repair
+Breadcrumb reads “Home / Services / General Repairs” but the page is about caulking repair, not general repairs — a mismatched breadcrumb trail.
+Medium
+Correct breadcrumb label to match the actual page/category.
+/Services/caulking-repair
+Meta description contains a broken, cut-off phrase: “Stop air drafts and moisture incursion with expert colorado-.” — reads as an unfinished template fragment.
+High
+Rewrite the full meta description manually; this looks broken to both users and Google.
+Site-wide
+meta-keywords tag is populated on every page. Google has ignored this tag since 2009; it adds maintenance overhead with zero ranking benefit.
+Low
+Deprioritize or drop from the template — not urgent, just wasted effort.
+/Services/handyman.html (legacy URL)
+Old pre-migration URL is still live and still indexed by Google separately from the current /Services/handyman page.
+Low
+Canonical tag already correctly points to the clean URL — good. Consider a 301 redirect instead of relying solely on canonical, and request removal of the old URL in GSC to fully consolidate signals.
+Content gap recommendations
+Trust and differentiation content
+Topic: “Why a plumber-background handyman matters” (owner Vince Knight&apos;s 15 years as a journeyman plumber). Why it matters: this is Knight Group&apos;s single strongest differentiator versus every other local handyman on the search results page, and it&apos;s currently buried in About/Plumbing copy rather than given its own page. Format: long-form trust/authority article. Priority: high. Effort: moderate (half day).
+Topic: “Licensed vs. unlicensed handyman work in Florida” — what a handyman can legally do vs. when a licensed plumber/electrician is required. Why it matters: high informational search volume, builds E-E-A-T, and is exactly the kind of clear factual Q&amp;A content that AI answer engines (ChatGPT, Perplexity, Google AI Overviews) prefer to cite. Format: guide/FAQ page. Priority: high. Effort: moderate.
+Topic: rental turnover / punch-list repairs for landlords and property managers. Why it matters: Vince Knight&apos;s 10 years in Florida property management is mentioned but there&apos;s no landing page targeting that specific, higher-frequency-buyer audience. Format: dedicated landing page. Priority: medium. Effort: moderate.
+Commercial / conversion content
+Topic: “No 2-hour minimum” as a standalone landing page, not just a pricing-page bullet. Why it matters: this is a concrete, competitor-beating differentiator (the pricing page&apos;s own franchise comparison shows $150 vs. $340+) that deserves to rank on its own rather than live inside the pricing page. Format: landing page. Priority: high. Effort: quick win (1–2 hours).
+Topic: seasonal hurricane-prep and storm-damage handyman content. Why it matters: Pinellas County is hurricane-exposed, search demand spikes seasonally, and Knight Group already does storm-related repair work (boarding, weatherproofing per the emergency-services and pricing pages) but has no dedicated seasonal content to capture that spike. Format: seasonal blog/landing page, refreshed annually. Priority: medium. Effort: moderate.
+Structural gaps
+No blog or regularly-updated content section was found anywhere in the crawled site — all content is static service/location pages. A lightweight blog (project write-ups, seasonal tips, pricing explainers) would give Google and AI crawlers fresh content signals and more long-tail entry points. Priority: medium. Effort: substantial (ongoing).
+Only 7 Google reviews are referenced site-wide. Content and outreach that drives review volume (a formal post-job review-request flow) is a content-adjacent gap: competitor trust signals (directory presence, review count) currently outweigh Knight Group&apos;s on-site proof. Priority: high. Effort: moderate (process change, not content per se).
+Technical SEO checklist
+Check
+Status
+Details
+HTTPS
+Pass
+Site serves over HTTPS with a valid canonical to the www subdomain.
+Canonical tags
+Pass
+Verified correct on multiple pages, including the legacy /Services/handyman.html, which properly canonicalizes to /Services/handyman.
+Meta robots
+Pass
+index, follow, max-snippet:-1, max-image-preview:large is set consistently — no accidental noindex found on any crawled page.
+robots.txt
+Warning
+File exists and disallows /admin/, /.venv/, /node_modules/, /seo/, /scripts/ — but has no “User-agent:” line preceding the Disallow rules, which is non-standard and may be interpreted inconsistently by different crawlers. No Sitemap: directive is included either, which is a missed best practice.
+XML sitemap
+Warning
+sitemap.xml exists and returns an XML content-type, but this audit&apos;s tools couldn&apos;t parse its contents directly. Recommend a manual check in Google Search Console to confirm it lists all location/service pages and is error-free, and add its URL to robots.txt.
+Character encoding
+Fail
+Confirmed mojibake (corrupted em dashes/punctuation) in both meta descriptions and live visible body text on multiple pages — see On-Page Issues above. This is a real, user-visible defect, not a false positive.
+URL structure
+Pass
+Clean, descriptive, hyphenated URLs (e.g. /Services/plumbing-services, /clearwater-handyman). One legacy .html URL remains but is correctly canonicalized.
+Mobile viewport
+Pass
+width=device-width, initial-scale=1.0 is set on every page checked.
+Structured data / schema.org
+Unable to verify
+This audit&apos;s fetch tooling renders pages as text/markdown and cannot inspect embedded JSON-LD directly. Given the extensive on-page FAQ content already written in Q&amp;A format, FAQPage, LocalBusiness, and Service schema are strong candidates if not already implemented — confirm with Google&apos;s Rich Results Test before assuming coverage.
+Internal linking
+Pass
+Strong hub-and-spoke structure: services hub links to 9 categories and 8+ niche pages; service-areas page links to 25+ city pages; most pages cross-link to pricing, booking, and related services.
+Non-existent-path handling (404s)
+Fail
+Requests to /llms.txt and /ai.txt did not return a fast 404 — they hung until timeout on repeated attempts. This suggests slow or non-standard handling of unknown paths, which can waste crawl budget for any bot (including AI crawlers) probing for standard discovery files.
+NAP consistency
+Pass
+Business name, address (7th St S, Safety Harbor, FL 34695), and phone (813) 649-3341 match across the website, Yelp, Facebook, and Nextdoor listings — a real positive local-SEO signal.
+Stale Google index / rebrand carryover
+Fail
+Google&apos;s currently-indexed titles for the homepage and several service pages still read “Handyman &amp; Auto Services in Pinellas | Remote IT Solutions,” reflecting the pre-2024 business identity, not the current handyman-only positioning. This actively misrepresents the business in search results.
+GEO / AI-visibility check (llms.txt, AI crawler access)
+No llms.txt file found at /llms.txt or /ai.txt. Neither is strictly required for AI visibility today, but an llms.txt is a low-cost way to hand ChatGPT, Claude, and Perplexity a clean, structured summary of services, service areas, and pricing rather than relying on them to parse the full site.
+robots.txt does not block any AI crawlers (no rules targeting GPTBot, ClaudeBot, PerplexityBot, Google-Extended, etc. were found), so nothing is actively preventing AI models from crawling and citing the site — but the malformed robots.txt (missing User-agent line, noted above) should be fixed so that intent is unambiguous to every crawler, human-authored or AI.
+The site&apos;s heavy use of plain-text FAQ blocks (nearly every page ends with a Q&amp;A section) is exactly the content shape AI answer engines prefer to lift and cite. This is a genuine existing strength — the recommendation is to formalize it with FAQPage schema (see Technical checklist) and to build the two informational pages recommended in Content Gaps (“licensed vs. unlicensed handyman,” pricing FAQ) specifically because they answer discrete, citable questions.
+The direct, crawlable link to the Google Business Profile (via the maps.google.com/maps?cid= link on the homepage and About page) is a positive GEO signal — both traditional local search and AI systems increasingly lean on GBP-linked data for local recommendations.
+Slow/hanging responses on non-existent paths (see Technical checklist) are worth fixing partly for this reason: AI crawlers commonly probe for /llms.txt as a first step, and a hung response instead of a fast 404 is a worse experience for that crawler than a clean “not found.”
+Competitor comparison summary
+Based on live search results for “handyman Safety Harbor FL” and “handyman Clearwater FL,” plus direct review of each site.
+Dimension
+Knight Group
+Mr. Handyman (national franchise)
+Steve&apos;s Handyman Services (local)
+Suncoast Repairs (local)
+Ranks in top 10 for core local terms
+No (not found in either query)
+Yes — appears for Safety Harbor geo page
+No
+No
+Location/service page depth
+Very high — 30+ city and service-intersection pages
+Moderate — franchise geo pages per territory
+Low — single-page site, no city pages
+Moderate — dedicated city pages (Dunedin, Clearwater, St. Pete, etc.)
+Pricing transparency
+High — exact hourly rates published, franchise comparison shown
+Low — no published rates found
+Low — quote-only
+Low — quote-only
+Review volume (Google)
+Low — 7 reviews, 5.0 rating
+Likely higher (franchise-level, not verified in this audit)
+Not verified in this audit
+Has a “Voted Best Handyman in Dunedin 2024” award badge — notable trust signal
+Site technical sophistication
+High — custom-built, clean URLs, canonicals in place, but has the encoding bug noted above
+Franchise platform, professionally built
+Basic — GoDaddy Website Builder, thin content
+Mid — custom build (Showit), decent city-page network
+Differentiator messaging
+Strong — journeyman-plumber background, no 2-hour minimum, transparent pricing
+Brand trust, General Contractor license, multi-market scale
+“One-stop-shop,” generic transparency claims
+Family-owned, local award, broad service list including security cameras/TV mounting
+Overall SEO winner
+—
+Winner on current rankings and brand authority
+Knight Group wins on content depth and technical build
+Comparable city-page strategy; Knight Group wins on pricing transparency

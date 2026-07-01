@@ -366,6 +366,45 @@ PRICING_PAGES = [
     },
 ]
 
+TRUST_PAGES = [
+    {
+        "slug": "plumber-background-handyman",
+        "title": "Journeyman Plumber Handyman | Pinellas FL",
+        "h1": "Why journeyman plumbing experience matters",
+        "lead": "Owner Vince Knight brings 15 years of journeyman plumbing experience to handyman-scope fixture work — clearer diagnosis and honest scope, not a license claim.",
+        "hero": "plumbing-services.webp",
+        "breadcrumb": [("/", "Home"), ("/about", "About"), ("", "Plumbing experience")],
+        "queries": ["journeyman plumber handyman florida", "experienced handyman plumber pinellas"],
+    },
+    {
+        "slug": "rental-turnover-handyman",
+        "title": "Rental Turnover Handyman | Pinellas County FL",
+        "h1": "Rental turnover and punch-list handyman",
+        "lead": "Move-in and move-out repairs for landlords and property managers across Pinellas County — one registered team, written estimates, tenant-ready finish.",
+        "hero": "general-repairs.webp",
+        "breadcrumb": [("/", "Home"), ("/services", "Services"), ("", "Rental turnover")],
+        "queries": ["rental turnover punch list pinellas", "property manager handyman pinellas"],
+    },
+    {
+        "slug": "handyman-scope-florida",
+        "title": "Handyman Scope in Florida | Pinellas County",
+        "h1": "Handyman scope in Florida",
+        "lead": "Knight Group is registered and insured — not a licensed plumber, electrician, or GC. We handle handyman-scope work honestly and refer licensed trades when required.",
+        "hero": "handyman.webp",
+        "breadcrumb": [("/", "Home"), ("/about", "About"), ("", "Handyman scope")],
+        "queries": ["what can a handyman do in florida", "registered handyman pinellas county"],
+    },
+    {
+        "slug": "hurricane-repair-handyman-pinellas",
+        "title": "Hurricane Prep & Storm Repair | Pinellas FL",
+        "h1": "Hurricane prep and storm repair handyman",
+        "lead": "Registered and insured handyman help before and after Pinellas County storms — caulk, boarding, water-damage follow-up, and punch lists when you need a local team, not a franchise minimum.",
+        "hero": "emergency-services.webp",
+        "breadcrumb": [("/", "Home"), ("/Services/emergency-services", "Emergency"), ("", "Hurricane prep")],
+        "queries": ["hurricane repair handyman pinellas county", "storm damage handyman pinellas"],
+    },
+]
+
 CITY_COMBOS = [
     ("clearwater", "sink-repair", "Clearwater", "sink and faucet repair", "plumbing-services", "sink-faucet-repair"),
     ("clearwater", "drywall-repair", "Clearwater", "drywall repair", "general-repairs", "drywall-repair"),

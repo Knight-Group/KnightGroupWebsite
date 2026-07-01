@@ -56,7 +56,7 @@ def manifest_issues() -> int:
         desc_len = len(desc.group(1)) if desc else 0
         if "og:title" not in content or desc_len < 120:
             issues += 1
-            print(f"manifest issue: {page['path']} og={('og:title' in html)} desc={desc_len}")
+            print(f"manifest issue: {page['path']} og={('og:title' in content)} desc={desc_len}")
     return issues
 
 

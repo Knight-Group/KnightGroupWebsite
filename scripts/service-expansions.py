@@ -67,7 +67,7 @@ EXPANSIONS = {
 <h2>What a handyman can fix in one visit</h2>
 <p>Common calls include leaking faucets, running toilets, drywall holes, sticking doors, ceiling fan swaps, caulking, TV mounting, shelving, baseboard patches, and post-plumber drywall closeout. Vince Knight's plumbing and property-management background helps when a job touches water, occupied units, or punch-list timing.</p>
 
-<h3>Licensed, insured, and local to Safety Harbor</h3>
+<h3>Registered, insured, and local to Safety Harbor</h3>
 <p>Knight Group is registered and insured in Florida. You work directly with the owner — not a rotating anonymous technician. Browse the <a href="/galleries">project gallery</a> for local proof, or read reviews on our <a href="/about#about-reviews">about page</a>.</p>
 """,
     "electrical-work": """
@@ -177,6 +177,8 @@ EXPANSIONS = {
 
 <h3>Same-day and after-hours availability</h3>
 <p>Call <a href="tel:+18136493341">(813) 649-3341</a> and describe what is happening. We will tell you honestly if the job needs a licensed plumber or electrician immediately, or if Knight Group can respond same-day for handyman-scope emergency work in Safety Harbor, Clearwater, and nearby areas.</p>
+
+<p>Before and after storm season, see our <a href="/hurricane-repair-handyman-pinellas">hurricane prep and storm repair guide</a> for caulk, screening, and post-leak drywall follow-up within handyman scope.</p>
 """,
 }
 

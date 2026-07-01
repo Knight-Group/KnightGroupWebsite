@@ -298,7 +298,7 @@ COUNTY_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
         "opening": 'Knight Group covers Pinellas County on daily routes from Safety Harbor — search handyman pinellas county and you get a local insured crew, not a referral marketplace. We handle fixture plumbing, drywall, carpentry, painting touch-ups, and doors within handyman scope.',
         "scheduling": 'Book Pinellas County work with photos online or call (813) 649-3341. We confirm your city fits the current route before locking an arrival window.',
         "scope_note": 'Handyman-scope repairs only across Pinellas County. Licensed trades are referred when permits, repipes, or panel work are required.',
-        "closing": 'Tour city pages below, compare pricing, and view our gallery for Pinellas County proof. Emergency leaks — call first.',
+        "closing": 'Tour city pages below, compare pricing, and view our gallery for Pinellas County proof. Before storm season, read our <a href="/hurricane-repair-handyman-pinellas">hurricane prep guide</a>. Emergency leaks — call first.',
     },
     "hillsborough": {
         "hero_lead": 'Hillsborough County handyman routes from Safety Harbor — fixture work, drywall, doors, and punch-list repairs with written estimates.',

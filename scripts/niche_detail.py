@@ -492,7 +492,7 @@ NICHE_LOCAL: dict[str, str] = {
     "water-damage-repair": """
 <h2>Moisture repair after Florida storms and slow leaks</h2>
 <p>Tropical downpours expose caulk failures around lanais; slow AC pan drips stain closet ceilings in older Clearwater blocks. We rebuild finishes after licensed trades stop water — not before.</p>
-<p>Document damage for insurance with our before photos; we are not adjusters but scopes are written clearly for your claim packet if applicable.</p>
+<p>Document damage for insurance with our before photos; we are not adjusters but scopes are written clearly for your claim packet if applicable. For seasonal prep and storm punch lists, see <a href="/hurricane-repair-handyman-pinellas">hurricane prep and storm repair</a> in Pinellas County.</p>
 """,
     "screen-door-repair": """
 <h2>Screen doors on Gulf Coast entries</h2>

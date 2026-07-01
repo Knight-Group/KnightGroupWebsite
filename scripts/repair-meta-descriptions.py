@@ -13,7 +13,7 @@ if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
 from page_meta import clip_meta  # noqa: E402
-from seo_page_data import NICHE_SERVICES, PRICING_PAGES  # noqa: E402
+from seo_page_data import NICHE_SERVICES, PRICING_PAGES, TRUST_PAGES  # noqa: E402
 
 ROOT = SCRIPT_DIR.parent
 META_PATH = ROOT / "seo" / "meta-descriptions.json"
@@ -102,10 +102,27 @@ MAJOR_SERVICE_META = {
         "No 2-hour minimum handyman in Pinellas County. Pay only for time worked from $75/hr — unlike "
         "franchise $150+ two-hour minimums. Registered and insured. Free estimate."
     ),
+    "plumber-background-handyman.html": (
+        "Journeyman plumbing experience on handyman-scope fixture work in Pinellas County. Registered "
+        "and insured — not a licensed plumbing company. Honest scope. Free estimate."
+    ),
+    "rental-turnover-handyman.html": (
+        "Rental turnover and punch-list handyman for Pinellas County landlords and property managers. "
+        "Drywall, paint, fixtures, doors. Registered and insured. Written estimates."
+    ),
+    "handyman-scope-florida.html": (
+        "What Knight Group handles as a registered, insured handyman in Florida — and when we refer "
+        "licensed plumbers, electricians, or GCs. Clear scope upfront. Free estimate."
+    ),
+    "hurricane-repair-handyman-pinellas.html": (
+        "Hurricane prep and storm repair handyman in Pinellas County — caulk, boarding, drywall "
+        "follow-up after leaks. Registered and insured. Free written estimate."
+    ),
 }
 
 NICHE_BY_PATH = {f"Services/{item['slug']}.html": item for item in NICHE_SERVICES}
 PRICING_BY_PATH = {f"{item['slug']}.html": item for item in PRICING_PAGES}
+TRUST_BY_PATH = {f"{item['slug']}.html": item for item in TRUST_PAGES}
 
 
 def is_low_quality(description: str) -> bool:
@@ -140,6 +157,12 @@ def fallback_for(path: str) -> str | None:
         return clip_meta(
             f"{item['h1'].title()} in Pinellas County. {item['lead'].split('.')[0].strip()}. "
             "Registered and insured. Free written estimate."
+        )
+    if path in TRUST_BY_PATH:
+        item = TRUST_BY_PATH[path]
+        return clip_meta(
+            f"{item['h1'].strip()}. {item['lead'].split('.')[0].strip()}. "
+            "Registered and insured in Pinellas County. Free written estimate."
         )
     return None
 
