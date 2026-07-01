@@ -245,6 +245,17 @@ def county_for_city(city_slug: str) -> tuple[str, str]:
 
 
 def build_pricing_prose(defn: dict) -> str:
+    slug = defn.get("slug", "")
+    if slug == "pricing-no-2-hour-minimum":
+        return prose_block(
+            [
+                defn["lead"],
+                "Many Tampa Bay handyman franchises bill a two-hour minimum even when the repair takes forty-five minutes. Knight Group bills hourly from $75–$150 depending on the work type, with <strong>no 2-hour minimum</strong> — you pay for actual time on site.",
+                "That matters for small jobs: a single faucet swap, door adjustment, shelf install, or caulk refresh should not cost the same as a half-day block. Punch lists and mixed small tasks are a strong fit for this model.",
+                "For defined scopes with known parts and finish, we still offer written flat-rate quotes after photos or a short visit. See <a href=\"/pricing\">full pricing</a> and <a href=\"/pricing-handyman-by-the-hour\">hourly handyman rates</a> for comparison.",
+                "Request a free written estimate online or call (813) 649-3341 to describe your list and confirm fit before we schedule.",
+            ]
+        )
     return prose_block(
         [
             defn["lead"],
@@ -433,7 +444,12 @@ def generate_niche(defn: dict, manifest: list) -> None:
         title=clip_title(defn["title"]),
         description=description,
         canonical=canonical,
-        breadcrumb=[("/", "Home"), ("/services", "Services"), ("", parent_label)],
+        breadcrumb=[
+            ("/", "Home"),
+            ("/services", "Services"),
+            (f"/Services/{defn['parent']}", parent_label),
+            ("", defn["h1"].title() if defn["h1"].islower() else defn["h1"]),
+        ],
         h1=defn["h1"],
         lead=defn["lead"],
         hero_image=defn["hero"],

@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+from html import unescape
 import json
 import re
 import subprocess
@@ -28,11 +29,11 @@ def title_issues() -> list[tuple[str, int, str]]:
     for path in sorted(ROOT.rglob("*.html")):
         if any(part in skip for part in path.parts):
             continue
-        html = path.read_text(encoding="utf-8", errors="ignore")
-        match = re.search(r"<title>([^<]+)</title>", html, re.I)
+        content = path.read_text(encoding="utf-8", errors="ignore")
+        match = re.search(r"<title>([^<]+)</title>", content, re.I)
         if not match:
             continue
-        title = match.group(1).strip()
+        title = unescape(match.group(1).strip())
         if len(title) > 60:
             rows.append((str(path.relative_to(ROOT)), len(title), title))
     return rows
@@ -50,10 +51,10 @@ def manifest_issues() -> int:
             issues += 1
             print(f"missing page: {page['path']}")
             continue
-        html = path.read_text(encoding="utf-8", errors="ignore")
-        desc = re.search(r'<meta name="description" content="([^"]+)"', html)
+        content = path.read_text(encoding="utf-8", errors="ignore")
+        desc = re.search(r'<meta name="description" content="([^"]+)"', content)
         desc_len = len(desc.group(1)) if desc else 0
-        if "og:title" not in html or desc_len < 120:
+        if "og:title" not in content or desc_len < 120:
             issues += 1
             print(f"manifest issue: {page['path']} og={('og:title' in html)} desc={desc_len}")
     return issues
@@ -66,6 +67,7 @@ def main() -> int:
         "audit_image_refs.py",
         "audit-image-alt.py",
         "audit-meta-lengths.py",
+        "scan-encoding.py",
     ]
     print("=== SEO audit suite ===")
     for script in checks:

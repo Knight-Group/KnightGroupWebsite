@@ -409,6 +409,13 @@
       "priority": "0.76"
     },
     {
+      "pageType": "pricing-niche",
+      "slug": "no-2-hour-minimum",
+      "path": "pricing-no-2-hour-minimum.html",
+      "canonical": "https://www.knightgroup.com/pricing-no-2-hour-minimum",
+      "priority": "0.76"
+    },
+    {
       "pageType": "city-service",
       "slug": "clearwater-sink-repair",
       "path": "clearwater-sink-repair.html",

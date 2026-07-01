@@ -1344,6 +1344,22 @@
       "issues": []
     },
     {
+      "page": "pricing-no-2-hour-minimum.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactPoint",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "OfferCatalog",
+        "Organization",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
       "page": "clearwater-sink-repair.html",
       "status": "ok",
       "types": [
@@ -1609,5 +1625,5 @@
     }
   ],
   "failed": 0,
-  "checked": 96
+  "checked": 97
 }

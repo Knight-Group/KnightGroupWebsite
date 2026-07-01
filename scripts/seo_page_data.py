@@ -357,6 +357,13 @@ PRICING_PAGES = [
         "lead": "Fixture-level plumbing pricing for faucets, toilets, disposals, and minor leak corrections within handyman scope.",
         "queries": ["handyman plumbing prices"],
     },
+    {
+        "slug": "pricing-no-2-hour-minimum",
+        "title": "No 2-Hour Minimum Handyman | Pinellas County FL",
+        "h1": "No 2-hour minimum handyman",
+        "lead": "Pay only for actual time worked from $75/hr — no franchise-style two-hour minimums on small jobs and punch lists.",
+        "queries": ["handyman no 2 hour minimum", "handyman no minimum pinellas"],
+    },
 ]
 
 CITY_COMBOS = [

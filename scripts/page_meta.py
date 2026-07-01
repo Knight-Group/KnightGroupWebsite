@@ -20,7 +20,7 @@ def clip_title(title: str, max_len: int = 60) -> str:
     text = " ".join(title.split())
     if len(text) <= max_len:
         return text
-    for needle in (" FL", " Services", " County"):
+    for needle in (" FL", " Services", " County", ", FL"):
         candidate = text.replace(needle, "", 1)
         if len(candidate) <= max_len:
             return candidate

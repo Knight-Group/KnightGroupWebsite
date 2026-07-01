@@ -48,6 +48,21 @@ def clip(text: str) -> str:
     return text[: MAX_LEN - 3].rstrip() + "..."
 
 
+def is_low_quality_description(text: str) -> bool:
+    lowered = text.lower()
+    bad_fragments = (
+        "memphis, tn",
+        "colorado-",
+        "quality home .",
+        "in clear.",
+        "with real.",
+        "from trim to cust.",
+        "amarillo",
+        "washington dc",
+    )
+    return any(fragment in lowered for fragment in bad_fragments)
+
+
 def geo_override(path: str) -> str | None:
     if path.startswith("gallery/") and path.endswith(".html"):
         slug = path.removeprefix("gallery/").removesuffix(".html")
@@ -115,8 +130,10 @@ def main() -> int:
         description, queries, note = best_serp_description(serp_rows, page_path)
         if override:
             description = clip(override)
-        elif not description:
+        elif not description or is_low_quality_description(description):
             description = clip(legacy_fallback(page_path))
+        if description and is_low_quality_description(description):
+            description = ""
         if not description:
             continue
         pages.append(

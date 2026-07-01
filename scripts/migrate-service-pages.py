@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import html
+import json
 import re
 import sys
 from pathlib import Path
@@ -16,6 +17,8 @@ from gallery_pool import (  # noqa: E402
     SERVICE_PARENT_TO_CATEGORY,
     prose_with_inline_gallery,
 )
+from page_meta import clip_title, resolve_description  # noqa: E402
+from schema_graph import build_graph_for_page  # noqa: E402
 from service_expansions import EXPANSIONS, EXTRA_FAQ  # noqa: E402
 from service_sidebar import render_service_sidebar  # noqa: E402
 
@@ -141,6 +144,8 @@ def transform_prose(raw_html: str) -> str:
     raw_html = re.sub(r'<div class="warning-box">', '<div class="kg-service-callout">', raw_html)
     raw_html = re.sub(r"(<h[1-6][^>]*>)\s*\?\?\s*", r"\1", raw_html)
     raw_html = re.sub(r"\?\?\s*Safety First", "Safety First", raw_html)
+    raw_html = re.sub(r"1ï¿½2", "1\u20132", raw_html)
+    raw_html = re.sub(r"ï¿½", "\u2014", raw_html)
     raw_html = re.sub(r"\ufffd+", "", raw_html)
     raw_html = fix_content_links(raw_html, "")
     raw_html = re.sub(r'\s*style="[^"]*"', "", raw_html)
@@ -171,6 +176,17 @@ def extract_related(page_html: str) -> list[tuple[str, str]]:
         slug = href.strip("/").split("/")[-1].replace(".html", "")
         links.append((f"/Services/{slug}", clean_text(label)))
     return links
+
+
+def faq_entities(items: list[tuple[str, str]]) -> list[dict]:
+    return [
+        {
+            "@type": "Question",
+            "name": q,
+            "acceptedAnswer": {"@type": "Answer", "text": a},
+        }
+        for q, a in items
+    ]
 
 
 def extract_json_ld(page_html: str) -> str:
@@ -244,8 +260,10 @@ def render_related(links: list[tuple[str, str]]) -> str:
 
 def render_page(slug: str, page_html: str) -> str:
     label = SERVICE_LABELS.get(slug, slug.replace("-", " ").title())
-    title = extract(r"<title>(.*?)</title>", page_html) or f"{label} | Knight Group"
-    description = extract(r'<meta name="description" content="(.*?)"', page_html)
+    rel_path = f"Services/{slug}.html"
+    raw_title = extract(r"<title>(.*?)</title>", page_html) or f"{label} | Knight Group"
+    title = clip_title(html.unescape(raw_title))
+    raw_description = extract(r'<meta name="description" content="(.*?)"', page_html)
     keywords = extract(r'<meta name="keywords" content="(.*?)"', page_html)
     hero_h1 = extract(r'<section class="service-hero">.*?<h1>(.*?)</h1>', page_html) or label
     hero_lead = extract(r'<section class="service-hero">.*?<p>(.*?)</p>', page_html)
@@ -265,12 +283,29 @@ def render_page(slug: str, page_html: str) -> str:
     )
     faq_items = merge_faq_items(extract_faq_items(page_html), EXTRA_FAQ.get(slug, []))
     related = extract_related(page_html)
-    json_ld = extract_json_ld(page_html)
 
     if not hero_lead:
-        hero_lead = description
+        hero_lead = raw_description or ""
 
+    description = resolve_description(rel_path, html.unescape(hero_lead or raw_description or ""))
     canonical = f"https://www.knightgroup.com/Services/{slug}"
+    meta = {"title": title, "description": description, "canonical": canonical}
+    service = {
+        "name": clean_text(hero_h1),
+        "serviceType": clean_text(hero_h1),
+        "description": description,
+        "image": f"{slug}.jpg",
+    }
+    json_ld = json.dumps(
+        build_graph_for_page(
+            page_key="service-detail",
+            meta=meta,
+            faq_entities=faq_entities(faq_items),
+            service=service,
+        ),
+        indent=4,
+        ensure_ascii=False,
+    )
     cutout_wrap = HERO_CUTOUT_TEMPLATE.format(version=VERSION)
     sidebar_html = render_service_sidebar(slug, label)
 

@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+from html import unescape
 import re
 import sys
 from pathlib import Path
@@ -23,37 +24,52 @@ SKIP_FILES = {
 TITLE_MAX = 60
 DESC_MIN = 120
 DESC_MAX = 159
+BAD_DESC_PATTERNS = [
+    re.compile(r"Memphis,\s*TN", re.I),
+    re.compile(r"colorado-", re.I),
+    re.compile(r"Quality home\s*\.", re.I),
+    re.compile(r"in Clear\.", re.I),
+    re.compile(r"â€", re.I),
+    re.compile(r"ï¿½"),
+    re.compile(r"\ufffd"),
+]
 
 
 def main() -> int:
     title_long: list[tuple[str, int]] = []
     desc_short: list[tuple[str, int]] = []
     desc_long: list[tuple[str, int]] = []
+    desc_bad: list[tuple[str, str]] = []
     missing_desc: list[str] = []
 
     for path in sorted(ROOT.rglob("*.html")):
         if path.name in SKIP_FILES or any(part in SKIP_PARTS for part in path.parts):
             continue
-        html = path.read_text(encoding="utf-8", errors="ignore")
+        content = path.read_text(encoding="utf-8", errors="ignore")
         rel = str(path.relative_to(ROOT))
 
-        title_match = re.search(r"<title>([^<]+)</title>", html, re.I)
+        title_match = re.search(r"<title>([^<]+)</title>", content, re.I)
         if title_match:
-            title = title_match.group(1).strip()
+            title = unescape(title_match.group(1).strip())
             if len(title) > TITLE_MAX:
                 title_long.append((rel, len(title)))
 
-        desc_match = re.search(r'<meta name="description" content="([^"]*)"', html, re.I)
+        desc_match = re.search(r'<meta name="description" content="([^"]*)"', content, re.I)
         if not desc_match:
             missing_desc.append(rel)
             continue
-        desc_len = len(desc_match.group(1))
+        desc = desc_match.group(1)
+        desc_len = len(desc)
         if desc_len < DESC_MIN:
             desc_short.append((rel, desc_len))
         if desc_len > DESC_MAX:
             desc_long.append((rel, desc_len))
+        for pattern in BAD_DESC_PATTERNS:
+            if pattern.search(desc):
+                desc_bad.append((rel, pattern.pattern))
+                break
 
-    issues = len(title_long) + len(desc_short) + len(desc_long) + len(missing_desc)
+    issues = len(title_long) + len(desc_short) + len(desc_long) + len(missing_desc) + len(desc_bad)
     print(f"title > {TITLE_MAX}: {len(title_long)}")
     for rel, n in title_long[:15]:
         print(f"  {n:3d} {rel}")
@@ -66,6 +82,9 @@ def main() -> int:
     print(f"description > {DESC_MAX}: {len(desc_long)}")
     for rel, n in desc_long[:15]:
         print(f"  {n:3d} {rel}")
+    print(f"description quality defects: {len(desc_bad)}")
+    for rel, pat in desc_bad[:15]:
+        print(f"  {rel}  ({pat})")
 
     return 1 if issues else 0
 
