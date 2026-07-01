@@ -7,11 +7,12 @@
     "reviews:sync-google": "node scripts/sync-google-reviews.js",
     "reviews:sync-google:dry-run": "node scripts/sync-google-reviews.js --dry-run",
     "hero:build": "python scripts/build-hero-panels.py",
+    "perf:home": "python scripts/optimize-home-images.py",
     "seo:nav": "python scripts/build-nav.py",
     "seo:pages": "python scripts/build-seo-pages.py",
     "seo:sitemap": "python scripts/build-sitemap.py",
     "seo:encoding": "python scripts/fix-encoding.py",
     "seo:services": "python scripts/migrate-service-pages.py",
-    "seo:all": "python scripts/fix-encoding.py && python scripts/migrate-service-pages.py && python scripts/build-nav.py && python scripts/build-seo-pages.py && python scripts/build-sitemap.py"
+    "seo:all": "python scripts/fix-encoding.py && python scripts/migrate-service-pages.py && python scripts/build-nav.py && python scripts/build-seo-pages.py && python scripts/fix-image-alt.py && python scripts/sync-meta-descriptions.py && python scripts/sync-og-titles.py && python scripts/build-sitemap.py && python scripts/verify-schema-graph.py && python scripts/seo-audit.py"
   }
 }

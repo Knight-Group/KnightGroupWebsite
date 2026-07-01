@@ -19,15 +19,27 @@
 
 # Cache images for 1 year (content-addressed filenames recommended for true immutability)
 /Images/*
-  Cache-Control: public, max-age=31536000, must-revalidate
+  Cache-Control: public, max-age=31536000, immutable
 
-# Cache JS and CSS for 1 year
-/JS/*
-  Cache-Control: public, max-age=31536000, must-revalidate
+/GalleryImages/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/hero images/*
+  Cache-Control: public, max-age=31536000, immutable
 
 /CSS/*
-  Cache-Control: public, max-age=31536000, must-revalidate
+  Cache-Control: public, max-age=31536000, immutable
+
+/JS/*
+  Cache-Control: public, max-age=31536000, immutable
 
 # HTML pages — short cache with revalidation so updates propagate quickly
 /*.html
   Cache-Control: public, max-age=300, must-revalidate
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=86400
+
+/robots.txt
+  Content-Type: text/plain; charset=utf-8

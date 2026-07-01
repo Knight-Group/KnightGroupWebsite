@@ -6,6 +6,7 @@ from __future__ import annotations
 import re
 import sys
 from pathlib import Path
+from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC_RE = re.compile(r'src="([^"]+)"', re.I)
@@ -16,7 +17,7 @@ def normalize_src(src: str) -> str | None:
     raw = src.split("?")[0].strip()
     if not raw or raw.startswith(SKIP_PREFIXES):
         return None
-    rel = raw.lstrip("/")
+    rel = unquote(raw.lstrip("/"))
     while rel.startswith("../"):
         rel = rel[3:]
     if rel.lower().startswith("galleryimages/"):

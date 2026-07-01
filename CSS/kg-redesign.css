@@ -3171,6 +3171,49 @@ body:has(main.kg-home) {
   filter: saturate(0.78) contrast(1.04) brightness(0.78);
 }
 
+.kg-map-panel .kg-map-frame:not([src]) {
+  visibility: hidden;
+}
+
+.kg-map-panel.is-map-loaded .kg-map-frame {
+  visibility: visible;
+}
+
+.kg-map-load-btn {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 24px;
+  border: 0;
+  background:
+    linear-gradient(180deg, rgba(18, 15, 16, 0.42), rgba(18, 15, 16, 0.72)),
+    url('/Images/hero-panels/fixed-720w.webp') center / cover no-repeat;
+  color: #fff;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.kg-map-load-btn:hover,
+.kg-map-load-btn:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.85);
+  outline-offset: -4px;
+}
+
+.kg-map-panel.is-map-loaded .kg-map-load-btn,
+.kg-map-load-btn[hidden] {
+  display: none;
+}
+
 .kg-map-overlay {
   position: absolute;
   left: 18px;
@@ -4860,6 +4903,20 @@ a.header-btn-primary.kg-header-call.kg-header-call--light .kg-header-call__numbe
   color: var(--kg-ink-strong);
 }
 
+.kg-contact-stack .kg-contact-method a.header-btn-primary.kg-header-call.kg-header-call--light .kg-header-call__label {
+  color: rgba(255, 235, 235, 0.88);
+}
+
+.kg-contact-stack .kg-contact-method a.header-btn-primary.kg-header-call.kg-header-call--light .kg-header-call__number {
+  color: #fff;
+}
+
+.kg-contact-stack .kg-contact-method a.header-btn-primary.kg-header-call.kg-header-call--light:hover .kg-header-call__number,
+.kg-contact-stack .kg-contact-method a.header-btn-primary.kg-header-call.kg-header-call--light:focus-visible .kg-header-call__number {
+  color: var(--kg-red);
+  text-decoration: none;
+}
+
 .kg-about-team__actions .header-btn-primary.kg-header-call,
 .kg-contact-closing__actions .header-btn-primary.kg-header-call,
 .kg-booking-actions .header-btn-primary.kg-header-call,
@@ -4925,6 +4982,12 @@ footer.kg-site-footer .footer-contact__phone .header-btn-primary.kg-header-call 
     radial-gradient(circle at top left, rgba(154, 47, 47, 0.1), transparent 34%),
     radial-gradient(circle at 92% 12%, rgba(72, 61, 59, 0.08), transparent 30%),
     linear-gradient(180deg, #faf7f6 0%, #f3eeee 52%, #f8faf9 100%);
+}
+
+body.kg-page:has(.kg-service-stack),
+body.kg-page:has(.kg-services-hub-stack),
+body.kg-page:has(.kg-gallery-stack) {
+  background: #120f10;
 }
 
 /* Match header.min.css heights so no dead band appears under the bar */
@@ -5516,9 +5579,26 @@ html.kg-js .kg-page-hero__cutout-wrap.is-visible .kg-page-hero-cutout {
 
 /* Service hub + detail pages */
 .kg-service-stack,
-.kg-services-hub-stack {
+.kg-services-hub-stack,
+.kg-gallery-stack {
   background: var(--kg-band-dark);
+  background-color: #120f10;
   border-top: 1px solid rgba(240, 196, 196, 0.12);
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.kg-service-stack > .kg-shell.kg-service-layout {
+  padding-top: clamp(56px, 7vw, 84px);
+  padding-bottom: clamp(56px, 7vw, 84px);
+}
+
+.kg-service-main {
+  min-width: 0;
+}
+
+.kg-service-main > .kg-section {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .kg-service-stack > .kg-section,
@@ -5840,6 +5920,17 @@ html.kg-js .kg-page-hero__cutout-wrap.is-visible .kg-page-hero-cutout {
   transform: scale(1.08);
 }
 
+.kg-service-related-card--text {
+  justify-content: center;
+  min-height: 88px;
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+}
+
+.kg-service-related-card--text::after {
+  display: none;
+}
+
 .kg-services-hub-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -5987,6 +6078,25 @@ html.kg-js .kg-page-hero__cutout-wrap.is-visible .kg-page-hero-cutout {
   border: 1px solid rgba(240, 196, 196, 0.14);
   background: rgba(24, 18, 19, 0.55);
   margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.kg-service-callout h3,
+.kg-service-step strong {
+  color: #fff;
+}
+
+.kg-service-callout p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.kg-service-stack .kg-heading-block h2,
+.kg-service-stack .kg-heading-block p {
+  color: #fff;
+}
+
+.kg-service-stack .kg-heading-block p {
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .kg-service-steps {
@@ -6754,4 +6864,81 @@ html.kg-js .kg-service-stack .kg-service-cta__actions[data-kg-enter] {
   .kg-service-gallery-wrap .kg-service-gallery-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Policy / legal pages */
+body.kg-page.kg-policy-page {
+  background: #120f10;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.kg-policy-stack {
+  background: var(--kg-band-dark);
+  background-color: #120f10;
+  border-top: 1px solid rgba(240, 196, 196, 0.12);
+}
+
+.kg-policy-page .page-hero {
+  background:
+    linear-gradient(108deg, rgba(12, 12, 14, 0.92) 0%, rgba(38, 30, 31, 0.86) 48%, rgba(154, 47, 47, 0.42) 100%),
+    url("../Images/Knight-Hammer.webp") center 30% / cover no-repeat;
+}
+
+.kg-policy-page .policy-content,
+.kg-policy-page .terms-content,
+.kg-policy-page .return-content {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  margin: -40px auto 0;
+  max-width: 900px;
+  padding: clamp(32px, 5vw, 60px);
+  border-radius: 18px;
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.28);
+  position: relative;
+  z-index: 2;
+}
+
+.kg-policy-page .policy-content h2,
+.kg-policy-page .terms-content h2,
+.kg-policy-page .return-content h2,
+.kg-policy-page .policy-content h3,
+.kg-policy-page .terms-content h3,
+.kg-policy-page .return-content h3 {
+  color: #f0c8c8;
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.kg-policy-page .policy-content p,
+.kg-policy-page .terms-content p,
+.kg-policy-page .return-content p,
+.kg-policy-page .policy-content li,
+.kg-policy-page .terms-content li,
+.kg-policy-page .return-content li {
+  color: rgba(255, 255, 255, 0.76);
+  line-height: 1.75;
+}
+
+.kg-policy-page .policy-content a,
+.kg-policy-page .terms-content a,
+.kg-policy-page .return-content a {
+  color: #f0c8c8;
+  font-weight: 700;
+}
+
+.kg-policy-page .policy-content a:hover,
+.kg-policy-page .terms-content a:hover,
+.kg-policy-page .return-content a:hover,
+.kg-policy-page .policy-content a:focus-visible,
+.kg-policy-page .terms-content a:focus-visible,
+.kg-policy-page .return-content a:focus-visible {
+  color: #fff;
+}
+
+.kg-policy-page .effective-date {
+  background: rgba(255, 255, 255, 0.06);
+  border-left: 4px solid var(--kg-red);
+  color: rgba(255, 255, 255, 0.82);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
 }

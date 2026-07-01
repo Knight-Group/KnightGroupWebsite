@@ -12,6 +12,7 @@ if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
 from geo_seo_copy import city_copy, combo_copy, county_copy  # noqa: E402
+from gallery_detail_copy import gallery_meta  # noqa: E402
 from serp_query_map import build_full_page_query_map  # noqa: E402
 
 ROOT = SCRIPT_DIR.parent
@@ -48,6 +49,9 @@ def clip(text: str) -> str:
 
 
 def geo_override(path: str) -> str | None:
+    if path.startswith("gallery/") and path.endswith(".html"):
+        slug = path.removeprefix("gallery/").removesuffix(".html")
+        return gallery_meta(slug, "")
     if path.endswith("-handyman.html"):
         slug = path.removesuffix("-handyman.html")
         if slug in {"pinellas", "hillsborough", "pasco"}:

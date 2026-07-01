@@ -6,6 +6,7 @@ from __future__ import annotations
 import re
 import sys
 from pathlib import Path
+from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 GALLERY_DIR = ROOT / "GalleryImages"
@@ -20,7 +21,7 @@ def main() -> int:
         text = html.read_text(encoding="utf-8", errors="ignore")
         for match in IMG_RE.finditer(text):
             src = match.group(1).split("?")[0]
-            rel = src.replace("../", "").lstrip("/")
+            rel = unquote(src.replace("../", "").lstrip("/"))
             if rel.lower().startswith("galleryimages/"):
                 rel = "GalleryImages/" + rel.split("/", 1)[1]
             if not (ROOT / rel).is_file():

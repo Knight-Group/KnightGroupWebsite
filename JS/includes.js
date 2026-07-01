@@ -32,7 +32,7 @@ class HTMLInclude {
     }
 
     ensureHeaderStyles() {
-        const headerVersion = '20260626-root-asset-paths';
+        const headerVersion = '20260701-unified-includes';
 
         if (!document.getElementById('kg-header-css') && !document.querySelector('link[href*="header.min.css"]')) {
             const link = document.createElement('link');
@@ -44,7 +44,7 @@ class HTMLInclude {
     }
 
     ensureKgMotionAssets() {
-        const motionVersion = '20260626-carousel-image-fix';
+        const motionVersion = '20260701-unified-includes';
 
         if (!document.getElementById('kg-redesign-css') && !document.querySelector('link[href*="kg-redesign.css"]')) {
             const link = document.createElement('link');
@@ -64,7 +64,7 @@ class HTMLInclude {
     }
 
     ensureKgNavMegaScript() {
-        const navVersion = '20260626-root-asset-paths';
+        const navVersion = '20260701-unified-includes';
 
         if (!document.getElementById('kg-nav-mega-js') && !document.querySelector('script[src*="kg-nav-mega.js"]')) {
             const script = document.createElement('script');
@@ -213,9 +213,7 @@ class HTMLInclude {
             // Clear the freeze — real content now defines the height
             if (prevHeight > 0) targetElement.style.minHeight = '';
 
-            if (pathPrefix) {
-                this.fixRelativePaths(targetElement, pathPrefix);
-            }
+            this.fixRelativePaths(targetElement);
         } catch (error) {
             console.error('Error loading partial:', path, error);
         }
@@ -246,27 +244,17 @@ class HTMLInclude {
         if (window._knightGroupIncludesLoaded) return;
         window._knightGroupIncludesLoaded = true;
 
-        const includeVersion = '20260626-root-asset-paths';
-
-        // Determine if we're in a subdirectory
-        const pathPrefix = window.location.pathname.includes('/Services/') || 
-                          window.location.pathname.includes('/PolicyPages/') ? '../' : '';
+        const includeVersion = '20260701-unified-includes';
 
         const headerElement = document.getElementById('header-include');
-        // Inject if empty OR only contains the skeleton placeholder (not a real static build)
-        const headerHasRealContent = headerElement && headerElement.hasChildNodes() &&
-            !headerElement.querySelector('#header-skeleton');
-        if (headerElement && !headerHasRealContent) {
-            await this._fetchAndInject(headerElement, pathPrefix + 'header.html?v=' + includeVersion, pathPrefix);
+        if (headerElement) {
+            await this._fetchAndInject(headerElement, '/header.html?v=' + includeVersion, '');
         }
 
         const footerElement = document.getElementById('footer-include');
         if (footerElement) {
             this.moveCrawlHubBeforeFooter();
-            // Skip fetch+inject if footer is already inlined in the HTML (static build)
-            if (!footerElement.hasChildNodes()) {
-                await this._fetchAndInject(footerElement, pathPrefix + 'footer.html?v=' + includeVersion, pathPrefix);
-            }
+            await this._fetchAndInject(footerElement, '/footer.html?v=' + includeVersion, '');
         }
 
         this.moveCrawlHubBeforeFooter();
@@ -439,6 +427,17 @@ class HTMLInclude {
         toActivate.forEach(link => link.classList.add('nav-active'));
     }
 
+    toRootSitePath(path) {
+        if (!path || /^(?:https?:)?\/\//i.test(path) || /^(?:mailto:|tel:|#)/i.test(path)) {
+            return path;
+        }
+        if (path.startsWith('/')) {
+            return path;
+        }
+        const normalized = path.replace(/^(\.\.\/)+/, '');
+        return '/' + normalized;
+    }
+
     toRootAssetPath(path) {
         if (!path || /^(?:https?:)?\/\//i.test(path) || path.startsWith('data:')) {
             return path;
@@ -454,12 +453,7 @@ class HTMLInclude {
         return path;
     }
 
-    fixRelativePaths(element, pathPrefix) {
-        const currentPath = window.location.pathname;
-        const isInServices = currentPath.includes('/Services/');
-        const isInPolicyPages = currentPath.includes('/PolicyPages/');
-        
-        // Fix all image src attributes
+    fixRelativePaths(element) {
         const images = element.querySelectorAll('img');
         images.forEach(img => {
             const src = img.getAttribute('src');
@@ -467,13 +461,10 @@ class HTMLInclude {
                 const rootAsset = this.toRootAssetPath(src);
                 if (rootAsset !== src) {
                     img.setAttribute('src', rootAsset);
-                } else if (!src.startsWith('http') && !src.startsWith('../') && !src.startsWith('/') && !src.startsWith('data:')) {
-                    img.setAttribute('src', pathPrefix + src);
                 }
             }
         });
 
-        // Fix <source srcset> attributes (picture elements) — same logic as img src
         const sources = element.querySelectorAll('source');
         sources.forEach(source => {
             const srcset = source.getAttribute('srcset');
@@ -487,74 +478,17 @@ class HTMLInclude {
                 const rootSrcset = pieces.join(', ');
                 if (rootSrcset !== srcset) {
                     source.setAttribute('srcset', rootSrcset);
-                } else if (!srcset.startsWith('http') && !srcset.startsWith('../') && !srcset.startsWith('/')) {
-                    source.setAttribute('srcset', pathPrefix + srcset);
                 }
             }
         });
 
-        // Fix relative links with special handling for different navigation scenarios
         const links = element.querySelectorAll('a');
         links.forEach(link => {
             const href = link.getAttribute('href');
-            if (href) {
-                // Handle absolute paths that need to be made relative for subdirectories  
-                if (href.startsWith('/') && (isInServices || isInPolicyPages) && 
-                    !href.startsWith('//') && // Don't modify protocol-relative URLs
-                    !href.includes('http')) { // Don't modify full URLs
-                    link.setAttribute('href', '..' + href);
-                }
-                // Handle Services/ links when we're in Services directory
-                else if (isInServices && href.startsWith('Services/')) {
-                    // Remove Services/ prefix since we're already in Services directory
-                    const newHref = href.substring(9); // Remove 'Services/' 
-                    link.setAttribute('href', newHref);
-                }
-                // Handle Services/ links from other subdirectories
-                else if ((isInServices || isInPolicyPages) && href.startsWith('Services/')) {
-                    // We're in a subdirectory but link goes to Services - need ../ prefix
-                    link.setAttribute('href', '../' + href);
-                }
-                // Handle standard relative paths
-                else if (!href.startsWith('http') && !href.startsWith('mailto:') && !href.startsWith('tel:') && 
-                        !href.startsWith('../') && !href.startsWith('/') && !href.startsWith('#')) {
-                    // Standard path fixing - add prefix for relative paths
-                    link.setAttribute('href', pathPrefix + href);
-                }
-            }
-        });
-
-        // Fix background-image URLs in style attributes  
-        const elementsWithStyle = element.querySelectorAll('[style*="background-image"]');
-        elementsWithStyle.forEach(el => {
-            const style = el.getAttribute('style');
-            if (style) {
-                let updatedStyle = style;
-                
-                // Handle absolute paths in background images
-                if ((isInServices || isInPolicyPages)) {
-                    updatedStyle = updatedStyle.replace(/url\(['"]?\/(?!\/)/g, `url('../`);
-                }
-                
-                // Handle relative paths in background images
-                updatedStyle = updatedStyle.replace(/url\(['"]?(?!http|\/|\.\.)([^'"]+)['"]?\)/g, `url('${pathPrefix}$1')`);
-                
-                if (updatedStyle !== style) {
-                    el.setAttribute('style', updatedStyle);
-                }
-            }
-        });
-
-        // Fix onclick attributes that contain window.location.href with paths
-        const elementsWithOnclick = element.querySelectorAll('[onclick*="window.location.href"]');
-        elementsWithOnclick.forEach(el => {
-            const onclick = el.getAttribute('onclick');
-            if (onclick && (isInServices || isInPolicyPages)) {
-                // Fix absolute paths in onclick handlers
-                const updatedOnclick = onclick.replace(/window\.location\.href\s*=\s*['"`]\/(?!\/)/g, `window.location.href='../`);
-                if (updatedOnclick !== onclick) {
-                    el.setAttribute('onclick', updatedOnclick);
-                }
+            if (!href) return;
+            const rootHref = this.toRootSitePath(href);
+            if (rootHref !== href) {
+                link.setAttribute('href', rootHref);
             }
         });
     }

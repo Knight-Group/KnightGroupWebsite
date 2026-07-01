@@ -39,14 +39,6 @@ MAJOR_SERVICES = [
     "emergency-services",
 ]
 
-POLICY_PAGES = [
-    ("PolicyPages/privacy-policy", "0.35", "yearly"),
-    ("PolicyPages/terms", "0.35", "yearly"),
-    ("PolicyPages/payment-policy", "0.35", "yearly"),
-    ("PolicyPages/returnpolicy", "0.35", "yearly"),
-]
-
-
 def add_url(urlset: ET.Element, loc: str, priority: str, changefreq: str) -> None:
     url = ET.SubElement(urlset, "url")
     ET.SubElement(url, "loc").text = loc
@@ -69,12 +61,6 @@ def main() -> int:
         loc = f"{BASE}/Services/{slug}"
         if loc not in seen:
             add_url(urlset, loc, "0.86", "monthly")
-            seen.add(loc)
-
-    for path, priority, changefreq in POLICY_PAGES:
-        loc = f"{BASE}/{path}"
-        if loc not in seen:
-            add_url(urlset, loc, priority, changefreq)
             seen.add(loc)
 
     if MANIFEST.exists():

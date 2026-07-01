@@ -1,5 +1,9 @@
+User-agent: *
+Allow: /
 Disallow: /admin/
 Disallow: /.venv/
 Disallow: /node_modules/
 Disallow: /seo/
 Disallow: /scripts/
+
+Sitemap: https://www.knightgroup.com/sitemap.xml

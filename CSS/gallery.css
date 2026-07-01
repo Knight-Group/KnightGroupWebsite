@@ -457,6 +457,46 @@
     margin-top: 0;
 }
 
+.gallery-detail-links {
+    padding: 24px 0 48px;
+    background: #faf7f7;
+    border-top: 1px solid rgba(154, 47, 47, 0.08);
+}
+
+.gallery-detail-links h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.35rem, 2.8vw, 1.85rem);
+    color: #9a2f2f;
+    margin-bottom: 12px;
+}
+
+.gallery-detail-links p {
+    color: #5d5559;
+    line-height: 1.7;
+    max-width: 72ch;
+    margin-bottom: 20px;
+}
+
+.gallery-detail-links__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 10px 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-detail-links__list a {
+    color: #9a2f2f;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.gallery-detail-links__list a:hover,
+.gallery-detail-links__list a:focus-visible {
+    text-decoration: underline;
+}
+
 .gallery-seo-faq {
     padding: 24px 0 64px;
     background: #fff;
@@ -523,4 +563,202 @@
     .gallery-seo-intro__list {
         grid-template-columns: 1fr;
     }
+}
+
+/* Gallery hub — Knight Group dark band theme */
+body.kg-gallery-page {
+    color: rgba(255, 255, 255, 0.86);
+    background: #120f10;
+}
+
+body.kg-gallery-page .kg-crawl-hub__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 0.8125rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: rgba(154, 47, 47, 0.28);
+    color: #f5d6d6;
+}
+
+body.kg-gallery-page .page-hero {
+    background:
+        linear-gradient(108deg, rgba(12, 12, 14, 0.92) 0%, rgba(38, 30, 31, 0.86) 48%, rgba(154, 47, 47, 0.42) 100%),
+        url("../Images/Knight-Hammer.webp") center 30% / cover no-repeat;
+}
+
+body.kg-gallery-page .kg-crawl-hub {
+    background: transparent;
+    border-bottom: 0;
+}
+
+body.kg-gallery-page .kg-crawl-hub__intro .kg-crawl-hub__heading,
+body.kg-gallery-page .kg-crawl-hub__intro h2 {
+    color: #fff;
+}
+
+body.kg-gallery-page .kg-crawl-hub__intro p {
+    color: rgba(255, 255, 255, 0.76);
+}
+
+body.kg-gallery-page .kg-crawl-hub__group {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: none;
+}
+
+body.kg-gallery-page .kg-crawl-hub__group .kg-crawl-hub__subheading,
+body.kg-gallery-page .kg-crawl-hub__group h3 {
+    color: #f5d6d6;
+}
+
+body.kg-gallery-page .kg-crawl-hub__group p {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+body.kg-gallery-page .kg-crawl-hub__links a {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+body.kg-gallery-page .kg-crawl-hub__links a:hover,
+body.kg-gallery-page .kg-crawl-hub__links a:focus-visible {
+    color: #f0c8c8;
+}
+
+body.kg-gallery-page .gallery-main,
+body.kg-gallery-page .gallery-seo-intro,
+body.kg-gallery-page .gallery-detail-links,
+body.kg-gallery-page .gallery-seo-faq,
+body.kg-gallery-page .gallery-cta {
+    background: transparent;
+    border-top-color: rgba(240, 196, 196, 0.12);
+}
+
+body.kg-gallery-page .gallery-toolbar h2,
+body.kg-gallery-page .gallery-seo-intro h2,
+body.kg-gallery-page .gallery-detail-links h2,
+body.kg-gallery-page .gallery-seo-faq h2,
+body.kg-gallery-page .gallery-cta h2 {
+    color: #fff;
+}
+
+body.kg-gallery-page .gallery-toolbar__lead,
+body.kg-gallery-page .gallery-seo-intro p,
+body.kg-gallery-page .gallery-detail-links p,
+body.kg-gallery-page .gallery-seo-intro__list,
+body.kg-gallery-page .gallery-seo-faq__item p,
+body.kg-gallery-page .gallery-cta p {
+    color: rgba(255, 255, 255, 0.76);
+}
+
+body.kg-gallery-page .gallery-toolbar__lead strong {
+    color: rgba(255, 255, 255, 0.92);
+}
+
+body.kg-gallery-page .gallery-filter {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.18);
+    color: rgba(255, 255, 255, 0.88);
+}
+
+body.kg-gallery-page .gallery-filter:hover,
+body.kg-gallery-page .gallery-filter:focus-visible {
+    border-color: #d06a6a;
+    color: #f0c8c8;
+}
+
+body.kg-gallery-page .gallery-filter.is-active {
+    background: #9a2f2f;
+    border-color: #9a2f2f;
+    color: #fff;
+}
+
+body.kg-gallery-page .gallery-project {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+body.kg-gallery-page .gallery-project__head {
+    background: rgba(255, 255, 255, 0.04);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+body.kg-gallery-page .gallery-project__eyebrow {
+    background: rgba(154, 47, 47, 0.28);
+    color: #f5d6d6;
+}
+
+body.kg-gallery-page .gallery-project__title {
+    color: #fff;
+}
+
+body.kg-gallery-page .gallery-project__text,
+body.kg-gallery-page .gallery-shot__text {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+body.kg-gallery-page .gallery-shot__title {
+    color: #f0c8c8;
+}
+
+body.kg-gallery-page .gallery-shot {
+    background: rgba(8, 6, 7, 0.45);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+body.kg-gallery-page .gallery-shot__media {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+body.kg-gallery-page .gallery-projects__error,
+body.kg-gallery-page .gallery-projects__empty {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.76);
+}
+
+body.kg-gallery-page .gallery-seo-intro a,
+body.kg-gallery-page .gallery-detail-links__list a,
+body.kg-gallery-page .gallery-seo-faq__item a,
+body.kg-gallery-page .gallery-cta a:not(.btn-primary):not(.btn-secondary) {
+    color: #f0c8c8;
+}
+
+body.kg-gallery-page .gallery-seo-intro a:hover,
+body.kg-gallery-page .gallery-detail-links__list a:hover,
+body.kg-gallery-page .gallery-seo-faq__item a:hover,
+body.kg-gallery-page .gallery-cta a:not(.btn-primary):not(.btn-secondary):hover {
+    color: #fff;
+}
+
+body.kg-gallery-page .gallery-seo-faq__item {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+body.kg-gallery-page .gallery-seo-faq__item summary {
+    color: #fff;
+}
+
+body.kg-gallery-page .gallery-seo-faq__item[open] summary {
+    color: #f0c8c8;
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+body.kg-gallery-page .btn-secondary {
+    background: transparent;
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.42);
+}
+
+body.kg-gallery-page .btn-secondary:hover,
+body.kg-gallery-page .btn-secondary:focus-visible {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.6);
 }

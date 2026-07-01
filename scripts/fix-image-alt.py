@@ -38,6 +38,9 @@ INDEX_CARD_ALTS = {
 }
 
 
+HERO_CUTOUT_ALT = "Vince Knight, owner of Knight Group Handyman Services"
+
+
 def set_alt(tag: str, alt: str) -> str:
     if re.search(r'\balt\s*=\s*["\']', tag, re.I):
         return re.sub(r'\balt\s*=\s*["\'][^"\']*["\']', f'alt="{alt}"', tag, count=1, flags=re.I)
@@ -69,6 +72,8 @@ def fix_html(html: str) -> tuple[str, int]:
 
         if "KnightGroupLogo" in src:
             new_tag = set_alt(tag, LOGO_ALT)
+        elif "knight-hero-cutout" in src or "kg-page-hero-cutout" in tag:
+            new_tag = set_alt(tag, HERO_CUTOUT_ALT)
         elif "gallery-lightbox-img" in tag:
             new_tag = set_alt(tag, LIGHTBOX_ALT)
         elif "handyman.jpg" in src:
@@ -80,6 +85,13 @@ def fix_html(html: str) -> tuple[str, int]:
             new_tag = set_alt(tag, alt)
         elif "/Images/services/" in src or "Images/services/" in src:
             alt = service_alt_from_src(src) or "Knight Group handyman service photo"
+            label_match = re.search(
+                r'kg-service-related-card__label[^>]*>([^<]+)<',
+                html[match.end() : match.end() + 400],
+                re.I,
+            )
+            if label_match and label_match.group(1).strip():
+                alt = label_match.group(1).strip()
             new_tag = set_alt(tag, alt)
         else:
             alt_match = re.search(r'\balt\s*=\s*["\']([^"\']*)["\']', tag, re.I)

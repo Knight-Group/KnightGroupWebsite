@@ -13,6 +13,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
+from gallery_detail_copy import gallery_body_extra, gallery_meta  # noqa: E402
 from gallery_pool import (  # noqa: E402
     SERVICE_PARENT_TO_CATEGORY,
     prose_with_inline_gallery,
@@ -30,6 +31,7 @@ from geo_expansions import (  # noqa: E402
 from geo_seo_copy import city_copy, combo_copy, county_copy  # noqa: E402
 from service_sidebar import render_service_sidebar  # noqa: E402
 from schema_graph import build_graph_for_page, service_by_slug  # noqa: E402
+from page_meta import clip_title, resolve_description, social_tags  # noqa: E402
 from niche_detail import NICHE_BOOKING, NICHE_DETAIL, NICHE_LOCAL  # noqa: E402
 from niche_expansions import NICHE_BODY, NICHE_FAQ, NICHE_RELATED  # noqa: E402
 from service_related import (  # noqa: E402
@@ -51,7 +53,7 @@ from seo_page_data import (  # noqa: E402
 
 ROOT = SCRIPT_DIR.parent
 SEO = ROOT / "seo"
-VERSION = "20260622-serper-schema-full"
+VERSION = "20260701-seo-audit-fix"
 BASE = "https://www.knightgroup.com"
 
 GALLERY_PICKS = [
@@ -112,7 +114,6 @@ def render_faq(items: list[tuple[str, str]], slug: str, county_name: str = "Pine
         )
     return f"""
             <section class="kg-section kg-service-faq" id="{slug}-faq" aria-labelledby="{slug}-faq-heading">
-                <div class="kg-shell">
                     <div class="kg-heading-block">
                         <span class="kg-section-tag">FAQ</span>
                         <h2 id="{slug}-faq-heading">Frequently asked questions</h2>
@@ -121,39 +122,41 @@ def render_faq(items: list[tuple[str, str]], slug: str, county_name: str = "Pine
                     <div class="kg-faq-list">
 {chr(10).join(rows)}
                     </div>
-                </div>
             </section>"""
 
 
 def render_related(links: list[tuple[str, str]], prefix: str) -> str:
     cards = []
+    text_links = []
     for href, label in links:
-        if not href.startswith("/Services/"):
-            continue
-        image = resolve_card_image(href)
-        if image.startswith("cities/"):
-            img_src = f"/Images/{image}"
-        else:
-            img_src = f"/Images/services/{image}"
-        cards.append(
-            f"""                        <a class="kg-service-related-card" href="{href}">
-                            <img src="{img_src}?v={VERSION}" alt="" width="400" height="300" loading="lazy" decoding="async">
+        if href.startswith("/Services/"):
+            image = resolve_card_image(href)
+            if image.startswith("cities/"):
+                img_src = f"/Images/{image}"
+            else:
+                img_src = f"/Images/services/{image}"
+            cards.append(
+                f"""                        <a class="kg-service-related-card" href="{href}">
+                            <img src="{img_src}?v={VERSION}" alt="{esc(label)}" width="400" height="300" loading="lazy" decoding="async">
                             <span class="kg-service-related-card__label">{esc(label)}</span>
                         </a>"""
-        )
-    if not cards:
+            )
+        else:
+            text_links.append(f'                        <a class="kg-service-related-card kg-service-related-card--text" href="{href}">{esc(label)}</a>')
+    if not cards and not text_links:
         return ""
+    text_block = "\n".join(text_links)
+    card_block = "\n".join(cards)
+    combined = "\n".join(part for part in (card_block, text_block) if part)
     return f"""
             <section class="kg-section kg-service-related" aria-labelledby="related-services-heading">
-                <div class="kg-shell">
                     <div class="kg-heading-block">
                         <span class="kg-section-tag">Related services</span>
                         <h2 id="related-services-heading">Other services we offer</h2>
                     </div>
                     <div class="kg-service-related-grid">
-{chr(10).join(cards)}
+{combined}
                     </div>
-                </div>
             </section>"""
 
 
@@ -258,7 +261,7 @@ def vince_cutout_hero_wrap() -> str:
             <div class="kg-page-hero__cutout-wrap" aria-hidden="true" data-kg-enter="right">
                 <picture>
                     <source srcset="/Images/knight-hero-cutout.webp?v={VERSION}" type="image/webp">
-                    <img class="kg-page-hero-cutout" src="/Images/knight-hero-cutout.png" alt="" width="1200" height="800" decoding="async" loading="eager">
+                    <img class="kg-page-hero-cutout" src="/Images/knight-hero-cutout.png" alt="Vince Knight, owner of Knight Group Handyman Services" width="1200" height="800" decoding="async" loading="eager">
                 </picture>
             </div>"""
 
@@ -295,6 +298,7 @@ def page_shell(
     graph_json = json.dumps(json_ld, indent=4, ensure_ascii=False)
     cutout_wrap = vince_cutout_hero_wrap()
     sidebar_html = render_service_sidebar(slug, sidebar_label, sidebar_lead, sidebar_county)
+    og_html = social_tags(title=title, description=description, canonical=canonical)
 
     return f"""<!DOCTYPE html>
 <html lang="en" class="kg-js">
@@ -311,6 +315,7 @@ def page_shell(
     <meta name="description" content="{esc(description)}">
     <link rel="canonical" href="{canonical}">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+{og_html}
     <script type="application/ld+json">
 {graph_json}
     </script>
@@ -335,21 +340,17 @@ def page_shell(
             </div>
         </section>
         <div class="kg-service-stack">
+            <div class="kg-shell kg-service-layout">
+                <div class="kg-service-main">
             <section class="kg-section kg-service-detail">
-                <div class="kg-shell">
-                    <div class="kg-service-layout">
                         <div class="kg-service-prose">
                             {scope_block}
                             {body_html}
                         </div>
-{sidebar_html}
-                    </div>
-                </div>
             </section>
             {faq_html}
             {related_html}
             <section class="kg-section kg-service-cta">
-                <div class="kg-shell">
                     <div class="kg-heading-block">
                         <h2>Ready to schedule?</h2>
                         <p>Tell us what needs attention and where the property is located.</p>
@@ -358,8 +359,10 @@ def page_shell(
                         <a href="/booking" class="kg-btn kg-btn--solid">Book a free estimate</a>
                         <a href="/pricing" class="kg-btn kg-btn--ghost">View pricing</a>
                     </div>
-                </div>
             </section>
+                </div>
+{sidebar_html}
+            </div>
         </div>
     </main>
     <div id="footer-include"></div>
@@ -399,8 +402,9 @@ def manifest_entry(page_type: str, slug: str, path: str, canonical: str, priorit
 def generate_niche(defn: dict, manifest: list) -> None:
     slug = defn["slug"]
     output = ROOT / "Services" / f"{slug}.html"
+    rel_path = f"Services/{slug}.html"
     canonical = f"{BASE}/Services/{slug}"
-    description = defn["lead"][:155]
+    description = resolve_description(rel_path, defn["lead"])
     parent_label = PARENT_LABELS.get(defn["parent"], defn["parent"])
     faqs = NICHE_FAQ.get(slug) or default_faqs(defn["h1"].lower())
     try:
@@ -426,7 +430,7 @@ def generate_niche(defn: dict, manifest: list) -> None:
     related = NICHE_RELATED.get(slug) or niche_related_fallback(defn["parent"], slug)
     html_text = page_shell(
         output=output,
-        title=defn["title"],
+        title=clip_title(defn["title"]),
         description=description,
         canonical=canonical,
         breadcrumb=[("/", "Home"), ("/services", "Services"), ("", parent_label)],
@@ -464,11 +468,15 @@ def generate_city(
     output = ROOT / f"{slug}.html"
     canonical = f"{BASE}/{slug}"
     seo = city_copy(city_slug)
-    title = f"{city_name} Handyman Services | {county_name} FL | Knight Group"
+    title_name = "Town n Country" if city_slug == "town-n-country" else city_name
+    title = clip_title(f"{title_name} Handyman | {county_name} | Knight Group")
     lead = str(seo.get("hero_lead") or f"Local handyman repairs, fixtures, and punch-list work for {city_name} homeowners.")
-    description = str(
-        seo.get("meta_description")
-        or f"{city_name} handyman for drywall, plumbing fixtures, doors, and home repairs. Registered & insured. Free estimate."
+    description = resolve_description(
+        f"{slug}.html",
+        str(
+            seo.get("meta_description")
+            or f"{city_name} handyman for drywall, plumbing fixtures, doors, and home repairs. Registered and insured. Free estimate."
+        ),
     )
     faqs = geo_faq_for_city(city_slug, city_name, county_name)
     service = {
@@ -525,14 +533,17 @@ def generate_county_hub(region: dict, manifest: list) -> None:
     output = ROOT / f"{slug}.html"
     canonical = f"{BASE}/{slug}"
     seo = county_copy(hub_slug)
-    title = f"{county_name} Handyman Services | {county_name} FL | Knight Group"
+    title = clip_title(f"{county_name} Handyman | Knight Group")
     lead = str(
         seo.get("hero_lead")
         or f"{county_name} handyman repairs, fixtures, drywall, doors, and punch-list work from a registered Safety Harbor team."
     )
-    description = str(
-        seo.get("meta_description")
-        or f"{county_name} handyman for drywall, plumbing fixtures, doors, and home repairs. Registered & insured. Free estimate."
+    description = resolve_description(
+        f"{slug}.html",
+        str(
+            seo.get("meta_description")
+            or f"{county_name} handyman for drywall, plumbing fixtures, doors, and home repairs. Registered and insured. Free estimate."
+        ),
     )
     city_names = [city["name"] for city in region["cities"]]
     faqs = geo_faq_for_county(hub_slug, county_name)
@@ -587,7 +598,7 @@ def generate_pricing(defn: dict, manifest: list) -> None:
     filename = f"pricing-{slug}.html"
     output = ROOT / filename
     canonical = f"{BASE}/{filename.replace('.html', '')}"
-    description = defn["lead"][:155]
+    description = resolve_description(filename, defn["lead"])
     faqs = default_faqs(defn["h1"].lower())
     service = {
         "name": defn["h1"],
@@ -605,7 +616,7 @@ def generate_pricing(defn: dict, manifest: list) -> None:
     related = pricing_related_services()
     html_text = page_shell(
         output=output,
-        title=defn["title"],
+        title=clip_title(defn["title"]),
         description=description,
         canonical=canonical,
         breadcrumb=[("/", "Home"), ("/pricing", "Pricing"), ("", defn["h1"])],
@@ -627,15 +638,18 @@ def generate_combo(city_slug: str, service_slug: str, city_name: str, service_la
     output = ROOT / f"{slug}.html"
     canonical = f"{BASE}/{slug}"
     seo = combo_copy(slug)
-    title = f"{service_label.title()} in {city_name} FL | Knight Group"
+    title = clip_title(f"{service_label.title()} in {city_name} | Knight Group")
     lead = str(
         seo.get("hero_lead")
         or f"{service_label.title()} for {city_name} homes — one local handyman team, written estimates, and neat finish work."
     )
     _, county_name = county_for_city(city_slug)
-    description = str(
-        seo.get("meta_description")
-        or f"{service_label} in {city_name}, {county_name}. Handyman-scope repairs. Free estimate."
+    description = resolve_description(
+        f"{slug}.html",
+        str(
+            seo.get("meta_description")
+            or f"{service_label} in {city_name}, {county_name}. Handyman-scope repairs. Free estimate."
+        ),
     )
     faqs = geo_faq_for_combo(slug, city_name, service_label)
     service = {
@@ -686,9 +700,10 @@ def generate_combo(city_slug: str, service_slug: str, city_name: str, service_la
 def generate_gallery_project(group: dict, manifest: list) -> None:
     slug = group["id"]
     output = ROOT / "gallery" / f"{slug}.html"
+    rel_path = f"gallery/{slug}.html"
     canonical = f"{BASE}/gallery/{slug}"
-    title = f"{group['title']} | Knight Group Gallery"
-    description = group["description"][:155]
+    title = clip_title(f"{group['title']} | Knight Group")
+    description = resolve_description(rel_path, gallery_meta(slug, group["description"]))
     images = group.get("images") or []
     img_html = ""
     prefix = "../"
@@ -699,6 +714,7 @@ def generate_gallery_project(group: dict, manifest: list) -> None:
             continue
         img_src = src if src.startswith("/") else f"/{src.lstrip('/')}"
         img_html += f'<figure><img src="{img_src}" alt="{esc(img.get("seoAlt", group["title"]))}" loading="lazy" width="800" height="600"></figure>'
+    extra = gallery_body_extra(slug)
     body = prose_block(
         [
             group["description"],
@@ -706,6 +722,8 @@ def generate_gallery_project(group: dict, manifest: list) -> None:
             "Want similar work at your property? Book a free estimate with photos of your space.",
         ]
     )
+    if extra:
+        body = body + extra
     faqs = default_faqs(group["title"].lower())
     meta = {"title": title, "description": description, "canonical": canonical}
     graph = build_graph_for_page(page_key="gallery-project", meta=meta, faq_entities=faq_entities(faqs))

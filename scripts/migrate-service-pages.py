@@ -199,7 +199,6 @@ def render_faq(items: list[tuple[str, str]], slug: str) -> str:
         )
     return f"""
             <section class="kg-section kg-service-faq" id="{slug}-faq" aria-labelledby="{slug}-faq-heading">
-                <div class="kg-shell">
                     <div class="kg-heading-block">
                         <span class="kg-section-tag">FAQ</span>
                         <h2 id="{slug}-faq-heading">Frequently asked questions</h2>
@@ -208,7 +207,6 @@ def render_faq(items: list[tuple[str, str]], slug: str) -> str:
                     <div class="kg-faq-list">
 {chr(10).join(rows)}
                     </div>
-                </div>
             </section>"""
 
 
@@ -234,7 +232,6 @@ def render_related(links: list[tuple[str, str]]) -> str:
         return ""
     return f"""
             <section class="kg-section kg-service-related" aria-labelledby="related-services-heading">
-                <div class="kg-shell">
                     <div class="kg-heading-block">
                         <span class="kg-section-tag">Related services</span>
                         <h2 id="related-services-heading">Other services we offer</h2>
@@ -242,7 +239,6 @@ def render_related(links: list[tuple[str, str]]) -> str:
                     <div class="kg-service-related-grid">
 {chr(10).join(cards)}
                     </div>
-                </div>
             </section>"""
 
 
@@ -370,21 +366,16 @@ def render_page(slug: str, page_html: str) -> str:
         </section>
 
         <div class="kg-service-stack">
+            <div class="kg-shell kg-service-layout">
+                <div class="kg-service-main">
             <section class="kg-section kg-service-detail" aria-labelledby="{slug}-detail-heading">
-                <div class="kg-shell">
-                    <div class="kg-service-layout">
                         <div class="kg-service-prose">
                             {prose}
                         </div>
-
-{sidebar_html}
-                    </div>
-                </div>
             </section>
 {render_faq(faq_items, slug)}
 {render_related(related)}
             <section class="kg-section kg-service-cta" aria-labelledby="{slug}-cta-heading">
-                <div class="kg-shell">
                     <div class="kg-heading-block">
                         <span class="kg-section-tag">Next step</span>
                         <h2 id="{slug}-cta-heading">Ready to schedule {esc(label.lower())}?</h2>
@@ -395,8 +386,11 @@ def render_page(slug: str, page_html: str) -> str:
                         <a href="/services" class="kg-btn kg-btn--ghost">Browse all services</a>
                         <a href="/galleries" class="kg-btn kg-btn--ghost">See project gallery</a>
                     </div>
-                </div>
             </section>
+                </div>
+
+{sidebar_html}
+            </div>
         </div>
     </main>
 

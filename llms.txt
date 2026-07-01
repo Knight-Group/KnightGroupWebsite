@@ -1,44 +1,43 @@
 # Knight Group Handyman Services LLC
-# Canonical NAP (use exactly):
-# Knight Group Handyman Services LLC
-# Safety Harbor, FL / Pinellas County service area
-# (813) 649-3341
-# nknight@knightgroup.com
-# https://www.knightgroup.com/
 
-> Registered and insured handyman services in Safety Harbor and Pinellas County, Florida.
-> Free written estimates. Call or text (813) 649-3341.
+> Registered and insured handyman services in Safety Harbor and Pinellas County, Florida. Free written estimates. Call or text (813) 649-3341.
+
+Knight Group Handyman Services LLC serves homeowners across Safety Harbor, Clearwater, Dunedin, Palm Harbor, Largo, Oldsmar, Seminole, St. Petersburg, and nearby Pinellas, Hillsborough, and Pasco County communities with handyman-scope repairs, fixture plumbing, drywall, carpentry, painting, doors, and punch-list work.
 
 ## Primary pages
-- Home: https://www.knightgroup.com/
-- Services hub: https://www.knightgroup.com/services
-- Book estimate: https://www.knightgroup.com/booking
-- Pricing: https://www.knightgroup.com/pricing
-- Contact: https://www.knightgroup.com/contact
-- About: https://www.knightgroup.com/about
-- Gallery: https://www.knightgroup.com/galleries
-- Service areas: https://www.knightgroup.com/service-areas
+
+- [Home](https://www.knightgroup.com/)
+- [Services overview](https://www.knightgroup.com/services)
+- [Book a free estimate](https://www.knightgroup.com/booking)
+- [Pricing](https://www.knightgroup.com/pricing)
+- [Contact](https://www.knightgroup.com/contact)
+- [About Knight Group](https://www.knightgroup.com/about)
+- [Project gallery](https://www.knightgroup.com/galleries)
+- [Service areas](https://www.knightgroup.com/service-areas)
+- [Sitemap](https://www.knightgroup.com/sitemap.xml)
 
 ## Service categories
-- Handyman: https://www.knightgroup.com/Services/handyman
-- General repairs: https://www.knightgroup.com/Services/general-repairs
-- Plumbing: https://www.knightgroup.com/Services/plumbing-services
-- Electrical: https://www.knightgroup.com/Services/electrical-work
-- Carpentry & framing: https://www.knightgroup.com/Services/carpentry-framing
-- Painting & finishing: https://www.knightgroup.com/Services/painting-finishing
-- Home renovations: https://www.knightgroup.com/Services/home-renovations
-- Doors & windows: https://www.knightgroup.com/Services/doors-windows
-- Custom projects: https://www.knightgroup.com/Services/custom-projects
-- Emergency services: https://www.knightgroup.com/Services/emergency-services
+
+- [Handyman services](https://www.knightgroup.com/Services/handyman)
+- [General repairs](https://www.knightgroup.com/Services/general-repairs)
+- [Plumbing services](https://www.knightgroup.com/Services/plumbing-services)
+- [Electrical work](https://www.knightgroup.com/Services/electrical-work)
+- [Carpentry and framing](https://www.knightgroup.com/Services/carpentry-framing)
+- [Painting and finishing](https://www.knightgroup.com/Services/painting-finishing)
+- [Home renovations](https://www.knightgroup.com/Services/home-renovations)
+- [Doors and windows](https://www.knightgroup.com/Services/doors-windows)
+- [Custom projects](https://www.knightgroup.com/Services/custom-projects)
+- [Emergency services](https://www.knightgroup.com/Services/emergency-services)
 
 ## Local landing pages
-- Pinellas handyman: https://www.knightgroup.com/pinellas-handyman
-- Clearwater handyman: https://www.knightgroup.com/clearwater-handyman
 
-## Business facts
-- Business: Knight Group Handyman Services LLC
-- Service area: Safety Harbor, FL / Pinellas County service area
+- [Pinellas County handyman](https://www.knightgroup.com/pinellas-handyman)
+- [Clearwater handyman](https://www.knightgroup.com/clearwater-handyman)
+- [Safety Harbor handyman](https://www.knightgroup.com/safety-harbor-handyman)
+- [Hillsborough County handyman](https://www.knightgroup.com/hillsborough-handyman)
+
+## Contact
+
 - Phone: (813) 649-3341
 - Email: nknight@knightgroup.com
 - Website: https://www.knightgroup.com/
-- Sitemap: https://www.knightgroup.com/sitemap.xml
