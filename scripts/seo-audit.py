@@ -67,6 +67,7 @@ def main() -> int:
         "audit_image_refs.py",
         "audit-image-alt.py",
         "audit-meta-lengths.py",
+        "audit-meta-keywords.py",
         "scan-encoding.py",
     ]
     print("=== SEO audit suite ===")

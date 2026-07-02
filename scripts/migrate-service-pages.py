@@ -18,6 +18,7 @@ from gallery_pool import (  # noqa: E402
     prose_with_inline_gallery,
 )
 from page_meta import clip_title, resolve_description  # noqa: E402
+from page_copy_helpers import cta_lead, faq_intro, scope_disclaimer_html  # noqa: E402
 from schema_graph import build_graph_for_page  # noqa: E402
 from service_expansions import EXPANSIONS, EXTRA_FAQ  # noqa: E402
 from service_sidebar import render_service_sidebar  # noqa: E402
@@ -40,12 +41,13 @@ HERO_CUTOUT_TEMPLATE = """
                 </picture>
             </div>"""
 
-SCOPE_DISCLAIMER_HTML = """
-                            <div class="kg-scope-disclaimer">
-                                <p><strong>Handyman scope notice:</strong> Knight Group provides handyman-scope fixture replacement, minor repairs, and troubleshooting using existing connections. We do not perform work requiring a licensed plumbing, electrical, HVAC, or general contractor license. If a job requires a permit or licensed trade contractor, we identify that before work begins and refer or coordinate appropriately.</p>
-                            </div>"""
-
 SCOPE_SLUGS = {"plumbing-services", "electrical-work", "emergency-services"}
+
+
+def scope_block_for(slug: str) -> str:
+    if slug not in SCOPE_SLUGS:
+        return ""
+    return scope_disclaimer_html(slug)
 
 from service_related import SERVICE_CARD_IMAGES, resolve_card_image  # noqa: E402
 
@@ -202,7 +204,7 @@ def extract_json_ld(page_html: str) -> str:
     return payload.strip()
 
 
-def render_faq(items: list[tuple[str, str]], slug: str) -> str:
+def render_faq(items: list[tuple[str, str]], slug: str, *, h1: str = "") -> str:
     if not items:
         return ""
     rows = []
@@ -213,12 +215,13 @@ def render_faq(items: list[tuple[str, str]], slug: str) -> str:
                             <p>{html.escape(answer)}</p>
                         </details>"""
         )
+    intro_text = faq_intro(slug, h1 or slug.replace("-", " "))
     return f"""
             <section class="kg-section kg-service-faq" id="{slug}-faq" aria-labelledby="{slug}-faq-heading">
                     <div class="kg-heading-block">
                         <span class="kg-section-tag">FAQ</span>
                         <h2 id="{slug}-faq-heading">Frequently asked questions</h2>
-                        <p>Common questions homeowners ask before booking this type of work in Pinellas County.</p>
+                        <p>{html.escape(intro_text)}</p>
                     </div>
                     <div class="kg-faq-list">
 {chr(10).join(rows)}
@@ -264,7 +267,6 @@ def render_page(slug: str, page_html: str) -> str:
     raw_title = extract(r"<title>(.*?)</title>", page_html) or f"{label} | Knight Group"
     title = clip_title(html.unescape(raw_title))
     raw_description = extract(r'<meta name="description" content="(.*?)"', page_html)
-    keywords = extract(r'<meta name="keywords" content="(.*?)"', page_html)
     hero_h1 = extract(r'<section class="service-hero">.*?<h1>(.*?)</h1>', page_html) or label
     hero_lead = extract(r'<section class="service-hero">.*?<p>(.*?)</p>', page_html)
     legacy_prose = transform_prose(extract_prose_block(page_html))
@@ -273,7 +275,7 @@ def render_page(slug: str, page_html: str) -> str:
     if expansion:
         prose = f"{legacy_prose}\n\n{expansion}" if legacy_prose else expansion
     if slug in SCOPE_SLUGS:
-        prose = f"{SCOPE_DISCLAIMER_HTML}\n{prose}"
+        prose = f"{scope_block_for(slug)}\n{prose}"
     prose = prose_with_inline_gallery(
         prose,
         slug,
@@ -308,6 +310,7 @@ def render_page(slug: str, page_html: str) -> str:
     )
     cutout_wrap = HERO_CUTOUT_TEMPLATE.format(version=VERSION)
     sidebar_html = render_service_sidebar(slug, label)
+    cta_text = cta_lead(slug, clean_text(hero_h1))
 
     return f"""<!DOCTYPE html>
 <html lang="en" class="kg-js">
@@ -360,7 +363,6 @@ def render_page(slug: str, page_html: str) -> str:
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="geo.region" content="US-FL">
     <meta name="geo.placename" content="Safety Harbor, Pinellas County, Florida">
-    <meta name="keywords" content="{esc(keywords)}">
 
     <script type="application/ld+json">
 {json_ld}
@@ -408,13 +410,13 @@ def render_page(slug: str, page_html: str) -> str:
                             {prose}
                         </div>
             </section>
-{render_faq(faq_items, slug)}
+{render_faq(faq_items, slug, h1=clean_text(hero_h1))}
 {render_related(related)}
             <section class="kg-section kg-service-cta" aria-labelledby="{slug}-cta-heading">
                     <div class="kg-heading-block">
                         <span class="kg-section-tag">Next step</span>
                         <h2 id="{slug}-cta-heading">Ready to schedule {esc(label.lower())}?</h2>
-                        <p>Tell us what needs attention, where the property is located, and when you would like help. We will confirm scope and pricing before work starts.</p>
+                        <p>{esc(cta_text)}</p>
                     </div>
                     <div class="kg-service-cta__actions">
                         <a href="/booking" class="kg-btn kg-btn--solid">Book a free estimate</a>

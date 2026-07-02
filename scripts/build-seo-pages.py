@@ -33,6 +33,7 @@ from service_sidebar import render_service_sidebar  # noqa: E402
 from schema_graph import build_graph_for_page, service_by_slug  # noqa: E402
 from page_meta import clip_title, resolve_description, social_tags  # noqa: E402
 from niche_detail import NICHE_BOOKING, NICHE_DETAIL, NICHE_LOCAL  # noqa: E402
+from page_copy_helpers import cta_lead, faq_intro, scope_disclaimer_html  # noqa: E402
 from niche_expansions import NICHE_BODY, NICHE_FAQ, NICHE_RELATED  # noqa: E402
 from service_related import (  # noqa: E402
     combo_related_services,
@@ -48,7 +49,6 @@ from seo_page_data import (  # noqa: E402
     NICHE_SERVICES,
     PARENT_LABELS,
     PRICING_PAGES,
-    SCOPE_DISCLAIMER,
     TRUST_PAGES,
 )
 from trust_content import build_trust_prose, trust_faqs, trust_related_links  # noqa: E402
@@ -105,7 +105,14 @@ def default_faqs(topic: str, city: str = "Pinellas County") -> list[tuple[str, s
     ]
 
 
-def render_faq(items: list[tuple[str, str]], slug: str, county_name: str = "Pinellas County") -> str:
+def render_faq(
+    items: list[tuple[str, str]],
+    slug: str,
+    county_name: str = "Pinellas County",
+    *,
+    h1: str = "",
+    intro: str | None = None,
+) -> str:
     rows = []
     for question, answer in items:
         rows.append(
@@ -114,12 +121,13 @@ def render_faq(items: list[tuple[str, str]], slug: str, county_name: str = "Pine
                             <p>{esc(answer)}</p>
                         </details>"""
         )
+    intro_text = intro or faq_intro(slug, h1 or slug.replace("-", " "), county_name)
     return f"""
             <section class="kg-section kg-service-faq" id="{slug}-faq" aria-labelledby="{slug}-faq-heading">
                     <div class="kg-heading-block">
                         <span class="kg-section-tag">FAQ</span>
                         <h2 id="{slug}-faq-heading">Frequently asked questions</h2>
-                        <p>Common questions homeowners ask before booking this type of work in {esc(county_name)}.</p>
+                        <p>{esc(intro_text)}</p>
                     </div>
                     <div class="kg-faq-list">
 {chr(10).join(rows)}
@@ -298,6 +306,7 @@ def page_shell(
     sidebar_lead: str = "Free written estimates across Pinellas County.",
     sidebar_label: str = "service",
     sidebar_county: str = "Pinellas County",
+    cta_lead_text: str | None = None,
 ) -> str:
     prefix = path_prefix(output)
     slug = output.stem
@@ -307,7 +316,8 @@ def page_shell(
             crumbs.append(f'<a href="{href}">{esc(label)}</a><span aria-hidden="true">/</span>')
         else:
             crumbs.append(f'<span aria-current="page">{esc(label)}</span>')
-    scope_block = SCOPE_DISCLAIMER if scope else ""
+    scope_block = scope_disclaimer_html(slug) if scope else ""
+    cta_text = cta_lead_text or cta_lead(slug, h1, sidebar_county)
     graph_json = json.dumps(json_ld, indent=4, ensure_ascii=False)
     cutout_wrap = vince_cutout_hero_wrap()
     sidebar_html = render_service_sidebar(slug, sidebar_label, sidebar_lead, sidebar_county)
@@ -366,7 +376,7 @@ def page_shell(
             <section class="kg-section kg-service-cta">
                     <div class="kg-heading-block">
                         <h2>Ready to schedule?</h2>
-                        <p>Tell us what needs attention and where the property is located.</p>
+                        <p>{esc(cta_text)}</p>
                     </div>
                     <div class="kg-service-cta__actions">
                         <a href="/booking" class="kg-btn kg-btn--solid">Book a free estimate</a>
@@ -462,7 +472,7 @@ def generate_niche(defn: dict, manifest: list) -> None:
             category=SERVICE_PARENT_TO_CATEGORY.get(defn["parent"]),
             alt_fallback=defn["h1"],
         ),
-        faq_html=render_faq(faqs, slug),
+        faq_html=render_faq(faqs, slug, h1=defn["h1"]),
         related_html=render_related(related, path_prefix(output)),
         json_ld=graph,
         scope=bool(defn.get("scope")),
@@ -532,7 +542,7 @@ def generate_city(
             alt_fallback=f"{city_name} handyman project in {county_name}",
             cache_bust=VERSION,
         ),
-        faq_html=render_faq(faqs, slug, county_name),
+        faq_html=render_faq(faqs, slug, county_name, h1=f"{city_name} handyman services"),
         related_html=render_related(related, ""),
         json_ld=graph,
         eyebrow=f"Safety Harbor · {county_name}",
@@ -599,7 +609,7 @@ def generate_county_hub(region: dict, manifest: list) -> None:
             alt_fallback=f"{county_name} handyman project",
             cache_bust=VERSION,
         ),
-        faq_html=render_faq(faqs, slug, county_name),
+        faq_html=render_faq(faqs, slug, county_name, h1=f"{county_name} handyman services"),
         related_html=render_related(related, ""),
         json_ld=graph,
         eyebrow=f"Safety Harbor · {county_name}",
@@ -642,7 +652,7 @@ def generate_pricing(defn: dict, manifest: list) -> None:
         lead=defn["lead"],
         hero_image="handyman.webp",
         body_html=build_pricing_prose(defn),
-        faq_html=render_faq(faqs, slug),
+        faq_html=render_faq(faqs, slug, h1=defn["h1"]),
         related_html=render_related(related, ""),
         json_ld=graph,
         sidebar_label=defn["h1"],
@@ -683,7 +693,7 @@ def generate_trust(defn: dict, manifest: list) -> None:
         lead=defn["lead"],
         hero_image=defn.get("hero", "handyman.webp"),
         body_html=build_trust_prose(defn),
-        faq_html=render_faq(faqs, slug),
+        faq_html=render_faq(faqs, slug, h1=defn["h1"]),
         related_html=render_related(related, ""),
         json_ld=graph,
         sidebar_label=defn["h1"],
@@ -746,7 +756,7 @@ def generate_combo(city_slug: str, service_slug: str, city_name: str, service_la
             alt_fallback=f"{city_name} {service_label} in {county_name}",
             cache_bust=VERSION,
         ),
-        faq_html=render_faq(faqs, slug, county_name),
+        faq_html=render_faq(faqs, slug, county_name, h1=f"{service_label} in {city_name}"),
         related_html=render_related(related, ""),
         json_ld=graph,
         scope=parent == "plumbing-services",
@@ -802,7 +812,7 @@ def generate_gallery_project(group: dict, manifest: list) -> None:
         lead=group["description"],
         hero_image="home-renovations.webp",
         body_html=body + f'<div class="kg-gallery-project-images">{img_html}</div>',
-        faq_html=render_faq(faqs, slug),
+        faq_html=render_faq(faqs, slug, h1=group["title"]),
         related_html=render_related(related, prefix),
         json_ld=graph,
         sidebar_label=group["title"],

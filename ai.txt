@@ -1,0 +1,14 @@
+# Knight Group Handyman Services — AI discovery file
+# https://www.knightgroup.com/
+
+Primary structured site summary for LLM crawlers:
+https://www.knightgroup.com/llms.txt
+
+Additional discovery:
+https://www.knightgroup.com/sitemap.xml
+https://www.knightgroup.com/robots.txt
+
+Business: Knight Group Handyman Services LLC
+Location: Safety Harbor, Pinellas County, Florida
+Phone: (813) 649-3341
+Website: https://www.knightgroup.com/

@@ -1,6 +1,8 @@
 # Google Search Console — re-index checklist
 
-After deploying Phase 2 content (trust guides + hurricane page), request indexing for stale and new URLs.
+After deploying Phase 2–5 content, request indexing for stale and new URLs.
+
+**Latest deploy includes:** trust guides, hurricane page, unique FAQ/CTA copy per page (Phase 4), removed legacy `meta-keywords` tags, and `/ai.txt` discovery file (Phase 5).
 
 ## One-time hosting checks (Phase 3)
 

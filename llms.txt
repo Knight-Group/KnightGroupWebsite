@@ -61,6 +61,8 @@ Owner Vince Knight brings journeyman plumbing experience and a Florida property-
 - [No 2-hour minimum](https://www.knightgroup.com/pricing-no-2-hour-minimum)
 - [Hurricane prep and storm repair](https://www.knightgroup.com/hurricane-repair-handyman-pinellas)
 
+AI discovery files: [llms.txt](https://www.knightgroup.com/llms.txt) · [ai.txt](https://www.knightgroup.com/ai.txt)
+
 ## Pricing guides
 
 - [Handyman by the hour](https://www.knightgroup.com/pricing-handyman-by-the-hour)

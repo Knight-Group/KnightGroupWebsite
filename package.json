@@ -13,6 +13,6 @@
     "seo:sitemap": "python scripts/build-sitemap.py",
     "seo:encoding": "python scripts/fix-encoding.py",
     "seo:services": "python scripts/migrate-service-pages.py",
-    "seo:all": "python scripts/repair-meta-descriptions.py && python scripts/migrate-service-pages.py && python scripts/build-nav.py && python scripts/build-seo-pages.py && python scripts/fix-encoding.py && python scripts/fix-image-alt.py && python scripts/sync-meta-descriptions.py && python scripts/sync-og-titles.py && python scripts/build-sitemap.py && python scripts/verify-schema-graph.py && python scripts/scan-encoding.py && python scripts/seo-audit.py"
+    "seo:all": "python scripts/repair-meta-descriptions.py && python scripts/migrate-service-pages.py && python scripts/build-nav.py && python scripts/build-seo-pages.py && python scripts/fix-encoding.py && python scripts/fix-image-alt.py && python scripts/sync-meta-descriptions.py && python scripts/sync-og-titles.py && python scripts/remove-meta-keywords.py && python scripts/build-sitemap.py && python scripts/verify-schema-graph.py && python scripts/scan-encoding.py && python scripts/seo-audit.py"
   }
 }
