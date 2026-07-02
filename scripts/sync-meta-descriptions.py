@@ -27,13 +27,18 @@ def esc(value: str) -> str:
 
 
 def apply_description(text: str, description: str) -> str:
+    safe = esc(description)
+
+    def replace_desc(match: re.Match[str]) -> str:
+        return match.group(1) + safe + match.group(3)
+
     updated = text
     if DESC_RE.search(updated):
-        updated = DESC_RE.sub(rf"\1{esc(description)}\3", updated, count=1)
+        updated = DESC_RE.sub(replace_desc, updated, count=1)
     if OG_DESC_RE.search(updated):
-        updated = OG_DESC_RE.sub(rf"\1{esc(description)}\3", updated, count=1)
+        updated = OG_DESC_RE.sub(replace_desc, updated, count=1)
     if TW_DESC_RE.search(updated):
-        updated = TW_DESC_RE.sub(rf"\1{esc(description)}\3", updated, count=1)
+        updated = TW_DESC_RE.sub(replace_desc, updated, count=1)
     return updated
 
 

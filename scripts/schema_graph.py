@@ -18,6 +18,7 @@ ORG_ID = f"{BASE}/#organization"
 FOUNDER_ID = f"{BASE}/#founder"
 WEBSITE_ID = f"{BASE}/#website"
 PRICING_CATALOG_ID = f"{BASE}/pricing#offer-catalog"
+DEFAULT_SERVICE_IMAGE = f"{BASE}/Images/handyman.jpg"
 
 AREA_SERVED = [
     {"@type": "City", "name": "Safety Harbor, FL"},
@@ -309,6 +310,16 @@ def service_entity(
     return node
 
 
+def _nested_service(name: str, service_type: str) -> dict[str, Any]:
+    return {
+        "@type": "Service",
+        "name": name,
+        "serviceType": service_type,
+        "provider": {"@id": BUSINESS_ID},
+        "image": DEFAULT_SERVICE_IMAGE,
+    }
+
+
 def pricing_offer_catalog() -> dict[str, Any]:
     return {
         "@type": "OfferCatalog",
@@ -323,12 +334,7 @@ def pricing_offer_catalog() -> dict[str, Any]:
                 "description": "Common handyman repairs, punch-list work, fixture swaps, caulking, sealing, and small drywall patches.",
                 "url": f"{BASE}/pricing",
                 "priceCurrency": "USD",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Standard handyman visit",
-                    "serviceType": "Handyman services",
-                    "provider": {"@id": BUSINESS_ID},
-                },
+                "itemOffered": _nested_service("Standard handyman visit", "Handyman services"),
                 "priceSpecification": [
                     {
                         "@type": "UnitPriceSpecification",
@@ -352,12 +358,10 @@ def pricing_offer_catalog() -> dict[str, Any]:
                 "description": "Handyman-level faucet, shutoff, fixture, and small leak repairs — not licensed plumbing contractor work.",
                 "url": f"{BASE}/pricing",
                 "priceCurrency": "USD",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Minor plumbing repair visit",
-                    "serviceType": "Handyman plumbing fixture repair",
-                    "provider": {"@id": BUSINESS_ID},
-                },
+                "itemOffered": _nested_service(
+                    "Minor plumbing repair visit",
+                    "Handyman plumbing fixture repair",
+                ),
                 "priceSpecification": [
                     {
                         "@type": "UnitPriceSpecification",
@@ -381,12 +385,10 @@ def pricing_offer_catalog() -> dict[str, Any]:
                 "description": "Heavier installs, higher-liability work, fixture installs, TV mounting, and appliance hookup support.",
                 "url": f"{BASE}/pricing",
                 "priceCurrency": "USD",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Specialty install and repair visit",
-                    "serviceType": "Specialty handyman work",
-                    "provider": {"@id": BUSINESS_ID},
-                },
+                "itemOffered": _nested_service(
+                    "Specialty install and repair visit",
+                    "Specialty handyman work",
+                ),
                 "priceSpecification": [
                     {
                         "@type": "UnitPriceSpecification",
@@ -410,12 +412,10 @@ def pricing_offer_catalog() -> dict[str, Any]:
                 "description": "Urgent after-hours, weekend, or holiday handyman response with a one-time emergency fee added to the applicable hourly rate.",
                 "url": f"{BASE}/pricing",
                 "priceCurrency": "USD",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Emergency service call",
-                    "serviceType": "Emergency handyman repairs",
-                    "provider": {"@id": BUSINESS_ID},
-                },
+                "itemOffered": _nested_service(
+                    "Emergency service call",
+                    "Emergency handyman repairs",
+                ),
                 "priceSpecification": [
                     {
                         "@type": "UnitPriceSpecification",
@@ -465,6 +465,7 @@ def gallery_entities(manifest: dict[str, Any], meta: dict[str, str]) -> list[dic
                 "@type": "Service",
                 "name": group.get("category", "Handyman project"),
                 "provider": {"@id": BUSINESS_ID},
+                "image": image_url,
             },
             "locationCreated": {
                 "@type": "AdministrativeArea",

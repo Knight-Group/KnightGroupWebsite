@@ -124,6 +124,8 @@ def collect_targets() -> list[tuple[str, set[str]]]:
                 targets.append((rel_path, BASE_REQUIREMENTS | {"OfferCatalog"}))
             elif page_type == "gallery-project":
                 targets.append((rel_path, BASE_REQUIREMENTS | {"CreativeWork"}))
+            elif page_type == "trust-guide":
+                targets.append((rel_path, BASE_REQUIREMENTS | {"Service"}))
     return targets
 
 

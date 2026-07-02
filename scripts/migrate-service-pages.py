@@ -17,6 +17,7 @@ from gallery_pool import (  # noqa: E402
     SERVICE_PARENT_TO_CATEGORY,
     prose_with_inline_gallery,
 )
+from gallery_service_links import gallery_links_html  # noqa: E402
 from page_meta import clip_title, resolve_description  # noqa: E402
 from page_copy_helpers import cta_lead, faq_intro, scope_disclaimer_html  # noqa: E402
 from schema_graph import build_graph_for_page  # noqa: E402
@@ -243,7 +244,7 @@ def render_related(links: list[tuple[str, str]]) -> str:
             img_src = f"../Images/services/{image}"
         cards.append(
             f"""                        <a class="kg-service-related-card" href="{href}">
-                            <img src="{img_src}?v={VERSION}" alt="" width="400" height="300" loading="lazy" decoding="async">
+                            <img src="{img_src}?v={VERSION}" alt="{html.escape(label)}" width="400" height="300" loading="lazy" decoding="async">
                             <span class="kg-service-related-card__label">{html.escape(label)}</span>
                         </a>"""
         )
@@ -283,6 +284,7 @@ def render_page(slug: str, page_html: str) -> str:
         category=SERVICE_PARENT_TO_CATEGORY.get(slug),
         alt_fallback=f"{label} project photo in Pinellas County",
     )
+    prose += gallery_links_html(slug)
     faq_items = merge_faq_items(extract_faq_items(page_html), EXTRA_FAQ.get(slug, []))
     related = extract_related(page_html)
 

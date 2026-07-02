@@ -46,7 +46,7 @@ EXPANSIONS = {
 <p>Homeowners looking for <strong>gutter installation in Safety Harbor FL</strong> often need section replacement, re-hanging, pitch correction, or downspout routing — not a full exterior remodel. We handle practical gutter and drainage-adjacent repairs that protect fascia and foundations.</p>
 
 <h3>Mobile home and rental turnover repairs</h3>
-<p>We also take on <strong>mobile home repairs</strong> and landlord punch-list work: door adjustments, trim fixes, screen patches, caulking, minor floor transitions, and move-in ready corrections across Pinellas County.</p>
+<p>We also take on <a href="/Services/mobile-home-repairs">mobile home repairs</a> and landlord punch-list work: door adjustments, trim fixes, screen patches, caulking, minor floor transitions, and move-in ready corrections across Pinellas County.</p>
 
 <h2>Why homeowners call for general repairs instead of a specialist</h2>
 <p>When a job spans drywall, a sticking door, a leaking shutoff, and a paint touch-up, hiring four separate trades is slow and expensive. Knight Group gives you one accountable local contact with journeyman plumbing background and a decade of Florida property management experience — useful in occupied homes and rental units.</p>

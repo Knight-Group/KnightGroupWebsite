@@ -1360,6 +1360,74 @@
       "issues": []
     },
     {
+      "page": "plumber-background-handyman.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactPoint",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "ImageObject",
+        "Organization",
+        "Person",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "rental-turnover-handyman.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactPoint",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "ImageObject",
+        "Organization",
+        "Person",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "handyman-scope-florida.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactPoint",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "ImageObject",
+        "Organization",
+        "Person",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "hurricane-repair-handyman-pinellas.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactPoint",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "ImageObject",
+        "Organization",
+        "Person",
+        "Service",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
       "page": "clearwater-sink-repair.html",
       "status": "ok",
       "types": [
@@ -1625,5 +1693,5 @@
     }
   ],
   "failed": 0,
-  "checked": 97
+  "checked": 101
 }

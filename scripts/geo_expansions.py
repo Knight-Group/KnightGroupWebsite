@@ -9,6 +9,25 @@ from seo_page_data import COUNTY_REGIONS
 GEO_FAQ: dict[str, list[tuple[str, str]]] = {}
 
 
+def _city_slug_from_combo(combo_slug: str) -> str | None:
+    for city_slug in sorted(CITY_PROFILES, key=len, reverse=True):
+        if combo_slug.startswith(f"{city_slug}-"):
+            return city_slug
+    return None
+
+
+def _city_combo_links_html(city_slug: str, city_name: str) -> str:
+    links: list[str] = []
+    for combo_slug, profile in COMBO_PROFILES.items():
+        if _city_slug_from_combo(combo_slug) != city_slug:
+            continue
+        label = profile.get("service_label", combo_slug.replace("-", " ")).title()
+        links.append(f'<a href="/{combo_slug}">{label} in {city_name}</a>')
+    if not links:
+        return ""
+    return f"<p>Focused job pages: {', '.join(links)}.</p>"
+
+
 def _jobs_list(jobs: list[str]) -> str:
     return "<ul>\n" + "\n".join(f"<li>{job}</li>" for job in jobs) + "\n</ul>"
 
@@ -49,6 +68,7 @@ def build_city_body(city_slug: str, city_name: str, county_name: str, county_slu
         f"Browse {county_link}, handyman services, pricing, and our project gallery for local proof."
     )
     closing = closing_template.replace("{county_link}", county_link)
+    combo_links = _city_combo_links_html(city_slug, city_name)
 
     return f"""
 <h2>Handyman services in {city_name}</h2>
@@ -67,6 +87,7 @@ def build_city_body(city_slug: str, city_name: str, county_name: str, county_slu
 
 <h3>Related resources</h3>
 <p>{closing}</p>
+{combo_links}
 """
 
 
@@ -102,6 +123,15 @@ def build_county_body(county_slug: str, county_name: str, city_names: list[str])
     closing = seo.get("closing") or (
         'See also: <a href="/service-areas">all service areas</a>, <a href="/Services/handyman">handyman services</a>, and <a href="/pricing">pricing</a>.'
     )
+    combo_links = ""
+    if county_slug == "pinellas":
+        combo_bits = ", ".join(
+            f'<a href="/{combo_slug}">{profile.get("service_label", combo_slug).title()}</a>'
+            for combo_slug, profile in COMBO_PROFILES.items()
+            if _city_slug_from_combo(combo_slug)
+        )
+        if combo_bits:
+            combo_links = f"<p>Popular city + service pages: {combo_bits}.</p>"
 
     return f"""
 <h2>{county_name} handyman services</h2>
@@ -119,6 +149,7 @@ def build_county_body(county_slug: str, county_name: str, city_names: list[str])
 <p>{scheduling}</p>
 <p>{scope_note}</p>
 <p>{closing}</p>
+{combo_links}
 """
 
 
