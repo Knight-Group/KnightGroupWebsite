@@ -39,6 +39,7 @@ CAROUSEL_GALLERY = [
     "KnightGroup_before_after_drain.webp",
     "KnightGroup_before_after_room.webp",
     "before-after-broken-stove-burner-fixed.webp",
+    "before-after-ac-vent-filter-change.webp",
     "before-after-broken-blinds-replaced.webp",
     "before-after-horney-removal-wall-sealed.webp",
     "Refinished Bathroom_Window.webp",

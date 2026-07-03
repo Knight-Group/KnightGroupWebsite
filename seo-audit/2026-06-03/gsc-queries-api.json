@@ -1,0 +1,221 @@
+{
+  "site_url": "https://www.knightgroup.com/",
+  "report": "queries",
+  "days": 28,
+  "date_range": {
+    "start": "2026-05-06",
+    "end": "2026-06-03"
+  },
+  "pulled_at": "2026-06-03T20:49:07.567356+00:00",
+  "row_count": 26,
+  "queries": [
+    {
+      "key": "knight group",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0.0,
+      "position": 8.0,
+      "query": "knight group"
+    },
+    {
+      "key": "plumber knights fl",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0.0,
+      "position": 42.71,
+      "query": "plumber knights fl"
+    },
+    {
+      "key": "handyman company pinellas",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0.0,
+      "position": 29.0,
+      "query": "handyman company pinellas"
+    },
+    {
+      "key": "general contractors pinellas county",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0.0,
+      "position": 56.67,
+      "query": "general contractors pinellas county"
+    },
+    {
+      "key": "construction company pinellas county",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0.0,
+      "position": 66.0,
+      "query": "construction company pinellas county"
+    },
+    {
+      "key": "knight & sons mobile home repairs website",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0.0,
+      "position": 2.5,
+      "query": "knight & sons mobile home repairs website"
+    },
+    {
+      "key": "knight services llc",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0.0,
+      "position": 6.0,
+      "query": "knight services llc"
+    },
+    {
+      "key": "knights handyman services",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0.0,
+      "position": 11.5,
+      "query": "knights handyman services"
+    },
+    {
+      "key": "sink repair clearwater",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0.0,
+      "position": 20.5,
+      "query": "sink repair clearwater"
+    },
+    {
+      "key": "carpentry services near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 12.0,
+      "query": "carpentry services near me"
+    },
+    {
+      "key": "david reitmeyer safety harbor fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 11.0,
+      "query": "david reitmeyer safety harbor fl"
+    },
+    {
+      "key": "fast response toilet repair maitland",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 64.0,
+      "query": "fast response toilet repair maitland"
+    },
+    {
+      "key": "gutter installation safety harbor fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 21.0,
+      "query": "gutter installation safety harbor fl"
+    },
+    {
+      "key": "handyman near me small jobs",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 61.0,
+      "query": "handyman near me small jobs"
+    },
+    {
+      "key": "handyman pinellas county",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 9.0,
+      "query": "handyman pinellas county"
+    },
+    {
+      "key": "handyman pinellas county fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 12.0,
+      "query": "handyman pinellas county fl"
+    },
+    {
+      "key": "knight company",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 3.0,
+      "query": "knight company"
+    },
+    {
+      "key": "knight contracting group",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 72.0,
+      "query": "knight contracting group"
+    },
+    {
+      "key": "knight enterprises clearwater fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 53.0,
+      "query": "knight enterprises clearwater fl"
+    },
+    {
+      "key": "knight furniture",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 1.0,
+      "query": "knight furniture"
+    },
+    {
+      "key": "knight maintenance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 1.0,
+      "query": "knight maintenance"
+    },
+    {
+      "key": "knightgroup",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 7.0,
+      "query": "knightgroup"
+    },
+    {
+      "key": "knights home repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 16.0,
+      "query": "knights home repair"
+    },
+    {
+      "key": "plumbing repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 17.0,
+      "query": "plumbing repair"
+    },
+    {
+      "key": "plumbing services in pinellas county",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 44.0,
+      "query": "plumbing services in pinellas county"
+    },
+    {
+      "key": "roof replacement service",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 161.0,
+      "query": "roof replacement service"
+    }
+  ]
+}

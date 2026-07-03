@@ -206,6 +206,17 @@ IMAGE_CATALOG: dict[str, dict] = {
         "description": "Before-and-after photo from a kitchen stove burner repair completed in a Pinellas County home.",
         "beforeAfter": True,
     },
+    "before-after-ac-vent-filter-change.webp": {
+        "group": "ac-vent-filter-change-before-after",
+        "groupTitle": "AC vent & filter change — before & after",
+        "groupDescription": "Dirty return vent and clogged filter replaced with clean filtration and a secure grille.",
+        "category": "general-repairs",
+        "serviceLink": "/Services/general-repairs",
+        "step": 1,
+        "title": "AC vent and filter change before and after",
+        "description": "Before-and-after proof from an AC return vent and filter change completed in a Pinellas County home.",
+        "beforeAfter": True,
+    },
     "before-after-broken-blinds-replaced.webp": {
         "group": "blinds-replacement-before-after",
         "groupTitle": "Broken blinds replacement — before & after",

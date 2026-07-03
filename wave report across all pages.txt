@@ -1,0 +1,591 @@
+wave report across all pages:
+
+Here's from the WAVE report for the homagepage.. 
+ 1
+Errors  0
+Contrast Errors  23
+Alerts  45
+Features  63
+Structure  115
+ARIA
+AIM Score: 9.5 out of 10
+
+1 Errors
+1 Missing form labelReference
+Missing form label 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+23 Alerts
+4 Redundant linkReference
+Redundant link 1Redundant link 2 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Redundant link 3Redundant link 4
+4 Noscript elementReference
+Noscript element 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Noscript element 2 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Noscript element 3 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Noscript element 4 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+15 Very small textReference
+Very small text 1Very small text 2Very small text 3 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Very small text 4Very small text 5Very small text 6Very small text 7Very small text 8Very small text 9Very small text 10Very small text 11Very small text 12Very small text 13Very small text 14Very small text 15
+
+https://knightgroup.com/services
+
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 0
+Errors  0
+Contrast Errors  8
+Alerts  21
+Features  17
+Structure  45
+ARIA
+Congratulations! No errors were detected! Manual testing is still necessary to ensure compliance and optimal accessibility.
+
+AIM Score: 9.8 out of 10
+
+8 Alerts
+2 Redundant linkReference
+Redundant link 1Redundant link 2 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Noscript elementReference
+Noscript element 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+5 Very small textReference
+Very small text 1Very small text 2Very small text 3 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Very small text 4Very small text 5
+
+https://www.knightgroup.com/booking
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 0
+Errors  0
+Contrast Errors  10
+Alerts  28
+Features  18
+Structure  48
+ARIA
+Congratulations! No errors were detected! Manual testing is still necessary to ensure compliance and optimal accessibility.
+
+AIM Score: 9.7 out of 10
+
+10 Alerts
+3 Redundant linkReference
+Redundant link 1Redundant link 2 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Redundant link 3
+1 Noscript elementReference
+Noscript element 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+6 Very small textReference
+Very small text 1Very small text 2Very small text 3 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Very small text 4Very small text 5Very small text 6
+
+https://www.knightgroup.com/pricing
+
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 1
+Errors  2
+Contrast Errors  22
+Alerts  22
+Features  48
+Structure  53
+ARIA
+AIM Score: 8.7 out of 10
+
+1 Errors
+1 Missing form labelReference
+Missing form label 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+2 Contrast Errors
+2 Very low contrastReference
+Very low contrast 1Very low contrast 2
+22 Alerts
+5 Possible headingReference
+Possible heading 1Possible heading 2Possible heading 3Possible heading 4Possible heading 5
+6 Redundant linkReference
+Redundant link 1Redundant link 2 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Redundant link 3Redundant link 4Redundant link 5Redundant link 6 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Noscript elementReference
+Noscript element 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+10 Very small textReference
+Very small text 1Very small text 2Very small text 3 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Very small text 4Very small text 5Very small text 6Very small text 7Very small text 8Very small text 9Very small text 10
+
+https://www.knightgroup.com/contact
+
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 0
+Errors  0
+Contrast Errors  12
+Alerts  26
+Features  26
+Structure  54
+ARIA
+Congratulations! No errors were detected! Manual testing is still necessary to ensure compliance and optimal accessibility.
+
+AIM Score: 9.7 out of 10
+
+12 Alerts
+5 Redundant linkReference
+Redundant link 1Redundant link 2 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Redundant link 3Redundant link 4 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Redundant link 5 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Noscript elementReference
+Noscript element 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+6 Very small textReference
+Very small text 1Very small text 2Very small text 3 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Very small text 4Very small text 5Very small text 6
+
+https://www.knightgroup.com/about
+
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 0
+Errors  6
+Contrast Errors  9
+Alerts  23
+Features  28
+Structure  79
+ARIA
+AIM Score: 8 out of 10
+
+6 Contrast Errors
+6 Very low contrastReference
+Very low contrast 1Very low contrast 2Very low contrast 3Very low contrast 4Very low contrast 5Very low contrast 6
+9 Alerts
+3 Redundant linkReference
+Redundant link 1Redundant link 2 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Redundant link 3
+1 Noscript elementReference
+Noscript element 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+5 Very small textReference
+Very small text 1Very small text 2Very small text 3 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Very small text 4Very small text 5
+
+https://www.knightgroup.com/galleries
+
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 0
+Errors  0
+Contrast Errors  13
+Alerts  38
+Features  33
+Structure  64
+ARIA
+Congratulations! No errors were detected! Manual testing is still necessary to ensure compliance and optimal accessibility.
+
+AIM Score: 9.7 out of 10
+
+13 Alerts
+1 Possible headingReference
+Possible heading 1
+4 Redundant linkReference
+Redundant link 1Redundant link 2 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Redundant link 3Redundant link 4
+4 Noscript elementReference
+Noscript element 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Noscript element 2 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Noscript element 3 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Noscript element 4 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+4 Very small textReference
+Very small text 1Very small text 2Very small text 3 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Very small text 4
+
+https://www.knightgroup.com/service-areas
+
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 0
+Errors  0
+Contrast Errors  9
+Alerts  19
+Features  33
+Structure  40
+ARIA
+Congratulations! No errors were detected! Manual testing is still necessary to ensure compliance and optimal accessibility.
+
+AIM Score: 9.8 out of 10
+
+9 Alerts
+1 Possible headingReference
+Possible heading 1
+2 Redundant linkReference
+Redundant link 1Redundant link 2 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+2 Noscript elementReference
+Noscript element 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Noscript element 2 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+4 Very small textReference
+Very small text 1Very small text 2Very small text 3 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Very small text 4
+
+https://www.knightgroup.com/pinellas-handyman
+
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 0
+Errors  0
+Contrast Errors  7
+Alerts  19
+Features  18
+Structure  37
+ARIA
+Congratulations! No errors were detected! Manual testing is still necessary to ensure compliance and optimal accessibility.
+
+AIM Score: 9.8 out of 10
+
+7 Alerts
+2 Redundant linkReference
+Redundant link 1Redundant link 2 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+5 Very small textReference
+Very small text 1Very small text 2Very small text 3 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Very small text 4Very small text 5
+
+https://www.knightgroup.com/clearwater-handyman
+
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 0
+Errors  0
+Contrast Errors  7
+Alerts  19
+Features  17
+Structure  37
+ARIA
+Congratulations! No errors were detected! Manual testing is still necessary to ensure compliance and optimal accessibility.
+
+AIM Score: 9.8 out of 10
+
+7 Alerts
+2 Redundant linkReference
+Redundant link 1Redundant link 2 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+5 Very small textReference
+Very small text 1Very small text 2Very small text 3 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)Very small text 4Very small text 5
+
+https://www.knightgroup.com/Services/handyman
+
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 2
+Errors  1
+Contrast Errors  2
+Alerts  21
+Features  28
+Structure  14
+ARIA
+AIM Score: 8.8 out of 10
+
+2 Errors
+1 Missing form labelReference
+Missing form label 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Broken ARIA referenceReference
+Broken ARIA reference 1
+1 Contrast Errors
+1 Very low contrastReference
+Very low contrast 1
+2 Alerts
+1 Noscript elementReference
+Noscript element 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Very small textReference
+Very small text 1
+
+https://www.knightgroup.com/Services/general-repairs
+
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 2
+Errors  1
+Contrast Errors  3
+Alerts  10
+Features  27
+Structure  14
+ARIA
+AIM Score: 8.7 out of 10
+
+2 Errors
+1 Missing form labelReference
+Missing form label 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Broken ARIA referenceReference
+Broken ARIA reference 1
+1 Contrast Errors
+1 Very low contrastReference
+Very low contrast 1
+3 Alerts
+1 Skipped heading levelReference
+Skipped heading level 1
+1 Noscript elementReference
+Noscript element 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Very small textReference
+Very small text 1
+
+https://www.knightgroup.com/Services/plumbing-services
+
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 2
+Errors  1
+Contrast Errors  3
+Alerts  10
+Features  25
+Structure  14
+ARIA
+AIM Score: 8.7 out of 10
+
+2 Errors
+1 Missing form labelReference
+Missing form label 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Broken ARIA referenceReference
+Broken ARIA reference 1
+1 Contrast Errors
+1 Very low contrastReference
+Very low contrast 1
+3 Alerts
+1 Skipped heading levelReference
+Skipped heading level 1
+1 Noscript elementReference
+Noscript element 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Very small textReference
+Very small text 1
+
+https://www.knightgroup.com/Services/electrical-work
+
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 2
+Errors  1
+Contrast Errors  3
+Alerts  11
+Features  23
+Structure  14
+ARIA
+AIM Score: 8.7 out of 10
+
+2 Errors
+1 Missing form labelReference
+Missing form label 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Broken ARIA referenceReference
+Broken ARIA reference 1
+1 Contrast Errors
+1 Very low contrastReference
+Very low contrast 1
+3 Alerts
+1 Skipped heading levelReference
+Skipped heading level 1
+1 Noscript elementReference
+Noscript element 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Very small textReference
+Very small text 1
+
+https://www.knightgroup.com/Services/carpentry-framing
+
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 2
+Errors  1
+Contrast Errors  2
+Alerts  11
+Features  26
+Structure  14
+ARIA
+AIM Score: 8.8 out of 10
+
+2 Errors
+1 Missing form labelReference
+Missing form label 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Broken ARIA referenceReference
+Broken ARIA reference 1
+1 Contrast Errors
+1 Very low contrastReference
+Very low contrast 1
+2 Alerts
+1 Noscript elementReference
+Noscript element 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Very small textReference
+Very small text 1
+
+https://www.knightgroup.com/Services/painting-finishing
+
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 2
+Errors  1
+Contrast Errors  2
+Alerts  10
+Features  29
+Structure  14
+ARIA
+AIM Score: 8.8 out of 10
+
+2 Errors
+1 Missing form labelReference
+Missing form label 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Broken ARIA referenceReference
+Broken ARIA reference 1
+1 Contrast Errors
+1 Very low contrastReference
+Very low contrast 1
+2 Alerts
+1 Noscript elementReference
+Noscript element 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Very small textReference
+Very small text 1
+
+https://www.knightgroup.com/Services/home-renovations
+
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 2
+Errors  1
+Contrast Errors  3
+Alerts  10
+Features  23
+Structure  14
+ARIA
+AIM Score: 8.7 out of 10
+
+2 Errors
+1 Missing form labelReference
+Missing form label 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Broken ARIA referenceReference
+Broken ARIA reference 1
+1 Contrast Errors
+1 Very low contrastReference
+Very low contrast 1
+3 Alerts
+1 Skipped heading levelReference
+Skipped heading level 1
+1 Noscript elementReference
+Noscript element 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Very small textReference
+Very small text 1
+
+https://www.knightgroup.com/Services/doors-windows
+
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 2
+Errors  1
+Contrast Errors  2
+Alerts  10
+Features  27
+Structure  14
+ARIA
+AIM Score: 8.8 out of 10
+
+2 Errors
+1 Missing form labelReference
+Missing form label 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Broken ARIA referenceReference
+Broken ARIA reference 1
+1 Contrast Errors
+1 Very low contrastReference
+Very low contrast 1
+2 Alerts
+1 Noscript elementReference
+Noscript element 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Very small textReference
+Very small text 1
+
+https://www.knightgroup.com/Services/custom-projects
+
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 2
+Errors  1
+Contrast Errors  2
+Alerts  10
+Features  24
+Structure  14
+ARIA
+AIM Score: 8.8 out of 10
+
+2 Errors
+1 Missing form labelReference
+Missing form label 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Broken ARIA referenceReference
+Broken ARIA reference 1
+1 Contrast Errors
+1 Very low contrastReference
+Very low contrast 1
+2 Alerts
+1 Noscript elementReference
+Noscript element 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Very small textReference
+Very small text 1
+
+https://www.knightgroup.com/Services/emergency-services
+
+Summary
+Details
+Reference
+Order
+Structure
+Contrast
+ 2
+Errors  1
+Contrast Errors  5
+Alerts  10
+Features  24
+Structure  16
+ARIA
+AIM Score: 8.7 out of 10
+
+2 Errors
+1 Missing form labelReference
+Missing form label 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+1 Broken ARIA referenceReference
+Broken ARIA reference 1
+1 Contrast Errors
+1 Very low contrastReference
+Very low contrast 1
+5 Alerts
+2 Redundant linkReference
+Redundant link 1Redundant link 2
+1 Noscript elementReference
+Noscript element 1 (This icon or the element it applies to is visually hidden in your page. Disable "Styles" to view it.)
+2 Very small textReference
+Very small text 1Very small text 2

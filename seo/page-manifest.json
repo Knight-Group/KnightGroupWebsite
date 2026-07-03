@@ -554,6 +554,13 @@
       "path": "gallery/tub-drain-replacement.html",
       "canonical": "https://www.knightgroup.com/gallery/tub-drain-replacement",
       "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "ac-vent-filter-change-before-after",
+      "path": "gallery/ac-vent-filter-change-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/ac-vent-filter-change-before-after",
+      "priority": "0.62"
     }
   ]
 }

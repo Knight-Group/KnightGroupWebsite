@@ -67,6 +67,7 @@ GALLERY_PICKS = [
     "pipe-repair-before-after",
     "floor-subfloor-repair",
     "tub-drain-replacement",
+    "ac-vent-filter-change-before-after",
 ]
 
 
