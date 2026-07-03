@@ -110,10 +110,11 @@ def main() -> int:
                 "Re-run upload_to_gallery.py manually, or use --skip-drive.",
                 file=sys.stderr,
             )
-        KG_MEDIA_LIB.mkdir(parents=True, exist_ok=True)
-        dest = KG_MEDIA_LIB / social.name
-        shutil.copy2(social, dest)
-        print(f"Copied social JPG → {dest}")
+
+    KG_MEDIA_LIB.mkdir(parents=True, exist_ok=True)
+    dest = KG_MEDIA_LIB / social.name
+    shutil.copy2(social, dest)
+    print(f"Copied social JPG → {dest}")
 
     if not webp_640.is_file():
         run([sys.executable, str(OPTIMIZE_IMAGES)])
@@ -124,7 +125,27 @@ def main() -> int:
 
     if args.deploy:
         msg = args.commit_message or f"Add gallery before/after: {group_id}"
-        run(["git", "add", "-A"], cwd=ROOT)
+        paths = [
+            str(webp.relative_to(ROOT)),
+            str(webp_640.relative_to(ROOT)) if webp_640.is_file() else "",
+            str(social.relative_to(ROOT)),
+            "GalleryImages/gallery-manifest.json",
+            f"gallery/{group_id}.html",
+            "galleries.html",
+            "index.html",
+            "sitemap.xml",
+            "seo/page-manifest.json",
+            "scripts/build-gallery-manifest.py",
+            "scripts/build-homepage-job-carousel.py",
+            "scripts/build-before-after-composite.py",
+            "scripts/publish-before-after-gallery.py",
+            "scripts/gallery_detail_copy.py",
+            "scripts/build-seo-pages.py",
+            "scripts/serp_query_map.py",
+            "scripts/optimize-home-images.py",
+        ]
+        paths = [p for p in paths if p]
+        run(["git", "add", *paths], cwd=ROOT)
         run(["git", "status", "-sb"], cwd=ROOT)
         run(["git", "commit", "-m", msg], cwd=ROOT)
         run(["git", "push", "origin", "main"], cwd=ROOT)
