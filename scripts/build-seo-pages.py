@@ -69,6 +69,16 @@ GALLERY_PICKS = [
     "tub-drain-replacement",
     "ac-vent-filter-change-before-after",
     "fence-repair-before-after",
+    "door-lock-repair-before-after",
+    "kitchen-sink-leak-before-after",
+    "curtain-rod-mount-before-after",
+    "blind-repair-before-after",
+    "carpet-removal-before-after",
+    "fire-extinguisher-mount-before-after",
+    "stair-tape-repair-before-after",
+    "smoke-alarm-battery-swap-before-after",
+    "filter-change-before-after",
+    "door-wedge-before-after",
 ]
 
 

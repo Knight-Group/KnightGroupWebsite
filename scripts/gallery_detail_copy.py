@@ -43,6 +43,46 @@ GALLERY_META: dict[str, str] = {
         "Wooden fence repair before and after in Pinellas County — collapsed and leaning sections rebuilt "
         "with new posts and bracing by Knight Group Handyman. Registered and insured. Free estimate."
     ),
+    "door-lock-repair-before-after": (
+        "Door lock repair before and after in Pinellas County — misaligned hardware adjusted and resecured "
+        "by Knight Group Handyman. Registered and insured. Free written estimate."
+    ),
+    "curtain-rod-mount-before-after": (
+        "Curtain rod mount repair before and after in Pinellas County — loose brackets remounted into solid "
+        "framing by Knight Group Handyman. Registered and insured. Free estimate."
+    ),
+    "stair-tape-repair-before-after": (
+        "Stair safety tape replacement before and after in Pinellas County — peeling anti-slip tape "
+        "removed and replaced by Knight Group Handyman. Registered and insured. Free estimate."
+    ),
+    "smoke-alarm-battery-swap-before-after": (
+        "Smoke alarm battery swap before and after in Pinellas County — expired batteries replaced and "
+        "units tested by Knight Group Handyman. Registered and insured. Free estimate."
+    ),
+    "filter-change-before-after": (
+        "HVAC filter change before and after in Pinellas County — clogged return filter replaced for "
+        "proper airflow by Knight Group Handyman. Registered and insured. Free estimate."
+    ),
+    "carpet-removal-before-after": (
+        "Carpet removal before and after in Pinellas County — worn carpet and pad removed by Knight Group "
+        "Handyman. Registered and insured. Free written estimate."
+    ),
+    "fire-extinguisher-mount-before-after": (
+        "Fire extinguisher wall mount before and after in Pinellas County — bracket installed at proper "
+        "height by Knight Group Handyman. Registered and insured. Free estimate."
+    ),
+    "blind-repair-before-after": (
+        "Window blind repair before and after in Pinellas County — damaged slats and hardware corrected "
+        "by Knight Group Handyman. Registered and insured. Free estimate."
+    ),
+    "kitchen-sink-leak-before-after": (
+        "Kitchen sink leak repair before and after in Pinellas County — under-sink leak traced and "
+        "corrected by Knight Group Handyman. Registered and insured. Free estimate."
+    ),
+    "door-wedge-before-after": (
+        "Door wedge install before and after in Pinellas County — floor gap corrected so the door stays "
+        "put by Knight Group Handyman. Registered and insured. Free estimate."
+    ),
 }
 
 GALLERY_BODY: dict[str, str] = {
@@ -180,6 +220,116 @@ GALLERY_BODY: dict[str, str] = {
 <h3>When to book fence repair</h3>
 <p>Leaning panels, loose gate hardware, or a full section on the ground are safety and security issues — especially with pets or pool access. Photos of the full fence line and any gate latches help us quote parts and labor on the first visit.</p>
 <p>Related: <a href="/Services/carpentry-framing">carpentry and framing</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+""",
+    "door-lock-repair-before-after": """
+<h3>Door lock alignment and hardware repair</h3>
+<p>This before-and-after gallery shows a typical Pinellas County call: a door that would not latch cleanly because the lock set and strike plate were out of alignment. Knight Group adjusted hardware, resecured fasteners, and verified smooth operation before turnover.</p>
+<ul>
+<li>Checked hinge alignment and latch engagement at multiple points</li>
+<li>Repositioned strike plate and shims where the jamb had settled</li>
+<li>Tightened lock set screws and tested key operation</li>
+<li>Left before-and-after proof for the homeowner</li>
+</ul>
+<p>Related: <a href="/Services/general-repairs">general repairs</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+""",
+    "curtain-rod-mount-before-after": """
+<h3>Curtain rod bracket remount</h3>
+<p>Loose curtain rod brackets are a common punch-list item when drywall anchors pull free or the rod spans a wide window without hitting a stud. This gallery documents remounting into solid framing with level alignment.</p>
+<ul>
+<li>Located framing and selected appropriate fasteners</li>
+<li>Removed failed anchors and patched minor wall damage</li>
+<li>Reinstalled brackets level across the span</li>
+<li>Verified rod load and finial clearance</li>
+</ul>
+<p>Related: <a href="/Services/carpentry-framing">carpentry and framing</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+""",
+    "stair-tape-repair-before-after": """
+<h3>Stair tread anti-slip tape replacement</h3>
+<p>Peeling anti-slip tape on interior stairs is a safety hazard — especially in humid Florida homes where adhesive fails at tread noses. Knight Group removed old tape, cleaned the surface, and applied new tread strips.</p>
+<ul>
+<li>Stripped failed tape and adhesive residue from each tread</li>
+<li>Measured and cut replacement strips to tread width</li>
+<li>Applied new anti-slip tape with firm pressure at noses</li>
+<li>Walk-tested each step before turnover</li>
+</ul>
+<p>Related: <a href="/Services/carpentry-framing">carpentry and framing</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+""",
+    "smoke-alarm-battery-swap-before-after": """
+<h3>Smoke alarm battery replacement</h3>
+<p>Chirping smoke alarms and expired batteries are one of the fastest handyman wins for Pinellas homeowners. This gallery documents battery swap, unit testing, and secure remounting.</p>
+<ul>
+<li>Identified alarm type and battery size at each location</li>
+<li>Replaced expired batteries and cleared chirp faults</li>
+<li>Tested alarm response with the test button</li>
+<li>Confirmed cover plates seated and mounts secure</li>
+</ul>
+<p>Related: <a href="/Services/general-repairs">general repairs</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+""",
+    "filter-change-before-after": """
+<h3>HVAC return filter replacement</h3>
+<p>A clogged return filter restricts airflow and loads the system. This before-and-after gallery shows filter removal, slot cleaning, and correct-size replacement media installed.</p>
+<ul>
+<li>Removed heavily loaded filter from the return grille</li>
+<li>Matched replacement size to the existing slot</li>
+<li>Reinstalled grille and verified secure fit</li>
+<li>Left before-and-after proof for the owner</li>
+</ul>
+<p>Related: <a href="/Services/general-repairs">general repairs</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+""",
+    "carpet-removal-before-after": """
+<h3>Carpet and pad removal</h3>
+<p>When carpet is worn, stained, or must come out before new flooring, handyman-scope removal keeps the job moving without a full renovation contract. This gallery documents tear-out and subfloor exposure.</p>
+<ul>
+<li>Cut and removed carpet and pad in manageable sections</li>
+<li>Pulled tack strips where the next finish allows</li>
+<li>Bagged debris and swept the exposed subfloor</li>
+<li>Left the room ready for flooring or further prep</li>
+</ul>
+<p>Related: <a href="/Services/carpentry-framing">carpentry and framing</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+""",
+    "fire-extinguisher-mount-before-after": """
+<h3>Fire extinguisher wall mount</h3>
+<p>Kitchen and garage extinguishers should be mounted at the correct height — not rolling around a closet floor. This gallery shows bracket installation and extinguisher seating.</p>
+<ul>
+<li>Selected wall location with clear access and visibility</li>
+<li>Anchored bracket into framing or appropriate fasteners</li>
+<li>Seated extinguisher and verified quick-release pull</li>
+<li>Left before-and-after proof for the homeowner</li>
+</ul>
+<p>Related: <a href="/Services/general-repairs">general repairs</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+""",
+    "blind-repair-before-after": """
+<h3>Window blind repair</h3>
+<p>Bent slats, failed tilt mechanisms, and loose headrails make blinds unusable long before the whole window needs replacement. This gallery documents hardware correction and smooth operation restored.</p>
+<ul>
+<li>Assessed headrail, ladder strings, and slat condition</li>
+<li>Replaced or adjusted failed components where possible</li>
+<li>Leveled the headrail and tested raise/lower/title</li>
+<li>Left before-and-after proof for the owner</li>
+</ul>
+<p>Related: <a href="/Services/doors-windows">doors and windows</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+""",
+    "kitchen-sink-leak-before-after": """
+<h3>Under-sink leak repair</h3>
+<p>Slow drips under a kitchen sink often trace to loose supply fittings, failed basket gaskets, or P-trap joints. This before-and-after gallery shows leak isolation, correction, and a dry cabinet base.</p>
+<ul>
+<li>Traced moisture to the active joint or fitting</li>
+<li>Tightened or replaced failed connections as scoped</li>
+<li>Flow-tested faucet and disposal lines</li>
+<li>Dried the cabinet base and left proof photos</li>
+</ul>
+<p>Related: <a href="/Services/plumbing-services">plumbing services</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+""",
+    "door-wedge-before-after": """
+<h3>Door wedge installation</h3>
+<p>Doors that swing closed on their own — or gaps that let latches miss — are often fixed with a properly sized door wedge or floor alignment adjustment. This gallery documents the before-and-after result.</p>
+<ul>
+<li>Measured gap and door swing at rest</li>
+<li>Installed wedge or shim solution appropriate to flooring</li>
+<li>Verified latch alignment and smooth close</li>
+<li>Left before-and-after proof for the homeowner</li>
+</ul>
+<p>Related: <a href="/Services/general-repairs">general repairs</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
 """,
 }
 

@@ -568,6 +568,76 @@
       "path": "gallery/fence-repair-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/fence-repair-before-after",
       "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "door-lock-repair-before-after",
+      "path": "gallery/door-lock-repair-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/door-lock-repair-before-after",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "kitchen-sink-leak-before-after",
+      "path": "gallery/kitchen-sink-leak-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/kitchen-sink-leak-before-after",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "curtain-rod-mount-before-after",
+      "path": "gallery/curtain-rod-mount-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/curtain-rod-mount-before-after",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "blind-repair-before-after",
+      "path": "gallery/blind-repair-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/blind-repair-before-after",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "carpet-removal-before-after",
+      "path": "gallery/carpet-removal-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/carpet-removal-before-after",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "fire-extinguisher-mount-before-after",
+      "path": "gallery/fire-extinguisher-mount-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/fire-extinguisher-mount-before-after",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "stair-tape-repair-before-after",
+      "path": "gallery/stair-tape-repair-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/stair-tape-repair-before-after",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "smoke-alarm-battery-swap-before-after",
+      "path": "gallery/smoke-alarm-battery-swap-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/smoke-alarm-battery-swap-before-after",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "filter-change-before-after",
+      "path": "gallery/filter-change-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/filter-change-before-after",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "door-wedge-before-after",
+      "path": "gallery/door-wedge-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/door-wedge-before-after",
+      "priority": "0.62"
     }
   ]
 }

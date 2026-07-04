@@ -92,6 +92,26 @@
       ]
     },
     {
+      "id": "carpet-removal-before-after",
+      "title": "Carpet removal \u2014 before & after",
+      "description": "Worn carpet and pad removed to expose subfloor ready for the next finish.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-carpet-removal.webp",
+          "filename": "before-after-carpet-removal.webp",
+          "step": 1,
+          "title": "Carpet removal before and after",
+          "seoAlt": "Carpet removal before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after proof from carpet and pad removal completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "bathroom-remodel-cobblestone",
       "title": "Complete bathroom remodel",
       "description": "Full bathroom remodel with cobblestone flooring laid in the space and tile installed in the shower.",
@@ -112,6 +132,86 @@
       ]
     },
     {
+      "id": "curtain-rod-mount-before-after",
+      "title": "Curtain rod mount \u2014 before & after",
+      "description": "Loose rod brackets remounted into solid framing for a secure, level hang.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-curtain-rod-mount.webp",
+          "filename": "before-after-curtain-rod-mount.webp",
+          "step": 1,
+          "title": "Curtain rod mount before and after",
+          "seoAlt": "Curtain rod mount before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after proof from a curtain rod bracket remount completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
+      "id": "door-lock-repair-before-after",
+      "title": "Door lock repair \u2014 before & after",
+      "description": "Misaligned lock hardware adjusted and resecured so the door latches smoothly again.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-door-lock.webp",
+          "filename": "before-after-door-lock.webp",
+          "step": 1,
+          "title": "Door lock repair before and after",
+          "seoAlt": "Door lock repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after proof from a door lock alignment and hardware repair in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
+      "id": "door-wedge-before-after",
+      "title": "Door wedge install \u2014 before & after",
+      "description": "Floor gap corrected with a secure door wedge so the door stays put.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-door-wedge.webp",
+          "filename": "before-after-door-wedge.webp",
+          "step": 1,
+          "title": "Door wedge install before and after",
+          "seoAlt": "Door wedge install before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after proof from a door wedge installation completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
+      "id": "fire-extinguisher-mount-before-after",
+      "title": "Fire extinguisher mount \u2014 before & after",
+      "description": "Extinguisher bracket installed at the correct height with secure fasteners.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-fire-extinguisher-mount.webp",
+          "filename": "before-after-fire-extinguisher-mount.webp",
+          "step": 1,
+          "title": "Fire extinguisher mount before and after",
+          "seoAlt": "Fire extinguisher mount before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after proof from a fire extinguisher wall mount installation in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "garbage-disposal-install",
       "title": "Garbage disposal installation",
       "description": "Under-sink disposal work completed as part of a practical plumbing repair call.",
@@ -128,6 +228,26 @@
           "seoAlt": "Garbage disposal installed \u2014 handyman project photo in Pinellas County FL by Knight Group",
           "description": "Completed disposal installation and hookup under the kitchen sink.",
           "beforeAfter": false
+        }
+      ]
+    },
+    {
+      "id": "filter-change-before-after",
+      "title": "HVAC filter change \u2014 before & after",
+      "description": "Clogged return filter swapped for clean media and proper airflow.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-filter-change.webp",
+          "filename": "before-after-filter-change.webp",
+          "step": 1,
+          "title": "HVAC filter change before and after",
+          "seoAlt": "HVAC filter change before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after proof from an HVAC return filter change completed in a Pinellas County home.",
+          "beforeAfter": true
         }
       ]
     },
@@ -197,6 +317,26 @@
           "seoAlt": "Refinished room \u2014 later stage \u2014 handyman project photo in Pinellas County FL by Knight Group",
           "description": "Second view from the same room refinish, showing later progress or another angle of the finished space.",
           "beforeAfter": false
+        }
+      ]
+    },
+    {
+      "id": "kitchen-sink-leak-before-after",
+      "title": "Kitchen sink leak repair \u2014 before & after",
+      "description": "Leak traced under the sink, fittings tightened or replaced, and area dried.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-kitchen-sink-leak.webp",
+          "filename": "before-after-kitchen-sink-leak.webp",
+          "step": 1,
+          "title": "Kitchen sink leak repair before and after",
+          "seoAlt": "Kitchen sink leak repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after proof from an under-sink leak repair completed in a Pinellas County home.",
+          "beforeAfter": true
         }
       ]
     },
@@ -319,6 +459,46 @@
       ]
     },
     {
+      "id": "smoke-alarm-battery-swap-before-after",
+      "title": "Smoke alarm battery swap \u2014 before & after",
+      "description": "Expired batteries replaced and units tested so alarms respond correctly.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-smoke-alarm-battery-swap.webp",
+          "filename": "before-after-smoke-alarm-battery-swap.webp",
+          "step": 1,
+          "title": "Smoke alarm battery swap before and after",
+          "seoAlt": "Smoke alarm battery swap before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after proof from smoke alarm battery replacement and testing in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
+      "id": "stair-tape-repair-before-after",
+      "title": "Stair safety tape repair \u2014 before & after",
+      "description": "Peeling anti-slip tape removed and replaced on stair treads for safer footing.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-stair-tape-repair.webp",
+          "filename": "before-after-stair-tape-repair.webp",
+          "step": 1,
+          "title": "Stair safety tape repair before and after",
+          "seoAlt": "Stair safety tape repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after proof from stair tread anti-slip tape replacement in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "stove-burner-repair-before-after",
       "title": "Stove burner repair \u2014 before & after",
       "description": "Broken stove burner restored to safe, working condition.",
@@ -384,6 +564,26 @@
           "seoAlt": "New tub drain installed \u2014 handyman project photo in Pinellas County FL by Knight Group",
           "description": "Completed tub drain replacement after the new assembly was installed.",
           "beforeAfter": false
+        }
+      ]
+    },
+    {
+      "id": "blind-repair-before-after",
+      "title": "Window blind repair \u2014 before & after",
+      "description": "Damaged slats and headrail hardware corrected so blinds operate smoothly.",
+      "category": "carpentry",
+      "serviceLink": "/Services/doors-windows",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-blind-repair.webp",
+          "filename": "before-after-blind-repair.webp",
+          "step": 1,
+          "title": "Window blind repair before and after",
+          "seoAlt": "Window blind repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after proof from a window blind repair completed in a Pinellas County home.",
+          "beforeAfter": true
         }
       ]
     },
@@ -677,6 +877,20 @@
       "groupDescription": "Dirty return vent and clogged filter replaced with clean filtration and a secure grille."
     },
     {
+      "src": "GalleryImages/before-after-blind-repair.webp",
+      "filename": "before-after-blind-repair.webp",
+      "group": "blind-repair-before-after",
+      "step": 1,
+      "title": "Window blind repair before and after",
+      "seoAlt": "Window blind repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after proof from a window blind repair completed in a Pinellas County home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/doors-windows",
+      "beforeAfter": true,
+      "groupTitle": "Window blind repair \u2014 before & after",
+      "groupDescription": "Damaged slats and headrail hardware corrected so blinds operate smoothly."
+    },
+    {
       "src": "GalleryImages/before-after-broken-blinds-replaced.webp",
       "filename": "before-after-broken-blinds-replaced.webp",
       "group": "blinds-replacement-before-after",
@@ -705,6 +919,62 @@
       "groupDescription": "Broken stove burner restored to safe, working condition."
     },
     {
+      "src": "GalleryImages/before-after-carpet-removal.webp",
+      "filename": "before-after-carpet-removal.webp",
+      "group": "carpet-removal-before-after",
+      "step": 1,
+      "title": "Carpet removal before and after",
+      "seoAlt": "Carpet removal before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after proof from carpet and pad removal completed in a Pinellas County home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Carpet removal \u2014 before & after",
+      "groupDescription": "Worn carpet and pad removed to expose subfloor ready for the next finish."
+    },
+    {
+      "src": "GalleryImages/before-after-curtain-rod-mount.webp",
+      "filename": "before-after-curtain-rod-mount.webp",
+      "group": "curtain-rod-mount-before-after",
+      "step": 1,
+      "title": "Curtain rod mount before and after",
+      "seoAlt": "Curtain rod mount before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after proof from a curtain rod bracket remount completed in a Pinellas County home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Curtain rod mount \u2014 before & after",
+      "groupDescription": "Loose rod brackets remounted into solid framing for a secure, level hang."
+    },
+    {
+      "src": "GalleryImages/before-after-door-lock.webp",
+      "filename": "before-after-door-lock.webp",
+      "group": "door-lock-repair-before-after",
+      "step": 1,
+      "title": "Door lock repair before and after",
+      "seoAlt": "Door lock repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after proof from a door lock alignment and hardware repair in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Door lock repair \u2014 before & after",
+      "groupDescription": "Misaligned lock hardware adjusted and resecured so the door latches smoothly again."
+    },
+    {
+      "src": "GalleryImages/before-after-door-wedge.webp",
+      "filename": "before-after-door-wedge.webp",
+      "group": "door-wedge-before-after",
+      "step": 1,
+      "title": "Door wedge install before and after",
+      "seoAlt": "Door wedge install before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after proof from a door wedge installation completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Door wedge install \u2014 before & after",
+      "groupDescription": "Floor gap corrected with a secure door wedge so the door stays put."
+    },
+    {
       "src": "GalleryImages/before-after-fence-repair.webp",
       "filename": "before-after-fence-repair.webp",
       "group": "fence-repair-before-after",
@@ -717,6 +987,34 @@
       "beforeAfter": true,
       "groupTitle": "Wooden fence repair \u2014 before & after",
       "groupDescription": "Collapsed and leaning fence sections rebuilt with new posts, bracing, and secure pickets."
+    },
+    {
+      "src": "GalleryImages/before-after-filter-change.webp",
+      "filename": "before-after-filter-change.webp",
+      "group": "filter-change-before-after",
+      "step": 1,
+      "title": "HVAC filter change before and after",
+      "seoAlt": "HVAC filter change before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after proof from an HVAC return filter change completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "HVAC filter change \u2014 before & after",
+      "groupDescription": "Clogged return filter swapped for clean media and proper airflow."
+    },
+    {
+      "src": "GalleryImages/before-after-fire-extinguisher-mount.webp",
+      "filename": "before-after-fire-extinguisher-mount.webp",
+      "group": "fire-extinguisher-mount-before-after",
+      "step": 1,
+      "title": "Fire extinguisher mount before and after",
+      "seoAlt": "Fire extinguisher mount before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after proof from a fire extinguisher wall mount installation in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Fire extinguisher mount \u2014 before & after",
+      "groupDescription": "Extinguisher bracket installed at the correct height with secure fasteners."
     },
     {
       "src": "GalleryImages/before-after-fridge-wouldnt-close-does-now.webp",
@@ -745,6 +1043,48 @@
       "beforeAfter": true,
       "groupTitle": "Hornet nest removal and wall sealed \u2014 before & after",
       "groupDescription": "Hornet nest removed from the wall and the opening sealed and finished cleanly."
+    },
+    {
+      "src": "GalleryImages/before-after-kitchen-sink-leak.webp",
+      "filename": "before-after-kitchen-sink-leak.webp",
+      "group": "kitchen-sink-leak-before-after",
+      "step": 1,
+      "title": "Kitchen sink leak repair before and after",
+      "seoAlt": "Kitchen sink leak repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after proof from an under-sink leak repair completed in a Pinellas County home.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "groupTitle": "Kitchen sink leak repair \u2014 before & after",
+      "groupDescription": "Leak traced under the sink, fittings tightened or replaced, and area dried."
+    },
+    {
+      "src": "GalleryImages/before-after-smoke-alarm-battery-swap.webp",
+      "filename": "before-after-smoke-alarm-battery-swap.webp",
+      "group": "smoke-alarm-battery-swap-before-after",
+      "step": 1,
+      "title": "Smoke alarm battery swap before and after",
+      "seoAlt": "Smoke alarm battery swap before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after proof from smoke alarm battery replacement and testing in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Smoke alarm battery swap \u2014 before & after",
+      "groupDescription": "Expired batteries replaced and units tested so alarms respond correctly."
+    },
+    {
+      "src": "GalleryImages/before-after-stair-tape-repair.webp",
+      "filename": "before-after-stair-tape-repair.webp",
+      "group": "stair-tape-repair-before-after",
+      "step": 1,
+      "title": "Stair safety tape repair before and after",
+      "seoAlt": "Stair safety tape repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after proof from stair tread anti-slip tape replacement in a Pinellas County home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Stair safety tape repair \u2014 before & after",
+      "groupDescription": "Peeling anti-slip tape removed and replaced on stair treads for safer footing."
     },
     {
       "src": "GalleryImages/fixing_floor2.webp",
