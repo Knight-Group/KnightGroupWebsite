@@ -39,6 +39,10 @@ GALLERY_META: dict[str, str] = {
         "AC return vent and filter change before and after in Pinellas County — dirty grille and clogged "
         "filter replaced by Knight Group Handyman. Registered and insured. Free written estimate."
     ),
+    "fence-repair-before-after": (
+        "Wooden fence repair before and after in Pinellas County — collapsed and leaning sections rebuilt "
+        "with new posts and bracing by Knight Group Handyman. Registered and insured. Free estimate."
+    ),
 }
 
 GALLERY_BODY: dict[str, str] = {
@@ -162,6 +166,20 @@ GALLERY_BODY: dict[str, str] = {
 <h3>When to book vent and filter work</h3>
 <p>Visible dust buildup, weak return airflow, or a loose floor/ceiling grille are signs to schedule service before coil strain or noise issues start. Photos of the vent and any label on the old filter help us bring the right media on the first trip.</p>
 <p>Related: <a href="/Services/general-repairs">general repairs</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+""",
+    "fence-repair-before-after": """
+<h3>Backyard wooden fence repair</h3>
+<p>This before-and-after gallery documents a typical Pinellas County fence call: a collapsed privacy panel, leaning posts, and loose pickets corrected so the yard line is secure again. Knight Group staged bracing, replaced failed posts, and reattached rails and pickets within handyman carpentry scope.</p>
+<ul>
+<li>Removed fallen panel sections and assessed post rot at the base</li>
+<li>Set new posts with proper depth and plumb alignment</li>
+<li>Rebuilt rails and reattached pickets for a straight, stable run</li>
+<li>Matched existing board spacing where possible for a consistent look</li>
+<li>Left the yard broom-clean with before-and-after proof for the owner</li>
+</ul>
+<h3>When to book fence repair</h3>
+<p>Leaning panels, loose gate hardware, or a full section on the ground are safety and security issues — especially with pets or pool access. Photos of the full fence line and any gate latches help us quote parts and labor on the first visit.</p>
+<p>Related: <a href="/Services/carpentry-framing">carpentry and framing</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
 """,
 }
 

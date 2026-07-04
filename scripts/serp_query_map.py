@@ -124,6 +124,7 @@ def build_full_page_query_map() -> dict[str, list[str]]:
         "floor-subfloor-repair",
         "tub-drain-replacement",
         "ac-vent-filter-change-before-after",
+        "fence-repair-before-after",
     ]
     for gallery_slug in gallery_detail_pages:
         mapping[f"gallery/{gallery_slug}.html"] = [gallery_slug.replace("-", " "), "handyman projects pinellas county"]

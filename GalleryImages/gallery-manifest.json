@@ -415,6 +415,26 @@
           "beforeAfter": false
         }
       ]
+    },
+    {
+      "id": "fence-repair-before-after",
+      "title": "Wooden fence repair \u2014 before & after",
+      "description": "Collapsed and leaning fence sections rebuilt with new posts, bracing, and secure pickets.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-fence-repair.webp",
+          "filename": "before-after-fence-repair.webp",
+          "step": 1,
+          "title": "Wooden fence repair before and after",
+          "seoAlt": "Wooden fence repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after proof from a backyard wooden fence repair completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
     }
   ],
   "images": [
@@ -683,6 +703,20 @@
       "beforeAfter": true,
       "groupTitle": "Stove burner repair \u2014 before & after",
       "groupDescription": "Broken stove burner restored to safe, working condition."
+    },
+    {
+      "src": "GalleryImages/before-after-fence-repair.webp",
+      "filename": "before-after-fence-repair.webp",
+      "group": "fence-repair-before-after",
+      "step": 1,
+      "title": "Wooden fence repair before and after",
+      "seoAlt": "Wooden fence repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after proof from a backyard wooden fence repair completed in a Pinellas County home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Wooden fence repair \u2014 before & after",
+      "groupDescription": "Collapsed and leaning fence sections rebuilt with new posts, bracing, and secure pickets."
     },
     {
       "src": "GalleryImages/before-after-fridge-wouldnt-close-does-now.webp",

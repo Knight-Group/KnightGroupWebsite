@@ -32,6 +32,7 @@ GROUP_ORDER = [
     "room-restoration-before-after",
     "stove-burner-repair-before-after",
     "ac-vent-filter-change-before-after",
+    "fence-repair-before-after",
     "blinds-replacement-before-after",
     "hornet-removal-wall-sealed-before-after",
     "bathroom-tub-window-remodel",

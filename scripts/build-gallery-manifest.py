@@ -217,6 +217,17 @@ IMAGE_CATALOG: dict[str, dict] = {
         "description": "Before-and-after proof from an AC return vent and filter change completed in a Pinellas County home.",
         "beforeAfter": True,
     },
+    "before-after-fence-repair.webp": {
+        "group": "fence-repair-before-after",
+        "groupTitle": "Wooden fence repair — before & after",
+        "groupDescription": "Collapsed and leaning fence sections rebuilt with new posts, bracing, and secure pickets.",
+        "category": "carpentry",
+        "serviceLink": "/Services/carpentry-framing",
+        "step": 1,
+        "title": "Wooden fence repair before and after",
+        "description": "Before-and-after proof from a backyard wooden fence repair completed in a Pinellas County home.",
+        "beforeAfter": True,
+    },
     "before-after-broken-blinds-replaced.webp": {
         "group": "blinds-replacement-before-after",
         "groupTitle": "Broken blinds replacement — before & after",

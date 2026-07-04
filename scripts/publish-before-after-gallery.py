@@ -114,7 +114,7 @@ def main() -> int:
     KG_MEDIA_LIB.mkdir(parents=True, exist_ok=True)
     dest = KG_MEDIA_LIB / social.name
     shutil.copy2(social, dest)
-    print(f"Copied social JPG → {dest}")
+    print(f"Copied social JPG -> {dest}")
 
     if not webp_640.is_file():
         run([sys.executable, str(OPTIMIZE_IMAGES)])

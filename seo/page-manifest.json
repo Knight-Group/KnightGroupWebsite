@@ -561,6 +561,13 @@
       "path": "gallery/ac-vent-filter-change-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/ac-vent-filter-change-before-after",
       "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "fence-repair-before-after",
+      "path": "gallery/fence-repair-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/fence-repair-before-after",
+      "priority": "0.62"
     }
   ]
 }
