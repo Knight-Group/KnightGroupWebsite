@@ -1,0 +1,149 @@
+{
+  "siteUrl": "sc-domain:knightgroup.com",
+  "inspectedAt": "2026-07-08T13:01:55.237Z",
+  "results": [
+    {
+      "url": "https://www.knightgroup.com/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "userCanonical": "https://www.knightgroup.com/",
+      "googleCanonical": "https://www.knightgroup.com/",
+      "lastCrawlTime": "2026-07-05T03:45:03Z"
+    },
+    {
+      "url": "https://www.knightgroup.com/about",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "userCanonical": "https://www.knightgroup.com/about",
+      "googleCanonical": "https://www.knightgroup.com/about",
+      "lastCrawlTime": "2026-07-02T01:13:52Z"
+    },
+    {
+      "url": "https://www.knightgroup.com/services",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "userCanonical": null,
+      "googleCanonical": null,
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://www.knightgroup.com/pricing",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "userCanonical": "https://www.knightgroup.com/pricing",
+      "googleCanonical": "https://www.knightgroup.com/pricing",
+      "lastCrawlTime": "2026-06-27T23:52:05Z"
+    },
+    {
+      "url": "https://www.knightgroup.com/booking",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "userCanonical": "https://www.knightgroup.com/booking",
+      "googleCanonical": "https://www.knightgroup.com/booking",
+      "lastCrawlTime": "2026-06-27T17:05:21Z"
+    },
+    {
+      "url": "https://www.knightgroup.com/contact",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "userCanonical": "https://www.knightgroup.com/contact",
+      "googleCanonical": "https://www.knightgroup.com/contact",
+      "lastCrawlTime": "2026-05-30T23:34:29Z"
+    },
+    {
+      "url": "https://www.knightgroup.com/service-areas",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "userCanonical": "https://www.knightgroup.com/service-areas",
+      "googleCanonical": "https://www.knightgroup.com/service-areas",
+      "lastCrawlTime": "2026-06-27T17:54:42Z"
+    },
+    {
+      "url": "https://www.knightgroup.com/galleries",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "userCanonical": "https://www.knightgroup.com/galleries",
+      "googleCanonical": "https://www.knightgroup.com/galleries",
+      "lastCrawlTime": "2026-06-10T21:24:05Z"
+    },
+    {
+      "url": "https://www.knightgroup.com/pinellas-handyman",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "userCanonical": "https://www.knightgroup.com/pinellas-handyman",
+      "googleCanonical": "https://www.knightgroup.com/pinellas-handyman",
+      "lastCrawlTime": "2026-07-02T01:14:52Z"
+    },
+    {
+      "url": "https://www.knightgroup.com/clearwater-handyman",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "userCanonical": "https://www.knightgroup.com/clearwater-handyman",
+      "googleCanonical": "https://www.knightgroup.com/clearwater-handyman",
+      "lastCrawlTime": "2026-06-28T12:26:24Z"
+    },
+    {
+      "url": "https://www.knightgroup.com/Services/handyman",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "userCanonical": "https://www.knightgroup.com/Services/handyman",
+      "googleCanonical": "https://www.knightgroup.com/Services/handyman",
+      "lastCrawlTime": "2026-06-15T18:02:20Z"
+    },
+    {
+      "url": "https://www.knightgroup.com/Services/plumbing-services",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "userCanonical": "https://www.knightgroup.com/Services/plumbing-services",
+      "googleCanonical": "https://www.knightgroup.com/Services/plumbing-services",
+      "lastCrawlTime": "2026-05-13T13:43:09Z"
+    },
+    {
+      "url": "https://www.knightgroup.com/Services/general-repairs",
+      "verdict": "NEUTRAL",
+      "coverageState": "Crawled - currently not indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "userCanonical": "https://www.knightgroup.com/Services/general-repairs",
+      "googleCanonical": "https://www.knightgroup.com/Services/general-repairs",
+      "lastCrawlTime": "2026-02-22T07:49:24Z"
+    }
+  ]
+}

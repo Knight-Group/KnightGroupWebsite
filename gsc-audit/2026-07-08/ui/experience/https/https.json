@@ -1,0 +1,35 @@
+{
+  "id": "https",
+  "label": "HTTPS",
+  "group": "experience",
+  "url": "https://search.google.com/search-console/https?resource_id=sc-domain%3Aknightgroup.com",
+  "outputDir": "experience\\https",
+  "title": "HTTPS",
+  "exportedAt": "2026-07-08T13:04:58.981Z",
+  "download": {
+    "file": "https.zip",
+    "path": "E:\\GSC Auditer\\runs\\2026-07-08\\knightgroup.com\\ui\\experience\\https\\https.zip",
+    "suggestedFilename": "knightgroup.com-Https-2026-07-08.zip",
+    "format": "zip"
+  },
+  "summaryLines": [
+    "\n\t\n4",
+    "\n4",
+    "lightbulb_2\nInsights",
+    "lightbulb_2",
+    "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+    "link_2\nLinks",
+    "link_2",
+    "Last update: 7/7/26",
+    "\nNon-HTTPS URLs\n0\nNo critical issues\n",
+    "\nNon-HTTPS URLs\n0\nNo critical issues",
+    "\nHTTPS URLs\n49\n",
+    "\nHTTPS URLs\n49",
+    "Good job!\nNo issues detected in the last 90 days",
+    "No issues detected in the last 90 days",
+    "Google AccountNicholas Knightnickknight488@gmail.com",
+    "nickknight488@gmail.com"
+  ],
+  "tableRowCount": 0,
+  "tables": []
+}

@@ -1690,8 +1690,201 @@
         "WebSite"
       ],
       "issues": []
+    },
+    {
+      "page": "gallery/ac-vent-filter-change-before-after.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactPoint",
+        "CreativeWork",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "gallery/fence-repair-before-after.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactPoint",
+        "CreativeWork",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "gallery/door-lock-repair-before-after.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactPoint",
+        "CreativeWork",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "ImageObject",
+        "Organization",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "gallery/kitchen-sink-leak-before-after.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactPoint",
+        "CreativeWork",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "gallery/curtain-rod-mount-before-after.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactPoint",
+        "CreativeWork",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "gallery/blind-repair-before-after.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactPoint",
+        "CreativeWork",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "gallery/carpet-removal-before-after.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactPoint",
+        "CreativeWork",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "gallery/fire-extinguisher-mount-before-after.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactPoint",
+        "CreativeWork",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "gallery/stair-tape-repair-before-after.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactPoint",
+        "CreativeWork",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "gallery/smoke-alarm-battery-swap-before-after.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactPoint",
+        "CreativeWork",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "gallery/filter-change-before-after.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactPoint",
+        "CreativeWork",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
+    },
+    {
+      "page": "gallery/door-wedge-before-after.html",
+      "status": "ok",
+      "types": [
+        "BreadcrumbList",
+        "ContactPoint",
+        "CreativeWork",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Organization",
+        "Person",
+        "WebPage",
+        "WebSite"
+      ],
+      "issues": []
     }
   ],
   "failed": 0,
-  "checked": 101
+  "checked": 113
 }

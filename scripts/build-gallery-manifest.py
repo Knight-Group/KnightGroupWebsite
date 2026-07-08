@@ -12,6 +12,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 GALLERY_DIR = ROOT / "GalleryImages"
 MANIFEST_PATH = GALLERY_DIR / "gallery-manifest.json"
+DISPATCH_CATALOG_PATH = ROOT / "scripts" / "dispatch-gallery-catalog.json"
 SOURCE_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tif", ".tiff"}
 WEBP_QUALITY = 85
 
@@ -513,8 +514,25 @@ def build_groups(images: list[dict]) -> list[dict]:
     return groups
 
 
+def merge_dispatch_catalog() -> int:
+    if not DISPATCH_CATALOG_PATH.is_file():
+        return 0
+    dispatch = json.loads(DISPATCH_CATALOG_PATH.read_text(encoding="utf-8"))
+    added = 0
+    for filename, meta in dispatch.items():
+        if filename not in IMAGE_CATALOG:
+            IMAGE_CATALOG[filename] = meta
+            added += 1
+        else:
+            IMAGE_CATALOG[filename].update(meta)
+    return added
+
+
 def main() -> None:
     converted = convert_sources()
+    dispatch_added = merge_dispatch_catalog()
+    if dispatch_added:
+        print(f"Merged {dispatch_added} dispatch gallery catalog entr(y/ies).")
 
     images = []
     for filename in sorted(IMAGE_CATALOG.keys()):

@@ -1,0 +1,4134 @@
+{
+  "siteUrl": "sc-domain:knightgroup.com",
+  "period": {
+    "startDate": "2026-04-09",
+    "endDate": "2026-07-05",
+    "days": 90
+  },
+  "totals": {
+    "clicks": 15,
+    "impressions": 5124,
+    "ctr": 0.002927400468384075,
+    "position": 23.33704137392662
+  },
+  "query": [
+    {
+      "query": "knight group",
+      "clicks": 1,
+      "impressions": 11,
+      "ctr": 0.09090909090909091,
+      "position": 10.818181818181818
+    },
+    {
+      "query": "property maintenance handyman",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 11
+    },
+    {
+      "query": "24 hour handyman service near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "query": "24 hour water damage groveland florida",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 89
+    },
+    {
+      "query": "aluminum door repair",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 22
+    },
+    {
+      "query": "anytime handyman",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "attic door installation near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 70
+    },
+    {
+      "query": "bathroom contractors in safety harbor",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 49
+    },
+    {
+      "query": "bathroom faucet repair near me",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 63.333333333333336
+    },
+    {
+      "query": "bay area handyman service call minimum 150 200",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "query": "best 3pl companies pinellas county",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 82.75
+    },
+    {
+      "query": "best handyman near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "query": "best handyman services in citrus park, fl",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 6.142857142857143
+    },
+    {
+      "query": "best handyman services near me",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "query": "best home renovation company near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 91
+    },
+    {
+      "query": "cabinet repair near me",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 18
+    },
+    {
+      "query": "carpenter handyman near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "query": "carpentry handyman",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "carpentry repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 34
+    },
+    {
+      "query": "carpentry services",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "carpentry services near me",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 12.666666666666666
+    },
+    {
+      "query": "carrollwood wiring",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 60.5
+    },
+    {
+      "query": "cary toilet repair",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 69.6
+    },
+    {
+      "query": "caulking company near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "query": "caulking service",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "query": "ceiling water damage repair groveland florida",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 71.83333333333333
+    },
+    {
+      "query": "cheap handyman in my area",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "cheap handyman near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "query": "cheap handyman services near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "query": "clearwater fl contractors",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "query": "clearwater fl handyman",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 21.833333333333332
+    },
+    {
+      "query": "clearwater handyman",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 18.6
+    },
+    {
+      "query": "clearwater handyman services",
+      "clicks": 0,
+      "impressions": 39,
+      "ctr": 0,
+      "position": 24.41025641025641
+    },
+    {
+      "query": "clogged drain repair clearwater",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 67
+    },
+    {
+      "query": "clogged kitchen sink clearwater fl",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 49
+    },
+    {
+      "query": "closet door repair near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "query": "commercial glass door repair near me",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "query": "commercial handyman near me",
+      "clicks": 0,
+      "impressions": 74,
+      "ctr": 0,
+      "position": 29.324324324324323
+    },
+    {
+      "query": "commercial handyman services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 73
+    },
+    {
+      "query": "commercial painting safety harbor",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 41
+    },
+    {
+      "query": "construction company pinellas county",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 77.66666666666667
+    },
+    {
+      "query": "contact jasmine estates",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 15.333333333333334
+    },
+    {
+      "query": "contractor elfers",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 46
+    },
+    {
+      "query": "contractor jasmine estate",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 40
+    },
+    {
+      "query": "contractor jasmine estates",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 20.333333333333332
+    },
+    {
+      "query": "contractor new port richey",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 65.5
+    },
+    {
+      "query": "contractors in pinellas county",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "query": "cost of a handyman per hour",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "query": "deck repair near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 19
+    },
+    {
+      "query": "dg handyman services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "dog door installation pinellas county",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 28.77777777777778
+    },
+    {
+      "query": "door and window repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "query": "door and window repair services",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 63.666666666666664
+    },
+    {
+      "query": "door carpenter",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "query": "door fixer",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "query": "door hanging service",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "door installation near me",
+      "clicks": 0,
+      "impressions": 47,
+      "ctr": 0,
+      "position": 21.93617021276596
+    },
+    {
+      "query": "door installers near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "query": "door repair",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 11.333333333333334
+    },
+    {
+      "query": "door repair near me",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 23.25
+    },
+    {
+      "query": "door repairman",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "doors and windows installation service",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 40
+    },
+    {
+      "query": "doors and windows repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "doors and windows repair near me",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 58.5
+    },
+    {
+      "query": "drain cleaning in land o' lakes",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "drain cleaning land o lakes",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 20.5
+    },
+    {
+      "query": "drain cleaning near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "query": "drain cleaning oldsmar",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "query": "drain cleaning temple terrace fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "query": "drain repair clearwater",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 48
+    },
+    {
+      "query": "drapery hardware installation pinellas",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 23
+    },
+    {
+      "query": "drywall repair citrus park",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "query": "drywall repair dunedin",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 28
+    },
+    {
+      "query": "drywall repair near me",
+      "clicks": 0,
+      "impressions": 31,
+      "ctr": 0,
+      "position": 25.93548387096774
+    },
+    {
+      "query": "drywall repair northdale",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "query": "drywall repair oldsmar",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 21
+    },
+    {
+      "query": "drywall repair town n country",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 15
+    },
+    {
+      "query": "drywall repair westchase",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 14.5
+    },
+    {
+      "query": "dunkirk handyman",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 92
+    },
+    {
+      "query": "edgewood toilet repair",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 93.42857142857143
+    },
+    {
+      "query": "emergency plumber in land o' lakes",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 57
+    },
+    {
+      "query": "exterior handyman near me",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 54.6
+    },
+    {
+      "query": "exterior remodeling company oldsmar",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 48
+    },
+    {
+      "query": "exterior remodeling company safety harbor",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "query": "exterior remodeling services oldsmar",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 45
+    },
+    {
+      "query": "exterior remodeling services westchase",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 32
+    },
+    {
+      "query": "ez2fix llc pricing for handyman services",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 3.8
+    },
+    {
+      "query": "faucet and leak repair st petersburg fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 70
+    },
+    {
+      "query": "faucet repair and installation near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 34
+    },
+    {
+      "query": "faucet repair clearwater",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 29
+    },
+    {
+      "query": "faucet repair near me",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "faucet repair st petersburg fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 53
+    },
+    {
+      "query": "find a handyman near me",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 27.666666666666668
+    },
+    {
+      "query": "find handyman near me",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 8.615384615384615
+    },
+    {
+      "query": "fix-a-flat near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 13
+    },
+    {
+      "query": "fixes doayods",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "flat rate handyman",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 59.2
+    },
+    {
+      "query": "flat rate handyman treasure valley",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 32
+    },
+    {
+      "query": "flat repairing contractors in clearwater",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 70.8
+    },
+    {
+      "query": "fort myers toilet repair",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 76.4
+    },
+    {
+      "query": "free handyman estimate fort myers",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 35.8
+    },
+    {
+      "query": "free plumbing estimate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "gaithersburg md handyman service",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 67.27272727272727
+    },
+    {
+      "query": "galvanized pipe replacement in land o' lakes",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 60
+    },
+    {
+      "query": "garage services in land o’ lakes",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 41
+    },
+    {
+      "query": "general contractor pinellas county",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 67.5
+    },
+    {
+      "query": "general contractors pinellas county",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 65.2
+    },
+    {
+      "query": "general handyman",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 16.5
+    },
+    {
+      "query": "general handyman and repair work",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 18.5
+    },
+    {
+      "query": "general handyman services",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 23.666666666666668
+    },
+    {
+      "query": "general handyman services list",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "query": "general home repairs",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "general home repairs lakeland fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 40
+    },
+    {
+      "query": "general maintenance contractor",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "query": "general repairs",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 62
+    },
+    {
+      "query": "glass door installation near me",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 41.44444444444444
+    },
+    {
+      "query": "goodyear toilet repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 56
+    },
+    {
+      "query": "google handyman services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "query": "gutter handyman near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 16
+    },
+    {
+      "query": "gutter joint sealing st. petersburg fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 78
+    },
+    {
+      "query": "gutter sealing and caulking brandon fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 99
+    },
+    {
+      "query": "gutter sealing and caulking st. petersburg fl",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 75.5
+    },
+    {
+      "query": "handman clearwater",
+      "clicks": 0,
+      "impressions": 35,
+      "ctr": 0,
+      "position": 25.37142857142857
+    },
+    {
+      "query": "handy man",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "query": "handy man by the hour",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4.5
+    },
+    {
+      "query": "handy man close to me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "query": "handy man company",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 16.5
+    },
+    {
+      "query": "handy man jobs near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "handy man near me",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "query": "handyman",
+      "clicks": 0,
+      "impressions": 86,
+      "ctr": 0,
+      "position": 11.174418604651162
+    },
+    {
+      "query": "handyman by the hour",
+      "clicks": 0,
+      "impressions": 45,
+      "ctr": 0,
+      "position": 20.377777777777776
+    },
+    {
+      "query": "handyman carrollwood",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 17
+    },
+    {
+      "query": "handyman citrus county",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 28
+    },
+    {
+      "query": "handyman citrus park",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5.333333333333333
+    },
+    {
+      "query": "handyman clearwater",
+      "clicks": 0,
+      "impressions": 142,
+      "ctr": 0,
+      "position": 22.091549295774648
+    },
+    {
+      "query": "handyman clearwater clearwater",
+      "clicks": 0,
+      "impressions": 46,
+      "ctr": 0,
+      "position": 21.391304347826086
+    },
+    {
+      "query": "handyman clearwater fl",
+      "clicks": 0,
+      "impressions": 41,
+      "ctr": 0,
+      "position": 25.853658536585368
+    },
+    {
+      "query": "handyman clearwater florida",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 26.333333333333332
+    },
+    {
+      "query": "handyman company",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 17.125
+    },
+    {
+      "query": "handyman company largo fl",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 25
+    },
+    {
+      "query": "handyman company pinellas",
+      "clicks": 0,
+      "impressions": 99,
+      "ctr": 0,
+      "position": 26.08080808080808
+    },
+    {
+      "query": "handyman company tampa",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 50
+    },
+    {
+      "query": "handyman contractor",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 21
+    },
+    {
+      "query": "handyman contractors",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 22.75
+    },
+    {
+      "query": "handyman cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "query": "handyman door repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "query": "handyman door replacement",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "query": "handyman drywall repair near me",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 12.5
+    },
+    {
+      "query": "handyman dunedin",
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 20.181818181818183
+    },
+    {
+      "query": "handyman east lake",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 19.428571428571427
+    },
+    {
+      "query": "handyman electrician near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "handyman florida clearwater",
+      "clicks": 0,
+      "impressions": 49,
+      "ctr": 0,
+      "position": 27.73469387755102
+    },
+    {
+      "query": "handyman gaithersburg",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "query": "handyman groups",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 15.25
+    },
+    {
+      "query": "handyman gutter repair near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "query": "handyman handymen",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 60
+    },
+    {
+      "query": "handyman hillsborough county",
+      "clicks": 0,
+      "impressions": 29,
+      "ctr": 0,
+      "position": 9.275862068965518
+    },
+    {
+      "query": "handyman hourly rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "query": "handyman hourly rate near me",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 40
+    },
+    {
+      "query": "handyman hourly rates near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "query": "handyman in clearwater florida",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 24.416666666666668
+    },
+    {
+      "query": "handyman in tampa",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 46.666666666666664
+    },
+    {
+      "query": "handyman in tampa bay, fl",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 46
+    },
+    {
+      "query": "handyman in tampa fl",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 54
+    },
+    {
+      "query": "handyman in tampa florida",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 61.833333333333336
+    },
+    {
+      "query": "handyman in tampa, fl",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 56.9
+    },
+    {
+      "query": "handyman in the area",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "query": "handyman jobs",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 25
+    },
+    {
+      "query": "handyman land o lakes",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 16.77777777777778
+    },
+    {
+      "query": "handyman land o lakes fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 18
+    },
+    {
+      "query": "handyman largo",
+      "clicks": 0,
+      "impressions": 36,
+      "ctr": 0,
+      "position": 19.555555555555557
+    },
+    {
+      "query": "handyman largo fl",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 28.75
+    },
+    {
+      "query": "handyman maitland fl",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 53.5
+    },
+    {
+      "query": "handyman near me",
+      "clicks": 0,
+      "impressions": 449,
+      "ctr": 0,
+      "position": 18.465478841870823
+    },
+    {
+      "query": "handyman near me for small jobs",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "query": "handyman near me llc",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "handyman near me prices",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 21
+    },
+    {
+      "query": "handyman near me small jobs",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "query": "handyman near me within 5 mi",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "handyman needed near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "handyman new port richey",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 19.333333333333332
+    },
+    {
+      "query": "handyman new port richey fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 25
+    },
+    {
+      "query": "handyman new tampa",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 21.263157894736842
+    },
+    {
+      "query": "handyman north tampa",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 59
+    },
+    {
+      "query": "handyman northdale",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "query": "handyman oldsmar",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 18.285714285714285
+    },
+    {
+      "query": "handyman packages",
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 63.875
+    },
+    {
+      "query": "handyman palm harbor",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 22.666666666666668
+    },
+    {
+      "query": "handyman palm harbor fl",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 22.846153846153847
+    },
+    {
+      "query": "handyman pasco county",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11.5
+    },
+    {
+      "query": "handyman pinellas county",
+      "clicks": 0,
+      "impressions": 28,
+      "ctr": 0,
+      "position": 16.464285714285715
+    },
+    {
+      "query": "handyman pinellas county fl",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 10.666666666666666
+    },
+    {
+      "query": "handyman pinellas park",
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 17.23076923076923
+    },
+    {
+      "query": "handyman plumber clearwater fl",
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0,
+      "position": 16.264705882352942
+    },
+    {
+      "query": "handyman plumber near me",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5.5
+    },
+    {
+      "query": "handyman plumbers near me prices",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "query": "handyman plumbing prices",
+      "clicks": 0,
+      "impressions": 51,
+      "ctr": 0,
+      "position": 13.941176470588236
+    },
+    {
+      "query": "handyman price list",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "query": "handyman prices",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "query": "handyman prices near me",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 15.5
+    },
+    {
+      "query": "handyman prices per hour",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4.5
+    },
+    {
+      "query": "handyman rates near me",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 21.066666666666666
+    },
+    {
+      "query": "handyman roofing repair near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "handyman service",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 15
+    },
+    {
+      "query": "handyman services",
+      "clicks": 0,
+      "impressions": 61,
+      "ctr": 0,
+      "position": 11.245901639344263
+    },
+    {
+      "query": "handyman services carrollwood",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 16.5
+    },
+    {
+      "query": "handyman services clearwater",
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 25.233333333333334
+    },
+    {
+      "query": "handyman services clearwater fl",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 22.08
+    },
+    {
+      "query": "handyman services cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "handyman services east tampa",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "query": "handyman services estimate",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 24.333333333333332
+    },
+    {
+      "query": "handyman services gaithersburg",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 63.21739130434783
+    },
+    {
+      "query": "handyman services hillsborough county",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 14.75
+    },
+    {
+      "query": "handyman services in tampa florida",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 43.09090909090909
+    },
+    {
+      "query": "handyman services lake magdalene",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 19.5
+    },
+    {
+      "query": "handyman services land o lakes",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 18.5
+    },
+    {
+      "query": "handyman services near me",
+      "clicks": 0,
+      "impressions": 50,
+      "ctr": 0,
+      "position": 11.78
+    },
+    {
+      "query": "handyman services st pete",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 46
+    },
+    {
+      "query": "handyman services st petersburg",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 42
+    },
+    {
+      "query": "handyman services st petersburg fl",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 27
+    },
+    {
+      "query": "handyman services tampa",
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 49.833333333333336
+    },
+    {
+      "query": "handyman services tampa fl",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 50
+    },
+    {
+      "query": "handyman services tampa florida",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 32
+    },
+    {
+      "query": "handyman st pete fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 37
+    },
+    {
+      "query": "handyman st petersburg",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 41
+    },
+    {
+      "query": "handyman tampa",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 57.6875
+    },
+    {
+      "query": "handyman tampa bay",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 56.4
+    },
+    {
+      "query": "handyman tampa fl",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 42.8
+    },
+    {
+      "query": "handyman tampa florida",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 57.714285714285715
+    },
+    {
+      "query": "handyman tarpon springs",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 18.25
+    },
+    {
+      "query": "handyman temple terrace",
+      "clicks": 0,
+      "impressions": 39,
+      "ctr": 0,
+      "position": 9.102564102564102
+    },
+    {
+      "query": "handyman town n country",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 13.428571428571429
+    },
+    {
+      "query": "handyman wesley chapel",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 49
+    },
+    {
+      "query": "handyman westchase",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 12.8
+    },
+    {
+      "query": "handyman wildwood fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 54
+    },
+    {
+      "query": "handyman winter springs fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "handyman/handywoman/handyperson near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "handymen near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "query": "hardscape installation in land o' lakes, fl",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 75
+    },
+    {
+      "query": "highly rated handyman near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "hire a handyman",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 19
+    },
+    {
+      "query": "holiday handyman services",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 23.5
+    },
+    {
+      "query": "home depot handyman cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "home improvement services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "query": "home improvement services near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "query": "home knight roofing",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 8.8
+    },
+    {
+      "query": "home maintenance services tampa",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 55.5
+    },
+    {
+      "query": "home office renovation temple terrace fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "query": "home remodeling company safety harbor",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "query": "home remodeling company westchase",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 33.333333333333336
+    },
+    {
+      "query": "home remodeling contractors westchase",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 30
+    },
+    {
+      "query": "home remodeling elfers, fl",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 35.6
+    },
+    {
+      "query": "home remodeling in temple terrace",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 55
+    },
+    {
+      "query": "home remodeling jasmine estates, fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "home remodeling town 'n' country, fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 54
+    },
+    {
+      "query": "home remodeling westchase",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 23
+    },
+    {
+      "query": "home renovation services near me",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 13.25
+    },
+    {
+      "query": "home renovations companies near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "home repair",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 12.04
+    },
+    {
+      "query": "home repair clearwater",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 13
+    },
+    {
+      "query": "home repair company",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "query": "home repair company near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 18
+    },
+    {
+      "query": "home repair handyman clearwater fl",
+      "clicks": 0,
+      "impressions": 49,
+      "ctr": 0,
+      "position": 25.040816326530614
+    },
+    {
+      "query": "home repair handyman near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "home repair largo",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 25.727272727272727
+    },
+    {
+      "query": "home repair near me",
+      "clicks": 0,
+      "impressions": 190,
+      "ctr": 0,
+      "position": 16.55263157894737
+    },
+    {
+      "query": "home repair services",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 8.619047619047619
+    },
+    {
+      "query": "home repair services clearwater fl",
+      "clicks": 0,
+      "impressions": 67,
+      "ctr": 0,
+      "position": 29.761194029850746
+    },
+    {
+      "query": "home repair services florida",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 39
+    },
+    {
+      "query": "home repair services near me",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 11.777777777777779
+    },
+    {
+      "query": "home repairs and maintenance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 45
+    },
+    {
+      "query": "home repairs st petersburg fl",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 44.5
+    },
+    {
+      "query": "hoover handyman services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "hourly handyman",
+      "clicks": 0,
+      "impressions": 38,
+      "ctr": 0,
+      "position": 29.342105263157894
+    },
+    {
+      "query": "hourly handyman rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "query": "hourly rate for handyman near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "house repair near me",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 19.304347826086957
+    },
+    {
+      "query": "how much do handyman charge per hour",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "query": "how much do handymen charge per hour",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "query": "how much to charge as a handyman",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 60
+    },
+    {
+      "query": "how much to charge for handyman work",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 30
+    },
+    {
+      "query": "how to find a handyman in my area",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "query": "hurricane damage repair groveland florida",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 72.66666666666667
+    },
+    {
+      "query": "hurricane screen repair pinellas county",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 35.333333333333336
+    },
+    {
+      "query": "immediate toilet repair help casselberry",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 94.66666666666667
+    },
+    {
+      "query": "independent handyman near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "query": "industrial door repair company near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 46
+    },
+    {
+      "query": "install oldsmar fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "insured handyman",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 68.75
+    },
+    {
+      "query": "interior door repair near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "query": "jasmine estates services",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 13.333333333333334
+    },
+    {
+      "query": "kitchen countertop repair near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 38
+    },
+    {
+      "query": "kitchen countertop repair services near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 32
+    },
+    {
+      "query": "kitchen faucet repair service near me",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 80.5
+    },
+    {
+      "query": "kitchen plumbing repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 30
+    },
+    {
+      "query": "kitchen remodel town n country",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "query": "kitchen sink repair",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "query": "knight brothers construction",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "query": "knight construction",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "query": "knight enterprises florida",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 36
+    },
+    {
+      "query": "knight roofing",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "query": "knight services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 62
+    },
+    {
+      "query": "knightgroup",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 30
+    },
+    {
+      "query": "knights",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "query": "knights handyman services",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4.5
+    },
+    {
+      "query": "knights home repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "query": "knights plumbing",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 4.333333333333334
+    },
+    {
+      "query": "lanai door replacement pinellas county",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 13.0625
+    },
+    {
+      "query": "land o lakes handyman",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 18.5
+    },
+    {
+      "query": "land o lakes handyman services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 19
+    },
+    {
+      "query": "land o lakes home repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 17
+    },
+    {
+      "query": "land o' lakes drain cleaning",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "land o' lakes drain field repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "query": "land o' lakes drain inspection",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 95
+    },
+    {
+      "query": "land o' lakes drain services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 33
+    },
+    {
+      "query": "land o' lakes duct replacement",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "query": "land o' lakes electrical services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 48
+    },
+    {
+      "query": "land o' lakes emergency plumbers",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 56
+    },
+    {
+      "query": "land o' lakes emergency plumbing",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 43
+    },
+    {
+      "query": "land o' lakes emergency septic service",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 56
+    },
+    {
+      "query": "land o' lakes lighting repair",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 36
+    },
+    {
+      "query": "land o' lakes plumber near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "query": "land o' lakes plumbing services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 52
+    },
+    {
+      "query": "land o' lakes septic repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 53
+    },
+    {
+      "query": "land o' lakes septic tank repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 75
+    },
+    {
+      "query": "largo md handyman service",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 69
+    },
+    {
+      "query": "licensed bathroom contractors near me",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 62.833333333333336
+    },
+    {
+      "query": "licensed handyman near me",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "query": "list of handyman services offered",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 22
+    },
+    {
+      "query": "local handyman",
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 16.53333333333333
+    },
+    {
+      "query": "local handyman company",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "query": "local handyman land o lakes",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "query": "local handyman near me",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "query": "local handyman services",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 14.333333333333334
+    },
+    {
+      "query": "local handyman tampa",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 46
+    },
+    {
+      "query": "looking for a handyman near me",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 18.5
+    },
+    {
+      "query": "maintenance contractor",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "query": "maintenance services port richey fl",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 30.5
+    },
+    {
+      "query": "maitland handyman",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 58.5
+    },
+    {
+      "query": "moving contractors egypt lake leto",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 26.5
+    },
+    {
+      "query": "moving contractors elfers",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 17
+    },
+    {
+      "query": "nate's handyman service",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 52
+    },
+    {
+      "query": "need handyman for small job",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "query": "neighborhood handyman",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "query": "networking for trades professionals (cleaners, landscapers, plumbers, etc.)",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 83.2
+    },
+    {
+      "query": "new tampa door frame repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 50
+    },
+    {
+      "query": "new tampa handyman",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 22
+    },
+    {
+      "query": "new tampa handyman services",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 13.6
+    },
+    {
+      "query": "odd jobs near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "office remodel temple terrace fl",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 62.333333333333336
+    },
+    {
+      "query": "oldsmar drywall repair",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 27.666666666666668
+    },
+    {
+      "query": "oldsmar home remodeling",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "query": "outlet installation and repairs new port richey fl",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "painter jasmine estates",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11.5
+    },
+    {
+      "query": "palm harbor drain field repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "query": "patio door repair harbor bluffs",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 38
+    },
+    {
+      "query": "paver repairs in land o' lakes, fl",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 93.5
+    },
+    {
+      "query": "penny tile installation near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 99
+    },
+    {
+      "query": "pinellas county contractors",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 69.5
+    },
+    {
+      "query": "plumber elfers",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 50.666666666666664
+    },
+    {
+      "query": "plumber elfers fl",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 38.2
+    },
+    {
+      "query": "plumber in land o' lakes",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 61.5
+    },
+    {
+      "query": "plumber knights fl",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 36
+    },
+    {
+      "query": "plumber near me",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 16.5
+    },
+    {
+      "query": "plumber westchase fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 73
+    },
+    {
+      "query": "plumbing in town 'n' country",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 52.5
+    },
+    {
+      "query": "plumbing payment plans pinellas",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 80.28571428571429
+    },
+    {
+      "query": "plumbing repair oldsmar fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 51
+    },
+    {
+      "query": "plumbing repair westchase fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "query": "plumbing services in land o' lakes",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "query": "plumbing services in town 'n' country",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 34
+    },
+    {
+      "query": "plumbing town n country fl",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 30.5
+    },
+    {
+      "query": "pocket door repair near me",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 10.25
+    },
+    {
+      "query": "porcelain countertops repair near me",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 54.666666666666664
+    },
+    {
+      "query": "porch repair near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "query": "professional services free estimate your city st",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "reasonable handyman near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "remodeling in temple terrace",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 55
+    },
+    {
+      "query": "repair companies near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "query": "repair company near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "query": "repair new port richey fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 44
+    },
+    {
+      "query": "repair rotted door frame near me",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 29.5
+    },
+    {
+      "query": "repair services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 17
+    },
+    {
+      "query": "repair temple terrace fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 48
+    },
+    {
+      "query": "repairs",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "repairs clearwater fl",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 40
+    },
+    {
+      "query": "repairs gulfport fl",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 57
+    },
+    {
+      "query": "repairs largo fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 44
+    },
+    {
+      "query": "repairs new port richey fl",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 41.5
+    },
+    {
+      "query": "residential construction company pinellas county",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 78
+    },
+    {
+      "query": "residential rod iron light repair hernando county fl",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 83.33333333333333
+    },
+    {
+      "query": "roof repair cost in greater pinellas county",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 60.5
+    },
+    {
+      "query": "roof repair town 'n' country fl",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 47.333333333333336
+    },
+    {
+      "query": "roof repair town n country fl",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 44.5
+    },
+    {
+      "query": "roofing repair town n country fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 52
+    },
+    {
+      "query": "rooter service in town 'n' country",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 31.5
+    },
+    {
+      "query": "safety harbor kitchen renovation contractors",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 40.666666666666664
+    },
+    {
+      "query": "saint petersburg handyman",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 48
+    },
+    {
+      "query": "screen door kit replacement pinellas",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 13
+    },
+    {
+      "query": "self employed handyman near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "query": "sink repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 27
+    },
+    {
+      "query": "sink repair clearwater",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 11.4
+    },
+    {
+      "query": "sink repair tampa",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 75
+    },
+    {
+      "query": "sink replacement st petersburg",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "query": "site repairs",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "query": "sliding door repair near me",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 7.25
+    },
+    {
+      "query": "small bathroom contractors near me",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 61.625
+    },
+    {
+      "query": "small home repair",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 26.4
+    },
+    {
+      "query": "small job carpenter near me",
+      "clicks": 0,
+      "impressions": 93,
+      "ctr": 0,
+      "position": 28.93548387096774
+    },
+    {
+      "query": "small jobs handyman",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "st pete handyman",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 43
+    },
+    {
+      "query": "storm damage repair pinellas park",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 25
+    },
+    {
+      "query": "storm door installation near me",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 44.666666666666664
+    },
+    {
+      "query": "storm door installers near me",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 35.666666666666664
+    },
+    {
+      "query": "storm door repair",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 18
+    },
+    {
+      "query": "storm door window repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "query": "storm doors installers near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "storm screen repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "query": "tampa fl handyman",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 43
+    },
+    {
+      "query": "tampa handyman",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 44.8
+    },
+    {
+      "query": "tampa handyman services",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 41
+    },
+    {
+      "query": "tarpon springs handyman",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 15
+    },
+    {
+      "query": "tarpon springs handyman services",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 16.5
+    },
+    {
+      "query": "termite damage repair northdale",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 23
+    },
+    {
+      "query": "termite damage repair westchase",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 28
+    },
+    {
+      "query": "the handyman company",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 14.333333333333334
+    },
+    {
+      "query": "the handyman company remodeling tampa",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 78.5
+    },
+    {
+      "query": "the handyman company tampa fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "query": "toilet flange repair near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 99
+    },
+    {
+      "query": "toilet repair",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 35.333333333333336
+    },
+    {
+      "query": "toilet repair clearwater fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "query": "toilet repair crescent city fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 51
+    },
+    {
+      "query": "toilet repair new port richey",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "query": "toilet repair service near me",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 54
+    },
+    {
+      "query": "toilet repair st petersburg fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 58
+    },
+    {
+      "query": "toilet repair tampa",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "top rated handyman near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 14
+    },
+    {
+      "query": "town 'and' country plumbers",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 17
+    },
+    {
+      "query": "town 'n' country duct repair",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 38
+    },
+    {
+      "query": "town 'n' country panel repair",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "query": "town 'n' country plumber",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 29
+    },
+    {
+      "query": "town 'n' country plumbing",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 23
+    },
+    {
+      "query": "town n country fl plumbing",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 40
+    },
+    {
+      "query": "towns+carpentry",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "trade services near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "query": "undermount sink replacement near me",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 49.5
+    },
+    {
+      "query": "vincent handyman services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 37
+    },
+    {
+      "query": "vincent knight",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 14
+    },
+    {
+      "query": "wallpaper installation westchase",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 67
+    },
+    {
+      "query": "water damage company near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 42
+    },
+    {
+      "query": "water damage repair groveland florida",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 63.857142857142854
+    },
+    {
+      "query": "water damage repair near me",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 27
+    },
+    {
+      "query": "website design for handyman clearwater",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 99
+    },
+    {
+      "query": "website design for handyman st. petersburg",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "website for handyman clearwater",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 43.125
+    },
+    {
+      "query": "website for handyman st. petersburg",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 36.5
+    },
+    {
+      "query": "westchase plumbers",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 29
+    },
+    {
+      "query": "window and door installation services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 39
+    },
+    {
+      "query": "window and door repair near me",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "window frame repair near me",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "query": "window installation companies near me",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 46.3125
+    },
+    {
+      "query": "window repair handyman",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "query": "wiring repair in land o' lakes",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 55
+    },
+    {
+      "query": "wood rot repair in clearwater",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 57
+    },
+    {
+      "query": "wood rot repair in hillsborough county",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 76
+    },
+    {
+      "query": "wood rot repair in pinellas county",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 53.333333333333336
+    },
+    {
+      "query": "wood rot repair near me",
+      "clicks": 0,
+      "impressions": 69,
+      "ctr": 0,
+      "position": 18.18840579710145
+    },
+    {
+      "query": "wood rot repair northdale",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 18.5
+    },
+    {
+      "query": "wood rot repair town n country",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 20.5
+    },
+    {
+      "query": "wrought iron light repair land o' lakes fl",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 55.75
+    }
+  ],
+  "page": [
+    {
+      "page": "https://www.knightgroup.com/",
+      "clicks": 5,
+      "impressions": 327,
+      "ctr": 0.01529051987767584,
+      "position": 18.529051987767584
+    },
+    {
+      "page": "https://www.knightgroup.com/pricing",
+      "clicks": 4,
+      "impressions": 961,
+      "ctr": 0.004162330905306972,
+      "position": 17.741935483870968
+    },
+    {
+      "page": "https://www.knightgroup.com/about",
+      "clicks": 2,
+      "impressions": 52,
+      "ctr": 0.038461538461538464,
+      "position": 15.384615384615385
+    },
+    {
+      "page": "https://www.knightgroup.com/Services/handyman",
+      "clicks": 1,
+      "impressions": 563,
+      "ctr": 0.0017761989342806395,
+      "position": 23.394316163410302
+    },
+    {
+      "page": "https://www.knightgroup.com/Services/home-repair-near-me",
+      "clicks": 1,
+      "impressions": 156,
+      "ctr": 0.00641025641025641,
+      "position": 31.21153846153846
+    },
+    {
+      "page": "https://www.knightgroup.com/pasco-handyman",
+      "clicks": 1,
+      "impressions": 82,
+      "ctr": 0.012195121951219513,
+      "position": 24.524390243902438
+    },
+    {
+      "page": "https://www.knightgroup.com/pricing-handyman-by-the-hour",
+      "clicks": 1,
+      "impressions": 5,
+      "ctr": 0.2,
+      "position": 6.8
+    },
+    {
+      "page": "https://www.knightgroup.com/PolicyPages/returnpolicy",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://www.knightgroup.com/PolicyPages/terms",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3.5
+    },
+    {
+      "page": "https://www.knightgroup.com/Services/caulking-repair",
+      "clicks": 0,
+      "impressions": 57,
+      "ctr": 0,
+      "position": 42.49122807017544
+    },
+    {
+      "page": "https://www.knightgroup.com/Services/door-frame-repair",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 50.714285714285715
+    },
+    {
+      "page": "https://www.knightgroup.com/Services/doors-windows",
+      "clicks": 0,
+      "impressions": 265,
+      "ctr": 0,
+      "position": 26.21509433962264
+    },
+    {
+      "page": "https://www.knightgroup.com/Services/emergency-services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://www.knightgroup.com/Services/plumbing-services",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 14
+    },
+    {
+      "page": "https://www.knightgroup.com/Services/shutoff-valve-repair",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 7.333333333333333
+    },
+    {
+      "page": "https://www.knightgroup.com/Services/sink-faucet-repair",
+      "clicks": 0,
+      "impressions": 69,
+      "ctr": 0,
+      "position": 40.69565217391305
+    },
+    {
+      "page": "https://www.knightgroup.com/Services/sliding-door-repair",
+      "clicks": 0,
+      "impressions": 38,
+      "ctr": 0,
+      "position": 37
+    },
+    {
+      "page": "https://www.knightgroup.com/Services/toilet-repair",
+      "clicks": 0,
+      "impressions": 42,
+      "ctr": 0,
+      "position": 64.28571428571428
+    },
+    {
+      "page": "https://www.knightgroup.com/Services/water-damage-repair",
+      "clicks": 0,
+      "impressions": 36,
+      "ctr": 0,
+      "position": 56.388888888888886
+    },
+    {
+      "page": "https://www.knightgroup.com/beacon-square-handyman",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 9.4
+    },
+    {
+      "page": "https://www.knightgroup.com/booking",
+      "clicks": 0,
+      "impressions": 66,
+      "ctr": 0,
+      "position": 18.954545454545453
+    },
+    {
+      "page": "https://www.knightgroup.com/carrollwood-handyman",
+      "clicks": 0,
+      "impressions": 61,
+      "ctr": 0,
+      "position": 19.34426229508197
+    },
+    {
+      "page": "https://www.knightgroup.com/citrus-park-handyman",
+      "clicks": 0,
+      "impressions": 45,
+      "ctr": 0,
+      "position": 16.355555555555554
+    },
+    {
+      "page": "https://www.knightgroup.com/clearwater-handyman",
+      "clicks": 0,
+      "impressions": 670,
+      "ctr": 0,
+      "position": 20.108955223880596
+    },
+    {
+      "page": "https://www.knightgroup.com/contact",
+      "clicks": 0,
+      "impressions": 40,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "page": "https://www.knightgroup.com/dunedin-handyman",
+      "clicks": 0,
+      "impressions": 87,
+      "ctr": 0,
+      "position": 15.28735632183908
+    },
+    {
+      "page": "https://www.knightgroup.com/egypt-lake-leto-handyman",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 15.4
+    },
+    {
+      "page": "https://www.knightgroup.com/elfers-handyman",
+      "clicks": 0,
+      "impressions": 66,
+      "ctr": 0,
+      "position": 22.03030303030303
+    },
+    {
+      "page": "https://www.knightgroup.com/galleries",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 17
+    },
+    {
+      "page": "https://www.knightgroup.com/handyman-scope-florida",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 61.285714285714285
+    },
+    {
+      "page": "https://www.knightgroup.com/holiday-handyman",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 15.210526315789474
+    },
+    {
+      "page": "https://www.knightgroup.com/hurricane-repair-handyman-pinellas",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 45.63636363636363
+    },
+    {
+      "page": "https://www.knightgroup.com/jasmine-estates-handyman",
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 22
+    },
+    {
+      "page": "https://www.knightgroup.com/land-o-lakes-handyman",
+      "clicks": 0,
+      "impressions": 128,
+      "ctr": 0,
+      "position": 27.796875
+    },
+    {
+      "page": "https://www.knightgroup.com/largo-handyman",
+      "clicks": 0,
+      "impressions": 145,
+      "ctr": 0,
+      "position": 22.393103448275863
+    },
+    {
+      "page": "https://www.knightgroup.com/new-port-richey-handyman",
+      "clicks": 0,
+      "impressions": 71,
+      "ctr": 0,
+      "position": 13.732394366197184
+    },
+    {
+      "page": "https://www.knightgroup.com/northdale-handyman",
+      "clicks": 0,
+      "impressions": 29,
+      "ctr": 0,
+      "position": 23.24137931034483
+    },
+    {
+      "page": "https://www.knightgroup.com/oldsmar-handyman",
+      "clicks": 0,
+      "impressions": 51,
+      "ctr": 0,
+      "position": 20.49019607843137
+    },
+    {
+      "page": "https://www.knightgroup.com/palm-harbor-handyman",
+      "clicks": 0,
+      "impressions": 76,
+      "ctr": 0,
+      "position": 23.039473684210527
+    },
+    {
+      "page": "https://www.knightgroup.com/pinellas-handyman",
+      "clicks": 0,
+      "impressions": 205,
+      "ctr": 0,
+      "position": 28.409756097560976
+    },
+    {
+      "page": "https://www.knightgroup.com/plumber-background-handyman",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 48.5
+    },
+    {
+      "page": "https://www.knightgroup.com/port-richey-handyman",
+      "clicks": 0,
+      "impressions": 61,
+      "ctr": 0,
+      "position": 22.83606557377049
+    },
+    {
+      "page": "https://www.knightgroup.com/pricing-flat-rate-handyman",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://www.knightgroup.com/pricing-no-2-hour-minimum",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "page": "https://www.knightgroup.com/pricing-plumbing-repair-prices",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "page": "https://www.knightgroup.com/rental-turnover-handyman",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 27.333333333333332
+    },
+    {
+      "page": "https://www.knightgroup.com/safety-harbor-handyman",
+      "clicks": 0,
+      "impressions": 45,
+      "ctr": 0,
+      "position": 16.733333333333334
+    },
+    {
+      "page": "https://www.knightgroup.com/safety-harbor-home-repair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://www.knightgroup.com/seminole-handyman",
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 11.291666666666666
+    },
+    {
+      "page": "https://www.knightgroup.com/service-areas",
+      "clicks": 0,
+      "impressions": 67,
+      "ctr": 0,
+      "position": 54.52238805970149
+    },
+    {
+      "page": "https://www.knightgroup.com/services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://www.knightgroup.com/seven-springs-handyman",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "page": "https://www.knightgroup.com/st-petersburg-handyman",
+      "clicks": 0,
+      "impressions": 85,
+      "ctr": 0,
+      "position": 42.37647058823529
+    },
+    {
+      "page": "https://www.knightgroup.com/tampa-handyman",
+      "clicks": 0,
+      "impressions": 349,
+      "ctr": 0,
+      "position": 38.01146131805157
+    },
+    {
+      "page": "https://www.knightgroup.com/tarpon-springs-handyman",
+      "clicks": 0,
+      "impressions": 99,
+      "ctr": 0,
+      "position": 9.131313131313131
+    },
+    {
+      "page": "https://www.knightgroup.com/temple-terrace-handyman",
+      "clicks": 0,
+      "impressions": 95,
+      "ctr": 0,
+      "position": 16.38947368421053
+    },
+    {
+      "page": "https://www.knightgroup.com/town-n-country-handyman",
+      "clicks": 0,
+      "impressions": 122,
+      "ctr": 0,
+      "position": 27.598360655737704
+    },
+    {
+      "page": "https://www.knightgroup.com/trinity-handyman",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 12.75
+    },
+    {
+      "page": "https://www.knightgroup.com/westchase-handyman",
+      "clicks": 0,
+      "impressions": 33,
+      "ctr": 0,
+      "position": 29.939393939393938
+    }
+  ],
+  "country": [
+    {
+      "country": "usa",
+      "clicks": 14,
+      "impressions": 5020,
+      "ctr": 0.0027888446215139444,
+      "position": 23.50577689243028
+    },
+    {
+      "country": "ind",
+      "clicks": 1,
+      "impressions": 5,
+      "ctr": 0.2,
+      "position": 24.4
+    },
+    {
+      "country": "arg",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "country": "bel",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4.5
+    },
+    {
+      "country": "bgd",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 30
+    },
+    {
+      "country": "bgr",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "country": "bra",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 15.529411764705882
+    },
+    {
+      "country": "can",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 12.9
+    },
+    {
+      "country": "che",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "country": "chn",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "country": "cpv",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "country": "cyp",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "country": "deu",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 15.666666666666666
+    },
+    {
+      "country": "esp",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 13.142857142857142
+    },
+    {
+      "country": "fra",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 8.166666666666668
+    },
+    {
+      "country": "gbr",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 30
+    },
+    {
+      "country": "gtm",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "country": "irl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "country": "irn",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "country": "ita",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 11.25
+    },
+    {
+      "country": "kor",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "country": "lbn",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "country": "lux",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "country": "lva",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 14
+    },
+    {
+      "country": "mar",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 50
+    },
+    {
+      "country": "mex",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 13
+    },
+    {
+      "country": "nld",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "country": "nzl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "country": "pak",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "country": "pol",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 29
+    },
+    {
+      "country": "prt",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "country": "rus",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 22.666666666666668
+    },
+    {
+      "country": "sau",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "country": "sur",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 19
+    },
+    {
+      "country": "tha",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 22.666666666666668
+    },
+    {
+      "country": "tun",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "country": "ukr",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "country": "ury",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "country": "vnm",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "country": "zaf",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 14.5
+    }
+  ],
+  "device": [
+    {
+      "device": "DESKTOP",
+      "clicks": 7,
+      "impressions": 3086,
+      "ctr": 0.002268308489954634,
+      "position": 27.12346079066753
+    },
+    {
+      "device": "MOBILE",
+      "clicks": 7,
+      "impressions": 2016,
+      "ctr": 0.003472222222222222,
+      "position": 17.694444444444443
+    },
+    {
+      "device": "TABLET",
+      "clicks": 1,
+      "impressions": 22,
+      "ctr": 0.045454545454545456,
+      "position": 9.272727272727273
+    }
+  ],
+  "date": [
+    {
+      "date": "2026-06-21",
+      "clicks": 1,
+      "impressions": 226,
+      "ctr": 0.004424778761061947,
+      "position": 23.29646017699115
+    },
+    {
+      "date": "2026-06-22",
+      "clicks": 2,
+      "impressions": 130,
+      "ctr": 0.015384615384615385,
+      "position": 15.476923076923077
+    },
+    {
+      "date": "2026-06-23",
+      "clicks": 0,
+      "impressions": 153,
+      "ctr": 0,
+      "position": 18.895424836601308
+    },
+    {
+      "date": "2026-06-24",
+      "clicks": 2,
+      "impressions": 105,
+      "ctr": 0.01904761904761905,
+      "position": 19.39047619047619
+    },
+    {
+      "date": "2026-06-25",
+      "clicks": 0,
+      "impressions": 157,
+      "ctr": 0,
+      "position": 17.24203821656051
+    },
+    {
+      "date": "2026-06-26",
+      "clicks": 1,
+      "impressions": 120,
+      "ctr": 0.008333333333333333,
+      "position": 21.133333333333333
+    },
+    {
+      "date": "2026-06-27",
+      "clicks": 1,
+      "impressions": 107,
+      "ctr": 0.009345794392523364,
+      "position": 20.186915887850468
+    },
+    {
+      "date": "2026-06-28",
+      "clicks": 0,
+      "impressions": 330,
+      "ctr": 0,
+      "position": 22.33939393939394
+    },
+    {
+      "date": "2026-06-29",
+      "clicks": 0,
+      "impressions": 235,
+      "ctr": 0,
+      "position": 19.719148936170214
+    },
+    {
+      "date": "2026-06-30",
+      "clicks": 1,
+      "impressions": 492,
+      "ctr": 0.0020325203252032522,
+      "position": 24.132113821138212
+    },
+    {
+      "date": "2026-07-01",
+      "clicks": 0,
+      "impressions": 440,
+      "ctr": 0,
+      "position": 25.920454545454547
+    },
+    {
+      "date": "2026-07-02",
+      "clicks": 3,
+      "impressions": 714,
+      "ctr": 0.004201680672268907,
+      "position": 31.12464985994398
+    },
+    {
+      "date": "2026-07-03",
+      "clicks": 0,
+      "impressions": 500,
+      "ctr": 0,
+      "position": 19.836
+    },
+    {
+      "date": "2026-07-04",
+      "clicks": 3,
+      "impressions": 422,
+      "ctr": 0.0071090047393364926,
+      "position": 23.98341232227488
+    },
+    {
+      "date": "2026-07-05",
+      "clicks": 1,
+      "impressions": 993,
+      "ctr": 0.0010070493454179255,
+      "position": 22.584088620342396
+    }
+  ],
+  "searchAppearance": []
+}

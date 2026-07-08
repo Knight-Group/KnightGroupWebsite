@@ -1,0 +1,52 @@
+{
+  "id": "sitemaps",
+  "label": "Sitemaps",
+  "group": "indexing",
+  "url": "https://search.google.com/search-console/sitemaps?resource_id=sc-domain%3Aknightgroup.com",
+  "outputDir": "indexing\\sitemaps",
+  "title": "Sitemaps",
+  "exportedAt": "2026-07-08T13:04:25.748Z",
+  "download": null,
+  "summaryLines": [
+    "Google AccountNicholas Knightnickknight488@gmail.com",
+    "nickknight488@gmail.com",
+    "\n\t\n4",
+    "\n4",
+    "lightbulb_2\nInsights",
+    "lightbulb_2",
+    "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+    "link_2\nLinks",
+    "link_2",
+    "Jul 1, 2026",
+    "100",
+    "250",
+    "500",
+    "1-1 of 1\n",
+    "1-1 of 1"
+  ],
+  "tableRowCount": 2,
+  "tables": [
+    [
+      [
+        "Sitemap",
+        "Type",
+        "Submitted",
+        "Last read",
+        "Status",
+        "Discovered pages",
+        "Discovered videos",
+        ""
+      ],
+      [
+        "https://www.knightgroup.com/sitemap.xml",
+        "Sitemap",
+        "Jul 1, 2026",
+        "Jul 1, 2026",
+        "Success",
+        "98",
+        "0",
+        ""
+      ]
+    ]
+  ]
+}

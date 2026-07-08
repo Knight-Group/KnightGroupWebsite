@@ -1,0 +1,59 @@
+{
+  "id": "removals",
+  "label": "Removals",
+  "group": "indexing",
+  "url": "https://search.google.com/search-console/removals?resource_id=sc-domain%3Aknightgroup.com",
+  "outputDir": "indexing\\removals",
+  "title": "Removals",
+  "exportedAt": "2026-07-08T13:04:29.665Z",
+  "download": null,
+  "summaryLines": [
+    "Google AccountNicholas Knightnickknight488@gmail.com",
+    "nickknight488@gmail.com",
+    "\n\t\n4",
+    "\n4",
+    "lightbulb_2\nInsights",
+    "lightbulb_2",
+    "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+    "link_2\nLinks",
+    "link_2",
+    "History of all temporary page removal requests for this property, filed by any owner or full user in the past 6 months, using this report. Learn more",
+    "The type of request:\n\n\n  Temporarily remove URL: Remove the page from Google Search Results for about 6 months after request approval date.\n  Clear cached URL: Clear the cached version of the page and the snippet until the next time the page is indexed.",
+    "No requests submitted in the last 6 months",
+    "Submitted requestsHistory of all submitted requests for this property in the past 6 months using the public Remove Outdated Content tool.\n",
+    "Submitted requestsHistory of all submitted requests for this property in the past 6 months using the public Remove Outdated Content tool.",
+    "History of all submitted requests for this property in the past 6 months using the public Remove Outdated Content tool.",
+    "History of all submitted requests for this property in the past 6 months using the public Remove Outdated Content tool.",
+    "Submitted requestsGoogle users reported these URLs as containing explicit content in the past 6 months. If you feel that a URL marked Filtered was incorrectly labeled as explicit, you can file an appeal.\nURLRequestedStatusNo requests submitted in the last 6 months",
+    "Submitted requestsGoogle users reported these URLs as containing explicit content in the past 6 months. If you feel that a URL marked Filtered was incorrectly labeled as explicit, you can file an appeal.\n",
+    "Submitted requestsGoogle users reported these URLs as containing explicit content in the past 6 months. If you feel that a URL marked Filtered was incorrectly labeled as explicit, you can file an appeal.",
+    "Google users reported these URLs as containing explicit content in the past 6 months. If you feel that a URL marked Filtered was incorrectly labeled as explicit, you can file an appeal.",
+    "Google users reported these URLs as containing explicit content in the past 6 months. If you feel that a URL marked Filtered was incorrectly labeled as explicit, you can file an appeal."
+  ],
+  "tableRowCount": 3,
+  "tables": [
+    [
+      [
+        "URL",
+        "Type\n",
+        "Requested",
+        "Status"
+      ]
+    ],
+    [
+      [
+        "URL",
+        "TypeThe type of request; can be one of the following:\n\n\n  Outdated snippet removal: The page will still exist, but with updated content. This removal clears the snippet in the result until the next time the page is reindexed.\n  Outdated page removal: The page no longer exists, and has been cleared from the Google index and search results.\n\nLearn more",
+        "Requested",
+        "Status"
+      ]
+    ],
+    [
+      [
+        "URL",
+        "Requested",
+        "Status"
+      ]
+    ]
+  ]
+}

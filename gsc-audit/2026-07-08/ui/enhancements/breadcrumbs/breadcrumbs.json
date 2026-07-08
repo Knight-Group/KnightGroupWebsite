@@ -1,0 +1,35 @@
+{
+  "id": "breadcrumbs",
+  "label": "breadcrumbs",
+  "group": "enhancements",
+  "url": "https://search.google.com/search-console/r/breadcrumbs?resource_id=sc-domain%3Aknightgroup.com",
+  "outputDir": "enhancements\\breadcrumbs",
+  "title": "Breadcrumbs",
+  "exportedAt": "2026-07-08T13:05:41.505Z",
+  "download": {
+    "file": "breadcrumbs.zip",
+    "path": "E:\\GSC Auditer\\runs\\2026-07-08\\knightgroup.com\\ui\\enhancements\\breadcrumbs\\breadcrumbs.zip",
+    "suggestedFilename": "knightgroup.com-Breadcrumbs-2026-07-08.zip",
+    "format": "zip"
+  },
+  "summaryLines": [
+    "Google AccountNicholas Knightnickknight488@gmail.com",
+    "nickknight488@gmail.com",
+    "\n\t\n4",
+    "\n4",
+    "lightbulb_2\nInsights",
+    "lightbulb_2",
+    "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+    "link_2\nLinks",
+    "link_2",
+    "Last update: 7/6/26",
+    "\nInvalid\n0\nNo critical issues\n",
+    "\nInvalid\n0\nNo critical issues",
+    "\nValid\n49\n",
+    "\nValid\n49",
+    "Good job!\nNo issues detected in the last 90 days",
+    "No issues detected in the last 90 days"
+  ],
+  "tableRowCount": 0,
+  "tables": []
+}

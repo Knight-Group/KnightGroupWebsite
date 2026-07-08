@@ -1,14 +1,28 @@
 # Knight Group Audit Status
 
-Last updated: 2026-05-30
+Last updated: 2026-07-08
+
+## 2026-07-08 GSC Growth Implementation
+
+- Added sitewide lead measurement for Formspree starts/submits, thank-you success events, and phone CTA clicks.
+- Cleaned off-topic and truncated metadata on priority service pages, including home repair, doors/windows, cabinet repair, custom projects, handyman, general repairs, plumbing, electrical, carpentry, small jobs, small-job carpenter, and sink/faucet repair.
+- Added `docs/QUERY-PAGE-MAP.md` so high-value GSC query clusters have one assigned primary landing page.
+- Strengthened revenue-page SERP and first-screen copy for key service and city pages.
+- Improved crawlable links on `/services` and `/Services/general-repairs`, then removed utility `llms.txt` from `sitemap.xml`.
+- Added a richer gallery proof schema pattern on `gallery/door-lock-repair-before-after.html`.
+- Added `docs/SEO-AUTHORITY-REPORTING.md` for offsite authority actions and weekly audit follow-up.
+
+## 2026-05-30 Historical Snapshot
+
+> **Note:** File paths below use the old `E:/KnightGroupWebsite` folder name. Canonical repo is `E:/All Client Websites/KnightGroupWebsite`.
 
 ## Completed in this round
 
 - Removed the direct Messenger social link from the shared partials and all inlined page copies because it was the live external 302 target flagged by Ahrefs.
 - Replaced remote email-provider favicon images with local inline provider badges across the public forms to stop redirected-image warnings.
-- Simplified the homepage JSON-LD into a smaller valid graph to reduce schema noise in [index.html](E:/KnightGroupWebsite/index.html).
-- Reworked structured data on [pricing.html](E:/KnightGroupWebsite/pricing.html) so the page no longer exposes the invalid standalone `Offer` pattern that triggered Google rich-results warnings.
-- Removed the invalid `availability: "24/7"` field from the service schema on [Services/emergency-services.html](E:/KnightGroupWebsite/Services/emergency-services.html).
+- Simplified the homepage JSON-LD into a smaller valid graph to reduce schema noise in [index.html](E:/All Client Websites/KnightGroupWebsite/index.html).
+- Reworked structured data on [pricing.html](E:/All Client Websites/KnightGroupWebsite/pricing.html) so the page no longer exposes the invalid standalone `Offer` pattern that triggered Google rich-results warnings.
+- Removed the invalid `availability: "24/7"` field from the service schema on [Services/emergency-services.html](E:/All Client Websites/KnightGroupWebsite/Services/emergency-services.html).
 - Bumped the shared include cache version to `20260530-social-cleanup` after header/footer changes so live validation is not masked by cached partials.
 - Verified the touched HTML and JS files show no editor errors after the changes.
 

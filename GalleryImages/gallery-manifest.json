@@ -132,6 +132,26 @@
       ]
     },
     {
+      "id": "copeland-morgan-llc-work-order-before-after",
+      "title": "Copeland Morgan LLC: Work order \u2014 before & after",
+      "description": "Before-and-after proof from a copeland morgan llc: work order job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-copeland-morgan-llc-work-order.webp",
+          "filename": "before-after-copeland-morgan-llc-work-order.webp",
+          "step": 1,
+          "title": "Copeland Morgan LLC: Work order before and after",
+          "seoAlt": "Copeland Morgan LLC: Work order before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a copeland morgan llc: work order job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "curtain-rod-mount-before-after",
       "title": "Curtain rod mount \u2014 before & after",
       "description": "Loose rod brackets remounted into solid framing for a secure, level hang.",
@@ -341,6 +361,26 @@
       ]
     },
     {
+      "id": "kitchen-window-blinds-repair-before-after",
+      "title": "Kitchen window blinds repair \u2014 before & after",
+      "description": "Before-and-after proof from a kitchen window blinds repair job completed by Knight Group.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-kitchen-window-blinds-repair.webp",
+          "filename": "before-after-kitchen-window-blinds-repair.webp",
+          "step": 1,
+          "title": "Kitchen window blinds repair before and after",
+          "seoAlt": "Kitchen window blinds repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a kitchen window blinds repair job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "mold-wall-repair",
       "title": "Mold damage on interior wall",
       "description": "Mold-affected wall shown from the initial discovery through later correction work on the same area.",
@@ -366,6 +406,26 @@
           "seoAlt": "Mold wall repair \u2014 later stage \u2014 handyman project photo in Pinellas County FL by Knight Group",
           "description": "Follow-up photo from the same mold wall job showing later progress on the correction.",
           "beforeAfter": false
+        }
+      ]
+    },
+    {
+      "id": "office-ceiling-fan-malfunction-before-after",
+      "title": "Office ceiling fan malfunction \u2014 before & after",
+      "description": "Before-and-after proof from a office ceiling fan malfunction job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-office-ceiling-fan-malfunction.webp",
+          "filename": "before-after-office-ceiling-fan-malfunction.webp",
+          "step": 1,
+          "title": "Office ceiling fan malfunction before and after",
+          "seoAlt": "Office ceiling fan malfunction before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a office ceiling fan malfunction job completed in a Pinellas County home.",
+          "beforeAfter": true
         }
       ]
     },
@@ -405,6 +465,26 @@
           "title": "Refrigerator door alignment before and after",
           "seoAlt": "Refrigerator door alignment before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
           "description": "Before-and-after proof from a fridge door repair so the unit closes and seals correctly.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
+      "id": "resecure-loose-screen-door-before-after",
+      "title": "Resecure Loose Screen Door \u2014 before & after",
+      "description": "Before-and-after proof from a resecure loose screen door job completed by Knight Group.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-resecure-loose-screen-door.webp",
+          "filename": "before-after-resecure-loose-screen-door.webp",
+          "step": 1,
+          "title": "Resecure Loose Screen Door before and after",
+          "seoAlt": "Resecure Loose Screen Door before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a resecure loose screen door job completed in a Pinellas County home.",
           "beforeAfter": true
         }
       ]
@@ -519,6 +599,46 @@
       ]
     },
     {
+      "id": "stove-indicator-light-issue-before-after",
+      "title": "Stove indicator light issue \u2014 before & after",
+      "description": "Before-and-after proof from a stove indicator light issue job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-stove-indicator-light-issue.webp",
+          "filename": "before-after-stove-indicator-light-issue.webp",
+          "step": 1,
+          "title": "Stove indicator light issue before and after",
+          "seoAlt": "Stove indicator light issue before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a stove indicator light issue job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
+      "id": "the-caulking-around-the-toilet-needs-to-be-repla-before-after",
+      "title": "The caulking around the toilet needs to be replaced The AC filter needs to be changed. Filter size is 16 x 20. This is a \u2014 before & after",
+      "description": "Before-and-after proof from a the caulking around the toilet needs to be replaced the ac filter needs to be changed. filter size is 16 x 20. this is a job completed by Knight Group.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-the-caulking-around-the-toilet-needs-to-be-repla.webp",
+          "filename": "before-after-the-caulking-around-the-toilet-needs-to-be-repla.webp",
+          "step": 1,
+          "title": "The caulking around the toilet needs to be replaced The AC filter needs to be changed. Filter size is 16 x 20. This is a before and after",
+          "seoAlt": "The caulking around the toilet needs to be replaced The AC filter needs to be changed. Filter size is 16 x 20. This is a before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a the caulking around the toilet needs to be replaced the ac filter needs to be changed. filter size is 16 x 20. this is a job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "tub-drain-before-after",
       "title": "Tub drain repair \u2014 before & after",
       "description": "Side-by-side proof of a tub drain correction from the failed condition through the completed fix.",
@@ -564,6 +684,46 @@
           "seoAlt": "New tub drain installed \u2014 handyman project photo in Pinellas County FL by Knight Group",
           "description": "Completed tub drain replacement after the new assembly was installed.",
           "beforeAfter": false
+        }
+      ]
+    },
+    {
+      "id": "two-broken-fences-side-and-backyard-at-1-4636-fa-before-after",
+      "title": "Two broken fences (side and backyard) at 1, 4636 Fairfield Avenue South, Saint Petersburg, FL, 33711 caused by a storm. \u2014 before & after",
+      "description": "Before-and-after proof from a two broken fences (side and backyard) at 1, 4636 fairfield avenue south, saint petersburg, fl, 33711 caused by a storm. job completed by Knight Group.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-two-broken-fences-side-and-backyard-at-1-4636-fa.webp",
+          "filename": "before-after-two-broken-fences-side-and-backyard-at-1-4636-fa.webp",
+          "step": 1,
+          "title": "Two broken fences (side and backyard) at 1, 4636 Fairfield Avenue South, Saint Petersburg, FL, 33711 caused by a storm. before and after",
+          "seoAlt": "Two broken fences (side and backyard) at 1, 4636 Fairfield Avenue South, Saint Petersburg, FL, 33711 caused by a storm. before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a two broken fences (side and backyard) at 1, 4636 fairfield avenue south, saint petersburg, fl, 33711 caused by a storm. job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
+      "id": "urgent-door-lock-malfunction-before-after",
+      "title": "Urgent door lock malfunction \u2014 before & after",
+      "description": "Before-and-after proof from a urgent door lock malfunction job completed by Knight Group.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-urgent-door-lock-malfunction.webp",
+          "filename": "before-after-urgent-door-lock-malfunction.webp",
+          "step": 1,
+          "title": "Urgent door lock malfunction before and after",
+          "seoAlt": "Urgent door lock malfunction before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a urgent door lock malfunction job completed in a Pinellas County home.",
+          "beforeAfter": true
         }
       ]
     },
@@ -632,6 +792,26 @@
           "title": "Wooden fence repair before and after",
           "seoAlt": "Wooden fence repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
           "description": "Before-and-after proof from a backyard wooden fence repair completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
+      "id": "replacing-this-main-shut-off-and-hose-bib-copper-before-after",
+      "title": "replacing this main shut off and hose bib (copper) \u2014 before & after",
+      "description": "Before-and-after proof from a replacing this main shut off and hose bib (copper) job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-replacing-this-main-shut-off-and-hose-bib-copper.webp",
+          "filename": "before-after-replacing-this-main-shut-off-and-hose-bib-copper.webp",
+          "step": 1,
+          "title": "replacing this main shut off and hose bib (copper) before and after",
+          "seoAlt": "replacing this main shut off and hose bib (copper) before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a replacing this main shut off and hose bib (copper) job completed in a Pinellas County home.",
           "beforeAfter": true
         }
       ]
@@ -933,6 +1113,20 @@
       "groupDescription": "Worn carpet and pad removed to expose subfloor ready for the next finish."
     },
     {
+      "src": "GalleryImages/before-after-copeland-morgan-llc-work-order.webp",
+      "filename": "before-after-copeland-morgan-llc-work-order.webp",
+      "group": "copeland-morgan-llc-work-order-before-after",
+      "step": 1,
+      "title": "Copeland Morgan LLC: Work order before and after",
+      "seoAlt": "Copeland Morgan LLC: Work order before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a copeland morgan llc: work order job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Copeland Morgan LLC: Work order \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a copeland morgan llc: work order job completed by Knight Group."
+    },
+    {
       "src": "GalleryImages/before-after-curtain-rod-mount.webp",
       "filename": "before-after-curtain-rod-mount.webp",
       "group": "curtain-rod-mount-before-after",
@@ -1059,6 +1253,62 @@
       "groupDescription": "Leak traced under the sink, fittings tightened or replaced, and area dried."
     },
     {
+      "src": "GalleryImages/before-after-kitchen-window-blinds-repair.webp",
+      "filename": "before-after-kitchen-window-blinds-repair.webp",
+      "group": "kitchen-window-blinds-repair-before-after",
+      "step": 1,
+      "title": "Kitchen window blinds repair before and after",
+      "seoAlt": "Kitchen window blinds repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a kitchen window blinds repair job completed in a Pinellas County home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Kitchen window blinds repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a kitchen window blinds repair job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-office-ceiling-fan-malfunction.webp",
+      "filename": "before-after-office-ceiling-fan-malfunction.webp",
+      "group": "office-ceiling-fan-malfunction-before-after",
+      "step": 1,
+      "title": "Office ceiling fan malfunction before and after",
+      "seoAlt": "Office ceiling fan malfunction before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a office ceiling fan malfunction job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Office ceiling fan malfunction \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a office ceiling fan malfunction job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-replacing-this-main-shut-off-and-hose-bib-copper.webp",
+      "filename": "before-after-replacing-this-main-shut-off-and-hose-bib-copper.webp",
+      "group": "replacing-this-main-shut-off-and-hose-bib-copper-before-after",
+      "step": 1,
+      "title": "replacing this main shut off and hose bib (copper) before and after",
+      "seoAlt": "replacing this main shut off and hose bib (copper) before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a replacing this main shut off and hose bib (copper) job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "replacing this main shut off and hose bib (copper) \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a replacing this main shut off and hose bib (copper) job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-resecure-loose-screen-door.webp",
+      "filename": "before-after-resecure-loose-screen-door.webp",
+      "group": "resecure-loose-screen-door-before-after",
+      "step": 1,
+      "title": "Resecure Loose Screen Door before and after",
+      "seoAlt": "Resecure Loose Screen Door before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a resecure loose screen door job completed in a Pinellas County home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Resecure Loose Screen Door \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a resecure loose screen door job completed by Knight Group."
+    },
+    {
       "src": "GalleryImages/before-after-smoke-alarm-battery-swap.webp",
       "filename": "before-after-smoke-alarm-battery-swap.webp",
       "group": "smoke-alarm-battery-swap-before-after",
@@ -1085,6 +1335,62 @@
       "beforeAfter": true,
       "groupTitle": "Stair safety tape repair \u2014 before & after",
       "groupDescription": "Peeling anti-slip tape removed and replaced on stair treads for safer footing."
+    },
+    {
+      "src": "GalleryImages/before-after-stove-indicator-light-issue.webp",
+      "filename": "before-after-stove-indicator-light-issue.webp",
+      "group": "stove-indicator-light-issue-before-after",
+      "step": 1,
+      "title": "Stove indicator light issue before and after",
+      "seoAlt": "Stove indicator light issue before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a stove indicator light issue job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Stove indicator light issue \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a stove indicator light issue job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-the-caulking-around-the-toilet-needs-to-be-repla.webp",
+      "filename": "before-after-the-caulking-around-the-toilet-needs-to-be-repla.webp",
+      "group": "the-caulking-around-the-toilet-needs-to-be-repla-before-after",
+      "step": 1,
+      "title": "The caulking around the toilet needs to be replaced The AC filter needs to be changed. Filter size is 16 x 20. This is a before and after",
+      "seoAlt": "The caulking around the toilet needs to be replaced The AC filter needs to be changed. Filter size is 16 x 20. This is a before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a the caulking around the toilet needs to be replaced the ac filter needs to be changed. filter size is 16 x 20. this is a job completed in a Pinellas County home.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "groupTitle": "The caulking around the toilet needs to be replaced The AC filter needs to be changed. Filter size is 16 x 20. This is a \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a the caulking around the toilet needs to be replaced the ac filter needs to be changed. filter size is 16 x 20. this is a job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-two-broken-fences-side-and-backyard-at-1-4636-fa.webp",
+      "filename": "before-after-two-broken-fences-side-and-backyard-at-1-4636-fa.webp",
+      "group": "two-broken-fences-side-and-backyard-at-1-4636-fa-before-after",
+      "step": 1,
+      "title": "Two broken fences (side and backyard) at 1, 4636 Fairfield Avenue South, Saint Petersburg, FL, 33711 caused by a storm. before and after",
+      "seoAlt": "Two broken fences (side and backyard) at 1, 4636 Fairfield Avenue South, Saint Petersburg, FL, 33711 caused by a storm. before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a two broken fences (side and backyard) at 1, 4636 fairfield avenue south, saint petersburg, fl, 33711 caused by a storm. job completed in a Pinellas County home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Two broken fences (side and backyard) at 1, 4636 Fairfield Avenue South, Saint Petersburg, FL, 33711 caused by a storm. \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a two broken fences (side and backyard) at 1, 4636 fairfield avenue south, saint petersburg, fl, 33711 caused by a storm. job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-urgent-door-lock-malfunction.webp",
+      "filename": "before-after-urgent-door-lock-malfunction.webp",
+      "group": "urgent-door-lock-malfunction-before-after",
+      "step": 1,
+      "title": "Urgent door lock malfunction before and after",
+      "seoAlt": "Urgent door lock malfunction before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a urgent door lock malfunction job completed in a Pinellas County home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Urgent door lock malfunction \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a urgent door lock malfunction job completed by Knight Group."
     },
     {
       "src": "GalleryImages/fixing_floor2.webp",

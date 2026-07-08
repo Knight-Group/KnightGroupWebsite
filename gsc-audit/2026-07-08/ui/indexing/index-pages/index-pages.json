@@ -1,0 +1,85 @@
+{
+  "id": "index-pages",
+  "label": "Pages indexing",
+  "group": "indexing",
+  "url": "https://search.google.com/search-console/index?resource_id=sc-domain%3Aknightgroup.com",
+  "outputDir": "indexing\\index-pages",
+  "title": "Page indexing",
+  "exportedAt": "2026-07-08T13:04:17.741Z",
+  "download": {
+    "file": "index-pages.zip",
+    "path": "E:\\GSC Auditer\\runs\\2026-07-08\\knightgroup.com\\ui\\indexing\\index-pages\\index-pages.zip",
+    "suggestedFilename": "knightgroup.com-Coverage-2026-07-08.zip",
+    "format": "zip"
+  },
+  "summaryLines": [
+    "\n\t\n4",
+    "\n4",
+    "lightbulb_2\nInsights",
+    "lightbulb_2",
+    "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+    "link_2\nLinks",
+    "link_2",
+    "All known pages\nAll submitted pages\nUnsubmitted pages only\nhttps://www.knightgroup.com/sitemap.xml\nLast update: 6/29/26",
+    "Last update: 6/29/26",
+    "\nNot indexed\n71\n5 reasons\n",
+    "\nNot indexed\n71\n5 reasons",
+    "5 reasons",
+    "\nIndexed\n55\n",
+    "\nIndexed\n55",
+    "100",
+    "250",
+    "500",
+    "1-5 of 5\n",
+    "1-5 of 5",
+    "Google AccountNicholas Knightnickknight488@gmail.com",
+    "nickknight488@gmail.com"
+  ],
+  "tableRowCount": 6,
+  "tables": [
+    [
+      [
+        "Reason",
+        "Source\n",
+        "Validation",
+        "Trend",
+        "Pages"
+      ],
+      [
+        "Page with redirect",
+        "Website",
+        "\nNot Started",
+        "",
+        "7"
+      ],
+      [
+        "Excluded by ‘noindex’ tag",
+        "Website",
+        "\nNot Started",
+        "",
+        "1"
+      ],
+      [
+        "Blocked by robots.txt",
+        "Website",
+        "\nNot Started",
+        "",
+        "1"
+      ],
+      [
+        "Discovered - currently not indexed",
+        "Google systems",
+        "\nNot Started",
+        "",
+        "32"
+      ],
+      [
+        "Crawled - currently not indexed",
+        "Google systems",
+        "\nNot Started",
+        "",
+        "30"
+      ]
+    ]
+  ]
+}

@@ -309,6 +309,9 @@ class HTMLInclude {
                 window.requestAnimationFrame(window.kgFitHeaderNav);
             });
         }
+        if (typeof window.kgInitLeadTracking === 'function') {
+            window.kgInitLeadTracking();
+        }
         document.dispatchEvent(new CustomEvent('kg-includes-ready'));
     }
 
@@ -570,3 +573,114 @@ ${data.message}
     // If Formspree is properly configured, allow normal submission
     return true;
 }
+
+(function kgLeadTracking() {
+    const STORAGE_KEY = 'kg:lastLeadSubmit';
+    const TRACKED_ATTR = 'data-kg-lead-tracked';
+
+    function pageType() {
+        const path = window.location.pathname || '/';
+        if (path === '/' || path === '/index.html') return 'home';
+        if (path.startsWith('/Services/')) return 'service';
+        if (path.startsWith('/gallery/')) return 'gallery';
+        if (/handyman$/.test(path)) return 'location';
+        if (path.includes('pricing')) return 'pricing';
+        if (path.includes('booking')) return 'booking';
+        if (path.includes('contact')) return 'contact';
+        return 'content';
+    }
+
+    function fieldValue(form, name) {
+        const field = form ? form.querySelector(`[name="${name}"]`) : null;
+        return field ? (field.value || '').trim() : '';
+    }
+
+    function ensureHidden(form, name, value) {
+        if (!form || form.querySelector(`[name="${name}"]`)) return;
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = name;
+        input.value = value || '';
+        form.appendChild(input);
+    }
+
+    function pushLeadEvent(eventName, details) {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push(Object.assign({
+            event: eventName,
+            page_path: window.location.pathname || '/',
+            page_title: document.title || '',
+            page_type: pageType()
+        }, details || {}));
+    }
+
+    function formDetails(form) {
+        return {
+            form_id: form.id || '',
+            form_class: form.className || '',
+            service_page: fieldValue(form, 'service_page'),
+            request_type: fieldValue(form, 'request_type'),
+            selected_service: fieldValue(form, 'service'),
+            city_or_area: fieldValue(form, 'area') || fieldValue(form, 'city')
+        };
+    }
+
+    function addAttributionFields(form) {
+        ensureHidden(form, 'landing_page', window.location.pathname || '/');
+        ensureHidden(form, 'page_title', document.title || '');
+        ensureHidden(form, 'referrer', document.referrer || '');
+        ensureHidden(form, 'utm_source', new URLSearchParams(window.location.search).get('utm_source') || '');
+        ensureHidden(form, 'utm_medium', new URLSearchParams(window.location.search).get('utm_medium') || '');
+        ensureHidden(form, 'utm_campaign', new URLSearchParams(window.location.search).get('utm_campaign') || '');
+    }
+
+    function bindForm(form) {
+        if (!form || form.getAttribute(TRACKED_ATTR) === '1') return;
+        form.setAttribute(TRACKED_ATTR, '1');
+        addAttributionFields(form);
+
+        form.addEventListener('focusin', function () {
+            if (form.dataset.kgStarted === '1') return;
+            form.dataset.kgStarted = '1';
+            pushLeadEvent('form_start', formDetails(form));
+        });
+
+        form.addEventListener('submit', function () {
+            const details = formDetails(form);
+            details.destination = form.getAttribute('action') || '';
+            try {
+                window.sessionStorage.setItem(STORAGE_KEY, JSON.stringify(Object.assign({
+                    submitted_at: new Date().toISOString(),
+                    source_path: window.location.pathname || '/'
+                }, details)));
+            } catch (error) {
+                // Ignore storage failures; analytics events still fire.
+            }
+            pushLeadEvent('form_submit', details);
+        });
+    }
+
+    function bindPhoneLinks(root) {
+        (root || document).querySelectorAll('a[href^="tel:"]').forEach(function (link) {
+            if (link.dataset.kgPhoneTracked === '1') return;
+            link.dataset.kgPhoneTracked = '1';
+            link.addEventListener('click', function () {
+                pushLeadEvent('phone_click', {
+                    phone_href: link.getAttribute('href') || '',
+                    cta_text: (link.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 120),
+                    cta_location: link.closest('header') ? 'header' : link.closest('footer') ? 'footer' : 'body'
+                });
+            });
+        });
+    }
+
+    window.kgTrackLeadEvent = pushLeadEvent;
+
+    window.kgInitLeadTracking = function () {
+        document.querySelectorAll('form[action*="formspree.io"], form[data-kg-guard], .kg-contact-form, .kg-hero-consultation-form').forEach(bindForm);
+        bindPhoneLinks(document);
+    };
+
+    document.addEventListener('DOMContentLoaded', window.kgInitLeadTracking);
+    document.addEventListener('kg-includes-ready', window.kgInitLeadTracking);
+})();

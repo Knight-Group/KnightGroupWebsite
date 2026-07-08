@@ -1,0 +1,14 @@
+{
+  "domain": "knightgroup.com",
+  "date": "2026-07-08",
+  "generatedAt": "2026-07-08T13:01:55.237Z",
+  "sourceOfTruth": "E:/GSC Auditer",
+  "canonicalRunDir": "E:\\GSC Auditer\\runs\\2026-07-08\\knightgroup.com",
+  "report": "gsc-audit/2026-07-08/report.md",
+  "analysis": "gsc-audit/2026-07-08/analysis.json",
+  "manifest": "gsc-audit/2026-07-08/manifest.json",
+  "apiDir": "gsc-audit/2026-07-08/api",
+  "uiDir": "gsc-audit/2026-07-08/ui",
+  "nextStep": "Read gsc-audit/<date>/report.md and analysis.json, then implement SEO fixes in this workspace.",
+  "workspaceCopy": "E:\\All Client Websites\\KnightGroupWebsite\\gsc-audit\\2026-07-08"
+}

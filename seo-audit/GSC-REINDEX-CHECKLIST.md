@@ -51,8 +51,9 @@ Google may still show “Auto Services & Remote IT” on these:
 
 ## What to skip for now
 
-- **Review follow-up automation** — see `REVIEW-FOLLOW-UP-STRATEGY.md`; manual process only until approved.
 - **Bulk new city pages** — wait until core service URLs earn clicks (see `KNIGHT-GROUP-GROWTH-PLAYBOOK-2026-06-03.md`).
+
+Review follow-up is **automated** — see [docs/REVIEW-FOLLOW-UP.md](../docs/REVIEW-FOLLOW-UP.md) (archived manual strategy: [docs/archive/](../docs/archive/)).
 
 ## Weekly scorecard (fill in)
 

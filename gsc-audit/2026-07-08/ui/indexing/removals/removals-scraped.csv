@@ -1,0 +1,10 @@
+"URL","Type
+","Requested","Status"
+"URL","TypeThe type of request; can be one of the following:
+
+
+  Outdated snippet removal: The page will still exist, but with updated content. This removal clears the snippet in the result until the next time the page is reindexed.
+  Outdated page removal: The page no longer exists, and has been cleared from the Google index and search results.
+
+Learn more","Requested","Status"
+"URL","Requested","Status"

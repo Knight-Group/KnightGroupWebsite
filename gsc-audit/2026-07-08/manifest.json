@@ -1,0 +1,42 @@
+{
+  "tool": "gsc-auditer",
+  "sourceOfTruth": "E:/GSC Auditer",
+  "generatedAt": "2026-07-08T13:01:55.237Z",
+  "site": {
+    "name": "Knight Group",
+    "domain": "knightgroup.com",
+    "productionUrl": "https://www.knightgroup.com"
+  },
+  "propertyUrl": "sc-domain:knightgroup.com",
+  "period": {
+    "startDate": "2026-04-09",
+    "endDate": "2026-07-05",
+    "days": 90
+  },
+  "outputs": {
+    "performance": "api/performance.json",
+    "sitemaps": "api/sitemaps.json",
+    "urlInspection": "api/url-inspection.json",
+    "ui": "ui/manifest.json",
+    "analysis": "analysis.json",
+    "report": "report.md"
+  },
+  "summary": {
+    "totals": {
+      "clicks": 15,
+      "impressions": 5124,
+      "ctr": 0.002927400468384075,
+      "position": 23.33704137392662
+    },
+    "queryCount": 470,
+    "pageCount": 59,
+    "commercialQueryCount": 469,
+    "brandQueryCount": 1,
+    "sitemapCount": 1,
+    "inspectedUrlCount": 13,
+    "findingCount": 11,
+    "uiReportCount": 13,
+    "uiDownloadCount": 5
+  },
+  "findingCount": 11
+}

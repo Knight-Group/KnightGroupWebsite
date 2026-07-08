@@ -1,0 +1,35 @@
+{
+  "id": "review-snippet",
+  "label": "review-snippet",
+  "group": "enhancements",
+  "url": "https://search.google.com/search-console/r/review-snippet?resource_id=sc-domain%3Aknightgroup.com",
+  "outputDir": "enhancements\\review-snippet",
+  "title": "Review snippets",
+  "exportedAt": "2026-07-08T13:05:52.192Z",
+  "download": {
+    "file": "review-snippet.zip",
+    "path": "E:\\GSC Auditer\\runs\\2026-07-08\\knightgroup.com\\ui\\enhancements\\review-snippet\\review-snippet.zip",
+    "suggestedFilename": "knightgroup.com-Review snippets-2026-07-08.zip",
+    "format": "zip"
+  },
+  "summaryLines": [
+    "\n\t\n4",
+    "\n4",
+    "lightbulb_2\nInsights",
+    "lightbulb_2",
+    "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+    "link_2\nLinks",
+    "link_2",
+    "Last update: 7/6/26",
+    "\nInvalid\n0\nNo critical issues\n",
+    "\nInvalid\n0\nNo critical issues",
+    "\nValid\n52\n",
+    "\nValid\n52",
+    "Good job!\nNo issues detected in the last 90 days",
+    "No issues detected in the last 90 days",
+    "Google AccountNicholas Knightnickknight488@gmail.com",
+    "nickknight488@gmail.com"
+  ],
+  "tableRowCount": 0,
+  "tables": []
+}

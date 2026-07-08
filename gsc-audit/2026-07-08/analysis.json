@@ -1,0 +1,919 @@
+{
+  "summary": {
+    "totals": {
+      "clicks": 15,
+      "impressions": 5124,
+      "ctr": 0.002927400468384075,
+      "position": 23.33704137392662
+    },
+    "queryCount": 470,
+    "pageCount": 59,
+    "commercialQueryCount": 469,
+    "brandQueryCount": 1,
+    "sitemapCount": 1,
+    "inspectedUrlCount": 13,
+    "findingCount": 11,
+    "uiReportCount": 13,
+    "uiDownloadCount": 5
+  },
+  "findings": [
+    {
+      "severity": "high",
+      "area": "performance",
+      "title": "Very low overall CTR",
+      "detail": "5,124 impressions with 0.29% CTR over 90 days."
+    },
+    {
+      "severity": "medium",
+      "area": "opportunity",
+      "title": "Quick-win queries in positions 4–20",
+      "detail": "15 commercial queries are close to page one with meaningful impressions."
+    },
+    {
+      "severity": "high",
+      "area": "opportunity",
+      "title": "High impressions with low CTR",
+      "detail": "12 commercial queries have 50+ impressions and CTR below 2%."
+    },
+    {
+      "severity": "high",
+      "area": "indexing",
+      "title": "URL inspection issues on important pages",
+      "detail": "2 inspected URL(s) are not passing index inspection."
+    },
+    {
+      "severity": "high",
+      "area": "indexing",
+      "title": "GSC Pages report shows not-indexed URLs",
+      "detail": "UI export of the Pages indexing report indicates URLs are not indexed. See ui/index-pages.json."
+    },
+    {
+      "severity": "high",
+      "area": "experience",
+      "title": "GSC HTTPS report shows issues",
+      "detail": "HTTPS report from GSC UI contains issue indicators. See ui/https.json."
+    },
+    {
+      "severity": "medium",
+      "area": "enhancements",
+      "title": "Enhancement issue: breadcrumbs",
+      "detail": "GSC enhancement report \"breadcrumbs\" shows potential issues. See ui/breadcrumbs.json."
+    },
+    {
+      "severity": "medium",
+      "area": "enhancements",
+      "title": "Enhancement issue: image-licenses",
+      "detail": "GSC enhancement report \"image-licenses\" shows potential issues. See ui/image-licenses.json."
+    },
+    {
+      "severity": "medium",
+      "area": "enhancements",
+      "title": "Enhancement issue: review-snippet",
+      "detail": "GSC enhancement report \"review-snippet\" shows potential issues. See ui/review-snippet.json."
+    },
+    {
+      "severity": "high",
+      "area": "security",
+      "title": "Manual actions may be present",
+      "detail": "Review ui/manual-actions.json — GSC manual actions report should be checked."
+    },
+    {
+      "severity": "high",
+      "area": "security",
+      "title": "Security issues may be present",
+      "detail": "Review ui/security-issues.json — GSC security report should be checked."
+    }
+  ],
+  "opportunities": {
+    "quickWins": [
+      {
+        "query": "handyman near me",
+        "clicks": 0,
+        "impressions": 449,
+        "ctr": 0,
+        "position": 18.465478841870823
+      },
+      {
+        "query": "home repair near me",
+        "clicks": 0,
+        "impressions": 190,
+        "ctr": 0,
+        "position": 16.55263157894737
+      },
+      {
+        "query": "handyman",
+        "clicks": 0,
+        "impressions": 86,
+        "ctr": 0,
+        "position": 11.174418604651162
+      },
+      {
+        "query": "wood rot repair near me",
+        "clicks": 0,
+        "impressions": 69,
+        "ctr": 0,
+        "position": 18.18840579710145
+      },
+      {
+        "query": "handyman services",
+        "clicks": 0,
+        "impressions": 61,
+        "ctr": 0,
+        "position": 11.245901639344263
+      },
+      {
+        "query": "handyman plumbing prices",
+        "clicks": 0,
+        "impressions": 51,
+        "ctr": 0,
+        "position": 13.941176470588236
+      },
+      {
+        "query": "handyman services near me",
+        "clicks": 0,
+        "impressions": 50,
+        "ctr": 0,
+        "position": 11.78
+      },
+      {
+        "query": "handyman temple terrace",
+        "clicks": 0,
+        "impressions": 39,
+        "ctr": 0,
+        "position": 9.102564102564102
+      },
+      {
+        "query": "handyman largo",
+        "clicks": 0,
+        "impressions": 36,
+        "ctr": 0,
+        "position": 19.555555555555557
+      },
+      {
+        "query": "handyman plumber clearwater fl",
+        "clicks": 0,
+        "impressions": 34,
+        "ctr": 0,
+        "position": 16.264705882352942
+      },
+      {
+        "query": "local handyman",
+        "clicks": 0,
+        "impressions": 30,
+        "ctr": 0,
+        "position": 16.53333333333333
+      },
+      {
+        "query": "handyman hillsborough county",
+        "clicks": 0,
+        "impressions": 29,
+        "ctr": 0,
+        "position": 9.275862068965518
+      },
+      {
+        "query": "handyman pinellas county",
+        "clicks": 0,
+        "impressions": 28,
+        "ctr": 0,
+        "position": 16.464285714285715
+      },
+      {
+        "query": "handyman pinellas park",
+        "clicks": 0,
+        "impressions": 26,
+        "ctr": 0,
+        "position": 17.23076923076923
+      },
+      {
+        "query": "home repair",
+        "clicks": 0,
+        "impressions": 25,
+        "ctr": 0,
+        "position": 12.04
+      }
+    ],
+    "lowCtrHighImpressions": [
+      {
+        "query": "handyman near me",
+        "clicks": 0,
+        "impressions": 449,
+        "ctr": 0,
+        "position": 18.465478841870823
+      },
+      {
+        "query": "home repair near me",
+        "clicks": 0,
+        "impressions": 190,
+        "ctr": 0,
+        "position": 16.55263157894737
+      },
+      {
+        "query": "handyman clearwater",
+        "clicks": 0,
+        "impressions": 142,
+        "ctr": 0,
+        "position": 22.091549295774648
+      },
+      {
+        "query": "handyman company pinellas",
+        "clicks": 0,
+        "impressions": 99,
+        "ctr": 0,
+        "position": 26.08080808080808
+      },
+      {
+        "query": "small job carpenter near me",
+        "clicks": 0,
+        "impressions": 93,
+        "ctr": 0,
+        "position": 28.93548387096774
+      },
+      {
+        "query": "handyman",
+        "clicks": 0,
+        "impressions": 86,
+        "ctr": 0,
+        "position": 11.174418604651162
+      },
+      {
+        "query": "commercial handyman near me",
+        "clicks": 0,
+        "impressions": 74,
+        "ctr": 0,
+        "position": 29.324324324324323
+      },
+      {
+        "query": "wood rot repair near me",
+        "clicks": 0,
+        "impressions": 69,
+        "ctr": 0,
+        "position": 18.18840579710145
+      },
+      {
+        "query": "home repair services clearwater fl",
+        "clicks": 0,
+        "impressions": 67,
+        "ctr": 0,
+        "position": 29.761194029850746
+      },
+      {
+        "query": "handyman services",
+        "clicks": 0,
+        "impressions": 61,
+        "ctr": 0,
+        "position": 11.245901639344263
+      },
+      {
+        "query": "handyman plumbing prices",
+        "clicks": 0,
+        "impressions": 51,
+        "ctr": 0,
+        "position": 13.941176470588236
+      },
+      {
+        "query": "handyman services near me",
+        "clicks": 0,
+        "impressions": 50,
+        "ctr": 0,
+        "position": 11.78
+      }
+    ],
+    "topQueries": [
+      {
+        "query": "handyman near me",
+        "clicks": 0,
+        "impressions": 449,
+        "ctr": 0,
+        "position": 18.465478841870823
+      },
+      {
+        "query": "home repair near me",
+        "clicks": 0,
+        "impressions": 190,
+        "ctr": 0,
+        "position": 16.55263157894737
+      },
+      {
+        "query": "handyman clearwater",
+        "clicks": 0,
+        "impressions": 142,
+        "ctr": 0,
+        "position": 22.091549295774648
+      },
+      {
+        "query": "handyman company pinellas",
+        "clicks": 0,
+        "impressions": 99,
+        "ctr": 0,
+        "position": 26.08080808080808
+      },
+      {
+        "query": "small job carpenter near me",
+        "clicks": 0,
+        "impressions": 93,
+        "ctr": 0,
+        "position": 28.93548387096774
+      },
+      {
+        "query": "handyman",
+        "clicks": 0,
+        "impressions": 86,
+        "ctr": 0,
+        "position": 11.174418604651162
+      },
+      {
+        "query": "commercial handyman near me",
+        "clicks": 0,
+        "impressions": 74,
+        "ctr": 0,
+        "position": 29.324324324324323
+      },
+      {
+        "query": "wood rot repair near me",
+        "clicks": 0,
+        "impressions": 69,
+        "ctr": 0,
+        "position": 18.18840579710145
+      },
+      {
+        "query": "home repair services clearwater fl",
+        "clicks": 0,
+        "impressions": 67,
+        "ctr": 0,
+        "position": 29.761194029850746
+      },
+      {
+        "query": "handyman services",
+        "clicks": 0,
+        "impressions": 61,
+        "ctr": 0,
+        "position": 11.245901639344263
+      },
+      {
+        "query": "handyman plumbing prices",
+        "clicks": 0,
+        "impressions": 51,
+        "ctr": 0,
+        "position": 13.941176470588236
+      },
+      {
+        "query": "handyman services near me",
+        "clicks": 0,
+        "impressions": 50,
+        "ctr": 0,
+        "position": 11.78
+      },
+      {
+        "query": "handyman florida clearwater",
+        "clicks": 0,
+        "impressions": 49,
+        "ctr": 0,
+        "position": 27.73469387755102
+      },
+      {
+        "query": "home repair handyman clearwater fl",
+        "clicks": 0,
+        "impressions": 49,
+        "ctr": 0,
+        "position": 25.040816326530614
+      },
+      {
+        "query": "door installation near me",
+        "clicks": 0,
+        "impressions": 47,
+        "ctr": 0,
+        "position": 21.93617021276596
+      }
+    ],
+    "topPages": [
+      {
+        "page": "https://www.knightgroup.com/pricing",
+        "clicks": 4,
+        "impressions": 961,
+        "ctr": 0.004162330905306972,
+        "position": 17.741935483870968
+      },
+      {
+        "page": "https://www.knightgroup.com/clearwater-handyman",
+        "clicks": 0,
+        "impressions": 670,
+        "ctr": 0,
+        "position": 20.108955223880596
+      },
+      {
+        "page": "https://www.knightgroup.com/Services/handyman",
+        "clicks": 1,
+        "impressions": 563,
+        "ctr": 0.0017761989342806395,
+        "position": 23.394316163410302
+      },
+      {
+        "page": "https://www.knightgroup.com/tampa-handyman",
+        "clicks": 0,
+        "impressions": 349,
+        "ctr": 0,
+        "position": 38.01146131805157
+      },
+      {
+        "page": "https://www.knightgroup.com/",
+        "clicks": 5,
+        "impressions": 327,
+        "ctr": 0.01529051987767584,
+        "position": 18.529051987767584
+      },
+      {
+        "page": "https://www.knightgroup.com/Services/doors-windows",
+        "clicks": 0,
+        "impressions": 265,
+        "ctr": 0,
+        "position": 26.21509433962264
+      },
+      {
+        "page": "https://www.knightgroup.com/pinellas-handyman",
+        "clicks": 0,
+        "impressions": 205,
+        "ctr": 0,
+        "position": 28.409756097560976
+      },
+      {
+        "page": "https://www.knightgroup.com/Services/home-repair-near-me",
+        "clicks": 1,
+        "impressions": 156,
+        "ctr": 0.00641025641025641,
+        "position": 31.21153846153846
+      },
+      {
+        "page": "https://www.knightgroup.com/largo-handyman",
+        "clicks": 0,
+        "impressions": 145,
+        "ctr": 0,
+        "position": 22.393103448275863
+      },
+      {
+        "page": "https://www.knightgroup.com/land-o-lakes-handyman",
+        "clicks": 0,
+        "impressions": 128,
+        "ctr": 0,
+        "position": 27.796875
+      },
+      {
+        "page": "https://www.knightgroup.com/town-n-country-handyman",
+        "clicks": 0,
+        "impressions": 122,
+        "ctr": 0,
+        "position": 27.598360655737704
+      },
+      {
+        "page": "https://www.knightgroup.com/tarpon-springs-handyman",
+        "clicks": 0,
+        "impressions": 99,
+        "ctr": 0,
+        "position": 9.131313131313131
+      },
+      {
+        "page": "https://www.knightgroup.com/temple-terrace-handyman",
+        "clicks": 0,
+        "impressions": 95,
+        "ctr": 0,
+        "position": 16.38947368421053
+      },
+      {
+        "page": "https://www.knightgroup.com/dunedin-handyman",
+        "clicks": 0,
+        "impressions": 87,
+        "ctr": 0,
+        "position": 15.28735632183908
+      },
+      {
+        "page": "https://www.knightgroup.com/st-petersburg-handyman",
+        "clicks": 0,
+        "impressions": 85,
+        "ctr": 0,
+        "position": 42.37647058823529
+      }
+    ]
+  },
+  "indexing": {
+    "sitemapIssues": [],
+    "inspectionIssues": [
+      {
+        "url": "https://www.knightgroup.com/services",
+        "verdict": "NEUTRAL",
+        "coverageState": "Discovered - currently not indexed",
+        "indexingState": "INDEXING_STATE_UNSPECIFIED",
+        "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "userCanonical": null,
+        "googleCanonical": null,
+        "lastCrawlTime": null
+      },
+      {
+        "url": "https://www.knightgroup.com/Services/general-repairs",
+        "verdict": "NEUTRAL",
+        "coverageState": "Crawled - currently not indexed",
+        "indexingState": "INDEXING_ALLOWED",
+        "robotsTxtState": "ALLOWED",
+        "pageFetchState": "SUCCESSFUL",
+        "userCanonical": "https://www.knightgroup.com/Services/general-repairs",
+        "googleCanonical": "https://www.knightgroup.com/Services/general-repairs",
+        "lastCrawlTime": "2026-02-22T07:49:24Z"
+      }
+    ]
+  },
+  "ui": {
+    "exportedAt": "2026-07-08T13:05:56.918Z",
+    "propertyUrl": "sc-domain:knightgroup.com",
+    "site": "knightgroup.com",
+    "outputRoot": "E:\\GSC Auditer\\runs\\2026-07-08\\knightgroup.com\\ui",
+    "layout": "ui/<group>/<report-id>/",
+    "reportCount": 13,
+    "downloaded": 5,
+    "scraped": 3,
+    "errors": [],
+    "reports": [
+      {
+        "id": "index-pages",
+        "label": "Pages indexing",
+        "group": "indexing",
+        "url": "https://search.google.com/search-console/index?resource_id=sc-domain%3Aknightgroup.com",
+        "outputDir": "indexing\\index-pages",
+        "title": "Page indexing",
+        "exportedAt": "2026-07-08T13:04:17.741Z",
+        "download": {
+          "file": "index-pages.zip",
+          "path": "E:\\GSC Auditer\\runs\\2026-07-08\\knightgroup.com\\ui\\indexing\\index-pages\\index-pages.zip",
+          "suggestedFilename": "knightgroup.com-Coverage-2026-07-08.zip",
+          "format": "zip"
+        },
+        "summaryLines": [
+          "\n\t\n4",
+          "\n4",
+          "lightbulb_2\nInsights",
+          "lightbulb_2",
+          "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+          "link_2\nLinks",
+          "link_2",
+          "All known pages\nAll submitted pages\nUnsubmitted pages only\nhttps://www.knightgroup.com/sitemap.xml\nLast update: 6/29/26",
+          "Last update: 6/29/26",
+          "\nNot indexed\n71\n5 reasons\n",
+          "\nNot indexed\n71\n5 reasons",
+          "5 reasons",
+          "\nIndexed\n55\n",
+          "\nIndexed\n55",
+          "100",
+          "250",
+          "500",
+          "1-5 of 5\n",
+          "1-5 of 5",
+          "Google AccountNicholas Knightnickknight488@gmail.com",
+          "nickknight488@gmail.com"
+        ],
+        "tableRowCount": 6
+      },
+      {
+        "id": "index-videos",
+        "label": "Video pages",
+        "group": "indexing",
+        "url": "https://search.google.com/search-console/video-index?resource_id=sc-domain%3Aknightgroup.com",
+        "outputDir": "indexing\\index-videos",
+        "title": "Video indexing",
+        "exportedAt": "2026-07-08T13:04:21.887Z",
+        "download": null,
+        "summaryLines": [
+          "Google AccountNicholas Knightnickknight488@gmail.com",
+          "nickknight488@gmail.com",
+          "\n\t\n4",
+          "\n4",
+          "lightbulb_2\nInsights",
+          "lightbulb_2",
+          "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+          "link_2\nLinks",
+          "link_2",
+          "All known pages\nLast update: 7/5/26\n\nWe did not find any data\nPlease check back later",
+          "All known pages\nLast update: 7/5/26",
+          "Last update: 7/5/26"
+        ],
+        "tableRowCount": 0
+      },
+      {
+        "id": "sitemaps",
+        "label": "Sitemaps",
+        "group": "indexing",
+        "url": "https://search.google.com/search-console/sitemaps?resource_id=sc-domain%3Aknightgroup.com",
+        "outputDir": "indexing\\sitemaps",
+        "title": "Sitemaps",
+        "exportedAt": "2026-07-08T13:04:25.748Z",
+        "download": null,
+        "summaryLines": [
+          "Google AccountNicholas Knightnickknight488@gmail.com",
+          "nickknight488@gmail.com",
+          "\n\t\n4",
+          "\n4",
+          "lightbulb_2\nInsights",
+          "lightbulb_2",
+          "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+          "link_2\nLinks",
+          "link_2",
+          "Jul 1, 2026",
+          "100",
+          "250",
+          "500",
+          "1-1 of 1\n",
+          "1-1 of 1"
+        ],
+        "tableRowCount": 2
+      },
+      {
+        "id": "removals",
+        "label": "Removals",
+        "group": "indexing",
+        "url": "https://search.google.com/search-console/removals?resource_id=sc-domain%3Aknightgroup.com",
+        "outputDir": "indexing\\removals",
+        "title": "Removals",
+        "exportedAt": "2026-07-08T13:04:29.665Z",
+        "download": null,
+        "summaryLines": [
+          "Google AccountNicholas Knightnickknight488@gmail.com",
+          "nickknight488@gmail.com",
+          "\n\t\n4",
+          "\n4",
+          "lightbulb_2\nInsights",
+          "lightbulb_2",
+          "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+          "link_2\nLinks",
+          "link_2",
+          "History of all temporary page removal requests for this property, filed by any owner or full user in the past 6 months, using this report. Learn more",
+          "The type of request:\n\n\n  Temporarily remove URL: Remove the page from Google Search Results for about 6 months after request approval date.\n  Clear cached URL: Clear the cached version of the page and the snippet until the next time the page is indexed.",
+          "No requests submitted in the last 6 months",
+          "Submitted requestsHistory of all submitted requests for this property in the past 6 months using the public Remove Outdated Content tool.\n",
+          "Submitted requestsHistory of all submitted requests for this property in the past 6 months using the public Remove Outdated Content tool.",
+          "History of all submitted requests for this property in the past 6 months using the public Remove Outdated Content tool.",
+          "History of all submitted requests for this property in the past 6 months using the public Remove Outdated Content tool.",
+          "Submitted requestsGoogle users reported these URLs as containing explicit content in the past 6 months. If you feel that a URL marked Filtered was incorrectly labeled as explicit, you can file an appeal.\nURLRequestedStatusNo requests submitted in the last 6 months",
+          "Submitted requestsGoogle users reported these URLs as containing explicit content in the past 6 months. If you feel that a URL marked Filtered was incorrectly labeled as explicit, you can file an appeal.\n",
+          "Submitted requestsGoogle users reported these URLs as containing explicit content in the past 6 months. If you feel that a URL marked Filtered was incorrectly labeled as explicit, you can file an appeal.",
+          "Google users reported these URLs as containing explicit content in the past 6 months. If you feel that a URL marked Filtered was incorrectly labeled as explicit, you can file an appeal.",
+          "Google users reported these URLs as containing explicit content in the past 6 months. If you feel that a URL marked Filtered was incorrectly labeled as explicit, you can file an appeal."
+        ],
+        "tableRowCount": 3
+      },
+      {
+        "id": "core-web-vitals",
+        "label": "Core Web Vitals",
+        "group": "experience",
+        "url": "https://search.google.com/search-console/core-web-vitals?resource_id=sc-domain%3Aknightgroup.com",
+        "outputDir": "experience\\core-web-vitals",
+        "title": "Core Web Vitals",
+        "exportedAt": "2026-07-08T13:04:53.573Z",
+        "download": null,
+        "summaryLines": [
+          "Google AccountNicholas Knightnickknight488@gmail.com",
+          "nickknight488@gmail.com",
+          "\n\t\n4",
+          "\n4",
+          "lightbulb_2\nInsights",
+          "lightbulb_2",
+          "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+          "link_2\nLinks",
+          "link_2",
+          "Source: Chrome UX report\n\nLast updated: 7/6/26",
+          "Last updated: 7/6/26",
+          "Mobile\nOPEN REPORT\n\nNot enough usage data in the last 90 days for this device type.\nLearn more\nTry PageSpeed Insights",
+          "Not enough usage data in the last 90 days for this device type.\nLearn more\nTry PageSpeed Insights",
+          "Not enough usage data in the last 90 days for this device type.\nLearn more",
+          "Not enough usage data in the last 90 days for this device type.",
+          "Desktop\nOPEN REPORT\n\nNot enough usage data in the last 90 days for this device type.\nLearn more\nTry PageSpeed Insights"
+        ],
+        "tableRowCount": 0
+      },
+      {
+        "id": "https",
+        "label": "HTTPS",
+        "group": "experience",
+        "url": "https://search.google.com/search-console/https?resource_id=sc-domain%3Aknightgroup.com",
+        "outputDir": "experience\\https",
+        "title": "HTTPS",
+        "exportedAt": "2026-07-08T13:04:58.981Z",
+        "download": {
+          "file": "https.zip",
+          "path": "E:\\GSC Auditer\\runs\\2026-07-08\\knightgroup.com\\ui\\experience\\https\\https.zip",
+          "suggestedFilename": "knightgroup.com-Https-2026-07-08.zip",
+          "format": "zip"
+        },
+        "summaryLines": [
+          "\n\t\n4",
+          "\n4",
+          "lightbulb_2\nInsights",
+          "lightbulb_2",
+          "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+          "link_2\nLinks",
+          "link_2",
+          "Last update: 7/7/26",
+          "\nNon-HTTPS URLs\n0\nNo critical issues\n",
+          "\nNon-HTTPS URLs\n0\nNo critical issues",
+          "\nHTTPS URLs\n49\n",
+          "\nHTTPS URLs\n49",
+          "Good job!\nNo issues detected in the last 90 days",
+          "No issues detected in the last 90 days",
+          "Google AccountNicholas Knightnickknight488@gmail.com",
+          "nickknight488@gmail.com"
+        ],
+        "tableRowCount": 0
+      },
+      {
+        "id": "manual-actions",
+        "label": "Manual actions",
+        "group": "security",
+        "url": "https://search.google.com/search-console/manual-actions?resource_id=sc-domain%3Aknightgroup.com",
+        "outputDir": "security\\manual-actions",
+        "title": "Manual actions",
+        "exportedAt": "2026-07-08T13:05:22.894Z",
+        "download": null,
+        "summaryLines": [
+          "Google AccountNicholas Knightnickknight488@gmail.com",
+          "nickknight488@gmail.com",
+          "\n\t\n4",
+          "\n4",
+          "lightbulb_2\nInsights",
+          "lightbulb_2",
+          "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+          "link_2\nLinks",
+          "link_2"
+        ],
+        "tableRowCount": 0
+      },
+      {
+        "id": "security-issues",
+        "label": "Security issues",
+        "group": "security",
+        "url": "https://search.google.com/search-console/security-issues?resource_id=sc-domain%3Aknightgroup.com",
+        "outputDir": "security\\security-issues",
+        "title": "Security issues",
+        "exportedAt": "2026-07-08T13:05:26.889Z",
+        "download": null,
+        "summaryLines": [
+          "Google AccountNicholas Knightnickknight488@gmail.com",
+          "nickknight488@gmail.com",
+          "\n\t\n4",
+          "\n4",
+          "lightbulb_2\nInsights",
+          "lightbulb_2",
+          "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+          "link_2\nLinks",
+          "link_2"
+        ],
+        "tableRowCount": 0
+      },
+      {
+        "id": "links",
+        "label": "Links",
+        "group": "other",
+        "url": "https://search.google.com/search-console/links?resource_id=sc-domain%3Aknightgroup.com",
+        "outputDir": "other\\links",
+        "title": "Links",
+        "exportedAt": "2026-07-08T13:05:36.107Z",
+        "download": null,
+        "summaryLines": [
+          "Google AccountNicholas Knightnickknight488@gmail.com",
+          "nickknight488@gmail.com",
+          "\n\t\n4",
+          "\n4",
+          "lightbulb_2\nInsights",
+          "lightbulb_2",
+          "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+          "link_2\nLinks",
+          "link_2"
+        ],
+        "tableRowCount": 0
+      },
+      {
+        "id": "breadcrumbs",
+        "label": "breadcrumbs",
+        "group": "enhancements",
+        "url": "https://search.google.com/search-console/r/breadcrumbs?resource_id=sc-domain%3Aknightgroup.com",
+        "outputDir": "enhancements\\breadcrumbs",
+        "title": "Breadcrumbs",
+        "exportedAt": "2026-07-08T13:05:41.505Z",
+        "download": {
+          "file": "breadcrumbs.zip",
+          "path": "E:\\GSC Auditer\\runs\\2026-07-08\\knightgroup.com\\ui\\enhancements\\breadcrumbs\\breadcrumbs.zip",
+          "suggestedFilename": "knightgroup.com-Breadcrumbs-2026-07-08.zip",
+          "format": "zip"
+        },
+        "summaryLines": [
+          "Google AccountNicholas Knightnickknight488@gmail.com",
+          "nickknight488@gmail.com",
+          "\n\t\n4",
+          "\n4",
+          "lightbulb_2\nInsights",
+          "lightbulb_2",
+          "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+          "link_2\nLinks",
+          "link_2",
+          "Last update: 7/6/26",
+          "\nInvalid\n0\nNo critical issues\n",
+          "\nInvalid\n0\nNo critical issues",
+          "\nValid\n49\n",
+          "\nValid\n49",
+          "Good job!\nNo issues detected in the last 90 days",
+          "No issues detected in the last 90 days"
+        ],
+        "tableRowCount": 0
+      },
+      {
+        "id": "image-licenses",
+        "label": "image-licenses",
+        "group": "enhancements",
+        "url": "https://search.google.com/search-console/r/image-licenses?resource_id=sc-domain%3Aknightgroup.com",
+        "outputDir": "enhancements\\image-licenses",
+        "title": "Image Metadata",
+        "exportedAt": "2026-07-08T13:05:46.709Z",
+        "download": {
+          "file": "image-licenses.zip",
+          "path": "E:\\GSC Auditer\\runs\\2026-07-08\\knightgroup.com\\ui\\enhancements\\image-licenses\\image-licenses.zip",
+          "suggestedFilename": "knightgroup.com-Image Metadata-2026-07-08.zip",
+          "format": "zip"
+        },
+        "summaryLines": [
+          "Google AccountNicholas Knightnickknight488@gmail.com",
+          "nickknight488@gmail.com",
+          "\n\t\n4",
+          "\n4",
+          "lightbulb_2\nInsights",
+          "lightbulb_2",
+          "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+          "link_2\nLinks",
+          "link_2",
+          "Last update: 7/6/26",
+          "\nInvalid\n0\nNo critical issues\n",
+          "\nInvalid\n0\nNo critical issues",
+          "\nValid\n40\n",
+          "\nValid\n40",
+          "Good job!\nNo issues detected in the last 90 days",
+          "No issues detected in the last 90 days"
+        ],
+        "tableRowCount": 0
+      },
+      {
+        "id": "review-snippet",
+        "label": "review-snippet",
+        "group": "enhancements",
+        "url": "https://search.google.com/search-console/r/review-snippet?resource_id=sc-domain%3Aknightgroup.com",
+        "outputDir": "enhancements\\review-snippet",
+        "title": "Review snippets",
+        "exportedAt": "2026-07-08T13:05:52.192Z",
+        "download": {
+          "file": "review-snippet.zip",
+          "path": "E:\\GSC Auditer\\runs\\2026-07-08\\knightgroup.com\\ui\\enhancements\\review-snippet\\review-snippet.zip",
+          "suggestedFilename": "knightgroup.com-Review snippets-2026-07-08.zip",
+          "format": "zip"
+        },
+        "summaryLines": [
+          "\n\t\n4",
+          "\n4",
+          "lightbulb_2\nInsights",
+          "lightbulb_2",
+          "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+          "link_2\nLinks",
+          "link_2",
+          "Last update: 7/6/26",
+          "\nInvalid\n0\nNo critical issues\n",
+          "\nInvalid\n0\nNo critical issues",
+          "\nValid\n52\n",
+          "\nValid\n52",
+          "Good job!\nNo issues detected in the last 90 days",
+          "No issues detected in the last 90 days",
+          "Google AccountNicholas Knightnickknight488@gmail.com",
+          "nickknight488@gmail.com"
+        ],
+        "tableRowCount": 0
+      },
+      {
+        "id": "achievements",
+        "label": "achievements",
+        "group": "enhancements",
+        "url": "https://search.google.com/search-console/achievements?resource_id=sc-domain%3Aknightgroup.com",
+        "outputDir": "enhancements\\achievements",
+        "title": "Achievements",
+        "exportedAt": "2026-07-08T13:05:56.882Z",
+        "download": null,
+        "summaryLines": [
+          "Google AccountNicholas Knightnickknight488@gmail.com",
+          "nickknight488@gmail.com",
+          "\n\t\n4",
+          "\n4",
+          "lightbulb_2\nInsights",
+          "lightbulb_2",
+          "link_2\nLinks\ntrophy\nAchievements\nsettings\nSettings",
+          "link_2\nLinks",
+          "link_2",
+          "Achievements\nAchievements\nTrack progress and celebrate happy moments in your site's journey. Learn more and get tips\n\nWe're gathering data, \nplease check back in about 13 days",
+          "Achievements\nTrack progress and celebrate happy moments in your site's journey. Learn more and get tips\n\nWe're gathering data, \nplease check back in about 13 days",
+          "\nWe're gathering data, \nplease check back in about 13 days",
+          "We're gathering data, \nplease check back in about 13 days"
+        ],
+        "tableRowCount": 0
+      }
+    ]
+  }
+}
