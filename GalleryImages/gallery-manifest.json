@@ -32,6 +32,26 @@
   ],
   "groups": [
     {
+      "id": "ac-filter-replacement-and-cleaning-before-after",
+      "title": "AC Filter Replacement and Cleaning \u2014 before & after",
+      "description": "Before-and-after proof from a ac filter replacement and cleaning job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-ac-filter-replacement-and-cleaning.webp",
+          "filename": "before-after-ac-filter-replacement-and-cleaning.webp",
+          "step": 1,
+          "title": "AC Filter Replacement and Cleaning before and after",
+          "seoAlt": "AC Filter Replacement and Cleaning before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a ac filter replacement and cleaning job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "ac-vent-filter-change-before-after",
       "title": "AC vent & filter change \u2014 before & after",
       "description": "Dirty return vent and clogged filter replaced with clean filtration and a secure grille.",
@@ -815,6 +835,26 @@
           "beforeAfter": true
         }
       ]
+    },
+    {
+      "id": "same-place-he-did-the-fans-and-lights-before-after",
+      "title": "same place he did the fans and lights \u2014 before & after",
+      "description": "Before-and-after proof from a same place he did the fans and lights job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-same-place-he-did-the-fans-and-lights.webp",
+          "filename": "before-after-same-place-he-did-the-fans-and-lights.webp",
+          "step": 1,
+          "title": "same place he did the fans and lights before and after",
+          "seoAlt": "same place he did the fans and lights before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a same place he did the fans and lights job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
     }
   ],
   "images": [
@@ -1041,6 +1081,20 @@
       "beforeAfter": false,
       "groupTitle": "Window wall repair and rebuild",
       "groupDescription": "Window-area wall damage opened up, corrected, and rebuilt across multiple stages of the same job."
+    },
+    {
+      "src": "GalleryImages/before-after-ac-filter-replacement-and-cleaning.webp",
+      "filename": "before-after-ac-filter-replacement-and-cleaning.webp",
+      "group": "ac-filter-replacement-and-cleaning-before-after",
+      "step": 1,
+      "title": "AC Filter Replacement and Cleaning before and after",
+      "seoAlt": "AC Filter Replacement and Cleaning before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a ac filter replacement and cleaning job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "AC Filter Replacement and Cleaning \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a ac filter replacement and cleaning job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-ac-vent-filter-change.webp",
@@ -1307,6 +1361,20 @@
       "beforeAfter": true,
       "groupTitle": "Resecure Loose Screen Door \u2014 before & after",
       "groupDescription": "Before-and-after proof from a resecure loose screen door job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-same-place-he-did-the-fans-and-lights.webp",
+      "filename": "before-after-same-place-he-did-the-fans-and-lights.webp",
+      "group": "same-place-he-did-the-fans-and-lights-before-after",
+      "step": 1,
+      "title": "same place he did the fans and lights before and after",
+      "seoAlt": "same place he did the fans and lights before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a same place he did the fans and lights job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "same place he did the fans and lights \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a same place he did the fans and lights job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-smoke-alarm-battery-swap.webp",
