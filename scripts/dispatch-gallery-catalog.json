@@ -9,8 +9,8 @@
     "title": "Urgent door lock malfunction before and after",
     "description": "Before-and-after comparison from a urgent door lock malfunction job completed in a Pinellas County home.",
     "beforeAfter": true,
-    "ticket_number": "11728855",
-    "scope_slug": "urgent-door-lock-malfunction"
+    "scope_slug": "urgent-door-lock-malfunction",
+    "source": "dispatch"
   },
   "before-after-resecure-loose-screen-door.webp": {
     "group": "resecure-loose-screen-door-before-after",
@@ -22,8 +22,8 @@
     "title": "Resecure Loose Screen Door before and after",
     "description": "Before-and-after comparison from a resecure loose screen door job completed in a Pinellas County home.",
     "beforeAfter": true,
-    "ticket_number": "11513691",
-    "scope_slug": "resecure-loose-screen-door"
+    "scope_slug": "resecure-loose-screen-door",
+    "source": "dispatch"
   },
   "before-after-copeland-morgan-llc-work-order.webp": {
     "group": "copeland-morgan-llc-work-order-before-after",
@@ -35,8 +35,8 @@
     "title": "Copeland Morgan LLC: Work order before and after",
     "description": "Before-and-after comparison from a copeland morgan llc: work order job completed in a Pinellas County home.",
     "beforeAfter": true,
-    "ticket_number": "11638133",
-    "scope_slug": "copeland-morgan-llc-work-order"
+    "scope_slug": "copeland-morgan-llc-work-order",
+    "source": "dispatch"
   },
   "before-after-the-caulking-around-the-toilet-needs-to-be-repla.webp": {
     "group": "the-caulking-around-the-toilet-needs-to-be-repla-before-after",
@@ -48,8 +48,8 @@
     "title": "The caulking around the toilet needs to be replaced The AC filter needs to be changed. Filter size is 16 x 20. This is a before and after",
     "description": "Before-and-after comparison from a the caulking around the toilet needs to be replaced the ac filter needs to be changed. filter size is 16 x 20. this is a job completed in a Pinellas County home.",
     "beforeAfter": true,
-    "ticket_number": "11665285",
-    "scope_slug": "the-caulking-around-the-toilet-needs-to-be-repla"
+    "scope_slug": "the-caulking-around-the-toilet-needs-to-be-repla",
+    "source": "dispatch"
   },
   "before-after-stove-indicator-light-issue.webp": {
     "group": "stove-indicator-light-issue-before-after",
@@ -61,8 +61,8 @@
     "title": "Stove indicator light issue before and after",
     "description": "Before-and-after comparison from a stove indicator light issue job completed in a Pinellas County home.",
     "beforeAfter": true,
-    "ticket_number": "11676751",
-    "scope_slug": "stove-indicator-light-issue"
+    "scope_slug": "stove-indicator-light-issue",
+    "source": "dispatch"
   },
   "before-after-office-ceiling-fan-malfunction.webp": {
     "group": "office-ceiling-fan-malfunction-before-after",
@@ -74,8 +74,8 @@
     "title": "Office ceiling fan malfunction before and after",
     "description": "Before-and-after comparison from a office ceiling fan malfunction job completed in a Pinellas County home.",
     "beforeAfter": true,
-    "ticket_number": "11696493",
-    "scope_slug": "office-ceiling-fan-malfunction"
+    "scope_slug": "office-ceiling-fan-malfunction",
+    "source": "dispatch"
   },
   "before-after-kitchen-window-blinds-repair.webp": {
     "group": "kitchen-window-blinds-repair-before-after",
@@ -87,21 +87,8 @@
     "title": "Kitchen window blinds repair before and after",
     "description": "Before-and-after comparison from a kitchen window blinds repair job completed in a Pinellas County home.",
     "beforeAfter": true,
-    "ticket_number": "11713642",
-    "scope_slug": "kitchen-window-blinds-repair"
-  },
-  "before-after-two-broken-fences-side-and-backyard-at-1-4636-fa.webp": {
-    "group": "two-broken-fences-side-and-backyard-at-1-4636-fa-before-after",
-    "groupTitle": "Two broken fences (side and backyard) at 1, 4636 Fairfield Avenue South, Saint Petersburg, FL, 33711 caused by a storm. \u2014 before & after",
-    "groupDescription": "Before-and-after proof from a two broken fences (side and backyard) at 1, 4636 fairfield avenue south, saint petersburg, fl, 33711 caused by a storm. job completed by Knight Group.",
-    "category": "carpentry",
-    "serviceLink": "/Services/carpentry-framing",
-    "step": 1,
-    "title": "Two broken fences (side and backyard) at 1, 4636 Fairfield Avenue South, Saint Petersburg, FL, 33711 caused by a storm. before and after",
-    "description": "Before-and-after comparison from a two broken fences (side and backyard) at 1, 4636 fairfield avenue south, saint petersburg, fl, 33711 caused by a storm. job completed in a Pinellas County home.",
-    "beforeAfter": true,
-    "ticket_number": "PM-20260624-8400",
-    "scope_slug": "two-broken-fences-side-and-backyard-at-1-4636-fa"
+    "scope_slug": "kitchen-window-blinds-repair",
+    "source": "dispatch"
   },
   "before-after-replacing-this-main-shut-off-and-hose-bib-copper.webp": {
     "group": "replacing-this-main-shut-off-and-hose-bib-copper-before-after",
@@ -113,7 +100,20 @@
     "title": "replacing this main shut off and hose bib (copper) before and after",
     "description": "Before-and-after comparison from a replacing this main shut off and hose bib (copper) job completed in a Pinellas County home.",
     "beforeAfter": true,
-    "ticket_number": "PM-20260706-1804",
-    "scope_slug": "replacing-this-main-shut-off-and-hose-bib-copper"
+    "scope_slug": "replacing-this-main-shut-off-and-hose-bib-copper",
+    "source": "dispatch"
+  },
+  "before-after-ac-filter-replacement-and-cleaning-e220546.webp": {
+    "group": "ac-filter-replacement-and-cleaning-e220546-before-after",
+    "groupTitle": "AC Filter Replacement and Cleaning \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a ac filter replacement and cleaning job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "AC Filter Replacement and Cleaning before and after",
+    "description": "Before-and-after comparison from a ac filter replacement and cleaning job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "ac-filter-replacement-and-cleaning-e220546",
+    "source": "dispatch"
   }
 }

@@ -32,7 +32,7 @@
   ],
   "groups": [
     {
-      "id": "ac-filter-replacement-and-cleaning-before-after",
+      "id": "ac-filter-replacement-and-cleaning-e220546-before-after",
       "title": "AC Filter Replacement and Cleaning \u2014 before & after",
       "description": "Before-and-after proof from a ac filter replacement and cleaning job completed by Knight Group.",
       "category": "general-repairs",
@@ -41,8 +41,8 @@
       "progression": false,
       "images": [
         {
-          "src": "GalleryImages/before-after-ac-filter-replacement-and-cleaning.webp",
-          "filename": "before-after-ac-filter-replacement-and-cleaning.webp",
+          "src": "GalleryImages/before-after-ac-filter-replacement-and-cleaning-e220546.webp",
+          "filename": "before-after-ac-filter-replacement-and-cleaning-e220546.webp",
           "step": 1,
           "title": "AC Filter Replacement and Cleaning before and after",
           "seoAlt": "AC Filter Replacement and Cleaning before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
@@ -708,26 +708,6 @@
       ]
     },
     {
-      "id": "two-broken-fences-side-and-backyard-at-1-4636-fa-before-after",
-      "title": "Two broken fences (side and backyard) at 1, 4636 Fairfield Avenue South, Saint Petersburg, FL, 33711 caused by a storm. \u2014 before & after",
-      "description": "Before-and-after proof from a two broken fences (side and backyard) at 1, 4636 fairfield avenue south, saint petersburg, fl, 33711 caused by a storm. job completed by Knight Group.",
-      "category": "carpentry",
-      "serviceLink": "/Services/carpentry-framing",
-      "beforeAfter": true,
-      "progression": false,
-      "images": [
-        {
-          "src": "GalleryImages/before-after-two-broken-fences-side-and-backyard-at-1-4636-fa.webp",
-          "filename": "before-after-two-broken-fences-side-and-backyard-at-1-4636-fa.webp",
-          "step": 1,
-          "title": "Two broken fences (side and backyard) at 1, 4636 Fairfield Avenue South, Saint Petersburg, FL, 33711 caused by a storm. before and after",
-          "seoAlt": "Two broken fences (side and backyard) at 1, 4636 Fairfield Avenue South, Saint Petersburg, FL, 33711 caused by a storm. before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
-          "description": "Before-and-after comparison from a two broken fences (side and backyard) at 1, 4636 fairfield avenue south, saint petersburg, fl, 33711 caused by a storm. job completed in a Pinellas County home.",
-          "beforeAfter": true
-        }
-      ]
-    },
-    {
       "id": "urgent-door-lock-malfunction-before-after",
       "title": "Urgent door lock malfunction \u2014 before & after",
       "description": "Before-and-after proof from a urgent door lock malfunction job completed by Knight Group.",
@@ -832,26 +812,6 @@
           "title": "replacing this main shut off and hose bib (copper) before and after",
           "seoAlt": "replacing this main shut off and hose bib (copper) before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
           "description": "Before-and-after comparison from a replacing this main shut off and hose bib (copper) job completed in a Pinellas County home.",
-          "beforeAfter": true
-        }
-      ]
-    },
-    {
-      "id": "same-place-he-did-the-fans-and-lights-before-after",
-      "title": "same place he did the fans and lights \u2014 before & after",
-      "description": "Before-and-after proof from a same place he did the fans and lights job completed by Knight Group.",
-      "category": "general-repairs",
-      "serviceLink": "/Services/general-repairs",
-      "beforeAfter": true,
-      "progression": false,
-      "images": [
-        {
-          "src": "GalleryImages/before-after-same-place-he-did-the-fans-and-lights.webp",
-          "filename": "before-after-same-place-he-did-the-fans-and-lights.webp",
-          "step": 1,
-          "title": "same place he did the fans and lights before and after",
-          "seoAlt": "same place he did the fans and lights before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
-          "description": "Before-and-after comparison from a same place he did the fans and lights job completed in a Pinellas County home.",
           "beforeAfter": true
         }
       ]
@@ -1083,9 +1043,9 @@
       "groupDescription": "Window-area wall damage opened up, corrected, and rebuilt across multiple stages of the same job."
     },
     {
-      "src": "GalleryImages/before-after-ac-filter-replacement-and-cleaning.webp",
-      "filename": "before-after-ac-filter-replacement-and-cleaning.webp",
-      "group": "ac-filter-replacement-and-cleaning-before-after",
+      "src": "GalleryImages/before-after-ac-filter-replacement-and-cleaning-e220546.webp",
+      "filename": "before-after-ac-filter-replacement-and-cleaning-e220546.webp",
+      "group": "ac-filter-replacement-and-cleaning-e220546-before-after",
       "step": 1,
       "title": "AC Filter Replacement and Cleaning before and after",
       "seoAlt": "AC Filter Replacement and Cleaning before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
@@ -1363,20 +1323,6 @@
       "groupDescription": "Before-and-after proof from a resecure loose screen door job completed by Knight Group."
     },
     {
-      "src": "GalleryImages/before-after-same-place-he-did-the-fans-and-lights.webp",
-      "filename": "before-after-same-place-he-did-the-fans-and-lights.webp",
-      "group": "same-place-he-did-the-fans-and-lights-before-after",
-      "step": 1,
-      "title": "same place he did the fans and lights before and after",
-      "seoAlt": "same place he did the fans and lights before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
-      "description": "Before-and-after comparison from a same place he did the fans and lights job completed in a Pinellas County home.",
-      "category": "general-repairs",
-      "serviceLink": "/Services/general-repairs",
-      "beforeAfter": true,
-      "groupTitle": "same place he did the fans and lights \u2014 before & after",
-      "groupDescription": "Before-and-after proof from a same place he did the fans and lights job completed by Knight Group."
-    },
-    {
       "src": "GalleryImages/before-after-smoke-alarm-battery-swap.webp",
       "filename": "before-after-smoke-alarm-battery-swap.webp",
       "group": "smoke-alarm-battery-swap-before-after",
@@ -1431,20 +1377,6 @@
       "beforeAfter": true,
       "groupTitle": "The caulking around the toilet needs to be replaced The AC filter needs to be changed. Filter size is 16 x 20. This is a \u2014 before & after",
       "groupDescription": "Before-and-after proof from a the caulking around the toilet needs to be replaced the ac filter needs to be changed. filter size is 16 x 20. this is a job completed by Knight Group."
-    },
-    {
-      "src": "GalleryImages/before-after-two-broken-fences-side-and-backyard-at-1-4636-fa.webp",
-      "filename": "before-after-two-broken-fences-side-and-backyard-at-1-4636-fa.webp",
-      "group": "two-broken-fences-side-and-backyard-at-1-4636-fa-before-after",
-      "step": 1,
-      "title": "Two broken fences (side and backyard) at 1, 4636 Fairfield Avenue South, Saint Petersburg, FL, 33711 caused by a storm. before and after",
-      "seoAlt": "Two broken fences (side and backyard) at 1, 4636 Fairfield Avenue South, Saint Petersburg, FL, 33711 caused by a storm. before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
-      "description": "Before-and-after comparison from a two broken fences (side and backyard) at 1, 4636 fairfield avenue south, saint petersburg, fl, 33711 caused by a storm. job completed in a Pinellas County home.",
-      "category": "carpentry",
-      "serviceLink": "/Services/carpentry-framing",
-      "beforeAfter": true,
-      "groupTitle": "Two broken fences (side and backyard) at 1, 4636 Fairfield Avenue South, Saint Petersburg, FL, 33711 caused by a storm. \u2014 before & after",
-      "groupDescription": "Before-and-after proof from a two broken fences (side and backyard) at 1, 4636 fairfield avenue south, saint petersburg, fl, 33711 caused by a storm. job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-urgent-door-lock-malfunction.webp",
