@@ -421,6 +421,26 @@
       ]
     },
     {
+      "id": "kitchen-sink-slow-drain-923620a-before-after",
+      "title": "Kitchen sink slow drain \u2014 before & after",
+      "description": "Before-and-after proof from a kitchen sink slow drain job completed by Knight Group.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-kitchen-sink-slow-drain-923620a.webp",
+          "filename": "before-after-kitchen-sink-slow-drain-923620a.webp",
+          "step": 1,
+          "title": "Kitchen sink slow drain before and after",
+          "seoAlt": "Kitchen sink slow drain before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a kitchen sink slow drain job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "kitchen-window-blinds-repair-before-after",
       "title": "Kitchen window blinds repair \u2014 before & after",
       "description": "Before-and-after proof from a kitchen window blinds repair job completed by Knight Group.",
@@ -1333,6 +1353,20 @@
       "beforeAfter": true,
       "groupTitle": "Kitchen sink leak repair \u2014 before & after",
       "groupDescription": "Leak traced under the sink, fittings tightened or replaced, and area dried."
+    },
+    {
+      "src": "GalleryImages/before-after-kitchen-sink-slow-drain-923620a.webp",
+      "filename": "before-after-kitchen-sink-slow-drain-923620a.webp",
+      "group": "kitchen-sink-slow-drain-923620a-before-after",
+      "step": 1,
+      "title": "Kitchen sink slow drain before and after",
+      "seoAlt": "Kitchen sink slow drain before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a kitchen sink slow drain job completed in a Pinellas County home.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "groupTitle": "Kitchen sink slow drain \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a kitchen sink slow drain job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-kitchen-window-blinds-repair.webp",

@@ -141,5 +141,18 @@
     "beforeAfter": true,
     "scope_slug": "ceiling-fan-and-light-repair-c977b5e",
     "source": "dispatch"
+  },
+  "before-after-kitchen-sink-slow-drain-923620a.webp": {
+    "group": "kitchen-sink-slow-drain-923620a-before-after",
+    "groupTitle": "Kitchen sink slow drain \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a kitchen sink slow drain job completed by Knight Group.",
+    "category": "plumbing",
+    "serviceLink": "/Services/plumbing-services",
+    "step": 1,
+    "title": "Kitchen sink slow drain before and after",
+    "description": "Before-and-after comparison from a kitchen sink slow drain job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "kitchen-sink-slow-drain-923620a",
+    "source": "dispatch"
   }
 }
