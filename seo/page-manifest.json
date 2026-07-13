@@ -638,6 +638,34 @@
       "path": "gallery/door-wedge-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/door-wedge-before-after",
       "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "a-c-service-request-6963c57-before-after",
+      "path": "gallery/a-c-service-request-6963c57-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/a-c-service-request-6963c57-before-after",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "ac-filter-replacement-and-cleaning-e220546-before-after",
+      "path": "gallery/ac-filter-replacement-and-cleaning-e220546-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/ac-filter-replacement-and-cleaning-e220546-before-after",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "ceiling-fan-and-light-repair-c977b5e-before-after",
+      "path": "gallery/ceiling-fan-and-light-repair-c977b5e-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/ceiling-fan-and-light-repair-c977b5e-before-after",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "kitchen-sink-slow-drain-923620a-before-after",
+      "path": "gallery/kitchen-sink-slow-drain-923620a-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/kitchen-sink-slow-drain-923620a-before-after",
+      "priority": "0.62"
     }
   ]
 }

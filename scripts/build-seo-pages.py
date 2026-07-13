@@ -867,7 +867,15 @@ def build_manifest() -> list[dict]:
         generate_combo(*args, manifest)
     manifest_data = json.loads((ROOT / "GalleryImages" / "gallery-manifest.json").read_text(encoding="utf-8"))
     groups_by_id = {g["id"]: g for g in manifest_data.get("groups", [])}
-    for pick in GALLERY_PICKS:
+    # Curated legacy pages stay explicit.  Dispatch composites use a stable
+    # privacy hash in the group id; every such job needs a real destination
+    # because the live gallery and Social Ops link to /gallery/<group-id>.
+    dispatch_picks = [
+        group_id
+        for group_id in groups_by_id
+        if re.search(r"-[0-9a-f]{7}-before-after$", group_id)
+    ]
+    for pick in dict.fromkeys([*GALLERY_PICKS, *dispatch_picks]):
         group = groups_by_id.get(pick)
         if group:
             generate_gallery_project(group, manifest)
