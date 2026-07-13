@@ -128,5 +128,18 @@
     "beforeAfter": true,
     "scope_slug": "a-c-service-request-6963c57",
     "source": "dispatch"
+  },
+  "before-after-ceiling-fan-and-light-repair-c977b5e.webp": {
+    "group": "ceiling-fan-and-light-repair-c977b5e-before-after",
+    "groupTitle": "Ceiling fan and light repair \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a ceiling fan and light repair job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Ceiling fan and light repair before and after",
+    "description": "Before-and-after comparison from a ceiling fan and light repair job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "ceiling-fan-and-light-repair-c977b5e",
+    "source": "dispatch"
   }
 }

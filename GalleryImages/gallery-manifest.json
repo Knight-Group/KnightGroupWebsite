@@ -152,6 +152,26 @@
       ]
     },
     {
+      "id": "ceiling-fan-and-light-repair-c977b5e-before-after",
+      "title": "Ceiling fan and light repair \u2014 before & after",
+      "description": "Before-and-after proof from a ceiling fan and light repair job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-ceiling-fan-and-light-repair-c977b5e.webp",
+          "filename": "before-after-ceiling-fan-and-light-repair-c977b5e.webp",
+          "step": 1,
+          "title": "Ceiling fan and light repair before and after",
+          "seoAlt": "Ceiling fan and light repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a ceiling fan and light repair job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "bathroom-remodel-cobblestone",
       "title": "Complete bathroom remodel",
       "description": "Full bathroom remodel with cobblestone flooring laid in the space and tile installed in the shower.",
@@ -1159,6 +1179,20 @@
       "beforeAfter": true,
       "groupTitle": "Carpet removal \u2014 before & after",
       "groupDescription": "Worn carpet and pad removed to expose subfloor ready for the next finish."
+    },
+    {
+      "src": "GalleryImages/before-after-ceiling-fan-and-light-repair-c977b5e.webp",
+      "filename": "before-after-ceiling-fan-and-light-repair-c977b5e.webp",
+      "group": "ceiling-fan-and-light-repair-c977b5e-before-after",
+      "step": 1,
+      "title": "Ceiling fan and light repair before and after",
+      "seoAlt": "Ceiling fan and light repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a ceiling fan and light repair job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Ceiling fan and light repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a ceiling fan and light repair job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-copeland-morgan-llc-work-order.webp",
