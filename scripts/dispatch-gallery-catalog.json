@@ -115,5 +115,18 @@
     "beforeAfter": true,
     "scope_slug": "ac-filter-replacement-and-cleaning-e220546",
     "source": "dispatch"
+  },
+  "before-after-a-c-service-request-6963c57.webp": {
+    "group": "a-c-service-request-6963c57-before-after",
+    "groupTitle": "A/C service request \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a a/c service request job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "A/C service request before and after",
+    "description": "Before-and-after comparison from a a/c service request job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "a-c-service-request-6963c57",
+    "source": "dispatch"
   }
 }

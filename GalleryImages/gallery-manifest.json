@@ -32,6 +32,26 @@
   ],
   "groups": [
     {
+      "id": "a-c-service-request-6963c57-before-after",
+      "title": "A/C service request \u2014 before & after",
+      "description": "Before-and-after proof from a a/c service request job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-a-c-service-request-6963c57.webp",
+          "filename": "before-after-a-c-service-request-6963c57.webp",
+          "step": 1,
+          "title": "A/C service request before and after",
+          "seoAlt": "A/C service request before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a a/c service request job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "ac-filter-replacement-and-cleaning-e220546-before-after",
       "title": "AC Filter Replacement and Cleaning \u2014 before & after",
       "description": "Before-and-after proof from a ac filter replacement and cleaning job completed by Knight Group.",
@@ -1041,6 +1061,20 @@
       "beforeAfter": false,
       "groupTitle": "Window wall repair and rebuild",
       "groupDescription": "Window-area wall damage opened up, corrected, and rebuilt across multiple stages of the same job."
+    },
+    {
+      "src": "GalleryImages/before-after-a-c-service-request-6963c57.webp",
+      "filename": "before-after-a-c-service-request-6963c57.webp",
+      "group": "a-c-service-request-6963c57-before-after",
+      "step": 1,
+      "title": "A/C service request before and after",
+      "seoAlt": "A/C service request before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a a/c service request job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "A/C service request \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a a/c service request job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-ac-filter-replacement-and-cleaning-e220546.webp",
