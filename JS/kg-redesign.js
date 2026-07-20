@@ -124,6 +124,15 @@
     if (!hero || hero.dataset.heroPanelsInit) return;
     hero.dataset.heroPanelsInit = '1';
 
+    if (hero.getAttribute('data-hero-panels-static') === '1') {
+      // Mark ready synchronously so initEnterAnimations can revealImmediate()
+      // AFTER applyEnterRules() attaches data-kg-enter attrs (incl. intent strip).
+      heroPanelsReady = true;
+      hero.classList.add('kg-hero-panels-ready');
+      syncHeroColumnHeights();
+      return;
+    }
+
     renderHeroPanels(hero, heroFallbackImages());
 
     fetch(assetUrl('Images/hero-panels/manifest.json'))
@@ -499,7 +508,11 @@
       });
     };
 
-    queueSync();
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(queueSync, { timeout: 1200 });
+    } else {
+      setTimeout(queueSync, 0);
+    }
 
     if (typeof ResizeObserver !== 'undefined') {
       var observer = new ResizeObserver(queueSync);

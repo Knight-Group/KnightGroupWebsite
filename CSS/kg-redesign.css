@@ -884,7 +884,7 @@ html.kg-js .kg-home .kg-hero:not(.kg-hero-panels-ready) [data-kg-enter-immediate
 .kg-home .kg-hero + .kg-intent-strip {
   position: relative;
   z-index: 8;
-  margin-top: 0;
+  margin-top: -5px;
 }
 
 .kg-home .kg-intent-strip + .kg-jobs-trust-stack {
@@ -3169,6 +3169,7 @@ body:has(main.kg-home) {
   position: absolute;
   left: 18px;
   bottom: 18px;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -3181,6 +3182,7 @@ body:has(main.kg-home) {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.36);
+  pointer-events: none;
 }
 
 .kg-map-overlay strong {

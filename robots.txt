@@ -5,5 +5,15 @@ Disallow: /.venv/
 Disallow: /node_modules/
 Disallow: /seo/
 Disallow: /scripts/
+Disallow: /GalleryImages/
+Disallow: /Chess-Game-main/
+Disallow: /thank-you
+Disallow: /Services/programming
+Disallow: /Services/handcraftedfurniture
+Disallow: /*.html$
 
 Sitemap: https://www.knightgroup.com/sitemap.xml
+
+# AI / agent discovery
+# https://www.knightgroup.com/llms.txt
+# https://www.knightgroup.com/ai.txt
