@@ -7,6 +7,20 @@ mobile.report.json
 
 # Local utility/helper scripts
 _*.py
+**/__pycache__/
+*.py[cod]
 
 # Node
 node_modules/
+
+# Generated audit and editor output
+gsc-audit/
+website-audit/
+*.code-workspace
+seo/schema-verification-report.json
+
+# Local media candidates not referenced by the published site
+GalleryImages/before-after-kitchen-sink-slow-drain-social.jpg
+GalleryImages/before-after-room-1-a-c-service-request-social.jpg
+GalleryImages/before-after-two-broken-fences-side-and-backyard-at-1-social.jpg
+Images/knight-hero-cutout.jpg
