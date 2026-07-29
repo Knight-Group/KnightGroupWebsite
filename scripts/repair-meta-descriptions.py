@@ -21,12 +21,23 @@ META_PATH = ROOT / "seo" / "meta-descriptions.json"
 BAD_PATTERNS = [
     re.compile(r"Memphis,\s*TN", re.I),
     re.compile(r"colorado-", re.I),
+    re.compile(r"Denver", re.I),
+    re.compile(r"Baltimore", re.I),
+    re.compile(r"Amarillo", re.I),
+    re.compile(r"Washington DC", re.I),
+    re.compile(r"Task[Rr]abbit", re.I),
+    re.compile(r"Mr\.\s*Handyman", re.I),
+    re.compile(r"definitive list", re.I),
+    re.compile(r"near your location", re.I),
+    re.compile(r"Paul.?s Sliding", re.I),
+    re.compile(r"Available 24/7", re.I),
     re.compile(r"Quality home\s*\.", re.I),
     re.compile(r"in Clear\.", re.I),
     re.compile(r"With Real\.", re.I),
     re.compile(r"From trim to cust\.", re.I),
-    re.compile(r"Amarillo", re.I),
-    re.compile(r"Washington DC", re.I),
+    re.compile(r"handyman near me small jobs", re.I),
+    re.compile(r"carpentry services near me:", re.I),
+    re.compile(r"handyman painting pinellas", re.I),
 ]
 
 MAJOR_SERVICE_META = {
@@ -69,6 +80,14 @@ MAJOR_SERVICE_META = {
     "Services/emergency-services.html": (
         "Emergency handyman response in Pinellas County for active leaks, storm damage, and urgent "
         "repairs. Call (813) 649-3341. Registered and insured. Free estimate when safe to quote."
+    ),
+    "Services/home-repair-near-me.html": (
+        "Home repair near you in Pinellas County: drywall, doors, fixture plumbing, paint, and "
+        "punch-list fixes. Registered Safety Harbor crew. No 2-hour minimum. Free written estimate."
+    ),
+    "Services/small-job-carpenter.html": (
+        "Small-job carpenter in Pinellas County for trim, shelves, door frames, and wood repairs. "
+        "Registered and insured. No 2-hour minimum. Free written estimate."
     ),
     "index.html": (
         "Registered Safety Harbor handyman team serving Pinellas County. Plumbing, drywall, carpentry, "

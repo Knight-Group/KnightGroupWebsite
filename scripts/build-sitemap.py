@@ -23,7 +23,6 @@ STATIC_PAGES = [
     ("/about", "0.82", "monthly"),
     ("/galleries", "0.80", "weekly"),
     ("/service-areas", "0.85", "monthly"),
-    ("/llms.txt", "0.40", "monthly"),
 ]
 
 MAJOR_SERVICES = [

@@ -1,6 +1,50 @@
 # Knight Group Audit Status
 
-Last updated: 2026-07-08
+Last updated: 2026-07-29
+
+## 2026-07-29 GSC Audit + CTR Conversion Push
+
+Fresh Playwright + API audit: `gsc-audit/2026-07-29/` (source: `E:/Website Audit/GSC`).
+
+### Live GSC snapshot (period ~Apr 30–Jul 26)
+
+- Clicks **57** · Impressions **17,198** · CTR **0.33%** · Avg position **21.6**
+- User UI later in the window showed ~71 clicks / 20.1K impressions / 0.4% CTR — directionally up from Jul 18 (30 / 11K / 0.27%).
+- Indexed **76** · Not indexed **56** · Sitemap **113** URLs after removing `llms.txt` (was 114).
+- Still not indexed on inspection: `/services`, `/Services/general-repairs`.
+- Near-page-one CTR disasters (0 clicks): `handyman temple terrace` (~pos 6.9), `handyman hillsborough county` (~pos 7.1), plus `handyman near me` (1,500 impressions / 0.07% CTR).
+
+### Implemented this round
+
+- Ran full GSC audit with UI exports; updated `.gsc-audit-latest.json`.
+- Rewrote polluted Serper-scraped metas (Denver, Baltimore, TaskRabbit, Mr. Handyman, “definitive list,” etc.) across money + niche service pages.
+- Replaced keyword-stuffed geo metas (`handyman near me small jobs`, `carpentry services near me`, Pinellas phrases on Hillsborough pages).
+- CTR-focused titles on high-impression pages: `/Services/handyman`, `/pricing`, Clearwater, Largo, Temple Terrace, Hillsborough, Pinellas, Tampa, home-repair, small-job carpenter, doors/windows.
+- Hero Book + Call CTAs on handyman, home-repair, general-repairs, Clearwater, Temple Terrace, Hillsborough.
+- Fixed Temple Terrace body/FAQ stuffing; Hillsborough opening; Town 'n' Country false HQ claim.
+- Updated `geo_serp_keywords.py` so Hillsborough/Pasco cities no longer map to Pinellas SERP queries.
+- Cleaned `geo_seo_copy.py` for Temple Terrace, Tampa, Town 'n' Country, Northdale (prevents regen regressions).
+- Removed `llms.txt` from sitemap builder; regenerated `sitemap.xml` (113 URLs).
+- Hardened `repair-meta-descriptions.py` bad-pattern list.
+
+### Indexing bucket interpretation (matches GSC UI)
+
+| Bucket | Count | Likely cause / action |
+| --- | ---: | --- |
+| Discovered – not indexed | ~33 | New/gallery/long-tail pages; strengthen internal links + quality; wait + request indexing after deploy |
+| Crawled – not indexed | ~16 | Thin/duplicate/geo-mismatch quality; geo copy cleanup this round |
+| Excluded by noindex | 3 | Policy pages — intentional |
+| Blocked by robots.txt | 2 | Legacy programming/furniture soft-redirect URLs — intentional |
+| Page with redirect | 2 | Same legacy soft redirects — GH Pages cannot hard-301 without edge config |
+
+Manual actions / security / HTTPS “issues” in the automated report are UI-scrape noise (tables empty; HTTPS shows 0 non-HTTPS issues).
+
+### Next after deploy
+
+1. Deploy this workspace to GitHub Pages.
+2. `node E:\Website Audit\GSC\tools\submit-indexing.mjs --site knightgroup.com` for money URLs + `/services` + `/Services/general-repairs`.
+3. Validate Temple Terrace / Hillsborough / handyman titles in live SERP after recrawl.
+4. Offsite: GBP posts + review asks naming city + job type (see `docs/SEO-AUTHORITY-REPORTING.md`).
 
 ## 2026-07-08 GSC Growth Implementation
 
@@ -11,38 +55,3 @@ Last updated: 2026-07-08
 - Improved crawlable links on `/services` and `/Services/general-repairs`, then removed utility `llms.txt` from `sitemap.xml`.
 - Added a richer gallery proof schema pattern on `gallery/door-lock-repair-before-after.html`.
 - Added `docs/SEO-AUTHORITY-REPORTING.md` for offsite authority actions and weekly audit follow-up.
-
-## 2026-05-30 Historical Snapshot
-
-> **Note:** File paths below use the old `E:/KnightGroupWebsite` folder name. Canonical repo is `E:/All Client Websites/KnightGroupWebsite`.
-
-## Completed in this round
-
-- Removed the direct Messenger social link from the shared partials and all inlined page copies because it was the live external 302 target flagged by Ahrefs.
-- Replaced remote email-provider favicon images with local inline provider badges across the public forms to stop redirected-image warnings.
-- Simplified the homepage JSON-LD into a smaller valid graph to reduce schema noise in [index.html](E:/All Client Websites/KnightGroupWebsite/index.html).
-- Reworked structured data on [pricing.html](E:/All Client Websites/KnightGroupWebsite/pricing.html) so the page no longer exposes the invalid standalone `Offer` pattern that triggered Google rich-results warnings.
-- Removed the invalid `availability: "24/7"` field from the service schema on [Services/emergency-services.html](E:/All Client Websites/KnightGroupWebsite/Services/emergency-services.html).
-- Bumped the shared include cache version to `20260530-social-cleanup` after header/footer changes so live validation is not masked by cached partials.
-- Verified the touched HTML and JS files show no editor errors after the changes.
-
-## Verified issue mapping
-
-- `External 3XX redirect`: repo-fixable. Root cause was `https://www.messenger.com/t/KnightGroupServices`.
-- `Page has links to redirect`: repo-fixable. Same Messenger URL was present across 18 indexable pages.
-- `Page in multiple sitemaps`: hosting-level. Ahrefs shows the same URLs referenced by both `http://www.knightgroup.com/sitemap.xml` and `https://www.knightgroup.com/sitemap.xml`.
-- `Canonical from HTTP to HTTPS`: hosting-level. The live host currently returns `200` for both `http://www.knightgroup.com/` and `https://www.knightgroup.com/`.
-- `Page has only one dofollow incoming internal link`: mostly a hosting artifact in current Ahrefs results because HTTP and HTTPS variants are being crawled separately.
-- `Pages to submit to IndexNow`: operational follow-up after deployment of the current source changes.
-
-## Homepage assessment
-
-- `index.html` is large, but the size is mostly homepage-specific CSS/content plus some still-inlined shared UI.
-- The file is not too large in a way that forces an immediate split, especially because the current high Lighthouse state depends on the existing critical font and hero CSS loading sequence.
-- The best next structural cleanup is reducing duplicated shared markup and keeping non-critical shared UI in the include path, not breaking apart the critical hero/font path.
-
-## Remaining follow-up
-
-1. Enforce HTTPS at the host/domain level so `http://www.knightgroup.com/` and `http://www.knightgroup.com/sitemap.xml` no longer return `200`.
-2. After deployment, rerun Ahrefs and submit the updated sitemap URLs to IndexNow.
-3. If more cleanup is needed, continue consolidating repeated header/social/modal markup into the shared include flow without changing the known-good hero/font loading architecture.
