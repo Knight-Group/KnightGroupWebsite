@@ -1,16 +1,30 @@
 User-agent: *
 Allow: /
+Allow: /GalleryImages/
+
+# App / tooling — never index
 Disallow: /admin/
 Disallow: /.venv/
 Disallow: /node_modules/
 Disallow: /seo/
 Disallow: /scripts/
-Disallow: /GalleryImages/
 Disallow: /Chess-Game-main/
+
+# HTML includes served as public URLs on GitHub Pages
+Disallow: /header
+Disallow: /footer
+Disallow: /head-gtm
+Disallow: /socialCards
+Disallow: /page-template
+
+# Thank-you and retired service URLs
 Disallow: /thank-you
 Disallow: /Services/programming
 Disallow: /Services/handcraftedfurniture
-Disallow: /*.html$
+
+# Do not Disallow /*.html$ — GitHub Pages serves the same page at /path and /path.html.
+# Canonical tags already point at the clean URL. Blocking .html caused
+# "Indexed, though blocked by robots.txt" and stopped Google from consolidating duplicates.
 
 Sitemap: https://www.knightgroup.com/sitemap.xml
 
