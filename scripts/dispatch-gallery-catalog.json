@@ -466,5 +466,18 @@
     "beforeAfter": true,
     "scope_slug": "pressure-wash-walk-way-b49a8fd",
     "source": "dispatch"
+  },
+  "before-after-repair-ceiling-in-bathroom-f739128.webp": {
+    "group": "repair-ceiling-in-bathroom-f739128-before-after",
+    "groupTitle": "Repair ceiling in bathroom \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a repair ceiling in bathroom job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Repair ceiling in bathroom before and after",
+    "description": "Before-and-after comparison from a repair ceiling in bathroom job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "repair-ceiling-in-bathroom-f739128",
+    "source": "dispatch"
   }
 }
