@@ -687,6 +687,13 @@
       "path": "gallery/kitchen-sink-slow-drain-923620a-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/kitchen-sink-slow-drain-923620a-before-after",
       "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "refrigerator-leak-and-floor-damage-8e0dedc-before-after",
+      "path": "gallery/refrigerator-leak-and-floor-damage-8e0dedc-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/refrigerator-leak-and-floor-damage-8e0dedc-before-after",
+      "priority": "0.62"
     }
   ]
 }
