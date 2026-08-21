@@ -1577,6 +1577,26 @@
       ]
     },
     {
+      "id": "a-wall-outlet-repair-93788a6-before-after",
+      "title": "a wall outlet repair \u2014 before & after",
+      "description": "Before-and-after proof from a a wall outlet repair job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-a-wall-outlet-repair-93788a6.webp",
+          "filename": "before-after-a-wall-outlet-repair-93788a6.webp",
+          "step": 1,
+          "title": "a wall outlet repair before and after",
+          "seoAlt": "a wall outlet repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a a wall outlet repair job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "ballast-light-fixture-bbe38e2-before-after",
       "title": "ballast light fixture \u2014 before & after",
       "description": "Before-and-after proof from a ballast light fixture job completed by Knight Group.",
@@ -1869,6 +1889,20 @@
       "beforeAfter": true,
       "groupTitle": "A/C service request \u2014 before & after",
       "groupDescription": "Before-and-after proof from a a/c service request job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-a-wall-outlet-repair-93788a6.webp",
+      "filename": "before-after-a-wall-outlet-repair-93788a6.webp",
+      "group": "a-wall-outlet-repair-93788a6-before-after",
+      "step": 1,
+      "title": "a wall outlet repair before and after",
+      "seoAlt": "a wall outlet repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a a wall outlet repair job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "a wall outlet repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a a wall outlet repair job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-ac-filter-and-airflow-service-3b3c0e8.webp",
