@@ -427,5 +427,18 @@
     "beforeAfter": true,
     "scope_slug": "front-fence-repair-08fc100",
     "source": "dispatch"
+  },
+  "before-after-clean-exterior-front-of-house-70a4580.webp": {
+    "group": "clean-exterior-front-of-house-70a4580-before-after",
+    "groupTitle": "Clean exterior front of house \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a clean exterior front of house job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Clean exterior front of house before and after",
+    "description": "Before-and-after comparison from a clean exterior front of house job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "clean-exterior-front-of-house-70a4580",
+    "source": "dispatch"
   }
 }

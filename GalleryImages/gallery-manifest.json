@@ -232,6 +232,26 @@
       ]
     },
     {
+      "id": "clean-exterior-front-of-house-70a4580-before-after",
+      "title": "Clean exterior front of house \u2014 before & after",
+      "description": "Before-and-after proof from a clean exterior front of house job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-clean-exterior-front-of-house-70a4580.webp",
+          "filename": "before-after-clean-exterior-front-of-house-70a4580.webp",
+          "step": 1,
+          "title": "Clean exterior front of house before and after",
+          "seoAlt": "Clean exterior front of house before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a clean exterior front of house job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "bathroom-remodel-cobblestone",
       "title": "Complete bathroom remodel",
       "description": "Full bathroom remodel with cobblestone flooring laid in the space and tile installed in the shower.",
@@ -1661,6 +1681,20 @@
       "beforeAfter": true,
       "groupTitle": "Ceiling fan and light repair \u2014 before & after",
       "groupDescription": "Before-and-after proof from a ceiling fan and light repair job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-clean-exterior-front-of-house-70a4580.webp",
+      "filename": "before-after-clean-exterior-front-of-house-70a4580.webp",
+      "group": "clean-exterior-front-of-house-70a4580-before-after",
+      "step": 1,
+      "title": "Clean exterior front of house before and after",
+      "seoAlt": "Clean exterior front of house before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a clean exterior front of house job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Clean exterior front of house \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a clean exterior front of house job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-clean-vent-register-7860ef9.webp",
