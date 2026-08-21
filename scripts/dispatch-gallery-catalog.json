@@ -297,5 +297,18 @@
     "beforeAfter": true,
     "scope_slug": "ac-filter-and-airflow-service-3b3c0e8",
     "source": "dispatch"
+  },
+  "before-after-wasp-bee-nest-removal-request-0f9dd4b.webp": {
+    "group": "wasp-bee-nest-removal-request-0f9dd4b-before-after",
+    "groupTitle": "Wasp/bee nest removal request \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a wasp/bee nest removal request job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Wasp/bee nest removal request before and after",
+    "description": "Before-and-after comparison from a wasp/bee nest removal request job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "wasp-bee-nest-removal-request-0f9dd4b",
+    "source": "dispatch"
   }
 }

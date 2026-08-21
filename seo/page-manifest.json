@@ -743,6 +743,13 @@
       "path": "gallery/toilet-0ff372e-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/toilet-0ff372e-before-after",
       "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "wasp-bee-nest-removal-request-0f9dd4b-before-after",
+      "path": "gallery/wasp-bee-nest-removal-request-0f9dd4b-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/wasp-bee-nest-removal-request-0f9dd4b-before-after",
+      "priority": "0.62"
     }
   ]
 }
