@@ -388,5 +388,18 @@
     "beforeAfter": true,
     "scope_slug": "threshold-9826926",
     "source": "dispatch"
+  },
+  "before-after-cabinet-repair-339b0d9.webp": {
+    "group": "cabinet-repair-339b0d9-before-after",
+    "groupTitle": "Cabinet repair \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a cabinet repair job completed by Knight Group.",
+    "category": "carpentry",
+    "serviceLink": "/Services/carpentry-framing",
+    "step": 1,
+    "title": "Cabinet repair before and after",
+    "description": "Before-and-after comparison from a cabinet repair job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "cabinet-repair-339b0d9",
+    "source": "dispatch"
   }
 }

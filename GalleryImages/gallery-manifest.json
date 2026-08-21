@@ -152,6 +152,26 @@
       ]
     },
     {
+      "id": "cabinet-repair-339b0d9-before-after",
+      "title": "Cabinet repair \u2014 before & after",
+      "description": "Before-and-after proof from a cabinet repair job completed by Knight Group.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-cabinet-repair-339b0d9.webp",
+          "filename": "before-after-cabinet-repair-339b0d9.webp",
+          "step": 1,
+          "title": "Cabinet repair before and after",
+          "seoAlt": "Cabinet repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a cabinet repair job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "carpet-removal-before-after",
       "title": "Carpet removal \u2014 before & after",
       "description": "Worn carpet and pad removed to expose subfloor ready for the next finish.",
@@ -1559,6 +1579,20 @@
       "beforeAfter": true,
       "groupTitle": "Stove burner repair \u2014 before & after",
       "groupDescription": "Broken stove burner restored to safe, working condition."
+    },
+    {
+      "src": "GalleryImages/before-after-cabinet-repair-339b0d9.webp",
+      "filename": "before-after-cabinet-repair-339b0d9.webp",
+      "group": "cabinet-repair-339b0d9-before-after",
+      "step": 1,
+      "title": "Cabinet repair before and after",
+      "seoAlt": "Cabinet repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a cabinet repair job completed in a Pinellas County home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Cabinet repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a cabinet repair job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-carpet-removal.webp",
