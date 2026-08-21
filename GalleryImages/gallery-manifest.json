@@ -1019,6 +1019,26 @@
       ]
     },
     {
+      "id": "threshold-9826926-before-after",
+      "title": "Threshold \u2014 before & after",
+      "description": "Before-and-after proof from a threshold job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-threshold-9826926.webp",
+          "filename": "before-after-threshold-9826926.webp",
+          "step": 1,
+          "title": "Threshold before and after",
+          "seoAlt": "Threshold before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a threshold job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "toilet-0ff372e-before-after",
       "title": "Toilet \u2014 before & after",
       "description": "Before-and-after proof from a toilet job completed by Knight Group.",
@@ -2029,6 +2049,20 @@
       "beforeAfter": true,
       "groupTitle": "The caulking around the toilet needs to be replaced The AC filter needs to be changed. Filter size is 16 x 20. This is a \u2014 before & after",
       "groupDescription": "Before-and-after proof from a the caulking around the toilet needs to be replaced the ac filter needs to be changed. filter size is 16 x 20. this is a job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-threshold-9826926.webp",
+      "filename": "before-after-threshold-9826926.webp",
+      "group": "threshold-9826926-before-after",
+      "step": 1,
+      "title": "Threshold before and after",
+      "seoAlt": "Threshold before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a threshold job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Threshold \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a threshold job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-toilet-0ff372e.webp",
