@@ -939,6 +939,13 @@
       "path": "gallery/ballast-light-fixture-bbe38e2-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/ballast-light-fixture-bbe38e2-before-after",
       "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "drywall-repair-paint-ef28bb4-before-after",
+      "path": "gallery/drywall-repair-paint-ef28bb4-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/drywall-repair-paint-ef28bb4-before-after",
+      "priority": "0.62"
     }
   ]
 }

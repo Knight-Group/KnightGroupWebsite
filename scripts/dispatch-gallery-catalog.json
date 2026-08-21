@@ -661,5 +661,18 @@
     "beforeAfter": true,
     "scope_slug": "handyman-repair-163b4a6",
     "source": "dispatch"
+  },
+  "before-after-drywall-repair-paint-ef28bb4.webp": {
+    "group": "drywall-repair-paint-ef28bb4-before-after",
+    "groupTitle": "drywall repair & paint \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a drywall repair & paint job completed by Knight Group.",
+    "category": "painting",
+    "serviceLink": "/Services/painting-drywall",
+    "step": 1,
+    "title": "drywall repair & paint before and after",
+    "description": "Before-and-after comparison from a drywall repair & paint job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "drywall-repair-paint-ef28bb4",
+    "source": "dispatch"
   }
 }

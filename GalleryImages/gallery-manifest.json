@@ -1637,6 +1637,26 @@
       ]
     },
     {
+      "id": "drywall-repair-paint-ef28bb4-before-after",
+      "title": "drywall repair & paint \u2014 before & after",
+      "description": "Before-and-after proof from a drywall repair & paint job completed by Knight Group.",
+      "category": "painting",
+      "serviceLink": "/Services/painting-drywall",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-drywall-repair-paint-ef28bb4.webp",
+          "filename": "before-after-drywall-repair-paint-ef28bb4.webp",
+          "step": 1,
+          "title": "drywall repair & paint before and after",
+          "seoAlt": "drywall repair & paint before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a drywall repair & paint job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "replacing-this-main-shut-off-and-hose-bib-copper-before-after",
       "title": "replacing this main shut off and hose bib (copper) \u2014 before & after",
       "description": "Before-and-after proof from a replacing this main shut off and hose bib (copper) job completed by Knight Group.",
@@ -2217,6 +2237,20 @@
       "beforeAfter": true,
       "groupTitle": "Door wedge install \u2014 before & after",
       "groupDescription": "Floor gap corrected with a secure door wedge so the door stays put."
+    },
+    {
+      "src": "GalleryImages/before-after-drywall-repair-paint-ef28bb4.webp",
+      "filename": "before-after-drywall-repair-paint-ef28bb4.webp",
+      "group": "drywall-repair-paint-ef28bb4-before-after",
+      "step": 1,
+      "title": "drywall repair & paint before and after",
+      "seoAlt": "drywall repair & paint before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a drywall repair & paint job completed in a Pinellas County home.",
+      "category": "painting",
+      "serviceLink": "/Services/painting-drywall",
+      "beforeAfter": true,
+      "groupTitle": "drywall repair & paint \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a drywall repair & paint job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-exterior-coping-and-screens-f1920f7.webp",
