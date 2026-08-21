@@ -352,6 +352,26 @@
       ]
     },
     {
+      "id": "handyman-repair-669cf03-before-after",
+      "title": "Handyman repair \u2014 before & after",
+      "description": "Before-and-after proof from a handyman repair job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-handyman-repair-669cf03.webp",
+          "filename": "before-after-handyman-repair-669cf03.webp",
+          "step": 1,
+          "title": "Handyman repair before and after",
+          "seoAlt": "Handyman repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a handyman repair job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "handyman-repair-8ff963a-before-after",
       "title": "Handyman repair \u2014 before & after",
       "description": "Before-and-after proof from a handyman repair job completed by Knight Group.",
@@ -1365,6 +1385,20 @@
       "beforeAfter": true,
       "groupTitle": "Refrigerator door alignment \u2014 before & after",
       "groupDescription": "Refrigerator that would not close properly corrected so the door seals and operates normally again."
+    },
+    {
+      "src": "GalleryImages/before-after-handyman-repair-669cf03.webp",
+      "filename": "before-after-handyman-repair-669cf03.webp",
+      "group": "handyman-repair-669cf03-before-after",
+      "step": 1,
+      "title": "Handyman repair before and after",
+      "seoAlt": "Handyman repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a handyman repair job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Handyman repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a handyman repair job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-handyman-repair-8ff963a.webp",
