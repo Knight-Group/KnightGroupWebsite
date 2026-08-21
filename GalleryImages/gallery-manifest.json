@@ -839,6 +839,26 @@
       ]
     },
     {
+      "id": "secure-outlets-5be7424-before-after",
+      "title": "Secure outlets \u2014 before & after",
+      "description": "Before-and-after proof from a secure outlets job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-secure-outlets-5be7424.webp",
+          "filename": "before-after-secure-outlets-5be7424.webp",
+          "step": 1,
+          "title": "Secure outlets before and after",
+          "seoAlt": "Secure outlets before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a secure outlets job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "shower-2cf7af0-before-after",
       "title": "Shower \u2014 before & after",
       "description": "Before-and-after proof from a shower job completed by Knight Group.",
@@ -1897,6 +1917,20 @@
       "beforeAfter": true,
       "groupTitle": "Resecure Loose Screen Door \u2014 before & after",
       "groupDescription": "Before-and-after proof from a resecure loose screen door job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-secure-outlets-5be7424.webp",
+      "filename": "before-after-secure-outlets-5be7424.webp",
+      "group": "secure-outlets-5be7424-before-after",
+      "step": 1,
+      "title": "Secure outlets before and after",
+      "seoAlt": "Secure outlets before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a secure outlets job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Secure outlets \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a secure outlets job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-shower-2cf7af0.webp",

@@ -362,5 +362,18 @@
     "beforeAfter": true,
     "scope_slug": "clean-vent-register-7860ef9",
     "source": "dispatch"
+  },
+  "before-after-secure-outlets-5be7424.webp": {
+    "group": "secure-outlets-5be7424-before-after",
+    "groupTitle": "Secure outlets \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a secure outlets job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Secure outlets before and after",
+    "description": "Before-and-after comparison from a secure outlets job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "secure-outlets-5be7424",
+    "source": "dispatch"
   }
 }
