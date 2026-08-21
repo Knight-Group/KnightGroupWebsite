@@ -154,5 +154,18 @@
     "beforeAfter": true,
     "scope_slug": "kitchen-sink-slow-drain-923620a",
     "source": "dispatch"
+  },
+  "before-after-handyman-repair-8ff963a.webp": {
+    "group": "handyman-repair-8ff963a-before-after",
+    "groupTitle": "Handyman repair \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a handyman repair job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Handyman repair before and after",
+    "description": "Before-and-after comparison from a handyman repair job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "handyman-repair-8ff963a",
+    "source": "dispatch"
   }
 }
