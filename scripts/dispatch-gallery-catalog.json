@@ -518,5 +518,18 @@
     "beforeAfter": true,
     "scope_slug": "repair-kithchen-cabinets-9e04de2",
     "source": "dispatch"
+  },
+  "before-after-change-locks-98d8bca.webp": {
+    "group": "change-locks-98d8bca-before-after",
+    "groupTitle": "Change locks \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a change locks job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Change locks before and after",
+    "description": "Before-and-after comparison from a change locks job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "change-locks-98d8bca",
+    "source": "dispatch"
   }
 }
