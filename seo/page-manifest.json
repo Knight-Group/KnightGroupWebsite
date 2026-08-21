@@ -918,6 +918,13 @@
       "path": "gallery/wasp-bee-nest-removal-request-0f9dd4b-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/wasp-bee-nest-removal-request-0f9dd4b-before-after",
       "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "ballast-light-fixture-bbe38e2-before-after",
+      "path": "gallery/ballast-light-fixture-bbe38e2-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/ballast-light-fixture-bbe38e2-before-after",
+      "priority": "0.62"
     }
   ]
 }

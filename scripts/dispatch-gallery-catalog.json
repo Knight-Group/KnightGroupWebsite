@@ -622,5 +622,18 @@
     "beforeAfter": true,
     "scope_slug": "2-toilets-7f8c499",
     "source": "dispatch"
+  },
+  "before-after-ballast-light-fixture-bbe38e2.webp": {
+    "group": "ballast-light-fixture-bbe38e2-before-after",
+    "groupTitle": "ballast light fixture \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a ballast light fixture job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "ballast light fixture before and after",
+    "description": "Before-and-after comparison from a ballast light fixture job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "ballast-light-fixture-bbe38e2",
+    "source": "dispatch"
   }
 }

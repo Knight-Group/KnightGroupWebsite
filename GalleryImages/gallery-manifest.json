@@ -1577,6 +1577,26 @@
       ]
     },
     {
+      "id": "ballast-light-fixture-bbe38e2-before-after",
+      "title": "ballast light fixture \u2014 before & after",
+      "description": "Before-and-after proof from a ballast light fixture job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-ballast-light-fixture-bbe38e2.webp",
+          "filename": "before-after-ballast-light-fixture-bbe38e2.webp",
+          "step": 1,
+          "title": "ballast light fixture before and after",
+          "seoAlt": "ballast light fixture before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a ballast light fixture job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "replacing-this-main-shut-off-and-hose-bib-copper-before-after",
       "title": "replacing this main shut off and hose bib (copper) \u2014 before & after",
       "description": "Before-and-after proof from a replacing this main shut off and hose bib (copper) job completed by Knight Group.",
@@ -1891,6 +1911,20 @@
       "beforeAfter": true,
       "groupTitle": "AC vent & filter change \u2014 before & after",
       "groupDescription": "Dirty return vent and clogged filter replaced with clean filtration and a secure grille."
+    },
+    {
+      "src": "GalleryImages/before-after-ballast-light-fixture-bbe38e2.webp",
+      "filename": "before-after-ballast-light-fixture-bbe38e2.webp",
+      "group": "ballast-light-fixture-bbe38e2-before-after",
+      "step": 1,
+      "title": "ballast light fixture before and after",
+      "seoAlt": "ballast light fixture before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a ballast light fixture job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "ballast light fixture \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a ballast light fixture job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-blind-repair.webp",
