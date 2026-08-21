@@ -284,5 +284,18 @@
     "beforeAfter": true,
     "scope_slug": "toilet-0ff372e",
     "source": "dispatch"
+  },
+  "before-after-ac-filter-and-airflow-service-3b3c0e8.webp": {
+    "group": "ac-filter-and-airflow-service-3b3c0e8-before-after",
+    "groupTitle": "AC filter and airflow service \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a ac filter and airflow service job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "AC filter and airflow service before and after",
+    "description": "Before-and-after comparison from a ac filter and airflow service job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "ac-filter-and-airflow-service-3b3c0e8",
+    "source": "dispatch"
   }
 }
