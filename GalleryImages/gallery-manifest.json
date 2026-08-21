@@ -1199,6 +1199,26 @@
       ]
     },
     {
+      "id": "transition-strip-98fcc0e-before-after",
+      "title": "Transition strip \u2014 before & after",
+      "description": "Before-and-after proof from a transition strip job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-transition-strip-98fcc0e.webp",
+          "filename": "before-after-transition-strip-98fcc0e.webp",
+          "step": 1,
+          "title": "Transition strip before and after",
+          "seoAlt": "Transition strip before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a transition strip job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "tub-drain-before-after",
       "title": "Tub drain repair \u2014 before & after",
       "description": "Side-by-side proof of a tub drain correction from the failed condition through the completed fix.",
@@ -2315,6 +2335,20 @@
       "beforeAfter": true,
       "groupTitle": "Toilet \u2014 before & after",
       "groupDescription": "Before-and-after proof from a toilet job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-transition-strip-98fcc0e.webp",
+      "filename": "before-after-transition-strip-98fcc0e.webp",
+      "group": "transition-strip-98fcc0e-before-after",
+      "step": 1,
+      "title": "Transition strip before and after",
+      "seoAlt": "Transition strip before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a transition strip job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Transition strip \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a transition strip job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-urgent-door-lock-malfunction.webp",

@@ -479,5 +479,18 @@
     "beforeAfter": true,
     "scope_slug": "repair-ceiling-in-bathroom-f739128",
     "source": "dispatch"
+  },
+  "before-after-transition-strip-98fcc0e.webp": {
+    "group": "transition-strip-98fcc0e-before-after",
+    "groupTitle": "Transition strip \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a transition strip job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Transition strip before and after",
+    "description": "Before-and-after comparison from a transition strip job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "transition-strip-98fcc0e",
+    "source": "dispatch"
   }
 }
