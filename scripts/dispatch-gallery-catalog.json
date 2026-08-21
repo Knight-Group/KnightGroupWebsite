@@ -609,5 +609,18 @@
     "beforeAfter": true,
     "scope_slug": "ceiling-drywall-patch-2f1127e",
     "source": "dispatch"
+  },
+  "before-after-2-toilets-7f8c499.webp": {
+    "group": "2-toilets-7f8c499-before-after",
+    "groupTitle": "2 toilets \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a 2 toilets job completed by Knight Group.",
+    "category": "plumbing",
+    "serviceLink": "/Services/plumbing-services",
+    "step": 1,
+    "title": "2 toilets before and after",
+    "description": "Before-and-after comparison from a 2 toilets job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "2-toilets-7f8c499",
+    "source": "dispatch"
   }
 }

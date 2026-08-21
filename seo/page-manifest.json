@@ -641,6 +641,13 @@
     },
     {
       "pageType": "gallery-project",
+      "slug": "2-toilets-7f8c499-before-after",
+      "path": "gallery/2-toilets-7f8c499-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/2-toilets-7f8c499-before-after",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
       "slug": "a-c-service-request-6963c57-before-after",
       "path": "gallery/a-c-service-request-6963c57-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/a-c-service-request-6963c57-before-after",

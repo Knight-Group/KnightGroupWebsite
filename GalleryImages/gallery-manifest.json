@@ -32,6 +32,26 @@
   ],
   "groups": [
     {
+      "id": "2-toilets-7f8c499-before-after",
+      "title": "2 toilets \u2014 before & after",
+      "description": "Before-and-after proof from a 2 toilets job completed by Knight Group.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-2-toilets-7f8c499.webp",
+          "filename": "before-after-2-toilets-7f8c499.webp",
+          "step": 1,
+          "title": "2 toilets before and after",
+          "seoAlt": "2 toilets before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a 2 toilets job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "a-c-service-request-6963c57-before-after",
       "title": "A/C service request \u2014 before & after",
       "description": "Before-and-after proof from a a/c service request job completed by Knight Group.",
@@ -1801,6 +1821,20 @@
       "beforeAfter": false,
       "groupTitle": "Window wall repair and rebuild",
       "groupDescription": "Window-area wall damage opened up, corrected, and rebuilt across multiple stages of the same job."
+    },
+    {
+      "src": "GalleryImages/before-after-2-toilets-7f8c499.webp",
+      "filename": "before-after-2-toilets-7f8c499.webp",
+      "group": "2-toilets-7f8c499-before-after",
+      "step": 1,
+      "title": "2 toilets before and after",
+      "seoAlt": "2 toilets before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a 2 toilets job completed in a Pinellas County home.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "groupTitle": "2 toilets \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a 2 toilets job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-a-c-service-request-6963c57.webp",
