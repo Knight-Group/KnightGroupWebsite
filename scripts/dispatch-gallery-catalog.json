@@ -258,5 +258,18 @@
     "beforeAfter": true,
     "scope_slug": "front-intrusion-be5d722",
     "source": "dispatch"
+  },
+  "before-after-shower-2cf7af0.webp": {
+    "group": "shower-2cf7af0-before-after",
+    "groupTitle": "Shower \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a shower job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Shower before and after",
+    "description": "Before-and-after comparison from a shower job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "shower-2cf7af0",
+    "source": "dispatch"
   }
 }

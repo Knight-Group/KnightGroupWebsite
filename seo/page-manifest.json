@@ -722,6 +722,13 @@
       "path": "gallery/refrigerator-leak-and-floor-damage-8e0dedc-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/refrigerator-leak-and-floor-damage-8e0dedc-before-after",
       "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "shower-2cf7af0-before-after",
+      "path": "gallery/shower-2cf7af0-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/shower-2cf7af0-before-after",
+      "priority": "0.62"
     }
   ]
 }
