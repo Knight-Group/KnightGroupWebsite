@@ -1170,6 +1170,26 @@
       ]
     },
     {
+      "id": "recaulk-around-kitchen-windowsill-custom-5cca131-before-after",
+      "title": "Recaulk around kitchen windowsill (customer request) \u2014 before & after",
+      "description": "Before-and-after proof from a recaulk around kitchen windowsill (customer request) job completed by Knight Group.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-recaulk-around-kitchen-windowsill-custom-5cca131.webp",
+          "filename": "before-after-recaulk-around-kitchen-windowsill-custom-5cca131.webp",
+          "step": 1,
+          "title": "Recaulk around kitchen windowsill (customer request) before and after",
+          "seoAlt": "Recaulk around kitchen windowsill (customer request) before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a recaulk around kitchen windowsill (customer request) job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "refrigerator-leak-and-floor-damage-8e0dedc-before-after",
       "title": "Refrigerator Leak and Floor Damage \u2014 before & after",
       "description": "Before-and-after proof from a refrigerator leak and floor damage job completed by Knight Group.",
@@ -2973,6 +2993,20 @@
       "beforeAfter": true,
       "groupTitle": "Pressure wash walk way \u2014 before & after",
       "groupDescription": "Before-and-after proof from a pressure wash walk way job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-recaulk-around-kitchen-windowsill-custom-5cca131.webp",
+      "filename": "before-after-recaulk-around-kitchen-windowsill-custom-5cca131.webp",
+      "group": "recaulk-around-kitchen-windowsill-custom-5cca131-before-after",
+      "step": 1,
+      "title": "Recaulk around kitchen windowsill (customer request) before and after",
+      "seoAlt": "Recaulk around kitchen windowsill (customer request) before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a recaulk around kitchen windowsill (customer request) job completed in a Pinellas County home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Recaulk around kitchen windowsill (customer request) \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a recaulk around kitchen windowsill (customer request) job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-refrigerator-leak-and-floor-damage-8e0dedc.webp",

@@ -843,5 +843,18 @@
     "beforeAfter": true,
     "scope_slug": "sink-drain-caulk-trap-leak-7843b10",
     "source": "dispatch"
+  },
+  "before-after-recaulk-around-kitchen-windowsill-custom-5cca131.webp": {
+    "group": "recaulk-around-kitchen-windowsill-custom-5cca131-before-after",
+    "groupTitle": "Recaulk around kitchen windowsill (customer request) \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a recaulk around kitchen windowsill (customer request) job completed by Knight Group.",
+    "category": "carpentry",
+    "serviceLink": "/Services/carpentry-framing",
+    "step": 1,
+    "title": "Recaulk around kitchen windowsill (customer request) before and after",
+    "description": "Before-and-after comparison from a recaulk around kitchen windowsill (customer request) job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "recaulk-around-kitchen-windowsill-custom-5cca131",
+    "source": "dispatch"
   }
 }
