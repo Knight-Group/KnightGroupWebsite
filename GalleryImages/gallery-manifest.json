@@ -572,6 +572,26 @@
       ]
     },
     {
+      "id": "front-need-0394870-before-after",
+      "title": "Front need \u2014 before & after",
+      "description": "Before-and-after proof from a front need job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-front-need-0394870.webp",
+          "filename": "before-after-front-need-0394870.webp",
+          "step": 1,
+          "title": "Front need before and after",
+          "seoAlt": "Front need before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a front need job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "garbage-disposal-install",
       "title": "Garbage disposal installation",
       "description": "Under-sink disposal work completed as part of a practical plumbing repair call.",
@@ -2363,6 +2383,20 @@
       "beforeAfter": true,
       "groupTitle": "Front Intrusion \u2014 before & after",
       "groupDescription": "Before-and-after proof from a front intrusion job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-front-need-0394870.webp",
+      "filename": "before-after-front-need-0394870.webp",
+      "group": "front-need-0394870-before-after",
+      "step": 1,
+      "title": "Front need before and after",
+      "seoAlt": "Front need before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a front need job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Front need \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a front need job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-handyman-repair-163b4a6.webp",
