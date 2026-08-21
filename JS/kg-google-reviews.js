@@ -155,7 +155,7 @@
     }
 
     function loadFeed() {
-        return fetch('./data/google-reviews.json?v=20260603')
+        return fetch('/data/google-reviews.json?v=' + new Date().toISOString().slice(0, 10))
             .then(function (response) {
                 if (!response.ok) {
                     return null;
@@ -170,6 +170,8 @@
     loadFeed().then(function (payload) {
         if (payload && Array.isArray(payload.reviews) && payload.reviews.length) {
             track.innerHTML = payload.reviews.map(cardMarkup).join('');
+        }
+        if (payload && (payload.reviewCount || (payload.reviews && payload.reviews.length))) {
             applySummary(payload);
         } else {
             applySummary({ ratingValue: 5, reviewCount: track.children.length });

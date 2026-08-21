@@ -3,7 +3,7 @@
   "@id": "https://www.knightgroup.com/#business",
   "name": "Knight Group Handyman Services LLC",
   "url": "https://www.knightgroup.com/",
-  "description": "Knight Group Handyman Services LLC provides registered and insured handyman services across Safety Harbor and Pinellas County, Florida for repairs, plumbing fixture work, drywall, carpentry, painting, doors, windows, and smaller renovation projects.",
+  "description": "Knight Group Handyman Services LLC provides registered and insured handyman services and recurring Home Watch / vacant-property checks across Safety Harbor and Pinellas County, Florida.",
   "image": [
     "https://www.knightgroup.com/Images/handyman.jpg",
     "https://www.knightgroup.com/Images/KGHero.webp"
@@ -23,8 +23,12 @@
   ],
   "priceRange": "$75-$200",
   "hasMap": "https://maps.google.com/?cid=10508624668428370015",
-  "parentOrganization": { "@id": "https://www.knightgroup.com/#organization" },
-  "founder": { "@id": "https://www.knightgroup.com/#founder" },
+  "parentOrganization": {
+    "@id": "https://www.knightgroup.com/#organization"
+  },
+  "founder": {
+    "@id": "https://www.knightgroup.com/#founder"
+  },
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "1225 7th St S",
@@ -41,23 +45,112 @@
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
       "opens": "08:00",
       "closes": "17:00"
     }
   ],
   "areaServed": [
-    { "@type": "City", "name": "Safety Harbor, FL" },
-    { "@type": "City", "name": "Clearwater, FL" },
-    { "@type": "City", "name": "Dunedin, FL" },
-    { "@type": "City", "name": "Palm Harbor, FL" },
-    { "@type": "City", "name": "Largo, FL" },
-    { "@type": "City", "name": "Oldsmar, FL" },
-    { "@type": "City", "name": "Tarpon Springs, FL" },
-    { "@type": "City", "name": "Seminole, FL" },
-    { "@type": "City", "name": "St. Petersburg, FL" },
-    { "@type": "AdministrativeArea", "name": "Pinellas County, Florida" }
+    {
+      "@type": "City",
+      "name": "Safety Harbor, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Clearwater, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Dunedin, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Palm Harbor, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Largo, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Oldsmar, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Tarpon Springs, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Seminole, FL"
+    },
+    {
+      "@type": "City",
+      "name": "St. Petersburg, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Tampa, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Town 'n' Country, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Westchase, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Holiday, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Trinity, FL"
+    },
+    {
+      "@type": "City",
+      "name": "New Port Richey, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Land O' Lakes, FL"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Pinellas County, Florida"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Hillsborough County, Florida"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Pasco County, Florida"
+    }
   ],
+  "hasOfferCatalog": {
+    "@id": "https://www.knightgroup.com/pricing#offer-catalog"
+  },
+  "paymentAccepted": [
+    "Cash",
+    "Check",
+    "Zelle",
+    "Credit Card"
+  ],
+  "currenciesAccepted": "USD",
+  "foundingDate": "2024",
+  "slogan": "Registered and insured handyman services in Safety Harbor and Tampa Bay",
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "name": "Book a free handyman estimate",
+    "target": "https://www.knightgroup.com/booking"
+  },
   "knowsAbout": [
     "Handyman services",
     "General home repairs",
@@ -67,19 +160,25 @@
     "Painting and finishing",
     "Door and window repair",
     "Home renovations",
-    "Emergency handyman repairs"
+    "Emergency handyman repairs",
+    "Home Watch",
+    "Vacant property checks",
+    "Seasonal home property care",
+    "Absentee homeowner services",
+    "Second-home property checks"
   ],
   "sameAs": [
     "https://www.facebook.com/KnightGroupServices/",
     "https://www.instagram.com/knight_group_services/",
     "https://x.com/KnightGroupSvcs",
     "https://www.tiktok.com/@knightgroupservices",
-    "https://www.pinterest.com/KnightGroupService/"
+    "https://www.pinterest.com/KnightGroupService/",
+    "https://www.google.com/maps?cid=10508624668428370015"
   ],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "reviewCount": "7",
+    "reviewCount": "12",
     "bestRating": "5",
     "worstRating": "1"
   }

@@ -195,8 +195,30 @@ def build_image_object(
     return node
 
 
+def _apply_live_reviews(entity: dict[str, Any]) -> dict[str, Any]:
+    feed_path = ROOT / "data" / "google-reviews.json"
+    if not feed_path.exists():
+        return entity
+    try:
+        feed = json.loads(feed_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return entity
+    count = feed.get("reviewCount")
+    rating = feed.get("ratingValue")
+    if not count:
+        return entity
+    agg = entity.setdefault("aggregateRating", {"@type": "AggregateRating"})
+    agg["reviewCount"] = str(int(count))
+    if rating is not None:
+        agg["ratingValue"] = f"{float(rating):.1f}"
+    agg.setdefault("bestRating", "5")
+    agg.setdefault("worstRating", "1")
+    return entity
+
+
 def business_entity(*, include_reviews: bool = False) -> dict[str, Any]:
     entity = copy.deepcopy(_load("knight-group-business-entity.json"))
+    _apply_live_reviews(entity)
     if include_reviews:
         entity["review"] = _load("knight-group-reviews-home.json")
     return entity
