@@ -832,6 +832,26 @@
       ]
     },
     {
+      "id": "inspect-water-leaks-08cb97a-before-after",
+      "title": "Inspect water leaks \u2014 before & after",
+      "description": "Before-and-after proof from a inspect water leaks job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-inspect-water-leaks-08cb97a.webp",
+          "filename": "before-after-inspect-water-leaks-08cb97a.webp",
+          "step": 1,
+          "title": "Inspect water leaks before and after",
+          "seoAlt": "Inspect water leaks before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a inspect water leaks job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "room-refinish",
       "title": "Interior room refinish",
       "description": "Room refinishing shown from the first completed view through a later stage of the same project.",
@@ -2583,6 +2603,20 @@
       "beforeAfter": true,
       "groupTitle": "Hornet nest removal and wall sealed \u2014 before & after",
       "groupDescription": "Hornet nest removed from the wall and the opening sealed and finished cleanly."
+    },
+    {
+      "src": "GalleryImages/before-after-inspect-water-leaks-08cb97a.webp",
+      "filename": "before-after-inspect-water-leaks-08cb97a.webp",
+      "group": "inspect-water-leaks-08cb97a-before-after",
+      "step": 1,
+      "title": "Inspect water leaks before and after",
+      "seoAlt": "Inspect water leaks before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a inspect water leaks job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Inspect water leaks \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a inspect water leaks job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-kitchen-drawer-and-ceiling-damage-6f1d487.webp",

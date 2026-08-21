@@ -726,5 +726,18 @@
     "beforeAfter": true,
     "scope_slug": "fence-is-falling-down-and-needs-to-be-pu-b17b3ec",
     "source": "dispatch"
+  },
+  "before-after-inspect-water-leaks-08cb97a.webp": {
+    "group": "inspect-water-leaks-08cb97a-before-after",
+    "groupTitle": "Inspect water leaks \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a inspect water leaks job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Inspect water leaks before and after",
+    "description": "Before-and-after comparison from a inspect water leaks job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "inspect-water-leaks-08cb97a",
+    "source": "dispatch"
   }
 }
