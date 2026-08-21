@@ -132,6 +132,26 @@
       ]
     },
     {
+      "id": "attic-drywall-return-visit-54b0dce-before-after",
+      "title": "Attic Drywall - Return Visit \u2014 before & after",
+      "description": "Before-and-after proof from a attic drywall - return visit job completed by Knight Group.",
+      "category": "painting",
+      "serviceLink": "/Services/painting-drywall",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-attic-drywall-return-visit-54b0dce.webp",
+          "filename": "before-after-attic-drywall-return-visit-54b0dce.webp",
+          "step": 1,
+          "title": "Attic Drywall - Return Visit before and after",
+          "seoAlt": "Attic Drywall - Return Visit before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a attic drywall - return visit job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "bathroom-tub-window-remodel",
       "title": "Bathroom tub surround, window, and floor work",
       "description": "Finished bathroom remodel with tile around the tub and window, updated faucet, window replacement, and new flooring.",
@@ -2025,6 +2045,20 @@
       "beforeAfter": true,
       "groupTitle": "AC vent & filter change \u2014 before & after",
       "groupDescription": "Dirty return vent and clogged filter replaced with clean filtration and a secure grille."
+    },
+    {
+      "src": "GalleryImages/before-after-attic-drywall-return-visit-54b0dce.webp",
+      "filename": "before-after-attic-drywall-return-visit-54b0dce.webp",
+      "group": "attic-drywall-return-visit-54b0dce-before-after",
+      "step": 1,
+      "title": "Attic Drywall - Return Visit before and after",
+      "seoAlt": "Attic Drywall - Return Visit before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a attic drywall - return visit job completed in a Pinellas County home.",
+      "category": "painting",
+      "serviceLink": "/Services/painting-drywall",
+      "beforeAfter": true,
+      "groupTitle": "Attic Drywall - Return Visit \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a attic drywall - return visit job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-ballast-light-fixture-bbe38e2.webp",
