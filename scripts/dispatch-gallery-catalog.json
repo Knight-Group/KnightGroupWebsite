@@ -349,5 +349,18 @@
     "beforeAfter": true,
     "scope_slug": "side-yard-gate-repair-18bb381",
     "source": "dispatch"
+  },
+  "before-after-clean-vent-register-7860ef9.webp": {
+    "group": "clean-vent-register-7860ef9-before-after",
+    "groupTitle": "Clean Vent Register \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a clean vent register job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Clean Vent Register before and after",
+    "description": "Before-and-after comparison from a clean vent register job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "clean-vent-register-7860ef9",
+    "source": "dispatch"
   }
 }
