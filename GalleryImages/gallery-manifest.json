@@ -1368,6 +1368,26 @@
       ]
     },
     {
+      "id": "wasp-nest-79cfa0f-before-after",
+      "title": "Wasp nest \u2014 before & after",
+      "description": "Before-and-after proof from a wasp nest job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-wasp-nest-79cfa0f.webp",
+          "filename": "before-after-wasp-nest-79cfa0f.webp",
+          "step": 1,
+          "title": "Wasp nest before and after",
+          "seoAlt": "Wasp nest before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a wasp nest job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "wasp-bee-nest-removal-request-0f9dd4b-before-after",
       "title": "Wasp/bee nest removal request \u2014 before & after",
       "description": "Before-and-after proof from a wasp/bee nest removal request job completed by Knight Group.",
@@ -2513,6 +2533,20 @@
       "beforeAfter": true,
       "groupTitle": "Wasp/bee nest removal request \u2014 before & after",
       "groupDescription": "Before-and-after proof from a wasp/bee nest removal request job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-wasp-nest-79cfa0f.webp",
+      "filename": "before-after-wasp-nest-79cfa0f.webp",
+      "group": "wasp-nest-79cfa0f-before-after",
+      "step": 1,
+      "title": "Wasp nest before and after",
+      "seoAlt": "Wasp nest before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a wasp nest job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Wasp nest \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a wasp nest job completed by Knight Group."
     },
     {
       "src": "GalleryImages/fixing_floor2.webp",

@@ -544,5 +544,18 @@
     "beforeAfter": true,
     "scope_slug": "clean-both-ac-filters-46965b4",
     "source": "dispatch"
+  },
+  "before-after-wasp-nest-79cfa0f.webp": {
+    "group": "wasp-nest-79cfa0f-before-after",
+    "groupTitle": "Wasp nest \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a wasp nest job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Wasp nest before and after",
+    "description": "Before-and-after comparison from a wasp nest job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "wasp-nest-79cfa0f",
+    "source": "dispatch"
   }
 }
