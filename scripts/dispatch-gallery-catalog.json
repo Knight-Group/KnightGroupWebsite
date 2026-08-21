@@ -232,5 +232,18 @@
     "beforeAfter": true,
     "scope_slug": "handyman-repair-e8e763c",
     "source": "dispatch"
+  },
+  "before-after-corner-cabinet-shelf-repair-bc5b1e2.webp": {
+    "group": "corner-cabinet-shelf-repair-bc5b1e2-before-after",
+    "groupTitle": "Corner Cabinet Shelf Repair \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a corner cabinet shelf repair job completed by Knight Group.",
+    "category": "carpentry",
+    "serviceLink": "/Services/carpentry-framing",
+    "step": 1,
+    "title": "Corner Cabinet Shelf Repair before and after",
+    "description": "Before-and-after comparison from a corner cabinet shelf repair job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "corner-cabinet-shelf-repair-bc5b1e2",
+    "source": "dispatch"
   }
 }

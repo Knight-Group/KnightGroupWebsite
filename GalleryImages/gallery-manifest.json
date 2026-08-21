@@ -212,6 +212,26 @@
       ]
     },
     {
+      "id": "corner-cabinet-shelf-repair-bc5b1e2-before-after",
+      "title": "Corner Cabinet Shelf Repair \u2014 before & after",
+      "description": "Before-and-after proof from a corner cabinet shelf repair job completed by Knight Group.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-corner-cabinet-shelf-repair-bc5b1e2.webp",
+          "filename": "before-after-corner-cabinet-shelf-repair-bc5b1e2.webp",
+          "step": 1,
+          "title": "Corner Cabinet Shelf Repair before and after",
+          "seoAlt": "Corner Cabinet Shelf Repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a corner cabinet shelf repair job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "curtain-rod-mount-before-after",
       "title": "Curtain rod mount \u2014 before & after",
       "description": "Loose rod brackets remounted into solid framing for a secure, level hang.",
@@ -1347,6 +1367,20 @@
       "beforeAfter": true,
       "groupTitle": "Copeland Morgan LLC: Work order \u2014 before & after",
       "groupDescription": "Before-and-after proof from a copeland morgan llc: work order job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-corner-cabinet-shelf-repair-bc5b1e2.webp",
+      "filename": "before-after-corner-cabinet-shelf-repair-bc5b1e2.webp",
+      "group": "corner-cabinet-shelf-repair-bc5b1e2-before-after",
+      "step": 1,
+      "title": "Corner Cabinet Shelf Repair before and after",
+      "seoAlt": "Corner Cabinet Shelf Repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a corner cabinet shelf repair job completed in a Pinellas County home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Corner Cabinet Shelf Repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a corner cabinet shelf repair job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-curtain-rod-mount.webp",
