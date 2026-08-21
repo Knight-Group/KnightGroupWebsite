@@ -919,6 +919,26 @@
       ]
     },
     {
+      "id": "sink-drain-pop-up-assembly-36b860c-before-after",
+      "title": "Sink drain/pop up assembly \u2014 before & after",
+      "description": "Before-and-after proof from a sink drain/pop up assembly job completed by Knight Group.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-sink-drain-pop-up-assembly-36b860c.webp",
+          "filename": "before-after-sink-drain-pop-up-assembly-36b860c.webp",
+          "step": 1,
+          "title": "Sink drain/pop up assembly before and after",
+          "seoAlt": "Sink drain/pop up assembly before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a sink drain/pop up assembly job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "smoke-alarm-battery-swap-before-after",
       "title": "Smoke alarm battery swap \u2014 before & after",
       "description": "Expired batteries replaced and units tested so alarms respond correctly.",
@@ -2013,6 +2033,20 @@
       "beforeAfter": true,
       "groupTitle": "Side yard gate repair \u2014 before & after",
       "groupDescription": "Before-and-after proof from a side yard gate repair job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-sink-drain-pop-up-assembly-36b860c.webp",
+      "filename": "before-after-sink-drain-pop-up-assembly-36b860c.webp",
+      "group": "sink-drain-pop-up-assembly-36b860c-before-after",
+      "step": 1,
+      "title": "Sink drain/pop up assembly before and after",
+      "seoAlt": "Sink drain/pop up assembly before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a sink drain/pop up assembly job completed in a Pinellas County home.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "groupTitle": "Sink drain/pop up assembly \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a sink drain/pop up assembly job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-smoke-alarm-battery-swap.webp",

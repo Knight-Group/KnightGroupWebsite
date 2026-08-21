@@ -401,5 +401,18 @@
     "beforeAfter": true,
     "scope_slug": "cabinet-repair-339b0d9",
     "source": "dispatch"
+  },
+  "before-after-sink-drain-pop-up-assembly-36b860c.webp": {
+    "group": "sink-drain-pop-up-assembly-36b860c-before-after",
+    "groupTitle": "Sink drain/pop up assembly \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a sink drain/pop up assembly job completed by Knight Group.",
+    "category": "plumbing",
+    "serviceLink": "/Services/plumbing-services",
+    "step": 1,
+    "title": "Sink drain/pop up assembly before and after",
+    "description": "Before-and-after comparison from a sink drain/pop up assembly job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "sink-drain-pop-up-assembly-36b860c",
+    "source": "dispatch"
   }
 }
