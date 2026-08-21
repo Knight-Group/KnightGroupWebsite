@@ -995,6 +995,13 @@
       "path": "gallery/drywall-repair-paint-ef28bb4-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/drywall-repair-paint-ef28bb4-before-after",
       "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "laminate-lvp-installation-d86a9bf-before-after",
+      "path": "gallery/laminate-lvp-installation-d86a9bf-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/laminate-lvp-installation-d86a9bf-before-after",
+      "priority": "0.62"
     }
   ]
 }

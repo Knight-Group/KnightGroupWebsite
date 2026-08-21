@@ -765,5 +765,18 @@
     "beforeAfter": true,
     "scope_slug": "handyman-repair-2ef83e1",
     "source": "dispatch"
+  },
+  "before-after-laminate-lvp-installation-d86a9bf.webp": {
+    "group": "laminate-lvp-installation-d86a9bf-before-after",
+    "groupTitle": "laminate/lvp installation \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a laminate/lvp installation job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "laminate/lvp installation before and after",
+    "description": "Before-and-after comparison from a laminate/lvp installation job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "laminate-lvp-installation-d86a9bf",
+    "source": "dispatch"
   }
 }

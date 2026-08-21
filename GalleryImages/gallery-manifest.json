@@ -1797,6 +1797,26 @@
       ]
     },
     {
+      "id": "laminate-lvp-installation-d86a9bf-before-after",
+      "title": "laminate/lvp installation \u2014 before & after",
+      "description": "Before-and-after proof from a laminate/lvp installation job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-laminate-lvp-installation-d86a9bf.webp",
+          "filename": "before-after-laminate-lvp-installation-d86a9bf.webp",
+          "step": 1,
+          "title": "laminate/lvp installation before and after",
+          "seoAlt": "laminate/lvp installation before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a laminate/lvp installation job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "replacing-this-main-shut-off-and-hose-bib-copper-before-after",
       "title": "replacing this main shut off and hose bib (copper) \u2014 before & after",
       "description": "Before-and-after proof from a replacing this main shut off and hose bib (copper) job completed by Knight Group.",
@@ -2755,6 +2775,20 @@
       "beforeAfter": true,
       "groupTitle": "Kitchen window blinds repair \u2014 before & after",
       "groupDescription": "Before-and-after proof from a kitchen window blinds repair job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-laminate-lvp-installation-d86a9bf.webp",
+      "filename": "before-after-laminate-lvp-installation-d86a9bf.webp",
+      "group": "laminate-lvp-installation-d86a9bf-before-after",
+      "step": 1,
+      "title": "laminate/lvp installation before and after",
+      "seoAlt": "laminate/lvp installation before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a laminate/lvp installation job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "laminate/lvp installation \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a laminate/lvp installation job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-office-ceiling-fan-malfunction.webp",
