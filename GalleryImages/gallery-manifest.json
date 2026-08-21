@@ -899,6 +899,26 @@
       ]
     },
     {
+      "id": "toilet-0ff372e-before-after",
+      "title": "Toilet \u2014 before & after",
+      "description": "Before-and-after proof from a toilet job completed by Knight Group.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-toilet-0ff372e.webp",
+          "filename": "before-after-toilet-0ff372e.webp",
+          "step": 1,
+          "title": "Toilet before and after",
+          "seoAlt": "Toilet before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a toilet job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "tub-drain-before-after",
       "title": "Tub drain repair \u2014 before & after",
       "description": "Side-by-side proof of a tub drain correction from the failed condition through the completed fix.",
@@ -1785,6 +1805,20 @@
       "beforeAfter": true,
       "groupTitle": "The caulking around the toilet needs to be replaced The AC filter needs to be changed. Filter size is 16 x 20. This is a \u2014 before & after",
       "groupDescription": "Before-and-after proof from a the caulking around the toilet needs to be replaced the ac filter needs to be changed. filter size is 16 x 20. this is a job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-toilet-0ff372e.webp",
+      "filename": "before-after-toilet-0ff372e.webp",
+      "group": "toilet-0ff372e-before-after",
+      "step": 1,
+      "title": "Toilet before and after",
+      "seoAlt": "Toilet before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a toilet job completed in a Pinellas County home.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "groupTitle": "Toilet \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a toilet job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-urgent-door-lock-malfunction.webp",

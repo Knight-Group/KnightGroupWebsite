@@ -271,5 +271,18 @@
     "beforeAfter": true,
     "scope_slug": "shower-2cf7af0",
     "source": "dispatch"
+  },
+  "before-after-toilet-0ff372e.webp": {
+    "group": "toilet-0ff372e-before-after",
+    "groupTitle": "Toilet \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a toilet job completed by Knight Group.",
+    "category": "plumbing",
+    "serviceLink": "/Services/plumbing-services",
+    "step": 1,
+    "title": "Toilet before and after",
+    "description": "Before-and-after comparison from a toilet job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "toilet-0ff372e",
+    "source": "dispatch"
   }
 }

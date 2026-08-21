@@ -729,6 +729,13 @@
       "path": "gallery/shower-2cf7af0-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/shower-2cf7af0-before-after",
       "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "toilet-0ff372e-before-after",
+      "path": "gallery/toilet-0ff372e-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/toilet-0ff372e-before-after",
+      "priority": "0.62"
     }
   ]
 }
