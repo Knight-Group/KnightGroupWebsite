@@ -810,6 +810,26 @@
       ]
     },
     {
+      "id": "pressure-wash-walk-way-b49a8fd-before-after",
+      "title": "Pressure wash walk way \u2014 before & after",
+      "description": "Before-and-after proof from a pressure wash walk way job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-pressure-wash-walk-way-b49a8fd.webp",
+          "filename": "before-after-pressure-wash-walk-way-b49a8fd.webp",
+          "step": 1,
+          "title": "Pressure wash walk way before and after",
+          "seoAlt": "Pressure wash walk way before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a pressure wash walk way job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "refrigerator-leak-and-floor-damage-8e0dedc-before-after",
       "title": "Refrigerator Leak and Floor Damage \u2014 before & after",
       "description": "Before-and-after proof from a refrigerator leak and floor damage job completed by Knight Group.",
@@ -2051,6 +2071,20 @@
       "beforeAfter": true,
       "groupTitle": "Office ceiling fan malfunction \u2014 before & after",
       "groupDescription": "Before-and-after proof from a office ceiling fan malfunction job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-pressure-wash-walk-way-b49a8fd.webp",
+      "filename": "before-after-pressure-wash-walk-way-b49a8fd.webp",
+      "group": "pressure-wash-walk-way-b49a8fd-before-after",
+      "step": 1,
+      "title": "Pressure wash walk way before and after",
+      "seoAlt": "Pressure wash walk way before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a pressure wash walk way job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Pressure wash walk way \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a pressure wash walk way job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-refrigerator-leak-and-floor-damage-8e0dedc.webp",

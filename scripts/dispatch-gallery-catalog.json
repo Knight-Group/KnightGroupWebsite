@@ -453,5 +453,18 @@
     "beforeAfter": true,
     "scope_slug": "change-lock-set-on-2-with-4-matching-key-03d49fa",
     "source": "dispatch"
+  },
+  "before-after-pressure-wash-walk-way-b49a8fd.webp": {
+    "group": "pressure-wash-walk-way-b49a8fd-before-after",
+    "groupTitle": "Pressure wash walk way \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a pressure wash walk way job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Pressure wash walk way before and after",
+    "description": "Before-and-after comparison from a pressure wash walk way job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "pressure-wash-walk-way-b49a8fd",
+    "source": "dispatch"
   }
 }
