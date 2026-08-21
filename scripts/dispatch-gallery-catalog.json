@@ -596,5 +596,18 @@
     "beforeAfter": true,
     "scope_slug": "rodent-hole-sealing-a-b-1c2096d",
     "source": "dispatch"
+  },
+  "before-after-ceiling-drywall-patch-2f1127e.webp": {
+    "group": "ceiling-drywall-patch-2f1127e-before-after",
+    "groupTitle": "Ceiling Drywall Patch \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a ceiling drywall patch job completed by Knight Group.",
+    "category": "painting",
+    "serviceLink": "/Services/painting-drywall",
+    "step": 1,
+    "title": "Ceiling Drywall Patch before and after",
+    "description": "Before-and-after comparison from a ceiling drywall patch job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "ceiling-drywall-patch-2f1127e",
+    "source": "dispatch"
   }
 }

@@ -192,6 +192,26 @@
       ]
     },
     {
+      "id": "ceiling-drywall-patch-2f1127e-before-after",
+      "title": "Ceiling Drywall Patch \u2014 before & after",
+      "description": "Before-and-after proof from a ceiling drywall patch job completed by Knight Group.",
+      "category": "painting",
+      "serviceLink": "/Services/painting-drywall",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-ceiling-drywall-patch-2f1127e.webp",
+          "filename": "before-after-ceiling-drywall-patch-2f1127e.webp",
+          "step": 1,
+          "title": "Ceiling Drywall Patch before and after",
+          "seoAlt": "Ceiling Drywall Patch before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a ceiling drywall patch job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "ceiling-fan-and-light-repair-c977b5e-before-after",
       "title": "Ceiling fan and light repair \u2014 before & after",
       "description": "Before-and-after proof from a ceiling fan and light repair job completed by Knight Group.",
@@ -1907,6 +1927,20 @@
       "beforeAfter": true,
       "groupTitle": "Carpet removal \u2014 before & after",
       "groupDescription": "Worn carpet and pad removed to expose subfloor ready for the next finish."
+    },
+    {
+      "src": "GalleryImages/before-after-ceiling-drywall-patch-2f1127e.webp",
+      "filename": "before-after-ceiling-drywall-patch-2f1127e.webp",
+      "group": "ceiling-drywall-patch-2f1127e-before-after",
+      "step": 1,
+      "title": "Ceiling Drywall Patch before and after",
+      "seoAlt": "Ceiling Drywall Patch before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a ceiling drywall patch job completed in a Pinellas County home.",
+      "category": "painting",
+      "serviceLink": "/Services/painting-drywall",
+      "beforeAfter": true,
+      "groupTitle": "Ceiling Drywall Patch \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a ceiling drywall patch job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-ceiling-fan-and-light-repair-c977b5e.webp",
