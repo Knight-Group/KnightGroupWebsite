@@ -272,6 +272,26 @@
       ]
     },
     {
+      "id": "clean-both-ac-filters-46965b4-before-after",
+      "title": "Clean both ac filters \u2014 before & after",
+      "description": "Before-and-after proof from a clean both ac filters job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-clean-both-ac-filters-46965b4.webp",
+          "filename": "before-after-clean-both-ac-filters-46965b4.webp",
+          "step": 1,
+          "title": "Clean both ac filters before and after",
+          "seoAlt": "Clean both ac filters before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a clean both ac filters job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "clean-exterior-front-of-house-70a4580-before-after",
       "title": "Clean exterior front of house \u2014 before & after",
       "description": "Before-and-after proof from a clean exterior front of house job completed by Knight Group.",
@@ -1849,6 +1869,20 @@
       "beforeAfter": true,
       "groupTitle": "Change locks \u2014 before & after",
       "groupDescription": "Before-and-after proof from a change locks job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-clean-both-ac-filters-46965b4.webp",
+      "filename": "before-after-clean-both-ac-filters-46965b4.webp",
+      "group": "clean-both-ac-filters-46965b4-before-after",
+      "step": 1,
+      "title": "Clean both ac filters before and after",
+      "seoAlt": "Clean both ac filters before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a clean both ac filters job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Clean both ac filters \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a clean both ac filters job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-clean-exterior-front-of-house-70a4580.webp",
