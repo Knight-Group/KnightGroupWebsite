@@ -20,12 +20,19 @@ Use this map when editing SEO copy, internal links, schema names, and CTAs. Each
 | `small job carpenter near me` | `/Services/small-job-carpenter` | `/Services/carpentry-framing`, `/Services/trim-repair`, `/Services/custom-shelving` | Small carpentry scope; needs proof and minimum-pricing clarity |
 | `wood rot repair near me` | `/Services/carpentry-framing` | `/Services/door-frame-repair`, `/Services/trim-repair`, relevant gallery projects | Repair intent with inspection/estimate need |
 | `door installation near me`, `door repair`, `sliding door repair` | `/Services/doors-windows` | `/Services/sliding-door-repair`, `/Services/screen-door-repair`, `/oldsmar-door-adjustment`, gallery door projects | Door/window repair or install search |
+| `home watch Pinellas County`, `home watch services`, `home watch services near me`, `snowbird home watch`, `seasonal home watch`, `vacation home watch` | `/home-watch-pinellas` | `/`, `/services`, `/service-areas` | Recurring visual property checks for seasonal, second, and vacant homes |
+| `vacant property checks`, `vacant home watch`, `check my house while I'm away`, `unoccupied home monitoring` | `/home-watch-pinellas` | `/home-watch-checklist`, `/rental-turnover-handyman` | Vacant, travel, or between-tenant property observation |
+| `home watch pricing`, `home watch cost`, `weekly home watch pricing` | `/home-watch-pricing` | `/home-watch-pinellas` | Plan and add-on pricing for Home Watch |
+| `what does home watch check`, `home watch checklist`, `home watch vs house sitting` | `/home-watch-checklist` | `/home-watch-pinellas` | Visit scope and reporting, not a licensed home inspection |
+| `Clearwater home watch` | `/home-watch-pinellas` until GSC justifies `/clearwater-home-watch` | `/home-watch-checklist` | City-qualified Home Watch; do not create city pages yet |
 
 ## Page Roles
 
 - `/Services/handyman` is the core service page for broad handyman terms.
 - `/services` is the service hub and should route visitors into the correct service page.
 - `/pricing` owns pricing-intent queries and should link to service pages with clear job-type cards.
+- `/home-watch-pinellas` owns Home Watch and vacant-property-check queries for Pinellas County. Do not spin city Home Watch URLs until Search Console shows separate demand.
+- `/home-watch-pricing` owns Home Watch cost queries. Handyman hourly rates stay on `/pricing`.
 - City pages own city-qualified handyman terms and should link to service-specific proof.
 - Gallery detail pages are proof assets, not primary money pages. They should support service and city pages with before/after evidence.
 

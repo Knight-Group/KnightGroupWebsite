@@ -23,7 +23,7 @@
 
 (function kgEarlyPartialPrefetch() {
     window.__kgPartialCache = window.__kgPartialCache || {};
-    var version = '20260701-unified-includes';
+    var version = '20260821-home-watch';
     ['/header.html?v=' + version, '/footer.html?v=' + version].forEach(function (path) {
         if (window.__kgPartialCache[path]) return;
         window.__kgPartialCache[path] = fetch(path, { credentials: 'same-origin' })
@@ -43,7 +43,7 @@ class HTMLInclude {
     }
 
     ensureHeaderStyles() {
-        const headerVersion = '20260701-unified-includes';
+        const headerVersion = '20260821-home-watch';
 
         if (!document.getElementById('kg-header-css') && !document.querySelector('link[href*="header.min.css"]')) {
             const link = document.createElement('link');
@@ -275,7 +275,7 @@ class HTMLInclude {
         if (window._knightGroupIncludesLoaded) return;
         window._knightGroupIncludesLoaded = true;
 
-        const includeVersion = '20260701-unified-includes';
+        const includeVersion = '20260821-home-watch';
 
         const headerElement = document.getElementById('header-include');
         const footerElement = document.getElementById('footer-include');
@@ -637,6 +637,16 @@ ${data.message}
     function bindForm(form) {
         if (!form || form.getAttribute(TRACKED_ATTR) === '1') return;
         form.setAttribute(TRACKED_ATTR, '1');
+        const phone = form.elements.namedItem('phone');
+        const description = form.elements.namedItem('message') || form.elements.namedItem('description');
+        if (phone) {
+            phone.required = true;
+            phone.minLength = Math.max(phone.minLength || 0, 10);
+        }
+        if (description) {
+            description.required = true;
+            description.minLength = Math.max(description.minLength || 0, 5);
+        }
         addAttributionFields(form);
 
         form.addEventListener('focusin', function () {

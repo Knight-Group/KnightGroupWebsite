@@ -55,6 +55,32 @@ CORE_PAGE_QUERIES: dict[str, list[str]] = {
     "Services/home-renovations.html": ["small home renovations pinellas county"],
     "Services/painting-finishing.html": ["handyman painting pinellas county"],
     "Services/custom-projects.html": ["custom handyman projects pinellas county"],
+    "home-watch-pinellas.html": [
+        "home watch pinellas county",
+        "home watch services pinellas county",
+        "home watch services near me",
+        "snowbird home watch pinellas",
+        "snowbird home watch florida",
+        "vacant property checks pinellas county",
+        "vacant home watch",
+        "vacation home watch",
+        "someone to check my house while i'm away",
+        "house check while away florida",
+        "second home monitoring pinellas",
+    ],
+    "home-watch-pricing.html": [
+        "home watch pricing",
+        "home watch cost pinellas county",
+        "weekly home watch pricing",
+        "home watch cost",
+        "vacant house check cost",
+    ],
+    "home-watch-checklist.html": [
+        "home watch checklist florida",
+        "what does home watch check",
+        "home watch vs house sitting",
+        "vacant home inspection checklist",
+    ],
 }
 
 
