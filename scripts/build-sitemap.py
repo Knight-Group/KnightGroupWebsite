@@ -4,7 +4,7 @@
 from __future__ import annotations
 
 import json
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
@@ -23,6 +23,9 @@ STATIC_PAGES = [
     ("/about", "0.82", "monthly"),
     ("/galleries", "0.80", "weekly"),
     ("/service-areas", "0.85", "monthly"),
+    ("/home-watch-pinellas", "0.90", "weekly"),
+    ("/home-watch-pricing", "0.86", "monthly"),
+    ("/home-watch-checklist", "0.84", "monthly"),
 ]
 
 MAJOR_SERVICES = [
@@ -38,10 +41,32 @@ MAJOR_SERVICES = [
     "emergency-services",
 ]
 
+
+def _mtime_iso(path: Path) -> str | None:
+    if not path.is_file():
+        return None
+    return datetime.fromtimestamp(path.stat().st_mtime).date().isoformat()
+
+
+def lastmod_for_loc(loc: str) -> str:
+    """Use the HTML file date so Google does not see every URL as rewritten today."""
+    rel = loc.replace(BASE, "").strip("/")
+    candidates: list[Path] = []
+    if not rel:
+        candidates.append(ROOT / "index.html")
+    elif rel == "galleries":
+        candidates.append(ROOT / "galleries.html")
+        candidates.extend((ROOT / "gallery").glob("*.html"))
+    else:
+        candidates.append(ROOT / f"{rel}.html")
+    dates = [iso for path in candidates if (iso := _mtime_iso(path))]
+    return max(dates) if dates else TODAY
+
+
 def add_url(urlset: ET.Element, loc: str, priority: str, changefreq: str) -> None:
     url = ET.SubElement(urlset, "url")
     ET.SubElement(url, "loc").text = loc
-    ET.SubElement(url, "lastmod").text = TODAY
+    ET.SubElement(url, "lastmod").text = lastmod_for_loc(loc)
     ET.SubElement(url, "changefreq").text = changefreq
     ET.SubElement(url, "priority").text = priority
 
