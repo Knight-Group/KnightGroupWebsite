@@ -35,7 +35,6 @@ PLUMBING_SCOPE_SLUGS = {
     "garbage-disposal-replacement",
     "shutoff-valve-repair",
     "drain-unclogging",
-    "emergency-services",
 }
 
 ELECTRICAL_SCOPE_SLUGS = {"electrical-work"}
@@ -68,27 +67,33 @@ def cta_lead(slug: str, h1: str, county_name: str = "Pinellas County") -> str:
 def scope_disclaimer_html(slug: str) -> str:
     if slug in PLUMBING_SCOPE_SLUGS or any(token in slug for token in ("plumb", "faucet", "toilet", "drain", "disposal", "shutoff", "sink")):
         body = (
-            "<strong>Plumbing handyman scope:</strong> Knight Group handles fixture-level repairs and replacements "
-            "on existing rough-in — faucets, toilets, disposals, traps, and shutoffs. Repipes, sewer mains, gas lines, "
-            "and permitted rough-in require a licensed plumber. We say that before work begins."
+            "<strong>Plumbing vs. diagnosis:</strong> Florida DBPR treats plumbing that connects lines to drinking water "
+            "as licensed contractor work. Vince Knight’s journeyman plumbing background helps diagnose leaks and "
+            "fixture failures. Knight Group is not a licensed plumbing contractor. Work that connects to potable water "
+            "is referred to a licensed plumber. See <a href=\"/handyman-scope-florida\">handyman scope in Florida</a>."
         )
     elif slug in ELECTRICAL_SCOPE_SLUGS or "electrical" in slug:
         body = (
-            "<strong>Electrical handyman scope:</strong> Knight Group swaps like-for-like fixtures on suitable boxes "
-            "and performs minor device repairs within handyman scope. New circuits, panel work, and aluminum wiring "
-            "require a licensed electrician — we identify that during the estimate."
+            "<strong>Electrical vs. diagnosis:</strong> Florida DBPR states that compensated installation of ceiling fans, "
+            "light fixtures, outlets, and switches requires an electrical license — connecting even two wires is licensed "
+            "work. Knight Group does not advertise or perform that connection work. We diagnose, change bulbs and cover "
+            "plates, and coordinate a licensed electrician. See <a href=\"/handyman-scope-florida\">handyman scope in Florida</a>."
         )
     elif slug == "emergency-services":
         body = (
-            "<strong>Emergency handyman scope:</strong> Knight Group responds to urgent water, security, and storm "
-            "follow-up within handyman limits — stabilizing leaks, securing doors, and triaging damage control. "
-            "Licensed emergency plumbers or electricians are referred when code or safety requires it."
+            "<strong>Urgent property-damage response:</strong> Call (813) 649-3341 for active water, unsecured openings, "
+            "or storm follow-up. Knight Group can stabilize what is lawful and safe (documentation, drying setup, "
+            "hardware, temporary protection) during posted hours and after-hours callback. Electrical faults, potable "
+            "plumbing repairs, HVAC, roofing, and structural damage go to licensed trades. This is not a 24/7 dispatch "
+            "operation. See <a href=\"/handyman-scope-florida\">handyman scope in Florida</a>."
         )
     else:
         body = (
-            "<strong>Handyman scope notice:</strong> Knight Group performs registered, insured handyman-scope repairs. "
-            "Work requiring a licensed plumber, electrician, HVAC contractor, or general contractor permit is identified "
-            "before tools come out and referred or coordinated appropriately."
+            "<strong>Handyman scope notice:</strong> Knight Group is registered and insured for handyman-scope repairs. "
+            "Florida licenses electrical connection work, plumbing that taps drinking water, roofing, new-window "
+            "installation, structural additions, and mold remediation over 10 square feet. We identify that during the "
+            "estimate and refer licensed trades. A Pinellas permit exemption is not a contractor-license exemption. "
+            "See <a href=\"/handyman-scope-florida\">handyman scope in Florida</a>."
         )
     return f"""
 <div class="kg-scope-disclaimer">

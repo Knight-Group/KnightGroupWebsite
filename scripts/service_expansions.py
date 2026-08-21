@@ -2,34 +2,31 @@
 
 EXPANSIONS = {
     "plumbing-services": """
-<h2>Sink repair in Clearwater and across Pinellas County</h2>
-<p>Search demand for <strong>sink repair in Clearwater</strong> and <strong>plumbing services in Pinellas County</strong> usually starts with a leak under the cabinet, a loose faucet, a slow drain, or a shutoff that will not fully close. Knight Group is based in Safety Harbor and serves Clearwater, Dunedin, Palm Harbor, Largo, Oldsmar, Seminole, St. Petersburg, and nearby communities with practical repair help — not a distant call center.</p>
-<p>Because owner Vince Knight has <strong>15 years of journeyman plumbing experience</strong>, you get a clearer first conversation about whether the job is a straightforward fixture fix or something that should route to a licensed plumber for permit work.</p>
+<h2>Plumbing diagnosis in Clearwater and across Pinellas County</h2>
+<p>Search demand for sink leaks in Clearwater usually starts with water under the cabinet, a faucet that will not shut off, or a drain that will not clear. Knight Group is based in Safety Harbor. Owner Vince Knight has <strong>15 years of journeyman plumbing experience</strong> — that is diagnostic skill, not a current plumbing contractor license.</p>
+<p>Florida DBPR treats plumbing that connects lines to drinking water as licensed work. Knight Group does not advertise toilet, faucet, disposal, or shutoff replacement as unlicensed handyman services. We diagnose the failure, stop what we can lawfully stabilize, and refer a licensed plumber when the repair connects to potable water.</p>
 
-<h3>Faucet leaks, shutoff valves, and fixture replacement</h3>
+<h3>What we handle vs. what we refer</h3>
 <ul>
-<li>Leaking kitchen and bathroom faucets, sprayers, and supply connections</li>
-<li>Shutoff valve replacement when corroded valves will not stop flow</li>
-<li>Sink, disposal, and laundry tub swaps using existing rough-in where possible</li>
-<li>Toilet repair, running toilets, and wax ring / flange corrections</li>
-<li>Showerhead, tub spout, and trim updates without unnecessary tear-out</li>
+<li>Diagnosis of leaks, failed shutoffs, and fixture problems before anyone opens a wall</li>
+<li>Caulk, seal, and finish repairs around fixtures after licensed plumbing is complete</li>
+<li>Drain observations and non-potable cleanup that does not tap drinking-water lines</li>
+<li>Coordination with a licensed plumber, then drywall and paint closeout on the same team</li>
 </ul>
 
-<h2>Handyman plumbing vs. licensed plumber — what we handle</h2>
-<p>Florida homeowners often wonder whether a handyman can legally and safely handle a given plumbing task. Knight Group focuses on <strong>repair and replacement work within handyman scope</strong>: fixture swaps on existing connections, drain clearing, minor leak corrections, caulk and seal work, and punch-list plumbing after drywall or water-damage repairs.</p>
-<p>For repipes, sewer main work, gas lines, or jobs requiring a permit and master plumber sign-off, we explain that upfront and can refer you to a licensed plumbing partner instead of guessing on scope.</p>
+<h2>Experience without overclaiming a license</h2>
+<p>Vince’s trade background is why the first conversation is clearer. You hear sooner whether the job is a gasket, a valve, or a reason to call a licensed plumber. That honesty is the point of the <a href="/plumber-background-handyman">plumbing-experience page</a> and <a href="/handyman-scope-florida">Florida handyman scope</a>.</p>
 
 <h3>When to call Knight Group first</h3>
 <ul>
-<li>You need same-day help stopping an active drip or overflow</li>
-<li>A rental turnover or punch list includes multiple small plumbing items</li>
-<li>A leak already damaged drywall and you need plumbing plus repair coordination</li>
-<li>You purchased a fixture and need professional installation and testing</li>
+<li>You need a same-day look at an active drip so we can triage licensed vs. finish work</li>
+<li>A rental turnover includes mixed punch-list items plus a plumbing question</li>
+<li>A leak already damaged drywall and you need documentation plus repair closeout</li>
 </ul>
 
-<h2>Local plumbing repair in Safety Harbor and Clearwater</h2>
-<p>Whether you found us searching <strong>plumber knights fl</strong>, <strong>plumbing repair</strong> near Safety Harbor, or a neighbor recommended Knight Group after a Google review, the next step is the same: describe the fixture, the urgency, and the property address. We provide <a href="/booking">free written estimates</a> before work begins.</p>
-<p>See also: <a href="/Services/emergency-services">emergency services</a> for urgent leaks, <a href="/Services/general-repairs">general repairs</a> for drywall and water-damage follow-up, and <a href="/pinellas-handyman">Pinellas handyman coverage</a> for mixed trade punch lists.</p>
+<h2>Local plumbing questions in Safety Harbor and Clearwater</h2>
+<p>Describe the fixture, the urgency, and the address. We provide <a href="/booking">free written estimates</a> for work Knight Group can legally perform, and a licensed-trade referral when DBPR requires it.</p>
+<p>See also: <a href="/Services/emergency-services">urgent property-damage response</a>, <a href="/Services/general-repairs">general repairs</a> for drywall follow-up, and <a href="/pinellas-handyman">Pinellas coverage</a>.</p>
 """,
     "general-repairs": """
 <h2>General home repairs in Pinellas County</h2>
@@ -54,7 +51,7 @@ EXPANSIONS = {
 """,
     "handyman": """
 <h2>Handyman company serving Pinellas County</h2>
-<p>If you searched <strong>handyman company pinellas</strong>, <strong>handyman pinellas county</strong>, or <strong>handyman near me small jobs</strong>, you are usually looking for one dependable local team for mixed repairs — not a franchise with a minimum job size. Knight Group Handyman Services LLC is owner-operated in Safety Harbor with a 5.0 Google rating and free written estimates.</p>
+<p>If you searched for a Pinellas County handyman, you usually want one dependable local team for mixed repairs — not a franchise with a two-hour minimum. Knight Group Handyman Services LLC is owner-operated in Safety Harbor with a 5.0 Google rating and free written estimates.</p>
 
 <h3>Small jobs and punch-list repairs</h3>
 <ul>
@@ -65,26 +62,27 @@ EXPANSIONS = {
 </ul>
 
 <h2>What a handyman can fix in one visit</h2>
-<p>Common calls include leaking faucets, running toilets, drywall holes, sticking doors, ceiling fan swaps, caulking, TV mounting, shelving, baseboard patches, and post-plumber drywall closeout. Vince Knight's plumbing and property-management background helps when a job touches water, occupied units, or punch-list timing.</p>
+<p>Common calls include drywall holes, sticking doors, caulking, TV mounting, shelving, baseboard patches, and closeout after a licensed plumber or electrician has finished. Vince Knight's plumbing and property-management background helps when a job touches water, occupied units, or punch-list timing.</p>
 
 <h3>Registered, insured, and local to Safety Harbor</h3>
 <p>Knight Group is registered and insured in Florida. You work directly with the owner — not a rotating anonymous technician. Browse the <a href="/galleries">project gallery</a> for local proof, or read reviews on our <a href="/about#about-reviews">about page</a>.</p>
 """,
     "electrical-work": """
-<h2>Electrical work and fixture installation in Pinellas County</h2>
-<p>Even without heavy search volume yet in our analytics, electrical fixture work is one of the most common handyman requests in Clearwater and Safety Harbor: homeowners want a ceiling fan hung safely, a dimmer that actually works, or an outlet replaced after damage.</p>
+<h2>Electrical diagnosis — not unlicensed connection work</h2>
+<p>Florida DBPR is explicit: if you pay someone to perform even the simplest electrical work, such as connecting two wires, you must hire a licensee. Installing ceiling fans or light fixtures for compensation, and installing or replacing outlets and switches, requires a DBPR electrical license.</p>
+<p>Knight Group does not advertise those tasks as handyman services. We diagnose what failed, change bulbs and cover plates, protect the work area, and coordinate a licensed electrician. After licensed electrical work, we handle drywall and paint closeout.</p>
 
-<h3>Light fixtures, ceiling fans, and switches</h3>
+<h3>What we will do</h3>
 <ul>
-<li>Replace existing light fixtures and ceiling fans on current boxes</li>
-<li>Switch and dimmer upgrades where wiring is already suitable</li>
-<li>Outlet replacement, cover plates, and GFCI swaps in scope</li>
-<li>Smoke detector battery and unit replacement at accessible locations</li>
+<li>On-site diagnosis and photos so a licensed electrician has a clear starting point</li>
+<li>Light-bulb and cover-plate changes that do not require wiring connections</li>
+<li>Drywall, texture, and paint after a licensed electrician finishes a box or device</li>
+<li>Honest routing instead of “like-for-like” language that does not create a license exemption</li>
 </ul>
 
-<h2>What electrical work requires a licensed electrician</h2>
-<p>Knight Group is transparent about scope. Panel work, new circuits, aluminum wiring remediation, and whole-home rewiring require a licensed electrician. For fixture swaps and device replacements on existing circuits, we assess on site and explain what is in scope before work starts.</p>
-<p>Pair with <a href="/Services/general-repairs">general repairs</a> when drywall patching or paint follows an electrical box move.</p>
+<h2>What requires a licensed electrician</h2>
+<p>Ceiling fans, light fixtures, outlets, switches, GFCIs, new circuits, panel work, and aluminum wiring all need a licensed electrician when done for compensation. Permit exemptions are not contractor-license exemptions.</p>
+<p>Pair with <a href="/Services/general-repairs">general repairs</a> when drywall or paint follows licensed electrical work. Read <a href="/handyman-scope-florida">handyman scope in Florida</a>.</p>
 """,
     "carpentry-framing": """
 <h2>Carpentry services near you in Pinellas County</h2>
@@ -99,7 +97,7 @@ EXPANSIONS = {
 </ul>
 
 <h3>Framing and structural carpentry — scope clarity</h3>
-<p>Minor framing repairs, soffit patches, and blocking for fixtures are common. Load-bearing alterations and permitted structural changes are quoted separately with clear explanation of what requires an engineer or GC.</p>
+<p>Minor non-load-bearing blocking, soffit patches, and trim carpentry are common. Load-bearing alterations, structural additions, and permitted framing need a licensed contractor or engineer. Pergolas, gazebos, and similar outdoor structures are licensed construction when they become a fixed part of the property.</p>
 """,
     "painting-finishing": """
 <h2>Interior and exterior painting in Pinellas County</h2>
@@ -122,7 +120,7 @@ EXPANSIONS = {
 
 <h3>Kitchen and bathroom updates (handyman scope)</h3>
 <ul>
-<li>Vanity, faucet, mirror, and fixture swaps</li>
+<li>Vanity, mirror, and finish swaps after licensed plumbing is complete</li>
 <li>Tile repair, backsplash sections, and grout refresh</li>
 <li>Flooring transitions: LVP, tile patches, and subfloor repair prep</li>
 <li>Drywall, paint, trim, and door hardware as part of a room refresh</li>
@@ -133,22 +131,18 @@ EXPANSIONS = {
 """,
     "doors-windows": """
 <h2>Door and window repair in Pinellas County</h2>
-<p>Florida humidity swells doors, wears weatherstripping, and loosens window hardware. Knight Group handles adjustment, repair, and replacement support for homeowners in Safety Harbor, Clearwater, and across the county.</p>
+<p>Florida humidity swells doors, wears weatherstripping, and loosens hardware. Knight Group handles adjustment, interior doors, screens, and hardware for homeowners in Safety Harbor, Clearwater, and across the county.</p>
 
-<h3>Door adjustment, hinges, and latches</h3>
+<h3>What we handle</h3>
 <ul>
-<li>Sticking interior and exterior doors</li>
-<li>Hinge replacement, strike alignment, and latch repairs</li>
-<li>Weatherstripping and draft sealing</li>
-<li>Pre-hung door installation support (scope on site)</li>
-</ul>
-
-<h3>Window screens, hardware, and minor repairs</h3>
-<ul>
-<li>Screen mesh replacement and frame repair</li>
-<li>Balance and hardware issues on select window types</li>
+<li>Sticking interior doors, hinge replacement, strike alignment, and latch repairs</li>
+<li>Weatherstripping and draft sealing on existing openings</li>
+<li>Screen mesh replacement and screen-frame repair</li>
 <li>Caulking and trim touch-ups around openings after leak repair</li>
 </ul>
+
+<h3>What we refer</h3>
+<p>Florida identifies new-window installation and several related construction scopes as licensed work. Full exterior-door replacement, storm-window installation, and new window units are coordinated with a licensed contractor. We will not advertise those as unlicensed handyman installs.</p>
 """,
     "custom-projects": """
 <h2>Custom projects and built-ins in Pinellas County</h2>
@@ -157,36 +151,37 @@ EXPANSIONS = {
 <h3>Custom shelving, mantels, and accent builds</h3>
 <ul>
 <li>Built-in shelving and closet organization</li>
-<li>Mantels, accent trim, and feature wall framing</li>
-<li>Assembly and install of large fixtures or specialty items</li>
+<li>Mantels, accent trim, and feature wall framing that is not a structural addition</li>
+<li>Assembly and install of furniture and specialty items that do not require a contractor license</li>
 <li>One-off projects that need an owner who will actually show up and finish</li>
 </ul>
 
 <p>For handcrafted furniture and resin tables, see our <a href="/Services/custom-projects">custom projects</a> scope on site or ask during estimate — we will tell you honestly if Knight Group is the right fit.</p>
 """,
     "emergency-services": """
-<h2>Emergency home repairs in Pinellas County</h2>
-<p>Urgent calls usually involve water moving where it should not, a door that will not secure, or storm damage that cannot wait. Knight Group offers a <strong>direct phone line</strong> for Pinellas County homeowners who need a fast scope conversation — not an answering service.</p>
+<h2>Urgent property-damage response in Pinellas County</h2>
+<p>Urgent calls usually involve water moving where it should not, a door that will not secure, or storm damage that cannot wait. Knight Group offers a <strong>direct phone line</strong> — not an answering service. We are not a 24/7 dispatch operation. Posted hours are Monday–Friday 8 AM–5 PM, with after-hours callback for true emergencies.</p>
 
-<h3>Burst pipe shutoff and temporary fixes</h3>
+<h3>What Knight Group can stabilize</h3>
 <ul>
-<li>Help shutting off supply and stabilizing active leaks when possible</li>
-<li>Temporary repairs and damage control until permanent fix</li>
-<li>Coordination with drywall, paint, and flooring follow-up on the same team</li>
+<li>Documentation and photos for you and your insurer</li>
+<li>Securing accessible openings, lock and hardware issues, and temporary property protection</li>
+<li>Water extraction and drying setup, drywall protection, and lawful temporary covers</li>
+<li>Referral to licensed trades when the repair itself requires a license</li>
 </ul>
 
-<h3>Same-day and after-hours availability</h3>
-<p>Call <a href="tel:+18136493341">(813) 649-3341</a> and describe what is happening. We will tell you honestly if the job needs a licensed plumber or electrician immediately, or if Knight Group can respond same-day for handyman-scope emergency work in Safety Harbor, Clearwater, and nearby areas.</p>
+<h3>What requires a licensed trade immediately</h3>
+<p>Electrical faults, plumbing repair that connects to drinking water, HVAC repair, roofing repair, and structural damage. Call <a href="tel:+18136493341">(813) 649-3341</a> and describe what is happening. We will tell you honestly whether Knight Group can respond or whether you need a licensed plumber or electrician first.</p>
 
-<p>Before and after storm season, see our <a href="/hurricane-repair-handyman-pinellas">hurricane prep and storm repair guide</a> for caulk, screening, and post-leak drywall follow-up within handyman scope.</p>
+<p>Before and after storm season, see our <a href="/hurricane-repair-handyman-pinellas">hurricane prep and storm repair guide</a> for caulk, screening, and post-leak drywall follow-up.</p>
 """,
 }
 
 EXTRA_FAQ = {
     "plumbing-services": [
-        ("Can a handyman fix a leaking sink in Clearwater?", "Yes — many sink leaks are failed supply lines, traps, or faucet gaskets. Knight Group serves Clearwater and Pinellas County with fixture-level plumbing repairs and will tell you if a licensed plumber is required."),
-        ("What plumbing jobs can Knight Group handle without a master plumber license?", "Fixture replacement on existing connections, drain clearing, running toilet repairs, shutoff swaps, caulk/seal work, and minor leak corrections are typical handyman-scope jobs. Repipes, sewer mains, and permitted rough-in require a licensed plumber."),
-        ("How much does sink repair cost in Clearwater?", "Cost depends on access, parts, and whether supply lines or valves need replacement. We provide free written estimates before work begins so you know the price upfront."),
+        ("Can a handyman replace a toilet or faucet in Florida?", "DBPR treats plumbing that connects lines to drinking water as licensed work. Knight Group diagnoses the failure and refers a licensed plumber for those connections. Vince Knight’s journeyman background makes that first conversation clearer."),
+        ("What plumbing work can Knight Group handle without a plumbing license?", "Diagnosis, documentation, caulk and finish repairs, and closeout after licensed plumbing. Connecting toilets, faucets, disposals, or shutoffs to potable water is referred."),
+        ("How much does a diagnostic visit cost?", "Standard visits are $150 for the first hour and $75 each additional hour, with no two-hour minimum. We provide a written estimate for work we can legally perform."),
     ],
     "general-repairs": [
         ("Do you repair mobile homes in Pinellas County?", "Yes — we handle many mobile home repair and maintenance tasks including drywall, trim, flooring transitions, and punch-list work. Describe the unit and access when requesting an estimate."),
@@ -197,8 +192,8 @@ EXTRA_FAQ = {
         ("Do you take small jobs and one-off repairs?", "Yes. No large minimum job size. If you have a short punch list, mention everything when you book so we can plan time accordingly."),
     ],
     "electrical-work": [
-        ("Can a handyman change light fixtures in Florida?", "Replacing an existing fixture on a suitable box is commonly handled as handyman work. New circuits and panel work require a licensed electrician."),
-        ("When do I need a licensed electrician instead?", "Panel upgrades, new homeruns, aluminum wiring, and whole-home rewiring require a licensed electrician. We will tell you during the estimate."),
+        ("Can a handyman change light fixtures in Florida?", "DBPR says installing ceiling fans and light fixtures for compensation requires an electrical license, as does replacing outlets and switches. Knight Group does not perform that connection work. We diagnose and coordinate a licensed electrician."),
+        ("When do I need a licensed electrician?", "Any compensated electrical connection — fans, fixtures, outlets, switches, GFCIs, new circuits, or panel work. Changing a bulb or a cover plate does not require that license."),
     ],
     "carpentry-framing": [
         ("Do you install crown molding and trim?", "Yes — trim, baseboard, casing, and many crown profiles are part of our carpentry scope across Pinellas County."),
@@ -208,7 +203,7 @@ EXTRA_FAQ = {
         ("Are you a licensed general contractor in Pinellas County?", "Knight Group operates as a registered and insured handyman services company. We are transparent when a project requires a GC or permits beyond our scope."),
     ],
     "emergency-services": [
-        ("Do you offer emergency handyman services in Safety Harbor?", "Yes — call (813) 649-3341 for urgent issues. We will clarify whether Knight Group can respond same-day or if you need a licensed emergency plumber."),
+        ("Do you offer emergency handyman services in Safety Harbor?", "Call (813) 649-3341. Posted hours are Monday–Friday 8 AM–5 PM, with after-hours callback. We clarify whether Knight Group can stabilize the scene or you need a licensed emergency plumber or electrician."),
         ("Is there an extra charge for same-day emergency service?", "Urgency, after-hours timing, and parts needs affect pricing. We explain costs before work starts whenever possible."),
     ],
 }

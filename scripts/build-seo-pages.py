@@ -40,7 +40,7 @@ from service_related import (  # noqa: E402
     geo_related_services,
     niche_related_fallback,
     pricing_related_services,
-    resolve_card_image,
+    related_card_src,
 )
 from seo_page_data import (  # noqa: E402
     CITIES,
@@ -149,27 +149,17 @@ def render_faq(
 
 def render_related(links: list[tuple[str, str]], prefix: str) -> str:
     cards = []
-    text_links = []
     for href, label in links:
-        if href.startswith("/Services/"):
-            image = resolve_card_image(href)
-            if image.startswith("cities/"):
-                img_src = f"/Images/{image}"
-            else:
-                img_src = f"/Images/services/{image}"
-            cards.append(
-                f"""                        <a class="kg-service-related-card" href="{href}">
+        img_src = related_card_src(href)
+        cards.append(
+            f"""                        <a class="kg-service-related-card" href="{href}">
                             <img src="{img_src}?v={VERSION}" alt="{esc(label)}" width="400" height="300" loading="lazy" decoding="async">
                             <span class="kg-service-related-card__label">{esc(label)}</span>
                         </a>"""
-            )
-        else:
-            text_links.append(f'                        <a class="kg-service-related-card kg-service-related-card--text" href="{href}">{esc(label)}</a>')
-    if not cards and not text_links:
+        )
+    if not cards:
         return ""
-    text_block = "\n".join(text_links)
-    card_block = "\n".join(cards)
-    combined = "\n".join(part for part in (card_block, text_block) if part)
+    combined = "\n".join(cards)
     return f"""
             <section class="kg-section kg-service-related" aria-labelledby="related-services-heading">
                     <div class="kg-heading-block">
@@ -202,11 +192,13 @@ def build_niche_prose(defn: dict) -> str:
                 "Request a free written estimate with photos before work begins.",
             ]
         )
-    parts = [f"<h2>{esc(h1)}</h2>", f"<p>{esc(lead)}</p>"]
+    parts: list[str] = []
     if detail:
         parts.append(detail)
     if body:
         parts.append(body)
+    if not parts:
+        parts.append(f"<p>{esc(lead)}</p>")
     if local:
         parts.append(local)
     if booking:
@@ -272,7 +264,7 @@ def build_pricing_prose(defn: dict) -> str:
         return prose_block(
             [
                 defn["lead"],
-                "Many Tampa Bay handyman franchises bill a two-hour minimum even when the repair takes forty-five minutes. Knight Group bills hourly from $75–$150 depending on the work type, with <strong>no 2-hour minimum</strong> — you pay for actual time on site.",
+                "Many Tampa Bay handyman franchises bill a two-hour minimum even when the repair takes forty-five minutes. Knight Group’s published standard rate is <strong>$150 for the first hour and $75 each additional hour, with no two-hour minimum</strong> — not a $75 first-hour rate and not a 20-minute visit billed at a few dollars.",
                 "That matters for small jobs: a single faucet swap, door adjustment, shelf install, or caulk refresh should not cost the same as a half-day block. Punch lists and mixed small tasks are a strong fit for this model.",
                 "For defined scopes with known parts and finish, we still offer written flat-rate quotes after photos or a short visit. See <a href=\"/pricing\">full pricing</a> and <a href=\"/pricing-handyman-by-the-hour\">hourly handyman rates</a> for comparison.",
                 "Request a free written estimate online or call (813) 649-3341 to describe your list and confirm fit before we schedule.",
@@ -283,7 +275,7 @@ def build_pricing_prose(defn: dict) -> str:
             defn["lead"],
             "Knight Group publishes clear pricing philosophy: defined small scopes can be quoted flat-rate after photos or a short site visit, while mixed punch lists and diagnostic work are often billed hourly with a minimum visit.",
             "Hourly handyman work covers multiple small tasks in one trip — hardware installs, adjustments, caulking, and minor repairs that share setup time. Flat-rate quotes work best when the scope, parts, and finish are known upfront.",
-            "Plumbing fixture pricing stays within handyman scope: swaps and minor leak corrections using existing rough-in, not repipes or permit work. Electrical fixture swaps follow the same pattern for like-for-like replacements.",
+            "Pricing on this page is for handyman-scope work Knight Group can legally perform. Electrical connection work and plumbing that connects to drinking water require licensed trades — we diagnose first and refer when Florida DBPR requires a license.",
             "Every estimate is written before work begins. Request a quote online or call (813) 649-3341 to discuss your list and which pricing model fits best.",
         ]
     )

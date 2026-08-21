@@ -14,7 +14,7 @@ def build_trust_prose(defn: dict) -> str:
             [
                 defn["lead"],
                 "Most handyman ads say “we do plumbing.” Few can explain whether your leak is a failed gasket, a corroded shutoff, or the start of a repipe. Vince Knight spent <strong>15 years as a journeyman plumber</strong> before launching Knight Group — that trade background shapes how we diagnose fixture-level work, not a license claim.",
-                "Knight Group Handyman Services LLC is <strong>registered and insured</strong> in Florida. We are not a licensed plumbing company today. We handle handyman-scope fixture repairs — faucets, toilets, disposals, drains, shutoffs, and minor leak corrections on existing connections — and we tell you plainly when a licensed plumber or permit is required.",
+                "Knight Group Handyman Services LLC is <strong>registered and insured</strong> in Florida. We are not a licensed plumbing company. Florida DBPR treats plumbing that connects lines to drinking water as licensed contractor work. Vince’s journeyman background helps diagnose the failure; licensed plumbers perform the potable-water connections.",
                 "That honesty matters in Pinellas County homes: older shutoffs, mixed DIY history, and Florida humidity create jobs that look simple until someone opens the wall. Experience helps you get a straight answer before drywall is torn out or the wrong part is ordered.",
                 "See <a href=\"/Services/plumbing-services\">plumbing services</a>, read <a href=\"/handyman-scope-florida\">what handyman scope includes in Florida</a>, or <a href=\"/booking\">book a free estimate</a> with photos of the problem area.",
             ]
@@ -33,10 +33,11 @@ def build_trust_prose(defn: dict) -> str:
         return prose_block(
             [
                 defn["lead"],
-                "Florida homeowners search “licensed handyman” constantly — but handyman businesses are typically <strong>registered and insured</strong>, not licensed plumbers, electricians, or general contractors. Knight Group is transparent about that distinction so you know what we can do in-house and when we refer a licensed trade.",
-                "<strong>Knight Group handles</strong> handyman-scope repairs: drywall patches, interior paint touch-ups, carpentry and trim, door and window adjustments, fixture-level plumbing on existing rough-in, like-for-like electrical fixture swaps on suitable boxes, caulking, punch-list items, and smaller renovation support.",
-                "<strong>Licensed trades are required</strong> for work such as repipes, sewer mains, gas lines, new electrical circuits, panel upgrades, structural engineering projects, and jobs that need a permit sign-off. We explain that during the estimate — we do not bluff through scope to win the call.",
-                "Owner Vince Knight’s journeyman plumbing <em>experience</em> helps on diagnosis and honest routing; it does not replace a master plumber license when Florida law or your insurer requires one. Read <a href=\"/plumber-background-handyman\">why that experience still matters</a> or <a href=\"/Services/plumbing-services\">plumbing services we perform</a>.",
+                "Florida homeowners search “licensed handyman” constantly — but handyman businesses are typically <strong>registered and insured</strong>, not licensed plumbers, electricians, or general contractors. Knight Group is transparent about that distinction. Public claims on this site follow current <a href=\"https://www2.myfloridalicense.com/services-requiring-a-dbpr-license/\">DBPR consumer guidance</a>.",
+                "<strong>Knight Group handles</strong> drywall and finish work, interior paint, trim carpentry, interior door adjustment, screens and hardware, caulking, punch-list items, Home Watch observation, and closeout after licensed trades finish.",
+                "<strong>Licensed trades are required</strong> for electrical connection work (including ceiling fans, light fixtures, outlets, and switches), plumbing that connects to drinking water, roofing repairs, new-window installation, structural additions, HVAC, and mold remediation of more than 10 square feet of contaminated material.",
+                "<strong>Pinellas permit note:</strong> effective July 1, 2026, some projects under $7,500 can qualify for limited permit exemptions only with Building Official approval. A permit exemption is not a contractor-license exemption.",
+                "Owner Vince Knight’s journeyman plumbing <em>experience</em> helps on diagnosis and honest routing; it does not replace a plumbing license. Read <a href=\"/plumber-background-handyman\">why that experience still matters</a>.",
             ]
         )
     if slug == "hurricane-repair-handyman-pinellas":
@@ -61,7 +62,7 @@ def trust_faqs(slug: str) -> list[tuple[str, str]]:
             ),
             (
                 "What plumbing work can an experienced handyman handle?",
-                "Typical handyman-scope plumbing includes faucet and toilet repairs, garbage disposal swaps, drain clearing, shutoff replacement, and minor leak corrections on existing connections. Repipes, gas work, and permitted rough-in require a licensed plumber.",
+                "Typical handyman-scope work around water includes diagnosis, documentation, caulk and finish repairs, and closeout after a licensed plumber finishes potable-water connections. Connecting toilets, faucets, disposals, or shutoffs to drinking water requires a licensed plumber.",
             ),
             (
                 "Why does journeyman experience matter if you are not licensed now?",
@@ -99,7 +100,7 @@ def trust_faqs(slug: str) -> list[tuple[str, str]]:
             ),
             (
                 "What can a handyman legally do in Florida?",
-                "Handyman scope varies by job type and local rules. Knight Group focuses on repairs and improvements that do not require a specialist license — fixture swaps, drywall, paint, carpentry, doors, and punch-list work — and we flag permit or license needs upfront.",
+                "Handyman scope is set by Florida trade licensing, not by job price. Knight Group focuses on drywall, paint, carpentry, interior doors, screens, and punch-list work. Electrical connection work and plumbing that taps drinking water are referred. We flag license needs upfront.",
             ),
             (
                 "When should I hire a licensed plumber instead of a handyman?",
@@ -118,7 +119,7 @@ def trust_faqs(slug: str) -> list[tuple[str, str]]:
             ),
             (
                 "Can you repair drywall after hurricane water damage?",
-                "Yes — after active leaks are stopped and cavities are dry, we patch drywall, retexture, and paint within handyman scope. Extensive mold remediation or structural drying may require specialists first.",
+                "Yes — after the moisture source is stopped, cavities are dry, and any required licensed mold remediation is complete, we patch drywall, retexture, and paint. Florida licenses mold remediation above 10 square feet. We do not advertise mold remediation as a Knight Group service.",
             ),
             (
                 "Do you offer emergency handyman service after a storm?",

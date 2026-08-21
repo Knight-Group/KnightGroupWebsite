@@ -54,6 +54,38 @@ def related_slug(href: str) -> str:
     return href.rstrip("/").split("/")[-1].replace(".html", "")
 
 
+# Non-service destinations used in related grids (gallery, booking, trust pages).
+PAGE_CARD_IMAGES: dict[str, str] = {
+    "/galleries": "/Images/services/home-renovations.webp",
+    "/booking": "/Images/Knight-Hammer.webp",
+    "/about": "/Images/KGHero_person_crop_1200x1600.jpg",
+    "/pricing": "/Images/services/handyman.webp",
+    "/pricing-no-2-hour-minimum": "/Images/services/handyman.webp",
+    "/service-areas": "/Images/cities/safety-harbor.webp",
+    "/contact": "/Images/services/handyman.webp",
+    "/services": "/Images/services/handyman.webp",
+    "/home-watch-pinellas": "/Images/KGHero.webp",
+    "/home-watch-pricing": "/Images/KGHero.webp",
+    "/home-watch-checklist": "/Images/services/general-repairs.webp",
+    "/rental-turnover-handyman": "/Images/services/home-renovations.webp",
+    "/hurricane-repair-handyman-pinellas": "/Images/services/emergency-services.webp",
+    "/plumber-background-handyman": "/Images/services/plumbing-services.webp",
+    "/handyman-scope-florida": "/Images/services/handyman.webp",
+}
+
+
+def related_card_src(href: str) -> str:
+    """Return an absolute image path for any related-card destination."""
+    path = href.split("#", 1)[0].split("?", 1)[0].rstrip("/") or "/"
+    mapped = PAGE_CARD_IMAGES.get(path)
+    if mapped:
+        return mapped
+    image = resolve_card_image(href)
+    if image.startswith("cities/"):
+        return f"/Images/{image}"
+    return f"/Images/services/{image}"
+
+
 def _city_slug_from_geo(href_slug: str) -> str | None:
     match = re.fullmatch(r"(.+)-handyman", href_slug)
     return match.group(1) if match else None

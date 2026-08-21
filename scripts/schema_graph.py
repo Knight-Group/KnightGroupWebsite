@@ -119,17 +119,60 @@ def extract_page_faq(html_content: str) -> list[dict[str, Any]]:
     return extract_faq_entities(html_content)
 
 
+def extract_howto(html_content: str) -> dict[str, Any] | None:
+    match = re.search(
+        r'<ol class="kg-howto-steps"[^>]*data-howto-name="([^"]+)"[^>]*>(.*?)</ol>',
+        html_content,
+        flags=re.S | re.I,
+    )
+    if not match:
+        return None
+    name = html.unescape(match.group(1)).strip()
+    items = re.findall(
+        r"<li>\s*<strong>(.*?)</strong>\s*<p>(.*?)</p>\s*</li>",
+        match.group(2),
+        flags=re.S | re.I,
+    )
+    if len(items) < 2:
+        return None
+    return {
+        "name": name,
+        "steps": [
+            {
+                "@type": "HowToStep",
+                "position": index,
+                "name": _clean_text(title),
+                "text": _clean_text(text),
+            }
+            for index, (title, text) in enumerate(items, start=1)
+        ],
+    }
+
+
+def extract_gallery_project_image(html_content: str) -> tuple[str, str] | None:
+    match = re.search(
+        r'<div class="kg-gallery-project-images">.*?<img src="([^"]+)"[^>]*alt="([^"]*)"',
+        html_content,
+        flags=re.S | re.I,
+    )
+    if not match:
+        return None
+    src = match.group(1).strip()
+    alt = _clean_text(match.group(2))
+    if src.startswith("/"):
+        src = f"{BASE}{src}"
+    elif not src.startswith("http"):
+        src = f"{BASE}/{src.lstrip('/')}"
+    return src, alt
+
+
 def image_rights_metadata() -> dict[str, Any]:
     return {
         "creditText": "Knight Group Handyman Services LLC",
         "copyrightNotice": "Copyright 2026 Knight Group Handyman Services LLC. All rights reserved.",
         "license": f"{BASE}/PolicyPages/terms",
         "acquireLicensePage": f"{BASE}/contact",
-        "creator": {
-            "@type": "Organization",
-            "@id": ORG_ID,
-            "name": "Knight Group Handyman Services LLC",
-        },
+        "creator": {"@id": ORG_ID},
     }
 
 
@@ -165,7 +208,7 @@ def website_entity() -> dict[str, Any]:
         "@id": WEBSITE_ID,
         "url": f"{BASE}/",
         "name": "Knight Group Handyman Services",
-        "description": "Registered and insured handyman services in Safety Harbor and Pinellas County, Florida.",
+        "description": "Registered and insured handyman services in Safety Harbor, Pinellas County, Hillsborough County, and Pasco County, Florida.",
         "publisher": {"@id": BUSINESS_ID},
         "inLanguage": "en-US",
     }
@@ -299,10 +342,11 @@ def service_entity(
             "url": f"{BASE}/booking",
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock",
-            "eligibleRegion": {
-                "@type": "AdministrativeArea",
-                "name": "Pinellas County, Florida",
-            },
+            "eligibleRegion": [
+                {"@type": "AdministrativeArea", "name": "Pinellas County, Florida"},
+                {"@type": "AdministrativeArea", "name": "Hillsborough County, Florida"},
+                {"@type": "AdministrativeArea", "name": "Pasco County, Florida"},
+            ],
         },
     }
     if include_offer_catalog_ref:
@@ -355,7 +399,7 @@ def pricing_offer_catalog() -> dict[str, Any]:
             {
                 "@type": "Offer",
                 "name": "Minor plumbing repair visit",
-                "description": "Handyman-level faucet, shutoff, fixture, and small leak repairs — not licensed plumbing contractor work.",
+                "description": "Diagnostic visit and finish closeout around plumbing problems — not licensed plumbing contractor work.",
                 "url": f"{BASE}/pricing",
                 "priceCurrency": "USD",
                 "itemOffered": _nested_service(
@@ -529,6 +573,7 @@ def build_graph_for_page(
     meta: dict[str, str],
     faq_entities: list[dict[str, Any]],
     service: dict[str, str] | None = None,
+    html_content: str = "",
 ) -> dict[str, Any]:
     url = meta["canonical"].rstrip("/")
     if page_key == "home":
@@ -622,6 +667,7 @@ def build_graph_for_page(
         graph.extend(gallery_nodes)
     elif page_key == "service-areas":
         crumbs.append({"name": "Service Areas", "item": f"{BASE}/service-areas"})
+        page_type = "CollectionPage"
         service = {
             "name": "Tampa Bay handyman service areas",
             "serviceType": "Handyman service areas",
@@ -629,7 +675,43 @@ def build_graph_for_page(
             "image": "handyman.jpg",
         }
         graph.append(service_entity(url=url, service=service))
-        main_entity_id = f"{url}#service"
+        try:
+            from seo_page_data import COUNTY_REGIONS
+        except ImportError:
+            COUNTY_REGIONS = []
+        area_items: list[dict[str, Any]] = []
+        position = 1
+        for region in COUNTY_REGIONS:
+            area_items.append(
+                {
+                    "@type": "ListItem",
+                    "position": position,
+                    "name": f"{region['hub_name']} handyman",
+                    "url": f"{BASE}/{region['hub_slug']}-handyman",
+                }
+            )
+            position += 1
+            for city in region["cities"]:
+                area_items.append(
+                    {
+                        "@type": "ListItem",
+                        "position": position,
+                        "name": f"{city['name']} handyman",
+                        "url": f"{BASE}/{city['slug']}-handyman",
+                    }
+                )
+                position += 1
+        list_id = f"{url}#arealist"
+        graph.append(
+            {
+                "@type": "ItemList",
+                "@id": list_id,
+                "name": "Knight Group Tampa Bay service areas",
+                "description": "City and county handyman pages across Pinellas, Hillsborough, and Pasco County.",
+                "itemListElement": area_items,
+            }
+        )
+        main_entity_id = list_id
     elif page_key == "geo-county":
         main_entity_id = _append_geo_service_graph(
             graph, url=url, meta=meta, service=service, crumbs=crumbs
@@ -685,20 +767,33 @@ def build_graph_for_page(
             ]
         )
         project_id = f"{url}#project"
-        graph.append(
-            {
-                "@type": "CreativeWork",
-                "@id": project_id,
-                "name": meta["title"].split("|")[0].strip(),
-                "description": meta["description"],
-                "provider": {"@id": BUSINESS_ID},
-                "about": {"@id": BUSINESS_ID},
-                "locationCreated": {
-                    "@type": "AdministrativeArea",
-                    "name": "Pinellas County, Florida",
-                },
-            }
-        )
+        project_name = meta["title"].split("|")[0].strip()
+        project_node: dict[str, Any] = {
+            "@type": ["CreativeWork", "ImageGallery"],
+            "@id": project_id,
+            "name": project_name,
+            "description": meta["description"],
+            "url": url,
+            "provider": {"@id": BUSINESS_ID},
+            "about": {"@id": BUSINESS_ID},
+            "locationCreated": {
+                "@type": "AdministrativeArea",
+                "name": "Pinellas County, Florida",
+            },
+        }
+        gallery_image = extract_gallery_project_image(html_content)
+        if gallery_image:
+            image_url, image_alt = gallery_image
+            image_node = build_image_object(
+                image_id=f"{url}#primary-image",
+                image_url=image_url,
+                name=image_alt or project_name,
+                description=meta["description"],
+            )
+            graph.append(image_node)
+            project_node["image"] = {"@id": image_node["@id"]}
+            extra["primaryImageOfPage"] = {"@id": image_node["@id"]}
+        graph.append(project_node)
         main_entity_id = project_id
     elif page_key == "policy":
         label = meta["title"].split("|")[0].strip() if "|" in meta["title"] else "Policy"
@@ -744,6 +839,20 @@ def build_graph_for_page(
                 "@id": f"{url}#faq",
                 "mainEntity": faq_entities,
                 "isPartOf": {"@id": f"{url}#webpage"},
+            }
+        )
+
+    howto = extract_howto(html_content)
+    if howto:
+        graph.append(
+            {
+                "@type": "HowTo",
+                "@id": f"{url}#howto",
+                "name": howto["name"],
+                "description": meta["description"],
+                "url": url,
+                "provider": {"@id": BUSINESS_ID},
+                "step": howto["steps"],
             }
         )
 

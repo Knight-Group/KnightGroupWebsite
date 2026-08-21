@@ -24,38 +24,23 @@ IMAGE_OVERRIDES = {
     "tub-drain-replacement": "NewTubDrain.webp",
 }
 
-# Surface stronger before/after and finished shots near the front.
-GROUP_ORDER = [
-    "fridge-door-alignment-before-after",
-    "pipe-repair-before-after",
-    "tub-drain-before-after",
-    "room-restoration-before-after",
-    "stove-burner-repair-before-after",
-    "ac-vent-filter-change-before-after",
-    "fence-repair-before-after",
-    "door-lock-repair-before-after",
-    "kitchen-sink-leak-before-after",
-    "curtain-rod-mount-before-after",
-    "blind-repair-before-after",
-    "carpet-removal-before-after",
-    "fire-extinguisher-mount-before-after",
-    "stair-tape-repair-before-after",
-    "smoke-alarm-battery-swap-before-after",
-    "filter-change-before-after",
-    "door-wedge-before-after",
-    "blinds-replacement-before-after",
-    "hornet-removal-wall-sealed-before-after",
+# Featured homepage proof only — do not dump the full gallery feed.
+FEATURED_GROUP_IDS = [
     "bathroom-tub-window-remodel",
     "bathroom-remodel-cobblestone",
-    "garbage-disposal-install",
-    "tub-drain-replacement",
     "floor-subfloor-repair",
-    "mold-wall-repair",
+    "fence-repair-before-after",
+    "door-lock-repair-before-after",
     "window-wall-repair",
-    "hvac-vent-boxing",
     "room-refinish",
-    "fixtures-fans-electrical",
+    "kitchen-sink-leak-before-after",
 ]
+MAX_CARDS = 8
+SKIP_TITLE_RE = re.compile(
+    r"copeland|work order|smoke.?alarm|filter change|ac filter|battery swap|"
+    r"door wedge|stair tape|fire extinguisher|curtain rod",
+    re.I,
+)
 
 
 def pick_image(group: dict) -> dict | None:
@@ -106,14 +91,20 @@ def build_cards() -> str:
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
     groups_by_id = {group["id"]: group for group in manifest.get("groups", [])}
 
-    ordered_ids = [group_id for group_id in GROUP_ORDER if group_id in groups_by_id]
+    ordered_ids = [group_id for group_id in FEATURED_GROUP_IDS if group_id in groups_by_id]
     for group_id in groups_by_id:
         if group_id not in ordered_ids:
             ordered_ids.append(group_id)
 
     cards: list[str] = []
     for group_id in ordered_ids:
+        if len(cards) >= MAX_CARDS:
+            break
         group = groups_by_id[group_id]
+        title = str(group.get("title") or "")
+        description = str(group.get("description") or "")
+        if SKIP_TITLE_RE.search(title) or SKIP_TITLE_RE.search(description):
+            continue
         image = pick_image(group)
         if not image:
             continue
@@ -146,8 +137,8 @@ def patch_index(cards_html: str) -> None:
 def main() -> int:
     cards_html = build_cards()
     card_count = cards_html.count('class="kg-job-card"')
-    if card_count < 8:
-        raise RuntimeError(f"Expected at least 8 carousel cards, got {card_count}")
+    if card_count < 6:
+        raise RuntimeError(f"Expected at least 6 carousel cards, got {card_count}")
     patch_index(cards_html)
     import subprocess
     import sys

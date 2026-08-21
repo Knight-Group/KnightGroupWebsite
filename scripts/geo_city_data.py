@@ -1,4 +1,9 @@
-"""Unique local context for city, county, and city-service geo pages."""
+"""Unique local context for city, county, and city-service geo pages.
+
+Do not add new city or city×service permutation pages until existing geo pages
+are cleaned and GSC query→URL mapping is done. Serve remaining towns from
+county / service-area hubs.
+"""
 
 from __future__ import annotations
 
@@ -10,10 +15,10 @@ CITY_PROFILES: dict[str, dict] = {
         "climate": "Harbor humidity and afternoon storms stress exterior caulk, soffit vents, and porch ceilings faster than inland subdivisions.",
         "jobs": [
             "Historic-home trim repair and paint touch-ups without disturbing original profiles",
-            "Bathroom fixture swaps in older block homes with corroded angle stops",
+            "Bathroom finish repairs after licensed plumbing in older block homes",
             "Lanai and Florida-room door adjustments after seasonal swelling",
             "Rental turnovers near the spa district and marina walk-ups",
-            "Drywall patches after minor roof or AC pan leaks in attic-adjacent ceilings",
+            "Drywall patches after roof or AC pan leaks in attic-adjacent ceilings (roofing itself is referred)",
             "Shelving and closet builds in compact downtown footprints",
         ],
         "angle": "Knight Group is headquartered on 7th Street South in Safety Harbor — this is our home base, not a distant dispatch hub. Same-day routing is easiest here, and Vince Knight knows the mix of older downtown stock and newer infill along McMullen-Booth.",

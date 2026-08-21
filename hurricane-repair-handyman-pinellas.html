@@ -211,7 +211,7 @@
             "@id": "https://www.knightgroup.com/#website",
             "url": "https://www.knightgroup.com/",
             "name": "Knight Group Handyman Services",
-            "description": "Registered and insured handyman services in Safety Harbor and Pinellas County, Florida.",
+            "description": "Registered and insured handyman services in Safety Harbor, Pinellas County, Hillsborough County, and Pasco County, Florida.",
             "publisher": {
                 "@id": "https://www.knightgroup.com/#business"
             },
@@ -311,10 +311,20 @@
                 "url": "https://www.knightgroup.com/booking",
                 "priceCurrency": "USD",
                 "availability": "https://schema.org/InStock",
-                "eligibleRegion": {
-                    "@type": "AdministrativeArea",
-                    "name": "Pinellas County, Florida"
-                }
+                "eligibleRegion": [
+                    {
+                        "@type": "AdministrativeArea",
+                        "name": "Pinellas County, Florida"
+                    },
+                    {
+                        "@type": "AdministrativeArea",
+                        "name": "Hillsborough County, Florida"
+                    },
+                    {
+                        "@type": "AdministrativeArea",
+                        "name": "Pasco County, Florida"
+                    }
+                ]
             },
             "hasOfferCatalog": {
                 "@id": "https://www.knightgroup.com/pricing#offer-catalog"
@@ -332,9 +342,7 @@
             "license": "https://www.knightgroup.com/PolicyPages/terms",
             "acquireLicensePage": "https://www.knightgroup.com/contact",
             "creator": {
-                "@type": "Organization",
-                "@id": "https://www.knightgroup.com/#organization",
-                "name": "Knight Group Handyman Services LLC"
+                "@id": "https://www.knightgroup.com/#organization"
             }
         },
         {
@@ -401,7 +409,7 @@
                     "name": "Can you repair drywall after hurricane water damage?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes — after active leaks are stopped and cavities are dry, we patch drywall, retexture, and paint within handyman scope. Extensive mold remediation or structural drying may require specialists first."
+                        "text": "Yes — after the moisture source is stopped, cavities are dry, and any required licensed mold remediation is complete, we patch drywall, retexture, and paint. Florida licenses mold remediation above 10 square feet. We do not advertise mold remediation as a Knight Group service."
                     }
                 },
                 {
@@ -482,7 +490,7 @@
                         </details>
                         <details class="kg-faq-item">
                             <summary>Can you repair drywall after hurricane water damage?</summary>
-                            <p>Yes — after active leaks are stopped and cavities are dry, we patch drywall, retexture, and paint within handyman scope. Extensive mold remediation or structural drying may require specialists first.</p>
+                            <p>Yes — after the moisture source is stopped, cavities are dry, and any required licensed mold remediation is complete, we patch drywall, retexture, and paint. Florida licenses mold remediation above 10 square feet. We do not advertise mold remediation as a Knight Group service.</p>
                         </details>
                         <details class="kg-faq-item">
                             <summary>Do you offer emergency handyman service after a storm?</summary>
@@ -513,12 +521,18 @@
                             <img src="/Images/services/general-repairs.webp?v=20260701-seo-audit-fix" alt="General repairs" width="400" height="300" loading="lazy" decoding="async">
                             <span class="kg-service-related-card__label">General repairs</span>
                         </a>
+                        <a class="kg-service-related-card" href="/about">
+                            <img src="/Images/KGHero_person_crop_1200x1600.jpg?v=20260701-seo-audit-fix" alt="About Knight Group" width="400" height="300" loading="lazy" decoding="async">
+                            <span class="kg-service-related-card__label">About Knight Group</span>
+                        </a>
+                        <a class="kg-service-related-card" href="/booking">
+                            <img src="/Images/Knight-Hammer.webp?v=20260701-seo-audit-fix" alt="Book a free estimate" width="400" height="300" loading="lazy" decoding="async">
+                            <span class="kg-service-related-card__label">Book a free estimate</span>
+                        </a>
                         <a class="kg-service-related-card" href="/Services/handyman">
                             <img src="/Images/services/handyman.webp?v=20260701-seo-audit-fix" alt="Handyman services" width="400" height="300" loading="lazy" decoding="async">
                             <span class="kg-service-related-card__label">Handyman services</span>
                         </a>
-                        <a class="kg-service-related-card kg-service-related-card--text" href="/about">About Knight Group</a>
-                        <a class="kg-service-related-card kg-service-related-card--text" href="/booking">Book a free estimate</a>
                     </div>
             </section>
             <section class="kg-section kg-service-cta">

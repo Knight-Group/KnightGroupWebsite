@@ -5,7 +5,7 @@ from __future__ import annotations
 NICHE_BODY: dict[str, str] = {
     "home-repair-near-me": """
 <h2>Local home repair when you need one accountable team</h2>
-<p>Searches for <strong>home repair near me</strong> and <strong>knights home repair</strong> usually come from homeowners juggling a half-finished punch list — a loose handrail, a drywall scar from a moved outlet, a faucet drip, and a door that sticks after humidity. Knight Group is owner-operated in Safety Harbor and drives to Clearwater, Dunedin, Palm Harbor, Largo, Oldsmar, Seminole, and St. Petersburg with one written estimate and one point of contact.</p>
+<p>Searches for home repair near you usually come from homeowners juggling a half-finished punch list — a loose handrail, a drywall scar, and a door that sticks after humidity. Knight Group is owner-operated in Safety Harbor and drives to Clearwater, Dunedin, Palm Harbor, Largo, Oldsmar, Seminole, and St. Petersburg with one written estimate and one point of contact.</p>
 
 <h3>Repairs we bundle on a single visit</h3>
 <ul>
@@ -25,11 +25,11 @@ NICHE_BODY: dict[str, str] = {
 """,
     "small-jobs": """
 <h2>Small jobs without oversized minimums</h2>
-<p>When you search <strong>handyman near me small jobs</strong>, you are often pushing back against companies that will not roll a truck for a single task. Knight Group Handyman Services LLC takes defined small scopes across Pinellas County — hinge swaps, towel bars, a running toilet, a drywall hole, or three unrelated items if they share one trip.</p>
+<p>When a company will not roll a truck for a single task, Knight Group takes defined small scopes across Pinellas County — hinge swaps, towel bars, a drywall hole, or three unrelated items if they share one trip.</p>
 
 <h3>Examples of small-job calls we accept</h3>
 <ul>
-<li>Single-fixture plumbing corrections within handyman scope</li>
+<li>Single finish or hardware corrections that do not require a licensed trade</li>
 <li>Picture hanging, TV mounts, and blind hardware installs</li>
 <li>Baseboard patches, caulk lines, and paint touch-ups in one room</li>
 <li>Closet rod replacement and pantry shelf adjustments</li>
@@ -75,8 +75,8 @@ NICHE_BODY: dict[str, str] = {
 <li>Corrosion at shutoffs that will not fully close — replaced before they burst</li>
 </ul>
 
-<h2>When a sink repair stays handyman scope</h2>
-<p>Fixture-level repairs on existing rough-in fit our model: swap like-for-like faucets, reseat drains, replace traps, and test for leaks under pressure. Moving a sink wall-to-wall, adding a new wet wall, or altering venting requires a licensed plumber — we say that upfront instead of improvising.</p>
+<h2>When a sink repair needs a licensed plumber</h2>
+<p>Florida DBPR treats plumbing that connects lines to drinking water as licensed work. Knight Group diagnoses supply lines, traps, gaskets, and shutoffs, then refers a licensed plumber for potable-water connections. Closeout drywall and paint can stay with our crew.</p>
 
 <h3>After the leak: drywall and cabinet drying</h3>
 <p>Many sink calls include swollen cabinet bottoms or stained drywall. Knight Group can patch and paint after plumbing stabilizes. See <a href="/Services/water-damage-repair">water damage repair</a>, <a href="/Services/faucet-replacement">faucet replacement</a>, and <a href="/pricing-plumbing-repair-prices">handyman plumbing prices</a>.</p>
@@ -571,7 +571,7 @@ NICHE_FAQ: dict[str, list[tuple[str, str]]] = {
         ("Can landlords book multiple unit touch-ups?", "Yes — provide unit addresses and photo sets for batch scheduling where routes allow."),
     ],
     "water-damage-repair": [
-        ("Can a handyman repair water damage after a leak?", "Yes for localized drywall, trim, and finish repairs once active leaks are stopped. Extensive mold remediation or structural drying may need specialists."),
+        ("Can a handyman repair water damage after a leak?", "Yes for localized drywall, trim, and finish repairs once the moisture source is stopped and any required licensed mold remediation is complete. We do not advertise mold remediation."),
         ("Should I wait for drywall to dry before patching?", "Yes — closing wet cavities traps mold. We check moisture conditions before rebuild work."),
         ("Do you repair bathroom water damage?", "Often yes — vanity surrounds, drywall, and baseboards after fixture leaks are common scopes."),
         ("Can you coordinate with my plumber?", "Yes — we can schedule after licensed plumbing completes or handle fixture-level shutoff work when appropriate."),
@@ -710,7 +710,7 @@ NICHE_FAQ: dict[str, list[tuple[str, str]]] = {
         ("Can you match knockdown ceiling texture?", "Yes — knockdown is common in Pinellas County homes and is blended with appropriate tools and timing."),
         ("Will texture matching work on walls and ceilings?", "Both — technique depends on existing pattern and scale of repair."),
         ("Do I need texture before painting?", "Yes when existing surfaces are textured — skipping texture makes patches obvious after paint."),
-        ("Can you fix texture after a ceiling fan swap?", "Yes — fan openings often need targeted texture blending."),
+        ("Can you fix texture after a ceiling fan swap?", "Yes — after a licensed electrician finishes the fan, openings often need targeted texture blending."),
         ("What if my texture is outdated?", "We can match existing texture for repairs even if you plan broader remodeling later."),
         ("Does texture matching include paint?", "Texture is typically paired with priming and paint in combined scopes — specify when requesting a quote."),
     ],

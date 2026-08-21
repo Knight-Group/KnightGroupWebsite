@@ -354,14 +354,14 @@ PRICING_PAGES = [
         "slug": "pricing-plumbing-repair-prices",
         "title": "Handyman Plumbing Prices | Pinellas County FL",
         "h1": "Handyman plumbing repair prices",
-        "lead": "Fixture-level plumbing pricing for faucets, toilets, disposals, and minor leak corrections within handyman scope.",
+        "lead": "Diagnostic and closeout pricing around plumbing problems — Knight Group is not a licensed plumbing contractor.",
         "queries": ["handyman plumbing prices"],
     },
     {
         "slug": "pricing-no-2-hour-minimum",
         "title": "No 2-Hour Minimum Handyman | Pinellas County FL",
         "h1": "No 2-hour minimum handyman",
-        "lead": "Pay only for actual time worked from $75/hr — no franchise-style two-hour minimums on small jobs and punch lists.",
+        "lead": "Pay $150 for the first hour and $75 each additional hour — no franchise-style two-hour minimum on small jobs and punch lists.",
         "queries": ["handyman no 2 hour minimum", "handyman no minimum pinellas"],
     },
 ]

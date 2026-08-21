@@ -50,12 +50,12 @@ MAJOR_SERVICE_META = {
         "punch-list work. No 2-hour minimum. Registered and insured. Free written estimate."
     ),
     "Services/plumbing-services.html": (
-        "Fixture plumbing in Pinellas County: faucets, toilets, disposals, drains, and minor leak fixes. "
-        "Owner has journeyman plumbing background. Registered and insured. Free estimate."
+        "Plumbing diagnosis in Pinellas County from a journeyman-background owner. "
+        "Knight Group is not a licensed plumber; potable-water connections are referred. Free estimate."
     ),
     "Services/electrical-work.html": (
-        "Handyman electrical in Pinellas County: ceiling fans, fixtures, switches, and like-for-like "
-        "replacements on existing circuits. Registered and insured. Free written estimate."
+        "Electrical diagnosis in Pinellas County. Florida requires a license for fans, fixtures, "
+        "outlets, and switches. We coordinate licensed electricians. Free written estimate."
     ),
     "Services/carpentry-framing.html": (
         "Carpentry and framing in Pinellas County: trim, shelving, fence boards, door frames, and small "
@@ -82,7 +82,7 @@ MAJOR_SERVICE_META = {
         "repairs. Call (813) 649-3341. Registered and insured. Free estimate when safe to quote."
     ),
     "Services/home-repair-near-me.html": (
-        "Home repair near you in Pinellas County: drywall, doors, fixture plumbing, paint, and "
+        "Home repair near you in Pinellas County: drywall, doors, paint, and "
         "punch-list fixes. Registered Safety Harbor crew. No 2-hour minimum. Free written estimate."
     ),
     "Services/small-job-carpenter.html": (

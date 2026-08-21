@@ -64,7 +64,8 @@
                 "https://www.instagram.com/knight_group_services/",
                 "https://x.com/KnightGroupSvcs",
                 "https://www.tiktok.com/@knightgroupservices",
-                "https://www.pinterest.com/KnightGroupService/"
+                "https://www.pinterest.com/KnightGroupService/",
+                "https://www.google.com/maps?cid=10508624668428370015"
             ]
         },
         {
@@ -84,6 +85,7 @@
                 "Drywall repair",
                 "Home renovations",
                 "Property maintenance",
+                "Home Watch",
                 "Pinellas County home repair"
             ]
         },
@@ -92,7 +94,7 @@
             "@id": "https://www.knightgroup.com/#business",
             "name": "Knight Group Handyman Services LLC",
             "url": "https://www.knightgroup.com/",
-            "description": "Knight Group Handyman Services LLC provides registered and insured handyman services across Safety Harbor and Pinellas County, Florida for repairs, plumbing fixture work, drywall, carpentry, painting, doors, windows, and smaller renovation projects.",
+            "description": "Knight Group Handyman Services LLC provides registered and insured handyman services and recurring Home Watch / vacant-property checks across Safety Harbor and Pinellas County, Florida.",
             "image": [
                 "https://www.knightgroup.com/Images/handyman.jpg",
                 "https://www.knightgroup.com/Images/KGHero.webp"
@@ -183,10 +185,63 @@
                     "name": "St. Petersburg, FL"
                 },
                 {
+                    "@type": "City",
+                    "name": "Tampa, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Town 'n' Country, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Westchase, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Holiday, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Trinity, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "New Port Richey, FL"
+                },
+                {
+                    "@type": "City",
+                    "name": "Land O' Lakes, FL"
+                },
+                {
                     "@type": "AdministrativeArea",
                     "name": "Pinellas County, Florida"
+                },
+                {
+                    "@type": "AdministrativeArea",
+                    "name": "Hillsborough County, Florida"
+                },
+                {
+                    "@type": "AdministrativeArea",
+                    "name": "Pasco County, Florida"
                 }
             ],
+            "hasOfferCatalog": {
+                "@id": "https://www.knightgroup.com/pricing#offer-catalog"
+            },
+            "paymentAccepted": [
+                "Cash",
+                "Check",
+                "Zelle",
+                "Credit Card"
+            ],
+            "currenciesAccepted": "USD",
+            "foundingDate": "2024",
+            "slogan": "Registered and insured handyman services in Safety Harbor and Tampa Bay",
+            "potentialAction": {
+                "@type": "ReserveAction",
+                "name": "Book a free handyman estimate",
+                "target": "https://www.knightgroup.com/booking"
+            },
             "knowsAbout": [
                 "Handyman services",
                 "General home repairs",
@@ -196,14 +251,20 @@
                 "Painting and finishing",
                 "Door and window repair",
                 "Home renovations",
-                "Emergency handyman repairs"
+                "Emergency handyman repairs",
+                "Home Watch",
+                "Vacant property checks",
+                "Seasonal home property care",
+                "Absentee homeowner services",
+                "Second-home property checks"
             ],
             "sameAs": [
                 "https://www.facebook.com/KnightGroupServices/",
                 "https://www.instagram.com/knight_group_services/",
                 "https://x.com/KnightGroupSvcs",
                 "https://www.tiktok.com/@knightgroupservices",
-                "https://www.pinterest.com/KnightGroupService/"
+                "https://www.pinterest.com/KnightGroupService/",
+                "https://www.google.com/maps?cid=10508624668428370015"
             ],
             "aggregateRating": {
                 "@type": "AggregateRating",
@@ -218,7 +279,7 @@
             "@id": "https://www.knightgroup.com/#website",
             "url": "https://www.knightgroup.com/",
             "name": "Knight Group Handyman Services",
-            "description": "Registered and insured handyman services in Safety Harbor and Pinellas County, Florida.",
+            "description": "Registered and insured handyman services in Safety Harbor, Pinellas County, Hillsborough County, and Pasco County, Florida.",
             "publisher": {
                 "@id": "https://www.knightgroup.com/#business"
             },
@@ -343,10 +404,10 @@
                 },
                 {
                     "@type": "Question",
-                    "name": "Do you serve all of Pinellas County?",
+                    "name": "Do you serve Pinellas, Hillsborough, and Pasco?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes. Knight Group serves Safety Harbor, Clearwater, Dunedin, Palm Harbor, Largo, Oldsmar, Seminole, St. Petersburg, and nearby communities. See service areas for coverage details."
+                        "text": "Yes. Knight Group serves Safety Harbor, Clearwater, Tampa, Temple Terrace, New Port Richey, and nearby communities across Pinellas, Hillsborough, and Pasco County. See service areas for coverage details."
                     }
                 },
                 {
@@ -361,6 +422,42 @@
             "isPartOf": {
                 "@id": "https://www.knightgroup.com/services#webpage"
             }
+        },
+        {
+            "@type": "HowTo",
+            "@id": "https://www.knightgroup.com/services#howto",
+            "name": "How to book a Knight Group handyman job from the services hub",
+            "description": "Handyman services across Pinellas County: repairs, plumbing fixtures, electrical swaps, carpentry, painting, doors, windows, and free written estimates.",
+            "url": "https://www.knightgroup.com/services",
+            "provider": {
+                "@id": "https://www.knightgroup.com/#business"
+            },
+            "step": [
+                {
+                    "@type": "HowToStep",
+                    "position": 1,
+                    "name": "Match the job to a category",
+                    "text": "Use the cards above for general repairs, plumbing fixtures, electrical, carpentry, painting, doors, or mixed handyman work."
+                },
+                {
+                    "@type": "HowToStep",
+                    "position": 2,
+                    "name": "Confirm scope and city",
+                    "text": "Open the category page for FAQs, photos, and whether the work stays in handyman scope for your Tampa Bay city."
+                },
+                {
+                    "@type": "HowToStep",
+                    "position": 3,
+                    "name": "Send photos and the address",
+                    "text": "Book a free written estimate with the property city, access notes, and pictures of the issue."
+                },
+                {
+                    "@type": "HowToStep",
+                    "position": 4,
+                    "name": "Review the written quote",
+                    "text": "We reply with time, materials, and whether a licensed trade is a better fit before anyone rolls a truck."
+                }
+            ]
         }
     ]
 }
@@ -442,12 +539,12 @@
 
                     <div class="kg-services-hub-grid">
                         <a class="kg-services-hub-card" href="/Services/general-repairs"><strong>General Repairs</strong><span>Drywall patches, punch-list work, leak-related fixes, and small repairs that stack up around the house.</span><em>View general repairs →</em></a>
-                        <a class="kg-services-hub-card" href="/Services/plumbing-services"><strong>Plumbing Services</strong><span>Fixture swaps, running toilets, leaking faucets, shutoff issues, and practical plumbing repair work.</span><em>View plumbing services →</em></a>
-                        <a class="kg-services-hub-card" href="/Services/electrical-work"><strong>Electrical Work</strong><span>Light fixtures, switches, outlets, ceiling fans, and household electrical work within our current service scope.</span><em>View electrical work →</em></a>
+                        <a class="kg-services-hub-card" href="/Services/plumbing-services"><strong>Plumbing Services</strong><span>Journeyman-background diagnosis. Knight Group is not a licensed plumber; drinking-water connections are referred.</span><em>View plumbing services →</em></a>
+                        <a class="kg-services-hub-card" href="/Services/electrical-work"><strong>Electrical Work</strong><span>Diagnosis and licensed-electrician coordination. Florida requires a license for fans, fixtures, outlets, and switches.</span><em>View electrical work →</em></a>
                         <a class="kg-services-hub-card" href="/Services/carpentry-framing"><strong>Carpentry &amp; Framing</strong><span>Trim, framing corrections, repair carpentry, and finish work that needs a dependable build approach.</span><em>View carpentry &amp; framing →</em></a>
                         <a class="kg-services-hub-card" href="/Services/painting-finishing"><strong>Painting &amp; Finishing</strong><span>Interior and exterior touch-ups, wall repair prep, trim painting, and refresh work that improves the whole room.</span><em>View painting &amp; finishing →</em></a>
                         <a class="kg-services-hub-card" href="/Services/home-renovations"><strong>Home Renovations</strong><span>Smaller renovation scopes, update work, and room improvement projects with one reliable point of contact.</span><em>View home renovations →</em></a>
-                        <a class="kg-services-hub-card" href="/Services/doors-windows"><strong>Doors &amp; Windows</strong><span>Adjustments, installs, replacements, trim work, and fixes for sticking or damaged openings.</span><em>View doors &amp; windows →</em></a>
+                        <a class="kg-services-hub-card" href="/Services/doors-windows"><strong>Doors &amp; Windows</strong><span>Interior door adjustments, screens, hardware, and weatherstripping. New windows and exterior-door installs are licensed work.</span><em>View doors &amp; windows →</em></a>
                         <a class="kg-services-hub-card" href="/Services/custom-projects"><strong>Custom Projects</strong><span>Jobs that do not fit one category but still fall inside practical handyman and improvement work.</span><em>View custom projects →</em></a>
                         <a class="kg-services-hub-card" href="/Services/emergency-services"><strong>Emergency Services</strong><span>Urgent repair situations that need a faster response path and a clear first conversation about scope.</span><em>View emergency services →</em></a>
                         <a class="kg-services-hub-card" href="/Services/handyman"><strong>Handyman Services</strong><span>General handyman help when you want one local team for mixed repair, maintenance, and improvement tasks.</span><em>View handyman services →</em></a>
@@ -462,7 +559,7 @@
                     <div class="kg-heading-block" style="margin-top:48px">
                         <span class="kg-section-tag">Popular search paths</span>
                         <h2>Start with the page that matches your search</h2>
-                        <p>These are the pages we want Google and homeowners to treat as the primary answers for common local handyman searches.</p>
+                        <p>Start with the service that matches the job. Each page explains what Knight Group handles and when a licensed trade is the right call.</p>
                     </div>
                     <div class="kg-services-hub-grid">
                         <a class="kg-services-hub-card" href="/Services/handyman"><strong>Handyman near me</strong><span>General handyman services, mixed repairs, and punch-list work across Pinellas County.</span><em>View handyman services →</em></a>
@@ -472,11 +569,24 @@
                     </div>
 
                     <div class="kg-heading-block" style="margin-top:48px">
+                        <span class="kg-section-tag">Property Care</span>
+                        <h2>Home Watch and vacant property checks</h2>
+                        <p>Scheduled visual property checks for seasonal, second, and vacant homes — photo-documented reports, issue alerts, and a direct path to Knight Group maintenance when needed.</p>
+                    </div>
+                    <div class="kg-services-hub-grid">
+                        <a class="kg-services-hub-card" href="/home-watch-pinellas"><strong>Home Watch &amp; Vacant Property Care</strong><span>Scheduled visual property checks for seasonal, second and vacant homes. Photo-documented reports, issue alerts, vendor access and a path to Knight Group maintenance.</span><em>View Home Watch →</em></a>
+                        <a class="kg-services-hub-card" href="/home-watch-pricing"><strong>Home Watch Pricing</strong><span>Weekly, biweekly, one-time, and premium property-check plans. Repair labor is quoted separately.</span><em>View pricing →</em></a>
+                        <a class="kg-services-hub-card" href="/home-watch-checklist"><strong>Home Watch Checklist</strong><span>What we visually check on exterior, interior, and departure — observations, not a home inspection.</span><em>View checklist →</em></a>
+                        <a class="kg-services-hub-card" href="/hurricane-repair-handyman-pinellas"><strong>Hurricane / Storm Property Checks</strong><span>Prep and post-storm punch lists, plus a dedicated post-storm Home Watch visit when roads are safe.</span><em>View storm page →</em></a>
+                    </div>
+
+                    <div class="kg-heading-block" style="margin-top:48px">
                         <span class="kg-section-tag">Who we help</span>
                         <h2>Landlords, property managers, and scope questions</h2>
                         <p>Registered and insured handyman work — with honest answers about what fits our scope versus licensed trades.</p>
                     </div>
                     <div class="kg-services-hub-grid">
+                        <a class="kg-services-hub-card" href="/home-watch-pinellas"><strong>Home Watch for Absentee Owners</strong><span>Weekly and biweekly vacant-property checks while landlords, snowbirds, and second-home owners are away.</span><em>View Home Watch →</em></a>
                         <a class="kg-services-hub-card" href="/rental-turnover-handyman"><strong>Rental Turnover Handyman</strong><span>Move-in and move-out punch lists for landlords and small property managers.</span><em>View page →</em></a>
                         <a class="kg-services-hub-card" href="/plumber-background-handyman"><strong>Journeyman Plumbing Experience</strong><span>Why Vince Knight’s trade background helps on fixture work — without overclaiming a license.</span><em>View page →</em></a>
                         <a class="kg-services-hub-card" href="/handyman-scope-florida"><strong>Handyman Scope in Florida</strong><span>What Knight Group handles in-house and when we refer a licensed plumber, electrician, or GC.</span><em>View page →</em></a>
@@ -490,6 +600,7 @@
                     </div>
                     <div class="kg-services-hub-grid">
                         <a class="kg-services-hub-card" href="/hurricane-repair-handyman-pinellas"><strong>Hurricane Prep &amp; Storm Repair</strong><span>Caulk, screening, water-damage follow-up, and honest scope before and after storms.</span><em>View page →</em></a>
+                        <a class="kg-services-hub-card" href="/home-watch-pinellas"><strong>Post-storm property check</strong><span>A scheduled visual Home Watch visit after roads are safe — observation and photos, not a repair ticket.</span><em>View Home Watch →</em></a>
                         <a class="kg-services-hub-card" href="/Services/emergency-services"><strong>Emergency Services</strong><span>Active leaks, security issues, and urgent handyman-scope calls.</span><em>View page →</em></a>
                         <a class="kg-services-hub-card" href="/Services/water-damage-repair"><strong>Water Damage Repair</strong><span>Drywall and finish work after the leak is stopped.</span><em>View page →</em></a>
                     </div>
@@ -513,6 +624,22 @@
                 </div>
             </section>
 
+            <section class="kg-section" id="how-we-match-jobs" aria-labelledby="how-we-match-heading">
+                <div class="kg-shell">
+                    <div class="kg-heading-block">
+                        <span class="kg-section-tag">How it works</span>
+                        <h2 id="how-we-match-heading">How to get from this hub to a booked visit</h2>
+                        <p>This page exists so homeowners can match a job to the right Knight Group service page, then request a written estimate for Pinellas, Hillsborough, or Pasco County.</p>
+                    </div>
+                    <ol class="kg-howto-steps" data-howto-name="How to book a Knight Group handyman job from the services hub">
+                        <li><strong>Match the job to a category</strong><p>Use the cards above for general repairs, plumbing fixtures, electrical, carpentry, painting, doors, or mixed handyman work.</p></li>
+                        <li><strong>Confirm scope and city</strong><p>Open the category page for FAQs, photos, and whether the work stays in handyman scope for your Tampa Bay city.</p></li>
+                        <li><strong>Send photos and the address</strong><p>Book a free written estimate with the property city, access notes, and pictures of the issue.</p></li>
+                        <li><strong>Review the written quote</strong><p>We reply with time, materials, and whether a licensed trade is a better fit before anyone rolls a truck.</p></li>
+                    </ol>
+                </div>
+            </section>
+
             <section class="kg-section kg-service-faq" id="services-hub-faq" aria-labelledby="services-hub-faq-heading">
                 <div class="kg-shell">
                     <div class="kg-heading-block">
@@ -525,8 +652,8 @@
                             <p>Use this hub when you are still matching the job to a category. If you already know the scope and address, go straight to <a href="/booking">booking</a> for a full estimate request.</p>
                         </details>
                         <details class="kg-faq-item">
-                            <summary>Do you serve all of Pinellas County?</summary>
-                            <p>Yes. Knight Group serves Safety Harbor, Clearwater, Dunedin, Palm Harbor, Largo, Oldsmar, Seminole, St. Petersburg, and nearby communities. See <a href="/service-areas">service areas</a> for coverage details.</p>
+                            <summary>Do you serve Pinellas, Hillsborough, and Pasco?</summary>
+                            <p>Yes. Knight Group serves Safety Harbor, Clearwater, Tampa, Temple Terrace, New Port Richey, and nearby communities across Pinellas, Hillsborough, and Pasco County. See <a href="/service-areas">service areas</a> for coverage details.</p>
                         </details>
                         <details class="kg-faq-item">
                             <summary>Are estimates free?</summary>
