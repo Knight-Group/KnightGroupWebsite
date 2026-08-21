@@ -414,5 +414,18 @@
     "beforeAfter": true,
     "scope_slug": "sink-drain-pop-up-assembly-36b860c",
     "source": "dispatch"
+  },
+  "before-after-front-fence-repair-08fc100.webp": {
+    "group": "front-fence-repair-08fc100-before-after",
+    "groupTitle": "Front fence repair \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a front fence repair job completed by Knight Group.",
+    "category": "carpentry",
+    "serviceLink": "/Services/carpentry-framing",
+    "step": 1,
+    "title": "Front fence repair before and after",
+    "description": "Before-and-after comparison from a front fence repair job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "front-fence-repair-08fc100",
+    "source": "dispatch"
   }
 }

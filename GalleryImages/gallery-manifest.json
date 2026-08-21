@@ -432,6 +432,26 @@
       ]
     },
     {
+      "id": "front-fence-repair-08fc100-before-after",
+      "title": "Front fence repair \u2014 before & after",
+      "description": "Before-and-after proof from a front fence repair job completed by Knight Group.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-front-fence-repair-08fc100.webp",
+          "filename": "before-after-front-fence-repair-08fc100.webp",
+          "step": 1,
+          "title": "Front fence repair before and after",
+          "seoAlt": "Front fence repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a front fence repair job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "garbage-disposal-install",
       "title": "Garbage disposal installation",
       "description": "Under-sink disposal work completed as part of a practical plumbing repair call.",
@@ -1809,6 +1829,20 @@
       "beforeAfter": true,
       "groupTitle": "Refrigerator door alignment \u2014 before & after",
       "groupDescription": "Refrigerator that would not close properly corrected so the door seals and operates normally again."
+    },
+    {
+      "src": "GalleryImages/before-after-front-fence-repair-08fc100.webp",
+      "filename": "before-after-front-fence-repair-08fc100.webp",
+      "group": "front-fence-repair-08fc100-before-after",
+      "step": 1,
+      "title": "Front fence repair before and after",
+      "seoAlt": "Front fence repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a front fence repair job completed in a Pinellas County home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Front fence repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a front fence repair job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-front-intrusion-be5d722.webp",

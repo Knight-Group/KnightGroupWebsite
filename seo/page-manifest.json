@@ -711,6 +711,13 @@
     },
     {
       "pageType": "gallery-project",
+      "slug": "front-fence-repair-08fc100-before-after",
+      "path": "gallery/front-fence-repair-08fc100-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/front-fence-repair-08fc100-before-after",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
       "slug": "handyman-repair-669cf03-before-after",
       "path": "gallery/handyman-repair-669cf03-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/handyman-repair-669cf03-before-after",
