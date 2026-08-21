@@ -16,3 +16,16 @@ Check:
 3. No new city×service pages added unless GSC shows a real query gap.
 4. Homepage carousel still capped at 8 featured jobs.
 5. Public electrical/plumbing/mold/roof/window claims still match `handyman-scope-florida`.
+6. About page still says Vince is **Co-Owner & Field Operations Lead**, not sole owner, and does not claim he personally performs every job.
+7. No Lutz GBP, no named unproven contractor, no Home Watch expansion outside Pinellas.
+8. No mass 301s. Preserve pricing, FAQs, city URLs, and Home Watch cluster.
+9. Callers mentioning ChatGPT: note the landing URL they used (homepage vs `/pricing` vs `/home-watch-pinellas`) in the monthly log.
+
+AI / search visibility while the site evolves:
+
+- Keep explicit `$150 / $75` and Home Watch plan prices.
+- Do not dump `seoTarget` keywords into sentences.
+- Hillsborough/Pasco pages must not claim Pinellas daily-route density.
+- Re-auth GSC (`npm run auth` in `E:\Website Audit\GSC`) before relying on a 3–6 month query→URL map.
+
+Do not add Windows Task Scheduler jobs for this monitor. Run it from this machine on the first business day.

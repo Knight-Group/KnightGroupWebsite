@@ -48,8 +48,8 @@ FOUNDER = {
     "@id": f"{BASE}/#founder",
     "name": "Vincent Knight",
     "alternateName": "Vince Knight",
-    "jobTitle": "Owner",
-    "description": "Owner of Knight Group Handyman Services LLC with journeyman plumbing experience and Florida property management background.",
+    "jobTitle": "Co-Owner & Field Operations Lead",
+    "description": "Co-owner and Field Operations Lead of Knight Group Handyman Services LLC with journeyman plumbing experience and Florida property management background.",
     "url": f"{BASE}/about#vince-knight",
     "worksFor": {"@id": f"{BASE}/#organization"},
     "knowsAbout": [
@@ -484,7 +484,7 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
             <div class="kg-page-hero__cutout-wrap" aria-hidden="true" data-kg-enter="right">
                 <picture>
                     <source srcset="/Images/knight-hero-cutout.webp?v=20260821-home-watch" type="image/webp">
-                    <img class="kg-page-hero-cutout" src="/Images/knight-hero-cutout.png" alt="Vince Knight, owner of Knight Group Handyman Services" width="1200" height="800" decoding="async" loading="eager">
+                    <img class="kg-page-hero-cutout" src="/Images/knight-hero-cutout.png" alt="Vince Knight, co-owner and Field Operations Lead of Knight Group Handyman Services" width="1200" height="800" decoding="async" loading="eager">
                 </picture>
             </div>
             <div class="kg-shell kg-page-hero__grid">
@@ -619,7 +619,7 @@ PRICING_BODY = """
                                     <tr><td>One-Time Property Check</td><td>$125</td><td>Interior/exterior scheduled visual check and report</td></tr>
                                     <tr><td>Biweekly Watch</td><td>$189/month</td><td>Approximately every two weeks</td></tr>
                                     <tr><td>Weekly Watch</td><td>$329/month</td><td>Approximately every seven days</td></tr>
-                                    <tr><td>Estate / Premium Watch</td><td>From $429/month</td><td>Larger property, custom checklist, or greater reporting</td></tr>
+                                    <tr><td>Estate / Premium Watch</td><td>From $429/month</td><td>Quoted after intake for larger or custom properties (footprint, pool/spa, extra structures, reporting, or vendor coordination). We do not publish a one-size package until we see the house.</td></tr>
                                 </tbody>
                             </table>
                             <table class="kg-hw-table">

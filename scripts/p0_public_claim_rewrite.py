@@ -94,7 +94,7 @@ REPLACEMENTS = [
     ),
     (
         "Core local positioning instead of broad, vague service-area copy.",
-        "Owner-operated shop at 1225 7th St S — not a distant franchise dispatch desk.",
+        "Locally owned shop at 1225 7th St S — not a distant franchise dispatch desk.",
     ),
     (
         "These are the pages we want Google and homeowners to treat as the primary answers for common local handyman searches.",

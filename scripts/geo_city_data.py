@@ -417,8 +417,8 @@ COUNTY_PROFILES: dict[str, dict] = {
     },
     "hillsborough": {
         "hub_name": "Hillsborough County",
-        "character": "Hillsborough spans Tampa’s urban core, South Tampa bungalows, and northwest suburbs like Carrollwood, Citrus Park, and Westchase — larger lots, more ranches, and bay-crossing commutes for vendors who do not plan routes.",
-        "routing": "We batch Hillsborough work on planned bay crossings from Safety Harbor — South Tampa, Westchase, Carrollwood, and Temple Terrace clusters reduce windshield time and keep estimates fair.",
+        "character": "Hillsborough coverage focuses on northwest neighborhoods such as Westchase, Carrollwood, Citrus Park, Town 'n' Country, and nearby Tampa addresses that fit the current week’s route — not far south or east Hillsborough.",
+        "routing": "We batch northwest Hillsborough work on planned bay crossings from Safety Harbor — Westchase, Carrollwood, and Citrus Park clusters reduce windshield time. Temple Terrace and similar edge addresses are confirmed first.",
         "themes": [
             "AC condensate and attic leaks into drywall ceilings in slab ranches",
             "Rental turnovers near USF and employer corridors",
@@ -431,7 +431,7 @@ COUNTY_PROFILES: dict[str, dict] = {
     "pasco": {
         "hub_name": "Pasco County",
         "character": "Pasco stretches from Gulf-adjacent Holiday and Port Richey through inland Trinity and Land O' Lakes growth corridors — older retirees, river towns, and newer master-planned subdivisions on the same service map.",
-        "routing": "Pasco routes often chain Holiday, New Port Richey, Trinity, and Land O' Lakes on west-county days — efficient for homeowners who need one vendor across multiple properties.",
+        "routing": "West Pasco work is often chained on scheduled days through Holiday, New Port Richey, and Trinity. Land O' Lakes and similar inland addresses are accepted when they fit the route — confirm the address first.",
         "themes": [
             "Older fixture and shutoff replacements in 1960s–70s ranches",
             "River and Gulf humidity repairs in NPR and Port Richey",

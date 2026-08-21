@@ -4,7 +4,7 @@ EXPANSIONS = {
     "plumbing-services": """
 <h2>Sink repair in Clearwater and across Pinellas County</h2>
 <p>Search demand for <strong>sink repair in Clearwater</strong> and <strong>plumbing services in Pinellas County</strong> usually starts with a leak under the cabinet, a loose faucet, a slow drain, or a shutoff that will not fully close. Knight Group is based in Safety Harbor and serves Clearwater, Dunedin, Palm Harbor, Largo, Oldsmar, Seminole, St. Petersburg, and nearby communities with practical repair help — not a distant call center.</p>
-<p>Because owner Vince Knight has <strong>15 years of journeyman plumbing experience</strong>, you get a clearer first conversation about whether the job is a straightforward fixture fix or something that should route to a licensed plumber for permit work.</p>
+<p>Vince Knight’s <strong>15 years of journeyman plumbing experience</strong> helps Knight Group recognize problems, perform lawful handyman-scope maintenance, and determine when a licensed plumber is required. Knight Group is not a licensed plumbing contractor.</p>
 
 <h3>Faucet leaks, shutoff valves, and fixture replacement</h3>
 <ul>

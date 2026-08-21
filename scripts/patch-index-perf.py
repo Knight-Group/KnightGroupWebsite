@@ -91,11 +91,11 @@ def main() -> int:
     html = html.replace(
         """                <picture>
                     <source srcset="/Images/knight-hero-cutout.webp" type="image/webp">
-                    <img class="kg-hero-cutout" src="/Images/knight-hero-cutout.png" alt="Vince Knight, owner of Knight Group Handyman Services" width="1200" height="800" decoding="async" fetchpriority="high">
+                    <img class="kg-hero-cutout" src="/Images/knight-hero-cutout.png" alt="Vince Knight, co-owner and Field Operations Lead of Knight Group Handyman Services" width="1200" height="800" decoding="async" fetchpriority="high">
                 </picture>""",
         """                <picture>
                     <source type="image/webp" srcset="/Images/knight-hero-cutout-400w.webp 400w, /Images/knight-hero-cutout-680w.webp 680w, /Images/knight-hero-cutout-960w.webp 960w" sizes="(max-width: 760px) 72vw, 340px">
-                    <img class="kg-hero-cutout" src="/Images/knight-hero-cutout-680w.webp" alt="Vince Knight, owner of Knight Group Handyman Services" width="680" height="454" decoding="async" fetchpriority="high">
+                    <img class="kg-hero-cutout" src="/Images/knight-hero-cutout-680w.webp" alt="Vince Knight, co-owner and Field Operations Lead of Knight Group Handyman Services" width="680" height="454" decoding="async" fetchpriority="high">
                 </picture>""",
     )
 

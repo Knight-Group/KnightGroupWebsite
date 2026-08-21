@@ -268,7 +268,7 @@ This is the exact self-contained section generated for the site handoff. It can 
         <p class="kg-package-desc">Best fit for general repair, punch-list, and everyday handyman work around the home.</p>
         <ul class="kg-package-points">
           <li>Minor repairs and punch-list work</li>
-          <li>Drywall patching, caulking, and fixture swaps</li>
+          <li>Drywall patches, caulking, doors, and punch-list work</li>
           <li>Transparent pricing with no hidden service-call fees</li>
         </ul>
         <div class="kg-package-actions">
@@ -286,7 +286,7 @@ This is the exact self-contained section generated for the site handoff. It can 
         </div>
         <p class="kg-package-desc">Plumbing-focused handyman visit for common household issues that need a fast, practical fix.</p>
         <ul class="kg-package-points">
-          <li>Faucets, showerheads, and fixture swaps</li>
+          <li>Leak diagnosis and licensed-plumber coordination when drinking-water connections are required</li>
           <li>Running toilets, minor leaks, and shutoff-related fixes</li>
           <li>Free written estimate and clear pricing</li>
         </ul>

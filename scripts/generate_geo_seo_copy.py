@@ -109,6 +109,28 @@ def angle_snippet(slug: str, profile: dict) -> str:
     return str(profile["angle"])
 
 
+def county_opening(slug: str, name: str) -> str:
+    if slug == "pinellas":
+        return (
+            f"Knight Group covers {name} on daily routes from Safety Harbor. "
+            "Homeowners get a local insured crew for drywall, doors, carpentry, painting touch-ups, "
+            "and punch-list repairs — not a referral marketplace. Licensed trades are coordinated when Florida DBPR requires it."
+        )
+    if slug == "hillsborough":
+        return (
+            "Knight Group covers northwest Hillsborough on scheduled and expanding routes from Safety Harbor. "
+            "Homeowners get a local insured crew for drywall, doors, carpentry, painting touch-ups, "
+            "and punch-list repairs — not a referral marketplace. Licensed trades are coordinated when Florida DBPR requires it. "
+            "Address confirmation is required; this is not a daily Pinellas-style loop across the whole county."
+        )
+    return (
+        "Knight Group covers west Pasco on scheduled route days from Safety Harbor. "
+        "Homeowners get a local insured crew for drywall, doors, carpentry, painting touch-ups, "
+        "and punch-list repairs — not a referral marketplace. Licensed trades are coordinated when Florida DBPR requires it. "
+        "This is expanding coverage with address confirmation — not a daily county-wide loop."
+    )
+
+
 def main() -> None:
     lines = [
         '"""Unique SEO copy for geo pages — Serper-informed, non-duplicated across cities."""',
@@ -124,6 +146,7 @@ def main() -> None:
         primary = str(kw["primary"])
         secondary = list(kw["secondary"])
         sec0 = secondary[0] if secondary else f"handyman {county.lower()}"
+        # seoTarget / sec0 must never be interpolated into prose.
         areas = profile["areas"].split(",")[0].strip()
         angle = angle_snippet(slug, profile)
         opening = OPENINGS[i % len(OPENINGS)].format(
@@ -182,7 +205,7 @@ def main() -> None:
             f'        "meta_description": {clip(f"{name} handyman routes from Safety Harbor: drywall, doors, paint-ready finish work. Registered and insured. Free estimate.", 155)!r},'
         )
         lines.append(
-            f'        "opening": {f"Knight Group covers {name} on daily routes from Safety Harbor. Homeowners get a local insured crew for drywall, doors, carpentry, painting touch-ups, and punch-list repairs — not a referral marketplace. Licensed trades are coordinated when Florida DBPR requires it."!r},'
+            f'        "opening": {county_opening(slug, name)!r},'
         )
         lines.append(
             f'        "scheduling": {f"Book {name} work with photos online or call (813) 649-3341. We confirm your city fits the current route before locking an arrival window."!r},'

@@ -105,7 +105,7 @@ CITY_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
     "tampa": {
         "hero_lead": 'Handyman repairs in Tampa — registered, insured Safety Harbor crew serving Hyde Park.',
         "meta_description": 'Tampa handyman: drywall, doors, paint-ready finish work, and punch-list repairs from Safety Harbor. Registered and insured. Free estimate.',
-        "opening": 'Whether you found us online or from a neighbor, Knight Group treats Tampa jobs as neighborhood work — protected floors, labeled hardware, and scope explained before tools start. We route Tampa from Safety Harbor across the bay — prioritizing South Tampa and Westshore clusters on planned days rather than random cross-county zigzags. That keeps estimates honest and arrival windows realistic.',
+        "opening": "Whether you found us online or from a neighbor, Knight Group treats Tampa jobs as neighborhood work — protected floors, labeled hardware, and scope explained before tools start. We route Tampa from Safety Harbor across the bay — prioritizing northwest Tampa, Westchase, Town 'n' Country, and Carrollwood on planned days. South Tampa and far-east addresses are accepted only when they fit that route; confirm the address first.",
         "scheduling": 'Planning a Tampa repair? Knight Group confirms Hillsborough County routing first, then locks an arrival window. Weekend and after-hours slots are for emergency calls only.',
         "scope_note": 'Scope stays transparent: tasks we accept are quoted in writing; anything that needs a licensed trade is flagged before you approve labor.',
         "closing": 'See related service pages, then schedule a Tampa visit. Active leaks should be called in so we can triage licensed-trade needs.',
@@ -303,7 +303,7 @@ COUNTY_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
     "hillsborough": {
         "hero_lead": 'Hillsborough County handyman routes from Safety Harbor — fixture work, drywall, doors, and punch-list repairs with written estimates.',
         "meta_description": 'Hillsborough County handyman routes from Safety Harbor: drywall, doors, paint-ready finish work. Registered and insured. Free estimate.',
-        "opening": 'Knight Group covers Hillsborough County on daily routes from Safety Harbor. Homeowners get a local insured crew for drywall, doors, carpentry, painting touch-ups, and punch-list repairs — not a referral marketplace. Licensed trades are coordinated when Florida DBPR requires it.',
+        "opening": 'Knight Group covers northwest Hillsborough on scheduled and expanding routes from Safety Harbor. Homeowners get a local insured crew for drywall, doors, carpentry, painting touch-ups, and punch-list repairs — not a referral marketplace. Licensed trades are coordinated when Florida DBPR requires it. Address confirmation is required; this is not a daily Pinellas-style loop across the whole county.',
         "scheduling": 'Book Hillsborough County work with photos online or call (813) 649-3341. We confirm your city fits the current route before locking an arrival window.',
         "scope_note": 'Handyman-scope repairs only across Hillsborough County. Licensed trades are referred for electrical connection work, plumbing that taps drinking water, roofing, new windows, structural additions, and mold remediation over 10 square feet.',
         "closing": 'Tour city pages below, compare pricing, and view our gallery for Hillsborough County proof. Emergency leaks — call first.',
@@ -311,7 +311,7 @@ COUNTY_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
     "pasco": {
         "hero_lead": 'Pasco County handyman routes from Safety Harbor — fixture work, drywall, doors, and punch-list repairs with written estimates.',
         "meta_description": 'Pasco County handyman routes from Safety Harbor: drywall, doors, paint-ready finish work. Registered and insured. Free estimate.',
-        "opening": 'Knight Group covers Pasco County on daily routes from Safety Harbor. Homeowners get a local insured crew for drywall, doors, carpentry, painting touch-ups, and punch-list repairs — not a referral marketplace. Licensed trades are coordinated when Florida DBPR requires it.',
+        "opening": 'Knight Group covers west Pasco on scheduled route days from Safety Harbor. Homeowners get a local insured crew for drywall, doors, carpentry, painting touch-ups, and punch-list repairs — not a referral marketplace. Licensed trades are coordinated when Florida DBPR requires it. This is expanding coverage with address confirmation — not a daily county-wide loop.',
         "scheduling": 'Book Pasco County work with photos online or call (813) 649-3341. We confirm your city fits the current route before locking an arrival window.',
         "scope_note": 'Handyman-scope repairs only across Pasco County. Licensed trades are referred for electrical connection work, plumbing that taps drinking water, roofing, new windows, structural additions, and mold remediation over 10 square feet.',
         "closing": 'Tour city pages below, compare pricing, and view our gallery for Pasco County proof. Emergency leaks — call first.',

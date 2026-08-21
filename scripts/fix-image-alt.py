@@ -38,7 +38,7 @@ INDEX_CARD_ALTS = {
 }
 
 
-HERO_CUTOUT_ALT = "Vince Knight, owner of Knight Group Handyman Services"
+HERO_CUTOUT_ALT = "Vince Knight, co-owner and Field Operations Lead of Knight Group Handyman Services"
 
 
 def set_alt(tag: str, alt: str) -> str:

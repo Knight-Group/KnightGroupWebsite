@@ -286,7 +286,7 @@ def vince_cutout_hero_wrap() -> str:
             <div class="kg-page-hero__cutout-wrap" aria-hidden="true" data-kg-enter="right">
                 <picture>
                     <source srcset="/Images/knight-hero-cutout.webp?v={VERSION}" type="image/webp">
-                    <img class="kg-page-hero-cutout" src="/Images/knight-hero-cutout.png" alt="Vince Knight, owner of Knight Group Handyman Services" width="1200" height="800" decoding="async" loading="eager">
+                    <img class="kg-page-hero-cutout" src="/Images/knight-hero-cutout.png" alt="Vince Knight, co-owner and Field Operations Lead of Knight Group Handyman Services" width="1200" height="800" decoding="async" loading="eager">
                 </picture>
             </div>"""
 
