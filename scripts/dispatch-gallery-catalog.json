@@ -557,5 +557,18 @@
     "beforeAfter": true,
     "scope_slug": "wasp-nest-79cfa0f",
     "source": "dispatch"
+  },
+  "before-after-kitchen-sink-drain-service-c8d521c.webp": {
+    "group": "kitchen-sink-drain-service-c8d521c-before-after",
+    "groupTitle": "Kitchen sink drain service \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a kitchen sink drain service job completed by Knight Group.",
+    "category": "plumbing",
+    "serviceLink": "/Services/plumbing-services",
+    "step": 1,
+    "title": "Kitchen sink drain service before and after",
+    "description": "Before-and-after comparison from a kitchen sink drain service job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "kitchen-sink-drain-service-c8d521c",
+    "source": "dispatch"
   }
 }

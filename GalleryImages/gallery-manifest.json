@@ -721,6 +721,26 @@
       ]
     },
     {
+      "id": "kitchen-sink-drain-service-c8d521c-before-after",
+      "title": "Kitchen sink drain service \u2014 before & after",
+      "description": "Before-and-after proof from a kitchen sink drain service job completed by Knight Group.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-kitchen-sink-drain-service-c8d521c.webp",
+          "filename": "before-after-kitchen-sink-drain-service-c8d521c.webp",
+          "step": 1,
+          "title": "Kitchen sink drain service before and after",
+          "seoAlt": "Kitchen sink drain service before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a kitchen sink drain service job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "kitchen-sink-leak-before-after",
       "title": "Kitchen sink leak repair \u2014 before & after",
       "description": "Leak traced under the sink, fittings tightened or replaced, and area dried.",
@@ -2183,6 +2203,20 @@
       "beforeAfter": true,
       "groupTitle": "Kitchen Drawer and Ceiling Damage \u2014 before & after",
       "groupDescription": "Before-and-after proof from a kitchen drawer and ceiling damage job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-kitchen-sink-drain-service-c8d521c.webp",
+      "filename": "before-after-kitchen-sink-drain-service-c8d521c.webp",
+      "group": "kitchen-sink-drain-service-c8d521c-before-after",
+      "step": 1,
+      "title": "Kitchen sink drain service before and after",
+      "seoAlt": "Kitchen sink drain service before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a kitchen sink drain service job completed in a Pinellas County home.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "groupTitle": "Kitchen sink drain service \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a kitchen sink drain service job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-kitchen-sink-leak.webp",
