@@ -312,6 +312,26 @@
       ]
     },
     {
+      "id": "exterior-coping-and-screens-f1920f7-before-after",
+      "title": "Exterior coping and screens \u2014 before & after",
+      "description": "Before-and-after proof from a exterior coping and screens job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-exterior-coping-and-screens-f1920f7.webp",
+          "filename": "before-after-exterior-coping-and-screens-f1920f7.webp",
+          "step": 1,
+          "title": "Exterior coping and screens before and after",
+          "seoAlt": "Exterior coping and screens before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a exterior coping and screens job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "fence-and-garage-5544008-before-after",
       "title": "Fence and Garage \u2014 before & after",
       "description": "Before-and-after proof from a fence and garage job completed by Knight Group.",
@@ -1557,6 +1577,20 @@
       "beforeAfter": true,
       "groupTitle": "Door wedge install \u2014 before & after",
       "groupDescription": "Floor gap corrected with a secure door wedge so the door stays put."
+    },
+    {
+      "src": "GalleryImages/before-after-exterior-coping-and-screens-f1920f7.webp",
+      "filename": "before-after-exterior-coping-and-screens-f1920f7.webp",
+      "group": "exterior-coping-and-screens-f1920f7-before-after",
+      "step": 1,
+      "title": "Exterior coping and screens before and after",
+      "seoAlt": "Exterior coping and screens before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a exterior coping and screens job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Exterior coping and screens \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a exterior coping and screens job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-fence-and-garage-5544008.webp",
