@@ -206,5 +206,18 @@
     "beforeAfter": true,
     "scope_slug": "refrigerator-leak-and-floor-damage-8e0dedc",
     "source": "dispatch"
+  },
+  "before-after-fence-and-garage-5544008.webp": {
+    "group": "fence-and-garage-5544008-before-after",
+    "groupTitle": "Fence and Garage \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a fence and garage job completed by Knight Group.",
+    "category": "carpentry",
+    "serviceLink": "/Services/carpentry-framing",
+    "step": 1,
+    "title": "Fence and Garage before and after",
+    "description": "Before-and-after comparison from a fence and garage job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "fence-and-garage-5544008",
+    "source": "dispatch"
   }
 }

@@ -272,6 +272,26 @@
       ]
     },
     {
+      "id": "fence-and-garage-5544008-before-after",
+      "title": "Fence and Garage \u2014 before & after",
+      "description": "Before-and-after proof from a fence and garage job completed by Knight Group.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-fence-and-garage-5544008.webp",
+          "filename": "before-after-fence-and-garage-5544008.webp",
+          "step": 1,
+          "title": "Fence and Garage before and after",
+          "seoAlt": "Fence and Garage before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a fence and garage job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "fire-extinguisher-mount-before-after",
       "title": "Fire extinguisher mount \u2014 before & after",
       "description": "Extinguisher bracket installed at the correct height with secure fasteners.",
@@ -1349,6 +1369,20 @@
       "beforeAfter": true,
       "groupTitle": "Door wedge install \u2014 before & after",
       "groupDescription": "Floor gap corrected with a secure door wedge so the door stays put."
+    },
+    {
+      "src": "GalleryImages/before-after-fence-and-garage-5544008.webp",
+      "filename": "before-after-fence-and-garage-5544008.webp",
+      "group": "fence-and-garage-5544008-before-after",
+      "step": 1,
+      "title": "Fence and Garage before and after",
+      "seoAlt": "Fence and Garage before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a fence and garage job completed in a Pinellas County home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Fence and Garage \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a fence and garage job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-fence-repair.webp",
