@@ -332,6 +332,26 @@
       ]
     },
     {
+      "id": "front-intrusion-be5d722-before-after",
+      "title": "Front Intrusion \u2014 before & after",
+      "description": "Before-and-after proof from a front intrusion job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-front-intrusion-be5d722.webp",
+          "filename": "before-after-front-intrusion-be5d722.webp",
+          "step": 1,
+          "title": "Front Intrusion before and after",
+          "seoAlt": "Front Intrusion before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a front intrusion job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "garbage-disposal-install",
       "title": "Garbage disposal installation",
       "description": "Under-sink disposal work completed as part of a practical plumbing repair call.",
@@ -1493,6 +1513,20 @@
       "beforeAfter": true,
       "groupTitle": "Refrigerator door alignment \u2014 before & after",
       "groupDescription": "Refrigerator that would not close properly corrected so the door seals and operates normally again."
+    },
+    {
+      "src": "GalleryImages/before-after-front-intrusion-be5d722.webp",
+      "filename": "before-after-front-intrusion-be5d722.webp",
+      "group": "front-intrusion-be5d722-before-after",
+      "step": 1,
+      "title": "Front Intrusion before and after",
+      "seoAlt": "Front Intrusion before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a front intrusion job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Front Intrusion \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a front intrusion job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-handyman-repair-669cf03.webp",
