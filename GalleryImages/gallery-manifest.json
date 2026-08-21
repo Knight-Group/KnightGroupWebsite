@@ -1010,6 +1010,26 @@
       ]
     },
     {
+      "id": "rodent-hole-sealing-a-b-1c2096d-before-after",
+      "title": "Rodent Hole Sealing - A/B \u2014 before & after",
+      "description": "Before-and-after proof from a rodent hole sealing - a/b job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-rodent-hole-sealing-a-b-1c2096d.webp",
+          "filename": "before-after-rodent-hole-sealing-a-b-1c2096d.webp",
+          "step": 1,
+          "title": "Rodent Hole Sealing - A/B before and after",
+          "seoAlt": "Rodent Hole Sealing - A/B before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a rodent hole sealing - a/b job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "room-restoration-before-after",
       "title": "Room restoration \u2014 before & after",
       "description": "Interior room work shown from damage and tear-out through the restored finish.",
@@ -2391,6 +2411,20 @@
       "beforeAfter": true,
       "groupTitle": "Resecure Loose Screen Door \u2014 before & after",
       "groupDescription": "Before-and-after proof from a resecure loose screen door job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-rodent-hole-sealing-a-b-1c2096d.webp",
+      "filename": "before-after-rodent-hole-sealing-a-b-1c2096d.webp",
+      "group": "rodent-hole-sealing-a-b-1c2096d-before-after",
+      "step": 1,
+      "title": "Rodent Hole Sealing - A/B before and after",
+      "seoAlt": "Rodent Hole Sealing - A/B before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a rodent hole sealing - a/b job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Rodent Hole Sealing - A/B \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a rodent hole sealing - a/b job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-secure-outlets-5be7424.webp",
