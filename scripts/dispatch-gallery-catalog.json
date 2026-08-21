@@ -856,5 +856,18 @@
     "beforeAfter": true,
     "scope_slug": "recaulk-around-kitchen-windowsill-custom-5cca131",
     "source": "dispatch"
+  },
+  "before-after-hot-water-only-in-bath-tub-745e031.webp": {
+    "group": "hot-water-only-in-bath-tub-745e031-before-after",
+    "groupTitle": "Hot Water only in Bath Tub \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a hot water only in bath tub job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Hot Water only in Bath Tub before and after",
+    "description": "Before-and-after comparison from a hot water only in bath tub job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "hot-water-only-in-bath-tub-745e031",
+    "source": "dispatch"
   }
 }
