@@ -167,5 +167,18 @@
     "beforeAfter": true,
     "scope_slug": "handyman-repair-8ff963a",
     "source": "dispatch"
+  },
+  "before-after-kitchen-drawer-and-ceiling-damage-6f1d487.webp": {
+    "group": "kitchen-drawer-and-ceiling-damage-6f1d487-before-after",
+    "groupTitle": "Kitchen Drawer and Ceiling Damage \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a kitchen drawer and ceiling damage job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Kitchen Drawer and Ceiling Damage before and after",
+    "description": "Before-and-after comparison from a kitchen drawer and ceiling damage job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "kitchen-drawer-and-ceiling-damage-6f1d487",
+    "source": "dispatch"
   }
 }
