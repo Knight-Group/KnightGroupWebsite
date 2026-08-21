@@ -890,6 +890,26 @@
       ]
     },
     {
+      "id": "repair-kithchen-cabinets-9e04de2-before-after",
+      "title": "Repair kithchen cabinets \u2014 before & after",
+      "description": "Before-and-after proof from a repair kithchen cabinets job completed by Knight Group.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-repair-kithchen-cabinets-9e04de2.webp",
+          "filename": "before-after-repair-kithchen-cabinets-9e04de2.webp",
+          "step": 1,
+          "title": "Repair kithchen cabinets before and after",
+          "seoAlt": "Repair kithchen cabinets before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a repair kithchen cabinets job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "resecure-loose-screen-door-before-after",
       "title": "Resecure Loose Screen Door \u2014 before & after",
       "description": "Before-and-after proof from a resecure loose screen door job completed by Knight Group.",
@@ -2173,6 +2193,20 @@
       "beforeAfter": true,
       "groupTitle": "Repair ceiling in bathroom \u2014 before & after",
       "groupDescription": "Before-and-after proof from a repair ceiling in bathroom job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-repair-kithchen-cabinets-9e04de2.webp",
+      "filename": "before-after-repair-kithchen-cabinets-9e04de2.webp",
+      "group": "repair-kithchen-cabinets-9e04de2-before-after",
+      "step": 1,
+      "title": "Repair kithchen cabinets before and after",
+      "seoAlt": "Repair kithchen cabinets before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a repair kithchen cabinets job completed in a Pinellas County home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Repair kithchen cabinets \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a repair kithchen cabinets job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-replacing-this-main-shut-off-and-hose-bib-copper.webp",
