@@ -830,5 +830,18 @@
     "beforeAfter": true,
     "scope_slug": "entrusion-ff4cabe",
     "source": "dispatch"
+  },
+  "before-after-sink-drain-caulk-trap-leak-7843b10.webp": {
+    "group": "sink-drain-caulk-trap-leak-7843b10-before-after",
+    "groupTitle": "Sink Drain & Caulk Trap - Leak \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a sink drain & caulk trap - leak job completed by Knight Group.",
+    "category": "plumbing",
+    "serviceLink": "/Services/plumbing-services",
+    "step": 1,
+    "title": "Sink Drain & Caulk Trap - Leak before and after",
+    "description": "Before-and-after comparison from a sink drain & caulk trap - leak job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "sink-drain-caulk-trap-leak-7843b10",
+    "source": "dispatch"
   }
 }
