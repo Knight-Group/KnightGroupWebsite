@@ -687,5 +687,18 @@
     "beforeAfter": true,
     "scope_slug": "front-need-0394870",
     "source": "dispatch"
+  },
+  "before-after-bedroom-d9d0055.webp": {
+    "group": "bedroom-d9d0055-before-after",
+    "groupTitle": "Bedroom \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a bedroom job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Bedroom before and after",
+    "description": "Before-and-after comparison from a bedroom job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "bedroom-d9d0055",
+    "source": "dispatch"
   }
 }
