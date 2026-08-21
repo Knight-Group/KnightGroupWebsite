@@ -336,5 +336,18 @@
     "beforeAfter": true,
     "scope_slug": "exterior-coping-and-screens-f1920f7",
     "source": "dispatch"
+  },
+  "before-after-side-yard-gate-repair-18bb381.webp": {
+    "group": "side-yard-gate-repair-18bb381-before-after",
+    "groupTitle": "Side yard gate repair \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a side yard gate repair job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Side yard gate repair before and after",
+    "description": "Before-and-after comparison from a side yard gate repair job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "side-yard-gate-repair-18bb381",
+    "source": "dispatch"
   }
 }
