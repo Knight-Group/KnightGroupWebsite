@@ -212,6 +212,26 @@
       ]
     },
     {
+      "id": "change-lock-set-on-2-with-4-matching-key-03d49fa-before-after",
+      "title": "Change lock set on 2 with 4 matching keys \u2014 before & after",
+      "description": "Before-and-after proof from a change lock set on 2 with 4 matching keys job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-change-lock-set-on-2-with-4-matching-key-03d49fa.webp",
+          "filename": "before-after-change-lock-set-on-2-with-4-matching-key-03d49fa.webp",
+          "step": 1,
+          "title": "Change lock set on 2 with 4 matching keys before and after",
+          "seoAlt": "Change lock set on 2 with 4 matching keys before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a change lock set on 2 with 4 matching keys job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "clean-vent-register-7860ef9-before-after",
       "title": "Clean Vent Register \u2014 before & after",
       "description": "Before-and-after proof from a clean vent register job completed by Knight Group.",
@@ -1681,6 +1701,20 @@
       "beforeAfter": true,
       "groupTitle": "Ceiling fan and light repair \u2014 before & after",
       "groupDescription": "Before-and-after proof from a ceiling fan and light repair job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-change-lock-set-on-2-with-4-matching-key-03d49fa.webp",
+      "filename": "before-after-change-lock-set-on-2-with-4-matching-key-03d49fa.webp",
+      "group": "change-lock-set-on-2-with-4-matching-key-03d49fa-before-after",
+      "step": 1,
+      "title": "Change lock set on 2 with 4 matching keys before and after",
+      "seoAlt": "Change lock set on 2 with 4 matching keys before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a change lock set on 2 with 4 matching keys job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Change lock set on 2 with 4 matching keys \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a change lock set on 2 with 4 matching keys job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-clean-exterior-front-of-house-70a4580.webp",
