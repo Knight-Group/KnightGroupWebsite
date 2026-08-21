@@ -552,6 +552,26 @@
       ]
     },
     {
+      "id": "fence-is-falling-down-and-needs-to-be-pu-b17b3ec-before-after",
+      "title": "Fence is falling down and needs to be put back up \u2014 before & after",
+      "description": "Before-and-after proof from a fence is falling down and needs to be put back up job completed by Knight Group.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-fence-is-falling-down-and-needs-to-be-pu-b17b3ec.webp",
+          "filename": "before-after-fence-is-falling-down-and-needs-to-be-pu-b17b3ec.webp",
+          "step": 1,
+          "title": "Fence is falling down and needs to be put back up before and after",
+          "seoAlt": "Fence is falling down and needs to be put back up before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a fence is falling down and needs to be put back up job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "fire-extinguisher-mount-before-after",
       "title": "Fire extinguisher mount \u2014 before & after",
       "description": "Extinguisher bracket installed at the correct height with secure fasteners.",
@@ -2367,6 +2387,20 @@
       "beforeAfter": true,
       "groupTitle": "Fence and Garage \u2014 before & after",
       "groupDescription": "Before-and-after proof from a fence and garage job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-fence-is-falling-down-and-needs-to-be-pu-b17b3ec.webp",
+      "filename": "before-after-fence-is-falling-down-and-needs-to-be-pu-b17b3ec.webp",
+      "group": "fence-is-falling-down-and-needs-to-be-pu-b17b3ec-before-after",
+      "step": 1,
+      "title": "Fence is falling down and needs to be put back up before and after",
+      "seoAlt": "Fence is falling down and needs to be put back up before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a fence is falling down and needs to be put back up job completed in a Pinellas County home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Fence is falling down and needs to be put back up \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a fence is falling down and needs to be put back up job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-fence-repair.webp",

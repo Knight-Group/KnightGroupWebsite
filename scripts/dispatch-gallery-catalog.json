@@ -713,5 +713,18 @@
     "beforeAfter": true,
     "scope_slug": "attic-drywall-return-visit-54b0dce",
     "source": "dispatch"
+  },
+  "before-after-fence-is-falling-down-and-needs-to-be-pu-b17b3ec.webp": {
+    "group": "fence-is-falling-down-and-needs-to-be-pu-b17b3ec-before-after",
+    "groupTitle": "Fence is falling down and needs to be put back up \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a fence is falling down and needs to be put back up job completed by Knight Group.",
+    "category": "carpentry",
+    "serviceLink": "/Services/carpentry-framing",
+    "step": 1,
+    "title": "Fence is falling down and needs to be put back up before and after",
+    "description": "Before-and-after comparison from a fence is falling down and needs to be put back up job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "fence-is-falling-down-and-needs-to-be-pu-b17b3ec",
+    "source": "dispatch"
   }
 }
