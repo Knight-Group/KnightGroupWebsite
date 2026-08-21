@@ -219,5 +219,18 @@
     "beforeAfter": true,
     "scope_slug": "fence-and-garage-5544008",
     "source": "dispatch"
+  },
+  "before-after-handyman-repair-e8e763c.webp": {
+    "group": "handyman-repair-e8e763c-before-after",
+    "groupTitle": "Handyman repair \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a handyman repair job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Handyman repair before and after",
+    "description": "Before-and-after comparison from a handyman repair job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "handyman-repair-e8e763c",
+    "source": "dispatch"
   }
 }

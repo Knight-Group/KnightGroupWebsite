@@ -412,6 +412,26 @@
       ]
     },
     {
+      "id": "handyman-repair-e8e763c-before-after",
+      "title": "Handyman repair \u2014 before & after",
+      "description": "Before-and-after proof from a handyman repair job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-handyman-repair-e8e763c.webp",
+          "filename": "before-after-handyman-repair-e8e763c.webp",
+          "step": 1,
+          "title": "Handyman repair before and after",
+          "seoAlt": "Handyman repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a handyman repair job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "hornet-removal-wall-sealed-before-after",
       "title": "Hornet nest removal and wall sealed \u2014 before & after",
       "description": "Hornet nest removed from the wall and the opening sealed and finished cleanly.",
@@ -1458,6 +1478,20 @@
       "src": "GalleryImages/before-after-handyman-repair-8ff963a.webp",
       "filename": "before-after-handyman-repair-8ff963a.webp",
       "group": "handyman-repair-8ff963a-before-after",
+      "step": 1,
+      "title": "Handyman repair before and after",
+      "seoAlt": "Handyman repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a handyman repair job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Handyman repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a handyman repair job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-handyman-repair-e8e763c.webp",
+      "filename": "before-after-handyman-repair-e8e763c.webp",
+      "group": "handyman-repair-e8e763c-before-after",
       "step": 1,
       "title": "Handyman repair before and after",
       "seoAlt": "Handyman repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
