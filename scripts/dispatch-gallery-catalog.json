@@ -791,5 +791,18 @@
     "beforeAfter": true,
     "scope_slug": "facuet-replacement-d864caa",
     "source": "dispatch"
+  },
+  "before-after-ceiling-fan-repair-1e73090.webp": {
+    "group": "ceiling-fan-repair-1e73090-before-after",
+    "groupTitle": "Ceiling fan repair \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a ceiling fan repair job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Ceiling fan repair before and after",
+    "description": "Before-and-after comparison from a ceiling fan repair job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "ceiling-fan-repair-1e73090",
+    "source": "dispatch"
   }
 }
