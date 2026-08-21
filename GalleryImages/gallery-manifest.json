@@ -1857,6 +1857,26 @@
       ]
     },
     {
+      "id": "entrusion-ff4cabe-before-after",
+      "title": "entrusion \u2014 before & after",
+      "description": "Before-and-after proof from a entrusion job completed by Knight Group.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-entrusion-ff4cabe.webp",
+          "filename": "before-after-entrusion-ff4cabe.webp",
+          "step": 1,
+          "title": "entrusion before and after",
+          "seoAlt": "entrusion before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a entrusion job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ]
+    },
+    {
       "id": "laminate-lvp-installation-d86a9bf-before-after",
       "title": "laminate/lvp installation \u2014 before & after",
       "description": "Before-and-after proof from a laminate/lvp installation job completed by Knight Group.",
@@ -2513,6 +2533,20 @@
       "beforeAfter": true,
       "groupTitle": "drywall repair & paint \u2014 before & after",
       "groupDescription": "Before-and-after proof from a drywall repair & paint job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-entrusion-ff4cabe.webp",
+      "filename": "before-after-entrusion-ff4cabe.webp",
+      "group": "entrusion-ff4cabe-before-after",
+      "step": 1,
+      "title": "entrusion before and after",
+      "seoAlt": "entrusion before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a entrusion job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "entrusion \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a entrusion job completed by Knight Group."
     },
     {
       "src": "GalleryImages/before-after-exterior-coping-and-screens-f1920f7.webp",

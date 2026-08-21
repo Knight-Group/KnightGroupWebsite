@@ -1019,6 +1019,13 @@
     },
     {
       "pageType": "gallery-project",
+      "slug": "entrusion-ff4cabe-before-after",
+      "path": "gallery/entrusion-ff4cabe-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/entrusion-ff4cabe-before-after",
+      "priority": "0.62"
+    },
+    {
+      "pageType": "gallery-project",
       "slug": "laminate-lvp-installation-d86a9bf-before-after",
       "path": "gallery/laminate-lvp-installation-d86a9bf-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/laminate-lvp-installation-d86a9bf-before-after",

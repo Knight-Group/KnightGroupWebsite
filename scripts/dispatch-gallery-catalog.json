@@ -817,5 +817,18 @@
     "beforeAfter": true,
     "scope_slug": "garbage-cabinet-repair-youtube-video-lin-54b1f44",
     "source": "dispatch"
+  },
+  "before-after-entrusion-ff4cabe.webp": {
+    "group": "entrusion-ff4cabe-before-after",
+    "groupTitle": "entrusion \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a entrusion job completed by Knight Group.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "entrusion before and after",
+    "description": "Before-and-after comparison from a entrusion job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "entrusion-ff4cabe",
+    "source": "dispatch"
   }
 }
