@@ -349,6 +349,11 @@
       mode: 'scroll',
       layer: '.kg-process-band__bg'
     });
+
+    bindParallaxShift(document.querySelector('.kg-home-watch-band'), '--kg-home-watch-shift', 0.88, {
+      mode: 'scroll',
+      layer: '.kg-home-watch-band__bg'
+    });
   }
 
   function fitHeroPills() {

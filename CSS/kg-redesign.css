@@ -3329,6 +3329,89 @@ body:has(main.kg-home) {
   }
 }
 
+/* Home Watch — tall scrolling parallax photo band */
+.kg-home-watch-band {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: clamp(560px, 78vh, 920px);
+  padding-top: clamp(72px, 9vw, 120px);
+  padding-bottom: clamp(72px, 9vw, 120px);
+  background-color: #120f10;
+}
+
+.kg-home-watch-band__bg {
+  position: absolute;
+  top: -24%;
+  right: 0;
+  bottom: -24%;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+  background-color: #120f10;
+  background-image: url("../Images/housewatch.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 54% 42%;
+  transform: translate3d(0, var(--kg-home-watch-shift, 0px), 0);
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.kg-home-watch-band__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(12, 9, 10, 0.84) 0%, rgba(12, 9, 10, 0.58) 36%, rgba(12, 9, 10, 0.18) 66%, rgba(12, 9, 10, 0.38) 100%),
+    linear-gradient(180deg, rgba(12, 9, 10, 0.28) 0%, rgba(12, 9, 10, 0.06) 42%, rgba(12, 9, 10, 0.46) 100%);
+}
+
+.kg-home-watch-band .kg-shell {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.kg-home-watch-band .kg-heading-block {
+  max-width: 38rem;
+}
+
+.kg-home-watch-band .kg-heading-block h2,
+.kg-home-watch-band .kg-heading-block p {
+  color: #fff;
+  text-shadow: 0 1px 16px rgba(0, 0, 0, 0.55);
+}
+
+.kg-home-watch-band .kg-section-tag {
+  background: rgba(255, 255, 255, 0.14);
+  color: #f5d6d6;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@media (max-width: 760px) {
+  .kg-home-watch-band {
+    min-height: clamp(480px, 70svh, 720px);
+  }
+
+  .kg-home-watch-band__bg {
+    background-position: 72% 40%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kg-home-watch-band__bg {
+    top: 0;
+    bottom: 0;
+    transform: none;
+    will-change: auto;
+  }
+}
+
 /* How work moves — hero parallax band */
 .kg-process-band {
   position: relative;
@@ -3429,20 +3512,20 @@ body:has(main.kg-home) {
 }
 
 /* Homepage dark bands — unified theme gradient (recent jobs, why band, services, etc.) */
-.kg-home > .kg-section:not(.kg-process-band),
+.kg-home > .kg-section:not(.kg-process-band):not(.kg-home-watch-band),
 .kg-recent-jobs-band,
 .kg-why-band {
   background: var(--kg-band-dark);
   border-top: 1px solid rgba(240, 196, 196, 0.12);
 }
 
-.kg-home > .kg-section:not(.kg-process-band) + .kg-section:not(.kg-process-band),
-.kg-home > .kg-section:not(.kg-process-band) + .kg-closing-stack,
+.kg-home > .kg-section:not(.kg-process-band):not(.kg-home-watch-band) + .kg-section:not(.kg-process-band):not(.kg-home-watch-band),
+.kg-home > .kg-section:not(.kg-process-band):not(.kg-home-watch-band) + .kg-closing-stack,
 .kg-home > .kg-local-trust + .kg-section {
   border-top: 0;
 }
 
-.kg-home > .kg-section:not(.kg-process-band) .kg-heading-block h2,
+.kg-home > .kg-section:not(.kg-process-band):not(.kg-home-watch-band) .kg-heading-block h2,
 .kg-home > .kg-jobs-trust-stack .kg-heading-block h2,
 .kg-home > .kg-services-why-stack .kg-heading-block h2,
 .kg-home > .kg-closing-stack .kg-heading-block h2,
@@ -3451,7 +3534,7 @@ body:has(main.kg-home) {
   color: #fff;
 }
 
-.kg-home > .kg-section:not(.kg-process-band) .kg-heading-block p,
+.kg-home > .kg-section:not(.kg-process-band):not(.kg-home-watch-band) .kg-heading-block p,
 .kg-home > .kg-jobs-trust-stack .kg-heading-block p,
 .kg-home > .kg-services-why-stack .kg-heading-block p,
 .kg-home > .kg-closing-stack .kg-heading-block p,
@@ -3460,7 +3543,7 @@ body:has(main.kg-home) {
   color: rgba(255, 255, 255, 0.78);
 }
 
-.kg-home > .kg-section:not(.kg-process-band) .kg-heading-block .kg-section-tag,
+.kg-home > .kg-section:not(.kg-process-band):not(.kg-home-watch-band) .kg-heading-block .kg-section-tag,
 .kg-recent-jobs-band .kg-heading-block .kg-section-tag,
 .kg-services-band .kg-heading-block .kg-section-tag {
   background: rgba(154, 47, 47, 0.22);
@@ -4043,27 +4126,7 @@ body:has(main.kg-home) {
 
 @media (min-width: 1100px) {
   .kg-services-mosaic {
-    grid-template-columns: repeat(10, minmax(0, 1fr));
-  }
-
-  .kg-services-mosaic .kg-service-card:nth-child(-n + 5) {
-    grid-column: span 2;
-  }
-
-  .kg-services-mosaic .kg-service-card:nth-child(6) {
-    grid-column: 2 / span 2;
-  }
-
-  .kg-services-mosaic .kg-service-card:nth-child(7) {
-    grid-column: 4 / span 2;
-  }
-
-  .kg-services-mosaic .kg-service-card:nth-child(8) {
-    grid-column: 6 / span 2;
-  }
-
-  .kg-services-mosaic .kg-service-card:nth-child(9) {
-    grid-column: 8 / span 2;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 
