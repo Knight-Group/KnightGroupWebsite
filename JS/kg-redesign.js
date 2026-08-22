@@ -229,8 +229,9 @@
       prepareEnter(el, VAR_DIRECTIONS[index % VAR_DIRECTIONS.length], index * 90, false);
     });
 
-    document.querySelectorAll('.kg-services-mosaic .kg-service-card').forEach(function (el) {
-      el.setAttribute('data-kg-static', 'true');
+    var mosaicDirs = ['left', 'top', 'bottom', 'top', 'right', 'left', 'bottom', 'top', 'bottom', 'right'];
+    document.querySelectorAll('.kg-services-mosaic .kg-service-card').forEach(function (el, index) {
+      prepareEnter(el, mosaicDirs[index % mosaicDirs.length], 50 + index * 70, false);
     });
 
     document.querySelectorAll('.kg-page-hero__cutout-wrap[data-kg-enter]').forEach(function (el) {
@@ -251,6 +252,34 @@
     });
   }
 
+  function observeMosaicEnter() {
+    var mosaic = document.querySelector('.kg-services-mosaic');
+    if (!mosaic || mosaic.dataset.kgMosaicEnter === '1') return;
+    mosaic.dataset.kgMosaicEnter = '1';
+
+    var cards = mosaic.querySelectorAll('.kg-service-card[data-kg-enter]');
+    if (!cards.length) return;
+
+    if (prefersReducedMotion() || !('IntersectionObserver' in window)) {
+      cards.forEach(function (el) {
+        el.classList.add('is-visible');
+      });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        cards.forEach(function (el) {
+          el.classList.add('is-visible');
+        });
+        obs.disconnect();
+      });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
+
+    observer.observe(mosaic);
+  }
+
   function ensureScrollObserver() {
     if (prefersReducedMotion()) return;
 
@@ -265,8 +294,10 @@
     }
 
     document.querySelectorAll('[data-kg-enter]:not([data-kg-enter-immediate]):not(.is-visible)').forEach(function (el) {
+      if (el.closest('.kg-services-mosaic')) return;
       scrollObserver.observe(el);
     });
+    observeMosaicEnter();
   }
 
   function bindParallaxShift(target, cssVar, intensity, options) {
@@ -345,7 +376,7 @@
       });
     }
 
-    bindParallaxShift(document.querySelector('.kg-process-band'), '--kg-process-shift', 0.72, {
+    bindParallaxShift(document.querySelector('.kg-process-band'), '--kg-process-shift', 0.38, {
       mode: 'scroll',
       layer: '.kg-process-band__bg'
     });

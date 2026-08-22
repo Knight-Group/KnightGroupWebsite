@@ -80,6 +80,26 @@ html.kg-js [data-kg-enter].is-visible {
   animation: kgEnterIn 0.86s var(--kg-ease-out) var(--kg-enter-delay, 0ms) forwards;
 }
 
+html.kg-js .kg-services-mosaic .kg-service-card[data-kg-enter="left"] {
+  transform: translate3d(calc(-1 * min(78vw, 460px)), 0, 0);
+}
+
+html.kg-js .kg-services-mosaic .kg-service-card[data-kg-enter="right"] {
+  transform: translate3d(min(78vw, 460px), 0, 0);
+}
+
+html.kg-js .kg-services-mosaic .kg-service-card[data-kg-enter="top"] {
+  transform: translate3d(0, calc(-1 * min(52vh, 320px)), 0);
+}
+
+html.kg-js .kg-services-mosaic .kg-service-card[data-kg-enter="bottom"] {
+  transform: translate3d(0, min(52vh, 320px), 0);
+}
+
+html.kg-js .kg-services-mosaic .kg-service-card[data-kg-enter].is-visible {
+  animation-duration: 1.18s;
+}
+
 @keyframes kgEnterIn {
   to {
     opacity: 1;
@@ -3367,18 +3387,27 @@ body:has(main.kg-home) {
   z-index: 1;
   pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(12, 9, 10, 0.84) 0%, rgba(12, 9, 10, 0.58) 36%, rgba(12, 9, 10, 0.18) 66%, rgba(12, 9, 10, 0.38) 100%),
-    linear-gradient(180deg, rgba(12, 9, 10, 0.28) 0%, rgba(12, 9, 10, 0.06) 42%, rgba(12, 9, 10, 0.46) 100%);
+    radial-gradient(ellipse 72% 68% at 50% 48%, rgba(12, 9, 10, 0.7) 0%, rgba(12, 9, 10, 0.28) 54%, rgba(12, 9, 10, 0.16) 100%),
+    linear-gradient(180deg, rgba(12, 9, 10, 0.38) 0%, rgba(12, 9, 10, 0.18) 42%, rgba(12, 9, 10, 0.52) 100%);
 }
 
 .kg-home-watch-band .kg-shell {
   position: relative;
   z-index: 2;
+  display: flex;
+  justify-content: center;
   width: 100%;
+  text-align: center;
 }
 
 .kg-home-watch-band .kg-heading-block {
-  max-width: 38rem;
+  max-width: 42rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.kg-home-watch-band .kg-heading-block .kg-section-tag {
+  margin-inline: auto;
 }
 
 .kg-home-watch-band .kg-heading-block h2,
@@ -3423,48 +3452,48 @@ body:has(main.kg-home) {
 
 .kg-process-band__bg {
   position: absolute;
-  top: -12%;
+  top: 0;
   right: 0;
-  bottom: -12%;
+  bottom: -32%;
   left: 0;
   z-index: 0;
   overflow: hidden;
   background-color: #1a1415;
-  --kg-process-bg-position: 68% top;
+  --kg-process-bg-position: 68% 0%;
   background-image: url("../Images/KGHero_laptop_1920x1080.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: var(--kg-process-bg-position);
   transform: translate3d(0, var(--kg-process-shift, 0px), 0);
-  transform-origin: center center;
+  transform-origin: center top;
   will-change: transform;
 }
 
 @media (min-width: 1600px) {
   .kg-process-band__bg {
     background-image: url("../Images/KGHero_desktop_2560x1440.webp");
-    --kg-process-bg-position: 66% top;
+    --kg-process-bg-position: 66% 0%;
   }
 }
 
 @media (min-width: 2560px) {
   .kg-process-band__bg {
     background-image: url("../Images/KGHero_ultrawide_3440x1440.webp");
-    --kg-process-bg-position: 70% top;
+    --kg-process-bg-position: 70% 0%;
   }
 }
 
 @media (min-aspect-ratio: 21/9) and (min-width: 1800px) {
   .kg-process-band__bg {
     background-image: url("../Images/KGHero_ultrawide_3440x1440.webp");
-    --kg-process-bg-position: 72% top;
+    --kg-process-bg-position: 72% 0%;
   }
 }
 
 @media (max-width: 760px) {
   .kg-process-band__bg {
     background-image: url("../Images/KGHero_mobile_1200x1600.webp");
-    --kg-process-bg-position: center 24%;
+    --kg-process-bg-position: center 0%;
   }
 }
 
@@ -4116,6 +4145,7 @@ body:has(main.kg-home) {
   width: 95vw;
   max-width: none;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .kg-services-mosaic {
@@ -4145,6 +4175,16 @@ body:has(main.kg-home) {
   text-decoration: none;
   color: #fff;
   background: var(--kg-raven-2);
+}
+
+.kg-home .kg-services-mosaic .kg-service-card {
+  transition: none;
+}
+
+.kg-home .kg-services-mosaic .kg-service-card:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: transparent;
 }
 
 .kg-services-mosaic .kg-service-card__bg {
