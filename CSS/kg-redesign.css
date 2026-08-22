@@ -107,6 +107,10 @@ html.kg-js .kg-services-mosaic .kg-service-card[data-kg-enter].is-visible {
   }
 }
 
+html.kg-js .kg-page-hero [data-kg-enter] {
+  animation: kgEnterIn 0.86s var(--kg-ease-out) var(--kg-enter-delay, 0ms) forwards;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html.kg-js [data-kg-enter] {
     opacity: 1;
