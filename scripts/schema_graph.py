@@ -16,6 +16,7 @@ if str(_SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPT_DIR))
 
 from business_facts import (  # noqa: E402
+    BUSINESS_DESCRIPTION,
     eligible_regions,
     geography_for_url,
     load_facts,
@@ -216,6 +217,7 @@ def business_entity(*, include_reviews: bool = False) -> dict[str, Any]:
     entity.pop("priceRange", None)
     entity["paymentAccepted"] = list(facts["payments"]["accepted"])
     entity["founder"] = {"@id": VINCE_ID}
+    entity["description"] = BUSINESS_DESCRIPTION
     entity["areaServed"] = overall_area_served()
     entity["knowsAbout"] = list(facts["knowsAbout"])
     _apply_live_reviews(entity)

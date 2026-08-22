@@ -12,6 +12,12 @@ ROOT = Path(__file__).resolve().parents[1]
 FACTS_PATH = ROOT / "seo" / "business-facts.json"
 BASE = "https://www.knightgroup.com"
 
+BUSINESS_DESCRIPTION = (
+    "Knight Group Handyman Services LLC provides registered and insured handyman services "
+    "from Safety Harbor across Pinellas County and selected northwest Hillsborough and west Pasco routes. "
+    "Recurring Home Watch and vacant-property checks remain focused on Pinellas County."
+)
+
 PINELLAS_SLUGS = {
     "safety-harbor",
     "clearwater",
@@ -178,10 +184,7 @@ def write_entity_json_files() -> None:
         "@id": f"{BASE}/#business",
         "name": biz["legalName"],
         "url": biz["url"],
-        "description": (
-            "Knight Group Handyman Services LLC provides registered and insured handyman services "
-            "and recurring Home Watch / vacant-property checks across Safety Harbor and Pinellas County, Florida."
-        ),
+        "description": BUSINESS_DESCRIPTION,
         "image": [
             f"{BASE}/Images/handyman.jpg",
             f"{BASE}/Images/KGHero.webp",

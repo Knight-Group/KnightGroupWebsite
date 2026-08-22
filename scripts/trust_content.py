@@ -99,8 +99,8 @@ def trust_faqs(slug: str) -> list[tuple[str, str]]:
                 "Knight Group is registered and insured in Florida as a handyman services company. We are not licensed as a plumber, electrician, or general contractor — we are clear about that and refer licensed trades when required.",
             ),
             (
-                "What can a handyman legally do in Florida?",
-                "Handyman scope is set by Florida trade licensing, not by job price. Knight Group handles drywall, paint, carpentry, interior doors, screens, punch-list work, ceiling fans, light fixtures, switches, like-for-like outlets, and plumbing fixtures on existing connections. New circuits, panels, repipes, sewer, and gas are referred. We flag license needs upfront.",
+                "What work does Knight Group quote as handyman scope?",
+                "Knight Group quotes drywall, paint, carpentry, interior doors, screens, punch-list work, ceiling fans, light fixtures, switches, outlets, and plumbing fixtures when the job does not require a permit or opening walls to run new lines. New circuits, panels, repipes, sewer, and gas are referred. We are not a licensed electrician, plumber, or GC.",
             ),
             (
                 "When should I hire a licensed plumber instead of a handyman?",

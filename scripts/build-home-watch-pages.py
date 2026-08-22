@@ -18,7 +18,6 @@ from service_related import related_card_src  # noqa: E402
 ORG = json.loads((ROOT / "seo" / "knight-group-organization.json").read_text(encoding="utf-8"))
 FOUNDER = json.loads((ROOT / "seo" / "knight-group-founder.json").read_text(encoding="utf-8"))
 BUSINESS = business_entity()
-BUSINESS["areaServed"] = {"@type": "AdministrativeArea", "name": "Pinellas County, Florida"}
 WEBSITE = website_entity()
 
 PINELLAS_FAQS = [

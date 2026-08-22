@@ -55,6 +55,34 @@ REFERRAL_HINTS = (
     "not a 24/7",
     "not a 24/7 dispatch",
 )
+INCOMPLETE_LAST_WORDS = frozenset(
+    {
+        "a",
+        "an",
+        "and",
+        "are",
+        "at",
+        "by",
+        "customer",
+        "for",
+        "free",
+        "from",
+        "in",
+        "is",
+        "of",
+        "or",
+        "our",
+        "personal",
+        "request",
+        "the",
+        "to",
+        "we",
+        "with",
+        "your",
+    }
+)
+STALE_ELECTRICAL_SERVICE_TYPE = "electrical assessment and licensed-electrician coordination"
+BUSINESS_ID = "https://www.knightgroup.com/#business"
 
 
 def meta_contents(html: str) -> dict[str, list[str]]:
@@ -69,6 +97,45 @@ def meta_contents(html: str) -> dict[str, list[str]]:
 def looks_like_referral(window: str) -> bool:
     lowered = window.lower()
     return any(hint in lowered for hint in REFERRAL_HINTS)
+
+
+def last_word(value: str) -> str:
+    stripped = re.sub(r"[.!?…]+$", "", value.strip())
+    tokens = re.findall(r"[A-Za-z0-9']+", stripped)
+    return tokens[-1].lower() if tokens else ""
+
+
+def is_incomplete_metadata(value: str) -> bool:
+    return bool(value and value.strip() and last_word(value) in INCOMPLETE_LAST_WORDS)
+
+
+def walk_nodes(data: object):
+    if isinstance(data, dict):
+        yield data
+        for value in data.values():
+            yield from walk_nodes(value)
+    elif isinstance(data, list):
+        for item in data:
+            yield from walk_nodes(item)
+
+
+def business_core(node: dict) -> tuple:
+    served = node.get("areaServed")
+    names: list[str] = []
+    if isinstance(served, dict):
+        names = [str(served.get("name") or "")]
+    elif isinstance(served, list):
+        for item in served:
+            if isinstance(item, dict):
+                names.append(str(item.get("name") or ""))
+            else:
+                names.append(str(item))
+    payments = node.get("paymentAccepted") or []
+    return (
+        node.get("description"),
+        tuple(sorted(name for name in names if name)),
+        tuple(sorted(str(item) for item in payments)),
+    )
 
 
 def content_errors(rel: Path, text: str, parser: PageParser) -> list[str]:
@@ -97,6 +164,8 @@ def content_errors(rel: Path, text: str, parser: PageParser) -> list[str]:
                 errors.append(f"{rel}: {kind} ends with or contains ellipsis truncation")
             if re.search(r"\b\w{1,4}\.\.\.\s*$", value):
                 errors.append(f"{rel}: {kind} has mid-word truncation")
+            if is_incomplete_metadata(value):
+                errors.append(f"{rel}: {kind} ends on an incomplete fragment {last_word(value)!r}")
 
     if metas["og"] and metas["twitter"]:
         if metas["description"] and metas["og"] and metas["description"][0] != metas["og"][0]:
@@ -152,6 +221,21 @@ def content_errors(rel: Path, text: str, parser: PageParser) -> list[str]:
         if marker in schema_lower:
             errors.append(f"{rel}: JSON-LD contains competitor or imported business copy")
             break
+    if STALE_ELECTRICAL_SERVICE_TYPE in schema_lower:
+        errors.append(
+            f"{rel}: electrical serviceType still says assessment/coordination while fixture work is advertised"
+        )
+    for schema in parser.schemas:
+        try:
+            data = json.loads(schema)
+        except json.JSONDecodeError:
+            continue
+        for node in walk_nodes(data):
+            desc = node.get("description")
+            if isinstance(desc, str) and is_incomplete_metadata(desc):
+                errors.append(
+                    f"{rel}: JSON-LD description ends on an incomplete fragment {last_word(desc)!r}"
+                )
     return errors
 
 
@@ -237,6 +321,12 @@ def local_target(page: Path, ref: str) -> Path | None:
 
 
 def main() -> int:
+    scripts_dir = str(ROOT / "scripts")
+    if scripts_dir not in sys.path:
+        sys.path.insert(0, scripts_dir)
+    from schema_graph import business_entity  # noqa: E402
+
+    canonical_business = business_core(business_entity())
     errors: list[str] = []
     tracked = tracked_files()
     domain = (ROOT / "CNAME").read_text(encoding="utf-8").strip()
@@ -301,9 +391,19 @@ def main() -> int:
                     errors.append(f"{rel}: canonical does not match CNAME {domain}")
         for index, schema in enumerate(parser.schemas, start=1):
             try:
-                json.loads(schema)
+                data = json.loads(schema)
             except json.JSONDecodeError as exc:
                 errors.append(f"{rel}: invalid JSON-LD block {index} ({exc})")
+                continue
+            for node in walk_nodes(data):
+                if node.get("@id") != BUSINESS_ID:
+                    continue
+                if "areaServed" not in node and "description" not in node:
+                    continue
+                if business_core(node) != canonical_business:
+                    errors.append(
+                        f"{rel}: #business description/areaServed/payments differ from the canonical entity"
+                    )
         errors.extend(content_errors(rel, text, parser))
         for ref in parser.refs:
             target = local_target(page, ref)
