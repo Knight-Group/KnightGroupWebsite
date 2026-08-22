@@ -7,40 +7,34 @@ import copy
 import html
 import json
 import re
+import sys
 from pathlib import Path
 from typing import Any
+
+_SCRIPT_DIR = Path(__file__).resolve().parent
+if str(_SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPT_DIR))
+
+from business_facts import (  # noqa: E402
+    eligible_regions,
+    geography_for_url,
+    load_facts,
+    overall_area_served,
+    vince_id,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 SEO = ROOT / "seo"
 BASE = "https://www.knightgroup.com"
 BUSINESS_ID = f"{BASE}/#business"
 ORG_ID = f"{BASE}/#organization"
-FOUNDER_ID = f"{BASE}/#founder"
+VINCE_ID = vince_id()
+FOUNDER_ID = VINCE_ID
 WEBSITE_ID = f"{BASE}/#website"
 PRICING_CATALOG_ID = f"{BASE}/pricing#offer-catalog"
 DEFAULT_SERVICE_IMAGE = f"{BASE}/Images/handyman.jpg"
 
-AREA_SERVED = [
-    {"@type": "City", "name": "Safety Harbor, FL"},
-    {"@type": "City", "name": "Clearwater, FL"},
-    {"@type": "City", "name": "Dunedin, FL"},
-    {"@type": "City", "name": "Palm Harbor, FL"},
-    {"@type": "City", "name": "Largo, FL"},
-    {"@type": "City", "name": "Oldsmar, FL"},
-    {"@type": "City", "name": "Tarpon Springs, FL"},
-    {"@type": "City", "name": "Seminole, FL"},
-    {"@type": "City", "name": "St. Petersburg, FL"},
-    {"@type": "City", "name": "Tampa, FL"},
-    {"@type": "City", "name": "Town 'n' Country, FL"},
-    {"@type": "City", "name": "Westchase, FL"},
-    {"@type": "City", "name": "Holiday, FL"},
-    {"@type": "City", "name": "Trinity, FL"},
-    {"@type": "City", "name": "New Port Richey, FL"},
-    {"@type": "City", "name": "Land O' Lakes, FL"},
-    {"@type": "AdministrativeArea", "name": "Pinellas County, Florida"},
-    {"@type": "AdministrativeArea", "name": "Hillsborough County, Florida"},
-    {"@type": "AdministrativeArea", "name": "Pasco County, Florida"},
-]
+AREA_SERVED = overall_area_served()
 
 SERVICE_IMAGES = {
     item["slug"]: item["image"]
@@ -218,6 +212,12 @@ def _apply_live_reviews(entity: dict[str, Any]) -> dict[str, Any]:
 
 def business_entity(*, include_reviews: bool = False) -> dict[str, Any]:
     entity = copy.deepcopy(_load("knight-group-business-entity.json"))
+    facts = load_facts()
+    entity.pop("priceRange", None)
+    entity["paymentAccepted"] = list(facts["payments"]["accepted"])
+    entity["founder"] = {"@id": VINCE_ID}
+    entity["areaServed"] = overall_area_served()
+    entity["knowsAbout"] = list(facts["knowsAbout"])
     _apply_live_reviews(entity)
     if include_reviews:
         entity["review"] = _load("knight-group-reviews-home.json")
@@ -347,8 +347,10 @@ def service_entity(
     url: str,
     service: dict[str, str],
     include_offer_catalog_ref: bool = True,
+    area_served: list[dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     image = f"{BASE}/Images/{service['image']}"
+    served = area_served if area_served is not None else geography_for_url(url)
     node: dict[str, Any] = {
         "@type": "Service",
         "@id": f"{url}#service",
@@ -358,17 +360,13 @@ def service_entity(
         "provider": {"@id": BUSINESS_ID},
         "url": url,
         "image": image,
-        "areaServed": AREA_SERVED,
+        "areaServed": served,
         "offers": {
             "@type": "Offer",
             "url": f"{BASE}/booking",
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock",
-            "eligibleRegion": [
-                {"@type": "AdministrativeArea", "name": "Pinellas County, Florida"},
-                {"@type": "AdministrativeArea", "name": "Hillsborough County, Florida"},
-                {"@type": "AdministrativeArea", "name": "Pasco County, Florida"},
-            ],
+            "eligibleRegion": eligible_regions(served),
         },
     }
     if include_offer_catalog_ref:
@@ -397,7 +395,7 @@ def pricing_offer_catalog() -> dict[str, Any]:
             {
                 "@type": "Offer",
                 "name": "Standard handyman visit",
-                "description": "Common handyman repairs, punch-list work, fixture swaps, caulking, sealing, and small drywall patches.",
+                "description": "Common handyman repairs, punch-list work, drywall patches, door adjustments, caulking, screens, and shelving.",
                 "url": f"{BASE}/pricing",
                 "priceCurrency": "USD",
                 "itemOffered": _nested_service("Standard handyman visit", "Handyman services"),
@@ -421,12 +419,12 @@ def pricing_offer_catalog() -> dict[str, Any]:
             {
                 "@type": "Offer",
                 "name": "Minor plumbing repair visit",
-                "description": "Diagnostic visit and finish closeout around plumbing problems — not licensed plumbing contractor work.",
+                "description": "Plumbing-related diagnosis, visible leak assessment, finish closeout, and eligible handyman-scope maintenance. Licensed plumbing and potable-water connections are referred.",
                 "url": f"{BASE}/pricing",
                 "priceCurrency": "USD",
                 "itemOffered": _nested_service(
                     "Minor plumbing repair visit",
-                    "Handyman plumbing fixture repair",
+                    "Plumbing-related diagnosis and licensed-plumber coordination",
                 ),
                 "priceSpecification": [
                     {
@@ -448,7 +446,7 @@ def pricing_offer_catalog() -> dict[str, Any]:
             {
                 "@type": "Offer",
                 "name": "Specialty install and repair visit",
-                "description": "Heavier installs, higher-liability work, fixture installs, TV mounting, and appliance hookup support.",
+                "description": "Heavier installs, higher-liability work, TV mounting without electrical connections, large drywall, and heavy-item handling.",
                 "url": f"{BASE}/pricing",
                 "priceCurrency": "USD",
                 "itemOffered": _nested_service(
@@ -474,13 +472,13 @@ def pricing_offer_catalog() -> dict[str, Any]:
             },
             {
                 "@type": "Offer",
-                "name": "Emergency service call",
-                "description": "Urgent after-hours, weekend, or holiday handyman response with a one-time emergency fee added to the applicable hourly rate.",
+                "name": "Urgent property-damage response",
+                "description": "Urgent property-damage response during posted hours and after-hours callback when available. Not a 24/7 dispatch service. No guaranteed response time.",
                 "url": f"{BASE}/pricing",
                 "priceCurrency": "USD",
                 "itemOffered": _nested_service(
-                    "Emergency service call",
-                    "Emergency handyman repairs",
+                    "Urgent property-damage response",
+                    "Urgent property-damage response",
                 ),
                 "priceSpecification": [
                     {

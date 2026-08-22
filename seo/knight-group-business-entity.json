@@ -21,13 +21,12 @@
       "availableLanguage": "English"
     }
   ],
-  "priceRange": "$75-$200",
   "hasMap": "https://maps.google.com/?cid=10508624668428370015",
   "parentOrganization": {
     "@id": "https://www.knightgroup.com/#organization"
   },
   "founder": {
-    "@id": "https://www.knightgroup.com/#founder"
+    "@id": "https://www.knightgroup.com/#vince-knight"
   },
   "address": {
     "@type": "PostalAddress",
@@ -107,6 +106,22 @@
     },
     {
       "@type": "City",
+      "name": "Citrus Park, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Carrollwood, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Northdale, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Egypt Lake-Leto, FL"
+    },
+    {
+      "@type": "City",
       "name": "Holiday, FL"
     },
     {
@@ -116,6 +131,38 @@
     {
       "@type": "City",
       "name": "New Port Richey, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Elfers, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Seven Springs, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Jasmine Estates, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Beacon Square, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Port Richey, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Lutz, FL"
+    },
+    {
+      "@type": "City",
+      "name": "North Tampa, FL"
+    },
+    {
+      "@type": "City",
+      "name": "Temple Terrace, FL"
     },
     {
       "@type": "City",
@@ -139,9 +186,13 @@
   },
   "paymentAccepted": [
     "Cash",
-    "Check",
-    "Zelle",
-    "Credit Card"
+    "Credit Card",
+    "Debit Card",
+    "Apple Pay",
+    "Google Pay",
+    "Venmo",
+    "Cash App",
+    "PayPal"
   ],
   "currenciesAccepted": "USD",
   "foundingDate": "2024",
@@ -154,13 +205,13 @@
   "knowsAbout": [
     "Handyman services",
     "General home repairs",
-    "Plumbing fixture repair",
+    "Plumbing-related diagnosis and licensed-plumber coordination",
     "Drywall repair",
     "Carpentry",
     "Painting and finishing",
-    "Door and window repair",
+    "Door and window maintenance",
     "Home renovations",
-    "Emergency handyman repairs",
+    "Urgent property-damage response",
     "Home Watch",
     "Vacant property checks",
     "Seasonal home property care",

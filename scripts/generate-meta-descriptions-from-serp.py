@@ -11,15 +11,16 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
-from geo_seo_copy import city_copy, combo_copy, county_copy  # noqa: E402
 from gallery_detail_copy import gallery_meta  # noqa: E402
+from geo_seo_copy import city_copy, combo_copy, county_copy  # noqa: E402
+from page_meta import clip_at_word_boundary  # noqa: E402
 from serp_query_map import build_full_page_query_map  # noqa: E402
 
 ROOT = SCRIPT_DIR.parent
 SEO = ROOT / "seo"
 SERP_PATH = SEO / "serp-meta-research.json"
 OUT_PATH = SEO / "meta-descriptions.json"
-MAX_LEN = 159
+MAX_LEN = 155
 
 POLICY_PAGES = [
     {
@@ -42,10 +43,7 @@ POLICY_PAGES = [
 
 
 def clip(text: str) -> str:
-    text = " ".join(text.split())
-    if len(text) <= MAX_LEN:
-        return text
-    return text[: MAX_LEN - 3].rstrip() + "..."
+    return clip_at_word_boundary(text, MAX_LEN)
 
 
 def is_low_quality_description(text: str) -> bool:
@@ -59,8 +57,24 @@ def is_low_quality_description(text: str) -> bool:
         "from trim to cust.",
         "amarillo",
         "washington dc",
+        "reel construction",
+        "specialties:",
+        "family based construction",
+        "trusted general contractor",
+        "...",
+        "fixture plumbing",
+        "fixture swaps",
+        "outlet swap",
+        "ceiling fan install",
     )
-    return any(fragment in lowered for fragment in bad_fragments)
+    if any(fragment in lowered for fragment in bad_fragments):
+        return True
+    if lowered.rstrip().endswith(" es") or lowered.endswith("."):
+        pass
+    words = text.split()
+    if words and len(words[-1]) <= 2 and text.endswith("..."):
+        return True
+    return False
 
 
 def geo_override(path: str) -> str | None:
@@ -108,9 +122,9 @@ def best_serp_description(serp_rows: list[dict], page_path: str) -> tuple[str, l
 
 def legacy_fallback(path: str) -> str:
     fallbacks = {
-        "index.html": "Knight Group Handyman Services in Safety Harbor & Tampa Bay. Repairs, plumbing, drywall & paint. Free estimate.",
-        "services.html": "Handyman services in Tampa Bay: repairs, plumbing, electrical, carpentry, painting, doors, windows & more.",
-        "service-areas.html": "Handyman service areas across Pinellas, Hillsborough & Pasco County. Safety Harbor HQ. Confirm your city.",
+        "index.html": "Registered Safety Harbor handyman serving Pinellas County. Drywall, doors, carpentry, painting, and punch-list repairs. Free written estimate.",
+        "services.html": "Handyman services in Tampa Bay: repairs, drywall, carpentry, painting, doors, Home Watch, and licensed-trade coordination.",
+        "service-areas.html": "Handyman service areas across Pinellas, northwest Hillsborough, and west Pasco. Lutz/North Tampa by confirmation. No Lutz office.",
     }
     return fallbacks.get(path, "")
 

@@ -67,17 +67,16 @@ def cta_lead(slug: str, h1: str, county_name: str = "Pinellas County") -> str:
 def scope_disclaimer_html(slug: str) -> str:
     if slug in PLUMBING_SCOPE_SLUGS or any(token in slug for token in ("plumb", "faucet", "toilet", "drain", "disposal", "shutoff", "sink")):
         body = (
-            "<strong>Plumbing vs. diagnosis:</strong> Florida DBPR treats plumbing that connects lines to drinking water "
-            "as licensed contractor work. Vince Knight’s journeyman plumbing background helps diagnose leaks and "
-            "fixture failures. Knight Group is not a licensed plumbing contractor. Work that connects to potable water "
-            "is referred to a licensed plumber. See <a href=\"/handyman-scope-florida\">handyman scope in Florida</a>."
+            "<strong>Plumbing vs. diagnosis:</strong> Plumbing-related diagnosis, visible leak assessment, finish closeout "
+            "and eligible handyman-scope maintenance. Work requiring licensed plumbing or potable-water connections is "
+            "referred to a licensed plumber. Vince Knight’s journeyman plumbing background supports diagnosis — Knight Group "
+            "is not a licensed plumbing contractor. See <a href=\"/handyman-scope-florida\">handyman scope in Florida</a>."
         )
     elif slug in ELECTRICAL_SCOPE_SLUGS or "electrical" in slug:
         body = (
-            "<strong>Electrical vs. diagnosis:</strong> Florida DBPR states that compensated installation of ceiling fans, "
-            "light fixtures, outlets, and switches requires an electrical license — connecting even two wires is licensed "
-            "work. Knight Group does not advertise or perform that connection work. We diagnose, change bulbs and cover "
-            "plates, and coordinate a licensed electrician. See <a href=\"/handyman-scope-florida\">handyman scope in Florida</a>."
+            "<strong>Electrical vs. diagnosis:</strong> Electrical issue assessment, bulb and cover-plate changes, eligible "
+            "non-wiring work, and licensed-electrician coordination. Electrical connections, fixtures, fans, switches, outlets "
+            "and other licensed electrical work are referred. See <a href=\"/handyman-scope-florida\">handyman scope in Florida</a>."
         )
     elif slug == "emergency-services":
         body = (

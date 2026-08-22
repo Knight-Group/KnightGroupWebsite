@@ -4,28 +4,28 @@
       "slug": "handyman",
       "name": "Handyman Services",
       "serviceType": "Handyman services",
-      "description": "Professional home repairs, remodeling, plumbing fixture work, drywall, carpentry, doors, windows, and general maintenance services across Pinellas County.",
+      "description": "Registered and insured home repairs, drywall, carpentry, doors, painting, punch-list work, and licensed-trade coordination across Pinellas County.",
       "image": "handyman.jpg"
     },
     {
       "slug": "general-repairs",
       "name": "General Repairs",
       "serviceType": "General home repairs",
-      "description": "Drywall patching, trim repair, caulking, sealing, fixture swaps, punch-list corrections, and mixed repair work for Pinellas County homes.",
+      "description": "Drywall patching, trim repair, caulking, sealing, door adjustments, screens, punch-list corrections, and mixed repair work for Pinellas County homes.",
       "image": "general-repairs.jpg"
     },
     {
       "slug": "plumbing-services",
       "name": "Plumbing Services",
-      "serviceType": "Handyman plumbing fixture repair and minor plumbing repair",
-      "description": "Handyman-level plumbing fixture repair, faucet and showerhead swaps, shutoff valves, small leak corrections, and drain-related fixes — not licensed plumbing contractor work.",
+      "serviceType": "Plumbing-related diagnosis and licensed-plumber coordination",
+      "description": "Plumbing-related diagnosis, visible leak assessment, finish closeout and eligible handyman-scope maintenance. Work requiring licensed plumbing or potable-water connections is referred.",
       "image": "plumbing.jpg"
     },
     {
       "slug": "electrical-work",
       "name": "Electrical Work",
-      "serviceType": "Handyman electrical fixture work",
-      "description": "Like-for-like outlet and switch swaps, ceiling fan installs, light fixture replacements, and minor electrical fixture work within handyman scope.",
+      "serviceType": "Electrical assessment and licensed-electrician coordination",
+      "description": "Electrical issue assessment, bulb and cover-plate changes, eligible non-wiring work, and licensed-electrician coordination. Wiring, fixtures, fans, switches and outlets are referred.",
       "image": "electrical.jpg"
     },
     {
@@ -53,7 +53,7 @@
       "slug": "doors-windows",
       "name": "Doors & Windows",
       "serviceType": "Door and window repair",
-      "description": "Door adjustments, hardware fixes, weatherstripping, window repairs, lock corrections, and like-for-like door and window maintenance.",
+      "description": "Door adjustments, locks/hardware, screens, weatherstripping and eligible maintenance. Full window-unit and new exterior-door replacement is referred when licensed work is required.",
       "image": "doors-windows.jpg"
     },
     {
@@ -65,9 +65,9 @@
     },
     {
       "slug": "emergency-services",
-      "name": "Emergency Services",
-      "serviceType": "Emergency handyman repairs",
-      "description": "Urgent water shutoffs, temporary weatherproofing, security repairs, storm follow-up fixes, and after-hours handyman response in Pinellas County.",
+      "name": "Urgent Property-Damage Response",
+      "serviceType": "Urgent property-damage response",
+      "description": "Posted-hours and after-hours callback for unsecured openings, temporary weatherproofing, handyman-scope damage stabilization, storm follow-up, and licensed-trade coordination. Not a 24/7 dispatch service.",
       "image": "emergency.jpg"
     }
   ]

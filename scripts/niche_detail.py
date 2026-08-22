@@ -15,7 +15,7 @@ NICHE_DETAIL: dict[str, str] = {
 <li>Coordination when a plumber or electrician finishes before paint closeout</li>
 </ul>
 
-<h3>Owner-operated accountability</h3>
+<h3>Local accountability from Safety Harbor</h3>
 <p>Knight Group Handyman Services LLC is registered and insured in Florida. Vince Knight answers the phone, walks the property, and performs or directly supervises handyman-scope work. That matters when keys must be returned to a tenant by Friday or a listing photo shoot is Monday.</p>
 <ul>
 <li>Free written estimates before tools come out of the truck</li>
@@ -308,7 +308,7 @@ NICHE_DETAIL: dict[str, str] = {
 <li>Paneling and vinyl-over-gypsum patch strategies</li>
 <li>Window and door weatherstripping in humid climates</li>
 <li>Porch and stair stringer repairs at entries</li>
-<li>Fixture swaps within handyman plumbing limits</li>
+<li>Hardware and finish repairs within handyman limits; potable-water work is referred</li>
 <li>Landlord turnovers with tight gate and parking windows</li>
 </ul>
 

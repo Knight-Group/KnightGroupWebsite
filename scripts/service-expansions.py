@@ -16,7 +16,7 @@ EXPANSIONS = {
 </ul>
 
 <h2>Handyman plumbing vs. licensed plumber — what we handle</h2>
-<p>Florida homeowners often wonder whether a handyman can legally and safely handle a given plumbing task. Knight Group focuses on <strong>repair and replacement work within handyman scope</strong>: fixture swaps on existing connections, drain clearing, minor leak corrections, caulk and seal work, and punch-list plumbing after drywall or water-damage repairs.</p>
+<p>Florida homeowners often wonder whether a handyman can legally and safely handle a given plumbing task. Knight Group focuses on <strong>repair and replacement work within handyman scope</strong>: fixture-level diagnosis and licensed-plumber coordination, drain clearing, minor leak assessment, caulk and seal work, and punch-list plumbing after drywall or water-damage repairs.</p>
 <p>For repipes, sewer main work, gas lines, or jobs requiring a permit and master plumber sign-off, we explain that upfront and can refer you to a licensed plumbing partner instead of guessing on scope.</p>
 
 <h3>When to call Knight Group first</h3>
@@ -54,7 +54,7 @@ EXPANSIONS = {
 """,
     "handyman": """
 <h2>Handyman company serving Pinellas County</h2>
-<p>If you searched <strong>handyman company pinellas</strong>, <strong>handyman pinellas county</strong>, or <strong>handyman near me small jobs</strong>, you are usually looking for one dependable local team for mixed repairs — not a franchise with a minimum job size. Knight Group Handyman Services LLC is owner-operated in Safety Harbor with a 5.0 Google rating and free written estimates.</p>
+<p>If you searched <strong>handyman company pinellas</strong>, <strong>handyman pinellas county</strong>, or <strong>handyman near me small jobs</strong>, you are usually looking for one dependable local team for mixed repairs — not a franchise with a minimum job size. Knight Group is locally co-owned and centrally managed from Safety Harbor with a 5.0 Google rating and free written estimates.</p>
 
 <h3>Small jobs and punch-list repairs</h3>
 <ul>
@@ -68,7 +68,7 @@ EXPANSIONS = {
 <p>Common calls include leaking faucets, running toilets, drywall holes, sticking doors, ceiling fan swaps, caulking, TV mounting, shelving, baseboard patches, and post-plumber drywall closeout. Vince Knight's plumbing and property-management background helps when a job touches water, occupied units, or punch-list timing.</p>
 
 <h3>Registered, insured, and local to Safety Harbor</h3>
-<p>Knight Group is registered and insured in Florida. You work directly with the owner — not a rotating anonymous technician. Browse the <a href="/galleries">project gallery</a> for local proof, or read reviews on our <a href="/about#about-reviews">about page</a>.</p>
+<p>Knight Group is registered and insured in Florida. Vince Knight serves as Co-Owner & Field Operations Lead, with vetted local field professionals dispatched from Safety Harbor. Browse the <a href="/galleries">project gallery</a> for local proof, or read reviews on our <a href="/about#about-reviews">about page</a>.</p>
 """,
     "electrical-work": """
 <h2>Electrical work and fixture installation in Pinellas County</h2>
@@ -83,7 +83,7 @@ EXPANSIONS = {
 </ul>
 
 <h2>What electrical work requires a licensed electrician</h2>
-<p>Knight Group is transparent about scope. Panel work, new circuits, aluminum wiring remediation, and whole-home rewiring require a licensed electrician. For fixture swaps and device replacements on existing circuits, we assess on site and explain what is in scope before work starts.</p>
+<p>Knight Group is transparent about scope. Panel work, new circuits, aluminum wiring remediation, and whole-home rewiring require a licensed electrician. For bulb and cover-plate changes we assess on site; electrical connections, fixtures, fans, switches and outlets are referred.</p>
 <p>Pair with <a href="/Services/general-repairs">general repairs</a> when drywall patching or paint follows an electrical box move.</p>
 """,
     "carpentry-framing": """
@@ -122,7 +122,7 @@ EXPANSIONS = {
 
 <h3>Kitchen and bathroom updates (handyman scope)</h3>
 <ul>
-<li>Vanity, faucet, mirror, and fixture swaps</li>
+<li>Vanity, mirror, hardware, and eligible finish repairs</li>
 <li>Tile repair, backsplash sections, and grout refresh</li>
 <li>Flooring transitions: LVP, tile patches, and subfloor repair prep</li>
 <li>Drywall, paint, trim, and door hardware as part of a room refresh</li>

@@ -12,97 +12,14 @@ BASE = "https://www.knightgroup.com"
 SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
+from schema_graph import business_entity, website_entity  # noqa: E402
 from service_related import related_card_src  # noqa: E402
 
-ORG = {
-    "@type": "Organization",
-    "@id": f"{BASE}/#organization",
-    "name": "Knight Group Handyman Services LLC",
-    "legalName": "Knight Group Handyman Services LLC",
-    "url": f"{BASE}/",
-    "logo": f"{BASE}/Images/KnightGroupLogo.webp",
-    "image": f"{BASE}/Images/KnightGroupLogo.webp",
-    "email": "nknight@knightgroup.com",
-    "telephone": "+18136493341",
-    "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1225 7th St S",
-        "addressLocality": "Safety Harbor",
-        "addressRegion": "FL",
-        "postalCode": "34695",
-        "addressCountry": "US",
-    },
-    "founder": {"@id": f"{BASE}/#founder"},
-    "sameAs": [
-        "https://www.facebook.com/KnightGroupServices/",
-        "https://www.instagram.com/knight_group_services/",
-        "https://x.com/KnightGroupSvcs",
-        "https://www.tiktok.com/@knightgroupservices",
-        "https://www.pinterest.com/KnightGroupService/",
-        "https://www.google.com/maps?cid=10508624668428370015",
-    ],
-}
-
-FOUNDER = {
-    "@type": "Person",
-    "@id": f"{BASE}/#founder",
-    "name": "Vincent Knight",
-    "alternateName": "Vince Knight",
-    "jobTitle": "Co-Owner & Field Operations Lead",
-    "description": "Co-owner and Field Operations Lead of Knight Group Handyman Services LLC with journeyman plumbing experience and Florida property management background.",
-    "url": f"{BASE}/about#vince-knight",
-    "worksFor": {"@id": f"{BASE}/#organization"},
-    "knowsAbout": [
-        "Handyman services",
-        "Home Watch",
-        "Snowbird home watch",
-        "Vacant property checks",
-        "Vacation home monitoring",
-        "Property maintenance",
-        "Pinellas County home repair",
-    ],
-}
-
-BUSINESS = {
-    "@type": "HomeAndConstructionBusiness",
-    "@id": f"{BASE}/#business",
-    "name": "Knight Group Handyman Services LLC",
-    "url": f"{BASE}/",
-    "description": "Knight Group Handyman Services LLC provides registered and insured handyman services and recurring Home Watch / vacant-property checks across Safety Harbor and Pinellas County, Florida.",
-    "image": [f"{BASE}/Images/handyman.jpg", f"{BASE}/Images/KGHero.webp"],
-    "logo": f"{BASE}/Images/KnightGroupLogo.webp",
-    "telephone": "+18136493341",
-    "email": "nknight@knightgroup.com",
-    "priceRange": "$75-$200",
-    "parentOrganization": {"@id": f"{BASE}/#organization"},
-    "founder": {"@id": f"{BASE}/#founder"},
-    "address": ORG["address"],
-    "geo": {"@type": "GeoCoordinates", "latitude": 27.9906, "longitude": -82.6933},
-    "areaServed": {"@type": "AdministrativeArea", "name": "Pinellas County, Florida"},
-    "knowsAbout": [
-        "Handyman services",
-        "General home repairs",
-        "Home Watch",
-        "Home Watch services",
-        "Snowbird home watch",
-        "Vacant home monitoring",
-        "Vacation home watch",
-        "Seasonal home checks",
-        "Absentee homeowner services",
-        "Second-home property checks",
-        "Unoccupied house checks",
-    ],
-    "sameAs": ORG["sameAs"],
-}
-
-WEBSITE = {
-    "@type": "WebSite",
-    "@id": f"{BASE}/#website",
-    "url": f"{BASE}/",
-    "name": "Knight Group Handyman Services",
-    "publisher": {"@id": f"{BASE}/#organization"},
-    "inLanguage": "en-US",
-}
+ORG = json.loads((ROOT / "seo" / "knight-group-organization.json").read_text(encoding="utf-8"))
+FOUNDER = json.loads((ROOT / "seo" / "knight-group-founder.json").read_text(encoding="utf-8"))
+BUSINESS = business_entity()
+BUSINESS["areaServed"] = {"@type": "AdministrativeArea", "name": "Pinellas County, Florida"}
+WEBSITE = website_entity()
 
 PINELLAS_FAQS = [
     (
@@ -135,7 +52,7 @@ PINELLAS_FAQS = [
     ),
     (
         "Will Home Watch satisfy my homeowners insurance?",
-        "Not automatically. Many Florida policies have a vacancy or unoccupied-home clause after about 30–60 days. Check your policy and share any visit or reporting rules your carrier specifies. We can follow a written property protocol and give you dated photo reports — we cannot promise a claim will be paid.",
+        "Not automatically. Insurance policies differ in how they define vacant, unoccupied, secondary and seasonal residences. Review your policy forms or confirm requirements with your carrier or agent before leaving. Knight Group can follow a written visit and reporting protocol but does not determine coverage or guarantee a claim outcome.",
     ),
     (
         "Can you check my house while I am away?",
@@ -228,7 +145,7 @@ SNOWBIRD_FAQS = [
     ),
     (
         "Will this satisfy my insurance vacancy clause?",
-        "Not by itself. Many Florida policies have unoccupied-home rules after about 30–60 days. Read your policy, follow any visit or reporting rules your carrier lists, and keep dated records. Knight Group reports support a paper trail; they do not automatically satisfy a vacancy clause or guarantee a claim.",
+        "Not by itself. Insurance policies differ in how they define vacant, unoccupied, secondary and seasonal residences. Review your policy forms or confirm requirements with your carrier or agent before leaving. Knight Group reports support a paper trail; they do not determine coverage or guarantee a claim outcome.",
     ),
     (
         "Should I shut the water off?",
@@ -631,7 +548,7 @@ PINELLAS_BODY = """
                             <h2>What you get on each visit</h2>
                             <p>Every visit produces a client-facing report: date, arrival and departure, location verification, checklist, photographs, issue flags, and a short summary. See the full <a href="/home-watch-checklist">Florida Home Watch checklist</a> for exterior, interior, and departure items. Owners leaving for the season should also use the <a href="/florida-snowbird-departure-checklist">Florida snowbird departure checklist</a> before they go.</p>
                             <h2>Hurricane season and unoccupied-home insurance notes</h2>
-                            <p>After a named storm, we can add a post-storm property check when roads and access are safe — related to our <a href="/hurricane-repair-handyman-pinellas">hurricane prep and storm repair</a> page, but billed as a Home Watch visit, not a repair ticket. Many Florida policies limit coverage after a house sits unoccupied for 30–60 days. Dated photo reports can support the paper trail your carrier asks for. They do not automatically satisfy a vacancy clause or guarantee a claim.</p>
+                            <p>After a named storm, we can add a post-storm property check when roads and access are safe — related to our <a href="/hurricane-repair-handyman-pinellas">hurricane prep and storm repair</a> page, but billed as a Home Watch visit, not a repair ticket. Insurance policies differ in how they define vacant, unoccupied, secondary and seasonal residences. Dated photo reports can support the paper trail your carrier asks for. They do not determine coverage or guarantee a claim.</p>
                             <h2>What Home Watch is not</h2>
                             <p>It is <strong>not</strong> a licensed home inspection, not house sitting, and not private security. We document and report signs of unexpected or unauthorized entry. We do not patrol, confront anyone, or claim to prevent crime, storm damage, water damage, or mold. Humidity readings are observations, not a mold inspection. If someone appears to be inside unexpectedly, the field representative leaves and follows your written emergency protocol.</p>
                             <h2>Plans, cities, and how to start</h2>
@@ -767,7 +684,7 @@ SNOWBIRD_BODY = """
                             </ul>
                             <h2>Insurance</h2>
                             <ul>
-                                <li>Read any vacancy or unoccupied-home clause (often 30–60 days in Florida)</li>
+                                <li>Read any vacancy, unoccupied, secondary, or seasonal occupancy clause in your policy</li>
                                 <li>Ask the carrier what visit frequency or documentation they want</li>
                                 <li>Keep dated photos. They support a paper trail; they do not automatically pay a claim</li>
                             </ul>

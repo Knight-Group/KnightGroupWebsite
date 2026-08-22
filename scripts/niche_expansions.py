@@ -5,12 +5,12 @@ from __future__ import annotations
 NICHE_BODY: dict[str, str] = {
     "home-repair-near-me": """
 <h2>Local home repair when you need one accountable team</h2>
-<p>Searches for home repair near you usually come from homeowners juggling a half-finished punch list — a loose handrail, a drywall scar, and a door that sticks after humidity. Knight Group is owner-operated in Safety Harbor and drives to Clearwater, Dunedin, Palm Harbor, Largo, Oldsmar, Seminole, and St. Petersburg with one written estimate and one point of contact.</p>
+<p>Searches for home repair near you usually come from homeowners juggling a half-finished punch list — a loose handrail, a drywall scar, and a door that sticks after humidity. Knight Group is locally co-owned and centrally managed from Safety Harbor and drives to Clearwater, Dunedin, Palm Harbor, Largo, Oldsmar, Seminole, and St. Petersburg with one written estimate and one point of contact.</p>
 
 <h3>Repairs we bundle on a single visit</h3>
 <ul>
 <li>Drywall patches, nail pops, and ceiling touch-ups after minor leaks</li>
-<li>Fixture swaps, caulking refresh, and trim corrections in baths and kitchens</li>
+<li>Hardware, caulking refresh, and trim corrections in baths and kitchens</li>
 <li>Door adjustments, screen patches, and hardware alignment</li>
 <li>Rental turnover lists: locks, blinds, shelving, and move-in ready details</li>
 <li>Post-plumber or post-AC closeout when walls and paint still need finishing</li>
@@ -338,7 +338,7 @@ NICHE_BODY: dict[str, str] = {
 <li>Skirting panels, vents, and access door adjustments</li>
 <li>Interior door planing and latch alignment on thinner jambs</li>
 <li>Drywall and panel repairs in humid bath zones</li>
-<li>Fixture swaps and shutoff updates within handyman plumbing scope</li>
+<li>Hardware and finish repairs; potable-water connections are referred</li>
 </ul>
 
 <h2>Respect for occupied and rental units</h2>
@@ -515,7 +515,7 @@ NICHE_BODY: dict[str, str] = {
 
 NICHE_FAQ: dict[str, list[tuple[str, str]]] = {
     "home-repair-near-me": [
-        ("Who handles home repair near me in Pinellas County?", "Knight Group Handyman Services LLC is based in Safety Harbor and serves Pinellas County cities with registered, insured repair work. You work directly with the owner — not a distant call center."),
+        ("Who handles home repair near me in Pinellas County?", "Knight Group Handyman Services LLC is based in Safety Harbor and serves Pinellas County cities with registered, insured repair work. You work with a locally co-owned Safety Harbor team — not a distant call center."),
         ("Can one visit cover drywall, plumbing, and door fixes?", "Yes — mixed punch lists are common. We sequence wet work first, confirm handyman scope for each item, and provide a written estimate before starting."),
         ("Do you work in Clearwater and St. Petersburg?", "Yes. We regularly drive to Clearwater, St. Petersburg, Largo, Dunedin, Palm Harbor, Oldsmar, and Seminole for home repair scopes."),
         ("How do I get a home repair estimate?", "Use the online booking form with photos, email details, or call (813) 649-3341. Estimates are free and written before work begins."),

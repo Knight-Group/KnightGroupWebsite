@@ -59,7 +59,7 @@ PAGES = [
                 "name": "What types of handyman jobs does Knight Group handle in Pinellas County?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Knight Group handles punch-list repairs, fixture swaps, drywall and paint work, trim and carpentry fixes, door and window adjustments, and smaller renovation projects with free written estimates.",
+                    "text": "Knight Group handles punch-list repairs, drywall and paint work, trim and carpentry fixes, door and window adjustments, and smaller renovation projects with free written estimates.",
                 },
             },
         ],

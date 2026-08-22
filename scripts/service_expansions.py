@@ -51,7 +51,7 @@ EXPANSIONS = {
 """,
     "handyman": """
 <h2>Handyman company serving Pinellas County</h2>
-<p>If you searched for a Pinellas County handyman, you usually want one dependable local team for mixed repairs — not a franchise with a two-hour minimum. Knight Group Handyman Services LLC is owner-operated in Safety Harbor with a 5.0 Google rating and free written estimates.</p>
+<p>If you searched for a Pinellas County handyman, you usually want one dependable local team for mixed repairs — not a franchise with a two-hour minimum. Knight Group is locally co-owned and centrally managed from Safety Harbor with a 5.0 Google rating and free written estimates.</p>
 
 <h3>Small jobs and punch-list repairs</h3>
 <ul>
@@ -65,7 +65,7 @@ EXPANSIONS = {
 <p>Common calls include drywall holes, sticking doors, caulking, TV mounting, shelving, baseboard patches, and closeout after a licensed plumber or electrician has finished. Vince Knight's plumbing and property-management background helps when a job touches water, occupied units, or punch-list timing.</p>
 
 <h3>Registered, insured, and local to Safety Harbor</h3>
-<p>Knight Group is registered and insured in Florida. You work directly with the owner — not a rotating anonymous technician. Browse the <a href="/galleries">project gallery</a> for local proof, or read reviews on our <a href="/about#about-reviews">about page</a>.</p>
+<p>Knight Group is registered and insured in Florida. Vince Knight serves as Co-Owner & Field Operations Lead, with vetted local field professionals dispatched from Safety Harbor. Browse the <a href="/galleries">project gallery</a> for local proof, or read reviews on our <a href="/about#about-reviews">about page</a>.</p>
 """,
     "electrical-work": """
 <h2>Electrical diagnosis — not unlicensed connection work</h2>

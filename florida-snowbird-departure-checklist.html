@@ -42,20 +42,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 "addressCountry": "US"
             },
             "founder": {
-                "@id": "https://www.knightgroup.com/#founder"
+                "@id": "https://www.knightgroup.com/#vince-knight"
             },
             "sameAs": [
                 "https://www.facebook.com/KnightGroupServices/",
                 "https://www.instagram.com/knight_group_services/",
                 "https://x.com/KnightGroupSvcs",
                 "https://www.tiktok.com/@knightgroupservices",
-                "https://www.pinterest.com/KnightGroupService/",
-                "https://www.google.com/maps?cid=10508624668428370015"
+                "https://www.pinterest.com/KnightGroupService/"
             ]
         },
         {
             "@type": "Person",
-            "@id": "https://www.knightgroup.com/#founder",
+            "@id": "https://www.knightgroup.com/#vince-knight",
             "name": "Vincent Knight",
             "alternateName": "Vince Knight",
             "jobTitle": "Co-Owner & Field Operations Lead",
@@ -66,10 +65,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             },
             "knowsAbout": [
                 "Handyman services",
-                "Home Watch",
-                "Snowbird home watch",
-                "Vacant property checks",
-                "Vacation home monitoring",
+                "Plumbing-related diagnosis",
+                "Drywall repair",
+                "Home renovations",
                 "Property maintenance",
                 "Pinellas County home repair"
             ]
@@ -87,12 +85,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             "logo": "https://www.knightgroup.com/Images/KnightGroupLogo.webp",
             "telephone": "+18136493341",
             "email": "nknight@knightgroup.com",
-            "priceRange": "$75-$200",
+            "contactPoint": [
+                {
+                    "@type": "ContactPoint",
+                    "telephone": "+18136493341",
+                    "email": "nknight@knightgroup.com",
+                    "contactType": "customer service",
+                    "areaServed": "US-FL",
+                    "availableLanguage": "English"
+                }
+            ],
+            "hasMap": "https://maps.google.com/?cid=10508624668428370015",
             "parentOrganization": {
                 "@id": "https://www.knightgroup.com/#organization"
             },
             "founder": {
-                "@id": "https://www.knightgroup.com/#founder"
+                "@id": "https://www.knightgroup.com/#vince-knight"
             },
             "address": {
                 "@type": "PostalAddress",
@@ -107,22 +115,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 "latitude": 27.9906,
                 "longitude": -82.6933
             },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "08:00",
+                    "closes": "17:00"
+                }
+            ],
             "areaServed": {
                 "@type": "AdministrativeArea",
                 "name": "Pinellas County, Florida"
             },
+            "hasOfferCatalog": {
+                "@id": "https://www.knightgroup.com/pricing#offer-catalog"
+            },
+            "paymentAccepted": [
+                "Cash",
+                "Credit Card",
+                "Debit Card",
+                "Apple Pay",
+                "Google Pay",
+                "Venmo",
+                "Cash App",
+                "PayPal"
+            ],
+            "currenciesAccepted": "USD",
+            "foundingDate": "2024",
+            "slogan": "Registered and insured handyman services in Safety Harbor and Tampa Bay",
+            "potentialAction": {
+                "@type": "ReserveAction",
+                "name": "Book a free handyman estimate",
+                "target": "https://www.knightgroup.com/booking"
+            },
             "knowsAbout": [
                 "Handyman services",
                 "General home repairs",
+                "Plumbing-related diagnosis and licensed-plumber coordination",
+                "Drywall repair",
+                "Carpentry",
+                "Painting and finishing",
+                "Door and window maintenance",
+                "Home renovations",
+                "Urgent property-damage response",
                 "Home Watch",
-                "Home Watch services",
-                "Snowbird home watch",
-                "Vacant home monitoring",
-                "Vacation home watch",
-                "Seasonal home checks",
+                "Vacant property checks",
+                "Seasonal home property care",
                 "Absentee homeowner services",
-                "Second-home property checks",
-                "Unoccupied house checks"
+                "Second-home property checks"
             ],
             "sameAs": [
                 "https://www.facebook.com/KnightGroupServices/",
@@ -131,15 +177,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 "https://www.tiktok.com/@knightgroupservices",
                 "https://www.pinterest.com/KnightGroupService/",
                 "https://www.google.com/maps?cid=10508624668428370015"
-            ]
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "reviewCount": "12",
+                "bestRating": "5",
+                "worstRating": "1"
+            }
         },
         {
             "@type": "WebSite",
             "@id": "https://www.knightgroup.com/#website",
             "url": "https://www.knightgroup.com/",
             "name": "Knight Group Handyman Services",
+            "description": "Registered and insured handyman services in Safety Harbor, Pinellas County, Hillsborough County, and Pasco County, Florida.",
             "publisher": {
-                "@id": "https://www.knightgroup.com/#organization"
+                "@id": "https://www.knightgroup.com/#business"
             },
             "inLanguage": "en-US"
         },
@@ -256,7 +310,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     "name": "Will this satisfy my insurance vacancy clause?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Not by itself. Many Florida policies have unoccupied-home rules after about 30\u201360 days. Read your policy, follow any visit or reporting rules your carrier lists, and keep dated records. Knight Group reports support a paper trail; they do not automatically satisfy a vacancy clause or guarantee a claim."
+                        "text": "Not by itself. Insurance policies differ in how they define vacant, unoccupied, secondary and seasonal residences. Review your policy forms or confirm requirements with your carrier or agent before leaving. Knight Group reports support a paper trail; they do not determine coverage or guarantee a claim outcome."
                     }
                 },
                 {
@@ -384,7 +438,7 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                             </ul>
                             <h2>Insurance</h2>
                             <ul>
-                                <li>Read any vacancy or unoccupied-home clause (often 30–60 days in Florida)</li>
+                                <li>Read any vacancy, unoccupied, secondary, or seasonal occupancy clause in your policy</li>
                                 <li>Ask the carrier what visit frequency or documentation they want</li>
                                 <li>Keep dated photos. They support a paper trail; they do not automatically pay a claim</li>
                             </ul>
@@ -410,7 +464,7 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                         </details>
                         <details class="kg-faq-item">
                             <summary>Will this satisfy my insurance vacancy clause?</summary>
-                            <p>Not by itself. Many Florida policies have unoccupied-home rules after about 30–60 days. Read your policy, follow any visit or reporting rules your carrier lists, and keep dated records. Knight Group reports support a paper trail; they do not automatically satisfy a vacancy clause or guarantee a claim.</p>
+                            <p>Not by itself. Insurance policies differ in how they define vacant, unoccupied, secondary and seasonal residences. Review your policy forms or confirm requirements with your carrier or agent before leaving. Knight Group reports support a paper trail; they do not determine coverage or guarantee a claim outcome.</p>
                         </details>
                         <details class="kg-faq-item">
                             <summary>Should I shut the water off?</summary>

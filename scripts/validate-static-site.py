@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import subprocess
 import sys
 from html.parser import HTMLParser
@@ -16,6 +17,141 @@ IMAGE_SUFFIXES = {".avif", ".gif", ".jpeg", ".jpg", ".png", ".webp"}
 IMAGE_BUDGET = 3_000_000
 SKIP_CANONICAL = {"404.html", "thank-you.html"}
 NONPUBLIC_DIRS = {".github", "admin", "docs", "node_modules", "scripts"}
+COMPETITOR_MARKERS = (
+    "reel construction",
+    "specialties:",
+    "family based construction",
+    "trusted general contractor",
+    "memphis, tn",
+    "amarillo",
+    "washington dc",
+)
+OWNER_PHRASES = (
+    "owner-operated",
+    "work directly with the owner",
+    "vince knight, owner",
+)
+COMMERCIAL_24_7 = (
+    "around-the-clock",
+    "24/7 emergency",
+    "available 24/7",
+)
+COMMERCIAL_SCOPE = (
+    "fixture swaps",
+    "fixture installs",
+    "outlet swap",
+    "ceiling fan installation",
+    "light fixture installation",
+    "full window unit swaps",
+    "appliance hookup",
+)
+REFERRAL_HINTS = (
+    "referred",
+    "requires a license",
+    "requires an electrical",
+    "licensed electrician",
+    "licensed plumber",
+    "do not",
+    "does not",
+    "not a 24/7",
+    "not a 24/7 dispatch",
+)
+
+
+def meta_contents(html: str) -> dict[str, list[str]]:
+    return {
+        "title": re.findall(r"<title>(.*?)</title>", html, flags=re.I | re.S),
+        "description": re.findall(r'<meta name="description" content="([^"]*)"', html, flags=re.I),
+        "og": re.findall(r'<meta property="og:description" content="([^"]*)"', html, flags=re.I),
+        "twitter": re.findall(r'<meta name="twitter:description" content="([^"]*)"', html, flags=re.I),
+    }
+
+
+def looks_like_referral(window: str) -> bool:
+    lowered = window.lower()
+    return any(hint in lowered for hint in REFERRAL_HINTS)
+
+
+def content_errors(rel: Path, text: str, parser: PageParser) -> list[str]:
+    errors: list[str] = []
+    if "gallery" in {part.lower() for part in rel.parts}:
+        if "&lt;strong" in text or "&lt;a href" in text:
+            errors.append(f"{rel}: escaped HTML visible as &lt;strong or &lt;a href")
+        return errors
+
+    metas = meta_contents(text)
+    is_document = "<html" in text.lower()
+    if is_document and rel.name not in SKIP_CANONICAL:
+        if not metas["title"] or not str(metas["title"][0]).strip():
+            errors.append(f"{rel}: missing title")
+        if not metas["description"] or not str(metas["description"][0]).strip():
+            errors.append(f"{rel}: missing meta description")
+
+    for kind, values in metas.items():
+        if kind == "title":
+            continue
+        for value in values:
+            lowered = value.lower()
+            if any(marker in lowered for marker in COMPETITOR_MARKERS):
+                errors.append(f"{rel}: {kind} contains competitor or imported business copy")
+            if "..." in value:
+                errors.append(f"{rel}: {kind} ends with or contains ellipsis truncation")
+            if re.search(r"\b\w{1,4}\.\.\.\s*$", value):
+                errors.append(f"{rel}: {kind} has mid-word truncation")
+
+    if metas["og"] and metas["twitter"]:
+        if metas["description"] and metas["og"] and metas["description"][0] != metas["og"][0]:
+            if any(marker in metas["og"][0].lower() for marker in COMPETITOR_MARKERS) or "..." in metas["og"][0]:
+                errors.append(f"{rel}: og:description does not match intended meta or is contaminated")
+        if metas["description"] and metas["twitter"] and metas["description"][0] != metas["twitter"][0]:
+            if any(marker in metas["twitter"][0].lower() for marker in COMPETITOR_MARKERS) or "..." in metas["twitter"][0]:
+                errors.append(f"{rel}: twitter:description does not match intended meta or is contaminated")
+
+    if "&lt;strong" in text or "&lt;a href" in text:
+        errors.append(f"{rel}: escaped HTML visible as &lt;strong or &lt;a href")
+
+    lowered = text.lower()
+    for phrase in OWNER_PHRASES:
+        if phrase in lowered:
+            errors.append(f"{rel}: outdated sole-owner phrase {phrase!r}")
+
+    for phrase in COMMERCIAL_24_7:
+        start = 0
+        while True:
+            idx = lowered.find(phrase, start)
+            if idx < 0:
+                break
+            window = lowered[max(0, idx - 80) : idx + 80]
+            if "not a 24/7" not in window and "not a 24/7 dispatch" not in window and "not 24/7" not in window:
+                errors.append(f"{rel}: commercial 24/7 or around-the-clock claim")
+                break
+            start = idx + len(phrase)
+
+    for phrase in COMMERCIAL_SCOPE:
+        start = 0
+        while True:
+            idx = lowered.find(phrase, start)
+            if idx < 0:
+                break
+            window = lowered[max(0, idx - 120) : idx + 140]
+            if not looks_like_referral(window):
+                errors.append(f"{rel}: commercial regulated-work claim {phrase!r}")
+                break
+            start = idx + len(phrase)
+
+    schema_blob = "\n".join(parser.schemas)
+    schema_lower = schema_blob.lower()
+    if '"check"' in schema_lower and "no checks accepted" in lowered:
+        errors.append(f"{rel}: schema paymentAccepted includes Check while copy says no checks")
+    if '"$75-$200"' in schema_blob or '"$75-$200"' in schema_lower:
+        errors.append(f"{rel}: global priceRange $75-$200 is still present")
+    if "/#founder" in schema_blob:
+        errors.append(f"{rel}: Vince entity still uses #founder instead of #vince-knight")
+    for marker in COMPETITOR_MARKERS:
+        if marker in schema_lower:
+            errors.append(f"{rel}: JSON-LD contains competitor or imported business copy")
+            break
+    return errors
 
 
 def tracked_files() -> list[Path]:
@@ -167,6 +303,7 @@ def main() -> int:
                 json.loads(schema)
             except json.JSONDecodeError as exc:
                 errors.append(f"{rel}: invalid JSON-LD block {index} ({exc})")
+        errors.extend(content_errors(rel, text, parser))
         for ref in parser.refs:
             target = local_target(page, ref)
             if target is not None and not target.exists():
@@ -186,7 +323,7 @@ def main() -> int:
         return 1
     print(
         f"Validated {len(html_files)} HTML files, sitemap, canonicals, JSON-LD, "
-        "internal references, UTF-8 encoding, and image budgets."
+        "internal references, UTF-8 encoding, image budgets, and production-copy assertions."
     )
     return 0
 

@@ -16,7 +16,9 @@
     "postalCode": "34695",
     "addressCountry": "US"
   },
-  "founder": { "@id": "https://www.knightgroup.com/#founder" },
+  "founder": {
+    "@id": "https://www.knightgroup.com/#vince-knight"
+  },
   "sameAs": [
     "https://www.facebook.com/KnightGroupServices/",
     "https://www.instagram.com/knight_group_services/",

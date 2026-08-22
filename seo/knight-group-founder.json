@@ -1,15 +1,17 @@
 {
   "@type": "Person",
-  "@id": "https://www.knightgroup.com/#founder",
+  "@id": "https://www.knightgroup.com/#vince-knight",
   "name": "Vincent Knight",
   "alternateName": "Vince Knight",
   "jobTitle": "Co-Owner & Field Operations Lead",
   "description": "Co-owner and Field Operations Lead of Knight Group Handyman Services LLC with journeyman plumbing experience and Florida property management background.",
   "url": "https://www.knightgroup.com/about#vince-knight",
-  "worksFor": { "@id": "https://www.knightgroup.com/#organization" },
+  "worksFor": {
+    "@id": "https://www.knightgroup.com/#organization"
+  },
   "knowsAbout": [
     "Handyman services",
-    "Minor plumbing repair",
+    "Plumbing-related diagnosis",
     "Drywall repair",
     "Home renovations",
     "Property maintenance",

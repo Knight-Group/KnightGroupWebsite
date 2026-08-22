@@ -9,6 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 META_PATH = ROOT / "seo" / "meta-descriptions.json"
+TARGET_LEN = 155
 MAX_LEN = 159
 MIN_LEN = 120
 
@@ -48,10 +49,18 @@ def load_meta_map() -> dict[str, str]:
     }
 
 
-def clip_meta(text: str, *, min_len: int = MIN_LEN, max_len: int = MAX_LEN) -> str:
+def clip_at_word_boundary(text: str, max_len: int = TARGET_LEN) -> str:
+    text = " ".join((text or "").split())
+    if len(text) <= max_len:
+        return text
+    clipped = text[:max_len].rsplit(" ", 1)[0].rstrip(".,;: ")
+    return clipped or text[:max_len]
+
+
+def clip_meta(text: str, *, min_len: int = MIN_LEN, max_len: int = TARGET_LEN) -> str:
     text = " ".join(text.split())
     if len(text) > max_len:
-        return text[: max_len - 3].rstrip() + "..."
+        return clip_at_word_boundary(text, max_len)
     if len(text) >= min_len:
         return text
     lower = text.lower()
@@ -71,11 +80,14 @@ def clip_meta(text: str, *, min_len: int = MIN_LEN, max_len: int = MAX_LEN) -> s
         if suffix.strip().lower() in lower:
             continue
         candidate = text + suffix
-        if min_len <= len(candidate) <= max_len:
-            return candidate
-    padded = (text + " Free written estimate.").strip()
-    if len(padded) > max_len:
-        return padded[: max_len - 3].rstrip() + "..."
+        if len(candidate) <= max_len:
+            if len(candidate) >= min_len:
+                return candidate
+        else:
+            candidate = clip_at_word_boundary(candidate, max_len)
+            if len(candidate) >= min_len:
+                return candidate
+    padded = clip_at_word_boundary((text + " Free written estimate.").strip(), max_len)
     return padded
 
 

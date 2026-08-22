@@ -24,7 +24,7 @@ def build_trust_prose(defn: dict) -> str:
             [
                 defn["lead"],
                 "Vince Knight managed Florida rental properties for roughly <strong>ten years</strong> before Knight Group — useful when you need move-in ready work on a deadline, not a homeowner-paced hobby project. One registered team can knock out mixed punch lists instead of coordinating four separate trades for small items.",
-                "Typical turnover scopes include door and hardware adjustments, drywall patches and touch-up paint, fixture swaps, caulk refresh, blind and screen repairs, garbage disposal replacement, minor flooring transitions, and the “tenant broke it” items that stack up between leases.",
+                "Typical turnover scopes include door and hardware adjustments, drywall patches and touch-up paint, caulk refresh, blind and screen repairs, garbage disposal replacement when already disconnected, minor flooring transitions, and the “tenant broke it” items that stack up between leases.",
                 "We work with individual landlords and small property managers across Safety Harbor, Clearwater, Dunedin, Palm Harbor, Largo, and nearby Pinellas communities. Share a unit address, photos, and your target ready date — we return a written estimate and confirm what fits handyman scope versus licensed trade work.",
                 "Pricing can be hourly for mixed lists or flat-rate for defined scopes. There is <a href=\"/pricing-no-2-hour-minimum\">no 2-hour minimum</a> on small jobs. See <a href=\"/Services/general-repairs\">general repairs</a> and <a href=\"/Services/painting-finishing\">painting &amp; finishing</a>, or <a href=\"/contact\">contact us</a> for multi-unit schedules.",
             ]
@@ -46,7 +46,7 @@ def build_trust_prose(defn: dict) -> str:
                 defn["lead"],
                 "Pinellas County sits on the Gulf — every June through November, homeowners balance <strong>hurricane prep</strong> with the reality that tropical storms still cause leaks, blown screens, and drywall damage even when the house “survives.” Knight Group is a registered and insured handyman team based in Safety Harbor, not a licensed general contractor or restoration franchise.",
                 "<strong>Before storm season</strong>, we help with practical prep inside handyman scope: refreshing exterior caulk at doors and windows, checking door sweeps and weatherstripping, tightening loose soffit panels where accessible, rescreening porch panels, and clearing small maintenance items that fail under wind-driven rain.",
-                "<strong>After a storm</strong>, call <a href=\"tel:+18136493341\">(813) 649-3341</a> if water is still moving — see <a href=\"/Services/emergency-services\">emergency services</a>. Once leaks are stopped, we handle drywall patches, texture and paint touch-ups, door and hardware adjustments, fixture swaps, and documented punch lists for landlords and insurers. We are not adjusters, but written scopes help your claim packet.",
+                "<strong>After a storm</strong>, call <a href=\"tel:+18136493341\">(813) 649-3341</a> if water is still moving — see <a href=\"/Services/emergency-services\">emergency services</a>. Once leaks are stopped, we handle drywall patches, texture and paint touch-ups, door and hardware adjustments, and documented punch lists for landlords and insurers. We are not adjusters, but written scopes help your claim packet.",
                 "Knight Group does not perform structural engineering, major tree removal, or permitted re-roofing. We coordinate honestly when a licensed roofer, plumber, or electrician is required. Compare <a href=\"/Services/water-damage-repair\">water damage repair</a>, <a href=\"/Services/general-repairs\">general repairs</a>, and <a href=\"/pinellas-handyman\">Pinellas County coverage</a>, or <a href=\"/booking\">book a prep walkthrough</a> with photos.",
             ]
         )
@@ -81,7 +81,7 @@ def trust_faqs(slug: str) -> list[tuple[str, str]]:
             ),
             (
                 "What is usually included in a rental turnover punch list?",
-                "Common items include drywall patches, paint touch-ups, door hardware, fixture swaps, caulk, blinds and screens, disposal replacement, and minor floor or trim fixes — bundled into one visit when possible.",
+                "Common items include drywall patches, paint touch-ups, door hardware, caulk, blinds and screens, and minor floor or trim fixes — bundled into one visit when possible.",
             ),
             (
                 "Can you bill hourly for mixed turnover tasks?",

@@ -199,10 +199,9 @@ def infer_intent(query: str, organic: list[dict[str, Any]], places: list[dict[st
 
 
 def suggested_meta_description(row: dict[str, Any]) -> str:
-    """Craft a SERP-informed meta description suggestion for the target page."""
+    """Knight Group factual meta only. Competitor snippets are research input, never copy."""
     query = str(row.get("query") or "")
     page = str(row.get("target_page") or "")
-    snippets = [s for s in (row.get("competitor_snippet_angles") or []) if s]
     intent = str(row.get("intent") or "")
 
     locality = "Pinellas County"
@@ -212,22 +211,30 @@ def suggested_meta_description(row: dict[str, Any]) -> str:
         locality = "Pasco County"
 
     if intent == "brand_navigational":
-        return "Knight Group Handyman Services in Safety Harbor & Tampa Bay. Registered, insured repairs. Free estimate."
+        return "Knight Group Handyman Services in Safety Harbor and Tampa Bay. Registered, insured repairs. Free written estimate."
     if intent == "pricing_estimate":
         return f"Handyman pricing in {locality}. $150 first hour, $75 after. No 2-hour minimum. Free written estimates."
 
     if page.startswith("Services/"):
         service = page.split("/")[-1].replace(".html", "").replace("-", " ")
-        hook = snippets[0][:60] if snippets else f"{service} in {locality}"
-        return f"{service.title()} in {locality}. {hook}. Registered & insured. Free estimate."[:159]
+        return (
+            f"{service.title()} in {locality} from Knight Group in Safety Harbor. "
+            "Registered and insured. Licensed trades referred when required. Free written estimate."
+        )[:155].rsplit(" ", 1)[0]
 
     if page.endswith("-handyman.html"):
         city = page.replace("-handyman.html", "").replace("-", " ").title()
-        return f"{city} handyman in {locality}. Drywall, fixtures, doors & punch-list repairs. Free estimate."[:159]
+        return (
+            f"{city} handyman from Safety Harbor: drywall, doors, caulk, screens, and punch-list repairs. "
+            "Free written estimate."
+        )
 
     if "sink repair" in query.lower():
-        return "Sink & faucet repair in Clearwater & Pinellas County. Fixture-level handyman plumbing. Free estimate."
-    return f"{query.title()} in {locality}. Knight Group — registered Safety Harbor handyman team. Free estimate."[:159]
+        return "Sink diagnosis and finish repair in Clearwater and Pinellas County. Potable-water plumbing is referred. Free written estimate."
+    return (
+        f"Knight Group handyman help in {locality} from Safety Harbor. "
+        "Registered and insured. Free written estimate."
+    )
 
 
 def main() -> int:

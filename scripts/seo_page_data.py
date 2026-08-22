@@ -5,7 +5,7 @@ from __future__ import annotations
 
 SCOPE_DISCLAIMER = """
 <div class="kg-scope-disclaimer">
-  <p><strong>Handyman scope notice:</strong> Knight Group provides handyman-scope fixture replacement, minor repairs, and troubleshooting using existing connections. We do not perform work requiring a licensed plumbing, electrical, HVAC, or general contractor license. If a job requires a permit or licensed trade contractor, we identify that before work begins and refer or coordinate appropriately.</p>
+  <p><strong>Handyman scope notice:</strong> Knight Group provides handyman-scope repairs, diagnosis, finish closeout, and troubleshooting. Electrical connections, fixtures, fans, switches, outlets, and plumbing that connects to potable water are referred to licensed trades. If a job requires a permit or licensed contractor, we identify that before work begins.</p>
 </div>
 """
 
@@ -88,7 +88,7 @@ NICHE_SERVICES = [
         "parent": "handyman",
         "title": "Small Job Handyman in Pinellas County FL | Knight Group",
         "h1": "Small jobs handyman in Pinellas County",
-        "lead": "No oversized minimums — book practical small repairs, fixture swaps, and punch-list items with a registered local handyman company.",
+        "lead": "No oversized minimums — book practical small repairs, hardware, screens, drywall, and punch-list items with a registered local handyman company.",
         "queries": ["handyman near me small jobs"],
         "hero": "handyman.webp",
         "scope": False,

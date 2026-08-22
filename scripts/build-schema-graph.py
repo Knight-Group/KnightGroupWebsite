@@ -34,6 +34,10 @@ CORE_PAGES: list[tuple[str, str]] = [
     ("about.html", "about"),
     ("galleries.html", "galleries"),
     ("service-areas.html", "service-areas"),
+    ("handyman-scope-florida.html", "policy"),
+    ("hurricane-repair-handyman-pinellas.html", "policy"),
+    ("plumber-background-handyman.html", "policy"),
+    ("rental-turnover-handyman.html", "policy"),
 ]
 
 POLICY_PAGES = [
@@ -91,6 +95,7 @@ def update_file(path: Path, page_key: str, service: dict[str, str] | None = None
         meta=meta,
         faq_entities=faq,
         service=service,
+        html_content=html,
     )
     updated = replace_schema_blocks(html, graph)
     if updated == html:

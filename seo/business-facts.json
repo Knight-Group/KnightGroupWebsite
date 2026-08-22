@@ -1,0 +1,234 @@
+{
+  "business": {
+    "legalName": "Knight Group Handyman Services LLC",
+    "shortName": "Knight Group Handyman Services",
+    "url": "https://www.knightgroup.com/",
+    "phone": "+18136493341",
+    "phoneDisplay": "(813) 649-3341",
+    "email": "nknight@knightgroup.com",
+    "foundingDate": "2024",
+    "slogan": "Registered and insured handyman services in Safety Harbor and Tampa Bay"
+  },
+  "address": {
+    "streetAddress": "1225 7th St S",
+    "addressLocality": "Safety Harbor",
+    "addressRegion": "FL",
+    "postalCode": "34695",
+    "addressCountry": "US",
+    "latitude": 27.9906,
+    "longitude": -82.6933
+  },
+  "hours": {
+    "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "17:00",
+    "display": "Monday–Friday 8 AM–5 PM",
+    "afterHours": "After-hours callback when available. Not a 24/7 dispatch service. No guaranteed response time."
+  },
+  "googleProfile": {
+    "mapsCidUrl": "https://www.google.com/maps?cid=10508624668428370015",
+    "hasMap": "https://maps.google.com/?cid=10508624668428370015"
+  },
+  "socialProfiles": [
+    "https://www.facebook.com/KnightGroupServices/",
+    "https://www.instagram.com/knight_group_services/",
+    "https://x.com/KnightGroupSvcs",
+    "https://www.tiktok.com/@knightgroupservices",
+    "https://www.pinterest.com/KnightGroupService/"
+  ],
+  "reviews": {
+    "source": "data/google-reviews.json",
+    "ratingValue": "5.0",
+    "reviewCount": "12",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "people": {
+    "vinceKnight": {
+      "name": "Vincent Knight",
+      "alternateName": "Vince Knight",
+      "schemaId": "https://www.knightgroup.com/#vince-knight",
+      "jobTitle": "Co-Owner & Field Operations Lead",
+      "url": "https://www.knightgroup.com/about#vince-knight",
+      "isPublicFounderRelationship": true,
+      "description": "Co-owner and Field Operations Lead of Knight Group Handyman Services LLC with journeyman plumbing experience and Florida property management background."
+    },
+    "ownershipCopy": "Knight Group is locally co-owned and centrally managed from Safety Harbor. Vince Knight serves as Co-Owner & Field Operations Lead, with vetted local field professionals dispatched according to scope, location and availability."
+  },
+  "payments": {
+    "accepted": [
+      "Cash",
+      "Credit Card",
+      "Debit Card",
+      "Apple Pay",
+      "Google Pay",
+      "Venmo",
+      "Cash App",
+      "PayPal"
+    ],
+    "notAccepted": ["Check"],
+    "notes": "No checks accepted. Payment plans may be available on larger scopes."
+  },
+  "pricing": {
+    "standardFirstHour": 150,
+    "standardAdditionalHour": 75,
+    "specialtyFirstHour": 200,
+    "specialtyAdditionalHour": 100,
+    "emergencyFeeRegularHours": 150,
+    "emergencyFeeAfterHours": 200,
+    "noTwoHourMinimum": true,
+    "titlePreference": "$150 First Hour · $75 After",
+    "globalPriceRange": null
+  },
+  "scopeRules": {
+    "electrical": "Electrical issue assessment, bulb and cover-plate changes, eligible non-wiring work, and licensed-electrician coordination. Electrical connections, fixtures, fans, switches, outlets and other licensed electrical work are referred.",
+    "plumbing": "Plumbing-related diagnosis, visible leak assessment, finish closeout and eligible handyman-scope maintenance. Work requiring licensed plumbing or potable-water connections is referred to a licensed plumber.",
+    "doorsWindows": "Door adjustments, locks/hardware, screens, weatherstripping and eligible maintenance. Full window-unit and new exterior-door replacement is referred when licensed/permitted work is required.",
+    "emergency": "During posted hours and after-hours callback when available. Not a 24/7 dispatch service. No guaranteed response time. Electrical faults, potable-water plumbing, HVAC, roofing and structural emergencies are referred to appropriately licensed trades.",
+    "handymanExamples": [
+      "drywall patches",
+      "door adjustments",
+      "caulk refresh",
+      "screen repair",
+      "shelving",
+      "mounting without wiring",
+      "carpentry",
+      "heavy-item handling"
+    ]
+  },
+  "homeWatch": {
+    "geography": "Pinellas County only",
+    "pinellasFirst": true,
+    "notInspection": true,
+    "notHouseSitting": true,
+    "notSecurity": true
+  },
+  "routes": {
+    "core": {
+      "label": "Core / daily",
+      "cities": [
+        "Safety Harbor",
+        "Clearwater",
+        "Dunedin",
+        "Palm Harbor",
+        "Largo",
+        "Oldsmar",
+        "Tarpon Springs",
+        "Seminole",
+        "St. Petersburg"
+      ],
+      "counties": ["Pinellas County"]
+    },
+    "scheduled": {
+      "label": "Scheduled routes",
+      "cities": [
+        "Tampa",
+        "Town 'n' Country",
+        "Westchase",
+        "Citrus Park",
+        "Carrollwood",
+        "Northdale",
+        "Egypt Lake-Leto",
+        "Holiday",
+        "Trinity",
+        "New Port Richey",
+        "Elfers",
+        "Seven Springs",
+        "Jasmine Estates",
+        "Beacon Square",
+        "Port Richey"
+      ],
+      "counties": ["Hillsborough County", "Pasco County"]
+    },
+    "expanding": {
+      "label": "Expanding handyman route — address confirmation required",
+      "cities": ["Lutz", "North Tampa"],
+      "notes": "No dedicated Lutz office, GBP, local phone, named local team, or /lutz-handyman page."
+    },
+    "confirmFirst": {
+      "label": "Confirm first",
+      "cities": ["Temple Terrace", "Land O' Lakes"]
+    },
+    "outside": {
+      "label": "Outside current marketing",
+      "cities": [
+        "Brandon",
+        "Riverview",
+        "Wesley Chapel",
+        "Hudson",
+        "Sun City Center"
+      ]
+    }
+  },
+  "pageGeography": {
+    "pinellas": {
+      "cities": [
+        "Safety Harbor",
+        "Clearwater",
+        "Dunedin",
+        "Palm Harbor",
+        "Largo",
+        "Oldsmar",
+        "Tarpon Springs",
+        "Seminole",
+        "St. Petersburg"
+      ],
+      "counties": ["Pinellas County"]
+    },
+    "hillsborough": {
+      "cities": [
+        "Tampa",
+        "Town 'n' Country",
+        "Westchase",
+        "Citrus Park",
+        "Carrollwood",
+        "Northdale",
+        "Egypt Lake-Leto"
+      ],
+      "counties": ["Hillsborough County"]
+    },
+    "pasco": {
+      "cities": [
+        "Holiday",
+        "Trinity",
+        "New Port Richey",
+        "Elfers",
+        "Seven Springs",
+        "Jasmine Estates",
+        "Beacon Square",
+        "Port Richey"
+      ],
+      "counties": ["Pasco County"]
+    },
+    "homeWatch": {
+      "cities": [
+        "Safety Harbor",
+        "Clearwater",
+        "Dunedin",
+        "Palm Harbor",
+        "Largo",
+        "Oldsmar",
+        "Tarpon Springs",
+        "Seminole",
+        "St. Petersburg"
+      ],
+      "counties": ["Pinellas County"]
+    }
+  },
+  "knowsAbout": [
+    "Handyman services",
+    "General home repairs",
+    "Plumbing-related diagnosis and licensed-plumber coordination",
+    "Drywall repair",
+    "Carpentry",
+    "Painting and finishing",
+    "Door and window maintenance",
+    "Home renovations",
+    "Urgent property-damage response",
+    "Home Watch",
+    "Vacant property checks",
+    "Seasonal home property care",
+    "Absentee homeowner services",
+    "Second-home property checks"
+  ]
+}
