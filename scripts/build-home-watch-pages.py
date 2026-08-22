@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the three Home Watch landing pages from a shared service-page shell."""
+"""Generate Home Watch landings plus the snowbird departure checklist."""
 
 from __future__ import annotations
 
@@ -211,6 +211,33 @@ CHECKLIST_FAQS = [
         "Will you bring in mail, packages, and flyers?",
         "We note mail, packages, and flyers that make a vacant house look empty. Bringing items inside can be written into your property protocol; it is not an unbounded concierge errand.",
     ),
+    (
+        "Do you inspect the garage, HVAC drain, or breaker panel?",
+        "We observe what is visible and accessible without tools: garage door condition, an accessible condensate pan or drain if we can see it, appliance error lights, and whether power is on. We do not perform electrical work, mechanical service, or licensed inspections.",
+    ),
+]
+
+SNOWBIRD_FAQS = [
+    (
+        "Is this the same as a Home Watch visit?",
+        "No. This page is for you, the homeowner, before you leave Florida. The Home Watch visit checklist is what Knight Group uses after you are gone. Use both: close the house well, then have scheduled photo reports while you are away.",
+    ),
+    (
+        "Does completing this checklist replace Home Watch?",
+        "No. A neighbor or a one-time close-up cannot see a slow leak three weeks later. Home Watch is the scheduled follow-through in Pinellas County.",
+    ),
+    (
+        "Will this satisfy my insurance vacancy clause?",
+        "Not by itself. Many Florida policies have unoccupied-home rules after about 30–60 days. Read your policy, follow any visit or reporting rules your carrier lists, and keep dated records. Knight Group reports support a paper trail; they do not automatically satisfy a vacancy clause or guarantee a claim.",
+    ),
+    (
+        "Should I shut the water off?",
+        "Follow your plumber’s and insurer’s advice for that house. Many snowbirds shut the main or isolate unused branches and leave HVAC running for humidity. Write the water setting into your Home Watch protocol so visits match what you intended.",
+    ),
+    (
+        "What if I am leaving a Lutz or North Tampa house?",
+        "Handyman work can be quoted there on expanding routes with address confirmation. Home Watch stays Pinellas-first for now because recurring visits need route density. Pinellas second homes still use the Home Watch Pinellas page.",
+    ),
 ]
 
 
@@ -388,6 +415,7 @@ def page(
     sidebar_p: str,
     form_html: str,
     extra_css: str = "",
+    main_entity_fragment: str = "service",
 ) -> str:
     page_id = f"{BASE}/{slug}"
     graph = [
@@ -414,7 +442,7 @@ def page(
             "about": {"@id": f"{BASE}/#business"},
             "breadcrumb": {"@id": f"{page_id}#breadcrumb"},
             "inLanguage": "en-US",
-            "mainEntity": {"@id": f"{page_id}#service"},
+            "mainEntity": {"@id": f"{page_id}#{main_entity_fragment}"},
             "primaryImageOfPage": {"@id": f"{page_id}#primary-image"},
         },
         {
@@ -601,7 +629,7 @@ PINELLAS_BODY = """
                             <h2>Vacant house checks, vacation homes, and second-home monitoring</h2>
                             <p>People searching <em>home watch services near me</em>, <em>vacant home watch</em>, or <em>vacation home monitoring</em> usually want the same thing: a consistent walkthrough, not a house sitter living on site. We look at entry points, mail and packages, obvious storm or water issues from ground level, HVAC and interior humidity when we have access, and we photograph what we see. Landlords between tenants can pair this with <a href="/rental-turnover-handyman">rental turnover handyman</a> work.</p>
                             <h2>What you get on each visit</h2>
-                            <p>Every visit produces a client-facing report: date, arrival and departure, location verification, checklist, photographs, issue flags, and a short summary. See the full <a href="/home-watch-checklist">Florida Home Watch checklist</a> for exterior, interior, and departure items.</p>
+                            <p>Every visit produces a client-facing report: date, arrival and departure, location verification, checklist, photographs, issue flags, and a short summary. See the full <a href="/home-watch-checklist">Florida Home Watch checklist</a> for exterior, interior, and departure items. Owners leaving for the season should also use the <a href="/florida-snowbird-departure-checklist">Florida snowbird departure checklist</a> before they go.</p>
                             <h2>Hurricane season and unoccupied-home insurance notes</h2>
                             <p>After a named storm, we can add a post-storm property check when roads and access are safe — related to our <a href="/hurricane-repair-handyman-pinellas">hurricane prep and storm repair</a> page, but billed as a Home Watch visit, not a repair ticket. Many Florida policies limit coverage after a house sits unoccupied for 30–60 days. Dated photo reports can support the paper trail your carrier asks for. They do not automatically satisfy a vacancy clause or guarantee a claim.</p>
                             <h2>What Home Watch is not</h2>
@@ -639,6 +667,7 @@ PRICING_BODY = """
 
 CHECKLIST_BODY = """
                             <p>This is the working visual checklist Knight Group uses on a scheduled Home Watch visit in Florida — the same list snowbirds, vacation-home owners, and vacant-property investors mean when they ask <em>what does home watch check</em>. It is written so you know what “checking the house while I’m away” actually includes. It is not a licensed home inspection and not a professional opinion of building condition. Findings are <strong>observations</strong> from that visit, with photos.</p>
+                            <p>The value stays consistent observation, documentation, and escalation — not a hundred mini-inspections. If you want owner-specific items beyond this list, we write them into the property protocol (often on Premium Watch).</p>
                             <h2>Exterior</h2>
                             <ul>
                                 <li>Visible entry doors and windows</li>
@@ -648,6 +677,7 @@ CHECKLIST_BODY = """
                                 <li>Obvious irrigation or landscape abnormalities</li>
                                 <li>Obvious pool or spa abnormalities if the property has one</li>
                                 <li>Exterior HVAC unit observation</li>
+                                <li>Garage door and visible garage condition from the exterior, when we can see it</li>
                                 <li>Visible leaks or standing water</li>
                                 <li>Fence and gate condition</li>
                                 <li>HOA or city notices left at the property</li>
@@ -657,14 +687,19 @@ CHECKLIST_BODY = """
                                 <li>Interior temperature</li>
                                 <li>Humidity reading</li>
                                 <li>Thermostat status and obvious HVAC failure</li>
+                                <li>Accessible HVAC condensate pan or drain observation when it is in view — no mechanical service</li>
                                 <li>Visible water intrusion on ceilings, walls, and floors</li>
                                 <li>Under-sink areas and toilets</li>
                                 <li>Water heater area</li>
                                 <li>Visible pest activity</li>
                                 <li>Refrigerator or freezer status if requested</li>
+                                <li>Visible appliance error lights, without diagnosing the appliance</li>
+                                <li>Smart leak-detector status when a device is present and visible</li>
+                                <li>Water-softener, well, or septic visible alarms when those systems exist</li>
                                 <li>Unusual odors</li>
                                 <li>Interior doors and windows</li>
-                                <li>Electrical power status</li>
+                                <li>Power status and visible breaker/panel condition without performing electrical work</li>
+                                <li>Owner-specific checklist items written into the property protocol</li>
                                 <li>Run faucets and flush toilets only if included in the owner’s written property protocol</li>
                             </ul>
                             <h2>Departure</h2>
@@ -677,8 +712,83 @@ CHECKLIST_BODY = """
                             </ul>
                             <h2>The report</h2>
                             <p>Every visit produces date, arrival and departure, location verification, checklist results, photographs, issue flags, and a short summary. If something needs work, that is a separate conversation — see <a href="/home-watch-pinellas">Home Watch in Pinellas County</a> and <a href="/home-watch-pricing">Home Watch pricing</a>.</p>
+                            <p>Closing the house before you fly north is a different job. Use the <a href="/florida-snowbird-departure-checklist">Florida snowbird departure checklist</a> for water, HVAC, mail, and insurance steps you handle yourself.</p>
                             <p>Post-storm visits follow the same observation standard and wait until roads and access are safe. Repair follow-up is quoted separately, including <a href="/hurricane-repair-handyman-pinellas">storm-related handyman work</a> when it fits our scope.</p>
 """
+
+SNOWBIRD_BODY = """
+                            <p>This page is for the homeowner — the week you leave Florida, not the visit Knight Group makes after you are gone. Search demand for a <em>Florida snowbird departure checklist</em> or <em>what to do before leaving a Florida house for the summer</em> usually starts months before anyone is ready to hire a watcher. Use it as a close-up list, then decide whether you want scheduled photo reports while you are away.</p>
+                            <p>It is not a licensed home inspection, not legal or insurance advice, and not a substitute for your carrier’s vacancy rules. If you want someone other than a neighbor to walk the house on a set schedule in Pinellas County, that is <a href="/home-watch-pinellas">Knight Group Home Watch</a>.</p>
+                            <h2>Water</h2>
+                            <ul>
+                                <li>Decide, in writing, whether the main stays on, is isolated, or is shut off — then tell whoever checks the house</li>
+                                <li>Know where the main shutoff and hose bibs are</li>
+                                <li>Fix drips you already know about; a slow drip becomes a ceiling stain while you are north</li>
+                                <li>Note icemaker, washer, and outdoor hose connections</li>
+                            </ul>
+                            <h2>Thermostat and humidity</h2>
+                            <ul>
+                                <li>Set cooling for an unoccupied Gulf-coast house, not a lived-in setpoint</li>
+                                <li>Confirm the system actually ran after you changed it</li>
+                                <li>Replace a dirty filter before a long vacancy</li>
+                                <li>Write the agreed temperature into your Home Watch protocol if you hire checks</li>
+                            </ul>
+                            <h2>Kitchen, refrigerator, and pests</h2>
+                            <ul>
+                                <li>Empty perishables; decide fridge on/off and freezer contents</li>
+                                <li>Take out trash and wipe crumbs that invite pests</li>
+                                <li>Unplug small appliances you do not want drawing power</li>
+                            </ul>
+                            <h2>Mail, packages, and the look of vacancy</h2>
+                            <ul>
+                                <li>Hold or forward mail; stop routine deliveries that pile up</li>
+                                <li>Ask a neighbor or Home Watch to note flyers and packages</li>
+                                <li>Do not advertise travel dates on social posts tied to the address</li>
+                            </ul>
+                            <h2>Storm and hurricane season</h2>
+                            <ul>
+                                <li>Bring in or secure outdoor furniture and loose items</li>
+                                <li>Check that screens, doors, and obvious weak points are latched</li>
+                                <li>Know your HOA’s storm rules if you live in a gated or deed-restricted community</li>
+                                <li>Plan a <a href="/hurricane-repair-handyman-pinellas">post-storm check</a> separately from weekly Home Watch</li>
+                            </ul>
+                            <h2>Windows, doors, vehicles, and access</h2>
+                            <ul>
+                                <li>Lock windows and doors; test the ones you actually use</li>
+                                <li>Leave vehicles as your insurer and HOA allow — covered, moved, or listed</li>
+                                <li>Write access instructions for a trusted person: gate, alarm, lockbox, HOA, and who to call first</li>
+                                <li>Do not put alarm codes on a public web form</li>
+                            </ul>
+                            <h2>People to notify</h2>
+                            <ul>
+                                <li>Emergency contact who can authorize a repair</li>
+                                <li>HOA or property manager if required</li>
+                                <li>A licensed plumber or electrician you already trust, for work outside handyman scope</li>
+                            </ul>
+                            <h2>Insurance</h2>
+                            <ul>
+                                <li>Read any vacancy or unoccupied-home clause (often 30–60 days in Florida)</li>
+                                <li>Ask the carrier what visit frequency or documentation they want</li>
+                                <li>Keep dated photos. They support a paper trail; they do not automatically pay a claim</li>
+                            </ul>
+                            <h2>After you leave</h2>
+                            <p>Don’t want to rely on a neighbor while you’re gone? <a href="/home-watch-pinellas">Knight Group Home Watch</a> provides scheduled, photo-documented checks throughout Pinellas County. See <a href="/home-watch-checklist">what we visually check on each visit</a> and <a href="/home-watch-pricing">published Home Watch pricing</a>. Repair labor is always a separate quote.</p>
+"""
+
+SNOWBIRD_HOWTO = {
+    "@type": "HowTo",
+    "@id": f"{BASE}/florida-snowbird-departure-checklist#howto",
+    "name": "Florida snowbird departure checklist",
+    "description": "Homeowner steps before leaving a Florida house for the season: water, thermostat, mail, storm prep, access, and insurance notes. Not a licensed inspection.",
+    "url": f"{BASE}/florida-snowbird-departure-checklist",
+    "step": [
+        {"@type": "HowToStep", "name": "Set the water protocol", "text": "Decide whether the main stays on or is shut off, know the shutoff location, and write that setting for anyone who checks the house."},
+        {"@type": "HowToStep", "name": "Set HVAC for vacancy", "text": "Choose an unoccupied cooling setpoint, confirm the system runs, and replace a dirty filter."},
+        {"@type": "HowToStep", "name": "Secure kitchen and mail", "text": "Clear perishables, decide refrigerator status, and hold or forward mail so the house does not look empty."},
+        {"@type": "HowToStep", "name": "Storm-prep and lock up", "text": "Secure outdoor items, lock windows and doors, and leave access instructions with a trusted contact — not on a public form."},
+        {"@type": "HowToStep", "name": "Check insurance and follow-through", "text": "Read vacancy-clause rules, then schedule Pinellas Home Watch if you want dated photo reports while you are away."},
+    ],
+}
 
 OFFER_CATALOG = {
     "@type": "OfferCatalog",
@@ -759,6 +869,7 @@ RELATED = [
     ("/home-watch-pinellas", "Home Watch Pinellas", None),
     ("/home-watch-pricing", "Home Watch pricing", None),
     ("/home-watch-checklist", "Home Watch checklist", None),
+    ("/florida-snowbird-departure-checklist", "Snowbird departure checklist", None),
     ("/rental-turnover-handyman", "Rental turnover", None),
     ("/hurricane-repair-handyman-pinellas", "Storm property checks", None),
     ("/service-areas", "Service areas", None),
@@ -845,6 +956,30 @@ def main() -> int:
             sidebar_p="Tell us the city and whether you need interior access. No alarm or gate codes.",
             form_html=SIMPLE_FORM.format(fid="hw-check", slug="home-watch-checklist"),
             extra_css=TABLE_CSS,
+        ),
+        "florida-snowbird-departure-checklist.html": page(
+            slug="florida-snowbird-departure-checklist",
+            title="Florida Snowbird Departure Checklist | Before You Leave for the Season",
+            description="Florida snowbird departure checklist: water, thermostat, mail, storm prep, access, and insurance notes before you leave. Then Pinellas Home Watch can check the house while you’re away.",
+            h1="Florida Snowbird Departure Checklist: What to Do Before You Leave",
+            eyebrow="Homeowner close-up list · Not a Home Watch visit",
+            lead="A practical close-up list for seasonal Florida homeowners — water, HVAC, mail, storm prep, and insurance — then a path to scheduled Pinellas Home Watch if you do not want to rely on a neighbor.",
+            crumb="Snowbird departure checklist",
+            body=SNOWBIRD_BODY,
+            faqs=SNOWBIRD_FAQS,
+            faq_heading="Departure questions",
+            faq_intro="What you handle before you fly north, and how Pinellas Home Watch fits after you leave.",
+            extra_graph=[SNOWBIRD_HOWTO],
+            related=[RELATED[0], RELATED[1], RELATED[2], RELATED[5], RELATED[6], ("/Services/handyman", "Handyman services", None)],
+            cta_h2="Want checks after you leave?",
+            cta_p="Don't want to rely on a neighbor while you're gone? Knight Group Home Watch provides scheduled photo-documented checks throughout Pinellas County.",
+            cta_primary=("/home-watch-pinellas", "Pinellas Home Watch"),
+            cta_secondary=("/home-watch-pricing", "Home Watch pricing"),
+            sidebar_title="Ask about Home Watch after you leave",
+            sidebar_p="Pinellas property city is enough to start. No alarm or gate codes.",
+            form_html=SIMPLE_FORM.format(fid="hw-snow", slug="florida-snowbird-departure-checklist"),
+            extra_css=TABLE_CSS,
+            main_entity_fragment="howto",
         ),
     }
     for name, html in pages.items():

@@ -81,6 +81,11 @@ CORE_PAGE_QUERIES: dict[str, list[str]] = {
         "home watch vs house sitting",
         "vacant home inspection checklist",
     ],
+    "florida-snowbird-departure-checklist.html": [
+        "florida snowbird departure checklist",
+        "what to do before leaving florida house for summer",
+        "snowbird house closing checklist florida",
+    ],
 }
 
 

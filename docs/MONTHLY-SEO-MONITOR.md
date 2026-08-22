@@ -17,8 +17,8 @@ Check:
 4. Homepage carousel still capped at 8 featured jobs.
 5. Public electrical/plumbing/mold/roof/window claims still match `handyman-scope-florida`.
 6. About page still says Vince is **Co-Owner & Field Operations Lead**, not sole owner, and does not claim he personally performs every job.
-7. No Lutz GBP, no named unproven contractor, no Home Watch expansion outside Pinellas.
-8. No mass 301s. Preserve pricing, FAQs, city URLs, and Home Watch cluster.
+7. No Lutz GBP, no named unproven contractor, no dedicated `/lutz-handyman` until several completed jobs. Lutz / North Tampa may appear as an expanding route on `/service-areas`.
+8. No mass 301s. Preserve pricing, FAQs, city URLs, and Home Watch cluster. Home Watch stays Pinellas-first.
 9. Callers mentioning ChatGPT: note the landing URL they used (homepage vs `/pricing` vs `/home-watch-pinellas`) in the monthly log.
 
 AI / search visibility while the site evolves:

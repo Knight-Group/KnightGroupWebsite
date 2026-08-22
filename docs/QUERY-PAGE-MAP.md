@@ -23,7 +23,8 @@ Use this map when editing SEO copy, internal links, schema names, and CTAs. Each
 | `home watch Pinellas County`, `home watch services`, `home watch services near me`, `snowbird home watch`, `seasonal home watch`, `vacation home watch` | `/home-watch-pinellas` | `/`, `/services`, `/service-areas` | Recurring visual property checks for seasonal, second, and vacant homes |
 | `vacant property checks`, `vacant home watch`, `check my house while I'm away`, `unoccupied home monitoring` | `/home-watch-pinellas` | `/home-watch-checklist`, `/rental-turnover-handyman` | Vacant, travel, or between-tenant property observation |
 | `home watch pricing`, `home watch cost`, `weekly home watch pricing` | `/home-watch-pricing` | `/home-watch-pinellas` | Plan and add-on pricing for Home Watch |
-| `what does home watch check`, `home watch checklist`, `home watch vs house sitting` | `/home-watch-checklist` | `/home-watch-pinellas` | Visit scope and reporting, not a licensed home inspection |
+| `what does home watch check`, `home watch checklist`, `home watch vs house sitting` | `/home-watch-checklist` | `/home-watch-pinellas`, `/florida-snowbird-departure-checklist` | Visit scope and reporting, not a licensed home inspection |
+| `Florida snowbird departure checklist`, `what to do before leaving Florida house` | `/florida-snowbird-departure-checklist` | `/home-watch-pinellas`, `/home-watch-checklist` | Top-of-funnel close-up list before hiring Home Watch |
 | `Clearwater home watch` | `/home-watch-pinellas` until GSC justifies `/clearwater-home-watch` | `/home-watch-checklist` | City-qualified Home Watch; do not create city pages yet |
 
 ## Page Roles
@@ -33,6 +34,7 @@ Use this map when editing SEO copy, internal links, schema names, and CTAs. Each
 - `/pricing` owns pricing-intent queries and should link to service pages with clear job-type cards.
 - `/home-watch-pinellas` owns Home Watch and vacant-property-check queries for Pinellas County. Do not spin city Home Watch URLs until Search Console shows separate demand.
 - `/home-watch-pricing` owns Home Watch cost queries. Handyman hourly rates stay on `/pricing`.
+- `/florida-snowbird-departure-checklist` is a homeowner close-up asset. Do not duplicate it into city Home Watch pages.
 - City pages own city-qualified handyman terms and should link to service-specific proof.
 - Gallery detail pages are proof assets, not primary money pages. They should support service and city pages with before/after evidence.
 

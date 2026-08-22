@@ -26,6 +26,7 @@ STATIC_PAGES = [
     ("/home-watch-pinellas", "0.90", "weekly"),
     ("/home-watch-pricing", "0.86", "monthly"),
     ("/home-watch-checklist", "0.84", "monthly"),
+    ("/florida-snowbird-departure-checklist", "0.80", "monthly"),
 ]
 
 MAJOR_SERVICES = [
