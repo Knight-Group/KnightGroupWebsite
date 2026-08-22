@@ -54,8 +54,16 @@ def load_facts() -> dict[str, Any]:
     return json.loads(FACTS_PATH.read_text(encoding="utf-8"))
 
 
+# Neighborhood labels that must stay in prose, never Schema.org City.
+SCHEMA_NOT_CITIES = frozenset({"North Tampa"})
+
+
 def city_nodes(names: list[str]) -> list[dict[str, str]]:
-    return [{"@type": "City", "name": f"{name}, FL"} for name in names]
+    return [
+        {"@type": "City", "name": f"{name}, FL"}
+        for name in names
+        if name not in SCHEMA_NOT_CITIES
+    ]
 
 
 def county_nodes(names: list[str]) -> list[dict[str, str]]:

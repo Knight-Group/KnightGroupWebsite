@@ -124,7 +124,7 @@ def legacy_fallback(path: str) -> str:
     fallbacks = {
         "index.html": "Registered Safety Harbor handyman serving Pinellas County. Drywall, doors, carpentry, painting, and punch-list repairs. Free written estimate.",
         "services.html": "Handyman services in Tampa Bay: repairs, drywall, carpentry, painting, doors, Home Watch, and licensed-trade coordination.",
-        "service-areas.html": "Handyman service areas across Pinellas, northwest Hillsborough, and west Pasco. Lutz/North Tampa by confirmation. No Lutz office.",
+        "service-areas.html": "Handyman service areas across Pinellas, Hillsborough, and west Pasco — including Temple Terrace. Lutz / North Tampa by confirmation. No Lutz office.",
     }
     return fallbacks.get(path, "")
 

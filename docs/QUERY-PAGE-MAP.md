@@ -1,8 +1,8 @@
 # Knight Group Query-To-Page Map
 
-Source audit: `gsc-audit/2026-07-08`.
+Source audits: `gsc-audit/2026-07-08` (map draft) and **`gsc-audit/2026-08-19` (control group)**. After recrawl, compare clusters against `E:\All Client Websites\KnightGroupWebsite\gsc-audit\2026-08-19\CONTROL-GROUP.md`.
 
-Use this map when editing SEO copy, internal links, schema names, and CTAs. Each high-value query cluster should have one primary landing page and a small set of supporting pages.
+Use this map when editing SEO copy, internal links, schema names, and CTAs. Each high-value query cluster should have one primary landing page and a small set of supporting pages. Do not create a new URL when this map already assigns ownership.
 
 ## Primary Money Queries
 
@@ -26,6 +26,7 @@ Use this map when editing SEO copy, internal links, schema names, and CTAs. Each
 | `what does home watch check`, `home watch checklist`, `home watch vs house sitting` | `/home-watch-checklist` | `/home-watch-pinellas`, `/florida-snowbird-departure-checklist` | Visit scope and reporting, not a licensed home inspection |
 | `Florida snowbird departure checklist`, `what to do before leaving Florida house` | `/florida-snowbird-departure-checklist` | `/home-watch-pinellas`, `/home-watch-checklist` | Top-of-funnel close-up list before hiring Home Watch |
 | `Clearwater home watch` | `/home-watch-pinellas` until GSC justifies `/clearwater-home-watch` | `/home-watch-checklist` | City-qualified Home Watch; do not create city pages yet |
+| `commercial handyman near me` | Future: Property Manager & Commercial Handyman Services (serious landing page, not `/commercial-handyman-near-me`) | `/rental-turnover-handyman`, `/service-areas`, `/pricing` | 502 impressions at pos 27.6 in the Aug 19 baseline — add only as a real PM/commercial page |
 
 ## Page Roles
 

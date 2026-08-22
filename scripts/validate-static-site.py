@@ -146,6 +146,8 @@ def content_errors(rel: Path, text: str, parser: PageParser) -> list[str]:
         errors.append(f"{rel}: global priceRange $75-$200 is still present")
     if "/#founder" in schema_blob:
         errors.append(f"{rel}: Vince entity still uses #founder instead of #vince-knight")
+    if re.search(r'"@type"\s*:\s*"City"[^}]*"North Tampa', schema_blob, flags=re.S):
+        errors.append(f"{rel}: North Tampa must not be a Schema.org City — use Tampa/Lutz and prose")
     for marker in COMPETITOR_MARKERS:
         if marker in schema_lower:
             errors.append(f"{rel}: JSON-LD contains competitor or imported business copy")

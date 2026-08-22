@@ -129,6 +129,7 @@
         "Carrollwood",
         "Northdale",
         "Egypt Lake-Leto",
+        "Temple Terrace",
         "Holiday",
         "Trinity",
         "New Port Richey",
@@ -143,11 +144,11 @@
     "expanding": {
       "label": "Expanding handyman route — address confirmation required",
       "cities": ["Lutz", "North Tampa"],
-      "notes": "No dedicated Lutz office, GBP, local phone, named local team, or /lutz-handyman page."
+      "notes": "No dedicated Lutz office, GBP, local phone, named local team, or /lutz-handyman page. North Tampa is a neighborhood label in prose only — schema uses Tampa and Lutz, never a Schema.org City named North Tampa."
     },
     "confirmFirst": {
       "label": "Confirm first",
-      "cities": ["Temple Terrace", "Land O' Lakes"]
+      "cities": ["Land O' Lakes"]
     },
     "outside": {
       "label": "Outside current marketing",
@@ -183,7 +184,8 @@
         "Citrus Park",
         "Carrollwood",
         "Northdale",
-        "Egypt Lake-Leto"
+        "Egypt Lake-Leto",
+        "Temple Terrace"
       ],
       "counties": ["Hillsborough County"]
     },

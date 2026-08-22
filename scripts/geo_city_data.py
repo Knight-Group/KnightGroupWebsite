@@ -418,7 +418,7 @@ COUNTY_PROFILES: dict[str, dict] = {
     "hillsborough": {
         "hub_name": "Hillsborough County",
         "character": "Hillsborough coverage focuses on northwest neighborhoods such as Westchase, Carrollwood, Citrus Park, Town 'n' Country, and nearby Tampa addresses that fit the current week’s route — not far south or east Hillsborough.",
-        "routing": "We batch northwest Hillsborough work on planned bay crossings from Safety Harbor — Westchase, Carrollwood, and Citrus Park clusters reduce windshield time. Temple Terrace and similar edge addresses are confirmed first.",
+        "routing": "We batch northwest Hillsborough work on planned bay crossings from Safety Harbor — Westchase, Carrollwood, Citrus Park, and Temple Terrace clusters reduce windshield time. Lutz / North Tampa is an expanding route: confirm the address. There is no Lutz office.",
         "themes": [
             "AC condensate and attic leaks into drywall ceilings in slab ranches",
             "Rental turnovers near USF and employer corridors",

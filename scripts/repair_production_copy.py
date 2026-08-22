@@ -65,14 +65,14 @@ META_OVERRIDES = {
         "Pinellas County. Free written estimate."
     ),
     "hillsborough-handyman.html": (
-        "Hillsborough County handyman for northwest Tampa routes: drywall, doors, caulk, screens, and punch lists. "
-        "Address confirmation for Lutz/North Tampa."
+        "Hillsborough County handyman for Tampa, Temple Terrace, Westchase, and northwest routes. "
+        "Lutz / North Tampa by confirmation. No Lutz office."
     ),
     "services.html": (
         "Handyman services in Tampa Bay: repairs, drywall, carpentry, painting, doors, Home Watch, and licensed-trade coordination."
     ),
     "service-areas.html": (
-        "Handyman service areas across Pinellas, northwest Hillsborough, and west Pasco. Lutz/North Tampa by confirmation. No Lutz office."
+        "Handyman service areas across Pinellas, Hillsborough, and west Pasco — including Temple Terrace. Lutz / North Tampa by confirmation. No Lutz office."
     ),
     "pricing-handyman-by-the-hour.html": (
         "Hourly handyman rates in Pinellas County: $150 first hour and $75 after. No two-hour minimum. Free written estimate."
