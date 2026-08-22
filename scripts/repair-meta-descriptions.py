@@ -50,12 +50,12 @@ MAJOR_SERVICE_META = {
         "punch-list work. No 2-hour minimum. Registered and insured. Free written estimate."
     ),
     "Services/plumbing-services.html": (
-        "Plumbing diagnosis in Pinellas County from a journeyman-background owner. "
-        "Knight Group is not a licensed plumber; potable-water connections are referred. Free estimate."
+        "Faucet, toilet, sink, and fixture plumbing in Pinellas County. Not a licensed plumbing contractor; "
+        "repipes and sewer work are referred. Free estimate."
     ),
     "Services/electrical-work.html": (
-        "Electrical diagnosis in Pinellas County. Florida requires a license for fans, fixtures, "
-        "outlets, and switches. We coordinate licensed electricians. Free written estimate."
+        "Ceiling fans, light fixtures, switches, and outlet swaps in Pinellas County on existing circuits. "
+        "Not a licensed electrician. Free written estimate."
     ),
     "Services/carpentry-framing.html": (
         "Carpentry and framing in Pinellas County: trim, shelving, fence boards, door frames, and small "

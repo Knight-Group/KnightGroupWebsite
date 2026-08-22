@@ -49,12 +49,12 @@ META_OVERRIDES = {
         "Not a 24/7 dispatch service. Call (813) 649-3341."
     ),
     "Services/electrical-work.html": (
-        "Electrical assessment, bulbs, cover plates, and electrician coordination in Pinellas County. "
-        "Wiring, fixtures, fans, switches and outlets are referred."
+        "Ceiling fans, light fixtures, switches, and outlet swaps in Pinellas County on existing circuits. "
+        "Not a licensed electrician. Free written estimate."
     ),
     "Services/plumbing-services.html": (
-        "Plumbing-related diagnosis, leak assessment, and finish closeout in Pinellas County. "
-        "Potable-water connections are referred to a licensed plumber."
+        "Faucet, toilet, sink, and fixture plumbing in Pinellas County. Not a licensed plumbing contractor; "
+        "repipes and sewer work are referred. Free written estimate."
     ),
     "Services/handyman.html": (
         "Registered Safety Harbor handyman for Pinellas County drywall, doors, carpentry, painting, and punch lists. "
@@ -148,24 +148,24 @@ COMMERCIAL_REPLACEMENTS = [
         "We handle screen, hardware, weatherstripping, and eligible window maintenance. Full window-unit replacement is referred when licensed or permitted work is required.",
     ),
     (
-        "$75 per additional hour for common handyman repairs, punch-list work, fixture swaps, caulking, sealing, and small drywall patches.",
         "$75 per additional hour for common handyman repairs, punch-list work, drywall patches, door adjustments, caulking, screens, and shelving.",
+        "$75 per additional hour for common handyman repairs, punch-list work, fixture swaps, caulking, sealing, and small drywall patches.",
     ),
     (
-        "Running toilets, minor leaks, and shutoff fixes",
         "Visible leak assessment, finish closeout, and licensed-plumber coordination when potable-water work is required",
+        "Faucets, shutoffs, fixtures, and small leaks on existing connections",
     ),
     (
-        "Fixture swaps",
         "Eligible hardware and finish repairs",
+        "Fixture swaps",
     ),
     (
-        "fixture swaps",
         "eligible hardware and finish repairs",
+        "fixture swaps",
     ),
     (
-        "fixture installs",
         "heavier mounting and carpentry",
+        "fixture installs",
     ),
 ]
 

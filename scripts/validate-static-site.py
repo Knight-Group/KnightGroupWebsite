@@ -37,13 +37,12 @@ COMMERCIAL_24_7 = (
     "available 24/7",
 )
 COMMERCIAL_SCOPE = (
-    "fixture swaps",
-    "fixture installs",
-    "outlet swap",
-    "ceiling fan installation",
-    "light fixture installation",
+    "new circuit install",
+    "panel upgrade",
+    "whole-home rewiring",
+    "sewer main replacement",
+    "gas line installation",
     "full window unit swaps",
-    "appliance hookup",
 )
 REFERRAL_HINTS = (
     "referred",

@@ -43,6 +43,26 @@ GALLERY_META: dict[str, str] = {
         "Wooden fence repair before and after in Pinellas County — collapsed and leaning sections rebuilt "
         "with new posts and bracing by Knight Group Handyman. Registered and insured. Free estimate."
     ),
+    "ceiling-fan-and-light-repair-c977b5e-before-after": (
+        "Ceiling fan and light repair before and after in Pinellas County — hung and wired on an existing "
+        "box by Knight Group Handyman. Registered and insured. Free written estimate."
+    ),
+    "ceiling-fan-repair-1e73090-before-after": (
+        "Ceiling fan repair before and after in Pinellas County — replacement hung on the existing box by "
+        "Knight Group Handyman. Registered and insured. Free estimate."
+    ),
+    "ballast-light-fixture-bbe38e2-before-after": (
+        "Ballast and light fixture replacement before and after in Pinellas County by Knight Group Handyman. "
+        "Registered and insured. Free written estimate."
+    ),
+    "a-wall-outlet-repair-93788a6-before-after": (
+        "Wall outlet repair before and after in Pinellas County — like-for-like receptacle swap on an existing "
+        "box by Knight Group Handyman. Registered and insured. Free estimate."
+    ),
+    "secure-outlets-5be7424-before-after": (
+        "Loose outlet repair before and after in Pinellas County — receptacles reseated in existing boxes by "
+        "Knight Group Handyman. Registered and insured. Free estimate."
+    ),
     "door-lock-repair-before-after": (
         "Door lock repair before and after in Pinellas County — misaligned hardware adjusted and resecured "
         "by Knight Group Handyman. Registered and insured. Free written estimate."
@@ -319,6 +339,61 @@ GALLERY_BODY: dict[str, str] = {
 <li>Dried the cabinet base and left proof photos</li>
 </ul>
 <p>Related: <a href="/Services/plumbing-services">plumbing services</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+""",
+    "ceiling-fan-and-light-repair-c977b5e-before-after": """
+<h3>Ceiling fan and light repair</h3>
+<p>This before-and-after composite shows a Pinellas County ceiling fan and light repair Knight Group completed on an existing box — balancing, wiring at the fan canopy, and a working light kit after the old unit failed.</p>
+<ul>
+<li>Removed the failed fan and light assembly from the existing ceiling box</li>
+<li>Checked the box support before hanging the replacement</li>
+<li>Made the canopy connections and tested fan speeds and the light</li>
+<li>Left before-and-after proof for the homeowner</li>
+</ul>
+<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+""",
+    "ceiling-fan-repair-1e73090-before-after": """
+<h3>Ceiling fan repair</h3>
+<p>This composite documents a ceiling fan repair in a Pinellas County home. Knight Group diagnosed the failed fan, hung the replacement on the existing box, and confirmed smooth operation.</p>
+<ul>
+<li>Diagnosed wobble, dead motor, or failed light kit before ordering parts</li>
+<li>Hung the replacement fan on the existing, suitable ceiling box</li>
+<li>Balanced blades and tested speeds before turnover</li>
+<li>Left before-and-after proof for the owner</li>
+</ul>
+<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+""",
+    "ballast-light-fixture-bbe38e2-before-after": """
+<h3>Ballast and light fixture replacement</h3>
+<p>This before-and-after composite is a fluorescent ballast / light-fixture job Knight Group completed. Humming, flickering, or dead lamps are common office and utility-room calls.</p>
+<ul>
+<li>Confirmed the fixture was on an existing circuit before opening the housing</li>
+<li>Replaced the failed ballast or converted the fixture as scoped</li>
+<li>Installed working lamps and tested the circuit</li>
+<li>Left before-and-after proof for the owner</li>
+</ul>
+<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+""",
+    "a-wall-outlet-repair-93788a6-before-after": """
+<h3>Wall outlet repair</h3>
+<p>This composite shows a wall outlet repair Knight Group completed on an existing box — a loose, damaged, or dead receptacle replaced so plugs seat and hold power again.</p>
+<ul>
+<li>Confirmed the circuit and shut power off at the breaker before opening the box</li>
+<li>Replaced the failed outlet in the existing box</li>
+<li>Seated the cover plate and tested with a plug-in tester</li>
+<li>Left before-and-after proof for the homeowner</li>
+</ul>
+<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+""",
+    "secure-outlets-5be7424-before-after": """
+<h3>Securing loose outlets</h3>
+<p>Loose receptacles that sink into the wall are a common punch-list call. This composite shows outlets reseated and secured in the existing boxes so plugs sit flush.</p>
+<ul>
+<li>Opened the existing boxes and checked device and yoke condition</li>
+<li>Replaced or reseated outlets so they sit flush with the wall</li>
+<li>Installed cover plates and tested each location</li>
+<li>Left before-and-after proof for the owner</li>
+</ul>
+<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
 """,
     "door-wedge-before-after": """
 <h3>Door wedge installation</h3>

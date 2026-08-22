@@ -76,7 +76,7 @@ NICHE_BODY: dict[str, str] = {
 </ul>
 
 <h2>When a sink repair needs a licensed plumber</h2>
-<p>Florida DBPR treats plumbing that connects lines to drinking water as licensed work. Knight Group diagnoses supply lines, traps, gaskets, and shutoffs, then refers a licensed plumber for potable-water connections. Closeout drywall and paint can stay with our crew.</p>
+<p>Fixture plumbing on existing connections is everyday Knight Group work: faucets, toilets, sinks, disposals, showerheads, shutoffs, and traps. Repipes, sewer mains, gas, and new rough-in are referred. Closeout drywall and paint can stay with our crew.</p>
 
 <h3>After the leak: drywall and cabinet drying</h3>
 <p>Many sink calls include swollen cabinet bottoms or stained drywall. Knight Group can patch and paint after plumbing stabilizes. See <a href="/Services/water-damage-repair">water damage repair</a>, <a href="/Services/faucet-replacement">faucet replacement</a>, and <a href="/pricing-plumbing-repair-prices">handyman plumbing prices</a>.</p>
@@ -338,7 +338,7 @@ NICHE_BODY: dict[str, str] = {
 <li>Skirting panels, vents, and access door adjustments</li>
 <li>Interior door planing and latch alignment on thinner jambs</li>
 <li>Drywall and panel repairs in humid bath zones</li>
-<li>Hardware and finish repairs; potable-water connections are referred</li>
+<li>Hardware and finish repairs; repipes and sewer work are referred</li>
 </ul>
 
 <h2>Respect for occupied and rental units</h2>

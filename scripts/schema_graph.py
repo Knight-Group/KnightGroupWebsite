@@ -419,12 +419,12 @@ def pricing_offer_catalog() -> dict[str, Any]:
             {
                 "@type": "Offer",
                 "name": "Minor plumbing repair visit",
-                "description": "Plumbing-related diagnosis, visible leak assessment, finish closeout, and eligible handyman-scope maintenance. Licensed plumbing and potable-water connections are referred.",
+                "description": "Faucet, shutoff, fixture, and small-leak repairs on existing connections. Repipes, sewer mains, and gas work are referred.",
                 "url": f"{BASE}/pricing",
                 "priceCurrency": "USD",
                 "itemOffered": _nested_service(
                     "Minor plumbing repair visit",
-                    "Plumbing-related diagnosis and licensed-plumber coordination",
+                    "Handyman plumbing fixture repair and minor plumbing repair",
                 ),
                 "priceSpecification": [
                     {
@@ -446,7 +446,7 @@ def pricing_offer_catalog() -> dict[str, Any]:
             {
                 "@type": "Offer",
                 "name": "Specialty install and repair visit",
-                "description": "Heavier installs, higher-liability work, TV mounting without electrical connections, large drywall, and heavy-item handling.",
+                "description": "Heavier installs, higher-liability work, fixture installs, TV mounting, and appliance hookup support.",
                 "url": f"{BASE}/pricing",
                 "priceCurrency": "USD",
                 "itemOffered": _nested_service(

@@ -17,15 +17,15 @@
     {
       "slug": "plumbing-services",
       "name": "Plumbing Services",
-      "serviceType": "Plumbing-related diagnosis and licensed-plumber coordination",
-      "description": "Plumbing-related diagnosis, visible leak assessment, finish closeout and eligible handyman-scope maintenance. Work requiring licensed plumbing or potable-water connections is referred.",
+      "serviceType": "Handyman plumbing fixture repair and minor plumbing repair",
+      "description": "Faucet, toilet, sink, shutoff, and fixture repairs on existing connections. Repipes, sewer mains, gas, and new rough-in are referred.",
       "image": "plumbing.jpg"
     },
     {
       "slug": "electrical-work",
       "name": "Electrical Work",
       "serviceType": "Electrical assessment and licensed-electrician coordination",
-      "description": "Electrical issue assessment, bulb and cover-plate changes, eligible non-wiring work, and licensed-electrician coordination. Wiring, fixtures, fans, switches and outlets are referred.",
+      "description": "Ceiling fans, light fixtures, switches, and like-for-like outlet swaps on existing circuits. New circuits and panel work are referred.",
       "image": "electrical.jpg"
     },
     {

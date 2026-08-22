@@ -187,8 +187,8 @@ REPLACEMENTS: list[tuple[str, str]] = [
         "<li>Drywall, trim, doors, screens, and punch-list repairs</li>",
     ),
     (
-        "<li>Cover-plate and bulb changes; electrical connections referred</li>",
-        "<li>Cover-plate and bulb changes; electrical connections referred</li>",
+        "<li>Like-for-like outlet and switch swaps, ceiling fans, and light fixtures</li>",
+        "<li>Like-for-like outlet and switch swaps, ceiling fans, and light fixtures</li>",
     ),
     (
         "<li>Interior door adjustments, hardware, and window-screen repair</li>",

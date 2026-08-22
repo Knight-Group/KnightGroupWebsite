@@ -3,15 +3,16 @@
 EXPANSIONS = {
     "plumbing-services": """
 <h2>Plumbing diagnosis in Clearwater and across Pinellas County</h2>
-<p>Search demand for sink leaks in Clearwater usually starts with water under the cabinet, a faucet that will not shut off, or a drain that will not clear. Knight Group is based in Safety Harbor. Owner Vince Knight has <strong>15 years of journeyman plumbing experience</strong> — that is diagnostic skill, not a current plumbing contractor license.</p>
-<p>Florida DBPR treats plumbing that connects lines to drinking water as licensed work. Knight Group does not advertise toilet, faucet, disposal, or shutoff replacement as unlicensed handyman services. We diagnose the failure, stop what we can lawfully stabilize, and refer a licensed plumber when the repair connects to potable water.</p>
+<p>Search demand for sink leaks in Clearwater usually starts with water under the cabinet, a faucet that will not shut off, or a drain that will not clear. Knight Group is based in Safety Harbor. Owner Vince Knight has <strong>15 years of journeyman plumbing experience</strong> — that is diagnostic skill and fixture work, not a current plumbing contractor license.</p>
+<p>Faucets, toilets, sinks, disposals, shutoffs, traps, and showerheads on existing connections are everyday Knight Group work. Repipes, sewer mains, gas lines, and new rough-in are referred to a licensed plumber.</p>
 
 <h3>What we handle vs. what we refer</h3>
 <ul>
-<li>Diagnosis of leaks, failed shutoffs, and fixture problems before anyone opens a wall</li>
-<li>Caulk, seal, and finish repairs around fixtures after licensed plumbing is complete</li>
-<li>Drain observations and non-potable cleanup that does not tap drinking-water lines</li>
-<li>Coordination with a licensed plumber, then drywall and paint closeout on the same team</li>
+<li>Faucet, toilet, sink, disposal, and fixture swaps on existing connections</li>
+<li>Shutoff valves, traps, supply lines, and small leak repairs</li>
+<li>Drain clearing and fixture tune-ups</li>
+<li>Caulk, drywall, and paint closeout after the plumbing work</li>
+<li>Referral for repipes, sewer mains, gas, and permitted rough-in</li>
 </ul>
 
 <h2>Experience without overclaiming a license</h2>
@@ -19,13 +20,13 @@ EXPANSIONS = {
 
 <h3>When to call Knight Group first</h3>
 <ul>
-<li>You need a same-day look at an active drip so we can triage licensed vs. finish work</li>
-<li>A rental turnover includes mixed punch-list items plus a plumbing question</li>
-<li>A leak already damaged drywall and you need documentation plus repair closeout</li>
+<li>You need a same-day look at an active drip or a failed faucet</li>
+<li>A rental turnover includes mixed punch-list items plus fixture plumbing</li>
+<li>A leak already damaged drywall and you need both trades in one crew</li>
 </ul>
 
 <h2>Local plumbing questions in Safety Harbor and Clearwater</h2>
-<p>Describe the fixture, the urgency, and the address. We provide <a href="/booking">free written estimates</a> for work Knight Group can legally perform, and a licensed-trade referral when DBPR requires it.</p>
+<p>Describe the fixture, the urgency, and the address. We provide <a href="/booking">free written estimates</a> for fixture plumbing and a licensed-trade referral when the job is a repipe, sewer main, or gas line.</p>
 <p>See also: <a href="/Services/emergency-services">urgent property-damage response</a>, <a href="/Services/general-repairs">general repairs</a> for drywall follow-up, and <a href="/pinellas-handyman">Pinellas coverage</a>.</p>
 """,
     "general-repairs": """
@@ -68,21 +69,21 @@ EXPANSIONS = {
 <p>Knight Group is registered and insured in Florida. Vince Knight serves as Co-Owner & Field Operations Lead, with vetted local field professionals dispatched from Safety Harbor. Browse the <a href="/galleries">project gallery</a> for local proof, or read reviews on our <a href="/about#about-reviews">about page</a>.</p>
 """,
     "electrical-work": """
-<h2>Electrical diagnosis — not unlicensed connection work</h2>
-<p>Florida DBPR is explicit: if you pay someone to perform even the simplest electrical work, such as connecting two wires, you must hire a licensee. Installing ceiling fans or light fixtures for compensation, and installing or replacing outlets and switches, requires a DBPR electrical license.</p>
-<p>Knight Group does not advertise those tasks as handyman services. We diagnose what failed, change bulbs and cover plates, protect the work area, and coordinate a licensed electrician. After licensed electrical work, we handle drywall and paint closeout.</p>
+<h2>Fans, fixtures, switches — and when we refer</h2>
+<p>Knight Group hangs ceiling fans, swaps light fixtures, and replaces switches and outlets on existing circuits across Pinellas County. We are not a licensed electrician. New circuits, panel work, aluminum wiring, and rewires are referred.</p>
+<p>That is the work in the project gallery: fan hanging, fixture swaps, ballast replacements, and outlet repairs. After the electrical work, we handle drywall and paint closeout so you are not hiring a second vendor.</p>
 
 <h3>What we will do</h3>
 <ul>
-<li>On-site diagnosis and photos so a licensed electrician has a clear starting point</li>
-<li>Light-bulb and cover-plate changes that do not require wiring connections</li>
-<li>Drywall, texture, and paint after a licensed electrician finishes a box or device</li>
-<li>Honest routing instead of “like-for-like” language that does not create a license exemption</li>
+<li>Ceiling fan hanging and repair on existing, suitable boxes</li>
+<li>Light fixture swaps, ballast and fluorescent-to-LED upgrades</li>
+<li>Like-for-like outlet, switch, dimmer, and GFCI replacements</li>
+<li>Drywall, texture, and paint after the install</li>
 </ul>
 
 <h2>What requires a licensed electrician</h2>
-<p>Ceiling fans, light fixtures, outlets, switches, GFCIs, new circuits, panel work, and aluminum wiring all need a licensed electrician when done for compensation. Permit exemptions are not contractor-license exemptions.</p>
-<p>Pair with <a href="/Services/general-repairs">general repairs</a> when drywall or paint follows licensed electrical work. Read <a href="/handyman-scope-florida">handyman scope in Florida</a>.</p>
+<p>New circuits, panel upgrades, aluminum wiring, and whole-home rewires need a licensed electrician. Permit exemptions are not contractor-license exemptions.</p>
+<p>Pair with <a href="/Services/general-repairs">general repairs</a> when drywall or paint follows the install. Read <a href="/handyman-scope-florida">handyman scope in Florida</a>.</p>
 """,
     "carpentry-framing": """
 <h2>Carpentry services near you in Pinellas County</h2>
@@ -179,8 +180,8 @@ EXPANSIONS = {
 
 EXTRA_FAQ = {
     "plumbing-services": [
-        ("Can a handyman replace a toilet or faucet in Florida?", "DBPR treats plumbing that connects lines to drinking water as licensed work. Knight Group diagnoses the failure and refers a licensed plumber for those connections. Vince Knight’s journeyman background makes that first conversation clearer."),
-        ("What plumbing work can Knight Group handle without a plumbing license?", "Diagnosis, documentation, caulk and finish repairs, and closeout after licensed plumbing. Connecting toilets, faucets, disposals, or shutoffs to potable water is referred."),
+        ("Can a handyman replace a toilet or faucet in Florida?", "Yes. Faucets, toilets, sinks, disposals, and shutoffs on existing connections are everyday Knight Group work. Vince Knight’s journeyman background informs that fixture work. Repipes, sewer mains, gas, and new rough-in are referred."),
+        ("What plumbing work can Knight Group handle without a plumbing license?", "Faucets, toilets, sinks, disposals, shutoffs, traps, and fixture swaps on existing connections. Repipes, sewer mains, gas lines, and new rough-in are referred."),
         ("How much does a diagnostic visit cost?", "Standard visits are $150 for the first hour and $75 each additional hour, with no two-hour minimum. We provide a written estimate for work we can legally perform."),
     ],
     "general-repairs": [
@@ -192,8 +193,8 @@ EXTRA_FAQ = {
         ("Do you take small jobs and one-off repairs?", "Yes. No large minimum job size. If you have a short punch list, mention everything when you book so we can plan time accordingly."),
     ],
     "electrical-work": [
-        ("Can a handyman change light fixtures in Florida?", "DBPR says installing ceiling fans and light fixtures for compensation requires an electrical license, as does replacing outlets and switches. Knight Group does not perform that connection work. We diagnose and coordinate a licensed electrician."),
-        ("When do I need a licensed electrician?", "Any compensated electrical connection — fans, fixtures, outlets, switches, GFCIs, new circuits, or panel work. Changing a bulb or a cover plate does not require that license."),
+        ("Can a handyman change light fixtures in Florida?", "Yes. Replacing a fixture or hanging a fan on an existing, suitable box is standard Knight Group work. New circuits and panel work need a licensed electrician."),
+        ("When do I need a licensed electrician?", "New circuits, panel upgrades, aluminum wiring, and whole-home rewires. Fans, fixtures, switches, and like-for-like outlet swaps on existing circuits are handyman work we perform."),
     ],
     "carpentry-framing": [
         ("Do you install crown molding and trim?", "Yes — trim, baseboard, casing, and many crown profiles are part of our carpentry scope across Pinellas County."),

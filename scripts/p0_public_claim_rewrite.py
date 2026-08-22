@@ -74,23 +74,43 @@ REPLACEMENTS = [
     ),
     (
         "Florida handymen can perform minor electrical tasks such as replacing outlets, switches, light fixtures, ceiling fans, and doorbell wiring without a permit in most cases. Work requiring a permit is coordinated with a licensed electrician.",
+        "Knight Group hangs ceiling fans, swaps light fixtures, and replaces switches and outlets on existing circuits. We are not a licensed electrician — new circuits, panel work, and rewires are referred. A permit exemption is not a license exemption.",
+    ),
+    (
         "Florida DBPR requires an electrical license for compensated installation of ceiling fans, light fixtures, outlets, and switches. Knight Group diagnoses the issue and coordinates a licensed electrician. A permit exemption is not a license exemption.",
+        "Knight Group hangs ceiling fans, swaps light fixtures, and replaces switches and outlets on existing circuits. We are not a licensed electrician. New circuits, panel work, and rewires are referred. A permit exemption is not a license exemption.",
     ),
     (
         "Yes — ceiling fan installation and light fixture swaps are two of our most requested electrical services throughout Pinellas County and Safety Harbor.",
+        "Yes. Ceiling fan hanging and light-fixture swaps on existing boxes are among our most requested electrical calls in Pinellas County. New circuits and panel work are referred.",
+    ),
+    (
         "No. Compensated ceiling-fan and light-fixture installation requires a DBPR electrical license. We coordinate a licensed electrician and can handle drywall closeout afterward.",
+        "Yes. Ceiling fan hanging and light-fixture swaps on existing boxes are among our most requested electrical calls in Pinellas County. New circuits and panel work are referred.",
     ),
     (
         "Yes. GFCI outlet replacement is a standard service we perform in kitchens, bathrooms, and outdoor areas throughout Pinellas County.",
+        "Yes. GFCI, outlet, and switch swaps on existing boxes are standard handyman electrical work. Adding a new circuit or opening a panel is referred to a licensed electrician.",
+    ),
+    (
         "GFCI outlet replacement for compensation is licensed electrical work in Florida. We refer that connection work to a licensed electrician.",
+        "Yes. GFCI, outlet, and switch swaps on existing boxes are standard handyman electrical work. Adding a new circuit or opening a panel is referred to a licensed electrician.",
     ),
     (
         "Like-for-like outlet and switch swaps, ceiling fan installs, light fixture replacements, and minor electrical fixture work within handyman scope.",
+        "Like-for-like outlet and switch swaps, ceiling fan installs, light fixture replacements, and minor electrical fixture work on existing circuits.",
+    ),
+    (
         "Electrical diagnosis and licensed-electrician coordination. Knight Group does not perform compensated wiring connections.",
+        "Like-for-like outlet and switch swaps, ceiling fan installs, light fixture replacements, and minor electrical fixture work on existing circuits.",
     ),
     (
         "Handyman electrical work in Pinellas County: ceiling fans, fixtures, switches, and like-for-like replacements on existing circuits. Free written estimate.",
+        "Ceiling fans, light fixtures, switches, and outlet swaps in Pinellas County on existing circuits. Not a licensed electrician. Free written estimate.",
+    ),
+    (
         "Electrical diagnosis in Pinellas County. Florida requires a license for fans, fixtures, outlets, and switches. Free written estimate.",
+        "Ceiling fans, light fixtures, switches, and outlet swaps in Pinellas County on existing circuits. Not a licensed electrician. Free written estimate.",
     ),
     (
         "Core local positioning instead of broad, vague service-area copy.",
@@ -101,8 +121,8 @@ REPLACEMENTS = [
         "Start with the service that matches the job. Each page explains what Knight Group handles and when a licensed trade is the right call.",
     ),
     (
-        "Like-for-like outlet and switch swaps",
         "Cover-plate and bulb changes; wiring connections referred",
+        "Like-for-like outlet and switch swaps",
     ),
     (
         "45-minute outlet install: about $150 total",

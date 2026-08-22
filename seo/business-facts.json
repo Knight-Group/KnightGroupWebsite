@@ -81,17 +81,17 @@
     "globalPriceRange": null
   },
   "scopeRules": {
-    "electrical": "Electrical issue assessment, bulb and cover-plate changes, eligible non-wiring work, and licensed-electrician coordination. Electrical connections, fixtures, fans, switches, outlets and other licensed electrical work are referred.",
-    "plumbing": "Plumbing-related diagnosis, visible leak assessment, finish closeout and eligible handyman-scope maintenance. Work requiring licensed plumbing or potable-water connections is referred to a licensed plumber.",
+    "electrical": "Ceiling fans, light fixtures, switches, and like-for-like outlet swaps on existing circuits. New circuits, panel work, and rewires are referred.",
+    "plumbing": "Faucet, toilet, sink, shutoff, and fixture repairs on existing connections. Repipes, sewer mains, gas, and new rough-in are referred to a licensed plumber.",
     "doorsWindows": "Door adjustments, locks/hardware, screens, weatherstripping and eligible maintenance. Full window-unit and new exterior-door replacement is referred when licensed/permitted work is required.",
-    "emergency": "During posted hours and after-hours callback when available. Not a 24/7 dispatch service. No guaranteed response time. Electrical faults, potable-water plumbing, HVAC, roofing and structural emergencies are referred to appropriately licensed trades.",
+    "emergency": "During posted hours and after-hours callback when available. Not a 24/7 dispatch service. No guaranteed response time. Panel work, new circuits, sewer mains, HVAC, roofing and structural emergencies are referred to appropriately licensed trades.",
     "handymanExamples": [
       "drywall patches",
       "door adjustments",
       "caulk refresh",
       "screen repair",
       "shelving",
-      "mounting without wiring",
+      "ceiling fans and light fixtures",
       "carpentry",
       "heavy-item handling"
     ]
@@ -218,7 +218,7 @@
   "knowsAbout": [
     "Handyman services",
     "General home repairs",
-    "Plumbing-related diagnosis and licensed-plumber coordination",
+    "Handyman plumbing fixture repair and minor plumbing repair",
     "Drywall repair",
     "Carpentry",
     "Painting and finishing",
