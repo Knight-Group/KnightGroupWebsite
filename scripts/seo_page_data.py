@@ -386,6 +386,15 @@ TRUST_PAGES = [
         "queries": ["rental turnover punch list pinellas", "property manager handyman pinellas"],
     },
     {
+        "slug": "property-manager-handyman",
+        "title": "Property Manager Handyman | Commercial Maintenance | Pinellas",
+        "h1": "Property manager and commercial maintenance handyman",
+        "lead": "Office, retail, restaurant, and rental punch lists for property managers — not GC or structural work. One registered crew, written estimates, $150 first hour.",
+        "hero": "general-repairs.webp",
+        "breadcrumb": [("/", "Home"), ("/services", "Services"), ("", "Property manager")],
+        "queries": ["property manager handyman pinellas", "commercial maintenance handyman pinellas"],
+    },
+    {
         "slug": "handyman-scope-florida",
         "title": "Handyman Scope in Florida | Pinellas County",
         "h1": "Handyman scope in Florida",

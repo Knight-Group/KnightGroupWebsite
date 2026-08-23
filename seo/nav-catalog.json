@@ -87,6 +87,19 @@
         ]
       },
       {
+        "id": "property-care",
+        "label": "Property Care",
+        "links": [
+          { "label": "Home Watch", "href": "/home-watch-pinellas" },
+          { "label": "Home Watch Pricing", "href": "/home-watch-pricing" },
+          { "label": "Home Watch Checklist", "href": "/home-watch-checklist" },
+          { "label": "Snowbird Departure Checklist", "href": "/florida-snowbird-departure-checklist" },
+          { "label": "Rental Turnover", "href": "/rental-turnover-handyman" },
+          { "label": "Property Manager & Commercial", "href": "/property-manager-handyman" },
+          { "label": "Hurricane / Storm Property Checks", "href": "/hurricane-repair-handyman-pinellas" }
+        ]
+      },
+      {
         "id": "pricing",
         "label": "Pricing",
         "links": [

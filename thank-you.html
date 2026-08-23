@@ -48,8 +48,11 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preload" as="style" href="/CSS/hero-fx.min.css" onload="this.rel='stylesheet';this.onload=null">
+    <script src="/JS/kg-analytics.js?v=20260823-analytics"></script>
 </head>
 <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNHVDBHG" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+
     <div id="header-include"></div>
 
     <main id="main-content">
@@ -74,12 +77,27 @@
 
     <script>
     (function trackLeadSuccess() {
-        var details = {};
+        var raw = '';
         try {
-            details = JSON.parse(window.sessionStorage.getItem('kg:lastLeadSubmit') || '{}');
+            raw = window.sessionStorage.getItem('kg:lastLeadSubmit') || '';
             window.sessionStorage.removeItem('kg:lastLeadSubmit');
         } catch (error) {
-            details = {};
+            raw = '';
+        }
+        if (!raw) return;
+        var details = {};
+        try {
+            details = JSON.parse(raw);
+        } catch (error) {
+            return;
+        }
+        if (typeof window.kgAnalyticsTrack === 'function') {
+            window.kgAnalyticsTrack('form_success', Object.assign({
+                page_path: '/thank-you',
+                page_title: document.title,
+                page_type: 'thank-you'
+            }, details));
+            return;
         }
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push(Object.assign({
@@ -91,7 +109,7 @@
     })();
     </script>
     <div id="footer-include"></div>
-    <script src="/JS/includes.min.js?v=20260821-home-watch" defer></script>
+    <script src="/JS/includes.min.js?v=20260823-analytics" defer></script>
 </body>
 </html>
 

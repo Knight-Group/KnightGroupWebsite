@@ -431,6 +431,13 @@
     },
     {
       "pageType": "trust-guide",
+      "slug": "property-manager-handyman",
+      "path": "property-manager-handyman.html",
+      "canonical": "https://www.knightgroup.com/property-manager-handyman",
+      "priority": "0.86"
+    },
+    {
+      "pageType": "trust-guide",
       "slug": "handyman-scope-florida",
       "path": "handyman-scope-florida.html",
       "canonical": "https://www.knightgroup.com/handyman-scope-florida",

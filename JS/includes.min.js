@@ -21,6 +21,18 @@
     }
 })();
 
+(function kgBootAnalytics() {
+    if (window.kgEnsureAnalytics) {
+        window.kgEnsureAnalytics();
+        return;
+    }
+    if (document.querySelector('script[src*="kg-analytics.js"]')) return;
+    var script = document.createElement('script');
+    script.src = '/JS/kg-analytics.js?v=20260823-analytics';
+    script.async = true;
+    document.head.appendChild(script);
+})();
+
 (function kgEarlyPartialPrefetch() {
     window.__kgPartialCache = window.__kgPartialCache || {};
     var version = '20260821-home-watch';
@@ -577,6 +589,7 @@ ${data.message}
 (function kgLeadTracking() {
     const STORAGE_KEY = 'kg:lastLeadSubmit';
     const TRACKED_ATTR = 'data-kg-lead-tracked';
+    const ATTR_KEY = 'kg:firstTouch';
 
     function pageType() {
         const path = window.location.pathname || '/';
@@ -604,14 +617,27 @@ ${data.message}
         form.appendChild(input);
     }
 
+    function firstTouch() {
+        if (typeof window.kgAttribution === 'function') return window.kgAttribution();
+        try {
+            return JSON.parse(window.sessionStorage.getItem(ATTR_KEY) || '{}');
+        } catch (error) {
+            return {};
+        }
+    }
+
     function pushLeadEvent(eventName, details) {
+        if (typeof window.kgAnalyticsTrack === 'function') {
+            window.kgAnalyticsTrack(eventName, details);
+            return;
+        }
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push(Object.assign({
             event: eventName,
             page_path: window.location.pathname || '/',
             page_title: document.title || '',
             page_type: pageType()
-        }, details || {}));
+        }, firstTouch(), details || {}));
     }
 
     function formDetails(form) {
@@ -621,17 +647,20 @@ ${data.message}
             service_page: fieldValue(form, 'service_page'),
             request_type: fieldValue(form, 'request_type'),
             selected_service: fieldValue(form, 'service'),
+            heard_from: fieldValue(form, 'heard_from'),
             city_or_area: fieldValue(form, 'area') || fieldValue(form, 'city')
         };
     }
 
     function addAttributionFields(form) {
-        ensureHidden(form, 'landing_page', window.location.pathname || '/');
+        const touch = firstTouch();
+        const params = new URLSearchParams(window.location.search);
+        ensureHidden(form, 'landing_page', touch.landing_page || window.location.pathname || '/');
         ensureHidden(form, 'page_title', document.title || '');
-        ensureHidden(form, 'referrer', document.referrer || '');
-        ensureHidden(form, 'utm_source', new URLSearchParams(window.location.search).get('utm_source') || '');
-        ensureHidden(form, 'utm_medium', new URLSearchParams(window.location.search).get('utm_medium') || '');
-        ensureHidden(form, 'utm_campaign', new URLSearchParams(window.location.search).get('utm_campaign') || '');
+        ensureHidden(form, 'referrer', touch.referrer || document.referrer || '');
+        ensureHidden(form, 'utm_source', params.get('utm_source') || touch.utm_source || '');
+        ensureHidden(form, 'utm_medium', params.get('utm_medium') || touch.utm_medium || '');
+        ensureHidden(form, 'utm_campaign', params.get('utm_campaign') || touch.utm_campaign || '');
     }
 
     function bindForm(form) {
@@ -670,6 +699,10 @@ ${data.message}
         });
     }
 
+    function ctaLocation(link) {
+        return link.closest('header') ? 'header' : link.closest('footer') ? 'footer' : 'body';
+    }
+
     function bindPhoneLinks(root) {
         (root || document).querySelectorAll('a[href^="tel:"]').forEach(function (link) {
             if (link.dataset.kgPhoneTracked === '1') return;
@@ -678,7 +711,46 @@ ${data.message}
                 pushLeadEvent('phone_click', {
                     phone_href: link.getAttribute('href') || '',
                     cta_text: (link.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 120),
-                    cta_location: link.closest('header') ? 'header' : link.closest('footer') ? 'footer' : 'body'
+                    cta_location: ctaLocation(link)
+                });
+            });
+        });
+    }
+
+    function bindEmailLinks(root) {
+        (root || document).querySelectorAll('a[href^="mailto:"]').forEach(function (link) {
+            if (link.dataset.kgEmailTracked === '1') return;
+            link.dataset.kgEmailTracked = '1';
+            link.addEventListener('click', function () {
+                pushLeadEvent('email_click', {
+                    cta_text: (link.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 120),
+                    cta_location: ctaLocation(link)
+                });
+            });
+        });
+    }
+
+    function ctaDestination(href) {
+        try {
+            var path = new URL(href, window.location.origin).pathname.replace(/\.html$/i, '').replace(/\/$/, '') || '/';
+            if (path === '/booking') return 'booking';
+            if (path === '/contact') return 'contact';
+        } catch (error) {
+            return '';
+        }
+        return '';
+    }
+
+    function bindCtaLinks(root) {
+        (root || document).querySelectorAll('a[href]').forEach(function (link) {
+            var dest = ctaDestination(link.getAttribute('href') || '');
+            if (!dest || link.dataset.kgCtaTracked === '1') return;
+            link.dataset.kgCtaTracked = '1';
+            link.addEventListener('click', function () {
+                pushLeadEvent('cta_click', {
+                    cta_destination: dest,
+                    cta_text: (link.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 120),
+                    cta_location: ctaLocation(link)
                 });
             });
         });
@@ -689,6 +761,8 @@ ${data.message}
     window.kgInitLeadTracking = function () {
         document.querySelectorAll('form[action*="formspree.io"], form[data-kg-guard], .kg-contact-form, .kg-hero-consultation-form').forEach(bindForm);
         bindPhoneLinks(document);
+        bindEmailLinks(document);
+        bindCtaLinks(document);
     };
 
     document.addEventListener('DOMContentLoaded', window.kgInitLeadTracking);

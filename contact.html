@@ -457,6 +457,7 @@
     <script src="/JS/kg-form-guard.js?v=20260610-contact" defer></script>
     <script src="/JS/kg-redesign.js?v=20260610-contact" defer></script>
     <script>window.addEventListener('load',function(){setTimeout(function(){var l=document.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional';document.head.appendChild(l)},1500)})</script>
+    <script src="/JS/kg-analytics.js?v=20260823-analytics"></script>
 </head>
 <body class="kg-page kg-contact">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNHVDBHG" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
@@ -564,6 +565,20 @@
                                 <div class="kg-field kg-field--optional">
                                     <label for="contact-email">Email <span>(optional)</span></label>
                                     <input type="email" id="contact-email" name="email" autocomplete="email" placeholder="Only if you prefer email replies">
+                                </div>
+
+                                <div class="kg-field kg-field--optional">
+                                    <label for="contact-heard-from">How did you hear about us? <span>(optional)</span></label>
+                                    <select id="contact-heard-from" name="heard_from">
+                                        <option value="">Select one</option>
+                                        <option>Google Search</option>
+                                        <option>Google Maps</option>
+                                        <option>ChatGPT</option>
+                                        <option>Facebook</option>
+                                        <option>Nextdoor</option>
+                                        <option>Referral</option>
+                                        <option>Other</option>
+                                    </select>
                                 </div>
 
                                 <label class="visually-hidden" for="contact-hp">Leave this field blank</label>
@@ -697,6 +712,6 @@
 
     <div id="footer-include"></div>
 
-    <script src="/JS/includes.min.js?v=20260821-home-watch" defer></script>
+    <script src="/JS/includes.min.js?v=20260823-analytics" defer></script>
 </body>
 </html>

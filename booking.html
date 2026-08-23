@@ -615,6 +615,7 @@
     <script src="/JS/kg-form-guard.js?v=20260610-booking" defer></script>
     <script src="/JS/kg-redesign.js?v=20260610-booking" defer></script>
     <script>window.addEventListener('load',function(){setTimeout(function(){var l=document.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional';document.head.appendChild(l)},1500)})</script>
+    <script src="/JS/kg-analytics.js?v=20260823-analytics"></script>
 </head>
 <body class="kg-page kg-booking">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNHVDBHG" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
@@ -712,6 +713,22 @@
                                         <option>Doors &amp; Windows</option>
                                         <option>Custom Projects</option>
                                         <option>Emergency Services</option>
+                                        <option>Property Manager / Commercial Maintenance</option>
+                                        <option>Home Watch</option>
+                                    </select>
+                                </div>
+
+                                <div class="kg-field kg-field--optional">
+                                    <label for="booking-heard-from">How did you hear about us? <span>(optional)</span></label>
+                                    <select id="booking-heard-from" name="heard_from">
+                                        <option value="">Select one</option>
+                                        <option>Google Search</option>
+                                        <option>Google Maps</option>
+                                        <option>ChatGPT</option>
+                                        <option>Facebook</option>
+                                        <option>Nextdoor</option>
+                                        <option>Referral</option>
+                                        <option>Other</option>
                                     </select>
                                 </div>
 
@@ -795,6 +812,6 @@
 
     <div id="footer-include"></div>
 
-    <script src="/JS/includes.min.js?v=20260821-home-watch" defer></script>
+    <script src="/JS/includes.min.js?v=20260823-analytics" defer></script>
 </body>
 </html>
