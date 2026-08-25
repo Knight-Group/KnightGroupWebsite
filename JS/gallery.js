@@ -7,6 +7,27 @@
         }
     };
 
+    var REGULATED_TERMS = /ceiling[- ]fan|light[- ]fixture|ballast|(?:wall |secure )?outlets?|electrical|plumb|pipe[- ]repair|drain|faucet|facuet|garbage[- ]disposal|toilets?|hot water|water leaks?|\bshower\b|a\/?c service|air conditioning|hvac service|airflow service|bathroom remodel|tub surround|mold|wasps?|bee nest|pest control/i;
+
+    function isRegulatedGroup(group) {
+        if (!group) return false;
+        if (group.serviceLink === '/Services/electrical-work' || group.serviceLink === '/Services/plumbing-services') return true;
+        return REGULATED_TERMS.test([
+            group.id || '',
+            group.title || '',
+            group.description || '',
+            group.serviceLink || ''
+        ].join(' '));
+    }
+
+    function historicalTitle(value) {
+        return 'Historical project: ' + value;
+    }
+
+    function historicalDescription() {
+        return 'Past-condition documentation only. Current regulated work is routed to an appropriately licensed or registered provider.';
+    }
+
     function categoryLabel(id, categories) {
         var match = (categories || []).find(function (item) {
             return item.id === id;
@@ -53,6 +74,7 @@
     function renderLightbox() {
         var group = state.groups[state.lightbox.groupIndex];
         if (!group) return;
+        var regulated = isRegulatedGroup(group);
 
         var image = group.images[state.lightbox.imageIndex];
         var img = document.getElementById('gallery-lightbox-img');
@@ -64,10 +86,12 @@
 
         if (img) {
             img.src = encodeSrc(image.src);
-            img.alt = image.seoAlt || image.title;
+            img.alt = regulated ? historicalTitle(group.title) : (image.seoAlt || image.title);
         }
         if (eyebrow) {
-            if (image.beforeAfter) {
+            if (regulated) {
+                eyebrow.textContent = 'Historical documentation';
+            } else if (image.beforeAfter) {
                 eyebrow.textContent = 'Before & After';
             } else if (group.progression && group.images.length > 1) {
                 eyebrow.textContent = 'Stage ' + image.step + ' of ' + group.images.length;
@@ -75,25 +99,26 @@
                 eyebrow.textContent = group.title;
             }
         }
-        if (title) title.textContent = image.title;
-        if (text) text.textContent = image.description;
+        if (title) title.textContent = regulated ? historicalTitle(image.title) : image.title;
+        if (text) text.textContent = regulated ? historicalDescription() : image.description;
 
         if (prev) prev.disabled = state.lightbox.imageIndex === 0;
         if (next) next.disabled = state.lightbox.imageIndex >= group.images.length - 1;
     }
 
     function createShot(groupIndex, image, group) {
+        var regulated = isRegulatedGroup(group);
         var shot = document.createElement('button');
         shot.type = 'button';
         shot.className = 'gallery-shot';
-        shot.setAttribute('aria-label', 'Open image: ' + image.title);
+        shot.setAttribute('aria-label', 'Open image: ' + (regulated ? historicalTitle(image.title) : image.title));
 
         var media = document.createElement('div');
         media.className = 'gallery-shot__media';
 
         var img = document.createElement('img');
         img.src = encodeSrc(image.src);
-        img.alt = image.seoAlt || image.title;
+        img.alt = regulated ? historicalTitle(group.title) : (image.seoAlt || image.title);
         img.loading = 'lazy';
         img.decoding = 'async';
         media.appendChild(img);
@@ -115,11 +140,11 @@
 
         var shotTitle = document.createElement('p');
         shotTitle.className = 'gallery-shot__title';
-        shotTitle.textContent = image.title;
+        shotTitle.textContent = regulated ? historicalTitle(image.title) : image.title;
 
         var shotText = document.createElement('p');
         shotText.className = 'gallery-shot__text';
-        shotText.textContent = image.description;
+        shotText.textContent = regulated ? historicalDescription() : image.description;
 
         body.appendChild(shotTitle);
         body.appendChild(shotText);
@@ -134,6 +159,7 @@
     }
 
     function createProjectCard(group, groupIndex, categories) {
+        var regulated = isRegulatedGroup(group);
         var card = document.createElement('article');
         card.className = 'gallery-project';
         card.id = 'project-' + group.id;
@@ -150,7 +176,9 @@
 
         var eyebrow = document.createElement('span');
         eyebrow.className = 'gallery-project__eyebrow';
-        if (group.beforeAfter) {
+        if (regulated) {
+            eyebrow.textContent = 'Historical documentation';
+        } else if (group.beforeAfter) {
             eyebrow.textContent = 'Before & After';
         } else if (group.progression) {
             eyebrow.textContent = group.images.length + '-stage project';
@@ -160,11 +188,11 @@
 
         var title = document.createElement('h3');
         title.className = 'gallery-project__title';
-        title.textContent = group.title;
+        title.textContent = regulated ? historicalTitle(group.title) : group.title;
 
         var text = document.createElement('p');
         text.className = 'gallery-project__text';
-        text.textContent = group.description;
+        text.textContent = regulated ? historicalDescription() : group.description;
 
         copy.appendChild(eyebrow);
         copy.appendChild(title);
@@ -173,12 +201,12 @@
         var link = document.createElement('a');
         link.className = 'gallery-project__link';
         link.href = group.serviceLink;
-        link.textContent = 'Related service';
+        link.textContent = regulated ? 'Scope & routing' : 'Related service';
 
         var projectPage = document.createElement('a');
         projectPage.className = 'gallery-project__link gallery-project__link--page';
         projectPage.href = '/gallery/' + group.id;
-        projectPage.textContent = 'View project page';
+        projectPage.textContent = regulated ? 'View historical details' : 'View project page';
 
         head.appendChild(copy);
         head.appendChild(link);
@@ -274,7 +302,14 @@
                 return response.json();
             })
             .then(function (data) {
-                var categories = data.categories || [{ id: 'all', label: 'All projects' }];
+                var categories = (data.categories || [{ id: 'all', label: 'All projects' }]).map(function (category) {
+                    var labels = {
+                        all: 'All project photos',
+                        plumbing: 'Historical plumbing',
+                        'mold-remediation': 'Drywall / mold history'
+                    };
+                    return { id: category.id, label: labels[category.id] || category.label };
+                });
                 state.groups = data.groups || [];
                 var activeFilter = 'all';
 

@@ -212,7 +212,7 @@
     });
 
     document.querySelectorAll('.kg-intent-strip__inner').forEach(function (el) {
-      prepareEnter(el, 'top', 150, true);
+      prepareEnter(el, 'bottom', 220, true);
     });
 
     document.querySelectorAll('.kg-map-review-shell').forEach(function (el) {
@@ -500,14 +500,7 @@
       card.style.removeProperty('--kg-hero-textarea-max');
     }
 
-    var copyHeight = Math.ceil(copy.getBoundingClientRect().height);
-    var naturalShell = Math.ceil(shell.scrollHeight);
-    var target = Math.max(copyHeight, naturalShell);
-
-    if (target > 0) {
-      shell.style.setProperty('height', target + 'px', 'important');
-    }
-
+    shell.style.removeProperty('height');
     fitHeroFormToColumn();
   }
 

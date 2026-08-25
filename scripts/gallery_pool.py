@@ -3,7 +3,6 @@
 
 from __future__ import annotations
 
-import hashlib
 import html
 import json
 import re
@@ -28,46 +27,8 @@ SERVICE_PARENT_TO_CATEGORY = {
     "custom-projects": "general-repairs",
 }
 
-# Curated inline gallery images for pages that must not use category hash picks.
-SLUG_GALLERY_OVERRIDES: dict[str, list[dict[str, str]]] = {
-    "electrical-work": [
-        {
-            "src": "GalleryImages/fixtures-fans-02.webp",
-            "alt": "Ceiling fan installed on existing connection — electrical work in Pinellas County FL by Knight Group",
-            "category": "electrical",
-        },
-        {
-            "src": "GalleryImages/fixtures-fans-04.webp",
-            "alt": "Light fixture installed — electrical work in Pinellas County FL by Knight Group",
-            "category": "electrical",
-        },
-        {
-            "src": "GalleryImages/fixtures-fans-05.webp",
-            "alt": "Light fixture installation completed — electrical work in Pinellas County FL by Knight Group",
-            "category": "electrical",
-        },
-        {
-            "src": "GalleryImages/fixtures-fans-01.webp",
-            "alt": "Ceiling junction prepped for fixture or fan install — electrical work in Pinellas County FL by Knight Group",
-            "category": "electrical",
-        },
-        {
-            "src": "GalleryImages/fixtures-fans-06.webp",
-            "alt": "Electrical box ready for fixture swap — Pinellas County FL by Knight Group",
-            "category": "electrical",
-        },
-        {
-            "src": "GalleryImages/fixtures-fans-07.webp",
-            "alt": "Ceiling connection point for fan or fixture — electrical work Pinellas County FL by Knight Group",
-            "category": "electrical",
-        },
-        {
-            "src": "GalleryImages/fixtures-fans-03.webp",
-            "alt": "Light fixture mounting location prepared — electrical work in Pinellas County FL by Knight Group",
-            "category": "electrical",
-        },
-    ],
-}
+# Legacy name kept for imports. Picks now come from gallery_page_media.CATALOG.
+SLUG_GALLERY_OVERRIDES: dict[str, list[dict[str, str]]] = {}
 
 _POOL: list[dict[str, str]] | None = None
 
@@ -131,27 +92,14 @@ def pick_gallery_images(
     count: int = 4,
     category: str | None = None,
 ) -> list[dict[str, str]]:
-    override = SLUG_GALLERY_OVERRIDES.get(slug)
-    if override:
-        valid = _validated_images(override)
-        if valid:
-            if len(valid) <= count:
-                return valid[:count]
-            start = int(hashlib.sha256(slug.encode("utf-8")).hexdigest(), 16) % len(valid)
-            return [valid[(start + offset) % len(valid)] for offset in range(count)]
+    from gallery_page_media import pick_curated_images
 
-    pool = load_gallery_pool()
-    if not pool:
-        return []
+    curated = pick_curated_images(slug, count=count)
+    if curated:
+        return _validated_images(curated)
 
-    filtered = [item for item in pool if category is None or item["category"] == category]
-    if len(filtered) < count:
-        filtered = pool
-    if len(filtered) <= count:
-        return filtered[:count]
-
-    start = int(hashlib.sha256(slug.encode("utf-8")).hexdigest(), 16) % len(filtered)
-    return [filtered[(start + offset) % len(filtered)] for offset in range(count)]
+    # Do not hash-walk the raw pool — that is how hubs got fixture duplicates.
+    return []
 
 
 def _city_image_exists(filename: str) -> bool:
@@ -194,12 +142,10 @@ def _heading_insert_positions(prose: str, count: int) -> list[int]:
 
 
 def _localize_gallery_alt(alt: str, county_name: str, city_name: str) -> str:
-    if not county_name:
+    if not county_name or not alt:
         return alt
     localized = alt.replace("Pinellas County FL", f"{county_name} FL")
     localized = localized.replace("Pinellas County", county_name)
-    if city_name and "handyman project photo" in localized.lower():
-        localized = f"{city_name} handyman project photo in {county_name} FL by Knight Group"
     return localized
 
 
@@ -231,6 +177,8 @@ def pick_geo_gallery_images(
                     "src": f"Images/cities/{city_file}",
                     "alt": alt,
                     "category": "geo",
+                    "role": "area",
+                    "caption": label,
                 }
             )
 
@@ -266,9 +214,31 @@ def render_inline_figure(
         src = f"/{src_rel.lstrip('/')}{version}"
     else:
         src = f"/GalleryImages/{quote(filename)}{version}"
+    role = re.sub(r"[^a-z-]", "", str(image.get("role") or "composite").lower()) or "composite"
+    try:
+        from gallery_page_media import ROLE_LABELS
+    except ImportError:
+        ROLE_LABELS = {
+            "before": "Before",
+            "process": "Process",
+            "after": "After",
+            "composite": "Before · process · after",
+            "area": "Service area",
+        }
+    role_label = html.escape(ROLE_LABELS.get(role, "Project photo"), quote=True)
+    caption = html.escape(str(image.get("caption") or "").strip(), quote=True)
+    caption_body = f'<span class="kg-prose-photo__text">{caption}</span>' if caption else ""
+    caption_html = (
+        f'<figcaption class="kg-prose-photo__caption">'
+        f'<span class="kg-prose-photo__role">{role_label}</span>'
+        f"{caption_body}"
+        f"</figcaption>"
+    )
+    width, height = ("960", "540") if role == "composite" else ("480", "360")
     return (
-        f'\n<figure class="kg-prose-photo kg-prose-photo--{align}">'
-        f'<img src="{src}" alt="{alt}" width="480" height="360" loading="lazy" decoding="async">'
+        f'\n<figure class="kg-prose-photo kg-prose-photo--{align}" data-kg-media-role="{role}">'
+        f'<img src="{src}" alt="{alt}" width="{width}" height="{height}" loading="lazy" decoding="async">'
+        f"{caption_html}"
         f"</figure>\n"
     )
 

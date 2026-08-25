@@ -72,7 +72,8 @@ def render_service_sidebar(
                                     <li>Free written estimates</li>
                                     <li>Local Safety Harbor business</li>
                                     <li>5.0 Google rating</li>
-                                    <li>Journeyman plumbing background</li>
+                                    <li>+15 Years as Journeyman Plumber</li>
+                                    <li>+20 Years Property Management</li>
                                     <li>{html.escape(county_name)} coverage</li>
                                 </ul>
                             </div>
@@ -81,7 +82,7 @@ def render_service_sidebar(
                             <div class="pricing-highlights">
 {PHONE_CTA}
                                 <p style="margin-top:16px;"><strong>Email:</strong> <a href="mailto:nknight@knightgroup.com">nknight@knightgroup.com</a></p>
-                                <p><strong>Hours:</strong> Mon&ndash;Fri 8 AM&ndash;5 PM<br>Weekends and after hours: emergency calls only</p>
+                                <p><strong>Hours:</strong> Mon&ndash;Fri 8 AM&ndash;5 PM<br>After-hours callback when available; no guaranteed response time</p>
                                 <p style="margin-top:16px;"><a href="/booking">Prefer the full booking form?</a></p>
                             </div>
                         </aside>"""

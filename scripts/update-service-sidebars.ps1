@@ -73,7 +73,8 @@ foreach ($svc in $services) {
                                     <li>Free written estimates</li>
                                     <li>Local Safety Harbor business</li>
                                     <li>5.0 Google rating</li>
-                                    <li>Journeyman plumbing background</li>
+                                    <li>+15 Years as Journeyman Plumber</li>
+                                    <li>+20 Years Property Management</li>
                                     <li>Pinellas County coverage</li>
                                 </ul>
                             </div>
