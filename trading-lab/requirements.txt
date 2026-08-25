@@ -1,0 +1,3 @@
+# Paper-only trading lab uses Python 3.10+ standard library only.
+# No brokerage SDKs (those can default to live hosts).
+# No Tradier client.

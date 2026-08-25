@@ -5,13 +5,20 @@ lighthouse_report.json
 desktop.report.json
 mobile.report.json
 
-# Local utility/helper scripts
-_*.py
+# Local utility/helper scripts at repo root only (do not ignore package __init__.py)
+/_*.py
 **/__pycache__/
 *.py[cod]
 
 # Node
 node_modules/
+
+# Trading lab: never commit secrets, tokens, or runtime ledgers
+.env
+**/.env
+trading-lab/.env
+trading-lab/state/
+trading-lab/data_cache/
 
 # Generated audit and editor output
 gsc-audit/
