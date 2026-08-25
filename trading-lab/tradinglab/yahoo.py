@@ -8,13 +8,15 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from typing import Iterable
 from zoneinfo import ZoneInfo
 
 from .config import YAHOO_CHART_HOSTS, YAHOO_USER_AGENT
 
 ET = ZoneInfo("America/New_York")
+# range=max silently returns monthly bars; period1/period2 keeps interval=1d.
+DEFAULT_PERIOD_START = date(1990, 1, 1)
 
 
 @dataclass(frozen=True)
@@ -35,13 +37,23 @@ def _chart_url(host: str, symbol: str, params: dict[str, str]) -> str:
 def fetch_chart(
     symbol: str,
     *,
-    range_value: str = "max",
+    start: date = DEFAULT_PERIOD_START,
+    end: date | None = None,
     interval: str = "1d",
     timeout: float = 30.0,
 ) -> list[Bar]:
-    """Download daily bars from the Yahoo chart API (adjclose when present)."""
+    """Download daily bars from the Yahoo chart API (adjclose when present).
+
+    Do not use range=max: Yahoo then returns 1mo bars even if interval=1d.
+    """
+    period1 = int(datetime(start.year, start.month, start.day, tzinfo=timezone.utc).timestamp())
+    if end is None:
+        period2 = int(datetime.now(timezone.utc).timestamp())
+    else:
+        period2 = int(datetime(end.year, end.month, end.day, tzinfo=timezone.utc).timestamp())
     params = {
-        "range": range_value,
+        "period1": str(period1),
+        "period2": str(period2),
         "interval": interval,
         "events": "div,splits",
         "includeAdjustedClose": "true",
@@ -76,6 +88,12 @@ def parse_chart_payload(payload: dict) -> list[Bar]:
     if not results:
         raise ValueError("Yahoo chart returned no result")
     result = results[0]
+    meta = result.get("meta") or {}
+    granularity = str(meta.get("dataGranularity") or "")
+    if granularity and granularity not in {"1d", "d"}:
+        raise ValueError(
+            f"Yahoo chart granularity is {granularity!r}, expected daily (do not use range=max)"
+        )
     timestamps = result.get("timestamp") or []
     indicators = result.get("indicators") or {}
     quotes = (indicators.get("quote") or [{}])[0]
@@ -109,7 +127,19 @@ def parse_chart_payload(payload: dict) -> list[Bar]:
         )
     if len(bars) < 2:
         raise ValueError("Yahoo chart returned fewer than 2 valid bars")
+    _assert_daily(bars)
     return bars
+
+
+def _assert_daily(bars: list[Bar]) -> None:
+    sample = bars[:40]
+    gaps = [(sample[i].date - sample[i - 1].date).days for i in range(1, len(sample))]
+    if not gaps:
+        return
+    gaps.sort()
+    median_gap = gaps[len(gaps) // 2]
+    if median_gap > 7:
+        raise ValueError(f"Expected daily Yahoo bars, median gap is {median_gap} days")
 
 
 def _num(value: object) -> float | None:

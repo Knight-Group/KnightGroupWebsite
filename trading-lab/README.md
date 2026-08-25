@@ -17,7 +17,7 @@ cp .env.example .env   # paper keys only; never commit .env
 
 ## Walk-forward (Yahoo chart API)
 
-756-day train / 252-day test / 126-day step on **SPY, QQQ, IWM**. Prices come from the Yahoo v8 chart API; a User-Agent is required.
+756-day train / 252-day test / 126-day step on **SPY, QQQ, IWM**. Prices come from the Yahoo v8 chart API with a required User-Agent. Requests use `period1`/`period2` and `interval=1d` because `range=max` returns monthly bars.
 
 ```bash
 cd trading-lab
@@ -59,6 +59,15 @@ python3 -m unittest discover -s tests -v
 | `trend_pullback` | In an uptrend (close > SMA(50)), buy the recross of SMA(10) after a pullback; exit under SMA(50) |
 
 Execution in research: signal at close *t*, return from close *t* to close *t+1*.
+
+## Latest walk-forward (Yahoo daily through 2026-08-24)
+
+- **Overall mean OOS Sharpe:** `buy_hold` > `sma_10_50` > `dual_momentum_3m` > `trend_pullback`
+- **Tactical walk-forward winner:** `sma_10_50` (SPY, QQQ, and IWM)
+- **Recent OOS 2024-06-25 to 2026-08-24:** `dual_momentum_3m` > `sma_10_50` > `trend_pullback`
+- **Full sample:** unhalted buy-hold still beats 20% risk-halt overlays because of 2020
+
+See `results/walk_forward_winners.json` for the compact snapshot.
 
 ## Safety
 

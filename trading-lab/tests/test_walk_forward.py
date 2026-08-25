@@ -48,6 +48,33 @@ class WalkForwardTests(unittest.TestCase):
 
 
 class YahooParseTests(unittest.TestCase):
+    def test_rejects_monthly_granularity(self) -> None:
+        payload = {
+            "chart": {
+                "result": [
+                    {
+                        "meta": {"dataGranularity": "1mo"},
+                        "timestamp": [1600000000, 1600086400],
+                        "indicators": {
+                            "quote": [
+                                {
+                                    "open": [10.0, 11.0],
+                                    "high": [10.5, 11.5],
+                                    "low": [9.5, 10.5],
+                                    "close": [10.2, 11.1],
+                                    "volume": [100, 110],
+                                }
+                            ],
+                            "adjclose": [{"adjclose": [10.2, 11.1]}],
+                        },
+                    }
+                ],
+                "error": None,
+            }
+        }
+        with self.assertRaises(ValueError):
+            parse_chart_payload(payload)
+
     def test_parse_chart_payload(self) -> None:
         payload = {
             "chart": {

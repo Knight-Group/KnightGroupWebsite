@@ -53,9 +53,36 @@ class DailySessionTests(unittest.TestCase):
         self.assertIs(first["live_trading"], False)
         buys = [row for row in first["sleeves"] if row["action"] == "buy"]
         self.assertTrue(buys)
+        second_buys = [row for row in second["sleeves"] if row["action"] == "buy"]
+        self.assertEqual(second_buys, [])
+        self.assertEqual(second["submitted"], [])
+
+    def test_ledger_blocks_buy_when_sleeve_qty_reset(self) -> None:
+        bars = _uptrend_bars()
+        session = bars[-1].date
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            ledger = FillLedger(tmp_path / "ledger.json")
+            with patch("tradinglab.daily_session.STATE_DIR", tmp_path):
+                first = run_daily_session(
+                    as_of=session,
+                    submit_paper=False,
+                    bars=bars,
+                    ledger=ledger,
+                    equity=100_000,
+                )
+                (tmp_path / "sleeves.json").write_text("{}\n", encoding="utf-8")
+                second = run_daily_session(
+                    as_of=session,
+                    submit_paper=False,
+                    bars=bars,
+                    ledger=ledger,
+                    equity=100_000,
+                )
+        buys = [row for row in first["sleeves"] if row["action"] == "buy"]
         skipped = [row for row in second["sleeves"] if row["reason"] == "duplicate_buy_same_calendar_date"]
         self.assertEqual(len(skipped), len(buys))
-        self.assertEqual(second["submitted"], [])
+        self.assertTrue(skipped)
 
     def test_submit_paper_posts_only_to_allowlisted_host(self) -> None:
         bars = _uptrend_bars()

@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-08-25T04:35:14.241098+00:00",
+  "live_trading": false,
+  "window": {
+    "train_days": 756,
+    "test_days": 252,
+    "step_days": 126,
+    "warmup_days": 63
+  },
+  "walk_forward_winners": {
+    "by_symbol_mean_oos_sharpe": {
+      "SPY": "buy_hold",
+      "QQQ": "buy_hold",
+      "IWM": "buy_hold"
+    },
+    "overall_ranking_by_mean_oos_sharpe": [
+      "buy_hold",
+      "sma_10_50",
+      "dual_momentum_3m",
+      "trend_pullback"
+    ],
+    "overall_walk_forward_winner": "buy_hold",
+    "tactical_by_symbol": {
+      "SPY": "sma_10_50",
+      "QQQ": "sma_10_50",
+      "IWM": "sma_10_50"
+    },
+    "tactical_ranking_by_mean_oos_sharpe": [
+      "sma_10_50",
+      "dual_momentum_3m",
+      "trend_pullback"
+    ],
+    "tactical_walk_forward_winner": "sma_10_50",
+    "aggregate_mean_oos_sharpe": {
+      "dual_momentum_3m": 0.416729,
+      "sma_10_50": 0.530268,
+      "trend_pullback": 0.095822,
+      "buy_hold": 0.82413
+    }
+  },
+  "recent_oos_rank_by_symbol": {
+    "SPY": [
+      "dual_momentum_3m",
+      "sma_10_50",
+      "trend_pullback"
+    ],
+    "QQQ": [
+      "dual_momentum_3m",
+      "sma_10_50",
+      "trend_pullback"
+    ],
+    "IWM": [
+      "dual_momentum_3m",
+      "sma_10_50",
+      "trend_pullback"
+    ]
+  },
+  "full_sample_unhalted_buy_hold_vs_risk_capped": {
+    "SPY": true,
+    "QQQ": true,
+    "IWM": true
+  }
+}
