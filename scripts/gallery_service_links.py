@@ -3,15 +3,25 @@
 from __future__ import annotations
 
 SERVICE_GALLERY_LINKS: dict[str, list[tuple[str, str]]] = {
+    "handyman": [
+        ("/gallery/fence-repair-before-after", "wooden fence repair"),
+        ("/gallery/door-lock-repair-before-after", "door lock repair"),
+        ("/gallery/carpet-removal-before-after", "carpet removal"),
+        ("/gallery/filter-change-before-after", "HVAC filter change"),
+    ],
     "general-repairs": [
         ("/gallery/mold-wall-repair", "Mold wall repair project"),
         ("/gallery/floor-subfloor-repair", "Floor and subfloor repair"),
         ("/gallery/blinds-replacement-before-after", "Blinds replacement"),
+        ("/gallery/fire-extinguisher-mount-before-after", "fire extinguisher mount"),
+        ("/gallery/stair-tape-repair-before-after", "stair safety tape"),
+        ("/gallery/smoke-alarm-battery-swap-before-after", "smoke alarm battery swap"),
     ],
     "plumbing-services": [
         ("/gallery/pipe-repair-before-after", "Pipe repair before and after"),
         ("/gallery/tub-drain-replacement", "Tub drain replacement"),
         ("/gallery/garbage-disposal-install", "Garbage disposal install"),
+        ("/gallery/kitchen-sink-leak-before-after", "kitchen sink leak"),
     ],
     "home-renovations": [
         ("/gallery/bathroom-remodel-cobblestone", "Bathroom remodel with cobblestone flooring"),
@@ -25,6 +35,15 @@ SERVICE_GALLERY_LINKS: dict[str, list[tuple[str, str]]] = {
     ],
     "painting-finishing": [
         ("/gallery/blinds-replacement-before-after", "Blinds replacement project"),
+    ],
+    "doors-windows": [
+        ("/gallery/curtain-rod-mount-before-after", "curtain rod mount"),
+        ("/gallery/door-lock-repair-before-after", "door lock repair"),
+        ("/gallery/door-wedge-before-after", "door wedge install"),
+        ("/gallery/blind-repair-before-after", "window blind repair"),
+    ],
+    "cabinet-repair": [
+        ("/gallery/kitchen-sink-leak-before-after", "kitchen sink leak closeout"),
     ],
 }
 

@@ -1,0 +1,31 @@
+{
+  "source": "Ahrefs Site Audit 9999433 2026-08-25",
+  "changed": [
+    "pricing.html",
+    "pricing-handyman-by-the-hour.html",
+    "pricing-no-2-hour-minimum.html",
+    "pricing-plumbing-repair-prices.html",
+    "pricing-flat-rate-handyman.html",
+    "home-watch-pinellas.html (3 offers)",
+    "home-watch-pricing.html (3 offers)",
+    "booking.html",
+    "land-o-lakes-handyman.html",
+    "port-richey-handyman.html",
+    "beacon-square-handyman.html",
+    "jasmine-estates-handyman.html",
+    "egypt-lake-leto-handyman.html",
+    "northdale-handyman.html",
+    "st-petersburg-handyman.html",
+    "tarpon-springs-handyman.html",
+    "Services/handyman.html",
+    "Services/doors-windows.html",
+    "Services/cabinet-repair.html"
+  ],
+  "notes": [
+    "50 orphans are live-indexed hashed ticket galleries; source already noindex + omitted from sitemap.",
+    "Payment policy noindex is correct and was left alone.",
+    "3XX / HTTP-to-HTTPS are apex and protocol canonicals; left alone.",
+    "CSS 25KB versioned URLs are not oversized; left alone.",
+    "SERP title rewrites are Google-side; page titles left for CTR."
+  ]
+}

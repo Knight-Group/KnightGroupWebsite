@@ -23,6 +23,7 @@ from business_facts import (  # noqa: E402
     overall_area_served,
     vince_id,
 )
+from gallery_scope import is_regulated_gallery_group  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 SEO = ROOT / "seo"
@@ -190,28 +191,7 @@ def build_image_object(
     return node
 
 
-def _apply_live_reviews(entity: dict[str, Any]) -> dict[str, Any]:
-    feed_path = ROOT / "data" / "google-reviews.json"
-    if not feed_path.exists():
-        return entity
-    try:
-        feed = json.loads(feed_path.read_text(encoding="utf-8"))
-    except json.JSONDecodeError:
-        return entity
-    count = feed.get("reviewCount")
-    rating = feed.get("ratingValue")
-    if not count:
-        return entity
-    agg = entity.setdefault("aggregateRating", {"@type": "AggregateRating"})
-    agg["reviewCount"] = str(int(count))
-    if rating is not None:
-        agg["ratingValue"] = f"{float(rating):.1f}"
-    agg.setdefault("bestRating", "5")
-    agg.setdefault("worstRating", "1")
-    return entity
-
-
-def business_entity(*, include_reviews: bool = False) -> dict[str, Any]:
+def business_entity() -> dict[str, Any]:
     entity = copy.deepcopy(_load("knight-group-business-entity.json"))
     facts = load_facts()
     entity.pop("priceRange", None)
@@ -220,9 +200,10 @@ def business_entity(*, include_reviews: bool = False) -> dict[str, Any]:
     entity["description"] = BUSINESS_DESCRIPTION
     entity["areaServed"] = overall_area_served()
     entity["knowsAbout"] = list(facts["knowsAbout"])
-    _apply_live_reviews(entity)
-    if include_reviews:
-        entity["review"] = _load("knight-group-reviews-home.json")
+    # Genuine reviews stay visible to users, but Google treats review markup
+    # about a business on its own LocalBusiness pages as self-serving.
+    entity.pop("aggregateRating", None)
+    entity.pop("review", None)
     return entity
 
 
@@ -392,7 +373,6 @@ def pricing_offer_catalog() -> dict[str, Any]:
         "@id": PRICING_CATALOG_ID,
         "name": "Knight Group Handyman Pricing",
         "url": f"{BASE}/pricing",
-        "provider": {"@id": BUSINESS_ID},
         "itemListElement": [
             {
                 "@type": "Offer",
@@ -420,13 +400,13 @@ def pricing_offer_catalog() -> dict[str, Any]:
             },
             {
                 "@type": "Offer",
-                "name": "Minor plumbing repair visit",
-                "description": "Faucet, shutoff, fixture, and small-leak repairs on existing connections. Repipes, sewer mains, and gas work are referred.",
+                "name": "Plumbing-area assessment and finish visit",
+                "description": "Visible-condition documentation and eligible caulk, cabinet, drywall, texture, and paint closeout. Licensed plumbing connections are referred.",
                 "url": f"{BASE}/pricing",
                 "priceCurrency": "USD",
                 "itemOffered": _nested_service(
-                    "Minor plumbing repair visit",
-                    "Handyman plumbing fixture repair and minor plumbing repair",
+                    "Plumbing-area assessment and finish visit",
+                    "Plumbing-related assessment and finish coordination",
                 ),
                 "priceSpecification": [
                     {
@@ -448,7 +428,7 @@ def pricing_offer_catalog() -> dict[str, Any]:
             {
                 "@type": "Offer",
                 "name": "Specialty install and repair visit",
-                "description": "Heavier installs, higher-liability work, fixture installs, TV mounting, and appliance hookup support.",
+                "description": "Heavier installs, higher-liability work, TV mounting without electrical connections, large drywall, and heavy-item handling.",
                 "url": f"{BASE}/pricing",
                 "priceCurrency": "USD",
                 "itemOffered": _nested_service(
@@ -511,35 +491,52 @@ def gallery_entities(manifest: dict[str, Any], meta: dict[str, str]) -> list[dic
     for group in manifest.get("groups", [])[:12]:
         if not group.get("images"):
             continue
+        regulated = is_regulated_gallery_group(group)
         image = group["images"][0]
         src = image["src"].replace("\\", "/")
         image_url = f"{BASE}/{src}"
         image_id = f"{url}#image-{group['id']}"
         project_id = f"{url}#project-{group['id']}"
+        display_name = f"Historical project: {group['title']}" if regulated else group["title"]
+        display_description = (
+            "Past-condition documentation only. Current regulated work is routed to an "
+            "appropriately licensed or registered provider."
+            if regulated
+            else group["description"]
+        )
         image_node = build_image_object(
             image_id=image_id,
             image_url=image_url,
-            name=image.get("title") or group["title"],
-            description=image.get("description") or group["description"],
+            name=display_name if regulated else (image.get("title") or group["title"]),
+            description=display_description if regulated else (image.get("description") or group["description"]),
         )
         project_node = {
             "@type": "CreativeWork",
             "@id": project_id,
-            "name": group["title"],
-            "description": group["description"],
-            "about": {
-                "@type": "Service",
-                "name": group.get("category", "Handyman project"),
-                "provider": {"@id": BUSINESS_ID},
-                "image": image_url,
-            },
+            "name": display_name,
+            "description": display_description,
+            "about": (
+                {
+                    "@type": "Thing",
+                    "name": "Historical project documentation; regulated work is routed",
+                    "image": image_url,
+                }
+                if regulated
+                else {
+                    "@type": "Service",
+                    "name": group.get("category", "Handyman project"),
+                    "provider": {"@id": BUSINESS_ID},
+                    "image": image_url,
+                }
+            ),
             "locationCreated": {
                 "@type": "AdministrativeArea",
                 "name": "Pinellas County, Florida",
             },
-            "provider": {"@id": BUSINESS_ID},
             "image": {"@id": image_id},
         }
+        if not regulated:
+            project_node["provider"] = {"@id": BUSINESS_ID}
         image_nodes.append(image_node)
         project_nodes.append(project_node)
         image_refs.append({"@id": image_id})
@@ -564,12 +561,16 @@ def gallery_entities(manifest: dict[str, Any], meta: dict[str, str]) -> list[dic
         "@type": "ItemList",
         "@id": f"{url}#project-list",
         "name": "Knight Group handyman project gallery",
-        "description": "Completed handyman project photos across Pinellas County, Florida.",
+        "description": "Current handyman-scope photos and clearly labeled historical project documentation across Pinellas County, Florida.",
         "itemListElement": [
             {
                 "@type": "ListItem",
                 "position": index + 1,
-                "name": group["title"],
+                "name": (
+                    f"Historical project: {group['title']}"
+                    if is_regulated_gallery_group(group)
+                    else group["title"]
+                ),
                 "url": f"{url}#project-{group['id']}",
                 "item": {"@id": f"{url}#project-{group['id']}"},
             }
@@ -580,11 +581,11 @@ def gallery_entities(manifest: dict[str, Any], meta: dict[str, str]) -> list[dic
     return [gallery, project_list, *image_nodes, *project_nodes]
 
 
-def base_graph(*, include_reviews: bool = False) -> list[dict[str, Any]]:
+def base_graph() -> list[dict[str, Any]]:
     return [
         _load("knight-group-organization.json"),
         _load("knight-group-founder.json"),
-        business_entity(include_reviews=include_reviews),
+        business_entity(),
         website_entity(),
     ]
 
@@ -600,7 +601,7 @@ def build_graph_for_page(
     url = meta["canonical"].rstrip("/")
     if page_key == "home":
         url = f"{BASE}/"
-    graph = base_graph(include_reviews=page_key == "home")
+    graph = base_graph()
     crumbs = [{"name": "Home", "item": f"{BASE}/"}]
     main_entity_id: str | None = BUSINESS_ID
     page_type = "WebPage"
@@ -648,8 +649,8 @@ def build_graph_for_page(
                 "@type": "EntryPoint",
                 "urlTemplate": f"{BASE}/booking",
                 "actionPlatform": [
-                    "http://schema.org/DesktopWebPlatform",
-                    "http://schema.org/MobileWebPlatform",
+                    "https://schema.org/DesktopWebPlatform",
+                    "https://schema.org/MobileWebPlatform",
                 ],
             },
         }
@@ -854,15 +855,9 @@ def build_graph_for_page(
         )
     )
 
-    if faq_entities:
-        graph.append(
-            {
-                "@type": "FAQPage",
-                "@id": f"{url}#faq",
-                "mainEntity": faq_entities,
-                "isPartOf": {"@id": f"{url}#webpage"},
-            }
-        )
+    # Keep the FAQs visible in HTML. Google currently limits FAQ rich results
+    # to authoritative government and health sites, so local-service pages do
+    # not emit mass FAQPage markup.
 
     howto = extract_howto(html_content)
     if howto:
