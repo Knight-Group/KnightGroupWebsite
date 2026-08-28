@@ -451,11 +451,27 @@ def group_anchor_meta(group_id: str) -> dict:
     return {}
 
 
+GALLERY_FACT_KEYS = (
+    "cluster",
+    "workerName",
+    "workerRole",
+    "workerKey",
+    "cityName",
+    "citySlug",
+    "countyName",
+    "completedMonth",
+    "workNotes",
+    "photoBefore",
+    "photoProcess",
+    "photoAfter",
+)
+
+
 def build_image_entry(filename: str) -> dict:
     meta = dict(IMAGE_CATALOG.get(filename, {}))
     if meta.get("group"):
         anchor = group_anchor_meta(meta["group"])
-        for key in ("category", "serviceLink", "groupTitle", "groupDescription"):
+        for key in ("category", "serviceLink", "groupTitle", "groupDescription", *GALLERY_FACT_KEYS):
             meta.setdefault(key, anchor.get(key))
 
     title = meta.get("title", title_from_filename(filename))
@@ -476,6 +492,9 @@ def build_image_entry(filename: str) -> dict:
         "groupTitle": meta.get("groupTitle"),
         "groupDescription": meta.get("groupDescription"),
     }
+    for key in GALLERY_FACT_KEYS:
+        if meta.get(key) not in (None, ""):
+            entry[key] = meta[key]
     return entry
 
 
@@ -488,29 +507,31 @@ def build_groups(images: list[dict]) -> list[dict]:
     for group_id in sorted(grouped.keys(), key=lambda gid: grouped[gid][0].get("groupTitle") or gid):
         items = sorted(grouped[group_id], key=lambda img: (img["step"], img["filename"].lower()))
         first = items[0]
-        groups.append(
-            {
-                "id": group_id,
-                "title": first.get("groupTitle") or first["title"],
-                "description": first.get("groupDescription") or first["description"],
-                "category": first["category"],
-                "serviceLink": first["serviceLink"],
-                "beforeAfter": any(img["beforeAfter"] for img in items),
-                "progression": len(items) > 1 and not any(img["beforeAfter"] for img in items),
-                "images": [
-                    {
-                        "src": img["src"],
-                        "filename": img["filename"],
-                        "step": img["step"],
-                        "title": img["title"],
-                        "seoAlt": img.get("seoAlt", img["title"]),
-                        "description": img["description"],
-                        "beforeAfter": img["beforeAfter"],
-                    }
-                    for img in items
-                ],
-            }
-        )
+        group = {
+            "id": group_id,
+            "title": first.get("groupTitle") or first["title"],
+            "description": first.get("groupDescription") or first["description"],
+            "category": first["category"],
+            "serviceLink": first["serviceLink"],
+            "beforeAfter": any(img["beforeAfter"] for img in items),
+            "progression": len(items) > 1 and not any(img["beforeAfter"] for img in items),
+            "images": [
+                {
+                    "src": img["src"],
+                    "filename": img["filename"],
+                    "step": img["step"],
+                    "title": img["title"],
+                    "seoAlt": img.get("seoAlt", img["title"]),
+                    "description": img["description"],
+                    "beforeAfter": img["beforeAfter"],
+                }
+                for img in items
+            ],
+        }
+        for key in GALLERY_FACT_KEYS:
+            if first.get(key) not in (None, ""):
+                group[key] = first[key]
+        groups.append(group)
     return groups
 
 

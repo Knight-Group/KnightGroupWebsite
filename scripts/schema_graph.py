@@ -162,6 +162,25 @@ def extract_gallery_project_image(html_content: str) -> tuple[str, str] | None:
     return src, alt
 
 
+def extract_gallery_facts(html_content: str) -> dict[str, str]:
+    match = re.search(r"<div class=\"kg-gallery-facts\"[^>]*>", html_content or "", flags=re.I)
+    if not match:
+        return {}
+    tag = match.group(0)
+
+    def attr(name: str) -> str:
+        found = re.search(rf'data-{name}="([^"]*)"', tag, flags=re.I)
+        return html.unescape(found.group(1)).strip() if found else ""
+
+    return {
+        "worker": attr("worker"),
+        "workerKey": attr("worker-key"),
+        "city": attr("city"),
+        "county": attr("county"),
+        "month": attr("month"),
+    }
+
+
 def image_rights_metadata() -> dict[str, Any]:
     return {
         "creditText": "Knight Group Handyman Services LLC",
@@ -804,6 +823,42 @@ def build_graph_for_page(
                 "name": "Pinellas County, Florida",
             },
         }
+        facts = extract_gallery_facts(html_content)
+        county = facts.get("county") or "Pinellas County"
+        city = facts.get("city") or ""
+        if city and city not in {"North Tampa", "Lutz"}:
+            project_node["locationCreated"] = {
+                "@type": "City",
+                "name": f"{city}, FL",
+                "containedInPlace": {
+                    "@type": "AdministrativeArea",
+                    "name": f"{county}, Florida" if "County" in county else f"{county}, Florida",
+                },
+            }
+        else:
+            project_node["locationCreated"] = {
+                "@type": "AdministrativeArea",
+                "name": f"{county}, Florida" if "Florida" not in county else county,
+            }
+        worker_name = facts.get("worker") or ""
+        worker_key = facts.get("workerKey") or ""
+        if worker_name and not worker_name.lower().startswith("a knight"):
+            if worker_key == "vince":
+                project_node["contributor"] = {"@id": VINCE_ID}
+                project_node["author"] = {"@id": VINCE_ID}
+            else:
+                person_id = f"{url}#contributor"
+                job = "Co-owner" if worker_key == "nick" else "Field technician"
+                person = {
+                    "@type": "Person",
+                    "@id": person_id,
+                    "name": worker_name,
+                    "jobTitle": job,
+                    "worksFor": {"@id": ORG_ID},
+                }
+                graph.append(person)
+                project_node["contributor"] = {"@id": person_id}
+                project_node["author"] = {"@id": person_id}
         gallery_image = extract_gallery_project_image(html_content)
         if gallery_image:
             image_url, image_alt = gallery_image

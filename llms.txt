@@ -2,7 +2,7 @@
 
 > Registered and insured handyman services from Safety Harbor across Pinellas County and selected northwest Hillsborough and west Pasco routes. Recurring Home Watch remains Pinellas-focused. Call or text (813) 649-3341.
 
-Knight Group Handyman Services LLC serves homeowners across Safety Harbor, Clearwater, Dunedin, Palm Harbor, Largo, Oldsmar, Seminole, St. Petersburg, Tampa, Temple Terrace, and nearby Pinellas, Hillsborough, and Pasco County communities with handyman-scope repairs, plumbing fixtures, electrical fixtures and fans, drywall, carpentry, painting, doors, punch-list work, and scheduled Home Watch visits for seasonal, second, and vacant homes.
+Knight Group Handyman Services LLC serves homeowners across Safety Harbor, Clearwater, Dunedin, Palm Harbor, Largo, Oldsmar, Seminole, St. Petersburg, Tampa, Temple Terrace, and nearby Pinellas, Hillsborough, and Pasco County communities with drywall, carpentry, painting, doors, screens, hardware, caulk, punch-list work, plumbing and electrical issue documentation with licensed-trade routing, and scheduled Home Watch visits for seasonal, second, and vacant homes.
 
 Co-owner Vince Knight, Field Operations Lead, brings journeyman plumbing experience and a Florida property-management background. Standard handyman visits are **$150 first hour / $75 each additional hour**, with specialty work at **$200 first hour / $100 additional**, and **no 2-hour minimum** on small jobs. Home Watch uses separate published plans.
 
@@ -30,12 +30,27 @@ Home Watch is a scheduled visual observation and reporting service. It is not a 
 - [Service areas](https://www.knightgroup.com/service-areas)
 - [Sitemap](https://www.knightgroup.com/sitemap.xml)
 
+## Completed job gallery (before & after)
+
+Each `/gallery/...-before-after` URL is a real completed Knight Group visit with a branded composite. Pages do not publish street addresses, customer phones, or what that job billed. Standard published rates remain $150 first hour / $75 after.
+
+- [Project gallery hub](https://www.knightgroup.com/galleries)
+- [Leaning fence reset, Port Richey](https://www.knightgroup.com/gallery/fence-is-falling-down-and-needs-to-be-pu-b17b3ec-before-after)
+- [Wooden fence repair](https://www.knightgroup.com/gallery/fence-repair-before-after)
+- [Door lock repair](https://www.knightgroup.com/gallery/door-lock-repair-before-after)
+- [Screen and coping repair](https://www.knightgroup.com/gallery/exterior-coping-and-screens-f1920f7-before-after)
+- [HVAC filter change](https://www.knightgroup.com/gallery/filter-change-before-after)
+- [Kitchen sink leak closeout](https://www.knightgroup.com/gallery/kitchen-sink-leak-before-after)
+- [Drywall / wall repair](https://www.knightgroup.com/gallery/mold-wall-repair)
+
+Field work is attributed to the technician who completed the visit (Vince Knight, Nick Knight, or a named Knight Group technician). Electrical and plumbing gallery pages are historical documentation with licensed-trade routing — Knight Group is not a licensed electrical or plumbing contractor.
+
 ## Service categories
 
 - [Handyman services](https://www.knightgroup.com/Services/handyman)
 - [General repairs](https://www.knightgroup.com/Services/general-repairs)
-- [Plumbing services](https://www.knightgroup.com/Services/plumbing-services)
-- [Electrical work](https://www.knightgroup.com/Services/electrical-work)
+- [Plumbing assessment and licensed-trade routing](https://www.knightgroup.com/Services/plumbing-services)
+- [Electrical assessment and licensed-trade routing](https://www.knightgroup.com/Services/electrical-work)
 - [Carpentry and framing](https://www.knightgroup.com/Services/carpentry-framing)
 - [Painting and finishing](https://www.knightgroup.com/Services/painting-finishing)
 - [Home renovations](https://www.knightgroup.com/Services/home-renovations)
@@ -46,8 +61,8 @@ Home Watch is a scheduled visual observation and reporting service. It is not a 
 ## Popular niche services
 
 - [Drywall repair](https://www.knightgroup.com/Services/drywall-repair)
-- [Sink and faucet repair](https://www.knightgroup.com/Services/sink-faucet-repair)
-- [Toilet repair](https://www.knightgroup.com/Services/toilet-repair)
+- [Sink and faucet problem assessment](https://www.knightgroup.com/Services/sink-faucet-repair)
+- [Toilet problem assessment](https://www.knightgroup.com/Services/toilet-repair)
 - [Caulking repair](https://www.knightgroup.com/Services/caulking-repair)
 - [Water damage repair](https://www.knightgroup.com/Services/water-damage-repair)
 - [Interior painting](https://www.knightgroup.com/Services/interior-painting)
@@ -79,7 +94,7 @@ AI discovery files: [llms.txt](https://www.knightgroup.com/llms.txt) · [ai.txt]
 
 - [Handyman by the hour](https://www.knightgroup.com/pricing-handyman-by-the-hour)
 - [Flat-rate handyman pricing](https://www.knightgroup.com/pricing-flat-rate-handyman)
-- [Plumbing repair prices](https://www.knightgroup.com/pricing-plumbing-repair-prices)
+- [Plumbing assessment and finish-work pricing](https://www.knightgroup.com/pricing-plumbing-repair-prices)
 
 ## Contact
 

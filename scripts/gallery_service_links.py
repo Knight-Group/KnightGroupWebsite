@@ -42,6 +42,11 @@ SERVICE_GALLERY_LINKS: dict[str, list[tuple[str, str]]] = {
         ("/gallery/door-wedge-before-after", "door wedge install"),
         ("/gallery/blind-repair-before-after", "window blind repair"),
     ],
+    "carpentry-framing": [
+        ("/gallery/fence-repair-before-after", "wooden fence repair"),
+        ("/gallery/fence-is-falling-down-and-needs-to-be-pu-b17b3ec-before-after", "leaning fence reset in Port Richey"),
+        ("/gallery/floor-subfloor-repair", "floor and subfloor repair"),
+    ],
     "cabinet-repair": [
         ("/gallery/kitchen-sink-leak-before-after", "kitchen sink leak closeout"),
     ],

@@ -16,6 +16,28 @@ FAQ_INTRO_TEMPLATES = (
     "Local {topic} FAQ — written for {county} homeowners, not a national template.",
 )
 
+
+def ensure_section_heading(content: str, heading_id: str, fallback: str) -> str:
+    """Give a generated content section a real H2 and matching accessible ID."""
+    heading = re.search(r"<h([2-6])([^>]*)>(.*?)</h\1>", content, flags=re.I | re.S)
+    if not heading:
+        return f'<h2 id="{heading_id}">{fallback}</h2>\n{content}'
+    attrs = re.sub(r'\s+id=("[^"]*"|\'[^\']*\')', "", heading.group(2), flags=re.I)
+    replacement = f'<h2 id="{heading_id}"{attrs}>{heading.group(3)}</h2>'
+    return content[: heading.start()] + replacement + content[heading.end() :]
+
+
+def insert_gallery_images_before_first_h2(content: str, images_html: str) -> str:
+    """Place the before/after composite above the first section heading in gallery prose."""
+    block = (images_html or "").strip()
+    if not block:
+        return content
+    match = re.search(r"<h[2-6]\b", content, flags=re.I)
+    if not match:
+        return content + block
+    pos = match.start()
+    return content[:pos] + block + content[pos:]
+
 CTA_LEAD_TEMPLATES = (
     "Share photos, your city, and a short description of the {topic} work — we reply with a written estimate before scheduling.",
     "Tell us the address, access notes, and what you want handled for {topic}. We confirm scope and pricing before tools come out.",
@@ -67,16 +89,17 @@ def cta_lead(slug: str, h1: str, county_name: str = "Pinellas County") -> str:
 def scope_disclaimer_html(slug: str) -> str:
     if slug in PLUMBING_SCOPE_SLUGS or any(token in slug for token in ("plumb", "faucet", "toilet", "drain", "disposal", "shutoff", "sink")):
         body = (
-            "<strong>Plumbing scope:</strong> Knight Group replaces faucets, toilets, sinks, shutoffs, traps, "
-            "and other fixtures on existing connections. Vince Knight’s journeyman plumbing background informs that "
-            "work. We are not a licensed plumbing contractor. Repipes, sewer mains, gas lines, and new rough-in are "
-            "referred. See <a href=\"/handyman-scope-florida\">handyman scope in Florida</a>."
+            "<strong>Plumbing vs. diagnosis:</strong> Florida DBPR treats plumbing that connects lines to drinking water "
+            "as licensed contractor work. Vince Knight’s journeyman plumbing background helps diagnose leaks and "
+            "fixture failures. Knight Group is not a licensed plumbing contractor. Work that connects to potable water "
+            "is referred to a licensed plumber. See <a href=\"/handyman-scope-florida\">handyman scope in Florida</a>."
         )
     elif slug in ELECTRICAL_SCOPE_SLUGS or "electrical" in slug:
         body = (
-            "<strong>Electrical scope:</strong> Knight Group hangs ceiling fans, swaps light fixtures, and replaces "
-            "switches and outlets on existing circuits. We are not a licensed electrician. New circuits, panel work, "
-            "aluminum wiring, and rewires are referred. See <a href=\"/handyman-scope-florida\">handyman scope in Florida</a>."
+            "<strong>Electrical scope:</strong> Florida DBPR treats compensated installation of ceiling fans, light "
+            "fixtures, outlets, and switches as licensed electrical work. Knight Group changes bulbs and cover plates, "
+            "documents the issue, and refers connection work to a licensed electrician. See "
+            "<a href=\"/handyman-scope-florida\">handyman scope in Florida</a>."
         )
     elif slug == "emergency-services":
         body = (

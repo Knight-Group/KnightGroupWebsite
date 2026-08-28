@@ -21,6 +21,24 @@ def is_regulated_gallery_group(group: dict) -> bool:
         return True
     searchable = " ".join(
         str(group.get(key, ""))
-        for key in ("id", "@id", "title", "name", "description", "serviceLink")
+        for key in ("id", "@id", "title", "name", "description", "serviceLink", "cluster")
     )
     return bool(REGULATED_GALLERY_TERMS.search(searchable))
+
+
+def is_dispatch_gallery_group(group_id: str) -> bool:
+    return bool(re.search(r"-[0-9a-f]{7}-before-after$", group_id or ""))
+
+
+def gallery_should_index(group: dict, curated: set[str]) -> bool:
+    """Index curated proof pages and real Dispatch composites; skip vendor-titled leftovers."""
+    group_id = str(group.get("id") or "")
+    blob = " ".join(
+        str(group.get(key) or "")
+        for key in ("id", "title", "description", "groupTitle")
+    )
+    if re.search(r"copeland|vendoroo|managebuilding", blob, re.I):
+        return False
+    if group_id in curated:
+        return True
+    return is_dispatch_gallery_group(group_id)
