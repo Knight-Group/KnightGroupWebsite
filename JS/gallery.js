@@ -206,7 +206,7 @@
         var projectPage = document.createElement('a');
         projectPage.className = 'gallery-project__link gallery-project__link--page';
         projectPage.href = '/gallery/' + group.id;
-        projectPage.textContent = regulated ? 'View historical details' : 'View project page';
+        projectPage.textContent = 'View Job Details';
 
         var actions = document.createElement('div');
         actions.className = 'gallery-project__actions';
