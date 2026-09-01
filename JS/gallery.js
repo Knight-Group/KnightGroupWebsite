@@ -208,9 +208,13 @@
         projectPage.href = '/gallery/' + group.id;
         projectPage.textContent = regulated ? 'View historical details' : 'View project page';
 
+        var actions = document.createElement('div');
+        actions.className = 'gallery-project__actions';
+        actions.appendChild(link);
+        actions.appendChild(projectPage);
+
         head.appendChild(copy);
-        head.appendChild(link);
-        head.appendChild(projectPage);
+        head.appendChild(actions);
 
         var shots = document.createElement('div');
         shots.className = 'gallery-project__shots';
