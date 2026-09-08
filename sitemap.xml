@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/about</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
@@ -77,6 +77,12 @@
     <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.86</priority>
+  </url>
+  <url>
+    <loc>https://www.knightgroup.com/join</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
   </url>
   <url>
     <loc>https://www.knightgroup.com/Services/handyman</loc>

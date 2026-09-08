@@ -28,6 +28,7 @@ STATIC_PAGES = [
     ("/home-watch-checklist", "0.84", "monthly"),
     ("/florida-snowbird-departure-checklist", "0.80", "monthly"),
     ("/property-manager-handyman", "0.86", "weekly"),
+    ("/join", "0.40", "monthly"),
 ]
 
 MAJOR_SERVICES = [
@@ -92,6 +93,8 @@ def main() -> int:
     if MANIFEST.exists():
         data = json.loads(MANIFEST.read_text(encoding="utf-8"))
         for page in data.get("pages", []):
+            if not page.get("indexable", True):
+                continue
             loc = page.get("canonical") or f"{BASE}/{page['path'].replace('.html', '')}"
             if loc in seen:
                 continue

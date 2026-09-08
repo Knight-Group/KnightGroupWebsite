@@ -103,3 +103,7 @@ AI discovery files: [llms.txt](https://www.knightgroup.com/llms.txt) · [ai.txt]
 - Address: 1225 7th St S, Safety Harbor, FL 34695
 - Website: https://www.knightgroup.com/
 - Google Business Profile: https://www.google.com/maps?cid=10508624668428370015
+
+## Independent contractors
+
+- [1099 contractor application](https://www.knightgroup.com/join): Overflow handyman-scope work for independent contractors. Not W-2 employment. Not a homeowner booking form. Contractor pay (not homeowner pricing) is listed there; typical general-job contractor pay is $75 first hour / $50 each hour after per job, and other scopes vary. Homeowners use [booking](https://www.knightgroup.com/booking) and [pricing](https://www.knightgroup.com/pricing).

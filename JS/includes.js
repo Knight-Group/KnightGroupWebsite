@@ -28,14 +28,14 @@
     }
     if (document.querySelector('script[src*="kg-analytics.js"]')) return;
     var script = document.createElement('script');
-    script.src = '/JS/kg-analytics.js?v=20260823-analytics';
+    script.src = '/JS/kg-analytics.js?v=20260901-clarity';
     script.async = true;
     document.head.appendChild(script);
 })();
 
 (function kgEarlyPartialPrefetch() {
     window.__kgPartialCache = window.__kgPartialCache || {};
-    var version = '20260821-home-watch';
+    var version = '20260908-join';
     ['/header.html?v=' + version, '/footer.html?v=' + version].forEach(function (path) {
         if (window.__kgPartialCache[path]) return;
         window.__kgPartialCache[path] = fetch(path, { credentials: 'same-origin' })
@@ -55,7 +55,7 @@ class HTMLInclude {
     }
 
     ensureHeaderStyles() {
-        const headerVersion = '20260821-home-watch';
+        const headerVersion = '20260908-join';
 
         if (!document.getElementById('kg-header-css') && !document.querySelector('link[href*="header.min.css"]')) {
             const link = document.createElement('link');
@@ -287,7 +287,7 @@ class HTMLInclude {
         if (window._knightGroupIncludesLoaded) return;
         window._knightGroupIncludesLoaded = true;
 
-        const includeVersion = '20260821-home-watch';
+        const includeVersion = '20260908-join';
 
         const headerElement = document.getElementById('header-include');
         const footerElement = document.getElementById('footer-include');
@@ -663,6 +663,135 @@ ${data.message}
         ensureHidden(form, 'utm_campaign', params.get('utm_campaign') || touch.utm_campaign || '');
     }
 
+    var PHOTO_ERROR = 'Add photos here, or check that you will text them to (813) 649-3341.';
+    var MAX_PHOTO_BYTES = 8 * 1024 * 1024;
+
+    function estimatePhotoInputs(form) {
+        return {
+            file: form.querySelector('input[type="file"][name="photos"]'),
+            box: form.querySelector('input[type="checkbox"][name="text_photos"]'),
+            error: form.querySelector('.kg-photo-error')
+        };
+    }
+
+    function formHasPhotoGate(form) {
+        var bits = estimatePhotoInputs(form);
+        return !!(bits.file || bits.box);
+    }
+
+    function showPhotoError(form, show, message) {
+        var bits = estimatePhotoInputs(form);
+        if (!bits.error) return;
+        bits.error.hidden = !show;
+        if (message) bits.error.textContent = message;
+        if (show) bits.error.setAttribute('role', 'alert');
+        else bits.error.removeAttribute('role');
+    }
+
+    function kgPrepareEstimatePhotos(form) {
+        if (!form || !formHasPhotoGate(form)) return true;
+        var bits = estimatePhotoInputs(form);
+        var hasFiles = !!(bits.file && bits.file.files && bits.file.files.length > 0);
+        var willText = !!(bits.box && bits.box.checked);
+        var i;
+        if (!hasFiles && !willText) {
+            showPhotoError(form, true, PHOTO_ERROR);
+            if (bits.file) {
+                try { bits.file.focus(); } catch (err) {}
+            } else if (bits.box) {
+                try { bits.box.focus(); } catch (err) {}
+            }
+            return false;
+        }
+        if (hasFiles) {
+            for (i = 0; i < bits.file.files.length; i += 1) {
+                if (bits.file.files[i].size > MAX_PHOTO_BYTES) {
+                    showPhotoError(form, true, 'Each photo needs to be under 8 MB, or text them to (813) 649-3341 instead.');
+                    return false;
+                }
+            }
+            form.setAttribute('enctype', 'multipart/form-data');
+        } else {
+            form.removeAttribute('enctype');
+        }
+        showPhotoError(form, false);
+        return true;
+    }
+
+    var DOCS_ERROR = 'Attach W-9, liability insurance, and workers\' comp (or exemption), or check that you will email them to nknight@knightgroup.com.';
+    var MAX_DOC_BYTES = 8 * 1024 * 1024;
+    var CONTRACTOR_FILE_NAMES = ['w9', 'insurance_coi', 'workers_comp'];
+
+    function contractorDocInputs(form) {
+        return {
+            files: CONTRACTOR_FILE_NAMES.map(function (name) {
+                return form.querySelector('input[type="file"][name="' + name + '"]');
+            }),
+            box: form.querySelector('input[type="checkbox"][name="email_docs"]'),
+            error: form.querySelector('.kg-docs-error')
+        };
+    }
+
+    function formHasDocsGate(form) {
+        var bits = contractorDocInputs(form);
+        var hasFile = bits.files.some(function (input) { return !!input; });
+        return !!(hasFile || bits.box);
+    }
+
+    function fileChosen(input) {
+        return !!(input && input.files && input.files.length > 0);
+    }
+
+    function showDocsError(form, show, message) {
+        var bits = contractorDocInputs(form);
+        if (!bits.error) return;
+        bits.error.hidden = !show;
+        if (message) bits.error.textContent = message;
+        if (show) bits.error.setAttribute('role', 'alert');
+        else bits.error.removeAttribute('role');
+    }
+
+    function kgPrepareContractorDocs(form) {
+        if (!form || !formHasDocsGate(form)) return true;
+        var bits = contractorDocInputs(form);
+        var requiredInputs = bits.files.filter(Boolean);
+        var allFiles = requiredInputs.length > 0 && requiredInputs.every(fileChosen);
+        var willEmail = !!(bits.box && bits.box.checked);
+        var i, j, input;
+        if (!allFiles && !willEmail) {
+            showDocsError(form, true, DOCS_ERROR);
+            for (i = 0; i < bits.files.length; i += 1) {
+                if (bits.files[i] && !fileChosen(bits.files[i])) {
+                    try { bits.files[i].focus(); } catch (err) {}
+                    break;
+                }
+            }
+            return false;
+        }
+        for (i = 0; i < bits.files.length; i += 1) {
+            input = bits.files[i];
+            if (!input || !input.files) continue;
+            for (j = 0; j < input.files.length; j += 1) {
+                if (input.files[j].size > MAX_DOC_BYTES) {
+                    showDocsError(form, true, 'Each file needs to be under 8 MB, or email the PDFs to nknight@knightgroup.com instead.');
+                    return false;
+                }
+            }
+        }
+        if (bits.files.some(fileChosen)) {
+            form.setAttribute('enctype', 'multipart/form-data');
+        }
+        showDocsError(form, false);
+        return true;
+    }
+
+    function kgPrepareFormGates(form) {
+        return kgPrepareEstimatePhotos(form) && kgPrepareContractorDocs(form);
+    }
+
+    window.kgPrepareEstimatePhotos = kgPrepareFormGates;
+    window.kgPrepareContractorDocs = kgPrepareContractorDocs;
+
     function bindForm(form) {
         if (!form || form.getAttribute(TRACKED_ATTR) === '1') return;
         form.setAttribute(TRACKED_ATTR, '1');
@@ -672,7 +801,7 @@ ${data.message}
             phone.required = true;
             phone.minLength = Math.max(phone.minLength || 0, 10);
         }
-        if (description) {
+        if (description && !description.closest('.kg-field--optional')) {
             description.required = true;
             description.minLength = Math.max(description.minLength || 0, 5);
         }
@@ -684,7 +813,39 @@ ${data.message}
             pushLeadEvent('form_start', formDetails(form));
         });
 
-        form.addEventListener('submit', function () {
+        if (formHasPhotoGate(form)) {
+            var photoBits = estimatePhotoInputs(form);
+            function clearPhotoErrorIfReady() {
+                var bits = estimatePhotoInputs(form);
+                var hasFiles = !!(bits.file && bits.file.files && bits.file.files.length > 0);
+                var willText = !!(bits.box && bits.box.checked);
+                if (hasFiles || willText) showPhotoError(form, false);
+            }
+            if (photoBits.file) photoBits.file.addEventListener('change', clearPhotoErrorIfReady);
+            if (photoBits.box) photoBits.box.addEventListener('change', clearPhotoErrorIfReady);
+        }
+
+        if (formHasDocsGate(form)) {
+            var docBits = contractorDocInputs(form);
+            function clearDocsErrorIfReady() {
+                var bits = contractorDocInputs(form);
+                var requiredInputs = bits.files.filter(Boolean);
+                var allFiles = requiredInputs.length > 0 && requiredInputs.every(fileChosen);
+                var willEmail = !!(bits.box && bits.box.checked);
+                if (allFiles || willEmail) showDocsError(form, false);
+            }
+            docBits.files.forEach(function (input) {
+                if (input) input.addEventListener('change', clearDocsErrorIfReady);
+            });
+            if (docBits.box) docBits.box.addEventListener('change', clearDocsErrorIfReady);
+        }
+
+        form.addEventListener('submit', function (e) {
+            if (!kgPrepareFormGates(form)) {
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                return;
+            }
             const details = formDetails(form);
             details.destination = form.getAttribute('action') || '';
             try {
@@ -696,7 +857,7 @@ ${data.message}
                 // Ignore storage failures; analytics events still fire.
             }
             pushLeadEvent('form_submit', details);
-        });
+        }, true);
     }
 
     function ctaLocation(link) {
