@@ -23,6 +23,21 @@ def _slug_token(slug: str) -> str:
     return token or "service"
 
 
+def render_photo_fields(field_id: str) -> str:
+    """Photos required, or a promise to text them to Voice."""
+    return f"""                                    <div class="kg-field kg-photo-field">
+                                        <label for="{field_id}-photos">Job photos</label>
+                                        <input type="file" id="{field_id}-photos" name="photos" accept="image/*" multiple>
+                                        <p class="kg-field-hint">A close-up and a wide shot are enough for most written quotes.</p>
+                                        <label class="kg-check">
+                                            <input type="checkbox" name="text_photos" id="{field_id}-text-photos" value="I will text photos to (813) 649-3341">
+                                            <span>I will text photos to (813) 649-3341</span>
+                                        </label>
+                                        <p class="kg-photo-error" hidden>Add photos here, or check that you will text them to (813) 649-3341.</p>
+                                    </div>
+"""
+
+
 def render_service_sidebar(
     slug: str,
     label: str,
@@ -32,49 +47,93 @@ def render_service_sidebar(
     token = _slug_token(slug)
     book_label = label.strip().rstrip(".")
     sidebar_lead = lead or (
-        f"Send the basics and we will follow up with clear pricing for your {county_name} project."
+        f"Photos first — most {county_name} jobs are quoted in writing within 24 business hours."
     )
     subject = f"Knight Group {book_label} Estimate Request"
+    form_title = f"Book {html.escape(book_label.lower())}"
+    submit_label = "Get a written estimate"
+    packet_html = ""
+    is_pm = slug == "property-manager-handyman"
+    extra_fields = ""
+    message_placeholder = "Job type, city, or timing"
+    name_placeholder = "First and last name"
+    if is_pm:
+        extra_fields = f"""                                    <div class="kg-field">
+                                        <label for="{token}-sidebar-company">Management company</label>
+                                        <input type="text" id="{token}-sidebar-company" name="company" autocomplete="organization" placeholder="Legal name for the COI" required>
+                                    </div>
+                                    <div class="kg-field">
+                                        <label for="{token}-sidebar-email">Email</label>
+                                        <input type="email" id="{token}-sidebar-email" name="email" autocomplete="email" placeholder="Work email" required>
+                                    </div>
+"""
+        message_placeholder = "Property address, work-order #, or certificate-holder name"
+        name_placeholder = "Your name at the management company"
+        highlights_title = "Why property managers add Knight Group"
+        highlight_lines = [
+            "Downloadable W-9 and GL COI",
+            "Photo-documented work orders",
+            "$150 first hour / $75 after",
+            "No 2-hour minimum",
+            "Officer WC exemptions on file",
+            "Not a licensed plumber or GC",
+            "10+ years Florida property management",
+            "Pinellas first — selected Hillsborough/Pasco",
+        ]
+        form_title = "Add Knight Group as a vendor"
+        submit_label = "Send vendor request"
+        packet_html = (
+            f'                                <p><a class="kg-btn kg-btn--solid" href="/vendor/knight-group-vendor-packet.zip" '
+            f'download>Download vendor packet (ZIP)</a></p>\n'
+        )
+    else:
+        highlights_title = "Why homeowners choose Knight Group"
+        highlight_lines = [
+            "No 2-hour minimums",
+            "Transparent, upfront pricing",
+            "Registered and insured",
+            "Free written estimates",
+            "Local Safety Harbor business",
+            "5.0 Google rating",
+            "+15 Years as Journeyman Plumber",
+            "+20 Years Property Management",
+            f"{county_name} coverage",
+        ]
+    highlights_items = "\n                                    ".join(
+        f"<li>{html.escape(item)}</li>" for item in highlight_lines
+    )
 
     return f"""                        <aside class="kg-service-sidebar" aria-labelledby="{token}-sidebar-heading">
                             <div class="kg-pricing-sidebar-form">
-                                <h3 class="kg-sidebar-title" id="{token}-sidebar-heading">Book {html.escape(book_label.lower())}</h3>
+                                <h3 class="kg-sidebar-title" id="{token}-sidebar-heading">{form_title}</h3>
                                 <p>{html.escape(sidebar_lead)}</p>
-                                <form class="kg-contact-form" action="https://formspree.io/f/xzzvnpne" method="POST" data-kg-guard>
+{packet_html}                                <form class="kg-contact-form" action="https://formspree.io/f/xzzvnpne" method="POST" data-kg-guard>
                                     <div class="kg-field">
                                         <label for="{token}-sidebar-name">Your name</label>
-                                        <input type="text" id="{token}-sidebar-name" name="name" autocomplete="name" placeholder="First and last name" required>
+                                        <input type="text" id="{token}-sidebar-name" name="name" autocomplete="name" placeholder="{html.escape(name_placeholder)}" required>
                                     </div>
-                                    <div class="kg-field">
+{extra_fields}                                    <div class="kg-field">
                                         <label for="{token}-sidebar-phone">Phone</label>
                                         <input type="tel" id="{token}-sidebar-phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="(813) 555-1234" required>
                                     </div>
                                     <div class="kg-field kg-field--optional">
                                         <label for="{token}-sidebar-message">Project details <span>(optional)</span></label>
-                                        <textarea id="{token}-sidebar-message" name="message" rows="3" placeholder="Job type, city, or timing"></textarea>
+                                        <textarea id="{token}-sidebar-message" name="message" rows="3" placeholder="{html.escape(message_placeholder)}"></textarea>
                                     </div>
-                                    <input type="hidden" name="_subject" value="{html.escape(subject)}">
+{render_photo_fields(token + "-sidebar")}                                    <input type="hidden" name="_subject" value="{html.escape(subject)}">
                                     <input type="hidden" name="request_type" value="{html.escape(book_label)}">
                                     <input type="hidden" name="service_page" value="{html.escape(slug)}">
                                     <input type="hidden" name="_next" value="https://www.knightgroup.com/thank-you">
                                     <label class="visually-hidden" for="{token}-sidebar-hp">Leave this field blank</label>
                                     <input class="kg-hp" id="{token}-sidebar-hp" type="text" name="address_2" autocomplete="off" tabindex="-1">
-                                    <button type="submit" class="kg-contact-form__submit" data-kg-sending="Sending">Get free estimate</button>
+                                    <button type="submit" class="kg-contact-form__submit" data-kg-sending="Sending">{html.escape(submit_label)}</button>
                                 </form>
                             </div>
 
                             <div class="pricing-highlights">
-                                <h3>Why homeowners choose Knight Group</h3>
+                                <h3>{html.escape(highlights_title)}</h3>
                                 <ul>
-                                    <li>No 2-hour minimums</li>
-                                    <li>Transparent, upfront pricing</li>
-                                    <li>Registered and insured</li>
-                                    <li>Free written estimates</li>
-                                    <li>Local Safety Harbor business</li>
-                                    <li>5.0 Google rating</li>
-                                    <li>+15 Years as Journeyman Plumber</li>
-                                    <li>+20 Years Property Management</li>
-                                    <li>{html.escape(county_name)} coverage</li>
+                                    {highlights_items}
                                 </ul>
                             </div>
 

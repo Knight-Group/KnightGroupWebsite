@@ -26,7 +26,7 @@ Use this map when editing SEO copy, internal links, schema names, and CTAs. Each
 | `what does home watch check`, `home watch checklist`, `home watch vs house sitting` | `/home-watch-checklist` | `/home-watch-pinellas`, `/florida-snowbird-departure-checklist` | Visit scope and reporting, not a licensed home inspection |
 | `Florida snowbird departure checklist`, `what to do before leaving Florida house` | `/florida-snowbird-departure-checklist` | `/home-watch-pinellas`, `/home-watch-checklist` | Top-of-funnel close-up list before hiring Home Watch |
 | `Clearwater home watch` | `/home-watch-pinellas` until GSC justifies `/clearwater-home-watch` | `/home-watch-checklist` | City-qualified Home Watch; do not create city pages yet |
-| `commercial handyman near me` | Future: Property Manager & Commercial Handyman Services (serious landing page, not `/commercial-handyman-near-me`) | `/rental-turnover-handyman`, `/service-areas`, `/pricing` | 502 impressions at pos 27.6 in the Aug 19 baseline — add only as a real PM/commercial page |
+| `commercial handyman near me` | `/property-manager-handyman` | `/rental-turnover-handyman`, `/service-areas`, `/pricing` | GSC Jun–Aug 2026: 645 impressions / 0 clicks / pos 26.5. Vendor packet page, not a new `/commercial-handyman-near-me` URL. |
 
 ## Page Roles
 
@@ -36,6 +36,7 @@ Use this map when editing SEO copy, internal links, schema names, and CTAs. Each
 - `/home-watch-pinellas` owns Home Watch and vacant-property-check queries for Pinellas County. Do not spin city Home Watch URLs until Search Console shows separate demand.
 - `/home-watch-pricing` owns Home Watch cost queries. Handyman hourly rates stay on `/pricing`.
 - `/florida-snowbird-departure-checklist` is a homeowner close-up asset. Do not duplicate it into city Home Watch pages.
+- `/property-manager-handyman` owns vendor-hire and commercial/property-maintenance work-order queries. `/rental-turnover-handyman` stays the vacant-unit punch list. Do not add a second PM URL.
 - City pages own city-qualified handyman terms and should link to service-specific proof.
 - Gallery detail pages are proof assets, not primary money pages. They should support service and city pages with before/after evidence.
 

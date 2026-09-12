@@ -1,6 +1,11 @@
 User-agent: *
 Allow: /
 Allow: /GalleryImages/
+Allow: /header.html
+Allow: /footer.html
+Allow: /head-gtm.html
+Allow: /socialCards.html
+Allow: /vendor/
 
 # App / tooling — never index
 Disallow: /admin/

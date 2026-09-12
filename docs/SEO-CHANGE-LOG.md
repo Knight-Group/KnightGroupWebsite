@@ -101,3 +101,21 @@ GSC last-3-months looking weaker on average position is consistent with **niche 
 
 **Gallery pipeline (same day, not a content pack):** auto job pages already get 750+ word unique copy, canonical, OG, JSON-LD (WebPage / ImageObject / HowTo / FAQ), and sitemap inclusion. “Scope & Routing” is the existing service hub (e.g. `/Services/plumbing-services`), not a second URL per image. “View Job Details” is `/gallery/{id}`. `clip_title` no longer chops the brand to `Knight G...`. `publish-before-after-gallery.py` now runs `build-seo-pages.py --gallery-only` so adding a composite does **not** rewrite city/money HTML. Existing gallery HTML was **not** mass-regenerated (avoids a lastmod storm during the freeze).
 
+---
+
+## 2026-09-11 — `/property-manager-handyman` vendor packet (not a money-page snippet pack)
+
+Rebuilt the existing URL `https://www.knightgroup.com/property-manager-handyman` (it was a generated stub: one repeated sentence and homeowner FAQs). This is **not** a new URL, **not** a new GBP, and **not** a second company’s page.
+
+**Vendor is Knight Group Handyman Services LLC only.** FEIN 33-2557284, Sunbiz L24000528363, Safety Harbor remit address, W-9 / GL COI / officer WC exemptions. Honest that the LLC does **not** yet have a company WC policy. No Copeland/vendor-network rates. No subcontractor LLCs named or listed.
+
+**Keywords:** GSC (Jun 2–Aug 28) already has `commercial handyman near me` (645 imp / 0 clicks / pos 26.5) and `property maintenance handyman` (1 click). Google Trends explore 429’d during research; the page uses those GSC terms plus PM vendor language (work order, AppFolio/Buildium invite, certificate of insurance) instead of homeowner “near me” stuffing. Title: `Property Manager Handyman | Vendor Packet | Pinellas`. ~1,000 unique body words. Internal links to rental turnover, Home Watch, Florida scope, pricing, Pinellas, general repairs.
+
+**Freeze unchanged.** Did not rewrite city / homepage / pricing / `/Services/handyman` titles, H1s, or intros. Sitemap lastmod bumped **only** for `/property-manager-handyman` (and rental-turnover if that page gained a vendor-page pointer).
+
+**Public packet download (same day):** `/vendor/knight-group-vendor-packet.zip` plus individual PDFs (filled W-9 with EIN, GL COI, both officer WC exemptions, Sunbiz, services one-pager). **Not** in the zip: ACH, additional-insured endorsements, company WC policy, driver’s licenses. Nick’s personal Gmail is redacted on the public exemption copy. Refresh with `scripts/sync-vendor-packet.py`.
+
+**Related-card images (same day):** unique Knight Group job stills per destination; About card uses a face-heavy Vince crop. Not a SERP title pack.
+
+**Shipped live:** 2026-09-11 via `origin/main`. Did **not** ship the uncommitted `$150 First Hour` money-page title pack.
+
