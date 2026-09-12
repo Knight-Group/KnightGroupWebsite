@@ -16,18 +16,18 @@ CITY_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
     },
     "clearwater": {
         "hero_lead": 'Clearwater handyman from Safety Harbor — $150 first hour, $75 after, no two-hour minimum. Island Estates, Countryside, Coachman, and inland homes.',
-        "meta_description": 'Clearwater handyman for drywall, fixtures, doors, and punch lists. $150 first hour, $75 after. No 2-hour minimum. Free written estimate. Call (813) 649-3341.',
-        "opening": 'Knight Group is the Safety Harbor handyman already showing up for Clearwater searches — $150 the first hour, $75 after, and no two-hour minimum. We quote in writing before tools come out, then batch Island Estates, Countryside, Coachman, and inland ranch stops on the same Pinellas loop. Beach condos and owner-occupied homes get the same crew: fixture plumbing, drywall, doors, screens, fans, and punch lists — not a franchise call center.',
+        "meta_description": 'Clearwater handyman from Safety Harbor. $150 first hour, $75 after, no two-hour minimum. Island Estates, Countryside, Coachman. Free written estimate.',
+        "opening": 'Knight Group is the Safety Harbor handyman already showing up for Clearwater searches — $150 the first hour, $75 after, and no two-hour minimum. We quote in writing before tools come out, then batch Island Estates, Countryside, Coachman, and inland ranch stops on the same Pinellas loop. Beach condos and owner-occupied homes get the same crew for drywall, doors, screens, carpentry, caulk, and punch lists — not a franchise call center.',
         "scheduling": "Clearwater is on our regular Pinellas route from Safety Harbor. Most requests schedule within one to two business days. Share the address and photos so we lock an arrival window — call (813) 649-3341 for active water.",
-        "scope_note": 'We hang ceiling fans, swap light fixtures, and replace switches and like-for-like outlets on existing circuits. Faucets, toilets, sinks, and fixture plumbing on existing connections are standard Clearwater calls. New circuits, panel work, rewires, repipes, and sewer mains are referred.',
+        "scope_note": 'Knight Group handles drywall, paint, doors, screens, carpentry, caulk, and punch-list work. Electrical connections and plumbing connected to drinking-water lines are routed to licensed trades.',
         "closing": 'See <a href="/pricing">pricing</a>, <a href="/pinellas-handyman">Pinellas coverage</a>, and real job photos in the <a href="/galleries">gallery</a>. Focused pages: <a href="/clearwater-sink-repair">Clearwater sink repair</a> and <a href="/clearwater-drywall-repair">Clearwater drywall</a>. Active water — phone first.',
         "faq_price": ('How much does a typical handyman visit cost in Clearwater?', 'Standard visits are $150 for the first hour and $75 each additional hour, with no two-hour minimum. Defined Clearwater scopes can be quoted as a flat rate after photos.'),
-        "faq_licensed": ('Can Knight Group do plumbing or electrical work in Clearwater?', 'We hang ceiling fans, swap light fixtures, and replace switches and like-for-like outlets on existing circuits. Faucets, toilets, and fixture plumbing on existing connections are standard Clearwater work. We are not a licensed electrician or plumber. New circuits, panel work, rewires, and sewer mains are referred.'),
+        "faq_licensed": ('Can Knight Group do plumbing or electrical work in Clearwater?', 'Knight Group can document and diagnose the issue, change bulbs or cover plates, and handle eligible caulk, drywall, texture, and paint closeout. Electrical connections and plumbing connected to drinking-water lines are routed to licensed trades.'),
         "faq_schedule": ('How soon can you reach Clearwater?', 'Most Clearwater requests schedule within one to two business days on existing Pinellas County routes. Active leaks should be called in at (813) 649-3341 so we can triage and involve a licensed plumber when needed.'),
     },
     "dunedin": {
-        "hero_lead": 'Handyman repairs in Dunedin — registered, insured Safety Harbor crew serving downtown Dunedin.',
-        "meta_description": 'Dunedin handyman: drywall, doors, paint-ready finish work, and punch-list repairs from Safety Harbor. Registered and insured. Free estimate.',
+        "hero_lead": 'Dunedin handyman from Safety Harbor — $150 first hour, $75 after, no two-hour minimum. Downtown drywall, doors, and punch lists.',
+        "meta_description": 'Dunedin handyman from Safety Harbor. $150 first hour, $75 after, no two-hour minimum. Downtown drywall, doors, punch lists. Free written estimate.',
         "opening": "Looking for reliable handyman help in Dunedin? Vince Knight's team handles drywall, doors, paint-ready finishing, and punch-list repairs without a two-hour minimum. Dunedin’s walkable downtown and tight lot lines mean access and parking matter. We plan material carries and protect historic trim profiles when patching — important for homeowners who value the town’s craftsman character.",
         "scheduling": 'Dunedin scheduling starts with photos through our booking form. For urgent fixture leaks, call (813) 649-3341 — we prioritize active water over standard punch lists.',
         "scope_note": 'Florida handyman rules matter on every Dunedin visit. Knight Group documents what we can legally perform and refers licensed trades when DBPR or a permit requires it.',
@@ -37,8 +37,8 @@ CITY_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
         "faq_schedule": ('How soon can you reach Dunedin?', 'Most Dunedin requests schedule within one to two business days on existing Pinellas County routes. Active leaks should be called in at (813) 649-3341 so we can triage and involve a licensed plumber when needed.'),
     },
     "palm-harbor": {
-        "hero_lead": 'Handyman repairs in Palm Harbor — registered, insured Safety Harbor crew serving East Lake.',
-        "meta_description": 'Palm Harbor handyman: drywall, doors, paint-ready finish work, and punch-list repairs from Safety Harbor. Registered and insured. Free estimate.',
+        "hero_lead": 'Palm Harbor handyman from Safety Harbor — $150 first hour, $75 after, no two-hour minimum. East Lake punch lists, drywall, and doors.',
+        "meta_description": 'Palm Harbor handyman from Safety Harbor. $150 first hour, $75 after, no two-hour minimum. East Lake punch lists, drywall, doors. Free written estimate.',
         "opening": 'Palm Harbor properties need a contractor who understands local housing stock — not a statewide template page. Knight Group focuses on everyday punch-list work across Pinellas County. East Lake and Highland Lakes homeowners often call for one bathroom issue and discover a short punch list while we are on site. We document each item and quote before expanding scope — common in larger Palm Harbor homes with multiple wet walls.',
         "scheduling": 'Estimates for Palm Harbor work are always written before tools come out. Upload pictures, list rooms affected, and we reply with flat-rate or hourly options as scope allows.',
         "scope_note": 'We do not perform work that requires a state contractor license. Palm Harbor homeowners get a clear line between repairs we handle and trades we coordinate.',
@@ -48,8 +48,8 @@ CITY_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
         "faq_schedule": ('How soon can you reach Palm Harbor?', 'Most Palm Harbor requests schedule within one to two business days on existing Pinellas County routes. Active leaks should be called in at (813) 649-3341 so we can triage and involve a licensed plumber when needed.'),
     },
     "largo": {
-        "hero_lead": 'Handyman repairs in Largo — registered, insured Safety Harbor crew serving Bardmoor.',
-        "meta_description": 'Largo handyman: drywall, doors, paint-ready finish work, and punch-list repairs from Safety Harbor. Registered and insured. Free estimate.',
+        "hero_lead": 'Largo handyman from Safety Harbor — $150 first hour, $75 after, no two-hour minimum. Bardmoor and central Pinellas punch lists.',
+        "meta_description": 'Largo handyman from Safety Harbor. $150 first hour, $75 after, no two-hour minimum. Bardmoor and central Pinellas punch lists. Free written estimate.',
         "opening": 'From Bardmoor, Knight Group schedules Largo visits with written estimates and an insured crew crossing Pinellas County on planned routes. Largo’s central Pinellas location makes it a natural mid-route stop between Safety Harbor and the beaches. We schedule Bardmoor and Ridgecrest blocks together to keep drive time low and arrival windows tight.',
         "scheduling": 'Planning a Largo repair? Knight Group confirms Pinellas County routing first, then locks an arrival window. Weekend and after-hours slots are for emergency calls only.',
         "scope_note": 'Scope stays transparent: tasks we accept are quoted in writing; anything that needs a licensed trade is flagged before you approve labor.',
@@ -59,8 +59,8 @@ CITY_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
         "faq_schedule": ('How soon can you reach Largo?', 'Most Largo requests schedule within one to two business days on existing Pinellas County routes. Active leaks should be called in at (813) 649-3341 so we can triage and involve a licensed plumber when needed.'),
     },
     "oldsmar": {
-        "hero_lead": 'Handyman repairs in Oldsmar — registered, insured Safety Harbor crew serving East Lake Woodlands edge.',
-        "meta_description": 'Oldsmar handyman: drywall, doors, paint-ready finish work, and punch-list repairs from Safety Harbor. Registered and insured. Free estimate.',
+        "hero_lead": 'Oldsmar handyman from Safety Harbor — $150 first hour, $75 after, no two-hour minimum. East Lake Woodlands-edge drywall, doors, and punch lists.',
+        "meta_description": 'Oldsmar handyman from Safety Harbor. $150 first hour, $75 after, no two-hour minimum. Drywall, doors, punch lists. Free written estimate.',
         "opening": 'When storm season stresses doors, screens, and drywall, Oldsmar owners call Knight Group for practical repairs that stay inside current Florida handyman limits. Oldsmar sits on our daily route between Hillsborough jobs and central Pinellas. Homeowners here benefit from a team that already crosses the bay — not a contractor who treats Oldsmar as out of territory.',
         "scheduling": 'Dispatch runs from 1225 7th St S, Safety Harbor 34695. Oldsmar jobs get a written estimate after photos or a quick site look — book online or call (813) 649-3341 when water is active.',
         "scope_note": 'Allowed work includes drywall, paint, interior doors, screens, hardware, caulk, and punch-list repairs. Electrical connection work and plumbing that taps drinking water require licensed trades — we diagnose first.',
@@ -70,8 +70,8 @@ CITY_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
         "faq_schedule": ('How soon can you reach Oldsmar?', 'Most Oldsmar requests schedule within one to two business days on existing Pinellas County routes. Active leaks should be called in at (813) 649-3341 so we can triage and involve a licensed plumber when needed.'),
     },
     "tarpon-springs": {
-        "hero_lead": 'Handyman repairs in Tarpon Springs — registered, insured Safety Harbor crew serving historic district.',
-        "meta_description": 'Tarpon Springs handyman: drywall, doors, paint-ready finish work, and punch-list repairs from Safety Harbor. Registered and insured. Free estimate.',
+        "hero_lead": 'Tarpon Springs handyman from Safety Harbor — $150 first hour, $75 after, no two-hour minimum. Historic district drywall, doors, and punch lists.',
+        "meta_description": 'Tarpon Springs handyman from Safety Harbor. $150 first hour, $75 after, no two-hour minimum. Drywall, doors, punch lists. Free written estimate.',
         "opening": 'Knight Group answers Tarpon Springs requests with photos-first estimates, flat-rate quotes on defined scopes, and hourly pricing only when punch lists are open-ended. Tarpon Springs’ older housing stock rewards technicians who understand tight wet walls and fragile tile. Vince Knight’s plumbing background helps diagnose whether a leak stays handyman scope or needs a licensed repipe referral.',
         "scheduling": "We batch Pinellas County routes from our Safety Harbor shop. Share address details for Tarpon Springs when booking so we confirm fit on the current week's path.",
         "scope_note": 'If your Tarpon Springs job needs a licensed plumber, electrician, roofer, or permitted contractor, we say so before demolition. Honesty keeps the visit from turning into a change order.',
@@ -103,9 +103,9 @@ CITY_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
         "faq_schedule": ('How soon can you reach St. Petersburg?', 'Most St. Petersburg requests schedule within one to two business days on existing Pinellas County routes. Active leaks should be called in at (813) 649-3341 so we can triage and involve a licensed plumber when needed.'),
     },
     "tampa": {
-        "hero_lead": 'Handyman repairs in Tampa — registered, insured Safety Harbor crew serving Hyde Park.',
-        "meta_description": 'Tampa handyman: drywall, doors, paint-ready finish work, and punch-list repairs from Safety Harbor. Registered and insured. Free estimate.',
-        "opening": "Whether you found us online or from a neighbor, Knight Group treats Tampa jobs as neighborhood work — protected floors, labeled hardware, and scope explained before tools start. We route Tampa from Safety Harbor across the bay — prioritizing northwest Tampa, Westchase, Town 'n' Country, and Carrollwood on planned days. South Tampa and far-east addresses are accepted only when they fit that route; confirm the address first.",
+        "hero_lead": 'Tampa handyman from Safety Harbor — $150 first hour, $75 after, no two-hour minimum. Northwest Tampa, Westchase, Town \'n\' Country, and Hyde Park by confirmation.',
+        "meta_description": "Tampa handyman from Safety Harbor. $150 first hour, $75 after, no two-hour minimum. Northwest Tampa, Westchase, Town 'n' Country. Free written estimate.",
+        "opening": "Tampa handyman from Safety Harbor: $150 first hour, $75 after, no two-hour minimum, written estimate before tools come out. We treat Tampa jobs as neighborhood work — protected floors, labeled hardware, and scope explained first. Routes prioritize northwest Tampa, Westchase, Town 'n' Country, and Carrollwood on planned days. South Tampa and far-east addresses are accepted only when they fit that route; confirm the address first.",
         "scheduling": 'Planning a Tampa repair? Knight Group confirms Hillsborough County routing first, then locks an arrival window. Weekend and after-hours slots are for emergency calls only.',
         "scope_note": 'Scope stays transparent: tasks we accept are quoted in writing; anything that needs a licensed trade is flagged before you approve labor.',
         "closing": 'See related service pages, then schedule a Tampa visit. Active leaks should be called in so we can triage licensed-trade needs.',
@@ -180,12 +180,12 @@ CITY_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
         "faq_schedule": ('How soon can you reach Egypt Lake-Leto?', 'Most Egypt Lake-Leto requests schedule within one to two business days on existing Hillsborough County routes. Active leaks should be called in at (813) 649-3341 so we can triage and involve a licensed plumber when needed.'),
     },
     "temple-terrace": {
-        "hero_lead": 'Handyman repairs in Temple Terrace — registered, insured Safety Harbor crew serving Temple Terrace Estates.',
-        "meta_description": 'Temple Terrace handyman: drywall, doors, paint-ready finish work, and punch-list repairs from Safety Harbor. Registered and insured. Free estimate.',
-        "opening": 'Knight Group answers Temple Terrace requests with photos-first estimates, flat-rate quotes on defined scopes, and hourly pricing only when punch lists are open-ended. Temple Terrace’s river neighborhoods reward technicians who understand exterior wood repair sequencing — prime, caulk, then paint — so repairs survive the next wet season.',
+        "hero_lead": 'Temple Terrace handyman from Safety Harbor — $150 first hour, $75 after, no two-hour minimum. Written estimates before tools come out.',
+        "meta_description": 'Temple Terrace handyman from Safety Harbor. $150 first hour, $75 after, no two-hour minimum. Drywall, doors, carpentry, punch lists. Free written estimate.',
+        "opening": 'Temple Terrace searches already find this page. Knight Group quotes $150 for the first hour and $75 after, with no two-hour minimum, then writes the scope before tools come out. River neighborhoods reward technicians who sequence exterior wood repair — prime, caulk, then paint — so the patch survives the next wet season.',
         "scheduling": "We batch Hillsborough County routes from our Safety Harbor shop. Share address details for Temple Terrace when booking so we confirm fit on the current week's path.",
         "scope_note": 'If your Temple Terrace job needs a licensed plumber, electrician, roofer, or permitted contractor, we say so before demolition. Honesty keeps the visit from turning into a change order.',
-        "closing": 'Next steps: open the Hillsborough County coverage hub, review handyman services and pricing, or book with photos. Active water — phone first.',
+        "closing": 'Next steps: <a href="/hillsborough-handyman">Hillsborough coverage</a>, <a href="/tampa-handyman">Tampa handyman</a>, <a href="/Services/handyman">handyman near me</a>, <a href="/pricing">$150 first hour pricing</a>, or <a href="/booking">book with photos</a>. Active water — phone first.',
         "faq_price": ('How much does a typical handyman visit cost in Temple Terrace?', 'Standard visits are $150 for the first hour and $75 each additional hour, with no two-hour minimum. Defined Temple Terrace scopes can be quoted as a flat rate after photos.'),
         "faq_licensed": ('Can Knight Group do plumbing or electrical work in Temple Terrace?', 'Florida requires a DBPR license for electrical connection work and for plumbing that connects to drinking water. Vince Knight’s journeyman plumbing background helps diagnose the issue in Temple Terrace; licensed trades are referred when the law requires it.'),
         "faq_schedule": ('How soon can you reach Temple Terrace?', 'Most Temple Terrace requests schedule within one to two business days on existing Hillsborough County routes. Active leaks should be called in at (813) 649-3341 so we can triage and involve a licensed plumber when needed.'),
@@ -213,8 +213,8 @@ CITY_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
         "faq_schedule": ('How soon can you reach Trinity?', 'Most Trinity requests schedule within one to two business days on existing Pasco County routes. Active leaks should be called in at (813) 649-3341 so we can triage and involve a licensed plumber when needed.'),
     },
     "new-port-richey": {
-        "hero_lead": 'Handyman repairs in New Port Richey — registered, insured Safety Harbor crew serving downtown NPR.',
-        "meta_description": 'New Port Richey handyman: drywall, doors, paint-ready finish work, and punch-list repairs from Safety Harbor. Registered and insured. Free estimate.',
+        "hero_lead": 'New Port Richey handyman from Safety Harbor — $150 first hour, $75 after, no two-hour minimum. Downtown NPR drywall, doors, and punch lists.',
+        "meta_description": 'New Port Richey handyman from Safety Harbor. $150 first hour, $75 after, no two-hour minimum. Drywall, doors, punch lists. Free written estimate.',
         "opening": 'Whether you found us online or from a neighbor, Knight Group treats New Port Richey jobs as neighborhood work — protected floors, labeled hardware, and scope explained before tools start. New Port Richey’s downtown river homes need careful moisture diagnosis before cosmetic patches — we stabilize leaks first, then texture and paint so stains do not return next storm season.',
         "scheduling": 'Planning a New Port Richey repair? Knight Group confirms Pasco County routing first, then locks an arrival window. Weekend and after-hours slots are for emergency calls only.',
         "scope_note": 'Scope stays transparent: tasks we accept are quoted in writing; anything that needs a licensed trade is flagged before you approve labor.',
@@ -279,8 +279,8 @@ CITY_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
         "faq_schedule": ('How soon can you reach Port Richey?', 'Most Port Richey requests schedule within one to two business days on existing Pasco County routes. Active leaks should be called in at (813) 649-3341 so we can triage and involve a licensed plumber when needed.'),
     },
     "land-o-lakes": {
-        "hero_lead": "Handyman repairs in Land O' Lakes — registered, insured Safety Harbor crew serving Connerton.",
-        "meta_description": "Land O' Lakes handyman: drywall, doors, paint-ready finish work, and punch-list repairs from Safety Harbor. Registered and insured. Free estimate.",
+        "hero_lead": "Land O' Lakes handyman from Safety Harbor — $150 first hour, $75 after, no two-hour minimum. Connerton and west Pasco routes by confirmation.",
+        "meta_description": "Land O' Lakes handyman from Safety Harbor. $150 first hour, $75 after, no two-hour minimum. Pasco route drywall, doors, punch lists. Free written estimate.",
         "opening": "When storm season stresses doors, screens, and drywall, Land O' Lakes owners call Knight Group for practical repairs that stay inside current Florida handyman limits. Land O' Lakes grew fast — many owners are hitting the first decade of fixture failures and kid-related drywall damage. We help prioritize what matters for resale vs. daily living.",
         "scheduling": "Dispatch runs from 1225 7th St S, Safety Harbor 34695. Land O' Lakes jobs get a written estimate after photos or a quick site look — book online or call (813) 649-3341 when water is active.",
         "scope_note": 'Allowed work includes drywall, paint, interior doors, screens, hardware, caulk, and punch-list repairs. Electrical connection work and plumbing that taps drinking water require licensed trades — we diagnose first.',
@@ -293,17 +293,17 @@ CITY_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
 
 COUNTY_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
     "pinellas": {
-        "hero_lead": 'Pinellas County handyman routes from Safety Harbor — fixture work, drywall, doors, and punch-list repairs with written estimates.',
-        "meta_description": 'Pinellas County handyman routes from Safety Harbor: drywall, doors, paint-ready finish work. Registered and insured. Free estimate.',
-        "opening": 'Knight Group covers Pinellas County on daily routes from Safety Harbor. Homeowners get a local insured crew for drywall, doors, carpentry, painting touch-ups, and punch-list repairs — not a referral marketplace. Licensed trades are coordinated when Florida DBPR requires it.',
+        "hero_lead": 'Pinellas County handyman from Safety Harbor — $150 first hour, $75 after, no two-hour minimum. Drywall, doors, screens, and punch-list repairs with written estimates.',
+        "meta_description": 'Pinellas County handyman from Safety Harbor. $150 first hour, $75 after, no two-hour minimum. Clearwater, Largo, Tarpon Springs. Free written estimate.',
+        "opening": 'Knight Group covers Pinellas County on daily routes from Safety Harbor at $150 the first hour and $75 after, with no two-hour minimum. Homeowners get a local insured crew for drywall, doors, carpentry, painting touch-ups, and punch-list repairs — not a referral marketplace. Licensed trades are coordinated when Florida DBPR requires it.',
         "scheduling": 'Book Pinellas County work with photos online or call (813) 649-3341. We confirm your city fits the current route before locking an arrival window.',
         "scope_note": 'Handyman-scope repairs only across Pinellas County. Licensed trades are referred for electrical connection work, plumbing that taps drinking water, roofing, new windows, structural additions, and mold remediation over 10 square feet.',
         "closing": 'Tour city pages below, compare pricing, and view our gallery for Pinellas County proof. Emergency leaks — call first.',
     },
     "hillsborough": {
-        "hero_lead": 'Hillsborough County handyman routes from Safety Harbor — fixture work, drywall, doors, and punch-list repairs with written estimates.',
-        "meta_description": 'Hillsborough County handyman routes from Safety Harbor: drywall, doors, paint-ready finish work. Registered and insured. Free estimate.',
-        "opening": 'Knight Group covers northwest Hillsborough on scheduled and expanding routes from Safety Harbor. Homeowners get a local insured crew for drywall, doors, carpentry, painting touch-ups, and punch-list repairs — not a referral marketplace. Licensed trades are coordinated when Florida DBPR requires it. Address confirmation is required; this is not a daily Pinellas-style loop across the whole county.',
+        "hero_lead": 'Hillsborough County handyman from Safety Harbor — $150 first hour, $75 after. Tampa, Temple Terrace, and northwest routes by confirmation. No Lutz office.',
+        "meta_description": 'Hillsborough handyman for Tampa and Temple Terrace. $150 first hour, $75 after. Lutz / North Tampa by confirmation. No Lutz office.',
+        "opening": 'Knight Group covers northwest Hillsborough on scheduled and expanding routes from Safety Harbor at $150 the first hour and $75 after. Homeowners get a local insured crew for drywall, doors, carpentry, painting touch-ups, and punch-list repairs — not a referral marketplace. Licensed trades are coordinated when Florida DBPR requires it. Lutz / North Tampa is confirm-first; there is no Lutz office. Address confirmation is required; this is not a daily Pinellas-style loop across the whole county.',
         "scheduling": 'Book Hillsborough County work with photos online or call (813) 649-3341. We confirm your city fits the current route before locking an arrival window.',
         "scope_note": 'Handyman-scope repairs only across Hillsborough County. Licensed trades are referred for electrical connection work, plumbing that taps drinking water, roofing, new windows, structural additions, and mold remediation over 10 square feet.',
         "closing": 'Tour city pages below, compare pricing, and view our gallery for Hillsborough County proof. Emergency leaks — call first.',
@@ -320,11 +320,11 @@ COUNTY_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
 
 COMBO_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
     "clearwater-sink-repair": {
-        "hero_lead": 'Sink And Faucet Repair in Clearwater — written estimates and paint-ready finish work from Safety Harbor.',
-        "meta_description": 'Sink And Faucet Repair in Clearwater: documented scope, registered and insured Safety Harbor crew. Free written estimate.',
-        "opening": 'Searches for sink and faucet repair in Clearwater should land on a crew that knows local housing — not a generic statewide ad. Knight Group serves Clearwater from Safety Harbor with documented scope on real homes.',
-        "follow_through": 'After the primary sink and faucet repair task, we sequence drywall, caulk, or paint so Clearwater homeowners are not hiring a second vendor for finish work.',
-        "booking": 'Book Clearwater sink and faucet repair with photos, call (813) 649-3341 for active leaks, or view the city handyman page for broader repair lists.',
+        "hero_lead": 'Sink and faucet problem assessment in Clearwater, licensed-plumber routing, and paint-ready finish closeout from Safety Harbor.',
+        "meta_description": 'Clearwater sink and faucet problem assessment, licensed-plumber routing, and eligible cabinet, caulk, drywall, and paint closeout.',
+        "opening": 'Searches for sink and faucet problems in Clearwater should lead to clear responsibility. Knight Group documents visible conditions and routes drinking-water connections to a licensed plumber.',
+        "follow_through": 'After the licensed plumber completes the connection work, we can sequence eligible cabinet, drywall, caulk, texture, or paint closeout.',
+        "booking": 'Send Clearwater sink or faucet problem photos, call (813) 649-3341 for active water, or view the city handyman page for broader repair lists.',
     },
     "clearwater-drywall-repair": {
         "hero_lead": 'Drywall Repair in Clearwater — written estimates and paint-ready finish work from Safety Harbor.',
@@ -348,11 +348,11 @@ COMBO_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
         "booking": 'Book Palm Harbor drywall repair with photos, call (813) 649-3341 for active leaks, or view the city handyman page for broader repair lists.',
     },
     "largo-toilet-repair": {
-        "hero_lead": 'Toilet Repair in Largo — written estimates and paint-ready finish work from Safety Harbor.',
-        "meta_description": 'Toilet Repair in Largo: documented scope, registered and insured Safety Harbor crew. Free written estimate.',
-        "opening": 'Searches for toilet repair in Largo should land on a crew that knows local housing — not a generic statewide ad. Knight Group serves Largo from Safety Harbor with documented scope on real homes.',
-        "follow_through": 'After the primary toilet repair task, we sequence drywall, caulk, or paint so Largo homeowners are not hiring a second vendor for finish work.',
-        "booking": 'Book Largo toilet repair with photos, call (813) 649-3341 for active leaks, or view the city handyman page for broader repair lists.',
+        "hero_lead": 'Toilet problem assessment in Largo, licensed-plumber routing, and paint-ready finish closeout from Safety Harbor.',
+        "meta_description": 'Largo toilet problem assessment, licensed-plumber routing, and eligible floor, caulk, drywall, and paint closeout.',
+        "opening": 'Searches for toilet problems in Largo should lead to clear responsibility. Knight Group documents visible conditions and routes licensed plumbing work appropriately.',
+        "follow_through": 'After the licensed plumber completes the repair, we can sequence eligible floor, drywall, caulk, texture, or paint closeout.',
+        "booking": 'Send Largo toilet problem photos, call (813) 649-3341 for active water, or view the city handyman page for broader repair lists.',
     },
     "oldsmar-door-adjustment": {
         "hero_lead": 'Door Adjustment in Oldsmar — written estimates and paint-ready finish work from Safety Harbor.',
@@ -379,11 +379,62 @@ COMBO_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
 
 
 def city_copy(slug: str) -> dict:
-    return dict(CITY_PAGE_COPY.get(slug, {}))
+    data = dict(CITY_PAGE_COPY.get(slug, {}))
+    name = data.get("faq_licensed")
+    city_name = slug.replace("-", " ").title()
+    if slug == "st-petersburg":
+        city_name = "St. Petersburg"
+    elif slug == "town-n-country":
+        city_name = "Town 'n' Country"
+    elif slug == "egypt-lake-leto":
+        city_name = "Egypt Lake-Leto"
+    elif slug == "land-o-lakes":
+        city_name = "Land O' Lakes"
+    hillsborough = slug in {
+        "tampa",
+        "temple-terrace",
+        "westchase",
+        "carrollwood",
+        "town-n-country",
+        "citrus-park",
+        "northdale",
+        "egypt-lake-leto",
+    }
+    from restore_fixture_scope import licensed_faq_answer
+
+    data["faq_licensed"] = (
+        f"Can Knight Group do plumbing or electrical work in {city_name}?",
+        licensed_faq_answer(city_name),
+    )
+    if hillsborough:
+        data["scope_note"] = (
+            "Ceiling fans, fixtures, switches, outlets, and basic no-permit plumbing are Knight Group work. "
+            "Hillsborough permit rules can be tighter than Pinellas, so we confirm the county requirement on the estimate. "
+            "Opening walls, sewers, new circuits, and panel work are referred."
+        )
+    else:
+        data["scope_note"] = (
+            "Ceiling fans, fixtures, switches, outlets, and basic plumbing that does not need a permit are Knight Group work. "
+            "Opening walls, sewer mains, new circuits, and panel work are referred."
+        )
+    _ = name
+    return data
 
 
 def county_copy(slug: str) -> dict:
-    return dict(COUNTY_PAGE_COPY.get(slug, {}))
+    data = dict(COUNTY_PAGE_COPY.get(slug, {}))
+    if slug == "hillsborough":
+        data["scope_note"] = (
+            "Ceiling fans, fixtures, and basic no-permit plumbing are Knight Group work. "
+            "Hillsborough permit rules can be tighter than Pinellas, so we confirm the county requirement on the estimate. "
+            "New circuits, panel work, in-wall plumbing, sewers, roofing, and structural work are referred."
+        )
+    else:
+        data["scope_note"] = (
+            "Ceiling fans, fixtures, switches, outlets, and basic plumbing that does not need a permit stay with Knight Group. "
+            "New circuits, panel work, in-wall plumbing, sewers, roofing, new windows, structural additions, and mold remediation over 10 square feet are referred."
+        )
+    return data
 
 
 def combo_copy(slug: str) -> dict:

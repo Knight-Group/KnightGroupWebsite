@@ -28,8 +28,16 @@ def _city_combo_links_html(city_slug: str, city_name: str) -> str:
     return f"<p>Focused job pages: {', '.join(links)}.</p>"
 
 
+def _scope_safe_job(job: str) -> str:
+    """Keep the real job list. Only reword true licensed-trade items."""
+    lower = job.lower()
+    if any(token in lower for token in ("repipe", "sewer main", "new circuit", "panel upgrade", "gas line")):
+        return f"{job} — referred when a permit or licensed trade is required"
+    return job
+
+
 def _jobs_list(jobs: list[str]) -> str:
-    return "<ul>\n" + "\n".join(f"<li>{job}</li>" for job in jobs) + "\n</ul>"
+    return "<ul>\n" + "\n".join(f"<li>{_scope_safe_job(job)}</li>" for job in jobs) + "\n</ul>"
 
 
 def _county_hub_link(county_slug: str, county_name: str) -> str:
@@ -162,7 +170,14 @@ def build_combo_body(combo_slug: str, city_name: str, city_slug: str, service_la
     jobs_html = _jobs_list(profile["jobs"])
     city_link = f'<a href="/{city_slug}-handyman">{city_name} handyman services</a>'
     service_link = f'<a href="/Services/{niche_slug}">{service_label}</a>'
-    opening = seo.get("opening") or profile["focus"]
+    plumbing_topic = any(token in service_label.lower() for token in ("sink", "faucet", "toilet", "plumb", "drain", "disposal", "shutoff"))
+    safe_plumbing_focus = (
+        f"Knight Group documents visible conditions related to {service_label} in {city_name}, routes plumbing "
+        "connected to drinking-water lines to a licensed plumber, and quotes eligible cabinet, caulk, drywall, "
+        "texture, trim, and paint closeout."
+    )
+    opening = safe_plumbing_focus if plumbing_topic else (seo.get("opening") or profile["focus"])
+    focus = safe_plumbing_focus if plumbing_topic else profile["focus"]
     follow_through = seo.get("follow_through") or (
         f"When a {city_name} job touches drywall, paint, or trim after the primary repair, we sequence drying and finishing so you are not scheduling a second vendor."
     )
@@ -174,7 +189,7 @@ def build_combo_body(combo_slug: str, city_name: str, city_slug: str, service_la
     return f"""
 <h2>{service_label.title()} in {city_name}</h2>
 <p>{opening}</p>
-<p>{profile["focus"]}</p>
+<p>{focus}</p>
 
 <h3>What we handle on {city_name} {service_label} visits</h3>
 {jobs_html}
@@ -243,7 +258,7 @@ def geo_faq_for_county(county_slug: str, county_name: str) -> list[tuple[str, st
         ),
         (
             f"What types of repairs do you handle in {county_name}?",
-            "Drywall, fixture-level plumbing, doors, windows, painting touch-ups, carpentry, caulking, and punch-list repairs within handyman scope. We refer licensed trades for permit or repipe work.",
+            "Drywall, doors, screens, painting touch-ups, carpentry, caulking, and punch-list repairs within handyman scope. Electrical connections and plumbing connected to drinking-water lines are referred.",
         ),
         (
             "How are estimates provided?",
@@ -264,10 +279,16 @@ def geo_faq_for_combo(combo_slug: str, city_name: str, service_label: str) -> li
     if combo_slug in GEO_FAQ:
         return GEO_FAQ[combo_slug]
 
+    plumbing_topic = any(token in service_label.lower() for token in ("sink", "faucet", "toilet", "plumb", "drain", "disposal", "shutoff"))
+    availability_answer = (
+        f"Knight Group provides visible-condition assessment and eligible finish closeout for {service_label} questions in {city_name}. Licensed plumbing connections are routed to a licensed plumber."
+        if plumbing_topic
+        else f"Yes. Knight Group performs {service_label} in {city_name} within handyman scope. Photos help us confirm access, parts, and whether a licensed trade referral is needed."
+    )
     return [
         (
             f"Do you offer {service_label} in {city_name}?",
-            f"Yes. Knight Group performs {service_label} in {city_name} within handyman scope. Photos help us confirm access, parts, and whether a licensed trade referral is needed.",
+            availability_answer,
         ),
         (
             f"How much does {service_label} cost in {city_name}?",

@@ -119,3 +119,34 @@ Rebuilt the existing URL `https://www.knightgroup.com/property-manager-handyman`
 
 **Shipped live:** 2026-09-11 via `origin/main`. Did **not** ship the uncommitted `$150 First Hour` money-page title pack.
 
+---
+
+## 2026-09-12 — Fixture / fan / basic plumbing scope (factual, not a title pack)
+
+Nick flagged `/handyman-scope-florida` for saying licensed trades are required for ceiling fans, fixtures, outlets, switches, and plumbing that connects to drinking water. That came from an over-strict DBPR consumer-guidance rewrite, not from how Knight Group actually works in Pinellas.
+
+**Correct public scope:** ceiling fans, light fixtures, switches, like-for-like outlets, and basic plumbing that does **not** need a permit (faucets, toilets, sinks, shutoffs, traps — not opening walls, not sewers). Still not a licensed plumber, electrician, or GC. New circuits, panel work, in-wall plumbing, sewers, gas, roofing, structural, HVAC remain referred.
+
+**Hillsborough:** same fixture/fan work when no permit is required; copy now says Hillsborough permit rules can be tighter than Pinellas and we confirm on the estimate.
+
+Did **not** rewrite city / homepage / pricing / `/Services/handyman` titles or the uncommitted `$150` pack. Electrical/plumbing **service** titles went from “Assessment” back to the work they actually sell.
+
+**Shipped live:** 2026-09-12 via `origin/main`. Fixture/fan/basic plumbing copy only. Money-page titles stay geographic on live.
+
+
+---
+
+## 2026-09-12 — Expansion gallery geography (factual, not a title pack)
+
+Misspelled ticket city **Carolwood** did **not** block posting. `KG-20260716-DFC8` already had a composite plus `/galleries` + `/gallery/ceiling-drywall-patch-2f1127e-before-after`. The city map treated the typo as unknown → copy/schema said Pinellas. Ticket city corrected to Carrollwood. Catalog, hub JSON-LD, and detail page now say **Carrollwood / Hillsborough**. Image alts use catalog city/county instead of hardcoded Pinellas. Hub crawl list now includes the expansion job pages. **No Lutz URL, no fake Tampa/Lutz jobs.** Freeze unchanged.
+
+**Real expansion jobs with photos (all already had composites + both gallery surfaces):**
+
+| Place | Ticket | Surfaces |
+| --- | --- | --- |
+| Carrollwood | KG-20260716-DFC8 | `/gallery/ceiling-drywall-patch-2f1127e-before-after` |
+| Trinity | KG-20260731-26A9 | toilets, ballast light, wall outlet |
+| Port Richey | KG-20260816-809A | fence reset |
+
+Zero completed Lutz jobs. Zero completed Tampa jobs (one cancelled Copeland WO, no photos). Future Lutz/Tampa jobs will publish the same two surfaces from Dispatch; Lutz copy will not get a `/lutz-handyman` slug.
+

@@ -3,16 +3,15 @@
 EXPANSIONS = {
     "plumbing-services": """
 <h2>Plumbing diagnosis in Clearwater and across Pinellas County</h2>
-<p>Search demand for sink leaks in Clearwater usually starts with water under the cabinet, a faucet that will not shut off, or a drain that will not clear. Knight Group is based in Safety Harbor. Owner Vince Knight has <strong>15 years of journeyman plumbing experience</strong> — that is diagnostic skill and fixture work, not a current plumbing contractor license.</p>
-<p>Faucets, toilets, sinks, disposals, shutoffs, traps, and showerheads on existing connections are everyday Knight Group work. Repipes, sewer mains, gas lines, and new rough-in are referred to a licensed plumber.</p>
+<p>Search demand for sink leaks in Clearwater usually starts with water under the cabinet, a faucet that will not shut off, or a drain that will not clear. Knight Group is based in Safety Harbor. Owner Vince Knight has <strong>15 years of journeyman plumbing experience</strong> — that background shows up on fixture work, not as a plumbing contractor license.</p>
+<p>Faucets, toilets, sinks, disposals, shutoffs, traps, and small leaks on existing connections are everyday Knight Group work. Opening walls, sewer mains, gas lines, and new rough-in are referred.</p>
 
 <h3>What we handle vs. what we refer</h3>
 <ul>
-<li>Faucet, toilet, sink, disposal, and fixture swaps on existing connections</li>
-<li>Shutoff valves, traps, supply lines, and small leak repairs</li>
-<li>Drain clearing and fixture tune-ups</li>
-<li>Caulk, drywall, and paint closeout after the plumbing work</li>
-<li>Referral for repipes, sewer mains, gas, and permitted rough-in</li>
+<li>Faucet, toilet, sink, disposal, shutoff, and trap repairs on existing connections</li>
+<li>Small leaks that do not need a permit or opening the wall</li>
+<li>Caulk, cabinet, drywall, texture, and paint closeout on the same visit</li>
+<li>Referral for in-wall plumbing, repipes, sewer, gas, and new rough-in</li>
 </ul>
 
 <h2>Experience without overclaiming a license</h2>
@@ -20,13 +19,13 @@ EXPANSIONS = {
 
 <h3>When to call Knight Group first</h3>
 <ul>
-<li>You need a same-day look at an active drip or a failed faucet</li>
-<li>A rental turnover includes mixed punch-list items plus fixture plumbing</li>
-<li>A leak already damaged drywall and you need both trades in one crew</li>
+<li>A faucet, toilet, sink, or disposal on an existing connection</li>
+<li>A rental turnover with mixed punch-list items plus a plumbing fixture</li>
+<li>A leak already damaged drywall and you need repair closeout afterward</li>
 </ul>
 
 <h2>Local plumbing questions in Safety Harbor and Clearwater</h2>
-<p>Describe the fixture, the urgency, and the address. We provide <a href="/booking">free written estimates</a> for fixture plumbing and a licensed-trade referral when the job is a repipe, sewer main, or gas line.</p>
+<p>Describe the fixture, urgency, and address. We provide <a href="/booking">free written estimates</a> for fixture plumbing and route permit or in-wall work to a licensed plumber.</p>
 <p>See also: <a href="/Services/emergency-services">urgent property-damage response</a>, <a href="/Services/general-repairs">general repairs</a> for drywall follow-up, and <a href="/pinellas-handyman">Pinellas coverage</a>.</p>
 """,
     "general-repairs": """
@@ -47,7 +46,7 @@ EXPANSIONS = {
 <p>We also take on <a href="/Services/mobile-home-repairs">mobile home repairs</a> and landlord punch-list work: door adjustments, trim fixes, screen patches, caulking, minor floor transitions, and move-in ready corrections across Pinellas County.</p>
 
 <h2>Why homeowners call for general repairs instead of a specialist</h2>
-<p>When a job spans drywall, a sticking door, a leaking shutoff, and a paint touch-up, hiring four separate trades is slow and expensive. Knight Group gives you one accountable local contact with journeyman plumbing background and a decade of Florida property management experience — useful in occupied homes and rental units.</p>
+<p>When a job spans drywall, a sticking door, a plumbing question, and a paint touch-up, coordination gets complicated. Knight Group gives you one accountable local contact for lawful handyman work and routes licensed plumbing or electrical connections to the appropriate trade.</p>
 <p>Related pages: <a href="/Services/handyman">handyman services</a>, <a href="/Services/painting-finishing">painting &amp; finishing</a>, <a href="/Services/doors-windows">doors &amp; windows</a>, <a href="/service-areas">service areas</a>.</p>
 """,
     "handyman": """
@@ -59,7 +58,7 @@ EXPANSIONS = {
 <li>No arbitrary two-hour minimum — you pay for practical scope</li>
 <li>Multiple small tasks in one visit when scheduling allows</li>
 <li>Rental turnovers, move-in lists, and storm follow-up repairs</li>
-<li>Drywall, paint touch-ups, fixtures, doors, trim, and shelving</li>
+<li>Drywall, paint touch-ups, screens, doors, trim, hardware, and shelving</li>
 </ul>
 
 <h2>What a handyman can fix in one visit</h2>
@@ -70,20 +69,20 @@ EXPANSIONS = {
 """,
     "electrical-work": """
 <h2>Fans, fixtures, switches — and when we refer</h2>
-<p>Knight Group hangs ceiling fans, swaps light fixtures, and replaces switches and outlets on existing circuits across Pinellas County. We are not a licensed electrician. New circuits, panel work, aluminum wiring, and rewires are referred.</p>
-<p>That is the work in the project gallery: fan hanging, fixture swaps, ballast replacements, and outlet repairs. After the electrical work, we handle drywall and paint closeout so you are not hiring a second vendor.</p>
+<p>Homeowners call us to hang a fan, swap a light, or replace a dead outlet. That is everyday Knight Group work on existing circuits. We are not a licensed electrician.</p>
+<p>New circuits, panel work, aluminum wiring, and whole-home rewires are referred. A permit exemption is not a contractor-license exemption.</p>
 
 <h3>What we will do</h3>
 <ul>
 <li>Ceiling fan hanging and repair on existing, suitable boxes</li>
 <li>Light fixture swaps, ballast and fluorescent-to-LED upgrades</li>
 <li>Like-for-like outlet, switch, dimmer, and GFCI replacements</li>
-<li>Drywall, texture, and paint after the install</li>
+<li>Cover plates, bulbs, and troubleshooting that stays on the existing circuit</li>
+<li>Drywall, texture, and paint closeout after the electrical work</li>
 </ul>
 
 <h2>What requires a licensed electrician</h2>
-<p>New circuits, panel upgrades, aluminum wiring, and whole-home rewires need a licensed electrician. Permit exemptions are not contractor-license exemptions.</p>
-<p>Pair with <a href="/Services/general-repairs">general repairs</a> when drywall or paint follows the install. Read <a href="/handyman-scope-florida">handyman scope in Florida</a>.</p>
+<p>New homeruns, panel changes, aluminum wiring, and permitted electrical work need a licensed electrician. Pair with <a href="/Services/general-repairs">general repairs</a> when drywall or paint follows the install. Read <a href="/handyman-scope-florida">handyman scope in Florida</a>.</p>
 """,
     "carpentry-framing": """
 <h2>Carpentry services near you in Pinellas County</h2>
@@ -180,8 +179,8 @@ EXPANSIONS = {
 
 EXTRA_FAQ = {
     "plumbing-services": [
-        ("Can a handyman replace a toilet or faucet in Florida?", "Yes. Faucets, toilets, sinks, disposals, and shutoffs on existing connections are everyday Knight Group work. Vince Knight’s journeyman background informs that fixture work. Repipes, sewer mains, gas, and new rough-in are referred."),
-        ("What plumbing work can Knight Group handle without a plumbing license?", "Faucets, toilets, sinks, disposals, shutoffs, traps, and fixture swaps on existing connections. Repipes, sewer mains, gas lines, and new rough-in are referred."),
+        ("Can a handyman replace a toilet or faucet in Florida?", "Florida DBPR treats plumbing connected to drinking-water lines as licensed work. Knight Group documents the issue and refers the connection work to a licensed plumber."),
+        ("What plumbing work can Knight Group handle without a plumbing license?", "Diagnosis, documentation, caulk and finish repairs, and closeout after licensed plumbing. Connecting toilets, faucets, disposals, or shutoffs to potable water is referred."),
         ("How much does a diagnostic visit cost?", "Standard visits are $150 for the first hour and $75 each additional hour, with no two-hour minimum. We provide a written estimate for work we can legally perform."),
     ],
     "general-repairs": [
@@ -193,8 +192,8 @@ EXTRA_FAQ = {
         ("Do you take small jobs and one-off repairs?", "Yes. No large minimum job size. If you have a short punch list, mention everything when you book so we can plan time accordingly."),
     ],
     "electrical-work": [
-        ("Can a handyman change light fixtures in Florida?", "Yes. Replacing a fixture or hanging a fan on an existing, suitable box is standard Knight Group work. New circuits and panel work need a licensed electrician."),
-        ("When do I need a licensed electrician?", "New circuits, panel upgrades, aluminum wiring, and whole-home rewires. Fans, fixtures, switches, and like-for-like outlet swaps on existing circuits are handyman work we perform."),
+        ("Can a handyman change light fixtures in Florida?", "DBPR says installing ceiling fans and light fixtures for compensation requires an electrical license. Knight Group does not perform that connection work. We diagnose and coordinate a licensed electrician."),
+        ("When do I need a licensed electrician?", "Compensated electrical connection work, including fans, fixtures, outlets, switches, GFCIs, new circuits, and panel work, requires a licensed electrician. Knight Group can change bulbs and cover plates and handle eligible finish closeout."),
     ],
     "carpentry-framing": [
         ("Do you install crown molding and trim?", "Yes — trim, baseboard, casing, and many crown profiles are part of our carpentry scope across Pinellas County."),

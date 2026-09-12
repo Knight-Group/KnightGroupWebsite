@@ -14,7 +14,7 @@ def build_trust_prose(defn: dict) -> str:
             [
                 defn["lead"],
                 "Most handyman ads say “we do plumbing.” Few can explain whether your leak is a failed gasket, a corroded shutoff, or the start of a repipe. Vince Knight spent <strong>15 years as a journeyman plumber</strong> before launching Knight Group — that trade background shapes how we diagnose fixture-level work, not a license claim.",
-                "Knight Group Handyman Services LLC is <strong>registered and insured</strong> in Florida. We are not a licensed plumbing company. Florida DBPR treats plumbing that connects lines to drinking water as licensed contractor work. Vince’s journeyman background helps diagnose the failure; licensed plumbers perform the potable-water connections.",
+                "Knight Group Handyman Services LLC is <strong>registered and insured</strong> in Florida. We are not a licensed plumbing contractor. Vince’s journeyman background shows up on faucet, toilet, sink, shutoff, and fixture work on existing connections. Opening walls, sewer mains, gas, and new rough-in are referred.",
                 "That honesty matters in Pinellas County homes: older shutoffs, mixed DIY history, and Florida humidity create jobs that look simple until someone opens the wall. Experience helps you get a straight answer before drywall is torn out or the wrong part is ordered.",
                 "See <a href=\"/Services/plumbing-services\">plumbing services</a>, read <a href=\"/handyman-scope-florida\">what handyman scope includes in Florida</a>, or <a href=\"/booking\">get a free written estimate</a> with photos of the problem area.",
             ]
@@ -24,7 +24,7 @@ def build_trust_prose(defn: dict) -> str:
             [
                 defn["lead"],
                 "Vince Knight managed Florida rental properties for roughly <strong>ten years</strong> before Knight Group — useful when you need move-in ready work on a deadline, not a homeowner-paced hobby project. One registered team can knock out mixed punch lists instead of coordinating four separate trades for small items.",
-                "Typical turnover scopes include door and hardware adjustments, drywall patches and touch-up paint, caulk refresh, blind and screen repairs, garbage disposal replacement when already disconnected, minor flooring transitions, and the “tenant broke it” items that stack up between leases.",
+                "Typical turnover scopes include door and hardware adjustments, drywall patches and touch-up paint, caulk refresh, blind and screen repairs, garbage disposal replacement, minor flooring transitions, and the “tenant broke it” items that stack up between leases.",
                 "We work with individual landlords and small property managers across Safety Harbor, Clearwater, Dunedin, Palm Harbor, Largo, and nearby Pinellas communities. Share a unit address, photos, and your target ready date — we return a written estimate and confirm what fits handyman scope versus licensed trade work.",
                 "Pricing can be hourly for mixed lists or flat-rate for defined scopes. There is <a href=\"/pricing-no-2-hour-minimum\">no 2-hour minimum</a> on small jobs. See <a href=\"/Services/general-repairs\">general repairs</a> and <a href=\"/Services/painting-finishing\">painting &amp; finishing</a>, or <a href=\"/contact\">contact us</a> for multi-unit schedules.",
                 "To add <strong>Knight Group Handyman Services LLC</strong> as a recurring vendor — W-9, GL certificate, work-order photos — use the <a href=\"/property-manager-handyman\">property manager vendor page</a>. This page stays the vacant-unit punch list.",
@@ -35,9 +35,10 @@ def build_trust_prose(defn: dict) -> str:
             [
                 defn["lead"],
                 "Florida homeowners search “licensed handyman” constantly — but handyman businesses are typically <strong>registered and insured</strong>, not licensed plumbers, electricians, or general contractors. Knight Group is transparent about that distinction. Public claims on this site follow current <a href=\"https://www2.myfloridalicense.com/services-requiring-a-dbpr-license/\">DBPR consumer guidance</a>.",
-                "<strong>Knight Group handles</strong> drywall and finish work, interior paint, trim carpentry, interior door adjustment, screens and hardware, caulking, punch-list items, Home Watch observation, and closeout after licensed trades finish.",
-                "<strong>Licensed trades are required</strong> for electrical connection work (including ceiling fans, light fixtures, outlets, and switches), plumbing that connects to drinking water, roofing repairs, new-window installation, structural additions, HVAC, and mold remediation of more than 10 square feet of contaminated material.",
+                "<strong>Knight Group handles</strong> drywall and finish work, interior paint, trim carpentry, interior door adjustment, screens and hardware, caulking, punch-list items, Home Watch observation, ceiling fans, light fixtures, switches, like-for-like outlets, plumbing fixtures on existing connections, and closeout after licensed trades finish.",
+                "<strong>Licensed trades are required</strong> for new circuits, panel work, whole-home rewires, repipes, sewer mains, gas lines, new rough-in, roofing repairs, new-window installation, structural additions, HVAC, and mold remediation of more than 10 square feet of contaminated material. Ceiling fans, light fixtures, switches, like-for-like outlets, and plumbing fixtures on existing connections are handyman work Knight Group performs.",
                 "<strong>Pinellas permit note:</strong> effective July 1, 2026, some projects under $7,500 can qualify for limited permit exemptions only with Building Official approval. A permit exemption is not a contractor-license exemption.",
+                "<strong>Hillsborough note:</strong> Fixture and fan work is quoted the same way when the job does not need a permit. Hillsborough permit rules can be tighter than Pinellas, so we confirm the county requirement on the written estimate.",
                 "Owner Vince Knight’s journeyman plumbing <em>experience</em> helps on diagnosis and honest routing; it does not replace a plumbing license. Read <a href=\"/plumber-background-handyman\">why that experience still matters</a>.",
             ]
         )
@@ -132,10 +133,10 @@ def _property_manager_vendor_prose() -> str:
 <li>Pinellas vacant-house walkthroughs on <a href="/home-watch-pinellas">Home Watch</a> (observation and photos, not a repair ticket)</li>
 <li>Small commercial suites and offices when the work is the same handyman scope as a rental</li>
 </ul>
-<p>Related finish work: <a href="/Services/general-repairs">general repairs</a>, <a href="/Services/drywall-repair">drywall repair</a>, <a href="/Services/painting-finishing">painting and finishing</a>, <a href="/Services/doors-windows">doors and windows</a>. Fixture diagnosis and licensed-trade routing: <a href="/plumber-background-handyman">journeyman plumbing background</a> and <a href="/Services/plumbing-services">plumbing assessment</a>.</p>
+<p>Related finish work: <a href="/Services/general-repairs">general repairs</a>, <a href="/Services/drywall-repair">drywall repair</a>, <a href="/Services/painting-finishing">painting and finishing</a>, <a href="/Services/doors-windows">doors and windows</a>. Fixture plumbing and fan installs: <a href="/plumber-background-handyman">journeyman plumbing background</a> and <a href="/Services/plumbing-services">plumbing services</a>.</p>
 
 <h2>What this vendor will not sign</h2>
-<p>Connecting fixtures to drinking water, panel or new-circuit work, permitted additions, structural repairs, HVAC, and mold remediation over ten square feet are referred. A Pinellas permit exemption is not a contractor-license exemption. We will tell you that on the estimate instead of hoping the work order closes.</p>
+<p>In-wall plumbing, sewer mains, panel or new-circuit work, permitted additions, structural repairs, HVAC, and mold remediation over ten square feet are referred. Hillsborough permit rules can be tighter than Pinellas — we confirm on the estimate. We will tell you that instead of hoping the work order closes.</p>
 <p>Knight Group Handyman Services LLC is the only vendor this site asks you to add. Other businesses are not advertised here, are not a second Google Business Profile, and are not a substitute legal name on your COI.</p>
 
 <h2>Where property-manager routes actually run</h2>
@@ -159,7 +160,7 @@ def trust_faqs(slug: str) -> list[tuple[str, str]]:
             ),
             (
                 "What plumbing work can an experienced handyman handle?",
-                "Typical handyman-scope work around water includes diagnosis, documentation, caulk and finish repairs, and closeout after a licensed plumber finishes potable-water connections. Connecting toilets, faucets, disposals, or shutoffs to drinking water requires a licensed plumber.",
+                "Typical handyman-scope work around water includes faucets, toilets, sinks, disposals, shutoffs, traps, and small leaks on existing connections. Opening walls, sewer mains, gas lines, and new rough-in need a licensed plumber.",
             ),
             (
                 "Why does journeyman experience matter if you are not licensed now?",
@@ -197,11 +198,11 @@ def trust_faqs(slug: str) -> list[tuple[str, str]]:
             ),
             (
                 "What work does Knight Group quote as handyman scope?",
-                "Knight Group quotes drywall, paint, carpentry, interior doors, screens, hardware, caulking, and punch-list work. Electrical connections and plumbing connected to drinking-water lines are referred. We are not a licensed electrician, plumber, or general contractor.",
+                "Knight Group quotes drywall, paint, carpentry, interior doors, screens, hardware, caulking, punch-list work, ceiling fans, light fixtures, switches, outlets, and basic plumbing that does not need a permit. New circuits, panel work, in-wall plumbing, and sewer work are referred. We are not a licensed electrician, plumber, or general contractor.",
             ),
             (
                 "When should I hire a licensed plumber instead of a handyman?",
-                "Plumbing that connects lines to drinking water, along with repipes, sewer work, gas lines, new rough-in, and permit-sign-off jobs, needs a licensed plumber. We can diagnose, document, and quote eligible finish work around the repair.",
+                "Opening walls, sewer mains, gas lines, new rough-in, and permit-sign-off jobs need a licensed plumber. Fixture plumbing on existing connections — faucets, toilets, sinks, disposals, shutoffs — is Knight Group work. We quote eligible finish work around a referred job.",
             ),
             (
                 "Does experience replace a license?",

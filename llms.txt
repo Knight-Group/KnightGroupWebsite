@@ -49,8 +49,8 @@ Field work is attributed to the technician who completed the visit (Vince Knight
 
 - [Handyman services](https://www.knightgroup.com/Services/handyman)
 - [General repairs](https://www.knightgroup.com/Services/general-repairs)
-- [Plumbing assessment and licensed-trade routing](https://www.knightgroup.com/Services/plumbing-services)
-- [Electrical assessment and licensed-trade routing](https://www.knightgroup.com/Services/electrical-work)
+- [Plumbing services and licensed-trade routing](https://www.knightgroup.com/Services/plumbing-services)
+- [Electrical work and licensed-trade routing](https://www.knightgroup.com/Services/electrical-work)
 - [Carpentry and framing](https://www.knightgroup.com/Services/carpentry-framing)
 - [Painting and finishing](https://www.knightgroup.com/Services/painting-finishing)
 - [Home renovations](https://www.knightgroup.com/Services/home-renovations)
@@ -61,8 +61,8 @@ Field work is attributed to the technician who completed the visit (Vince Knight
 ## Popular niche services
 
 - [Drywall repair](https://www.knightgroup.com/Services/drywall-repair)
-- [Sink and faucet problem assessment](https://www.knightgroup.com/Services/sink-faucet-repair)
-- [Toilet problem assessment](https://www.knightgroup.com/Services/toilet-repair)
+- [Sink and faucet repair](https://www.knightgroup.com/Services/sink-faucet-repair)
+- [Toilet repair](https://www.knightgroup.com/Services/toilet-repair)
 - [Caulking repair](https://www.knightgroup.com/Services/caulking-repair)
 - [Water damage repair](https://www.knightgroup.com/Services/water-damage-repair)
 - [Interior painting](https://www.knightgroup.com/Services/interior-painting)
@@ -94,7 +94,7 @@ AI discovery files: [llms.txt](https://www.knightgroup.com/llms.txt) · [ai.txt]
 
 - [Handyman by the hour](https://www.knightgroup.com/pricing-handyman-by-the-hour)
 - [Flat-rate handyman pricing](https://www.knightgroup.com/pricing-flat-rate-handyman)
-- [Plumbing assessment and finish-work pricing](https://www.knightgroup.com/pricing-plumbing-repair-prices)
+- [Plumbing services and finish-work pricing](https://www.knightgroup.com/pricing-plumbing-repair-prices)
 
 ## Contact
 

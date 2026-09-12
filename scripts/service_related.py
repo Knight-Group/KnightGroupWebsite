@@ -44,7 +44,7 @@ NICHE_PARENT: dict[str, str] = {item["slug"]: item["parent"] for item in NICHE_S
 CORE_GEO_RELATED: list[tuple[str, str]] = [
     ("/Services/handyman", "Handyman services"),
     ("/Services/general-repairs", "General repairs"),
-    ("/Services/plumbing-services", "Plumbing assessment"),
+    ("/Services/plumbing-services", "Plumbing services"),
     ("/Services/doors-windows", "Doors & windows"),
 ]
 
@@ -56,26 +56,17 @@ PARENT_NICHE_EXTRAS: dict[str, tuple[str, str]] = {
     "carpentry-framing": ("/Services/trim-repair", "Trim repair"),
     "painting-finishing": ("/Services/interior-painting", "Interior painting"),
     "doors-windows": ("/Services/door-adjustment", "Door adjustment"),
-    "electrical-work": ("/Services/electrical-work", "Electrical assessment"),
+    "electrical-work": ("/Services/electrical-work", "Electrical work"),
     "home-renovations": ("/Services/custom-projects", "Custom projects"),
     "emergency-services": ("/Services/emergency-services", "Emergency services"),
     "custom-projects": ("/Services/carpentry-framing", "Carpentry & framing"),
 }
 
-SAFE_RELATED_LABELS: dict[str, str] = {
-    "/Services/plumbing-services": "Plumbing assessment",
-    "/Services/electrical-work": "Electrical assessment",
-    "/Services/sink-faucet-repair": "Sink & faucet assessment",
-    "/Services/faucet-replacement": "Faucet replacement planning",
-    "/Services/toilet-repair": "Toilet problem assessment",
-    "/Services/garbage-disposal-replacement": "Disposal replacement planning",
-    "/Services/shutoff-valve-repair": "Shutoff valve assessment",
-    "/Services/drain-unclogging": "Slow drain assessment",
-}
+SAFE_RELATED_LABELS: dict[str, str] = {}
 
 
 def safe_related_label(href: str, label: str) -> str:
-    """Keep generated cards from advertising work that requires a trade license."""
+    """Pass through card labels. Fixture and fan work are in-scope."""
     path = href.split("#", 1)[0].split("?", 1)[0].rstrip("/")
     return SAFE_RELATED_LABELS.get(path, label)
 

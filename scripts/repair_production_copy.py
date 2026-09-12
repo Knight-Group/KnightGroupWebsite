@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""Repair production copy, metadata, and commercial scope claims from Knight Group facts.
-
-Does not rewrite gallery project evidence. Competitor SERP text is never copied.
-"""
+"""Legacy copy-repair entrypoint; current execution delegates to the scope guard."""
 
 from __future__ import annotations
 
@@ -96,6 +93,9 @@ META_OVERRIDES = {
     "rental-turnover-handyman.html": (
         "Rental turnover punch lists in Pinellas County: drywall, doors, paint, screens, and hardware. Licensed trades referred when required."
     ),
+    "property-manager-handyman.html": (
+        "Add Knight Group Handyman Services LLC as a Pinellas vendor. W-9, GL COI, work-order photos, $150 first hour. Not a licensed plumber or GC."
+    ),
 }
 
 OWNER_REPLACEMENTS = [
@@ -149,11 +149,11 @@ COMMERCIAL_REPLACEMENTS = [
     ),
     (
         "$75 per additional hour for common handyman repairs, punch-list work, drywall patches, door adjustments, caulking, screens, and shelving.",
-        "$75 per additional hour for common handyman repairs, punch-list work, fixture swaps, caulking, sealing, and small drywall patches.",
+        "$75 per additional hour for common handyman repairs, punch-list work, drywall patches, door adjustments, caulking, screens, and shelving.",
     ),
     (
         "Visible leak assessment, finish closeout, and licensed-plumber coordination when potable-water work is required",
-        "Faucets, shutoffs, fixtures, and small leaks on existing connections",
+        "Leak diagnosis and licensed-plumber coordination when drinking-water connections are required",
     ),
     (
         "Eligible hardware and finish repairs",
@@ -294,10 +294,9 @@ def repair_generators() -> None:
 
 
 def main() -> int:
-    meta_changed = repair_meta_json()
-    repair_generators()
     html_changed = repair_html()
-    print(f"Repaired {meta_changed} meta descriptions and {html_changed} HTML files.")
+    repair_generators()
+    print(f"repaired owner/commercial copy on {html_changed} html files")
     return 0
 
 

@@ -1,17 +1,48 @@
 #!/usr/bin/env python3
-"""Restore fixture, fan, switch, outlet, and plumbing-fixture advertising.
+"""Restore fixture / fan / basic-plumbing offers that the DBPR guard stripped.
 
-Knight Group is not a licensed electrician, plumber, or GC. P0 copy over-read
-DBPR and told homeowners we only change bulbs. We hang fans, swap fixtures,
-replace switches/outlets on existing circuits, and do fixture plumbing.
-New circuits, panels, rewires, repipes, sewer, and gas stay referred.
+Owner policy (2026-09-12): Pinellas ceiling fans, light fixtures, switches,
+like-for-like outlets, and basic plumbing that does not need a permit (faucets,
+toilets, sinks, shutoffs, traps — not opening walls, not sewers) are Knight
+Group work. Do not claim a plumbing, electrical, or GC license. Hillsborough
+permit rules can be tighter; confirm on the estimate.
 """
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+
+HILLSBOROUGH_CITIES = {
+    "Tampa",
+    "Temple Terrace",
+    "Westchase",
+    "Carrollwood",
+    "Town 'n' Country",
+    "Town &#x27;n&#x27; Country",
+    "Citrus Park",
+    "Northdale",
+    "Egypt Lake-Leto",
+}
+
+DBPR_FAQ_RE = re.compile(
+    r"Florida requires a DBPR license for electrical connection work and for plumbing that connects to drinking water\. "
+    r"Vince Knight(?:’|')s journeyman plumbing background helps diagnose the issue in (?P<city>.+?); "
+    r"licensed trades are referred when the law requires it\."
+)
+
+CLEARWATER_FAQ_OLD = (
+    "Knight Group can document and diagnose the issue, change bulbs or cover plates, and handle eligible "
+    "caulk, drywall, texture, and paint closeout. Electrical connections and plumbing connected to "
+    "drinking-water lines are routed to licensed trades."
+)
+CLEARWATER_FAQ_NEW = (
+    "Yes. In Clearwater we hang ceiling fans, swap light fixtures, replace switches and outlets on existing "
+    "circuits, and do basic plumbing that does not need a permit — faucets, toilets, sinks, shutoffs. "
+    "Opening walls, sewer mains, new circuits, and panel work are referred. We are not a licensed plumber or electrician."
+)
 
 REPLACEMENTS = [
     (
@@ -163,12 +194,160 @@ REPLACEMENTS = [
         "Handyman scope is set by Florida trade licensing, not by job price. Knight Group handles drywall, paint, carpentry, interior doors, screens, punch-list work, ceiling fans, light fixtures, switches, like-for-like outlets, and plumbing fixtures on existing connections. New circuits, panels, repipes, sewer, and gas are referred.",
     ),
     (
+        "Electrical connection work and plumbing that taps drinking water require licensed trades — we diagnose first.",
+        "Ceiling fans, fixtures, switches, outlets, and basic no-permit plumbing are included. New circuits, panel work, in-wall plumbing, and sewers are referred.",
+    ),
+    (
+        "Pricing on this page is for handyman-scope work Knight Group can legally perform. Electrical connection work and plumbing that connects to drinking water require licensed trades — we diagnose first and refer when Florida DBPR requires a license.",
+        "Pricing on this page is for handyman-scope work Knight Group performs: drywall, paint, carpentry, ceiling fans, fixtures, switches, outlets, and basic no-permit plumbing. New circuits, panel work, in-wall plumbing, sewers, HVAC, roofing, and structural work are referred.",
+    ),
+    (
+        "plumbing Problem Assessment &amp; Licensed-Trade Routing",
+        "plumbing services",
+    ),
+    (
+        "for documentation and licensed-plumber routing",
+        "for fixture plumbing and related repairs",
+    ),
+    (
+        "Visible-condition documentation, licensed-plumber routing, and a separate quote for eligible cabinet, caulk, drywall, texture, or paint closeout.",
+        "Fixture plumbing on existing connections, plus a separate quote for cabinet, caulk, drywall, texture, or paint closeout when needed.",
+    ),
+    (
         "Knight Group Handyman Services LLC is <strong>registered and insured</strong> in Florida. We are not a licensed plumbing company. Florida DBPR treats plumbing that connects lines to drinking water as licensed contractor work. Vince’s journeyman background helps diagnose the failure; licensed plumbers perform the potable-water connections.",
         "Knight Group Handyman Services LLC is <strong>registered and insured</strong> in Florida. We are not a licensed plumbing contractor. Vince’s journeyman background shows up on faucet, toilet, sink, shutoff, and fixture work on existing connections. Repipes, sewer mains, gas, and new rough-in are referred.",
     ),
     (
         "eligible maintenance and licensed-plumber coordination",
         "plumbing fixture repairs, electrical fixture and fan installs",
+    ),
+    (
+        "Electrical connections and plumbing connected to drinking-water lines are referred.",
+        "New circuits, panel work, in-wall plumbing, and sewer work are referred.",
+    ),
+    (
+        "Electrical connections and plumbing connected to drinking-water lines are routed to licensed trades.",
+        "New circuits, panel work, in-wall plumbing, and sewer work are referred.",
+    ),
+    (
+        "Licensed trades are referred for electrical connection work, plumbing that taps drinking water, roofing, new windows, structural additions, and mold remediation over 10 square feet.",
+        "Licensed trades are referred for new circuits, panel work, in-wall plumbing, sewers, roofing, new windows, structural additions, and mold remediation over 10 square feet. Ceiling fans, fixtures, and basic plumbing that does not need a permit stay with Knight Group.",
+    ),
+    (
+        "Connecting fixtures to drinking water, panel or new-circuit work, permitted additions, structural repairs, HVAC, and mold remediation over ten square feet are referred.",
+        "In-wall plumbing, sewer mains, panel or new-circuit work, permitted additions, structural repairs, HVAC, and mold remediation over ten square feet are referred.",
+    ),
+    (
+        "garbage disposal replacement when already disconnected",
+        "garbage disposal replacement",
+    ),
+    (
+        "Plumbing Assessment Pricing",
+        "Plumbing Repair Prices",
+    ),
+    (
+        "Plumbing Assessment",
+        "Plumbing Services",
+    ),
+    (
+        "Electrical Assessment",
+        "Electrical Work",
+    ),
+    (
+        "Sink &amp; Faucet Assessment",
+        "Sink &amp; Faucet Repair",
+    ),
+    (
+        "Sink & Faucet Assessment",
+        "Sink & Faucet Repair",
+    ),
+    (
+        "Faucet Replacement Planning",
+        "Faucet Replacement",
+    ),
+    (
+        "Toilet Problem Assessment",
+        "Toilet Repair",
+    ),
+    (
+        "Disposal Replacement Planning",
+        "Garbage Disposal",
+    ),
+    (
+        "Shutoff Valve Assessment",
+        "Shutoff Valve Repair",
+    ),
+    (
+        "Slow Drain Assessment",
+        "Drain Unclogging",
+    ),
+    (
+        "Plumbing assessment",
+        "Plumbing services",
+    ),
+    (
+        "Electrical assessment",
+        "Electrical work",
+    ),
+    (
+        "Sink &amp; faucet assessment",
+        "Sink &amp; faucet repair",
+    ),
+    (
+        "Sink & faucet assessment",
+        "Sink & faucet repair",
+    ),
+    (
+        "Faucet replacement planning",
+        "Faucet replacement",
+    ),
+    (
+        "Toilet problem assessment",
+        "Toilet repair",
+    ),
+    (
+        "Disposal replacement planning",
+        "Garbage disposal",
+    ),
+    (
+        "Shutoff valve assessment",
+        "Shutoff valve repair",
+    ),
+    (
+        "Slow drain assessment",
+        "Drain unclogging",
+    ),
+    (
+        "Electrical Assessment Pinellas County | Knight Group",
+        "Electrical Work Pinellas County | Knight Group",
+    ),
+    (
+        "Plumbing Assessment Pinellas County | Knight Group",
+        "Plumbing Services Pinellas County | Knight Group",
+    ),
+    (
+        "Plumbing Problem Assessment Pricing | Pinellas County FL",
+        "Plumbing Repair Prices | Pinellas County FL",
+    ),
+    (
+        "Sink &amp; Faucet Problem Assessment | Clearwater FL",
+        "Sink &amp; Faucet Repair | Clearwater FL",
+    ),
+    (
+        "Shutoff Valve Problem Assessment | Pinellas County FL",
+        "Shutoff Valve Repair | Pinellas County FL",
+    ),
+    (
+        "Slow Drain Assessment | Pinellas County FL",
+        "Drain Unclogging | Pinellas County FL",
+    ),
+    (
+        "Toilet Problem Assessment in Largo | Knight Group",
+        "Toilet Repair in Largo | Knight Group",
+    ),
+    (
+        "Sink And Faucet Problem Assessment in Clearwater | Knight...",
+        "Sink And Faucet Repair in Clearwater | Knight Group",
     ),
 ]
 
@@ -250,7 +429,7 @@ GALLERY_EXTRAS = {
 <li>Made the canopy connections and tested fan speeds and the light</li>
 <li>Left before-and-after proof for the homeowner</li>
 </ul>
-<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">get a free written estimate</a>.</p>
 """,
     "gallery/ceiling-fan-repair-1e73090-before-after.html": """<h3>Ceiling fan repair</h3>
 <p>This composite documents a ceiling fan repair in a Pinellas County home. Knight Group diagnosed the failed fan, hung the replacement on the existing box, and confirmed smooth operation.</p>
@@ -260,7 +439,7 @@ GALLERY_EXTRAS = {
 <li>Balanced blades and tested speeds before turnover</li>
 <li>Left before-and-after proof for the owner</li>
 </ul>
-<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">get a free written estimate</a>.</p>
 """,
     "gallery/ballast-light-fixture-bbe38e2-before-after.html": """<h3>Ballast and light fixture replacement</h3>
 <p>This before-and-after composite is a fluorescent ballast / light-fixture job Knight Group completed. Humming, flickering, or dead lamps are common office and utility-room calls.</p>
@@ -270,7 +449,7 @@ GALLERY_EXTRAS = {
 <li>Installed working lamps and tested the circuit</li>
 <li>Left before-and-after proof for the owner</li>
 </ul>
-<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">get a free written estimate</a>.</p>
 """,
     "gallery/a-wall-outlet-repair-93788a6-before-after.html": """<h3>Wall outlet repair</h3>
 <p>This composite shows a wall outlet repair Knight Group completed on an existing box — a loose, damaged, or dead receptacle replaced so plugs seat and hold power again.</p>
@@ -280,7 +459,7 @@ GALLERY_EXTRAS = {
 <li>Seated the cover plate and tested with a plug-in tester</li>
 <li>Left before-and-after proof for the homeowner</li>
 </ul>
-<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">get a free written estimate</a>.</p>
 """,
     "gallery/secure-outlets-5be7424-before-after.html": """<h3>Securing loose outlets</h3>
 <p>Loose receptacles that sink into the wall are a common punch-list call. This composite shows outlets reseated and secured in the existing boxes so plugs sit flush.</p>
@@ -290,7 +469,7 @@ GALLERY_EXTRAS = {
 <li>Installed cover plates and tested each location</li>
 <li>Left before-and-after proof for the owner</li>
 </ul>
-<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">book a free estimate</a>.</p>
+<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">get a free written estimate</a>.</p>
 """,
 }
 
@@ -301,8 +480,33 @@ OUTLET_TITLE_FIXES = [
 ]
 
 
+def licensed_faq_answer(city: str) -> str:
+    city_plain = city.replace("&#x27;", "'")
+    answer = (
+        f"Yes. Ceiling fans, light fixtures, switches, outlets, and basic plumbing "
+        f"(faucets, toilets, sinks, shutoffs) on existing connections are Knight Group work in {city}. "
+        f"Opening walls, sewer mains, new circuits, and panel work are referred. "
+        f"We are not a licensed plumber or electrician."
+    )
+    if city_plain in HILLSBOROUGH_CITIES:
+        answer += (
+            " Hillsborough permit rules can be tighter than Pinellas, so we confirm "
+            "the county requirement on the written estimate."
+        )
+    return answer
+
+
+def restore_geo_faqs(text: str) -> str:
+    updated = text.replace(CLEARWATER_FAQ_OLD, CLEARWATER_FAQ_NEW)
+
+    def _sub(match: re.Match[str]) -> str:
+        return licensed_faq_answer(match.group("city"))
+
+    return DBPR_FAQ_RE.sub(_sub, updated)
+
+
 def update_text(text: str) -> str:
-    updated = text
+    updated = restore_geo_faqs(text)
     for old, new in REPLACEMENTS:
         updated = updated.replace(old, new)
     updated = updated.replace(ELECTRICAL_DISCLAIMER, ELECTRICAL_DISCLAIMER_NEW)
@@ -322,7 +526,7 @@ def inject_gallery_extra(rel: str, html: str) -> str:
     extra = GALLERY_EXTRAS.get(rel)
     if not extra or extra.strip() in html:
         return html
-    needle = "<p>Want similar work at your property? Book a free estimate with photos of your space.</p>"
+    needle = "<p>Want similar work at your property? Get a free written estimate with photos of your space.</p>"
     if needle not in html:
         return html
     return html.replace(needle, extra + needle, 1)
@@ -336,24 +540,43 @@ JSON_PATHS = {
 }
 
 
+SKIP_PARTS = {
+    ".git",
+    ".venv",
+    "node_modules",
+    "__pycache__",
+    "audit-report",
+    "scripts",
+    "admin",
+    "w9 1099 resume",
+}
+SKIP_DOCS = {
+    "GBP-COMPLIANCE-REMEDIATION-2026-08-23.md",
+    "SEO-CHANGE-LOG.md",
+    "KNIGHT-GROUP-GROWTH-PLAYBOOK-2026-06-03.md",
+}
+
+
 def main() -> int:
     changed = 0
     for path in sorted(ROOT.rglob("*")):
-        if any(part in {".git", "node_modules", "__pycache__", "scripts"} for part in path.parts):
+        if not path.is_file() or path.suffix.lower() not in {".html", ".txt", ".json", ".md"}:
             continue
-        rel = path.relative_to(ROOT).as_posix()
-        if path.suffix.lower() not in TEXT_SUFFIXES and rel not in JSON_PATHS:
+        if any(part in SKIP_PARTS for part in path.parts):
+            continue
+        if path.name in SKIP_DOCS:
             continue
         original = path.read_text(encoding="utf-8")
         updated = update_text(original)
-        if rel.startswith("gallery/"):
+        rel = path.relative_to(ROOT).as_posix()
+        if path.suffix.lower() == ".html":
             updated = inject_gallery_extra(rel, updated)
         if updated == original:
             continue
-        path.write_text(updated, encoding="utf-8")
+        path.write_text(updated, encoding="utf-8", newline="\n")
         changed += 1
         print(f"updated {rel}")
-    print(f"rewrote {changed} files")
+    print(f"restored fixture scope on {changed} files")
     return 0
 
 

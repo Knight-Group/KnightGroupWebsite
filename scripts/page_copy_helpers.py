@@ -89,16 +89,16 @@ def cta_lead(slug: str, h1: str, county_name: str = "Pinellas County") -> str:
 def scope_disclaimer_html(slug: str) -> str:
     if slug in PLUMBING_SCOPE_SLUGS or any(token in slug for token in ("plumb", "faucet", "toilet", "drain", "disposal", "shutoff", "sink")):
         body = (
-            "<strong>Plumbing vs. diagnosis:</strong> Florida DBPR treats plumbing that connects lines to drinking water "
-            "as licensed contractor work. Vince Knight’s journeyman plumbing background helps diagnose leaks and "
-            "fixture failures. Knight Group is not a licensed plumbing contractor. Work that connects to potable water "
-            "is referred to a licensed plumber. See <a href=\"/handyman-scope-florida\">handyman scope in Florida</a>."
+            "<strong>Plumbing scope:</strong> Knight Group replaces faucets, toilets, sinks, shutoffs, traps, "
+            "and other fixtures on existing connections. Vince Knight’s journeyman plumbing background informs that work. "
+            "We are not a licensed plumbing contractor. Opening walls, sewer mains, gas lines, and new rough-in are referred. "
+            "See <a href=\"/handyman-scope-florida\">handyman scope in Florida</a>."
         )
     elif slug in ELECTRICAL_SCOPE_SLUGS or "electrical" in slug:
         body = (
-            "<strong>Electrical scope:</strong> Florida DBPR treats compensated installation of ceiling fans, light "
-            "fixtures, outlets, and switches as licensed electrical work. Knight Group changes bulbs and cover plates, "
-            "documents the issue, and refers connection work to a licensed electrician. See "
+            "<strong>Electrical scope:</strong> Knight Group hangs ceiling fans, swaps light fixtures, and replaces "
+            "switches and outlets on existing circuits. We are not a licensed electrician. New circuits, panel work, "
+            "aluminum wiring, and rewires are referred. See "
             "<a href=\"/handyman-scope-florida\">handyman scope in Florida</a>."
         )
     elif slug == "emergency-services":
@@ -111,10 +111,11 @@ def scope_disclaimer_html(slug: str) -> str:
         )
     else:
         body = (
-            "<strong>Handyman scope notice:</strong> Knight Group is registered and insured for handyman-scope repairs. "
-            "Florida licenses new circuits, panel work, repipes, sewer and gas work, roofing, new-window "
+            "<strong>Handyman scope notice:</strong> Knight Group is registered and insured for handyman-scope repairs, "
+            "including ceiling fans, fixtures, switches, outlets, and basic plumbing that does not need a permit. "
+            "Florida licenses new circuits, panel work, in-wall/sewer plumbing, gas, roofing, new-window "
             "installation, structural additions, and mold remediation over 10 square feet. We identify that during the "
-            "estimate and refer licensed trades. A Pinellas permit exemption is not a contractor-license exemption. "
+            "estimate and refer licensed trades. Hillsborough permit rules can be tighter than Pinellas. "
             "See <a href=\"/handyman-scope-florida\">handyman scope in Florida</a>."
         )
     return f"""

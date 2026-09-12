@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Replace risky self-licensing wording with registered-and-insured language."""
+"""Legacy entrypoint retained for compatibility; delegates to the scope guard."""
 
 from __future__ import annotations
 
@@ -31,23 +31,19 @@ BANNED_SELF_LICENSE = re.compile(
 
 
 def main() -> int:
-    changed_files = 0
-    targets = sorted(ROOT.rglob("*.html"))
-    targets += [ROOT / "llms.txt", ROOT / "seo" / "service-catalog.json"]
-    for path in targets:
-        if not path.is_file():
-            continue
+    changed = 0
+    for path in sorted(ROOT.rglob("*.html")):
         if any(part in SKIP for part in path.parts):
             continue
-        text = path.read_text(encoding="utf-8", errors="ignore")
-        updated = text
+        original = path.read_text(encoding="utf-8")
+        text = original
         for old, new in REPLACEMENTS:
-            updated = updated.replace(old, new)
-        if updated != text:
-            path.write_text(updated, encoding="utf-8")
-            changed_files += 1
-            print(f"updated: {path.relative_to(ROOT)}")
-    print(f"Done. {changed_files} files updated.")
+            text = text.replace(old, new)
+        if text != original:
+            path.write_text(text, encoding="utf-8")
+            changed += 1
+            print(f"updated {path.relative_to(ROOT)}")
+    print(f"fixed licensed wording on {changed} files")
     return 0
 
 
