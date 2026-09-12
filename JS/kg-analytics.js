@@ -9,6 +9,9 @@
  *    to dataLayer, but GTM-MNHVDBHG has no matching triggers. This file also
  *    sends those events to GA4 G-XWB08NGJWR via gtag so estimates and calls
  *    show up without a GTM container edit.
+ * 4. Microsoft Clarity (wgzcqjrxjd) is loaded here on production only. Legacy
+ *    pages left the tag in dead HTML; GTM was click-gated; localhost/Electron
+ *    sessions were polluting the Clarity project.
  *
  * Do not also add a GTM GA4 Event tag for generate_lead — the page already
  * sends it. Optional GTM triggers are only needed for ads / other non-GA4 tags.
@@ -16,9 +19,11 @@
 (function kgAnalytics(window, document) {
     var GTM_ID = 'GTM-MNHVDBHG';
     var GA4_ID = 'G-XWB08NGJWR';
+    var CLARITY_ID = 'wgzcqjrxjd';
     var ATTR_KEY = 'kg:firstTouch';
     var gtmRequested = false;
     var gtagFallbackRequested = false;
+    var clarityRequested = false;
 
     window.dataLayer = window.dataLayer || [];
     if (typeof window.gtag !== 'function') {
@@ -28,16 +33,50 @@
     }
 
     function pageType() {
-        var path = window.location.pathname || '/';
-        if (path === '/' || path === '/index.html') return 'home';
+        var path = (window.location.pathname || '/').replace(/\.html$/i, '');
+        if (path === '/' || path === '/index') return 'home';
+        if (path.indexOf('home-watch') !== -1 || path.indexOf('snowbird') !== -1) return 'home_watch';
+        if (path.indexOf('property-manager') !== -1 || path.indexOf('rental-turnover') !== -1) return 'property_manager';
         if (path.indexOf('/Services/') === 0) return 'service';
         if (path.indexOf('/gallery/') === 0) return 'gallery';
-        if (/handyman$/.test(path.replace(/\.html$/i, ''))) return 'location';
+        if (/handyman$/.test(path)) return 'location';
         if (path.indexOf('pricing') !== -1) return 'pricing';
         if (path.indexOf('booking') !== -1) return 'booking';
         if (path.indexOf('contact') !== -1) return 'contact';
         if (path.indexOf('thank-you') !== -1) return 'thank-you';
         return 'content';
+    }
+
+    function debugAnalytics() {
+        try {
+            return readSearch().get('kg_debug_analytics') === '1';
+        } catch (error) {
+            return false;
+        }
+    }
+
+    function shouldSendAnalytics() {
+        return isProductionHost() || debugAnalytics();
+    }
+
+    function inferFormType(details) {
+        var src = details || {};
+        if (src.form_type) return String(src.form_type);
+        var request = String(src.request_type || '').toLowerCase();
+        var path = String((window.location.pathname || '') + ' ' + (src.service_page || '') + ' ' + (src.landing_page || '')).toLowerCase();
+        if (request.indexOf('home watch') !== -1 || path.indexOf('home-watch') !== -1 || path.indexOf('snowbird') !== -1) {
+            return 'home_watch';
+        }
+        if (request.indexOf('property manager') !== -1 || path.indexOf('property-manager') !== -1 || path.indexOf('rental-turnover') !== -1) {
+            return 'property_manager';
+        }
+        return 'homeowner';
+    }
+
+    function isInternalLead(details) {
+        var src = details || {};
+        var source = String(src.utm_source || '').toLowerCase();
+        return source === 'internal' || source === 'test';
     }
 
     function readSearch() {
@@ -107,12 +146,41 @@
         };
     }
 
+    function isProductionHost() {
+        var host = (window.location.hostname || '').toLowerCase();
+        return host === 'www.knightgroup.com' || host === 'knightgroup.com';
+    }
+
     function alreadyHasGtm() {
         if (window.google_tag_manager) return true;
         return !!document.querySelector('script[src*="googletagmanager.com/gtm.js"]');
     }
 
+    function alreadyHasClarity() {
+        if (typeof window.clarity === 'function') return true;
+        return !!document.querySelector('script[src*="clarity.ms/tag/"]');
+    }
+
+    function loadClarity() {
+        if (!shouldSendAnalytics()) return;
+        if (clarityRequested || alreadyHasClarity()) {
+            clarityRequested = true;
+            return;
+        }
+        if (!isProductionHost()) return;
+        clarityRequested = true;
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+            t = l.createElement(r);
+            t.async = 1;
+            t.src = 'https://www.clarity.ms/tag/' + i;
+            y = l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t, y);
+        })(window, document, 'clarity', 'script', CLARITY_ID);
+    }
+
     function loadGtm() {
+        if (!shouldSendAnalytics()) return;
         if (gtmRequested || alreadyHasGtm()) {
             gtmRequested = true;
             window._gtmLoaded = true;
@@ -131,6 +199,7 @@
     }
 
     function loadGtagFallback() {
+        if (!shouldSendAnalytics()) return;
         if (gtagFallbackRequested) return;
         if (document.querySelector('script[src*="googletagmanager.com/gtag/js?id=' + GA4_ID + '"]')) {
             gtagFallbackRequested = true;
@@ -163,13 +232,15 @@
 
     function ga4Params(details) {
         var attr = attribution();
+        var formType = inferFormType(details);
         var params = {
             send_to: GA4_ID,
             transport_type: 'beacon',
             page_path: window.location.pathname || '/',
             page_title: document.title || '',
             page_type: pageType(),
-            landing_page: attr.landing_page
+            landing_page: attr.landing_page,
+            form_type: formType
         };
         if (attr.referrer) params.page_referrer = attr.referrer;
         if (attr.utm_source) params.utm_source = attr.utm_source;
@@ -179,10 +250,17 @@
     }
 
     function track(eventName, details) {
+        var attr = attribution();
+        var merged = Object.assign({}, attr, details || {});
+        if (!shouldSendAnalytics() || isInternalLead(merged)) {
+            captureFirstTouch();
+            return;
+        }
         loadGtm();
         loadGtagFallback();
+        loadClarity();
 
-        var attr = attribution();
+        var formType = inferFormType(merged);
         var payload = Object.assign({
             event: eventName,
             page_path: window.location.pathname || '/',
@@ -192,7 +270,8 @@
             referrer: attr.referrer,
             utm_source: attr.utm_source,
             utm_medium: attr.utm_medium,
-            utm_campaign: attr.utm_campaign
+            utm_campaign: attr.utm_campaign,
+            form_type: formType
         }, cleanDetails(details));
         window.dataLayer.push(payload);
 
@@ -200,14 +279,18 @@
         window.gtag('event', eventName, params);
 
         if (eventName === 'form_success') {
-            var leadParams = Object.assign({}, params, { lead_source: 'form' });
+            var leadParams = Object.assign({}, params, {
+                lead_source: 'form',
+                form_type: formType
+            });
             window.dataLayer.push(Object.assign({
                 event: 'generate_lead',
                 page_path: payload.page_path,
                 page_title: payload.page_title,
                 page_type: payload.page_type,
                 landing_page: payload.landing_page,
-                lead_source: 'form'
+                lead_source: 'form',
+                form_type: formType
             }, cleanDetails(details)));
             window.gtag('event', 'generate_lead', leadParams);
         }
@@ -215,8 +298,10 @@
 
     function ensureAnalytics() {
         captureFirstTouch();
+        if (!shouldSendAnalytics()) return;
         loadGtm();
         loadGtagFallback();
+        loadClarity();
     }
 
     window.kgAnalyticsTrack = track;

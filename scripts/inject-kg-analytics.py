@@ -8,8 +8,16 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SKIP_FILES = {"header.html", "footer.html", "socialCards.html"}
-SKIP_DIR_NAMES = {"node_modules", "website-audit", "gsc-audit"}
-ANALYTICS_SRC = "/JS/kg-analytics.js?v=20260823-analytics"
+SKIP_DIR_NAMES = {
+    "node_modules",
+    "website-audit",
+    "gsc-audit",
+    "Chess-Game-main",
+    "audit-report",
+    "PolicyPages",
+    "admin",
+}
+ANALYTICS_SRC = "/JS/kg-analytics.js?v=20260912-lead"
 ANALYTICS_TAG = f'    <script src="{ANALYTICS_SRC}"></script>\n'
 NOSCRIPT = (
     '<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNHVDBHG" '
@@ -17,7 +25,8 @@ NOSCRIPT = (
     'title="Google Tag Manager"></iframe></noscript>\n'
 )
 INCLUDES_PAT = re.compile(r"/JS/includes\.min\.js\?v=[^\"']+")
-INCLUDES_NEW = "/JS/includes.min.js?v=20260823-analytics"
+INCLUDES_NEW = "/JS/includes.min.js?v=20260912-lead"
+ANALYTICS_PAT = re.compile(r"/JS/kg-analytics\.js\?v=[^\"']+")
 HEAD_CLOSE = re.compile(r"</head>", re.IGNORECASE)
 BODY_OPEN = re.compile(r"<body\b[^>]*>", re.IGNORECASE)
 
@@ -55,6 +64,7 @@ def main() -> int:
     analytics_added = 0
     noscript_added = 0
     includes_updated = 0
+    analytics_bumped = 0
     missing_head = []
 
     for path in sorted(ROOT.rglob("*.html")):
@@ -79,12 +89,18 @@ def main() -> int:
             includes_updated += 1
             text = new_text
 
+        new_text, n = ANALYTICS_PAT.subn(ANALYTICS_SRC, text)
+        if n:
+            analytics_bumped += 1
+            text = new_text
+
         if text != original:
             path.write_text(text, encoding="utf-8", newline="\n")
 
     print(f"kg-analytics injected: {analytics_added}")
     print(f"GTM noscript injected: {noscript_added}")
     print(f"includes version bumped: {includes_updated}")
+    print(f"kg-analytics version bumped: {analytics_bumped}")
     if missing_head:
         print("pages without </head>:")
         for item in missing_head:

@@ -28,7 +28,7 @@
     }
     if (document.querySelector('script[src*="kg-analytics.js"]')) return;
     var script = document.createElement('script');
-    script.src = '/JS/kg-analytics.js?v=20260901-clarity';
+        script.src = '/JS/kg-analytics.js?v=20260912-lead';
     script.async = true;
     document.head.appendChild(script);
 })();
@@ -592,8 +592,10 @@ ${data.message}
     const ATTR_KEY = 'kg:firstTouch';
 
     function pageType() {
-        const path = window.location.pathname || '/';
-        if (path === '/' || path === '/index.html') return 'home';
+        const path = (window.location.pathname || '/').replace(/\.html$/i, '');
+        if (path === '/' || path === '/index') return 'home';
+        if (path.indexOf('home-watch') !== -1 || path.indexOf('snowbird') !== -1) return 'home_watch';
+        if (path.indexOf('property-manager') !== -1 || path.indexOf('rental-turnover') !== -1) return 'property_manager';
         if (path.startsWith('/Services/')) return 'service';
         if (path.startsWith('/gallery/')) return 'gallery';
         if (/handyman$/.test(path)) return 'location';
@@ -601,6 +603,18 @@ ${data.message}
         if (path.includes('booking')) return 'booking';
         if (path.includes('contact')) return 'contact';
         return 'content';
+    }
+
+    function inferFormType(form) {
+        var request = fieldValue(form, 'request_type').toLowerCase();
+        var path = ((window.location.pathname || '') + ' ' + fieldValue(form, 'service_page')).toLowerCase();
+        if (request.indexOf('home watch') !== -1 || path.indexOf('home-watch') !== -1 || path.indexOf('snowbird') !== -1) {
+            return 'home_watch';
+        }
+        if (request.indexOf('property manager') !== -1 || path.indexOf('property-manager') !== -1 || path.indexOf('rental-turnover') !== -1) {
+            return 'property_manager';
+        }
+        return 'homeowner';
     }
 
     function fieldValue(form, name) {
@@ -644,6 +658,7 @@ ${data.message}
         return {
             form_id: form.id || '',
             form_class: form.className || '',
+            form_type: inferFormType(form),
             service_page: fieldValue(form, 'service_page'),
             request_type: fieldValue(form, 'request_type'),
             selected_service: fieldValue(form, 'service'),
@@ -661,6 +676,8 @@ ${data.message}
         ensureHidden(form, 'utm_source', params.get('utm_source') || touch.utm_source || '');
         ensureHidden(form, 'utm_medium', params.get('utm_medium') || touch.utm_medium || '');
         ensureHidden(form, 'utm_campaign', params.get('utm_campaign') || touch.utm_campaign || '');
+        ensureHidden(form, 'utm_content', params.get('utm_content') || touch.utm_content || '');
+        ensureHidden(form, 'form_type', inferFormType(form));
     }
 
     var PHOTO_ERROR = 'Add photos here, or check that you will text them to (813) 649-3341.';
@@ -872,7 +889,23 @@ ${data.message}
                 pushLeadEvent('phone_click', {
                     phone_href: link.getAttribute('href') || '',
                     cta_text: (link.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 120),
-                    cta_location: ctaLocation(link)
+                    cta_location: ctaLocation(link),
+                    form_type: inferFormType(null)
+                });
+            });
+        });
+    }
+
+    function bindSmsLinks(root) {
+        (root || document).querySelectorAll('a[href^="sms:"]').forEach(function (link) {
+            if (link.dataset.kgSmsTracked === '1') return;
+            link.dataset.kgSmsTracked = '1';
+            link.addEventListener('click', function () {
+                pushLeadEvent('sms_click', {
+                    sms_href: link.getAttribute('href') || '',
+                    cta_text: (link.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 120),
+                    cta_location: ctaLocation(link),
+                    form_type: inferFormType(null)
                 });
             });
         });
@@ -922,6 +955,7 @@ ${data.message}
     window.kgInitLeadTracking = function () {
         document.querySelectorAll('form[action*="formspree.io"], form[data-kg-guard], .kg-contact-form, .kg-hero-consultation-form').forEach(bindForm);
         bindPhoneLinks(document);
+        bindSmsLinks(document);
         bindEmailLinks(document);
         bindCtaLinks(document);
     };

@@ -10,7 +10,7 @@ Live HTML ships from `E:\Handyman Ticket Manager\state\deploy\KnightGroupWebsite
 
 ---
 
-## Freeze (in effect 2026-08-31)
+## Freeze (in effect 2026-08-31 — lifted for one title test 2026-09-12)
 
 Do **not** rewrite titles, meta descriptions, H1s, or first-300-word intros on money pages (city URLs, `/`, `/pricing`, `/Services/handyman`, `/Services/home-repair-near-me`) until **both**:
 
@@ -25,7 +25,7 @@ node E:\Website Audit\GSC\tools\submit-indexing.mjs --site knightgroup.com --sta
 
 **Still allowed during freeze:** GSC **Request indexing** / `--stale-crawl` on URLs Google has not fetched since the Aug 28 host `Last-Modified` (this can speed recrawl; it is not a content change); factual error fixes; Home Watch (do not score vs Aug 19); related-card image deploys (on-page UX, not SERP CTR); Dispatch/ops. **Not allowed:** a new CTR title pack, city URL adds/merges, Lutz GBP, `"North Tampa"` as Schema.org City.
 
-Uncommitted working-tree titles (`Clearwater Handyman | $150 First Hour`, etc.) are the **already-written** next snippet. Do not invent a fourth version. Deploy that pack only if Nick says so, then restart this freeze from that deploy’s `Last-Modified`.
+Uncommitted working-tree titles (`Clearwater Handyman | $150 First Hour`, etc.) were the **already-written** next snippet. On 2026-09-12 the Aug 31 recrawl + 7 GSC days were satisfied, so that pack was applied in source (see below). After it deploys, freeze again until Google recrawls the new `Last-Modified`.
 
 ---
 
@@ -149,4 +149,37 @@ Misspelled ticket city **Carolwood** did **not** block posting. `KG-20260716-DFC
 | Port Richey | KG-20260816-809A | fence reset |
 
 Zero completed Lutz jobs. Zero completed Tampa jobs (one cancelled Copeland WO, no photos). Future Lutz/Tampa jobs will publish the same two surfaces from Dispatch; Lutz copy will not get a `/lutz-handyman` slug.
+
+---
+
+## 2026-09-12 — Astra plan (distribution, tracking, one title test)
+
+Astra’s read of the 2026-09-12 pack: organic traffic cannot fill several workers; Home Watch/PM have almost no search exposure; Clearwater/Largo/pricing have impressions without clicks; ticket app must be the lead authority. Implemented in that order. **Did not scale paid ads.**
+
+**Phase 1 — PM outreach.** Knight Group vendor first-touch and follow-up now land on `/property-manager-handyman?utm_source=outreach&utm_medium=email&utm_campaign=pm-vendor` plus the public packet zip. Home Watch emails use `utm_campaign=home-watch`. Next OutreachEngine KG send uses those URLs. No Saturday blast; no brand mix.
+
+**Phase 2 — Lead tracking.** `generate_lead` still fires only on `/thank-you` (`form_success`), not on `form_submit`. Events include `form_type` (`homeowner` / `property_manager` / `home_watch`). `sms_click` is tracked. Localhost / Electron / `utm_source=internal|test` do not send GTM/gtag. Formspree → tickets now store `landing_page`, `form_type`, and UTM columns. **Nick:** in GA4 Admin → Events, mark `generate_lead`, `phone_click`, and `sms_click` as key events. Do not mark `form_submit`. Do not run `kg-live-gbp-ga4.py`.
+
+**Phase 3 — Money pages (freeze wait for the Aug 28 HTML is over).** URL Inspection 2026-09-12: Clearwater last crawl **2026-08-31T13:53:02Z**, pricing **2026-08-31T13:53:01Z** — after live Last-Modified **2026-08-28 17:48 GMT**, and more than 7 complete GSC days have passed. Applied the **existing** `$150 First Hour` snippet only on `/pricing`, `/clearwater-handyman`, `/largo-handyman`, `/tarpon-springs-handyman` — not a fourth invented pack. Homepage, Tampa, Temple Terrace, and other city URLs were restored to HEAD geographic titles after a leftover mass `$150` pack was found in the working tree. Also added documented Dispatch jobs (below the intro), rate-card call/photo-estimate actions, and Clearwater drywall patch/texture/finish copy (Carrollwood ceiling patch is not claimed as Clearwater). **Not live until Nick deploys.** Live host `Last-Modified` is still **Sat, 12 Sep 2026 18:50:38 GMT**; live Clearwater/Largo/Tarpon titles remain geographic. Restart the snippet freeze from the next deploy’s `Last-Modified`.
+
+**Phase 4 — Indexing (checked).** Requested indexing on 10 URLs, 0 errors: pricing, Clearwater, Largo, Tarpon Springs, Clearwater drywall, PM, three Home Watch pages, `/Services/handyman`. Output: `GSC/runs/2026-09-12/knightgroup.com/submit-indexing`. Sitemap API resubmit reported already-processed. Daily quota is used; do not submit another 10 today. After the `$150` source pack deploys, request indexing again the **next** day.
+
+GSC Pages URL lists (Sep 3 snapshot) are now mapped in `GSC/runs/2026-09-12/knightgroup.com/indexing-map/`:
+
+- **74 discovered-not-indexed:** 58 gallery, 13 service, 2 city satellites (`/largo-toilet-repair`, `/dunedin-trim-repair`), 1 `/services` hub.
+- **8 crawled-not-indexed:** mostly gallery/`http://` junk/noindex policy. Keep PolicyPages excluded.
+- High-importance money/PM/Home Watch URLs already appear in GSC performance. Do **not** demand 100% indexing of galleries.
+- Next indexing day: the 13 service URLs plus the documented job galleries now linked from pricing/Clearwater/Largo/drywall.
+
+**Phase 5 — Home Watch first route.** Did **not** redesign Home Watch or change `$329/$189/$125`. CSV of existing KG customers: `E:\Handyman Ticket Manager\state\marketing-exports\home-watch-first-route-2026-09-12.csv` (Keith/Tina Slater and Jeanette first). Saturday: Nick reviews and emails; no Google Voice.
+
+**Phase 6 — Paid ads.** Not launched. Gate before any spend: (1) Nick marks `generate_lead`, `phone_click`, and `sms_click` as GA4 key events; (2) a few real tickets show `form_type` + UTM; (3) the ticket app, not `form_submit`, is the lead count. Organic search cannot carry a five-worker schedule.
+
+**External mentions:** relationship list at `E:\Handyman Ticket Manager\state\marketing-exports\kg-partner-mentions-2026-09-12.csv`. Keith Slater / JK Slater first. No directory spam. No extra social-platform engineering.
+
+**Astra alignment pass (same day, before commit).** PM vendor and realtor emails now ask about vacant-house / snowbird inquiries they don’t service, with tracked Home Watch URLs. Clearwater cites Kevin Poe’s Google review and the GBP. Largo/Tarpon “related” copy now has real internal links. `/Services/handyman` links the 13 discovered-not-indexed service URLs that belong on that hub. Ticket page shows website attribution; `scripts/export-lead-outcomes.py` maps those tickets to booked / completed / lost / collected. Temple Terrace was left on the geographic title (examine for profitable coverage; not this sprint’s title test).
+
+**Clearwater query inspection (Astra §2, GSC query.csv through Sep 9).** Page `/clearwater-handyman` is the local-handyman destination: `handyman clearwater` 858 imp / 2 clicks / pos 20.7; `clearwater handyman` 48 / 0 / 14.9; `clearwater handyman services` 209 / 1 / 22.4. `clearwater drywall repair` 57 / 0 / 17.1 belongs on `/clearwater-drywall-repair` (724 page impressions), not the city page. Sitewide `handyman near me` is still 4,006 / 3 / pos 14.4 — visibility plus wording, not a new city-page batch. Temple Terrace query `handyman temple terrace fl` averaged pos 6.2 with five clicks; coverage stays geographic unless Nick confirms profitable Hillsborough routing. Home Watch form/sample-report and extra social-platform engineering stayed secondary, as Astra said. Paid ads remain off. GBP Maps/call metrics are still a data gap and not a blocker.
+
+
 
