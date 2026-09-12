@@ -1,3 +1,17 @@
+(function kgBootAnalyticsFromCanonical() {
+    var host = (window.location.hostname || '').toLowerCase();
+    if (host !== 'www.knightgroup.com' && host !== 'knightgroup.com') return;
+    if (window.kgEnsureAnalytics) {
+        window.kgEnsureAnalytics();
+        return;
+    }
+    if (document.querySelector('script[src*="kg-analytics.js"]')) return;
+    var script = document.createElement('script');
+    script.src = '/JS/kg-analytics.js?v=20260912-lead';
+    script.async = true;
+    document.head.appendChild(script);
+})();
+
 (function redirectLegacyHtmlPath() {
     var host = (window.location.hostname || '').toLowerCase();
     var isProductionHost = host === 'www.knightgroup.com' || host === 'knightgroup.com';
