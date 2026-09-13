@@ -145,8 +145,8 @@ CITY_PROFILES: dict[str, dict] = {
         "gallery_category": "general-repairs",
     },
     "tampa": {
-        "housing": "Tampa includes Hyde Park bungalows, South Tampa block homes, Westshore condos, and Carrollwood-era ranches. Hillsborough’s largest city mixes historic wood frame, stucco subdivisions, and newer townhome infill.",
-        "areas": "Hyde Park, South Tampa, Westshore, New Tampa edges, and MacDill-adjacent neighborhoods",
+        "housing": "Northwest Tampa, Westchase, Town 'n' Country, and Carrollwood-era ranches are the usual stops from Safety Harbor. South Tampa, Hyde Park, and Westshore are accepted when they fit that day’s Hillsborough loop — confirm the address first.",
+        "areas": "Northwest Tampa, Westchase, Town 'n' Country, Carrollwood, then South Tampa and Hyde Park by confirmation",
         "climate": "Summer thunderstorms and afternoon heat cycles swell doors and stress attic-adjacent drywall when AC condensate pans overflow.",
         "jobs": [
             "Drywall ceiling repair after AC attic leaks in single-story ranches",
@@ -156,7 +156,7 @@ CITY_PROFILES: dict[str, dict] = {
             "Kitchen faucet and disposal replacements in original layouts",
             "Shelving and storage builds in garages and laundry rooms",
         ],
-        "angle": "We route Tampa from Safety Harbor across the bay — prioritizing South Tampa and Westshore clusters on planned days rather than random cross-county zigzags. That keeps estimates honest and arrival windows realistic.",
+        "angle": "We route Tampa from Safety Harbor across the bay — prioritizing northwest Tampa, Westchase, Town 'n' Country, and Carrollwood on planned days. South Tampa and Hyde Park are accepted only when they fit that route.",
         "gallery_category": "general-repairs",
     },
     "town-n-country": {

@@ -557,7 +557,11 @@
   function initHeroForm() {
     var form = document.getElementById('heroEstimateForm');
     if (!form) return;
-    form.addEventListener('submit', function () {
+    form.addEventListener('submit', function (e) {
+      if (typeof window.kgPrepareEstimatePhotos === 'function' && !window.kgPrepareEstimatePhotos(form)) {
+        e.preventDefault();
+        return;
+      }
       var submit = form.querySelector('.kg-hero-form-submit');
       if (!submit) return;
       var label = submit.querySelector('span');

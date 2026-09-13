@@ -7306,3 +7306,37 @@ body.kg-page.kg-policy-page {
   border-radius: 10px;
   margin-bottom: 30px;
 }
+
+#header-include .header-actions a.kg-header-sms {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+}
+#header-include .header-actions a.kg-header-sms:hover,
+#header-include .header-actions a.kg-header-sms:focus-visible {
+  background: rgba(255, 255, 255, 0.16);
+  outline: none;
+}
+.mm-sms {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+}
+@media (max-width: 1100px) {
+  #header-include .header-actions a.kg-header-sms {
+    padding: 0 10px;
+    font-size: 0.64rem;
+  }
+}

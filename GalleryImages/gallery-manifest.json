@@ -133,8 +133,8 @@
     },
     {
       "id": "attic-drywall-return-visit-54b0dce-before-after",
-      "title": "Attic Drywall - Return Visit \u2014 before & after",
-      "description": "Before-and-after proof from a attic drywall - return visit job completed by Knight Group.",
+      "title": "Attic drywall reseat after plumbing trap \u2014 before & after",
+      "description": "Attic drywall reseated after a flex-trap replacement on a Pinellas return visit.",
       "category": "painting",
       "serviceLink": "/Services/painting-finishing",
       "beforeAfter": true,
@@ -144,8 +144,8 @@
           "src": "GalleryImages/before-after-attic-drywall-return-visit-54b0dce.webp",
           "filename": "before-after-attic-drywall-return-visit-54b0dce.webp",
           "step": 1,
-          "title": "Attic Drywall - Return Visit before and after",
-          "seoAlt": "Attic Drywall - Return Visit before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "title": "Attic drywall reseat after plumbing trap before and after",
+          "seoAlt": "Attic drywall reseat after plumbing trap before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
           "description": "Before-and-after comparison from a attic drywall - return visit job completed in a Pinellas County home.",
           "beforeAfter": true
         }
@@ -173,8 +173,8 @@
     },
     {
       "id": "bedroom-d9d0055-before-after",
-      "title": "Bedroom \u2014 before & after",
-      "description": "Before-and-after proof from a bedroom job completed by Knight Group.",
+      "title": "Door rehang and weatherstripping \u2014 before & after",
+      "description": "Front and bedroom doors rehung, hinges remortised, and weatherstripping added in a St. Petersburg home.",
       "category": "general-repairs",
       "serviceLink": "/Services/general-repairs",
       "beforeAfter": true,
@@ -184,9 +184,9 @@
           "src": "GalleryImages/before-after-bedroom-d9d0055.webp",
           "filename": "before-after-bedroom-d9d0055.webp",
           "step": 1,
-          "title": "Bedroom before and after",
-          "seoAlt": "Bedroom before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
-          "description": "Before-and-after comparison from a bedroom job completed in a Pinellas County home.",
+          "title": "Door rehang and weatherstripping before and after",
+          "seoAlt": "Door rehang and weatherstripping before and after \u2014 handyman project photo in St. Petersburg FL by Knight Group",
+          "description": "Before-and-after comparison from a bedroom job completed in a St. Petersburg home.",
           "beforeAfter": true
         }
       ]
@@ -2291,14 +2291,14 @@
       "filename": "before-after-attic-drywall-return-visit-54b0dce.webp",
       "group": "attic-drywall-return-visit-54b0dce-before-after",
       "step": 1,
-      "title": "Attic Drywall - Return Visit before and after",
-      "seoAlt": "Attic Drywall - Return Visit before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
-      "description": "Before-and-after comparison from a attic drywall - return visit job completed in a Pinellas County home.",
+      "title": "Attic drywall reseat after plumbing trap before and after",
+      "seoAlt": "Attic drywall reseat after plumbing trap before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Attic drywall reseated after a flex-trap replacement on a Pinellas return visit.",
       "category": "painting",
       "serviceLink": "/Services/painting-finishing",
       "beforeAfter": true,
-      "groupTitle": "Attic Drywall - Return Visit \u2014 before & after",
-      "groupDescription": "Before-and-after proof from a attic drywall - return visit job completed by Knight Group."
+      "groupTitle": "Attic drywall reseat after plumbing trap \u2014 before & after",
+      "groupDescription": "Return visit to screw drywall back after replacing a flex trap. Paint-ready closeout, not a new remodel."
     },
     {
       "src": "GalleryImages/before-after-ballast-light-fixture-bbe38e2.webp",
@@ -2319,14 +2319,14 @@
       "filename": "before-after-bedroom-d9d0055.webp",
       "group": "bedroom-d9d0055-before-after",
       "step": 1,
-      "title": "Bedroom before and after",
-      "seoAlt": "Bedroom before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
-      "description": "Before-and-after comparison from a bedroom job completed in a Pinellas County home.",
+      "title": "Door rehang and weatherstripping before and after",
+      "seoAlt": "Door rehang and weatherstripping before and after \u2014 handyman project photo in St. Petersburg FL by Knight Group",
+      "description": "Front and bedroom doors rehung, hinges remortised, and weatherstripping added in a St. Petersburg home.",
       "category": "general-repairs",
       "serviceLink": "/Services/general-repairs",
       "beforeAfter": true,
-      "groupTitle": "Bedroom \u2014 before & after",
-      "groupDescription": "Before-and-after proof from a bedroom job completed by Knight Group."
+      "groupTitle": "Door rehang and weatherstripping \u2014 before & after",
+      "groupDescription": "St. Petersburg visit: front-door hinges pulled from the jamb; doors were rehung, stops and a door sweeper added, and a bedroom door was reset."
     },
     {
       "src": "GalleryImages/before-after-blind-repair.webp",

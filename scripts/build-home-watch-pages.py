@@ -13,7 +13,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 from schema_graph import business_entity, website_entity  # noqa: E402
-from service_related import related_card_src  # noqa: E402
+from service_related import render_related_cards  # noqa: E402
 
 ORG = json.loads((ROOT / "seo" / "knight-group-organization.json").read_text(encoding="utf-8"))
 FOUNDER = json.loads((ROOT / "seo" / "knight-group-founder.json").read_text(encoding="utf-8"))
@@ -39,7 +39,7 @@ PINELLAS_FAQS = [
     ),
     (
         "What does a visit report include?",
-        "Date, arrival and departure notes, location verification, a property checklist, photographs, issue flags, and a short client-facing summary. That report is the product.",
+        "Date, arrival and departure notes, location verification, a property checklist, photographs, issue flags, and a short client-facing summary. A labeled sample report is on the Home Watch sample-report page — that page is a format example, not a real owner’s report and not a licensed inspection.",
     ),
     (
         "Which cities do you cover?",
@@ -47,7 +47,7 @@ PINELLAS_FAQS = [
     ),
     (
         "How do we get started?",
-        "Use the qualification form on this page or call (813) 649-3341. Do not send alarm codes, gate codes, or key instructions through the public form. Access details are collected privately after you qualify for service.",
+        "Use the short form on this page (name, phone, email, city, and the plan you want) or call (813) 649-3341. Do not send alarm codes, gate codes, or key instructions through the public form. Access details are collected privately after you qualify for service.",
     ),
     (
         "Will Home Watch satisfy my homeowners insurance?",
@@ -194,19 +194,11 @@ def faq_html(section_id: str, heading: str, intro: str, faqs: list[tuple[str, st
 
 
 def related_grid(cards: list[tuple[str, str, str | None]]) -> str:
-    bits = []
-    for href, label, img in cards:
-        src = img or related_card_src(href)
-        if "?v=" not in src:
-            src = f"{src}?v=20260821-related-cards"
-        bits.append(
-            f"""                        <a class="kg-service-related-card" href="{href}">
-                            <img src="{src}" alt="{label}" width="400" height="300" loading="lazy" decoding="async">
-                            <span class="kg-service-related-card__label">{label}</span>
-                        </a>"""
-        )
-    return "\n".join(bits)
+    links = [(href, label) for href, label, _img in cards]
+    return render_related_cards(links, version="20260829-after-stills")
 
+
+SMS_HREF = "sms:+18136493341?body=Photos%20for%20a%20written%20estimate"
 
 QUAL_FORM = """                                <form class="kg-contact-form" action="https://formspree.io/f/xzzvnpne" method="POST" data-kg-guard>
                                     <div class="kg-field">
@@ -226,78 +218,20 @@ QUAL_FORM = """                                <form class="kg-contact-form" act
                                         <input type="text" id="hw-city" name="property_city" placeholder="Clearwater, Dunedin, Palm Harbor…" required>
                                     </div>
                                     <div class="kg-field">
-                                        <label for="hw-type">Property type</label>
-                                        <select id="hw-type" name="property_type" required>
-                                            <option value="">Select one</option>
-                                            <option>Seasonal / snowbird home</option>
-                                            <option>Second home</option>
-                                            <option>Vacant investment property</option>
-                                            <option>Home awaiting sale</option>
-                                            <option>Rental between tenants</option>
-                                            <option>Estate / probate</option>
-                                            <option>Other</option>
-                                        </select>
-                                    </div>
-                                    <div class="kg-field kg-field--optional">
-                                        <label for="hw-sqft">Approximate square footage <span>(optional)</span></label>
-                                        <input type="text" id="hw-sqft" name="square_footage" inputmode="numeric" placeholder="e.g. 1,800">
-                                    </div>
-                                    <div class="kg-field">
-                                        <label for="hw-away">How often are you away?</label>
-                                        <select id="hw-away" name="away_frequency" required>
-                                            <option value="">Select one</option>
-                                            <option>Most of the year / seasonal</option>
-                                            <option>Several months at a time</option>
-                                            <option>Weeks at a time</option>
-                                            <option>Property is vacant now</option>
-                                            <option>One-time check only</option>
-                                        </select>
-                                    </div>
-                                    <div class="kg-field">
-                                        <label for="hw-plan">Plan interest</label>
+                                        <label for="hw-plan">Plan</label>
                                         <select id="hw-plan" name="plan_interest" required>
                                             <option value="">Select one</option>
                                             <option>Weekly Watch ($329/mo)</option>
                                             <option>Biweekly Watch ($189/mo)</option>
                                             <option>One-Time Property Check ($125)</option>
-                                            <option>Estate / Premium Watch</option>
                                             <option>Not sure yet</option>
                                         </select>
-                                    </div>
-                                    <div class="kg-field">
-                                        <label for="hw-interior">Interior access required?</label>
-                                        <select id="hw-interior" name="interior_access" required>
-                                            <option value="">Select one</option>
-                                            <option>Yes — interior checks</option>
-                                            <option>No — exterior only</option>
-                                            <option>Not sure</option>
-                                        </select>
-                                    </div>
-                                    <div class="kg-field">
-                                        <label for="hw-pool">Pool or spa?</label>
-                                        <select id="hw-pool" name="pool" required>
-                                            <option value="">Select one</option>
-                                            <option>Yes</option>
-                                            <option>No</option>
-                                        </select>
-                                    </div>
-                                    <div class="kg-field">
-                                        <label for="hw-gate">Gate or HOA access?</label>
-                                        <select id="hw-gate" name="gate_hoa" required>
-                                            <option value="">Select one</option>
-                                            <option>Yes</option>
-                                            <option>No</option>
-                                        </select>
-                                    </div>
-                                    <div class="kg-field kg-field--optional">
-                                        <label for="hw-start">Desired start date <span>(optional)</span></label>
-                                        <input type="text" id="hw-start" name="desired_start" placeholder="Month or approximate date">
                                     </div>
                                     <div class="kg-field kg-field--optional">
                                         <label for="hw-message">Anything else we should know? <span>(optional)</span></label>
                                         <textarea id="hw-message" name="message" rows="3" placeholder="Property notes — do not include alarm, gate, or lockbox codes"></textarea>
                                     </div>
-                                    <p class="kg-form-note">Do not send alarm codes, gate codes, lockbox combinations, or key-hiding instructions on this form. We collect access details privately after you qualify.</p>
+                                    <p class="kg-form-note">Five fields to start. Do not send alarm codes, gate codes, lockbox combinations, or key-hiding instructions on this form. We collect access details privately after you qualify.</p>
                                     <input type="hidden" name="_subject" value="Knight Group Home Watch inquiry">
                                     <input type="hidden" name="request_type" value="Home Watch qualification">
                                     <input type="hidden" name="service_page" value="home-watch-pinellas">
@@ -413,9 +347,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="twitter:description" content="{description}">
     <meta name="twitter:image" content="https://www.knightgroup.com/Images/knightgroup-twitter-card-1200x628-phone.png">
     <meta name="twitter:url" content="{page_id}">
-<link rel="stylesheet" href="/CSS/header.min.css?v=20260821-home-watch">
-    <link rel="stylesheet" href="/CSS/kg-redesign.css?v=20260821-hw-gap">
-    <script src="/JS/kg-redesign.js?v=20260821-home-watch" defer></script>
+<link rel="stylesheet" href="/CSS/header.min.css?v=20260912-sms">
+    <link rel="stylesheet" href="/CSS/kg-redesign.css?v=20260912-sms">
+    <script src="/JS/kg-redesign.js?v=20260912-lead" defer></script>
+    <script src="/JS/kg-analytics.js?v=20260912-lead"></script>
 {css}</head>
 <body class="kg-page kg-service">
 <!-- Google Tag Manager (noscript) -->
@@ -490,15 +425,16 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                             </div>
                             <h3>Quick contact</h3>
                             <div class="pricing-highlights">
-                        <a href="tel:+18136493341" class="header-btn-primary kg-header-call" title="Click to call or text (813) 649-3341" aria-label="Call or text (813) 649-3341">
+                        <a href="tel:+18136493341" class="header-btn-primary kg-header-call" title="Call (813) 649-3341" aria-label="Call (813) 649-3341">
                             <span class="kg-header-call__icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" width="18" height="18" focusable="false"><path fill="currentColor" d="M6.6 10.8c1.5 2.9 3.7 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.3 21 3 13.7 3 4c0 .6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
                             </span>
                             <span class="kg-header-call__text">
-                                <span class="kg-header-call__label">Call or Text</span>
+                                <span class="kg-header-call__label">Call</span>
                                 <span class="kg-header-call__number">(813) 649-3341</span>
                             </span>
                         </a>
+                        <p style="margin-top:14px;"><a href="{SMS_HREF}" class="kg-btn kg-btn--ghost kg-header-sms">Text Photos</a></p>
                                 <p style="margin-top:16px;"><strong>Email:</strong> <a href="mailto:nknight@knightgroup.com">nknight@knightgroup.com</a></p>
                                 <p><strong>Hours:</strong> Mon&ndash;Fri 8 AM&ndash;5 PM</p>
                             </div>
@@ -507,7 +443,7 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
         </div>
     </main>
     <div id="footer-include"></div>
-    <script src="/JS/includes.min.js?v=20260821-home-watch" defer></script>
+    <script src="/JS/includes.min.js?v=20260912-lead" defer></script>
 </body>
 </html>
 """
@@ -538,20 +474,30 @@ SIMPLE_FORM = """                                <form class="kg-contact-form" a
 
 PINELLAS_BODY = """
                             <p><strong>Home Watch by Knight Group</strong> is the Pinellas County answer to “someone to check my house while I’m away.” We run scheduled, photo-documented property checks for snowbird homes, vacation homes, second homes, vacant listings, and absentee-owned houses — then send you the report. If something needs work, the same local company can quote eligible repairs instead of leaving you to find a stranger from another time zone.</p>
-                            <p>That is the point of attaching Home Watch to a working property-maintenance company. A visit documents the issue. You get notified. Knight Group can separately quote eligible repairs, or coordinate a licensed trade when the work is outside handyman scope. Repair labor is never bundled into the watch fee.</p>
+                            <table class="kg-hw-table">
+                                <caption>Published Home Watch rates</caption>
+                                <thead><tr><th>Plan</th><th>Price</th><th>Visit cadence</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Weekly Watch</td><td>$329/month</td><td>About every seven days, with a photo report after each visit</td></tr>
+                                    <tr><td>Biweekly Watch</td><td>$189/month</td><td>About every two weeks</td></tr>
+                                    <tr><td>One-Time Property Check</td><td>$125</td><td>A single interior/exterior walkthrough and report</td></tr>
+                                </tbody>
+                            </table>
+                            <p>Repair labor is never bundled into the watch fee. See the full breakdown on <a href="/home-watch-pricing">Home Watch pricing</a>. <a href="/home-watch-sample-report">Read a labeled sample visit report</a> so you can see what arrives after a check — it is a format example, not a licensed inspection and not a real owner’s file.</p>
+                            <p>That is the point of attaching Home Watch to a working property-maintenance company. A visit documents the issue. You get notified. Knight Group can separately quote eligible repairs, or coordinate a licensed trade when the work is outside handyman scope.</p>
                             <h2>Snowbird home watch and seasonal house checks</h2>
                             <p>Pinellas has a large seasonal and occasional-use housing stock. Snowbirds who leave for the Midwest, the Northeast, or Canada still need eyes on the house through Florida heat, humidity, and hurricane season. Weekly Watch (~every seven days) is the usual plan for a long vacancy. Biweekly Watch fits shorter trips. The service is year-round — not only winter residents.</p>
                             <p>University of Florida Census-derived housing counts show how common absentee and recreational housing is in this county. That does not mean every vacant unit is a customer — short-term rentals can fall in the same category — but it does show why vacant-home monitoring is a real local search, not a side hobby.</p>
                             <h2>Vacant house checks, vacation homes, and second-home monitoring</h2>
                             <p>People searching <em>home watch services near me</em>, <em>vacant home watch</em>, or <em>vacation home monitoring</em> usually want the same thing: a consistent walkthrough, not a house sitter living on site. We look at entry points, mail and packages, obvious storm or water issues from ground level, HVAC and interior humidity when we have access, and we photograph what we see. Landlords between tenants can pair this with <a href="/rental-turnover-handyman">rental turnover handyman</a> work.</p>
                             <h2>What you get on each visit</h2>
-                            <p>Every visit produces a client-facing report: date, arrival and departure, location verification, checklist, photographs, issue flags, and a short summary. See the full <a href="/home-watch-checklist">Florida Home Watch checklist</a> for exterior, interior, and departure items. Owners leaving for the season should also use the <a href="/florida-snowbird-departure-checklist">Florida snowbird departure checklist</a> before they go.</p>
+                            <p>Every visit produces a client-facing report: date, arrival and departure, location verification, checklist, photographs, issue flags, and a short summary. <a href="/home-watch-sample-report">See a sample report</a> in that format, then the full <a href="/home-watch-checklist">Florida Home Watch checklist</a> for exterior, interior, and departure items. Owners leaving for the season should also use the <a href="/florida-snowbird-departure-checklist">Florida snowbird departure checklist</a> before they go.</p>
                             <h2>Hurricane season and unoccupied-home insurance notes</h2>
                             <p>After a named storm, we can add a post-storm property check when roads and access are safe — related to our <a href="/hurricane-repair-handyman-pinellas">hurricane prep and storm repair</a> page, but billed as a Home Watch visit, not a repair ticket. Insurance policies differ in how they define vacant, unoccupied, secondary and seasonal residences. Dated photo reports can support the paper trail your carrier asks for. They do not determine coverage or guarantee a claim.</p>
                             <h2>What Home Watch is not</h2>
                             <p>It is <strong>not</strong> a licensed home inspection, not house sitting, and not private security. We document and report signs of unexpected or unauthorized entry. We do not patrol, confront anyone, or claim to prevent crime, storm damage, water damage, or mold. Humidity readings are observations, not a mold inspection. If someone appears to be inside unexpectedly, the field representative leaves and follows your written emergency protocol.</p>
                             <h2>Plans, cities, and how to start</h2>
-                            <p>Weekly Watch is $329/month. Biweekly Watch is $189/month. A one-time property check is $125. Estate and premium properties start at $429/month. Full breakdown on <a href="/home-watch-pricing">Home Watch pricing</a>. Recurring routes currently run from Safety Harbor through Clearwater, Dunedin, Palm Harbor, Largo, Oldsmar, Tarpon Springs, Seminole, and nearby Pinellas communities we already serve for handyman work. Qualify on this page or call (813) 649-3341 — leave alarm and gate codes off the public form.</p>
+                            <p>Weekly Watch is $329/month. Biweekly Watch is $189/month. A one-time property check is $125. Estate and premium properties start at $429/month after intake. Recurring routes currently run from Safety Harbor through Clearwater, Dunedin, Palm Harbor, Largo, Oldsmar, Tarpon Springs, Seminole, and nearby Pinellas communities we already serve for handyman work. Qualify on this page or call (813) 649-3341 — leave alarm and gate codes off the public form.</p>
 """
 
 PRICING_BODY = """
@@ -578,11 +524,11 @@ PRICING_BODY = """
                             </table>
                             <h2>Onboarding</h2>
                             <p>Property setup is <strong>$99</strong>, waived with a recurring plan of three months or longer. A free Home Watch consultation is for qualified recurring service — not a complimentary drive-out to look around. Handyman hourly rates on the main <a href="/pricing">pricing</a> page do not apply to Home Watch visits.</p>
-                            <p>Compare visit frequency on the <a href="/home-watch-pinellas">Pinellas County Home Watch</a> page, or read <a href="/home-watch-checklist">what we check</a> while you are away.</p>
+                            <p>Compare visit frequency on the <a href="/home-watch-pinellas">Pinellas County Home Watch</a> page, read <a href="/home-watch-checklist">what we check</a>, or open a <a href="/home-watch-sample-report">labeled sample visit report</a>.</p>
 """
 
 CHECKLIST_BODY = """
-                            <p>This is the working visual checklist Knight Group uses on a scheduled Home Watch visit in Florida — the same list snowbirds, vacation-home owners, and vacant-property investors mean when they ask <em>what does home watch check</em>. It is written so you know what “checking the house while I’m away” actually includes. It is not a licensed home inspection and not a professional opinion of building condition. Findings are <strong>observations</strong> from that visit, with photos.</p>
+                            <p>This is the working visual checklist Knight Group uses on a scheduled Home Watch visit in Florida — the same list snowbirds, vacation-home owners, and vacant-property investors mean when they ask <em>what does home watch check</em>. It is written so you know what “checking the house while I’m away” actually includes. It is not a licensed home inspection and not a professional opinion of building condition. Findings are <strong>observations</strong> from that visit, with photos. <a href="/home-watch-sample-report">See a labeled sample report</a> in that format.</p>
                             <p>The value stays consistent observation, documentation, and escalation — not a hundred mini-inspections. If you want owner-specific items beyond this list, we write them into the property protocol (often on Premium Watch).</p>
                             <h2>Exterior</h2>
                             <ul>
@@ -691,6 +637,74 @@ SNOWBIRD_BODY = """
                             <p>Don’t want to rely on a neighbor while you’re gone? <a href="/home-watch-pinellas">Knight Group Home Watch</a> provides scheduled, photo-documented checks throughout Pinellas County. See <a href="/home-watch-checklist">what we visually check on each visit</a> and <a href="/home-watch-pricing">published Home Watch pricing</a>. Repair labor is always a separate quote.</p>
 """
 
+SAMPLE_FAQS = [
+    (
+        "Is this a real customer’s Home Watch report?",
+        "No. This page is a labeled sample of the report format Knight Group sends after a Pinellas Home Watch visit. The address, owner name, and readings are fictional. Photographs are from published Knight Group jobs used only to show the kind of photos a report includes.",
+    ),
+    (
+        "Is a Home Watch report a home inspection?",
+        "No. A visit report is a dated visual observation with photos. It is not a licensed home inspection, not a professional opinion of building condition, and not a mold, pest, or insurance inspection.",
+    ),
+    (
+        "What would a real report include that this sample shows?",
+        "Visit date, arrival and departure, location verification, checklist items, photographs, any issue flags, and a short summary. Access codes never appear on the public site or the public intake form.",
+    ),
+    (
+        "How do I start a real plan?",
+        "Use the short form on the Pinellas Home Watch page. Weekly Watch is $329/month, biweekly is $189/month, and a one-time check is $125.",
+    ),
+]
+
+SAMPLE_REPORT_BODY = """
+                            <p class="kg-sample-banner" role="note">Sample report — not a real owner file, not a licensed inspection</p>
+                            <p>This is the format of a Knight Group Home Watch visit report. The house below is a <strong>fictional Safety Harbor vacant property</strong> so you can see what arrives after a check without publishing someone else’s address. Photos are from published Knight Group jobs, used only as examples of exterior, HVAC, and close-up documentation. They are not claimed as one real Home Watch stop.</p>
+                            <div class="kg-hw-report">
+                            <h2>Visit summary</h2>
+                            <table class="kg-hw-table">
+                                <caption>Sample property (redacted)</caption>
+                                <tbody>
+                                    <tr><th scope="row">Report ID</th><td>SAMPLE-HW-2026-0815</td></tr>
+                                    <tr><th scope="row">Property</th><td>Vacant single-family house, Safety Harbor, FL (address withheld)</td></tr>
+                                    <tr><th scope="row">Visit date</th><td>Friday, August 15, 2026</td></tr>
+                                    <tr><th scope="row">Arrival / departure</th><td>10:12 a.m. – 10:41 a.m.</td></tr>
+                                    <tr><th scope="row">Weather</th><td>Partly cloudy, no active rain during the visit</td></tr>
+                                    <tr><th scope="row">Interior (when accessed)</th><td>76°F · 52% relative humidity — observations only, not a mold inspection</td></tr>
+                                    <tr><th scope="row">Plan</th><td>Weekly Watch example ($329/month published rate)</td></tr>
+                                </tbody>
+                            </table>
+                            <h2>Checklist that visit</h2>
+                            <table class="kg-hw-table">
+                                <thead><tr><th>Item</th><th>Result</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Visible entry doors and windows</td><td>No forced-entry signs from ground level</td></tr>
+                                    <tr><td>Mail, packages, flyers</td><td>Noted; none stacked at the door</td></tr>
+                                    <tr><td>Exterior water / storm debris</td><td>No standing water visible; yard clear</td></tr>
+                                    <tr><td>HVAC running / thermostat</td><td>System on; setpoint as written in the sample protocol</td></tr>
+                                    <tr><td>Visible ceilings, floors, under-sink areas</td><td>No active water staining observed</td></tr>
+                                    <tr><td>Issue flag</td><td>HVAC filter due for replacement on the next authorized visit (observation only)</td></tr>
+                                </tbody>
+                            </table>
+                            <h2>Example photographs</h2>
+                            <p>A real report attaches the photos from that stop. These examples show the kinds of pictures owners receive: a wide exterior, an entry/gate close-up, and an HVAC/filter still.</p>
+                            <figure class="kg-prose-photo">
+                                <img src="/GalleryImages/after-clean-exterior-front-of-house-70a4580.webp" alt="Example exterior photograph used to illustrate a Home Watch report" width="800" height="600" loading="lazy" decoding="async">
+                                <figcaption>Example wide exterior still — sample caption, not this fictional house</figcaption>
+                            </figure>
+                            <figure class="kg-prose-photo">
+                                <img src="/GalleryImages/after-side-yard-gate-repair-18bb381.webp" alt="Example entry and gate photograph used to illustrate a Home Watch report" width="800" height="600" loading="lazy" decoding="async">
+                                <figcaption>Example entry/gate close-up — published Knight Group job used only as a photo type</figcaption>
+                            </figure>
+                            <figure class="kg-prose-photo">
+                                <img src="/GalleryImages/after-pressure-wash-walk-way-b49a8fd.webp" alt="Example walkway photograph used to illustrate a Home Watch report" width="800" height="600" loading="lazy" decoding="async">
+                                <figcaption>Example walkway still — humidity, water, and access notes stay in the written checklist above</figcaption>
+                            </figure>
+                            <h2>What this sample is not</h2>
+                            <p>It is not a licensed home inspection, house-sitting log, security patrol report, or insurance certificate. Findings are observations from a scheduled visual check. Repair labor is quoted separately. Access codes never appear on this website.</p>
+                            <p>Ready for a real plan? <a href="/home-watch-pinellas">Qualify on the Pinellas Home Watch page</a> or see <a href="/home-watch-pricing">published pricing</a>.</p>
+                            </div>
+"""
+
 SNOWBIRD_HOWTO = {
     "@type": "HowTo",
     "@id": f"{BASE}/florida-snowbird-departure-checklist#howto",
@@ -794,12 +808,16 @@ TABLE_CSS = (
     ".kg-form-note{font-size:0.88rem;color:#4b4549;margin:0 0 1rem}"
     ".kg-pricing-sidebar-form select{width:100%;padding:10px 12px;border:1px solid rgba(154,47,47,0.2);"
     "border-radius:10px;font:inherit;color:#1d1c1f;background:#fff}"
+    ".kg-sample-banner{display:inline-block;background:#9a2f2f;color:#fff;font-weight:800;letter-spacing:.04em;"
+    "text-transform:uppercase;font-size:0.78rem;padding:0.55rem 0.85rem;border-radius:8px;margin:0 0 1rem}"
+    ".kg-hw-report figcaption{font-size:0.88rem;color:rgba(255,255,255,0.82);margin:0.4rem 0 1rem}"
 )
 
 RELATED = [
     ("/home-watch-pinellas", "Home Watch Pinellas", None),
     ("/home-watch-pricing", "Home Watch pricing", None),
     ("/home-watch-checklist", "Home Watch checklist", None),
+    ("/home-watch-sample-report", "Sample visit report", None),
     ("/florida-snowbird-departure-checklist", "Snowbird departure checklist", None),
     ("/rental-turnover-handyman", "Rental turnover", None),
     ("/hurricane-repair-handyman-pinellas", "Storm property checks", None),
@@ -815,7 +833,7 @@ def main() -> int:
             description="Pinellas County Home Watch for snowbirds, vacation homes, and vacant houses, with scheduled weekly or biweekly checks and a photo report after each visit.",
             h1="Home Watch Services in Pinellas County: Snowbird, Vacation, and Vacant House Checks",
             eyebrow="Home Watch by Knight Group · Pinellas County",
-            lead="Someone local to check your house while you’re away — scheduled snowbird home watch, vacation-home monitoring, and vacant property checks with a photo report after every visit.",
+            lead="Weekly Watch is $329/month, biweekly is $189/month, and a one-time check is $125. Scheduled snowbird, vacation-home, and vacant-house visits with a photo report after every stop.",
             crumb="Home Watch",
             body=PINELLAS_BODY,
             faqs=PINELLAS_FAQS,
@@ -824,11 +842,11 @@ def main() -> int:
             extra_graph=[SERVICE_NODE, OFFER_CATALOG],
             related=RELATED[1:],
             cta_h2="Qualify for Home Watch",
-            cta_p="Tell us the city, how often you are away, and whether you want weekly or biweekly visits. We will follow up. Do not put access codes on the form.",
+            cta_p="Name, phone, email, city, and the plan you want. We will follow up. Do not put access codes on the form.",
             cta_primary=("#hw-name", "Request a consultation"),
-            cta_secondary=("/home-watch-pricing", "View Home Watch pricing"),
+            cta_secondary=("/home-watch-sample-report", "See a sample report"),
             sidebar_title="Home Watch qualification",
-            sidebar_p="Short intake only. Access codes stay off this form.",
+            sidebar_p="Weekly $329/mo · Biweekly $189/mo · One-time $125. Five fields. Access codes stay off this form. <a href=\"/home-watch-sample-report\">Sample visit report</a>.",
             form_html=QUAL_FORM,
             extra_css=TABLE_CSS,
         ),
@@ -888,6 +906,36 @@ def main() -> int:
             form_html=SIMPLE_FORM.format(fid="hw-check", slug="home-watch-checklist"),
             extra_css=TABLE_CSS,
         ),
+        "home-watch-sample-report.html": page(
+            slug="home-watch-sample-report",
+            title="Sample Home Watch Report | Pinellas County",
+            description="Labeled sample of a Knight Group Home Watch visit report: checklist, photos, and issue flags. Not a real owner file and not a licensed inspection.",
+            h1="Sample Home Watch visit report",
+            eyebrow="Format example · Not a real owner file",
+            lead="This is what a Pinellas Home Watch report looks like after a visit: dated checklist, photos, and a short summary. The property below is fictional. Weekly Watch remains $329/month.",
+            crumb="Sample visit report",
+            body=SAMPLE_REPORT_BODY,
+            faqs=SAMPLE_FAQS,
+            faq_heading="Sample report questions",
+            faq_intro="What this page is, what a real report includes, and how to start a plan.",
+            extra_graph=[
+                {
+                    **SERVICE_NODE,
+                    "@id": f"{BASE}/home-watch-sample-report#service",
+                    "url": f"{BASE}/home-watch-sample-report",
+                    "name": "Sample Home Watch visit report",
+                }
+            ],
+            related=[RELATED[0], RELATED[1], RELATED[2], RELATED[4], RELATED[5], ("/Services/handyman", "Handyman services", None)],
+            cta_h2="Start a real Home Watch plan",
+            cta_p="Weekly $329/month, biweekly $189/month, or a one-time $125 check. Name, phone, email, city, and the plan you want. No access codes on the form.",
+            cta_primary=("/home-watch-pinellas", "Qualify for Home Watch"),
+            cta_secondary=("/home-watch-pricing", "Home Watch pricing"),
+            sidebar_title="Ask about a Home Watch plan",
+            sidebar_p="City and preferred frequency are enough to start. No access codes.",
+            form_html=SIMPLE_FORM.format(fid="hw-sample", slug="home-watch-sample-report"),
+            extra_css=TABLE_CSS,
+        ),
         "florida-snowbird-departure-checklist.html": page(
             slug="florida-snowbird-departure-checklist",
             title="Florida Snowbird Departure Checklist | Seasonal Home",
@@ -901,7 +949,7 @@ def main() -> int:
             faq_heading="Departure questions",
             faq_intro="What you handle before you fly north, and how Pinellas Home Watch fits after you leave.",
             extra_graph=[SNOWBIRD_HOWTO],
-            related=[RELATED[0], RELATED[1], RELATED[2], RELATED[5], RELATED[6], ("/Services/handyman", "Handyman services", None)],
+            related=[RELATED[0], RELATED[1], RELATED[2], RELATED[3], RELATED[6], ("/Services/handyman", "Handyman services", None)],
             cta_h2="Want checks after you leave?",
             cta_p="Don't want to rely on a neighbor while you're gone? Knight Group Home Watch provides scheduled photo-documented checks throughout Pinellas County.",
             cta_primary=("/home-watch-pinellas", "Pinellas Home Watch"),

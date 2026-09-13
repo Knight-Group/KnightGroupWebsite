@@ -65,10 +65,20 @@ PARENT_NICHE_EXTRAS: dict[str, tuple[str, str]] = {
 SAFE_RELATED_LABELS: dict[str, str] = {}
 
 
+def unescape_related_label(label: str) -> str:
+    prev = label or ""
+    for _ in range(8):
+        nxt = html.unescape(prev)
+        if nxt == prev:
+            break
+        prev = nxt
+    return prev
+
+
 def safe_related_label(href: str, label: str) -> str:
     """Pass through card labels. Fixture and fan work are in-scope."""
     path = href.split("#", 1)[0].split("?", 1)[0].rstrip("/")
-    return SAFE_RELATED_LABELS.get(path, label)
+    return SAFE_RELATED_LABELS.get(path, unescape_related_label(label))
 
 
 def related_slug(href: str) -> str:
@@ -91,6 +101,7 @@ PAGE_CARD_IMAGES: dict[str, str] = {
     "/home-watch-pinellas": _job("after-clean-exterior-front-of-house-70a4580.webp"),
     "/home-watch-pricing": _job("after-pressure-wash-walk-way-b49a8fd.webp"),
     "/home-watch-checklist": _job("after-wasp-bee-nest-removal-request-0f9dd4b.webp"),
+    "/home-watch-sample-report": _job("after-clean-exterior-front-of-house-70a4580.webp"),
     "/florida-snowbird-departure-checklist": _job("after-side-yard-gate-repair-18bb381.webp"),
     "/rental-turnover-handyman": _job("Refinished_Bathroom.webp"),
     "/property-manager-handyman": _job("Refinished_Room2.webp"),

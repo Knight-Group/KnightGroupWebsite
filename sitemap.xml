@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.knightgroup.com/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/pricing</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
@@ -50,21 +50,27 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/home-watch-pinellas</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.knightgroup.com/home-watch-pricing</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.86</priority>
   </url>
   <url>
     <loc>https://www.knightgroup.com/home-watch-checklist</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.knightgroup.com/home-watch-sample-report</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.knightgroup.com/florida-snowbird-departure-checklist</loc>
@@ -74,7 +80,7 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/property-manager-handyman</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.86</priority>
   </url>
@@ -314,7 +320,7 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/clearwater-handyman</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
@@ -332,7 +338,7 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/largo-handyman</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
@@ -344,7 +350,7 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/tarpon-springs-handyman</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
@@ -368,7 +374,7 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/tampa-handyman</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
@@ -716,13 +722,13 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/gallery/attic-drywall-return-visit-54b0dce-before-after</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.knightgroup.com/gallery/bedroom-d9d0055-before-after</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.64</priority>
   </url>

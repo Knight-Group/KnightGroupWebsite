@@ -29,6 +29,10 @@
     var submitBtn = form.querySelector('[type="submit"]');
 
     form.addEventListener('submit', function (e) {
+      if (typeof window.kgPrepareEstimatePhotos === 'function' && !window.kgPrepareEstimatePhotos(form)) {
+        e.preventDefault();
+        return;
+      }
       if (honeypotTripped(form) || !turnstileReady(form)) {
         e.preventDefault();
         return;

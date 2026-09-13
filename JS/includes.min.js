@@ -35,7 +35,7 @@
 
 (function kgEarlyPartialPrefetch() {
     window.__kgPartialCache = window.__kgPartialCache || {};
-    var version = '20260908-join';
+    var version = '20260912-sms';
     ['/header.html?v=' + version, '/footer.html?v=' + version].forEach(function (path) {
         if (window.__kgPartialCache[path]) return;
         window.__kgPartialCache[path] = fetch(path, { credentials: 'same-origin' })
@@ -55,13 +55,18 @@ class HTMLInclude {
     }
 
     ensureHeaderStyles() {
-        const headerVersion = '20260908-join';
-
-        if (!document.getElementById('kg-header-css') && !document.querySelector('link[href*="header.min.css"]')) {
+        const headerVersion = '20260912-sms';
+        const desiredHref = '/CSS/header.min.css?v=' + headerVersion;
+        const existing = document.getElementById('kg-header-css') || document.querySelector('link[href*="header.min.css"]');
+        if (existing) {
+            if (existing.getAttribute('href') !== desiredHref) {
+                existing.setAttribute('href', desiredHref);
+            }
+        } else {
             const link = document.createElement('link');
             link.id = 'kg-header-css';
             link.rel = 'stylesheet';
-            link.href = '/CSS/header.min.css?v=' + headerVersion;
+            link.href = desiredHref;
             document.head.appendChild(link);
         }
 
@@ -287,7 +292,7 @@ class HTMLInclude {
         if (window._knightGroupIncludesLoaded) return;
         window._knightGroupIncludesLoaded = true;
 
-        const includeVersion = '20260908-join';
+        const includeVersion = '20260912-sms';
 
         const headerElement = document.getElementById('header-include');
         const footerElement = document.getElementById('footer-include');
