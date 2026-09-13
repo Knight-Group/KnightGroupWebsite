@@ -25,7 +25,7 @@ node E:\Website Audit\GSC\tools\submit-indexing.mjs --site knightgroup.com --sta
 
 **Still allowed during freeze:** GSC **Request indexing** / `--stale-crawl` on URLs Google has not fetched since the Aug 28 host `Last-Modified` (this can speed recrawl; it is not a content change); factual error fixes; Home Watch (do not score vs Aug 19); related-card image deploys (on-page UX, not SERP CTR); Dispatch/ops. **Not allowed:** a new CTR title pack, city URL adds/merges, Lutz GBP, `"North Tampa"` as Schema.org City.
 
-Uncommitted working-tree titles (`Clearwater Handyman | $150 First Hour`, etc.) were the **already-written** next snippet. On 2026-09-12 the Aug 31 recrawl + 7 GSC days were satisfied, so that pack was applied in source (see below). After it deploys, freeze again until Google recrawls the new `Last-Modified`.
+The `$150 First Hour` snippet is **live** as of host `Last-Modified` **Sun, 13 Sep 2026 01:50:01 GMT** on `/pricing`, `/clearwater-handyman`, `/largo-handyman`, and `/tarpon-springs-handyman`. Freeze again until Google recrawls those URLs after that timestamp **and** 7 complete GSC days exist. Do not write another title pack. Do not request GSC indexing until the next day.
 
 ---
 
@@ -197,7 +197,23 @@ Astra verified the **live** host: main features were present, but Home Watch int
 
 **Review count.** Left **12**. `data/google-reviews.json` last fetched **2026-08-21**. Did not invent a new GBP total. Did not run `kg-live-gbp-ga4.py`.
 
-**Still not confirmed by this pass:** form delivery, GA4 key events, ticket-app UTMs, or Google recrawl. Low Home Watch / PM traffic still cannot be blamed on page design alone. **Shipped via `git push origin main` from the source repo 2026-09-12 evening.** Sitemap lastmod was bumped only on Home Watch, the sample report, PM, homepage, Clearwater, Tampa, and the two renamed gallery pages — not a city/gallery lastmod storm. Restart the snippet freeze from the new live `Last-Modified`. Request indexing the **next** day on the four `$150` title-test URLs first; do not resubmit tonight.
+**Still not confirmed by this pass:** form delivery, GA4 key events, ticket-app UTMs, or Google recrawl. Low Home Watch / PM traffic still cannot be blamed on page design alone. **Shipped live** 2026-09-12 evening via `origin/main` `471e7a1`. Host `Last-Modified` is **Sun, 13 Sep 2026 01:50:01 GMT**. Sitemap lastmod was bumped only on Home Watch, the sample report, PM, homepage, Clearwater, Largo, Tarpon, Tampa, pricing, and the two renamed gallery pages — not a city/gallery lastmod storm. Restart the snippet freeze from that `Last-Modified`. Request indexing the **next** day on the four `$150` title-test URLs first; do not resubmit tonight.
+
+---
+
+## 2026-09-13 — Astra 48-hour intake/reporting (no title pack)
+
+Astra re-inspected after the Sep 12/13 ship. Website improvements are real; these were remaining conversion/reporting defects. **Did not rewrite titles/metas/H1s.** **Did not mass-regenerate galleries.** **Did not launch ads.** **Did not request GSC indexing in this pass.**
+
+**Live site (this commit):** `toRootSitePath()` now preserves `sms:` / `smsto:` (header Text Photos was resolving to `https://www.knightgroup.com/sms:...`). Injected `/sms:` hrefs are restored. PM vendor form photos are optional; “Send a first paid work order” jumps to `#vendor-intake`. Sitemap lastmod bumped only on `/property-manager-handyman`. JS cache-buster on HTML pages was **not** mass-updated (avoids a lastmod storm); `includes.min.js` content change is the SMS fix.
+
+**Dispatch (localhost):** Formspree parser accepts Home Watch / PM inquiries from request type + valid phone with blank notes; parses `property_city`, `plan_interest`, and `company` instead of appending them onto email. `invoiced` is no longer reported as `collected`. Review-contingent invoice credit is **off** unless `KG_REVIEW_INCENTIVE=1`. Review asks skip genuine opt-outs, not sentiment-only “unhappy” notes.
+
+**Outreach scorecard:** does not divide business-wide receipts by first-touch sends. `closed_won` still counts as a genuine reply. `revenue_attributed` stays 0 until lead → ticket → collected payment is wired.
+
+**Gallery generator:** removed the 750-word pad and the “what homeowners search” section. Do not rebuild existing gallery HTML until a later packet.
+
+**DataForSEO / Serper:** audit engine already prefers DataForSEO when credentials exist, else Serper, with a **$5/month** estimated cap (`SEO_ENGINE_MONTHLY_BUDGET_USD`). Buying credits does not raise that cap. Do not spend on a 100-firm PM batch until Nick raises the cap and confirms DataForSEO login is present.
 
 
 

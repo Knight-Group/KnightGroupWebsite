@@ -771,7 +771,7 @@
                         <p>One paid ticket at $150 first hour / $75 after. If the closeout matches your file, add Knight Group Handyman Services LLC as a repeating vendor.</p>
                     </div>
                     <div class="kg-service-cta__actions">
-                        <a href="#first-paid-work-order" class="kg-btn kg-btn--solid">Send a first paid work order</a>
+                        <a href="#vendor-intake" class="kg-btn kg-btn--solid">Send a first paid work order</a>
                         <a href="#sample-closeout" class="kg-btn kg-btn--ghost">See sample closeout photos</a>
                     </div>
             </section>
@@ -781,7 +781,7 @@
                                 <h3 class="kg-sidebar-title" id="property-manager-handyman-sidebar-heading">Add Knight Group as a vendor</h3>
                                 <p>Send the work order, property address, and your certificate-holder name. We reply with a written estimate and the vendor PDFs.</p>
                                 <p><a class="kg-btn kg-btn--solid" href="/vendor/knight-group-vendor-packet.zip" download>Download vendor packet (ZIP)</a></p>
-                                <form class="kg-contact-form" action="https://formspree.io/f/xzzvnpne" method="POST" data-kg-guard>
+                                <form id="vendor-intake" class="kg-contact-form" action="https://formspree.io/f/xzzvnpne" method="POST" data-kg-guard data-kg-photos="optional">
                                     <div class="kg-field">
                                         <label for="property-manager-handyman-sidebar-name">Your name</label>
                                         <input type="text" id="property-manager-handyman-sidebar-name" name="name" autocomplete="name" placeholder="Your name at the management company" required>
@@ -802,15 +802,15 @@
                                         <label for="property-manager-handyman-sidebar-message">Project details <span>(optional)</span></label>
                                         <textarea id="property-manager-handyman-sidebar-message" name="message" rows="3" placeholder="Property address, work-order #, or certificate-holder name"></textarea>
                                     </div>
-                                    <div class="kg-field kg-photo-field">
-                                        <label for="property-manager-handyman-sidebar-photos">Job photos</label>
+                                    <div class="kg-field kg-photo-field kg-field--optional">
+                                        <label for="property-manager-handyman-sidebar-photos">Job photos <span>(optional)</span></label>
                                         <input type="file" id="property-manager-handyman-sidebar-photos" name="photos" accept="image/*" multiple>
-                                        <p class="kg-field-hint">A close-up and a wide shot are enough for most written quotes.</p>
+                                        <p class="kg-field-hint">Optional for vendor onboarding. Attach them if this is a first paid work order you want quoted.</p>
                                         <label class="kg-check">
                                             <input type="checkbox" name="text_photos" id="property-manager-handyman-sidebar-text-photos" value="I will text photos to (813) 649-3341">
-                                            <span>I will text photos to (813) 649-3341</span>
+                                            <span>I will text photos to (813) 649-3341 if this is a work order</span>
                                         </label>
-                                        <p class="kg-photo-error" hidden>Add photos here, or check that you will text them to (813) 649-3341.</p>
+                                        <p class="kg-photo-error" hidden>Each photo needs to be under 8 MB, or text them to (813) 649-3341 instead.</p>
                                     </div>
                                     <input type="hidden" name="_subject" value="Knight Group property manager vendor packet Estimate Request">
                                     <input type="hidden" name="request_type" value="property manager vendor packet">
@@ -858,6 +858,6 @@
         </div>
     </main>
     <div id="footer-include"></div>
-    <script src="/JS/includes.min.js?v=20260912-lead" defer></script>
+    <script src="/JS/includes.min.js?v=20260913-sms" defer></script>
 </body>
 </html>

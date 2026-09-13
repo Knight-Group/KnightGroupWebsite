@@ -9,9 +9,10 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
-from gallery_longform import MIN_WORDS, build_gallery_longform  # noqa: E402
-from gallery_public_web import strip_html_words  # noqa: E402
+from gallery_longform import build_gallery_longform  # noqa: E402
+from gallery_public_web import alt_place_phrase, strip_html_words  # noqa: E402
 from gallery_scope import gallery_should_index  # noqa: E402
+from schema_graph import gallery_location_created  # noqa: E402
 
 
 def _fence(slug: str, city: str, worker: str, notes: str) -> dict:
@@ -35,7 +36,7 @@ def _fence(slug: str, city: str, worker: str, notes: str) -> dict:
     }
 
 
-def test_longform_meets_word_count_and_is_unique():
+def test_longform_is_unique_and_not_padded_for_search():
     a = build_gallery_longform(
         _fence(
             "fence-is-falling-down-and-needs-to-be-pu-b17b3ec-before-after",
@@ -52,10 +53,12 @@ def test_longform_meets_word_count_and_is_unique():
             "Replaced a failed corner post and rebuilt the adjoining picket run.",
         )
     )
-    assert a["word_count"] >= MIN_WORDS
-    assert b["word_count"] >= MIN_WORDS
-    assert strip_html_words(a["body_html"]) >= MIN_WORDS
+    assert a["word_count"] == strip_html_words(a["body_html"])
+    assert a["word_count"] > 80
     assert a["body_html"] != b["body_html"]
+    assert "What homeowners in this market actually search" not in a["body_html"]
+    assert "because those phrases match the condition" not in a["body_html"]
+    assert "How the" in a["body_html"]
     assert "Vince Knight" in a["body_html"]
     assert "Nicholas Alexopoulos" in b["body_html"]
     assert "Port Richey" in a["body_html"]
@@ -84,6 +87,28 @@ def test_longform_strips_ticket_pii():
     assert "(813) 649-3341" in html
 
 
+def test_alt_place_prefers_city():
+    assert alt_place_phrase("Carrollwood", "Hillsborough County") == "Carrollwood FL"
+    assert alt_place_phrase("", "Pasco County") == "Pasco County FL"
+    assert alt_place_phrase("", "") == "Pinellas County FL"
+
+
+def test_gallery_location_created_expansion_cities():
+    carrollwood = gallery_location_created("Carrollwood", "Hillsborough County")
+    assert carrollwood["@type"] == "City"
+    assert carrollwood["name"] == "Carrollwood, FL"
+    assert carrollwood["containedInPlace"]["name"] == "Hillsborough County, Florida"
+    trinity = gallery_location_created("Trinity", "Pasco County")
+    assert trinity["name"] == "Trinity, FL"
+    assert trinity["containedInPlace"]["name"] == "Pasco County, Florida"
+    north = gallery_location_created("North Tampa", "Hillsborough County")
+    assert north["@type"] == "AdministrativeArea"
+    assert north["name"] == "Hillsborough County, Florida"
+    lutz = gallery_location_created("Lutz", "Hillsborough County")
+    assert lutz["@type"] == "AdministrativeArea"
+    assert lutz["name"] == "Hillsborough County, Florida"
+
+
 def test_dispatch_pages_are_indexable_except_vendor_titles():
     curated = {"fence-repair-before-after"}
     assert gallery_should_index(
@@ -98,7 +123,9 @@ def test_dispatch_pages_are_indexable_except_vendor_titles():
 
 
 if __name__ == "__main__":
-    test_longform_meets_word_count_and_is_unique()
+    test_longform_is_unique_and_not_padded_for_search()
     test_longform_strips_ticket_pii()
     test_dispatch_pages_are_indexable_except_vendor_titles()
+    test_alt_place_prefers_city()
+    test_gallery_location_created_expansion_cities()
     print("gallery longform tests passed")

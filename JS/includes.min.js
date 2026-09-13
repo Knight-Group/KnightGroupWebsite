@@ -35,7 +35,7 @@
 
 (function kgEarlyPartialPrefetch() {
     window.__kgPartialCache = window.__kgPartialCache || {};
-    var version = '20260912-sms';
+    var version = '20260913-sms';
     ['/header.html?v=' + version, '/footer.html?v=' + version].forEach(function (path) {
         if (window.__kgPartialCache[path]) return;
         window.__kgPartialCache[path] = fetch(path, { credentials: 'same-origin' })
@@ -55,7 +55,7 @@ class HTMLInclude {
     }
 
     ensureHeaderStyles() {
-        const headerVersion = '20260912-sms';
+        const headerVersion = '20260913-sms';
         const desiredHref = '/CSS/header.min.css?v=' + headerVersion;
         const existing = document.getElementById('kg-header-css') || document.querySelector('link[href*="header.min.css"]');
         if (existing) {
@@ -292,7 +292,7 @@ class HTMLInclude {
         if (window._knightGroupIncludesLoaded) return;
         window._knightGroupIncludesLoaded = true;
 
-        const includeVersion = '20260912-sms';
+        const includeVersion = '20260913-sms';
 
         const headerElement = document.getElementById('header-include');
         const footerElement = document.getElementById('footer-include');
@@ -480,7 +480,7 @@ class HTMLInclude {
     }
 
     toRootSitePath(path) {
-        if (!path || /^(?:https?:)?\/\//i.test(path) || /^(?:mailto:|tel:|#)/i.test(path)) {
+        if (!path || /^(?:https?:)?\/\//i.test(path) || /^(?:mailto:|tel:|sms:|smsto:|#)/i.test(path)) {
             return path;
         }
         if (path.startsWith('/')) {
@@ -538,6 +538,10 @@ class HTMLInclude {
         links.forEach(link => {
             const href = link.getAttribute('href');
             if (!href) return;
+            if (/^\/+(?:sms:|smsto:|tel:|mailto:)/i.test(href)) {
+                link.setAttribute('href', href.replace(/^\/+/, ''));
+                return;
+            }
             const rootHref = this.toRootSitePath(href);
             if (rootHref !== href) {
                 link.setAttribute('href', rootHref);
@@ -701,6 +705,12 @@ ${data.message}
         return !!(bits.file || bits.box);
     }
 
+    function formRequiresPhotos(form) {
+        if (!form || !formHasPhotoGate(form)) return false;
+        if ((form.getAttribute('data-kg-photos') || '').toLowerCase() === 'optional') return false;
+        return true;
+    }
+
     function showPhotoError(form, show, message) {
         var bits = estimatePhotoInputs(form);
         if (!bits.error) return;
@@ -715,8 +725,9 @@ ${data.message}
         var bits = estimatePhotoInputs(form);
         var hasFiles = !!(bits.file && bits.file.files && bits.file.files.length > 0);
         var willText = !!(bits.box && bits.box.checked);
+        var required = formRequiresPhotos(form);
         var i;
-        if (!hasFiles && !willText) {
+        if (required && !hasFiles && !willText) {
             showPhotoError(form, true, PHOTO_ERROR);
             if (bits.file) {
                 try { bits.file.focus(); } catch (err) {}

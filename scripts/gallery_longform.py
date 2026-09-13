@@ -1,8 +1,8 @@
-"""Unique 750+ word copy for Knight Group gallery project pages.
+"""Unique case-study copy for Knight Group gallery project pages.
 
-Each composite job gets its own phrasing from the catalog facts (worker, city,
-month, notes, photo counts) plus a slug-seeded voice. Ticket prices, streets,
-customer phones, and vendor names are never interpolated.
+Each composite job gets a customer-facing title, verified city/scope, the
+problem, work performed, and result. Ticket prices, streets, customer phones,
+and vendor names are never interpolated. There is no mandatory word count.
 """
 from __future__ import annotations
 
@@ -16,7 +16,6 @@ from gallery_detail_copy import gallery_body_extra
 from gallery_public_web import sanitize_page_text, strip_html_words
 
 KG_PHONE = "(813) 649-3341"
-MIN_WORDS = 750
 
 _CLUSTER_NEEDLES: list[tuple[str, tuple[str, ...]]] = [
     ("fence", ("fence", "picket", "privacy panel")),
@@ -683,10 +682,8 @@ def build_gallery_longform(
     }
 
     opening = _pick(rng, cluster["openings"]).format(**fmt)
-    search = _pick(rng, cluster["search"]).format(**fmt)
     climate = _pick(rng, cluster["climate"]).format(**fmt) if cluster.get("climate") else ""
     aftercare = _pick(rng, cluster["aftercare"]).format(**fmt) if cluster.get("aftercare") else ""
-    extra_search = [s.format(**fmt) for s in cluster["search"] if s.format(**fmt) != search]
 
     service_href, service_label = cluster["service"]
     city_slug = str(group.get("citySlug") or "")
@@ -714,13 +711,6 @@ def build_gallery_longform(
     sections.append(f"<h2>How the { _esc(cluster['label']) } was handled</h2>")
     sections.append(f"<p>{_esc(_voice_bridge(voice, place, cluster['label']))}</p>")
     sections.append(_howto(cluster, title_lower, licensed))
-    sections.append("<h2>What homeowners in this market actually search</h2>")
-    sections.append(
-        f"<p>{_esc(search)} On this page we highlight {_keyword_list(cluster, rng)} "
-        f"because those phrases match the condition in the photos, not because we bought a keyword package.</p>"
-    )
-    if extra_search:
-        sections.append(f"<p>{_esc(_pick(rng, extra_search))}</p>")
     if climate:
         sections.append(f"<h2>Why this fails in { _esc(county) }</h2>")
         sections.append(f"<p>{_esc(climate)}</p>")
@@ -746,32 +736,6 @@ def build_gallery_longform(
     )
 
     body = "\n".join(sections)
-    # Pad with unused climate / search / method commentary until 750 words.
-    unused_climate = [c.format(**fmt) for c in cluster.get("climate") or [] if c.format(**fmt) != climate]
-    unused_after = [c.format(**fmt) for c in cluster.get("aftercare") or [] if c.format(**fmt) != aftercare]
-    pad_i = 0
-    pad_pool = unused_climate + unused_after + extra_search
-    rng.shuffle(pad_pool)
-    while strip_html_words(body) < MIN_WORDS and pad_i < 12:
-        if pad_i < len(pad_pool):
-            body += f"<p>{_esc(pad_pool[pad_i])}</p>"
-        else:
-            body += (
-                f"<p>Knight Group remains a Safety Harbor company. { _esc(worker) } completed this "
-                f"{_esc(cluster['label'])} visit for a {_esc(place)} property, and the composite is the public "
-                f"record of that closeout. If your condition looks like the before photos, start with pictures "
-                f"and a short description rather than a leftover time window. Arrival windows we quote are "
-                f"8–10, 10–12, or 12–2; we do not invent split windows to fill a board.</p>"
-            )
-            body += (
-                f"<p>Internal pages worth reading next include "
-                f'<a href="/Services/handyman">handyman services</a>, '
-                f'<a href="/service-areas">service areas</a>, and '
-                f'<a href="/plumber-background-handyman">Vince’s journeyman plumbing background</a> '
-                f"when the question is diagnosis versus a licensed plumber. None of those pages replace the "
-                f"photos on this job.</p>"
-            )
-        pad_i += 1
 
     body = sanitize_page_text(body)
     related = _related(group, cluster, siblings, rng, licensed)
