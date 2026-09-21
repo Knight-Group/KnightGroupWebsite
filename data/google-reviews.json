@@ -1,13 +1,41 @@
 {
   "ratingValue": 5,
-  "reviewCount": 12,
-  "fetchedAt": "2026-08-21T22:33:27.115Z",
+  "reviewCount": 14,
+  "fetchedAt": "2026-09-21T12:41:16.146Z",
   "source": {
     "account": "accounts/114830235101160247472",
     "location": "locations/15551195498878135337",
     "locationTitle": "Knight Group"
   },
   "reviews": [
+    {
+      "name": "Jeanette Kunz",
+      "meta": "Google review",
+      "date": "2026-09-12",
+      "text": "Nick was so accommodating on a weekend while we were in a pinch.  He assembled the wheelchair walker product quickly and saved the day! Would highly recommend.",
+      "stars": 5,
+      "avatarColor": "#7c3aed",
+      "replied": true,
+      "ownerReply": {
+        "name": "Knight Group Handyman Services",
+        "date": "2026-09-12",
+        "text": "Thank you very much =D"
+      }
+    },
+    {
+      "name": "Greg Fulkerson",
+      "meta": "Google review",
+      "date": "2026-09-04",
+      "text": "Prompt, knowledgeable, skilled, and friendly. Quick to repair the problem. Couldn't ask for anything more. A+",
+      "stars": 5,
+      "avatarColor": "#17623b",
+      "replied": true,
+      "ownerReply": {
+        "name": "Knight Group Handyman Services",
+        "date": "2026-09-12",
+        "text": "Thank you! We try our best =D"
+      }
+    },
     {
       "name": "Alexandra Vorbe",
       "meta": "Google review",

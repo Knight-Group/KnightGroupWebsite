@@ -524,6 +524,7 @@ async function run() {
 
     const dryRun = process.argv.includes('--dry-run');
     const skipHours = process.argv.includes('--skip-hours');
+    const feedOnly = process.argv.includes('--feed-only');
     const applyOnly = process.argv.includes('--apply-only');
     const applyRootArg = process.argv.find((arg) => arg.startsWith('--root='));
     const applyRoot = applyRootArg ? applyRootArg.slice('--root='.length) : ROOT;
@@ -590,9 +591,11 @@ async function run() {
     writeOutput(payload, dryRun);
     writeEntityRating(payload, dryRun);
     writeHomeReviews(payload, dryRun);
-    applyReviewCountToHtml(applyRoot, payload, dryRun);
+    if (!feedOnly) {
+        applyReviewCountToHtml(applyRoot, payload, dryRun);
+    }
 
-    if (!skipHours) {
+    if (!skipHours && !feedOnly) {
         await syncRegularHours(accessToken, location, dryRun);
     }
 }

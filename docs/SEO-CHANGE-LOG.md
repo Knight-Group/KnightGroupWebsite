@@ -215,5 +215,23 @@ Astra re-inspected after the Sep 12/13 ship. Website improvements are real; thes
 
 **DataForSEO / Serper:** audit engine already prefers DataForSEO when credentials exist, else Serper, with a **$5/month** estimated cap (`SEO_ENGINE_MONTHLY_BUDGET_USD`). Buying credits does not raise that cap. Do not spend on a 100-firm PM batch until Nick raises the cap and confirms DataForSEO login is present.
 
+---
+
+## 2026-09-17 — GSC re-auth + measure + stale-crawl (no title pack)
+
+`invalid_grant` auto-refreshed via `auth-via-profile.mjs` (saved Chrome profile). Audits now do that on token failure instead of stopping. GSC OAuth CDP uses port **9335** so it does not attach to Google Voice on **9333**.
+
+Fresh API **Jun 19–Sep 14:** **180 clicks / 53,746 impressions / 0.33% CTR / position 20.3**. Last 7 complete days **8 clicks / 2,727 impressions**. Last 28 vs prior 28: **57 vs 78 clicks**. Homepage recrawled **2026-09-14T03:02:35Z** (after Sep 13 live HTML). 17 other inspected URLs still stale vs `Last-Modified` Sun, 13 Sep 2026 05:00:46 GMT.
+
+Requested indexing on 10/10 stale money URLs, 0 errors: pricing, `/Services/handyman`, Clearwater, Largo, Tarpon Springs, Tampa, Temple Terrace, Land O' Lakes, service-areas, electrical. Daily quota used. **Did not rewrite titles.** Freeze holds until those recrawls plus 7 complete GSC days.
+
+---
+
+## 2026-09-21 — GBP review count 12 → 14 (no title pack)
+
+Homepage `#kg-review-summary` was still showing **5.0 · 12 reviews** because `data/google-reviews.json` last fetched **2026-08-21** and no Task Scheduler job refreshed it. Live GBP pull today: **5.0 / 14 reviews** (`locations/15551195498878135337`). Shipped the JSON feed plus homepage/about fallbacks. Registered **KnightGroupGbpReviewSync** daily 8:15 AM (`scripts/sync-google-reviews.js --feed-only --skip-hours`, then git-push only `data/google-reviews.json`). **Did not rewrite titles.** **Did not PATCH GBP hours.** **Did not mass-replace `reviewCount` in HTML schema.**
+
+
+
 
 
