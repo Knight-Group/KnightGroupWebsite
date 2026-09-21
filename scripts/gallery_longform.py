@@ -607,7 +607,7 @@ def _faqs(
         ),
         (
             "Do you work outside Pinellas County?",
-            "Yes, on selected northwest Hillsborough and west Pasco routes when the address fits the day’s board. Lutz and North Tampa are accepted by address confirmation; there is no Lutz office.",
+            "Yes, on selected northwest Hillsborough and west Pasco routes when the address fits the day’s board. Lutz and North Tampa are accepted by address confirmation. Knight Group does not run storefront offices; jobs go to the technician covering that area.",
         ),
     ]
     if licensed:
@@ -695,7 +695,7 @@ def build_gallery_longform(
         )
     elif city_name == "Lutz":
         city_link = (
-            ' Lutz work is accepted by address confirmation — there is no Lutz office — and is described '
+            ' Lutz work is accepted by address confirmation and dispatched to the technician covering that Hillsborough route — there is no Lutz page — and is described '
             'alongside <a href="/tampa-handyman">Tampa handyman</a> routes.'
         )
 

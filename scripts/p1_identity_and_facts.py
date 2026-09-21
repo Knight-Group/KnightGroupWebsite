@@ -119,8 +119,8 @@ REPLACEMENTS: list[tuple[str, str]] = [
         "Hillsborough coverage focuses on northwest neighborhoods such as Westchase, Carrollwood, Citrus Park, Town 'n' Country, and nearby Tampa addresses that fit the current week’s route — not far south or east Hillsborough.",
     ),
     (
-        "We batch northwest Hillsborough work on planned bay crossings from Safety Harbor — Westchase, Carrollwood, Citrus Park, and Temple Terrace clusters reduce windshield time. Lutz / North Tampa is an expanding route: confirm the address. There is no Lutz office.",
-        "We batch northwest Hillsborough work on planned bay crossings from Safety Harbor — Westchase, Carrollwood, Citrus Park, and Temple Terrace clusters reduce windshield time. Lutz / North Tampa is an expanding route: confirm the address. There is no Lutz office.",
+        "We batch northwest Hillsborough work on planned days — Westchase, Carrollwood, Citrus Park, and Temple Terrace clusters reduce windshield time. Tampa-area jobs are dispatched to the technician covering that route. Lutz / North Tampa is an expanding route: confirm the address. Knight Group does not run storefront offices.",
+        "We batch northwest Hillsborough work on planned days — Westchase, Carrollwood, Citrus Park, and Temple Terrace clusters reduce windshield time. Tampa-area jobs are dispatched to the technician covering that route. Lutz / North Tampa is an expanding route: confirm the address. Knight Group does not run storefront offices.",
     ),
     (
         "Knight Group covers west Pasco on scheduled route days from Safety Harbor. Homeowners get a local insured crew for drywall, doors, carpentry, painting touch-ups, and punch-list repairs — not a referral marketplace. Licensed trades are coordinated when Florida DBPR requires it. This is expanding coverage with address confirmation — not a daily county-wide loop.",
@@ -187,8 +187,8 @@ REPLACEMENTS: list[tuple[str, str]] = [
         "<li>Drywall, trim, doors, screens, and punch-list repairs</li>",
     ),
     (
-        "<li>Like-for-like outlet and switch swaps, ceiling fans, and light fixtures</li>",
-        "<li>Like-for-like outlet and switch swaps, ceiling fans, and light fixtures</li>",
+        "<li>Cover-plate and bulb changes; wiring connections referred, ceiling fans, and light fixtures</li>",
+        "<li>Cover-plate and bulb changes; wiring connections referred, ceiling fans, and light fixtures</li>",
     ),
     (
         "<li>Interior door adjustments, hardware, and window-screen repair</li>",

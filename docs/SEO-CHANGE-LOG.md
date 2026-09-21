@@ -231,6 +231,13 @@ Requested indexing on 10/10 stale money URLs, 0 errors: pricing, `/Services/hand
 
 Homepage `#kg-review-summary` was still showing **5.0 · 12 reviews** because `data/google-reviews.json` last fetched **2026-08-21** and no Task Scheduler job refreshed it. Live GBP pull today: **5.0 / 14 reviews** (`locations/15551195498878135337`). Shipped the JSON feed plus homepage/about fallbacks. Registered **KnightGroupGbpReviewSync** daily 8:15 AM (`scripts/sync-google-reviews.js --feed-only --skip-hours`, then git-push only `data/google-reviews.json`). **Did not rewrite titles.** **Did not PATCH GBP hours.** **Did not mass-replace `reviewCount` in HTML schema.**
 
+---
+
+## 2026-09-21 — Tampa coverage is a dispatched technician, not a local office (no title pack)
+
+Homepage hero said Lutz / North Tampa was “an expanding handyman route with no local office,” which reads like Knight Group has offices elsewhere. It does not. Visible copy on `/`, `/service-areas`, `/tampa-handyman`, `/hillsborough-handyman`, and About now says jobs are dispatched to the technician covering that area and that there are no storefronts. **Did not name Sergey** (or any 1099) on the public site. **Did not rewrite titles or metas.** **Did not add `/lutz-handyman` or a Lutz GBP.** **Did not mass-regenerate galleries.** Generator strings in `gallery_longform.py` / `geo_city_data.py` / `geo_seo_copy.py` updated so a later rebuild does not put “no Lutz office” back.
+
+
 
 
 
