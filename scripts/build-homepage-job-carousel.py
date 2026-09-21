@@ -24,16 +24,18 @@ IMAGE_OVERRIDES = {
     "tub-drain-replacement": "NewTubDrain.webp",
 }
 
-# Featured homepage proof only — do not dump the full gallery feed.
+# Homepage first slide is three cards. Lead with branded landscape before/after
+# composites — not unfinished portrait job photos (bathroom window, cobblestone
+# bath, open subfloor, window-wall tear-out).
 FEATURED_GROUP_IDS = [
-    "bathroom-tub-window-remodel",
-    "bathroom-remodel-cobblestone",
-    "floor-subfloor-repair",
     "fence-repair-before-after",
-    "door-lock-repair-before-after",
-    "window-wall-repair",
-    "room-refinish",
+    "blinds-replacement-before-after",
     "kitchen-sink-leak-before-after",
+    "front-fence-repair-08fc100-before-after",
+    "pressure-wash-walk-way-b49a8fd-before-after",
+    "door-lock-repair-before-after",
+    "cabinet-repair-339b0d9-before-after",
+    "clean-exterior-front-of-house-70a4580-before-after",
 ]
 MAX_CARDS = 8
 SKIP_TITLE_RE = re.compile(

@@ -501,9 +501,10 @@ html.kg-js .kg-page-hero [data-kg-enter] {
     max-height: none;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
     background: none;
     transform: none;
+    overflow: hidden;
   }
 
   .kg-home .kg-hero-panel {
@@ -512,10 +513,11 @@ html.kg-js .kg-page-hero [data-kg-enter] {
     height: 100%;
   }
 
-  .kg-hero-panel--top,
-  .kg-hero-panel--bottom {
-    display: none !important;
-    animation: none !important;
+  .kg-home .kg-hero.kg-hero-panels-ready .kg-hero-panel--from-left,
+  .kg-home .kg-hero.kg-hero-panels-ready .kg-hero-panel--from-top,
+  .kg-home .kg-hero.kg-hero-panels-ready .kg-hero-panel--from-bottom,
+  .kg-home .kg-hero.kg-hero-panels-ready .kg-hero-panel--from-right {
+    animation-duration: 0.85s;
   }
 
   .kg-home .kg-hero__overlay {
@@ -3019,9 +3021,19 @@ body:has(main.kg-home) {
   padding-bottom: clamp(36px, 4vw, 52px);
 }
 
+.kg-jobs-trust-stack > .kg-section.kg-home-watch-band {
+  padding-top: clamp(72px, 9vw, 120px);
+  padding-bottom: clamp(72px, 9vw, 120px);
+  background-color: #120f10;
+}
+
 .kg-jobs-trust-stack .kg-local-trust {
   padding-top: 0;
   padding-bottom: clamp(56px, 6vw, 88px);
+}
+
+.kg-jobs-trust-stack .kg-home-watch-band + .kg-local-trust {
+  padding-top: clamp(56px, 6vw, 88px);
 }
 
 /* Local trust: combined Google reviews + map (Knight Logics pattern, KG palette) */
@@ -3861,7 +3873,7 @@ body:has(main.kg-home) {
   width: 100%;
   height: 100%;
   min-height: 180px;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   opacity: 1 !important;
   transform: none !important;
