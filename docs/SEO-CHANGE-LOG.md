@@ -237,6 +237,23 @@ Homepage `#kg-review-summary` was still showing **5.0 · 12 reviews** because `d
 
 Homepage hero said Lutz / North Tampa was “an expanding handyman route with no local office,” which reads like Knight Group has offices elsewhere. It does not. Visible copy on `/`, `/service-areas`, `/tampa-handyman`, `/hillsborough-handyman`, and About now says jobs are dispatched to the technician covering that area and that there are no storefronts. **Did not name Sergey** (or any 1099) on the public site. **Did not rewrite titles or metas.** **Did not add `/lutz-handyman` or a Lutz GBP.** **Did not mass-regenerate galleries.** Generator strings in `gallery_longform.py` / `geo_city_data.py` / `geo_seo_copy.py` updated so a later rebuild does not put “no Lutz office” back.
 
+---
+
+## 2026-09-21 — $150 snippet clock started Sep 17 (no title pack, no new indexing)
+
+URL Inspection the same afternoon. The four money URLs Google had to recrawl after the Sep 13 `$150` ship (`Last-Modified` Sun, 13 Sep 2026 05:00:46 GMT) were crawled on **2026-09-17**:
+
+| URL | lastCrawlTime |
+|---|---|
+| `/pricing` | 2026-09-17T13:45:31Z |
+| `/largo-handyman` | 2026-09-17T13:47:51Z |
+| `/tarpon-springs-handyman` | 2026-09-17T13:48:50Z |
+| `/clearwater-handyman` | 2026-09-17T13:48:58Z |
+
+Homepage was already crawled 2026-09-14. Today’s live `Last-Modified` (Mon, 21 Sep 2026 15:08 GMT) is the technician-copy deploy, not a new title test, so it does **not** reset this clock. **Did not run `--stale-crawl`.** **Did not rewrite titles, metas, or first-300-word intros.**
+
+Seven complete GSC days after the Sep 17 recrawl are Sep 18–24. Measure on or after **2026-09-26** (GSC usually lags a couple of days). One title/meta test is allowed only after that measurement, then freeze again.
+
 
 
 
