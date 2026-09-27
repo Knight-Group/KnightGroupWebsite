@@ -514,13 +514,13 @@
 
                             <h3>Documents we need</h3>
                             <ul>
-                                <li>Completed IRS <strong>W-9</strong> (legal name / DBA / EIN). Do not type a Social Security number into this form; it belongs on the W-9 you attach or email.</li>
+                                <li>Completed IRS <strong>W-9</strong> (legal name / DBA / EIN). Do not type a Social Security number into this form; it belongs on the W-9 you email.</li>
                                 <li>Current <strong>general liability certificate of insurance</strong>.</li>
                                 <li><strong>Workers&rsquo; compensation</strong> policy <em>or</em> a Florida Division of Workers&rsquo; Compensation exemption (typical for an officer of your own LLC).</li>
                             </ul>
                             <p>Certificate holder on the liability COI:</p>
                             <p><strong>Knight Group Handyman Services LLC</strong><br>1225 7th St S<br>Safety Harbor, FL 34695<br><a href="mailto:nknight@knightgroup.com">nknight@knightgroup.com</a> &middot; (813) 649-3341</p>
-                            <p>Formspree may not keep large PDFs. If you cannot attach files here, email the same three documents to <a href="mailto:nknight@knightgroup.com">nknight@knightgroup.com</a> with the subject line <strong>1099 contractor application</strong> and check the box on the form.</p>
+                            <p>Email the W-9, liability certificate, and workers&rsquo; comp policy or Florida exemption to <a href="mailto:nknight@knightgroup.com?subject=1099%20contractor%20application">nknight@knightgroup.com</a> with the subject line <strong>1099 contractor application</strong>. This form does not accept file attachments. Check the box on the form so we know that email is coming.</p>
 
                             <div class="kg-contact-methods" aria-label="Contractor application contacts">
                                 <div class="kg-contact-method">
@@ -549,7 +549,7 @@
 
                         <div class="kg-contact-form-panel" data-kg-enter="right">
                             <h2>Contractor application</h2>
-                            <p>Contact details plus W-9, liability COI, and workers&rsquo; comp or a Florida exemption. We reply on business days.</p>
+                            <p>Contact details only. Email the W-9, liability COI, and workers&rsquo; comp or Florida exemption to <a href="mailto:nknight@knightgroup.com?subject=1099%20contractor%20application">nknight@knightgroup.com</a>. We reply on business days.</p>
 
                             <form class="kg-contact-form" action="https://formspree.io/f/xzzvnpne" method="POST" data-kg-guard data-kg-docs-gate>
                                 <div class="kg-field">
@@ -603,24 +603,12 @@
                                 </div>
 
                                 <div class="kg-field kg-photo-field">
-                                    <label for="join-w9">W-9 (PDF or photo)</label>
-                                    <input type="file" id="join-w9" name="w9" accept=".pdf,image/jpeg,image/png,image/webp,application/pdf">
-                                </div>
-
-                                <div class="kg-field kg-photo-field">
-                                    <label for="join-coi">General liability COI</label>
-                                    <input type="file" id="join-coi" name="insurance_coi" accept=".pdf,image/jpeg,image/png,image/webp,application/pdf">
-                                </div>
-
-                                <div class="kg-field kg-photo-field">
-                                    <label for="join-comp">Workers&rsquo; comp policy or Florida exemption</label>
-                                    <input type="file" id="join-comp" name="workers_comp" accept=".pdf,image/jpeg,image/png,image/webp,application/pdf">
-                                    <p class="kg-field-hint">Each file under 8 MB. If uploads fail, email the PDFs instead.</p>
+                                    <p class="kg-field-hint">Send the three PDFs to nknight@knightgroup.com. This form cannot take attachments, so an upload here would be rejected and the application would not go through.</p>
                                     <label class="kg-check">
-                                        <input type="checkbox" name="email_docs" id="join-email-docs" value="I will email W-9, GL COI, and workers comp or exemption to nknight@knightgroup.com">
+                                        <input type="checkbox" name="email_docs" id="join-email-docs" value="I will email W-9, GL COI, and workers comp or exemption to nknight@knightgroup.com" required>
                                         <span>I will email W-9, GL COI, and workers&rsquo; comp or exemption to nknight@knightgroup.com</span>
                                     </label>
-                                    <p class="kg-docs-error kg-photo-error" hidden>Attach W-9, liability insurance, and workers&rsquo; comp (or exemption), or check that you will email them to nknight@knightgroup.com.</p>
+                                    <p class="kg-docs-error kg-photo-error" hidden>Check that you will email W-9, liability insurance, and workers&rsquo; comp (or exemption) to nknight@knightgroup.com.</p>
                                 </div>
 
                                 <label class="kg-check">
@@ -671,7 +659,7 @@
                         </details>
                         <details class="kg-faq-item">
                             <summary>What documents do I need to apply?</summary>
-                            <p>A completed W-9, a current general liability certificate of insurance, and either a workers&rsquo; compensation policy or a Florida Division of Workers&rsquo; Compensation exemption. List <strong>Knight Group Handyman Services LLC, 1225 7th St S, Safety Harbor, FL 34695</strong> as the certificate holder on the liability COI.</p>
+                            <p>A completed W-9, a current general liability certificate of insurance, and either a workers&rsquo; compensation policy or a Florida Division of Workers&rsquo; Compensation exemption. List <strong>Knight Group Handyman Services LLC, 1225 7th St S, Safety Harbor, FL 34695</strong> as the certificate holder on the liability COI. Email those files to nknight@knightgroup.com. The form on this page does not accept uploads.</p>
                         </details>
                         <details class="kg-faq-item">
                             <summary>Does applying mean Knight Group is hiring licensed plumbers or electricians as the prime contractor?</summary>
@@ -689,6 +677,6 @@
 
     <div id="footer-include"></div>
 
-    <script src="/JS/includes.min.js?v=20260912-lead" defer></script>
+    <script src="/JS/includes.min.js?v=20260926-join-docs" defer></script>
 </body>
 </html>

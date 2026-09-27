@@ -751,7 +751,8 @@ ${data.message}
         return true;
     }
 
-    var DOCS_ERROR = 'Attach W-9, liability insurance, and workers\' comp (or exemption), or check that you will email them to nknight@knightgroup.com.';
+    var DOCS_ERROR = 'Check that you will email W-9, liability insurance, and workers\' comp (or exemption) to nknight@knightgroup.com.';
+    var DOCS_UPLOAD_ERROR = 'This form cannot accept file uploads, so the attachments were cleared. Email the PDFs to nknight@knightgroup.com, check the box, and submit again.';
     var MAX_DOC_BYTES = 8 * 1024 * 1024;
     var CONTRACTOR_FILE_NAMES = ['w9', 'insurance_coi', 'workers_comp'];
 
@@ -812,6 +813,15 @@ ${data.message}
             }
         }
         if (bits.files.some(fileChosen)) {
+            var action = form.getAttribute('action') || '';
+            if (action.indexOf('formspree.io') !== -1) {
+                bits.files.forEach(function (fileInput) {
+                    if (fileInput) fileInput.value = '';
+                });
+                form.removeAttribute('enctype');
+                showDocsError(form, true, DOCS_UPLOAD_ERROR);
+                return false;
+            }
             form.setAttribute('enctype', 'multipart/form-data');
         }
         showDocsError(form, false);
