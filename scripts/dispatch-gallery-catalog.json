@@ -2664,5 +2664,30 @@
     "photoBefore": 3,
     "photoProcess": 7,
     "photoAfter": 4
+  },
+  "before-after-drywall-42644ae.webp": {
+    "group": "drywall-42644ae-before-after",
+    "groupTitle": "Drywall \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a drywall job completed by Knight Group in Safety Harbor.",
+    "category": "painting",
+    "serviceLink": "/Services/drywall-repair",
+    "step": 1,
+    "title": "Drywall before and after",
+    "description": "Before-and-after comparison from a drywall job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "drywall-42644ae",
+    "source": "dispatch",
+    "cluster": "drywall",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Insulate and drywall the garage ceiling at , Safety Harbor (about 13' \u00d7 21' / 273 sq. ft.). Two-person crew. Typically three visits because joint compound has to dry between coats. You supply materials. No primer or paint. Crew: Vince Knight & Technician Garage was framed, insulated, hung drywall, taped and mudded then return to sand and clean work area Install drywall ceiling in garage. Center of garage was\u2026",
+    "photoBefore": 2,
+    "photoProcess": 5,
+    "photoAfter": 3
   }
 }
