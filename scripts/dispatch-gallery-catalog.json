@@ -2139,5 +2139,30 @@
     "photoBefore": 2,
     "photoProcess": 4,
     "photoAfter": 3
+  },
+  "before-after-plumbing-repairs-d624583.webp": {
+    "group": "plumbing-repairs-d624583-before-after",
+    "groupTitle": "Plumbing repairs \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a plumbing repairs job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Plumbing repairs before and after",
+    "description": "Before-and-after comparison from a plumbing repairs job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "plumbing-repairs-d624583",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Garbage disposal was repaired I reset the disposal and used an Allen key to unjam it. Bathtub faucet spines on the handle were stripped. I bought 2 gerber branded handles and installed them the faucet now works as it should. Kitchen and bathroom faucet low water pressure due to dirty aerators. Disconnected supply lines and ran into a bucket to remove debris cleaned off screens and hooked back up good pressure\u2026",
+    "photoBefore": 3,
+    "photoProcess": 2,
+    "photoAfter": 3
   }
 }
