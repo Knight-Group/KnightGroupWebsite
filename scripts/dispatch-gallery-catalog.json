@@ -2239,5 +2239,30 @@
     "photoBefore": 2,
     "photoProcess": 2,
     "photoAfter": 1
+  },
+  "before-after-investigate-low-water-pressure-d125420.webp": {
+    "group": "investigate-low-water-pressure-d125420-before-after",
+    "groupTitle": "Investigate Low Water Pressure \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a investigate low water pressure job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Investigate Low Water Pressure before and after",
+    "description": "Before-and-after comparison from a investigate low water pressure job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "investigate-low-water-pressure-d125420",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Investigate Low Water Pressure: Restored water pressure to property all screens/aerators were dirty/clogged Very dirty screens and aerators. Removed supplies from fixtures to blow out debris. Kitchen sprayer was disconnected and blown out. Confirmed water pressure to each fixture. Was able to find replacement sprayer head for kitchen sink. Replaced aerators in bathroom faucet and new diverter/shower head.\u2026",
+    "photoBefore": 2,
+    "photoProcess": 3,
+    "photoAfter": 3
   }
 }
