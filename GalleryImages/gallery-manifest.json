@@ -1166,6 +1166,37 @@
       "photoAfter": 3
     },
     {
+      "id": "finish-two-drywall-cutouts-6f3dbf5-before-after",
+      "title": "Finish two drywall cutouts \u2014 before & after",
+      "description": "Before-and-after proof from a finish two drywall cutouts job completed by Knight Group in Pinellas Park.",
+      "category": "painting",
+      "serviceLink": "/Services/drywall-repair",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-finish-two-drywall-cutouts-6f3dbf5.webp",
+          "filename": "before-after-finish-two-drywall-cutouts-6f3dbf5.webp",
+          "step": 1,
+          "title": "Finish two drywall cutouts before and after",
+          "seoAlt": "Finish two drywall cutouts before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a finish two drywall cutouts job completed in a Pinellas Park home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "drywall",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Pinellas Park",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Garage floor and baseboard paint: Cleaned floor and primed heavily. Several coats of primer to the base boards. Painted baseboards with a sealing paint. Painted floor with several coats. Left remaining paint there for touch ups 2 cut outs for electrical work. By sliding door I squared off cut and installed a new piece of drywall. Used drywall clips to secure in place. 1 skim coat feathered out then a coat of\u2026",
+      "photoBefore": 2,
+      "photoProcess": 4,
+      "photoAfter": 2
+    },
+    {
       "id": "fire-extinguisher-mount-before-after",
       "title": "Fire extinguisher mount \u2014 before & after",
       "description": "Extinguisher bracket installed at the correct height with secure fasteners.",
@@ -5170,6 +5201,31 @@
       "beforeAfter": true,
       "groupTitle": "HVAC filter change \u2014 before & after",
       "groupDescription": "Clogged return filter swapped for clean media and proper airflow."
+    },
+    {
+      "src": "GalleryImages/before-after-finish-two-drywall-cutouts-6f3dbf5.webp",
+      "filename": "before-after-finish-two-drywall-cutouts-6f3dbf5.webp",
+      "group": "finish-two-drywall-cutouts-6f3dbf5-before-after",
+      "step": 1,
+      "title": "Finish two drywall cutouts before and after",
+      "seoAlt": "Finish two drywall cutouts before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a finish two drywall cutouts job completed in a Pinellas Park home.",
+      "category": "painting",
+      "serviceLink": "/Services/drywall-repair",
+      "beforeAfter": true,
+      "groupTitle": "Finish two drywall cutouts \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a finish two drywall cutouts job completed by Knight Group in Pinellas Park.",
+      "cluster": "drywall",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Pinellas Park",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Garage floor and baseboard paint: Cleaned floor and primed heavily. Several coats of primer to the base boards. Painted baseboards with a sealing paint. Painted floor with several coats. Left remaining paint there for touch ups 2 cut outs for electrical work. By sliding door I squared off cut and installed a new piece of drywall. Used drywall clips to secure in place. 1 skim coat feathered out then a coat of\u2026",
+      "photoBefore": 2,
+      "photoProcess": 4,
+      "photoAfter": 2
     },
     {
       "src": "GalleryImages/before-after-fire-extinguisher-mount.webp",

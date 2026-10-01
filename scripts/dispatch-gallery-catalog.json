@@ -2564,5 +2564,30 @@
     "photoBefore": 5,
     "photoProcess": 4,
     "photoAfter": 3
+  },
+  "before-after-finish-two-drywall-cutouts-6f3dbf5.webp": {
+    "group": "finish-two-drywall-cutouts-6f3dbf5-before-after",
+    "groupTitle": "Finish two drywall cutouts \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a finish two drywall cutouts job completed by Knight Group in Pinellas Park.",
+    "category": "painting",
+    "serviceLink": "/Services/drywall-repair",
+    "step": 1,
+    "title": "Finish two drywall cutouts before and after",
+    "description": "Before-and-after comparison from a finish two drywall cutouts job completed in a Pinellas Park home.",
+    "beforeAfter": true,
+    "scope_slug": "finish-two-drywall-cutouts-6f3dbf5",
+    "source": "dispatch",
+    "cluster": "drywall",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Pinellas Park",
+    "citySlug": "",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Garage floor and baseboard paint: Cleaned floor and primed heavily. Several coats of primer to the base boards. Painted baseboards with a sealing paint. Painted floor with several coats. Left remaining paint there for touch ups 2 cut outs for electrical work. By sliding door I squared off cut and installed a new piece of drywall. Used drywall clips to secure in place. 1 skim coat feathered out then a coat of\u2026",
+    "photoBefore": 2,
+    "photoProcess": 4,
+    "photoAfter": 2
   }
 }
