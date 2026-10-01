@@ -2495,6 +2495,38 @@
       ]
     },
     {
+      "id": "office-flooring-and-quarter-round-instal-eb3403d-before-after",
+      "title": "Office flooring and quarter-round install \u2014 before & after",
+      "description": "Before-and-after proof from a office flooring and quarter-round install job completed by Knight Group in Safety Harbor.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-office-flooring-and-quarter-round-instal-eb3403d.webp",
+          "filename": "before-after-office-flooring-and-quarter-round-instal-eb3403d.webp",
+          "step": 1,
+          "title": "Office flooring and quarter-round install before and after",
+          "seoAlt": "Office flooring and quarter-round install before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a office flooring and quarter-round install job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "floor",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Office flooring and quarter-round install: Self leveled low/ high floor spots Installed flooring Installed quarter round Caulked gaps and nail holes Cut and installed transition; Bubbled wall surface and texture repair: Scraped loose paint and texture clean Applied new spackle and texture Office flooring and quarter-round install: Self leveled low/ high floor spots Installed flooring Installed quarter round\u2026",
+      "photoBefore": 5,
+      "photoProcess": 3,
+      "photoAfter": 5
+    },
+    {
       "id": "paint-ceiling-stains-1daac32-before-after",
       "title": "Paint ceiling stains \u2014 before & after",
       "description": "Before-and-after proof from a paint ceiling stains job completed by Knight Group in St. Petersburg.",
@@ -6650,6 +6682,32 @@
       "beforeAfter": true,
       "groupTitle": "Office ceiling fan malfunction \u2014 before & after",
       "groupDescription": "Before-and-after proof from a office ceiling fan malfunction job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-office-flooring-and-quarter-round-instal-eb3403d.webp",
+      "filename": "before-after-office-flooring-and-quarter-round-instal-eb3403d.webp",
+      "group": "office-flooring-and-quarter-round-instal-eb3403d-before-after",
+      "step": 1,
+      "title": "Office flooring and quarter-round install before and after",
+      "seoAlt": "Office flooring and quarter-round install before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a office flooring and quarter-round install job completed in a Safety Harbor home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Office flooring and quarter-round install \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a office flooring and quarter-round install job completed by Knight Group in Safety Harbor.",
+      "cluster": "floor",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Office flooring and quarter-round install: Self leveled low/ high floor spots Installed flooring Installed quarter round Caulked gaps and nail holes Cut and installed transition; Bubbled wall surface and texture repair: Scraped loose paint and texture clean Applied new spackle and texture Office flooring and quarter-round install: Self leveled low/ high floor spots Installed flooring Installed quarter round\u2026",
+      "photoBefore": 5,
+      "photoProcess": 3,
+      "photoAfter": 5
     },
     {
       "src": "GalleryImages/before-after-paint-ceiling-stains-1daac32.webp",

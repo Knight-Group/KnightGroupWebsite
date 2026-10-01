@@ -2914,5 +2914,30 @@
     "photoBefore": 1,
     "photoProcess": 1,
     "photoAfter": 1
+  },
+  "before-after-office-flooring-and-quarter-round-instal-eb3403d.webp": {
+    "group": "office-flooring-and-quarter-round-instal-eb3403d-before-after",
+    "groupTitle": "Office flooring and quarter-round install \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a office flooring and quarter-round install job completed by Knight Group in Safety Harbor.",
+    "category": "carpentry",
+    "serviceLink": "/Services/carpentry-framing",
+    "step": 1,
+    "title": "Office flooring and quarter-round install before and after",
+    "description": "Before-and-after comparison from a office flooring and quarter-round install job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "office-flooring-and-quarter-round-instal-eb3403d",
+    "source": "dispatch",
+    "cluster": "floor",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Office flooring and quarter-round install: Self leveled low/ high floor spots Installed flooring Installed quarter round Caulked gaps and nail holes Cut and installed transition; Bubbled wall surface and texture repair: Scraped loose paint and texture clean Applied new spackle and texture Office flooring and quarter-round install: Self leveled low/ high floor spots Installed flooring Installed quarter round\u2026",
+    "photoBefore": 5,
+    "photoProcess": 3,
+    "photoAfter": 5
   }
 }
