@@ -3585,6 +3585,38 @@
       "photoAfter": 3
     },
     {
+      "id": "repair-3abf1ba-before-after",
+      "title": "repair \u2014 before & after",
+      "description": "Before-and-after proof from a repair job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-repair-3abf1ba.webp",
+          "filename": "before-after-repair-3abf1ba.webp",
+          "step": 1,
+          "title": "repair before and after",
+          "seoAlt": "repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a repair job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Get water functional: Curb stop was buried and had to be dug out of the meter pit (city had not touched it). Located the Sensus meter and the whole-house yellow-handle shutoff, confirmed no service-line leaks, checked fixtures, and cleaned the kitchen aerator. Water is on and . Shut off at the ball valve when leaving.; Tile repair: Removed the broken laundry/side-room step tile, packed the void with mortar,\u2026",
+      "photoBefore": 2,
+      "photoProcess": 3,
+      "photoAfter": 3
+    },
+    {
       "id": "replacing-this-main-shut-off-and-hose-bib-copper-before-after",
       "title": "replacing this main shut off and hose bib (copper) \u2014 before & after",
       "description": "Before-and-after proof from a replacing this main shut off and hose bib (copper) job completed by Knight Group.",
@@ -5658,6 +5690,32 @@
       "photoBefore": 5,
       "photoProcess": 5,
       "photoAfter": 4
+    },
+    {
+      "src": "GalleryImages/before-after-repair-3abf1ba.webp",
+      "filename": "before-after-repair-3abf1ba.webp",
+      "group": "repair-3abf1ba-before-after",
+      "step": 1,
+      "title": "repair before and after",
+      "seoAlt": "repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a repair job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a repair job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Get water functional: Curb stop was buried and had to be dug out of the meter pit (city had not touched it). Located the Sensus meter and the whole-house yellow-handle shutoff, confirmed no service-line leaks, checked fixtures, and cleaned the kitchen aerator. Water is on and . Shut off at the ball valve when leaving.; Tile repair: Removed the broken laundry/side-room step tile, packed the void with mortar,\u2026",
+      "photoBefore": 2,
+      "photoProcess": 3,
+      "photoAfter": 3
     },
     {
       "src": "GalleryImages/before-after-repair-ceiling-in-bathroom-f739128.webp",

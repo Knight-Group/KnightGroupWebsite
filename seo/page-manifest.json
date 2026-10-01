@@ -1275,6 +1275,13 @@
       "path": "gallery/noisy-bathroom-ceiling-fan-light-heater-4c3701f-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/noisy-bathroom-ceiling-fan-light-heater-4c3701f-before-after",
       "priority": "0.64"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "repair-3abf1ba-before-after",
+      "path": "gallery/repair-3abf1ba-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/repair-3abf1ba-before-after",
+      "priority": "0.64"
     }
   ]
 }
