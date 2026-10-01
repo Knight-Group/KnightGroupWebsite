@@ -1026,6 +1026,36 @@
       ]
     },
     {
+      "id": "fix-kitchen-drawer-901493a-before-after",
+      "title": "Fix kitchen drawer \u2014 before & after",
+      "description": "Before-and-after proof from a fix kitchen drawer job completed by Knight Group in Pinellas County.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-fix-kitchen-drawer-901493a.webp",
+          "filename": "before-after-fix-kitchen-drawer-901493a.webp",
+          "step": 1,
+          "title": "Fix kitchen drawer before and after",
+          "seoAlt": "Fix kitchen drawer before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a fix kitchen drawer job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Changed lock set. Cleaned then painted front door. Glue down seams of pantry shelves and taped tight til cement cures. Replaced 6 bulbs 2 in bathroom and 4 fluorescent bulbs in kitchen. Repair tracks for kitchen drawer. Glued wall paper back down in bathtub. Replaced all drip trays for stove. Sanded valance down then used wood filler to reshape damaged area. Needs to dry then I can sand smooth and paint",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "front-intrusion-be5d722-before-after",
       "title": "Front Intrusion \u2014 before & after",
       "description": "Before-and-after proof from a front intrusion job completed by Knight Group in St. Petersburg.",
@@ -4201,6 +4231,30 @@
       "beforeAfter": true,
       "groupTitle": "Fire extinguisher mount \u2014 before & after",
       "groupDescription": "Extinguisher bracket installed at the correct height with secure fasteners."
+    },
+    {
+      "src": "GalleryImages/before-after-fix-kitchen-drawer-901493a.webp",
+      "filename": "before-after-fix-kitchen-drawer-901493a.webp",
+      "group": "fix-kitchen-drawer-901493a-before-after",
+      "step": 1,
+      "title": "Fix kitchen drawer before and after",
+      "seoAlt": "Fix kitchen drawer before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a fix kitchen drawer job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Fix kitchen drawer \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a fix kitchen drawer job completed by Knight Group in Pinellas County.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Changed lock set. Cleaned then painted front door. Glue down seams of pantry shelves and taped tight til cement cures. Replaced 6 bulbs 2 in bathroom and 4 fluorescent bulbs in kitchen. Repair tracks for kitchen drawer. Glued wall paper back down in bathtub. Replaced all drip trays for stove. Sanded valance down then used wood filler to reshape damaged area. Needs to dry then I can sand smooth and paint",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-fridge-wouldnt-close-does-now.webp",
