@@ -3647,6 +3647,38 @@
       ]
     },
     {
+      "id": "threshold-6dd1cbb-before-after",
+      "title": "Threshold \u2014 before & after",
+      "description": "Before-and-after proof from a threshold job completed by Knight Group in Clearwater.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-threshold-6dd1cbb.webp",
+          "filename": "before-after-threshold-6dd1cbb.webp",
+          "step": 1,
+          "title": "Threshold before and after",
+          "seoAlt": "Threshold before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a threshold job completed in a Clearwater home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Clearwater",
+      "citySlug": "clearwater",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Half of master bedroom carpet is saturated and wets through when stepped on. Closet also wet and baseboards are moldy. In total about 180 square feet of carpet to replace. Will need to empty room to make repairs. Could maybe repair with same flooring as the hallway/living room and shuffle stuff while I install to complete the room. I marked with blue tape where the damage ends. Between hallway and living room\u2026",
+      "photoBefore": 4,
+      "photoProcess": 5,
+      "photoAfter": 1
+    },
+    {
       "id": "threshold-9826926-before-after",
       "title": "Threshold \u2014 before & after",
       "description": "Before-and-after proof from a threshold job completed by Knight Group in Pinellas Park.",
@@ -7643,6 +7675,32 @@
       "beforeAfter": true,
       "groupTitle": "The caulking around the toilet needs to be replaced The AC filter needs to be changed. Filter size is 16 x 20. This is a \u2014 before & after",
       "groupDescription": "Before-and-after proof from a the caulking around the toilet needs to be replaced the ac filter needs to be changed. filter size is 16 x 20. this is a job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-threshold-6dd1cbb.webp",
+      "filename": "before-after-threshold-6dd1cbb.webp",
+      "group": "threshold-6dd1cbb-before-after",
+      "step": 1,
+      "title": "Threshold before and after",
+      "seoAlt": "Threshold before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a threshold job completed in a Clearwater home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Threshold \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a threshold job completed by Knight Group in Clearwater.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Clearwater",
+      "citySlug": "clearwater",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Half of master bedroom carpet is saturated and wets through when stepped on. Closet also wet and baseboards are moldy. In total about 180 square feet of carpet to replace. Will need to empty room to make repairs. Could maybe repair with same flooring as the hallway/living room and shuffle stuff while I install to complete the room. I marked with blue tape where the damage ends. Between hallway and living room\u2026",
+      "photoBefore": 4,
+      "photoProcess": 5,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-threshold-9826926.webp",

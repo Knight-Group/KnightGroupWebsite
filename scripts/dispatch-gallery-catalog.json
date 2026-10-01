@@ -2989,5 +2989,30 @@
     "photoBefore": 1,
     "photoProcess": 5,
     "photoAfter": 2
+  },
+  "before-after-threshold-6dd1cbb.webp": {
+    "group": "threshold-6dd1cbb-before-after",
+    "groupTitle": "Threshold \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a threshold job completed by Knight Group in Clearwater.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Threshold before and after",
+    "description": "Before-and-after comparison from a threshold job completed in a Clearwater home.",
+    "beforeAfter": true,
+    "scope_slug": "threshold-6dd1cbb",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Clearwater",
+    "citySlug": "clearwater",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Half of master bedroom carpet is saturated and wets through when stepped on. Closet also wet and baseboards are moldy. In total about 180 square feet of carpet to replace. Will need to empty room to make repairs. Could maybe repair with same flooring as the hallway/living room and shuffle stuff while I install to complete the room. I marked with blue tape where the damage ends. Between hallway and living room\u2026",
+    "photoBefore": 4,
+    "photoProcess": 5,
+    "photoAfter": 1
   }
 }
