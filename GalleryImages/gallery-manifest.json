@@ -1040,6 +1040,38 @@
       "photoAfter": 1
     },
     {
+      "id": "drywall-patch-beneath-window-3f5cd07-before-after",
+      "title": "Drywall patch beneath window \u2014 before & after",
+      "description": "Before-and-after proof from a drywall patch beneath window job completed by Knight Group in Safety Harbor.",
+      "category": "painting",
+      "serviceLink": "/Services/drywall-repair",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-drywall-patch-beneath-window-3f5cd07.webp",
+          "filename": "before-after-drywall-patch-beneath-window-3f5cd07.webp",
+          "step": 1,
+          "title": "Drywall patch beneath window before and after",
+          "seoAlt": "Drywall patch beneath window before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a drywall patch beneath window job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "drywall",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Remove damaged drywall beneath the window, cut back to sound material, and install new drywall with tape, joint compound, and sanding. Primer and one coat of paint matched to the existing wall are included over the repaired area only; painting the remainder of the wall or room is not included. Concealed framing, insulation, mold, or additional water damage is a revision",
+      "photoBefore": 1,
+      "photoProcess": 1,
+      "photoAfter": 1
+    },
+    {
       "id": "drywall-repair-6798260-before-after",
       "title": "Drywall repair \u2014 before & after",
       "description": "Before-and-after proof from a drywall repair job completed by Knight Group in St. Petersburg.",
@@ -5398,6 +5430,32 @@
       "workNotes": "Remove damaged drywall beneath or adjacent to the mini-split, cut back to sound material, and install new drywall with tape, joint compound, and sanding. Primer and one coat of paint matched to the existing wall are included over the repaired area only; painting the remainder of the wall or room is not included. Concealed framing, insulation, mold, or additional water damage is a revision",
       "photoBefore": 1,
       "photoProcess": 2,
+      "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-drywall-patch-beneath-window-3f5cd07.webp",
+      "filename": "before-after-drywall-patch-beneath-window-3f5cd07.webp",
+      "group": "drywall-patch-beneath-window-3f5cd07-before-after",
+      "step": 1,
+      "title": "Drywall patch beneath window before and after",
+      "seoAlt": "Drywall patch beneath window before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a drywall patch beneath window job completed in a Safety Harbor home.",
+      "category": "painting",
+      "serviceLink": "/Services/drywall-repair",
+      "beforeAfter": true,
+      "groupTitle": "Drywall patch beneath window \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a drywall patch beneath window job completed by Knight Group in Safety Harbor.",
+      "cluster": "drywall",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Remove damaged drywall beneath the window, cut back to sound material, and install new drywall with tape, joint compound, and sanding. Primer and one coat of paint matched to the existing wall are included over the repaired area only; painting the remainder of the wall or room is not included. Concealed framing, insulation, mold, or additional water damage is a revision",
+      "photoBefore": 1,
+      "photoProcess": 1,
       "photoAfter": 1
     },
     {
