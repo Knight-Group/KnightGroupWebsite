@@ -2814,5 +2814,30 @@
     "photoBefore": 2,
     "photoProcess": 1,
     "photoAfter": 1
+  },
+  "before-after-baseboard-receptacle-reset-a2b21b6.webp": {
+    "group": "baseboard-receptacle-reset-a2b21b6-before-after",
+    "groupTitle": "Baseboard receptacle reset \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a baseboard receptacle reset job completed by Knight Group in Safety Harbor.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Baseboard receptacle reset before and after",
+    "description": "Before-and-after comparison from a baseboard receptacle reset job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "baseboard-receptacle-reset-a2b21b6",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Disconnect and pull the existing receptacle and cover plate clear of the affected baseboard for trim removal. Reinstall the receptacle and cover plate in the new baseboard using the existing wiring. Replacement of damaged wiring, the receptacle, or the cover plate is not included",
+    "photoBefore": 2,
+    "photoProcess": 1,
+    "photoAfter": 1
   }
 }
