@@ -180,6 +180,38 @@
       ]
     },
     {
+      "id": "add-to-side-door-c3977f2-before-after",
+      "title": "Add to side door \u2014 before & after",
+      "description": "Before-and-after proof from a add to side door job completed by Knight Group in St. Petersburg.",
+      "category": "doors-windows",
+      "serviceLink": "/Services/doors-windows",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-add-to-side-door-c3977f2.webp",
+          "filename": "before-after-add-to-side-door-c3977f2.webp",
+          "step": 1,
+          "title": "Add to side door before and after",
+          "seoAlt": "Add to side door before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a add to side door job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "door_lock",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Get water functional: Curb stop was buried and had to be dug out of the meter pit (city had not touched it). Located the Sensus meter and the whole-house yellow-handle shutoff, confirmed no service-line leaks, checked fixtures, and cleaned the kitchen aerator. Water is on and . Shut off at the ball valve when leaving.; Tile repair: Removed the broken laundry/side-room step tile, packed the void with mortar,\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 2
+    },
+    {
       "id": "attic-drywall-return-visit-54b0dce-before-after",
       "title": "Attic drywall reseat after plumbing trap \u2014 before & after",
       "description": "Return visit to screw drywall back after replacing a flex trap. Paint-ready closeout, not a new remodel.",
@@ -4069,6 +4101,32 @@
       "beforeAfter": true,
       "groupTitle": "AC vent & filter change \u2014 before & after",
       "groupDescription": "Dirty return vent and clogged filter replaced with clean filtration and a secure grille."
+    },
+    {
+      "src": "GalleryImages/before-after-add-to-side-door-c3977f2.webp",
+      "filename": "before-after-add-to-side-door-c3977f2.webp",
+      "group": "add-to-side-door-c3977f2-before-after",
+      "step": 1,
+      "title": "Add to side door before and after",
+      "seoAlt": "Add to side door before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a add to side door job completed in a St. Petersburg home.",
+      "category": "doors-windows",
+      "serviceLink": "/Services/doors-windows",
+      "beforeAfter": true,
+      "groupTitle": "Add to side door \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a add to side door job completed by Knight Group in St. Petersburg.",
+      "cluster": "door_lock",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Get water functional: Curb stop was buried and had to be dug out of the meter pit (city had not touched it). Located the Sensus meter and the whole-house yellow-handle shutoff, confirmed no service-line leaks, checked fixtures, and cleaned the kitchen aerator. Water is on and . Shut off at the ball valve when leaving.; Tile repair: Removed the broken laundry/side-room step tile, packed the void with mortar,\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 2
     },
     {
       "src": "GalleryImages/before-after-attic-drywall-return-visit-54b0dce.webp",
