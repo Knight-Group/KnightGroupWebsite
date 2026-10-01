@@ -2589,5 +2589,30 @@
     "photoBefore": 2,
     "photoProcess": 4,
     "photoAfter": 2
+  },
+  "before-after-kitchen-faucet-sprayer-04f0250.webp": {
+    "group": "kitchen-faucet-sprayer-04f0250-before-after",
+    "groupTitle": "Kitchen faucet sprayer \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a kitchen faucet sprayer job completed by Knight Group in Pinellas Park.",
+    "category": "plumbing",
+    "serviceLink": "/Services/plumbing-services",
+    "step": 1,
+    "title": "Kitchen faucet sprayer before and after",
+    "description": "Before-and-after comparison from a kitchen faucet sprayer job completed in a Pinellas Park home.",
+    "beforeAfter": true,
+    "scope_slug": "kitchen-faucet-sprayer-04f0250",
+    "source": "dispatch",
+    "cluster": "faucet",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Pinellas Park",
+    "citySlug": "",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Garage floor and baseboard paint: Cleaned floor and primed heavily. Several coats of primer to the base boards. Painted baseboards with a sealing paint. Painted floor with several coats. Left remaining paint there for touch ups Sprayer hose has pin hole in it. Kohler faucet and replacement not readily available. Installed new single handle kitchen faucet",
+    "photoBefore": 1,
+    "photoProcess": 1,
+    "photoAfter": 1
   }
 }
