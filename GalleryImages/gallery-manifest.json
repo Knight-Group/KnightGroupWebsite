@@ -1610,6 +1610,38 @@
       ]
     },
     {
+      "id": "paint-ceiling-stains-1daac32-before-after",
+      "title": "Paint ceiling stains \u2014 before & after",
+      "description": "Before-and-after proof from a paint ceiling stains job completed by Knight Group in St. Petersburg.",
+      "category": "painting",
+      "serviceLink": "/Services/painting-finishing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-paint-ceiling-stains-1daac32.webp",
+          "filename": "before-after-paint-ceiling-stains-1daac32.webp",
+          "step": 1,
+          "title": "Paint ceiling stains before and after",
+          "seoAlt": "Paint ceiling stains before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a paint ceiling stains job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "paint",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Scrape, mud, texture and paint ceiling to match then put light back up. Used 3/4 gallon of killz primer to paint any water stains or scuffs around house followed with a pure white. Laundry room I filled any divots and sanded all walls to create adhesion. Used killz to prime all walls in room. Finish with same paint from ceiling in kitchen. In total used 2 quarts or paint and nearly a gallon of primer Laundry room\u2026",
+      "photoBefore": 2,
+      "photoProcess": 3,
+      "photoAfter": 1
+    },
+    {
       "id": "pipe-repair-before-after",
       "title": "Pipe repair \u2014 before & after",
       "description": "Plumbing correction shown from the original problem through the finished repair.",
@@ -4363,6 +4395,32 @@
       "beforeAfter": true,
       "groupTitle": "Office ceiling fan malfunction \u2014 before & after",
       "groupDescription": "Before-and-after proof from a office ceiling fan malfunction job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-paint-ceiling-stains-1daac32.webp",
+      "filename": "before-after-paint-ceiling-stains-1daac32.webp",
+      "group": "paint-ceiling-stains-1daac32-before-after",
+      "step": 1,
+      "title": "Paint ceiling stains before and after",
+      "seoAlt": "Paint ceiling stains before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a paint ceiling stains job completed in a St. Petersburg home.",
+      "category": "painting",
+      "serviceLink": "/Services/painting-finishing",
+      "beforeAfter": true,
+      "groupTitle": "Paint ceiling stains \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a paint ceiling stains job completed by Knight Group in St. Petersburg.",
+      "cluster": "paint",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Scrape, mud, texture and paint ceiling to match then put light back up. Used 3/4 gallon of killz primer to paint any water stains or scuffs around house followed with a pure white. Laundry room I filled any divots and sanded all walls to create adhesion. Used killz to prime all walls in room. Finish with same paint from ceiling in kitchen. In total used 2 quarts or paint and nearly a gallon of primer Laundry room\u2026",
+      "photoBefore": 2,
+      "photoProcess": 3,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-pressure-wash-walk-way-b49a8fd.webp",
