@@ -3064,5 +3064,30 @@
     "photoBefore": 2,
     "photoProcess": 4,
     "photoAfter": 4
+  },
+  "before-after-room-3-bed-is-faulty-7deda4e.webp": {
+    "group": "room-3-bed-is-faulty-7deda4e-before-after",
+    "groupTitle": "Room #3 - Bed is faulty \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a room #3 - bed is faulty job completed by Knight Group in Largo.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Room #3 - Bed is faulty before and after",
+    "description": "Before-and-after comparison from a room #3 - bed is faulty job completed in a Largo home.",
+    "beforeAfter": true,
+    "scope_slug": "room-3-bed-is-faulty-7deda4e",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Largo",
+    "citySlug": "largo",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Bed supports broken off and side rails were collapsed, screwed them in and fixed the problem Bed supports broken off and side rails were collapsed from screws pulling out",
+    "photoBefore": 4,
+    "photoProcess": 0,
+    "photoAfter": 3
   }
 }

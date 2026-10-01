@@ -3216,6 +3216,38 @@
       "photoAfter": 2
     },
     {
+      "id": "room-3-bed-is-faulty-7deda4e-before-after",
+      "title": "Room #3 - Bed is faulty \u2014 before & after",
+      "description": "Before-and-after proof from a room #3 - bed is faulty job completed by Knight Group in Largo.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-room-3-bed-is-faulty-7deda4e.webp",
+          "filename": "before-after-room-3-bed-is-faulty-7deda4e.webp",
+          "step": 1,
+          "title": "Room #3 - Bed is faulty before and after",
+          "seoAlt": "Room #3 - Bed is faulty before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a room #3 - bed is faulty job completed in a Largo home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Largo",
+      "citySlug": "largo",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Bed supports broken off and side rails were collapsed, screwed them in and fixed the problem Bed supports broken off and side rails were collapsed from screws pulling out",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 3
+    },
+    {
       "id": "room-restoration-before-after",
       "title": "Room restoration \u2014 before & after",
       "description": "Interior room work shown from damage and tear-out through the restored finish.",
@@ -7455,6 +7487,32 @@
       "photoBefore": 3,
       "photoProcess": 1,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-room-3-bed-is-faulty-7deda4e.webp",
+      "filename": "before-after-room-3-bed-is-faulty-7deda4e.webp",
+      "group": "room-3-bed-is-faulty-7deda4e-before-after",
+      "step": 1,
+      "title": "Room #3 - Bed is faulty before and after",
+      "seoAlt": "Room #3 - Bed is faulty before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a room #3 - bed is faulty job completed in a Largo home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Room #3 - Bed is faulty \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a room #3 - bed is faulty job completed by Knight Group in Largo.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Largo",
+      "citySlug": "largo",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Bed supports broken off and side rails were collapsed, screwed them in and fixed the problem Bed supports broken off and side rails were collapsed from screws pulling out",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 3
     },
     {
       "src": "GalleryImages/before-after-secure-outlets-5be7424.webp",
