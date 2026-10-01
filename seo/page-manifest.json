@@ -984,6 +984,13 @@
     },
     {
       "pageType": "gallery-project",
+      "slug": "stove-handle-af86c23-before-after",
+      "path": "gallery/stove-handle-af86c23-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/stove-handle-af86c23-before-after",
+      "priority": "0.64"
+    },
+    {
+      "pageType": "gallery-project",
       "slug": "threshold-9826926-before-after",
       "path": "gallery/threshold-9826926-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/threshold-9826926-before-after",

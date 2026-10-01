@@ -1564,5 +1564,30 @@
     "photoBefore": 7,
     "photoProcess": 0,
     "photoAfter": 6
+  },
+  "before-after-stove-handle-af86c23.webp": {
+    "group": "stove-handle-af86c23-before-after",
+    "groupTitle": "Stove Handle \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a stove handle job completed by Knight Group in Pinellas Park.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Stove Handle before and after",
+    "description": "Before-and-after comparison from a stove handle job completed in a Pinellas Park home.",
+    "beforeAfter": true,
+    "scope_slug": "stove-handle-af86c23",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Pinellas Park",
+    "citySlug": "",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Stove Handle: Installed OEM Stove handle after ordering part from HnK Parts Stove is missing handle, ordering OEM handle replacement",
+    "photoBefore": 1,
+    "photoProcess": 0,
+    "photoAfter": 1
   }
 }

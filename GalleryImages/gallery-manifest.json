@@ -2070,6 +2070,37 @@
       ]
     },
     {
+      "id": "stove-handle-af86c23-before-after",
+      "title": "Stove Handle \u2014 before & after",
+      "description": "Before-and-after proof from a stove handle job completed by Knight Group in Pinellas Park.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-stove-handle-af86c23.webp",
+          "filename": "before-after-stove-handle-af86c23.webp",
+          "step": 1,
+          "title": "Stove Handle before and after",
+          "seoAlt": "Stove Handle before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a stove handle job completed in a Pinellas Park home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Pinellas Park",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Stove Handle: Installed OEM Stove handle after ordering part from HnK Parts Stove is missing handle, ordering OEM handle replacement",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "stove-burner-repair-before-after",
       "title": "Stove burner repair \u2014 before & after",
       "description": "Broken stove burner restored to safe, working condition.",
@@ -4480,6 +4511,31 @@
       "beforeAfter": true,
       "groupTitle": "Stair safety tape repair \u2014 before & after",
       "groupDescription": "Peeling anti-slip tape removed and replaced on stair treads for safer footing."
+    },
+    {
+      "src": "GalleryImages/before-after-stove-handle-af86c23.webp",
+      "filename": "before-after-stove-handle-af86c23.webp",
+      "group": "stove-handle-af86c23-before-after",
+      "step": 1,
+      "title": "Stove Handle before and after",
+      "seoAlt": "Stove Handle before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a stove handle job completed in a Pinellas Park home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Stove Handle \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a stove handle job completed by Knight Group in Pinellas Park.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Pinellas Park",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Stove Handle: Installed OEM Stove handle after ordering part from HnK Parts Stove is missing handle, ordering OEM handle replacement",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-stove-indicator-light-issue.webp",
