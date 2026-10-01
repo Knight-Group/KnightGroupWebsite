@@ -3655,6 +3655,38 @@
       "photoAfter": 1
     },
     {
+      "id": "caulking-on-roof-by-vents-ac2c2af-before-after",
+      "title": "caulking on roof by vents \u2014 before & after",
+      "description": "Before-and-after proof from a caulking on roof by vents job completed by Knight Group in Clearwater.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/caulking-repair",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-caulking-on-roof-by-vents-ac2c2af.webp",
+          "filename": "before-after-caulking-on-roof-by-vents-ac2c2af.webp",
+          "step": 1,
+          "title": "caulking on roof by vents before and after",
+          "seoAlt": "caulking on roof by vents before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a caulking on roof by vents job completed in a Clearwater home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "caulk",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Clearwater",
+      "citySlug": "clearwater",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Roof leak repair \u2014 inspect and reseal / caulk roof vents Inspect all remaining vents and see if they need resealed",
+      "photoBefore": 2,
+      "photoProcess": 3,
+      "photoAfter": 4
+    },
+    {
       "id": "drywall-repair-paint-ef28bb4-before-after",
       "title": "drywall repair & paint \u2014 before & after",
       "description": "Before-and-after proof from a drywall repair & paint job completed by Knight Group in Pinellas County.",
@@ -4432,6 +4464,32 @@
       "beforeAfter": true,
       "groupTitle": "Carpet removal \u2014 before & after",
       "groupDescription": "Worn carpet and pad removed to expose subfloor ready for the next finish."
+    },
+    {
+      "src": "GalleryImages/before-after-caulking-on-roof-by-vents-ac2c2af.webp",
+      "filename": "before-after-caulking-on-roof-by-vents-ac2c2af.webp",
+      "group": "caulking-on-roof-by-vents-ac2c2af-before-after",
+      "step": 1,
+      "title": "caulking on roof by vents before and after",
+      "seoAlt": "caulking on roof by vents before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a caulking on roof by vents job completed in a Clearwater home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/caulking-repair",
+      "beforeAfter": true,
+      "groupTitle": "caulking on roof by vents \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a caulking on roof by vents job completed by Knight Group in Clearwater.",
+      "cluster": "caulk",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Clearwater",
+      "citySlug": "clearwater",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Roof leak repair \u2014 inspect and reseal / caulk roof vents Inspect all remaining vents and see if they need resealed",
+      "photoBefore": 2,
+      "photoProcess": 3,
+      "photoAfter": 4
     },
     {
       "src": "GalleryImages/before-after-ceiling-drywall-patch-2f1127e.webp",
