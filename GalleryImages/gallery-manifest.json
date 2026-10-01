@@ -2751,6 +2751,38 @@
       "photoAfter": 1
     },
     {
+      "id": "toilet-seat-loose-e6ce96f-before-after",
+      "title": "Toilet Seat Loose \u2014 before & after",
+      "description": "Before-and-after proof from a toilet seat loose job completed by Knight Group in Clearwater.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-toilet-seat-loose-e6ce96f.webp",
+          "filename": "before-after-toilet-seat-loose-e6ce96f.webp",
+          "step": 1,
+          "title": "Toilet Seat Loose before and after",
+          "seoAlt": "Toilet Seat Loose before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a toilet seat loose job completed in a Clearwater home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "toilet",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Clearwater",
+      "citySlug": "clearwater",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Removed old busted plastic nuts. Shimmed back of toilet to level and tightened back down with traditional nuts and washers Toilet was loose and rocking. Found broken plastic nut and floor isn\u2019t level. Removed old nuts and shimmed toilet. Used traditional nuts and washers to secure to flange. Tested. No leaks toilet is bolted down properly",
+      "photoBefore": 3,
+      "photoProcess": 2,
+      "photoAfter": 1
+    },
+    {
       "id": "toilet-0ff372e-before-after",
       "title": "Toilet \u2014 before & after",
       "description": "Before-and-after proof from a toilet job completed by Knight Group in St. Petersburg.",
@@ -5594,6 +5626,32 @@
       "workNotes": "Laundry lock was repaired had to lower deadbolt receiver. Replace lock set/ deadbolt. Cleaned 2 ac /filters. Repair the tracks/hinges on 5 cabinet drawers/doors. Remove trash from laundry and haul to city dump. Replace handle and chain to flapper in toilet. Removed wasp nest from mailbox also swept up laundry room Laundry lock was repaired had to lower deadbolt receiver. Replace lock set/ deadbolt. Cleaned 2 ac\u2026",
       "photoBefore": 2,
       "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-toilet-seat-loose-e6ce96f.webp",
+      "filename": "before-after-toilet-seat-loose-e6ce96f.webp",
+      "group": "toilet-seat-loose-e6ce96f-before-after",
+      "step": 1,
+      "title": "Toilet Seat Loose before and after",
+      "seoAlt": "Toilet Seat Loose before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a toilet seat loose job completed in a Clearwater home.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "groupTitle": "Toilet Seat Loose \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a toilet seat loose job completed by Knight Group in Clearwater.",
+      "cluster": "toilet",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Clearwater",
+      "citySlug": "clearwater",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Removed old busted plastic nuts. Shimmed back of toilet to level and tightened back down with traditional nuts and washers Toilet was loose and rocking. Found broken plastic nut and floor isn\u2019t level. Removed old nuts and shimmed toilet. Used traditional nuts and washers to secure to flange. Tested. No leaks toilet is bolted down properly",
+      "photoBefore": 3,
+      "photoProcess": 2,
       "photoAfter": 1
     },
     {
