@@ -2065,19 +2065,19 @@
     "photoProcess": 2,
     "photoAfter": 1
   },
-  "before-after-replace-battery-7750705.webp": {
-    "group": "replace-battery-7750705-before-after",
-    "groupTitle": "Replace battery \u2014 before & after",
-    "groupDescription": "Before-and-after proof from a replace battery job completed by Knight Group in St. Petersburg.",
-    "category": "general-repairs",
-    "serviceLink": "/Services/general-repairs",
+  "before-after-match-then-paint-middle-bedroom-a5e92c6.webp": {
+    "group": "match-then-paint-middle-bedroom-a5e92c6-before-after",
+    "groupTitle": "Match then paint middle bedroom \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a match then paint middle bedroom job completed by Knight Group in St. Petersburg.",
+    "category": "painting",
+    "serviceLink": "/Services/painting-finishing",
     "step": 1,
-    "title": "Replace battery before and after",
-    "description": "Before-and-after comparison from a replace battery job completed in a St. Petersburg home.",
+    "title": "Match then paint middle bedroom before and after",
+    "description": "Before-and-after comparison from a match then paint middle bedroom job completed in a St. Petersburg home.",
     "beforeAfter": true,
-    "scope_slug": "replace-battery-7750705",
+    "scope_slug": "match-then-paint-middle-bedroom-a5e92c6",
     "source": "dispatch",
-    "cluster": "general",
+    "cluster": "paint",
     "workerName": "Vince Knight",
     "workerRole": "co-owner and Field Operations Lead",
     "workerKey": "vince",
@@ -2085,9 +2085,9 @@
     "citySlug": "st-petersburg",
     "countyName": "Pinellas County",
     "completedMonth": "September 2026",
-    "workNotes": "Replaced 9 volt in front door then tested function. Had to match paint in bedroom. Used a quart to cover repairs. All walls are dry Replaced 9 volt battery in front door lock set. Did not see provided 9 volt purchased from Home Depot",
-    "photoBefore": 1,
-    "photoProcess": 1,
-    "photoAfter": 1
+    "workNotes": "Replaced 9 volt in front door then tested function. Had to match paint in bedroom. Used a quart to cover repairs. All walls are dry Took wall plate to Home Depot to match paint color. Purchased and used 1 quart. Set up plastic and drop clothes prior to painting",
+    "photoBefore": 3,
+    "photoProcess": 2,
+    "photoAfter": 2
   }
 }

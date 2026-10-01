@@ -1777,6 +1777,38 @@
       "photoAfter": 4
     },
     {
+      "id": "match-then-paint-middle-bedroom-a5e92c6-before-after",
+      "title": "Match then paint middle bedroom \u2014 before & after",
+      "description": "Before-and-after proof from a match then paint middle bedroom job completed by Knight Group in St. Petersburg.",
+      "category": "painting",
+      "serviceLink": "/Services/painting-finishing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-match-then-paint-middle-bedroom-a5e92c6.webp",
+          "filename": "before-after-match-then-paint-middle-bedroom-a5e92c6.webp",
+          "step": 1,
+          "title": "Match then paint middle bedroom before and after",
+          "seoAlt": "Match then paint middle bedroom before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a match then paint middle bedroom job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "paint",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Replaced 9 volt in front door then tested function. Had to match paint in bedroom. Used a quart to cover repairs. All walls are dry Took wall plate to Home Depot to match paint color. Purchased and used 1 quart. Set up plastic and drop clothes prior to painting",
+      "photoBefore": 3,
+      "photoProcess": 2,
+      "photoAfter": 2
+    },
+    {
       "id": "mold-wall-repair",
       "title": "Mold damage on interior wall",
       "description": "Mold-affected wall shown from the initial discovery through later correction work on the same area.",
@@ -2146,38 +2178,6 @@
       "photoBefore": 7,
       "photoProcess": 0,
       "photoAfter": 6
-    },
-    {
-      "id": "replace-battery-7750705-before-after",
-      "title": "Replace battery \u2014 before & after",
-      "description": "Before-and-after proof from a replace battery job completed by Knight Group in St. Petersburg.",
-      "category": "general-repairs",
-      "serviceLink": "/Services/general-repairs",
-      "beforeAfter": true,
-      "progression": false,
-      "images": [
-        {
-          "src": "GalleryImages/before-after-replace-battery-7750705.webp",
-          "filename": "before-after-replace-battery-7750705.webp",
-          "step": 1,
-          "title": "Replace battery before and after",
-          "seoAlt": "Replace battery before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
-          "description": "Before-and-after comparison from a replace battery job completed in a St. Petersburg home.",
-          "beforeAfter": true
-        }
-      ],
-      "cluster": "general",
-      "workerName": "Vince Knight",
-      "workerRole": "co-owner and Field Operations Lead",
-      "workerKey": "vince",
-      "cityName": "St. Petersburg",
-      "citySlug": "st-petersburg",
-      "countyName": "Pinellas County",
-      "completedMonth": "September 2026",
-      "workNotes": "Replaced 9 volt in front door then tested function. Had to match paint in bedroom. Used a quart to cover repairs. All walls are dry Replaced 9 volt battery in front door lock set. Did not see provided 9 volt purchased from Home Depot",
-      "photoBefore": 1,
-      "photoProcess": 1,
-      "photoAfter": 1
     },
     {
       "id": "replace-broken-dishwasher-2ce6915-before-after",
@@ -4991,6 +4991,32 @@
       "photoAfter": 4
     },
     {
+      "src": "GalleryImages/before-after-match-then-paint-middle-bedroom-a5e92c6.webp",
+      "filename": "before-after-match-then-paint-middle-bedroom-a5e92c6.webp",
+      "group": "match-then-paint-middle-bedroom-a5e92c6-before-after",
+      "step": 1,
+      "title": "Match then paint middle bedroom before and after",
+      "seoAlt": "Match then paint middle bedroom before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a match then paint middle bedroom job completed in a St. Petersburg home.",
+      "category": "painting",
+      "serviceLink": "/Services/painting-finishing",
+      "beforeAfter": true,
+      "groupTitle": "Match then paint middle bedroom \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a match then paint middle bedroom job completed by Knight Group in St. Petersburg.",
+      "cluster": "paint",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Replaced 9 volt in front door then tested function. Had to match paint in bedroom. Used a quart to cover repairs. All walls are dry Took wall plate to Home Depot to match paint color. Purchased and used 1 quart. Set up plastic and drop clothes prior to painting",
+      "photoBefore": 3,
+      "photoProcess": 2,
+      "photoAfter": 2
+    },
+    {
       "src": "GalleryImages/before-after-musty-odor-wall-inspection-f6407f8.webp",
       "filename": "before-after-musty-odor-wall-inspection-f6407f8.webp",
       "group": "musty-odor-wall-inspection-f6407f8-before-after",
@@ -5231,32 +5257,6 @@
       "photoBefore": 7,
       "photoProcess": 0,
       "photoAfter": 6
-    },
-    {
-      "src": "GalleryImages/before-after-replace-battery-7750705.webp",
-      "filename": "before-after-replace-battery-7750705.webp",
-      "group": "replace-battery-7750705-before-after",
-      "step": 1,
-      "title": "Replace battery before and after",
-      "seoAlt": "Replace battery before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
-      "description": "Before-and-after comparison from a replace battery job completed in a St. Petersburg home.",
-      "category": "general-repairs",
-      "serviceLink": "/Services/general-repairs",
-      "beforeAfter": true,
-      "groupTitle": "Replace battery \u2014 before & after",
-      "groupDescription": "Before-and-after proof from a replace battery job completed by Knight Group in St. Petersburg.",
-      "cluster": "general",
-      "workerName": "Vince Knight",
-      "workerRole": "co-owner and Field Operations Lead",
-      "workerKey": "vince",
-      "cityName": "St. Petersburg",
-      "citySlug": "st-petersburg",
-      "countyName": "Pinellas County",
-      "completedMonth": "September 2026",
-      "workNotes": "Replaced 9 volt in front door then tested function. Had to match paint in bedroom. Used a quart to cover repairs. All walls are dry Replaced 9 volt battery in front door lock set. Did not see provided 9 volt purchased from Home Depot",
-      "photoBefore": 1,
-      "photoProcess": 1,
-      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-replace-broken-dishwasher-2ce6915.webp",
