@@ -1614,5 +1614,30 @@
     "photoBefore": 3,
     "photoProcess": 3,
     "photoAfter": 1
+  },
+  "before-after-clean-side-door-52bd33a.webp": {
+    "group": "clean-side-door-52bd33a-before-after",
+    "groupTitle": "Clean side door \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a clean side door job completed by Knight Group in St. Petersburg.",
+    "category": "doors-windows",
+    "serviceLink": "/Services/doors-windows",
+    "step": 1,
+    "title": "Clean side door before and after",
+    "description": "Before-and-after comparison from a clean side door job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "clean-side-door-52bd33a",
+    "source": "dispatch",
+    "cluster": "door_lock",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Wooden fence gate was sagging moved hinges to correct. Gate hardware was repaired and reset. Changed front gates hardware as well to match. Both functional. Freezer shelf was detailed and painted. Side door was scrubbed and washed off. Cleaned scuff marks off a couple walls. Laundry room was scrubbed and scraped but did not clean up well. Not done yet: would be added to estaimte 3 hours + materials. Wall is made\u2026",
+    "photoBefore": 1,
+    "photoProcess": 1,
+    "photoAfter": 1
   }
 }
