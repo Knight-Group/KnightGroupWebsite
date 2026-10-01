@@ -2064,5 +2064,30 @@
     "photoBefore": 1,
     "photoProcess": 2,
     "photoAfter": 1
+  },
+  "before-after-replace-battery-7750705.webp": {
+    "group": "replace-battery-7750705-before-after",
+    "groupTitle": "Replace battery \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a replace battery job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Replace battery before and after",
+    "description": "Before-and-after comparison from a replace battery job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "replace-battery-7750705",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Replaced 9 volt in front door then tested function. Had to match paint in bedroom. Used a quart to cover repairs. All walls are dry Replaced 9 volt battery in front door lock set. Did not see provided 9 volt purchased from Home Depot",
+    "photoBefore": 1,
+    "photoProcess": 1,
+    "photoAfter": 1
   }
 }

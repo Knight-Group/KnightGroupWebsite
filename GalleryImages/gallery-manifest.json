@@ -2148,6 +2148,38 @@
       "photoAfter": 6
     },
     {
+      "id": "replace-battery-7750705-before-after",
+      "title": "Replace battery \u2014 before & after",
+      "description": "Before-and-after proof from a replace battery job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-replace-battery-7750705.webp",
+          "filename": "before-after-replace-battery-7750705.webp",
+          "step": 1,
+          "title": "Replace battery before and after",
+          "seoAlt": "Replace battery before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a replace battery job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Replaced 9 volt in front door then tested function. Had to match paint in bedroom. Used a quart to cover repairs. All walls are dry Replaced 9 volt battery in front door lock set. Did not see provided 9 volt purchased from Home Depot",
+      "photoBefore": 1,
+      "photoProcess": 1,
+      "photoAfter": 1
+    },
+    {
       "id": "replace-broken-dishwasher-2ce6915-before-after",
       "title": "Replace broken dishwasher \u2014 before & after",
       "description": "Before-and-after proof from a replace broken dishwasher job completed by Knight Group in Pinellas Park.",
@@ -5199,6 +5231,32 @@
       "photoBefore": 7,
       "photoProcess": 0,
       "photoAfter": 6
+    },
+    {
+      "src": "GalleryImages/before-after-replace-battery-7750705.webp",
+      "filename": "before-after-replace-battery-7750705.webp",
+      "group": "replace-battery-7750705-before-after",
+      "step": 1,
+      "title": "Replace battery before and after",
+      "seoAlt": "Replace battery before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a replace battery job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Replace battery \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a replace battery job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Replaced 9 volt in front door then tested function. Had to match paint in bedroom. Used a quart to cover repairs. All walls are dry Replaced 9 volt battery in front door lock set. Did not see provided 9 volt purchased from Home Depot",
+      "photoBefore": 1,
+      "photoProcess": 1,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-replace-broken-dishwasher-2ce6915.webp",
