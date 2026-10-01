@@ -1989,5 +1989,30 @@
     "photoBefore": 2,
     "photoProcess": 2,
     "photoAfter": 2
+  },
+  "before-after-replace-faucet-99420dc.webp": {
+    "group": "replace-faucet-99420dc-before-after",
+    "groupTitle": "Replace faucet \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a replace faucet job completed by Knight Group in Clearwater.",
+    "category": "plumbing",
+    "serviceLink": "/Services/plumbing-services",
+    "step": 1,
+    "title": "Replace faucet before and after",
+    "description": "Before-and-after comparison from a replace faucet job completed in a Clearwater home.",
+    "beforeAfter": true,
+    "scope_slug": "replace-faucet-99420dc",
+    "source": "dispatch",
+    "cluster": "faucet",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Clearwater",
+    "citySlug": "clearwater",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Clean any defects on cabinet and paint any too bad. Checked both smoke detectors. Replaced faucet in kitchen. Replace air filter and clean off all vents. Patch hole in wall by door and in living room. Textured living room wall needs to dry before paint. Paint is in laundry room storage Replace single handle kitchen faucet with shorter make. Old faucet was rusted and difficult to remove",
+    "photoBefore": 2,
+    "photoProcess": 0,
+    "photoAfter": 2
   }
 }
