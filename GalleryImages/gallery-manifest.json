@@ -848,6 +848,38 @@
       ]
     },
     {
+      "id": "drywall-repair-6798260-before-after",
+      "title": "Drywall repair \u2014 before & after",
+      "description": "Before-and-after proof from a drywall repair job completed by Knight Group in St. Petersburg.",
+      "category": "painting",
+      "serviceLink": "/Services/drywall-repair",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-drywall-repair-6798260.webp",
+          "filename": "before-after-drywall-repair-6798260.webp",
+          "step": 1,
+          "title": "Drywall repair before and after",
+          "seoAlt": "Drywall repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a drywall repair job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "drywall",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Used 3 in 1 filler/sealer and smoothed out surface. Sanded to blend in the painted to match. Had Lowe\u2019s match the paint and put the left overs in the closet on front porch",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "exterior-coping-and-screens-f1920f7-before-after",
       "title": "Exterior coping and screens \u2014 before & after",
       "description": "Before-and-after proof from a exterior coping and screens job completed by Knight Group in St. Petersburg.",
@@ -4203,6 +4235,32 @@
       "beforeAfter": true,
       "groupTitle": "Door wedge install \u2014 before & after",
       "groupDescription": "Floor gap corrected with a secure door wedge so the door stays put."
+    },
+    {
+      "src": "GalleryImages/before-after-drywall-repair-6798260.webp",
+      "filename": "before-after-drywall-repair-6798260.webp",
+      "group": "drywall-repair-6798260-before-after",
+      "step": 1,
+      "title": "Drywall repair before and after",
+      "seoAlt": "Drywall repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a drywall repair job completed in a St. Petersburg home.",
+      "category": "painting",
+      "serviceLink": "/Services/drywall-repair",
+      "beforeAfter": true,
+      "groupTitle": "Drywall repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a drywall repair job completed by Knight Group in St. Petersburg.",
+      "cluster": "drywall",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Used 3 in 1 filler/sealer and smoothed out surface. Sanded to blend in the painted to match. Had Lowe\u2019s match the paint and put the left overs in the closet on front porch",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-drywall-repair-paint-ef28bb4.webp",
