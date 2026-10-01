@@ -1969,6 +1969,38 @@
       "photoAfter": 4
     },
     {
+      "id": "master-bathroom-sink-pop-up-stopper-repa-d7ea620-before-after",
+      "title": "Master bathroom sink pop-up stopper repair \u2014 before & after",
+      "description": "Before-and-after proof from a master bathroom sink pop-up stopper repair job completed by Knight Group in St. Petersburg.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-master-bathroom-sink-pop-up-stopper-repa-d7ea620.webp",
+          "filename": "before-after-master-bathroom-sink-pop-up-stopper-repa-d7ea620.webp",
+          "step": 1,
+          "title": "Master bathroom sink pop-up stopper repair before and after",
+          "seoAlt": "Master bathroom sink pop-up stopper repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a master bathroom sink pop-up stopper repair job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "sink_drain",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Master bathroom sink pop-up stopper repair: Reset all pop up assemblies in house. Was not installed correctly was able to fix. I also tightened up toilet seats around the house Diagnose the recurring jammed-closed sink stopper, release and clean the stopper, adjust or replace accessible pop-up linkage/stopper components as needed, and test operation and for leaks. Photo 1500 is already assigned to this scope.\u2026",
+      "photoBefore": 2,
+      "photoProcess": 4,
+      "photoAfter": 1
+    },
+    {
       "id": "match-then-paint-middle-bedroom-a5e92c6-before-after",
       "title": "Match then paint middle bedroom \u2014 before & after",
       "description": "Before-and-after proof from a match then paint middle bedroom job completed by Knight Group in St. Petersburg.",
@@ -5625,6 +5657,32 @@
       "photoBefore": 4,
       "photoProcess": 3,
       "photoAfter": 4
+    },
+    {
+      "src": "GalleryImages/before-after-master-bathroom-sink-pop-up-stopper-repa-d7ea620.webp",
+      "filename": "before-after-master-bathroom-sink-pop-up-stopper-repa-d7ea620.webp",
+      "group": "master-bathroom-sink-pop-up-stopper-repa-d7ea620-before-after",
+      "step": 1,
+      "title": "Master bathroom sink pop-up stopper repair before and after",
+      "seoAlt": "Master bathroom sink pop-up stopper repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a master bathroom sink pop-up stopper repair job completed in a St. Petersburg home.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "groupTitle": "Master bathroom sink pop-up stopper repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a master bathroom sink pop-up stopper repair job completed by Knight Group in St. Petersburg.",
+      "cluster": "sink_drain",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Master bathroom sink pop-up stopper repair: Reset all pop up assemblies in house. Was not installed correctly was able to fix. I also tightened up toilet seats around the house Diagnose the recurring jammed-closed sink stopper, release and clean the stopper, adjust or replace accessible pop-up linkage/stopper components as needed, and test operation and for leaks. Photo 1500 is already assigned to this scope.\u2026",
+      "photoBefore": 2,
+      "photoProcess": 4,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-match-then-paint-middle-bedroom-a5e92c6.webp",
