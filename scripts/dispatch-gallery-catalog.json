@@ -2164,5 +2164,30 @@
     "photoBefore": 3,
     "photoProcess": 2,
     "photoAfter": 3
+  },
+  "before-after-repair-water-damage-and-cabinets-2a643f3.webp": {
+    "group": "repair-water-damage-and-cabinets-2a643f3-before-after",
+    "groupTitle": "Repair water damage and cabinets \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a repair water damage and cabinets job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Repair water damage and cabinets before and after",
+    "description": "Before-and-after comparison from a repair water damage and cabinets job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "repair-water-damage-and-cabinets-2a643f3",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Added kick plate to water damaged area to cover and secure damaged area. Drawer fell off tracks pulled out and reset. Adjusted hinges for cabinet above microwave",
+    "photoBefore": 3,
+    "photoProcess": 0,
+    "photoAfter": 4
   }
 }
