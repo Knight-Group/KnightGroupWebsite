@@ -3089,5 +3089,30 @@
     "photoBefore": 4,
     "photoProcess": 0,
     "photoAfter": 3
+  },
+  "before-after-floating-flooring-and-quarter-round-5169f20.webp": {
+    "group": "floating-flooring-and-quarter-round-5169f20-before-after",
+    "groupTitle": "Floating flooring and quarter-round \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a floating flooring and quarter-round job completed by Knight Group in Safety Harbor.",
+    "category": "carpentry",
+    "serviceLink": "/Services/carpentry-framing",
+    "step": 1,
+    "title": "Floating flooring and quarter-round before and after",
+    "description": "Before-and-after comparison from a floating flooring and quarter-round job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "floating-flooring-and-quarter-round-5169f20",
+    "source": "dispatch",
+    "cluster": "floor",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "",
+    "workNotes": "Floating flooring and quarter-round: Install customer supplied flooring Install approximately 182 square feet of floating flooring in the 14-by -foot room, with about 200 square feet allowed for cuts and waste. Make the required cuts around the pictured 2-foot chase wall and two noted cutback areas, then install approximately 64 linear feet of matching quarter-round. The estimate assumes the exposed wood\u2026",
+    "photoBefore": 2,
+    "photoProcess": 3,
+    "photoAfter": 1
   }
 }
