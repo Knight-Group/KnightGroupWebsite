@@ -3243,6 +3243,38 @@
       ]
     },
     {
+      "id": "stucco-mailbox-f467b97-before-after",
+      "title": "Stucco Mailbox \u2014 before & after",
+      "description": "Before-and-after proof from a stucco mailbox job completed by Knight Group in Oldsmar.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-stucco-mailbox-f467b97.webp",
+          "filename": "before-after-stucco-mailbox-f467b97.webp",
+          "step": 1,
+          "title": "Stucco Mailbox before and after",
+          "seoAlt": "Stucco Mailbox before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a stucco mailbox job completed in a Oldsmar home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Oldsmar",
+      "citySlug": "oldsmar",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Will prorate Added 2 hours for unforeseen circumstances will not be charged unless further problems are found With wire brush I removed all loose material and visible rust to clean usable surface. Used rust preventer on any metal I saw. Primed affected areas with a concrete bonding primer. Used hydraulic cement to shape mail box then stuccoed over top. Took 2 samples to Home Depot to have colors paint matched.\u2026",
+      "photoBefore": 3,
+      "photoProcess": 7,
+      "photoAfter": 4
+    },
+    {
       "id": "the-caulking-around-the-toilet-needs-to-be-repla-before-after",
       "title": "The caulking around the toilet needs to be replaced The AC filter needs to be changed. Filter size is 16 x 20. This is a \u2014 before & after",
       "description": "Before-and-after proof from a the caulking around the toilet needs to be replaced the ac filter needs to be changed. filter size is 16 x 20. this is a job completed by Knight Group.",
@@ -6845,6 +6877,32 @@
       "beforeAfter": true,
       "groupTitle": "Stove indicator light issue \u2014 before & after",
       "groupDescription": "Before-and-after proof from a stove indicator light issue job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-stucco-mailbox-f467b97.webp",
+      "filename": "before-after-stucco-mailbox-f467b97.webp",
+      "group": "stucco-mailbox-f467b97-before-after",
+      "step": 1,
+      "title": "Stucco Mailbox before and after",
+      "seoAlt": "Stucco Mailbox before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a stucco mailbox job completed in a Oldsmar home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Stucco Mailbox \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a stucco mailbox job completed by Knight Group in Oldsmar.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Oldsmar",
+      "citySlug": "oldsmar",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Will prorate Added 2 hours for unforeseen circumstances will not be charged unless further problems are found With wire brush I removed all loose material and visible rust to clean usable surface. Used rust preventer on any metal I saw. Primed affected areas with a concrete bonding primer. Used hydraulic cement to shape mail box then stuccoed over top. Took 2 samples to Home Depot to have colors paint matched.\u2026",
+      "photoBefore": 3,
+      "photoProcess": 7,
+      "photoAfter": 4
     },
     {
       "src": "GalleryImages/before-after-the-caulking-around-the-toilet-needs-to-be-repla.webp",

@@ -2639,5 +2639,30 @@
     "photoBefore": 4,
     "photoProcess": 2,
     "photoAfter": 6
+  },
+  "before-after-stucco-mailbox-f467b97.webp": {
+    "group": "stucco-mailbox-f467b97-before-after",
+    "groupTitle": "Stucco Mailbox \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a stucco mailbox job completed by Knight Group in Oldsmar.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Stucco Mailbox before and after",
+    "description": "Before-and-after comparison from a stucco mailbox job completed in a Oldsmar home.",
+    "beforeAfter": true,
+    "scope_slug": "stucco-mailbox-f467b97",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Oldsmar",
+    "citySlug": "oldsmar",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Will prorate Added 2 hours for unforeseen circumstances will not be charged unless further problems are found With wire brush I removed all loose material and visible rust to clean usable surface. Used rust preventer on any metal I saw. Primed affected areas with a concrete bonding primer. Used hydraulic cement to shape mail box then stuccoed over top. Took 2 samples to Home Depot to have colors paint matched.\u2026",
+    "photoBefore": 3,
+    "photoProcess": 7,
+    "photoAfter": 4
   }
 }
