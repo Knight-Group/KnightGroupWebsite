@@ -1806,6 +1806,38 @@
       ]
     },
     {
+      "id": "musty-odor-wall-inspection-f6407f8-before-after",
+      "title": "Musty Odor Wall Inspection \u2014 before & after",
+      "description": "Before-and-after proof from a musty odor wall inspection job completed by Knight Group in Largo.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-musty-odor-wall-inspection-f6407f8.webp",
+          "filename": "before-after-musty-odor-wall-inspection-f6407f8.webp",
+          "step": 1,
+          "title": "Musty Odor Wall Inspection before and after",
+          "seoAlt": "Musty Odor Wall Inspection before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a musty odor wall inspection job completed in a Largo home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Largo",
+      "citySlug": "largo",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "I\u2019m not sure exactly how sensitive my meter is or what the moisture level usually is but it for sure is saying that behind the stove was the most saturated. Odor wasn\u2019t very powerful at the moment but there is a musty/moldy smell on the left wall in the hallway behind the switch and behind the stove. I Did not see any plumbing issues, water damage or standing water anywhere can return with a pinned moisture meter\u2026",
+      "photoBefore": 1,
+      "photoProcess": 2,
+      "photoAfter": 1
+    },
+    {
       "id": "office-ceiling-fan-malfunction-before-after",
       "title": "Office ceiling fan malfunction \u2014 before & after",
       "description": "Before-and-after proof from a office ceiling fan malfunction job completed by Knight Group.",
@@ -4925,6 +4957,32 @@
       "photoBefore": 4,
       "photoProcess": 3,
       "photoAfter": 4
+    },
+    {
+      "src": "GalleryImages/before-after-musty-odor-wall-inspection-f6407f8.webp",
+      "filename": "before-after-musty-odor-wall-inspection-f6407f8.webp",
+      "group": "musty-odor-wall-inspection-f6407f8-before-after",
+      "step": 1,
+      "title": "Musty Odor Wall Inspection before and after",
+      "seoAlt": "Musty Odor Wall Inspection before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a musty odor wall inspection job completed in a Largo home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Musty Odor Wall Inspection \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a musty odor wall inspection job completed by Knight Group in Largo.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Largo",
+      "citySlug": "largo",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "I\u2019m not sure exactly how sensitive my meter is or what the moisture level usually is but it for sure is saying that behind the stove was the most saturated. Odor wasn\u2019t very powerful at the moment but there is a musty/moldy smell on the left wall in the hallway behind the switch and behind the stove. I Did not see any plumbing issues, water damage or standing water anywhere can return with a pinned moisture meter\u2026",
+      "photoBefore": 1,
+      "photoProcess": 2,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-office-ceiling-fan-malfunction.webp",
