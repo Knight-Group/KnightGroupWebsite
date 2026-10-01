@@ -3039,5 +3039,30 @@
     "photoBefore": 1,
     "photoProcess": 0,
     "photoAfter": 2
+  },
+  "before-after-door-lock-repair-9d81b62.webp": {
+    "group": "door-lock-repair-9d81b62-before-after",
+    "groupTitle": "Door lock repair \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a door lock repair job completed by Knight Group in Largo.",
+    "category": "doors-windows",
+    "serviceLink": "/Services/doors-windows",
+    "step": 1,
+    "title": "Door lock repair before and after",
+    "description": "Before-and-after comparison from a door lock repair job completed in a Largo home.",
+    "beforeAfter": true,
+    "scope_slug": "door-lock-repair-9d81b62",
+    "source": "dispatch",
+    "cluster": "door_lock",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Largo",
+    "citySlug": "largo",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Removed ls faulty lock. It became loose and a wire was ripped when it rocked. Installed preferred lock set per . Programmed a total of 8 codes and changed program number to agreed numbers",
+    "photoBefore": 2,
+    "photoProcess": 4,
+    "photoAfter": 4
   }
 }
