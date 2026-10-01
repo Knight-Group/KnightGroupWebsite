@@ -2714,5 +2714,30 @@
     "photoBefore": 3,
     "photoProcess": 1,
     "photoAfter": 2
+  },
+  "before-after-master-bath-ceiling-moisture-bdb5734.webp": {
+    "group": "master-bath-ceiling-moisture-bdb5734-before-after",
+    "groupTitle": "Master-bath ceiling / moisture \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a master-bath ceiling / moisture job completed by Knight Group in Tampa.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Master-bath ceiling / moisture before and after",
+    "description": "Before-and-after comparison from a master-bath ceiling / moisture job completed in a Tampa home.",
+    "beforeAfter": true,
+    "scope_slug": "master-bath-ceiling-moisture-bdb5734",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Tampa",
+    "citySlug": "tampa",
+    "countyName": "Hillsborough County",
+    "completedMonth": "September 2026",
+    "workNotes": "Roof vent / flashing: Adjusted and raised vent where it was busted through ceiling. Cut off all excess and damaged area and installed new rain hood. Sealed all damaged penetrations and non essential openings with roofing sealant; Master-bath ceiling / moisture: Cut back and removed all damaged ceiling and scrapped failed texture. Installed new drywall and spackled. Added new texture (knockdown) to match the rest\u2026",
+    "photoBefore": 4,
+    "photoProcess": 2,
+    "photoAfter": 1
   }
 }
