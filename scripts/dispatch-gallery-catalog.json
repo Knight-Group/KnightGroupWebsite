@@ -1689,5 +1689,30 @@
     "photoBefore": 1,
     "photoProcess": 1,
     "photoAfter": 1
+  },
+  "before-after-kitchen-ceiling-light-fixture-9fd0b59.webp": {
+    "group": "kitchen-ceiling-light-fixture-9fd0b59-before-after",
+    "groupTitle": "Kitchen Ceiling Light Fixture \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a kitchen ceiling light fixture job completed by Knight Group in St. Petersburg.",
+    "category": "electrical",
+    "serviceLink": "/Services/electrical-work",
+    "step": 1,
+    "title": "Kitchen Ceiling Light Fixture before and after",
+    "description": "Before-and-after comparison from a kitchen ceiling light fixture job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "kitchen-ceiling-light-fixture-9fd0b59",
+    "source": "dispatch",
+    "cluster": "electrical_fixture",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Scrape, mud, texture and paint ceiling to match then put light back up. Used 3/4 gallon of killz primer to paint any water stains or scuffs around house followed with a pure white. Laundry room I filled any divots and sanded all walls to create adhesion. Used killz to prime all walls in room. Finish with same paint from ceiling in kitchen. In total used 2 quarts or paint and nearly a gallon of primer Laundry room\u2026",
+    "photoBefore": 1,
+    "photoProcess": 3,
+    "photoAfter": 2
   }
 }
