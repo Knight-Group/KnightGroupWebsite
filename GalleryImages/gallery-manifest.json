@@ -2791,6 +2791,38 @@
       ]
     },
     {
+      "id": "sticky-door-missed-from-previous-ticket-9950f3e-before-after",
+      "title": "Sticky Door (missed from previous ticket) \u2014 before & after",
+      "description": "Before-and-after proof from a sticky door (missed from previous ticket) job completed by Knight Group in St. Petersburg.",
+      "category": "doors-windows",
+      "serviceLink": "/Services/doors-windows",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-sticky-door-missed-from-previous-ticket-9950f3e.webp",
+          "filename": "before-after-sticky-door-missed-from-previous-ticket-9950f3e.webp",
+          "step": 1,
+          "title": "Sticky Door (missed from previous ticket) before and after",
+          "seoAlt": "Sticky Door (missed from previous ticket) before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a sticky door (missed from previous ticket) job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "door_lock",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Sticky Door (missed from previous ticket): Sticky door fixed... Venderoo did say not to fix it, but by the time I'd seen it, it was already done. Was a courtesy fix anyways, since it was missed on the first initial ticket (although the ticket was already maxed)",
+      "photoBefore": 2,
+      "photoProcess": 2,
+      "photoAfter": 1
+    },
+    {
       "id": "stove-handle-af86c23-before-after",
       "title": "Stove Handle \u2014 before & after",
       "description": "Before-and-after proof from a stove handle job completed by Knight Group in Pinellas Park.",
@@ -5905,6 +5937,32 @@
       "beforeAfter": true,
       "groupTitle": "Stair safety tape repair \u2014 before & after",
       "groupDescription": "Peeling anti-slip tape removed and replaced on stair treads for safer footing."
+    },
+    {
+      "src": "GalleryImages/before-after-sticky-door-missed-from-previous-ticket-9950f3e.webp",
+      "filename": "before-after-sticky-door-missed-from-previous-ticket-9950f3e.webp",
+      "group": "sticky-door-missed-from-previous-ticket-9950f3e-before-after",
+      "step": 1,
+      "title": "Sticky Door (missed from previous ticket) before and after",
+      "seoAlt": "Sticky Door (missed from previous ticket) before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a sticky door (missed from previous ticket) job completed in a St. Petersburg home.",
+      "category": "doors-windows",
+      "serviceLink": "/Services/doors-windows",
+      "beforeAfter": true,
+      "groupTitle": "Sticky Door (missed from previous ticket) \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a sticky door (missed from previous ticket) job completed by Knight Group in St. Petersburg.",
+      "cluster": "door_lock",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Sticky Door (missed from previous ticket): Sticky door fixed... Venderoo did say not to fix it, but by the time I'd seen it, it was already done. Was a courtesy fix anyways, since it was missed on the first initial ticket (although the ticket was already maxed)",
+      "photoBefore": 2,
+      "photoProcess": 2,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-stove-handle-af86c23.webp",
