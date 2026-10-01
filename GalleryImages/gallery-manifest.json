@@ -3303,6 +3303,38 @@
       ]
     },
     {
+      "id": "work-scope-33fc78f-before-after",
+      "title": "Work scope \u2014 before & after",
+      "description": "Before-and-after proof from a work scope job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-work-scope-33fc78f.webp",
+          "filename": "before-after-work-scope-33fc78f.webp",
+          "step": 1,
+          "title": "Work scope before and after",
+          "seoAlt": "Work scope before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a work scope job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Replaced faulty smoke detector Replaced faulty 10 year detector",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "a-wall-outlet-repair-93788a6-before-after",
       "title": "a wall outlet repair \u2014 before & after",
       "description": "Before-and-after proof from a a wall outlet repair job completed by Knight Group in Trinity.",
@@ -6264,6 +6296,32 @@
       "workNotes": "Laundry lock was repaired had to lower deadbolt receiver. Replace lock set/ deadbolt. Cleaned 2 ac /filters. Repair the tracks/hinges on 5 cabinet drawers/doors. Remove trash from laundry and haul to city dump. Replace handle and chain to flapper in toilet. Removed wasp nest from mailbox also swept up laundry room Laundry lock was repaired had to lower deadbolt receiver. Replace lock set/ deadbolt. Cleaned 2 ac\u2026",
       "photoBefore": 1,
       "photoProcess": 1,
+      "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-work-scope-33fc78f.webp",
+      "filename": "before-after-work-scope-33fc78f.webp",
+      "group": "work-scope-33fc78f-before-after",
+      "step": 1,
+      "title": "Work scope before and after",
+      "seoAlt": "Work scope before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a work scope job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Work scope \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a work scope job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Replaced faulty smoke detector Replaced faulty 10 year detector",
+      "photoBefore": 4,
+      "photoProcess": 0,
       "photoAfter": 1
     },
     {

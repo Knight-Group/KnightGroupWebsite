@@ -2264,5 +2264,30 @@
     "photoBefore": 2,
     "photoProcess": 3,
     "photoAfter": 3
+  },
+  "before-after-work-scope-33fc78f.webp": {
+    "group": "work-scope-33fc78f-before-after",
+    "groupTitle": "Work scope \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a work scope job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Work scope before and after",
+    "description": "Before-and-after comparison from a work scope job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "work-scope-33fc78f",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Replaced faulty smoke detector Replaced faulty 10 year detector",
+    "photoBefore": 4,
+    "photoProcess": 0,
+    "photoAfter": 1
   }
 }
