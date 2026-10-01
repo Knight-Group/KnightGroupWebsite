@@ -230,6 +230,38 @@
       ]
     },
     {
+      "id": "blemishes-trim-123a8c6-before-after",
+      "title": "Blemishes / trim \u2014 before & after",
+      "description": "Before-and-after proof from a blemishes / trim job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-blemishes-trim-123a8c6.webp",
+          "filename": "before-after-blemishes-trim-123a8c6.webp",
+          "step": 1,
+          "title": "Blemishes / trim before and after",
+          "seoAlt": "Blemishes / trim before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a blemishes / trim job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Scrape, mud, texture and paint ceiling to match then put light back up. Used 3/4 gallon of killz primer to paint any water stains or scuffs around house followed with a pure white. Laundry room I filled any divots and sanded all walls to create adhesion. Used killz to prime all walls in room. Finish with same paint from ceiling in kitchen. In total used 2 quarts or paint and nearly a gallon of primer Laundry room\u2026",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 3
+    },
+    {
       "id": "blinds-replacement-before-after",
       "title": "Broken blinds replacement \u2014 before & after",
       "description": "Damaged window blinds removed and replaced with a clean, working set.",
@@ -3327,6 +3359,32 @@
       "photoBefore": 2,
       "photoProcess": 2,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-blemishes-trim-123a8c6.webp",
+      "filename": "before-after-blemishes-trim-123a8c6.webp",
+      "group": "blemishes-trim-123a8c6-before-after",
+      "step": 1,
+      "title": "Blemishes / trim before and after",
+      "seoAlt": "Blemishes / trim before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a blemishes / trim job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Blemishes / trim \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a blemishes / trim job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Scrape, mud, texture and paint ceiling to match then put light back up. Used 3/4 gallon of killz primer to paint any water stains or scuffs around house followed with a pure white. Laundry room I filled any divots and sanded all walls to create adhesion. Used killz to prime all walls in room. Finish with same paint from ceiling in kitchen. In total used 2 quarts or paint and nearly a gallon of primer Laundry room\u2026",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 3
     },
     {
       "src": "GalleryImages/before-after-blind-repair.webp",
