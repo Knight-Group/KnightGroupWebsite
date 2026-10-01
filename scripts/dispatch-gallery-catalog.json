@@ -1964,5 +1964,30 @@
     "photoBefore": 1,
     "photoProcess": 1,
     "photoAfter": 1
+  },
+  "before-after-clean-vent-cover-8cca52c.webp": {
+    "group": "clean-vent-cover-8cca52c-before-after",
+    "groupTitle": "Clean vent cover \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a clean vent cover job completed by Knight Group in Clearwater.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Clean vent cover before and after",
+    "description": "Before-and-after comparison from a clean vent cover job completed in a Clearwater home.",
+    "beforeAfter": true,
+    "scope_slug": "clean-vent-cover-8cca52c",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Clearwater",
+    "citySlug": "clearwater",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Clean any defects on cabinet and paint any too bad. Checked both smoke detectors. Replaced faucet in kitchen. Replace air filter and clean off all vents. Patch hole in wall by door and in living room. Textured living room wall needs to dry before paint. Paint is in laundry room storage Replace air filter. Scrubbed down vents. Spray painted filter vent due to rust",
+    "photoBefore": 2,
+    "photoProcess": 2,
+    "photoAfter": 2
   }
 }
