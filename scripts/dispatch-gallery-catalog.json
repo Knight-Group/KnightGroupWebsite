@@ -2789,5 +2789,30 @@
     "photoBefore": 5,
     "photoProcess": 1,
     "photoAfter": 1
+  },
+  "before-after-baseboard-cap-molding-replacement-056b4de.webp": {
+    "group": "baseboard-cap-molding-replacement-056b4de-before-after",
+    "groupTitle": "Baseboard cap molding replacement \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a baseboard cap molding replacement job completed by Knight Group in Safety Harbor.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Baseboard cap molding replacement before and after",
+    "description": "Before-and-after comparison from a baseboard cap molding replacement job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "baseboard-cap-molding-replacement-056b4de",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Remove and replace approximately 11 linear feet of the quarter-round or cap molding installed along the top of the affected baseboard. Install the closest readily available matching profile. Custom-milled or unavailable trim would require a revision",
+    "photoBefore": 2,
+    "photoProcess": 1,
+    "photoAfter": 1
   }
 }

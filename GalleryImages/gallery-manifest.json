@@ -242,6 +242,38 @@
       "photoAfter": 2
     },
     {
+      "id": "baseboard-cap-molding-replacement-056b4de-before-after",
+      "title": "Baseboard cap molding replacement \u2014 before & after",
+      "description": "Before-and-after proof from a baseboard cap molding replacement job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-baseboard-cap-molding-replacement-056b4de.webp",
+          "filename": "before-after-baseboard-cap-molding-replacement-056b4de.webp",
+          "step": 1,
+          "title": "Baseboard cap molding replacement before and after",
+          "seoAlt": "Baseboard cap molding replacement before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a baseboard cap molding replacement job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Remove and replace approximately 11 linear feet of the quarter-round or cap molding installed along the top of the affected baseboard. Install the closest readily available matching profile. Custom-milled or unavailable trim would require a revision",
+      "photoBefore": 2,
+      "photoProcess": 1,
+      "photoAfter": 1
+    },
+    {
       "id": "bathroom-tub-window-remodel",
       "title": "Bathroom tub surround, window, and floor work",
       "description": "Finished bathroom remodel with tile around the tub and window, updated faucet, window replacement, and new flooring.",
@@ -4620,6 +4652,32 @@
       "workNotes": "In total I purchased and replace 26 fluorescent lights. Existing lights are led and not designed for ballast. Because of wrong bulb it tripped the gfci. Confirmed power at breaker. Confirmed no power on wires before wall plug/ballast. Will need electrician to find where gfcis are located. Repair 3 toilets. New handle on 2. New fill valves and flappers for all 3. Mainline is clogged confirmed via clean out behind\u2026",
       "photoBefore": 3,
       "photoProcess": 4,
+      "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-baseboard-cap-molding-replacement-056b4de.webp",
+      "filename": "before-after-baseboard-cap-molding-replacement-056b4de.webp",
+      "group": "baseboard-cap-molding-replacement-056b4de-before-after",
+      "step": 1,
+      "title": "Baseboard cap molding replacement before and after",
+      "seoAlt": "Baseboard cap molding replacement before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a baseboard cap molding replacement job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Baseboard cap molding replacement \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a baseboard cap molding replacement job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Remove and replace approximately 11 linear feet of the quarter-round or cap molding installed along the top of the affected baseboard. Install the closest readily available matching profile. Custom-milled or unavailable trim would require a revision",
+      "photoBefore": 2,
+      "photoProcess": 1,
       "photoAfter": 1
     },
     {
