@@ -3754,6 +3754,37 @@
       "photoAfter": 4
     },
     {
+      "id": "surface-treatment-of-damaged-walls-03c8264-before-after",
+      "title": "Surface treatment of damaged walls \u2014 before & after",
+      "description": "Before-and-after proof from a surface treatment of damaged walls job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-surface-treatment-of-damaged-walls-03c8264.webp",
+          "filename": "before-after-surface-treatment-of-damaged-walls-03c8264.webp",
+          "step": 1,
+          "title": "Surface treatment of damaged walls before and after",
+          "seoAlt": "Surface treatment of damaged walls before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a surface treatment of damaged walls job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "workNotes": "Floating flooring and quarter-round: Install customer supplied flooring Spray and clean the visibly affected wall and ceiling-edge surfaces with a bleach-based mold and mildew surface treatment before finish preparation. Protect the adjacent floor and finishes during treatment. Work is limited to the pictured exposed surfaces and does not include concealed-cavity remediation or correction of the moisture source",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 2
+    },
+    {
       "id": "the-caulking-around-the-toilet-needs-to-be-repla-before-after",
       "title": "The caulking around the toilet needs to be replaced The AC filter needs to be changed. Filter size is 16 x 20. This is a \u2014 before & after",
       "description": "Before-and-after proof from a the caulking around the toilet needs to be replaced the ac filter needs to be changed. filter size is 16 x 20. this is a job completed by Knight Group.",
@@ -7891,6 +7922,31 @@
       "photoBefore": 3,
       "photoProcess": 7,
       "photoAfter": 4
+    },
+    {
+      "src": "GalleryImages/before-after-surface-treatment-of-damaged-walls-03c8264.webp",
+      "filename": "before-after-surface-treatment-of-damaged-walls-03c8264.webp",
+      "group": "surface-treatment-of-damaged-walls-03c8264-before-after",
+      "step": 1,
+      "title": "Surface treatment of damaged walls before and after",
+      "seoAlt": "Surface treatment of damaged walls before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a surface treatment of damaged walls job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Surface treatment of damaged walls \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a surface treatment of damaged walls job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "workNotes": "Floating flooring and quarter-round: Install customer supplied flooring Spray and clean the visibly affected wall and ceiling-edge surfaces with a bleach-based mold and mildew surface treatment before finish preparation. Protect the adjacent floor and finishes during treatment. Work is limited to the pictured exposed surfaces and does not include concealed-cavity remediation or correction of the moisture source",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 2
     },
     {
       "src": "GalleryImages/before-after-the-caulking-around-the-toilet-needs-to-be-repla.webp",
