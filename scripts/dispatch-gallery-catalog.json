@@ -2265,8 +2265,8 @@
     "photoProcess": 3,
     "photoAfter": 3
   },
-  "before-after-work-scope-33fc78f.webp": {
-    "group": "work-scope-33fc78f-before-after",
+  "before-after-work-scope-1893a20.webp": {
+    "group": "work-scope-1893a20-before-after",
     "groupTitle": "Work scope \u2014 before & after",
     "groupDescription": "Before-and-after proof from a work scope job completed by Knight Group in St. Petersburg.",
     "category": "general-repairs",
@@ -2275,7 +2275,7 @@
     "title": "Work scope before and after",
     "description": "Before-and-after comparison from a work scope job completed in a St. Petersburg home.",
     "beforeAfter": true,
-    "scope_slug": "work-scope-33fc78f",
+    "scope_slug": "work-scope-1893a20",
     "source": "dispatch",
     "cluster": "general",
     "workerName": "Vince Knight",
@@ -2285,9 +2285,9 @@
     "citySlug": "st-petersburg",
     "countyName": "Pinellas County",
     "completedMonth": "September 2026",
-    "workNotes": "Replaced faulty smoke detector Replaced faulty 10 year detector",
-    "photoBefore": 4,
-    "photoProcess": 0,
+    "workNotes": "Work scope: Left door wooden panel was broken was able to pull out to original spot and secure with screws. Right side anchor was pushed in was able to get screws above it to prevent sinking",
+    "photoBefore": 3,
+    "photoProcess": 4,
     "photoAfter": 1
   }
 }
