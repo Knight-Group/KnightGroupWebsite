@@ -3215,17 +3215,17 @@
     "photoProcess": 0,
     "photoAfter": 1
   },
-  "before-after-change-lock-set-on-2-with-4-matching-key-03d49fa.webp": {
-    "group": "change-lock-set-on-2-with-4-matching-key-03d49fa-before-after",
-    "groupTitle": "Change lock set on 2 with 4 matching keys \u2014 before & after",
-    "groupDescription": "Before-and-after proof from a change lock set on 2 with 4 matching keys job completed by Knight Group in St. Petersburg.",
+  "before-after-replace-batteries-for-back-door-a39e712.webp": {
+    "group": "replace-batteries-for-back-door-a39e712-before-after",
+    "groupTitle": "Replace batteries for back door \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a replace batteries for back door job completed by Knight Group in St. Petersburg.",
     "category": "doors-windows",
     "serviceLink": "/Services/doors-windows",
     "step": 1,
-    "title": "Change lock set on 2 with 4 matching keys before and after",
-    "description": "Before-and-after comparison from a change lock set on 2 with 4 matching keys job completed in a St. Petersburg home.",
+    "title": "Replace batteries for back door before and after",
+    "description": "Before-and-after comparison from a replace batteries for back door job completed in a St. Petersburg home.",
     "beforeAfter": true,
-    "scope_slug": "change-lock-set-on-2-with-4-matching-key-03d49fa",
+    "scope_slug": "replace-batteries-for-back-door-a39e712",
     "source": "dispatch",
     "cluster": "door_lock",
     "workerName": "Vince Knight",
@@ -3234,10 +3234,10 @@
     "cityName": "St. Petersburg",
     "citySlug": "st-petersburg",
     "countyName": "Pinellas County",
-    "completedMonth": "August 2026",
-    "workNotes": "Dug out post to set plumb and install new latch for fence. Remove old cable wires. Patch ceiling scrapped then skim coat then texture and paint. Replaced both lock sets. Pressure washed walk way and cleaned front of house",
-    "photoBefore": 2,
-    "photoProcess": 0,
-    "photoAfter": 3
+    "completedMonth": "October 2026",
+    "workNotes": "replace the battery in a smoke detector and replace a battery in the back door keypad: Listened and located chirping smoke detector replace 9 volt battery Replaced batteries in both locksets",
+    "photoBefore": 4,
+    "photoProcess": 1,
+    "photoAfter": 1
   }
 }

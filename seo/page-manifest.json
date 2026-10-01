@@ -760,13 +760,6 @@
     },
     {
       "pageType": "gallery-project",
-      "slug": "change-lock-set-on-2-with-4-matching-key-03d49fa-before-after",
-      "path": "gallery/change-lock-set-on-2-with-4-matching-key-03d49fa-before-after.html",
-      "canonical": "https://www.knightgroup.com/gallery/change-lock-set-on-2-with-4-matching-key-03d49fa-before-after",
-      "priority": "0.64"
-    },
-    {
-      "pageType": "gallery-project",
       "slug": "change-locks-93a60c5-before-after",
       "path": "gallery/change-locks-93a60c5-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/change-locks-93a60c5-before-after",
@@ -1225,6 +1218,13 @@
       "slug": "replace-7-window-screens-c2796ec-before-after",
       "path": "gallery/replace-7-window-screens-c2796ec-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/replace-7-window-screens-c2796ec-before-after",
+      "priority": "0.64"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "replace-batteries-for-back-door-a39e712-before-after",
+      "path": "gallery/replace-batteries-for-back-door-a39e712-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/replace-batteries-for-back-door-a39e712-before-after",
       "priority": "0.64"
     },
     {
