@@ -2025,6 +2025,36 @@
       "photoAfter": 1
     },
     {
+      "id": "replace-light-bulbs-6fef00c-before-after",
+      "title": "Replace light bulbs \u2014 before & after",
+      "description": "Before-and-after proof from a replace light bulbs job completed by Knight Group in Pinellas County.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-replace-light-bulbs-6fef00c.webp",
+          "filename": "before-after-replace-light-bulbs-6fef00c.webp",
+          "step": 1,
+          "title": "Replace light bulbs before and after",
+          "seoAlt": "Replace light bulbs before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a replace light bulbs job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Changed lock set. Cleaned then painted front door. Glue down seams of pantry shelves and taped tight til cement cures. Replaced 6 bulbs 2 in bathroom and 4 fluorescent bulbs in kitchen. Repair tracks for kitchen drawer. Glued wall paper back down in bathtub. Replaced all drip trays for stove. Sanded valance down then used wood filler to reshape damaged area. Needs to dry then I can sand smooth and paint",
+      "photoBefore": 3,
+      "photoProcess": 0,
+      "photoAfter": 2
+    },
+    {
       "id": "resecure-loose-screen-door-before-after",
       "title": "Resecure Loose Screen Door \u2014 before & after",
       "description": "Before-and-after proof from a resecure loose screen door job completed by Knight Group.",
@@ -4822,6 +4852,30 @@
       "photoBefore": 3,
       "photoProcess": 3,
       "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-replace-light-bulbs-6fef00c.webp",
+      "filename": "before-after-replace-light-bulbs-6fef00c.webp",
+      "group": "replace-light-bulbs-6fef00c-before-after",
+      "step": 1,
+      "title": "Replace light bulbs before and after",
+      "seoAlt": "Replace light bulbs before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a replace light bulbs job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Replace light bulbs \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a replace light bulbs job completed by Knight Group in Pinellas County.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Changed lock set. Cleaned then painted front door. Glue down seams of pantry shelves and taped tight til cement cures. Replaced 6 bulbs 2 in bathroom and 4 fluorescent bulbs in kitchen. Repair tracks for kitchen drawer. Glued wall paper back down in bathtub. Replaced all drip trays for stove. Sanded valance down then used wood filler to reshape damaged area. Needs to dry then I can sand smooth and paint",
+      "photoBefore": 3,
+      "photoProcess": 0,
+      "photoAfter": 2
     },
     {
       "src": "GalleryImages/before-after-replacing-this-main-shut-off-and-hose-bib-copper.webp",
