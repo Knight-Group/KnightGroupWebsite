@@ -410,6 +410,38 @@
       ]
     },
     {
+      "id": "bubbled-wall-surface-and-texture-repair-2d93e5a-before-after",
+      "title": "Bubbled wall surface and texture repair \u2014 before & after",
+      "description": "Before-and-after proof from a bubbled wall surface and texture repair job completed by Knight Group in Safety Harbor.",
+      "category": "painting",
+      "serviceLink": "/Services/drywall-repair",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-bubbled-wall-surface-and-texture-repair-2d93e5a.webp",
+          "filename": "before-after-bubbled-wall-surface-and-texture-repair-2d93e5a.webp",
+          "step": 1,
+          "title": "Bubbled wall surface and texture repair before and after",
+          "seoAlt": "Bubbled wall surface and texture repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a bubbled wall surface and texture repair job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "drywall",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Office flooring and quarter-round install: Self leveled low/ high floor spots Installed flooring Installed quarter round Caulked gaps and nail holes Cut and installed transition; Bubbled wall surface and texture repair: Scraped loose paint and texture clean Applied new spackle and texture Office flooring and quarter-round install: Self leveled low/ high floor spots Installed flooring Installed quarter round\u2026",
+      "photoBefore": 3,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "cabinet-repair-339b0d9-before-after",
       "title": "Cabinet repair \u2014 before & after",
       "description": "Before-and-after proof from a cabinet repair job completed by Knight Group in Pinellas Park.",
@@ -4985,6 +5017,32 @@
       "beforeAfter": true,
       "groupTitle": "Stove burner repair \u2014 before & after",
       "groupDescription": "Broken stove burner restored to safe, working condition."
+    },
+    {
+      "src": "GalleryImages/before-after-bubbled-wall-surface-and-texture-repair-2d93e5a.webp",
+      "filename": "before-after-bubbled-wall-surface-and-texture-repair-2d93e5a.webp",
+      "group": "bubbled-wall-surface-and-texture-repair-2d93e5a-before-after",
+      "step": 1,
+      "title": "Bubbled wall surface and texture repair before and after",
+      "seoAlt": "Bubbled wall surface and texture repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a bubbled wall surface and texture repair job completed in a Safety Harbor home.",
+      "category": "painting",
+      "serviceLink": "/Services/drywall-repair",
+      "beforeAfter": true,
+      "groupTitle": "Bubbled wall surface and texture repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a bubbled wall surface and texture repair job completed by Knight Group in Safety Harbor.",
+      "cluster": "drywall",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Office flooring and quarter-round install: Self leveled low/ high floor spots Installed flooring Installed quarter round Caulked gaps and nail holes Cut and installed transition; Bubbled wall surface and texture repair: Scraped loose paint and texture clean Applied new spackle and texture Office flooring and quarter-round install: Self leveled low/ high floor spots Installed flooring Installed quarter round\u2026",
+      "photoBefore": 3,
+      "photoProcess": 0,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-cabinet-repair-339b0d9.webp",
