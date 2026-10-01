@@ -1711,6 +1711,37 @@
       "photoAfter": 4
     },
     {
+      "id": "replace-7-window-screens-c2796ec-before-after",
+      "title": "Replace 7 Window Screens \u2014 before & after",
+      "description": "Before-and-after proof from a replace 7 window screens job completed by Knight Group in Pinellas Park.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-replace-7-window-screens-c2796ec.webp",
+          "filename": "before-after-replace-7-window-screens-c2796ec.webp",
+          "step": 1,
+          "title": "Replace 7 Window Screens before and after",
+          "seoAlt": "Replace 7 Window Screens before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a replace 7 window screens job completed in a Pinellas Park home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Pinellas Park",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Measured out screens on previous visit. Built screens at home and returned to install Measured out all screenless windows. Purchased required materials and built screens at home. Installed screens all windows are screened. I apologize I didn\u2019t see the stove and rug added to the ticket I can return to get those taken care of Billed separately from paid . Owner approved screens quote 8/27/26 via Colleen",
+      "photoBefore": 7,
+      "photoProcess": 0,
+      "photoAfter": 6
+    },
+    {
       "id": "resecure-loose-screen-door-before-after",
       "title": "Resecure Loose Screen Door \u2014 before & after",
       "description": "Before-and-after proof from a resecure loose screen door job completed by Knight Group.",
@@ -4191,6 +4222,31 @@
       "photoBefore": 3,
       "photoProcess": 0,
       "photoAfter": 4
+    },
+    {
+      "src": "GalleryImages/before-after-replace-7-window-screens-c2796ec.webp",
+      "filename": "before-after-replace-7-window-screens-c2796ec.webp",
+      "group": "replace-7-window-screens-c2796ec-before-after",
+      "step": 1,
+      "title": "Replace 7 Window Screens before and after",
+      "seoAlt": "Replace 7 Window Screens before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a replace 7 window screens job completed in a Pinellas Park home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Replace 7 Window Screens \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a replace 7 window screens job completed by Knight Group in Pinellas Park.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Pinellas Park",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Measured out screens on previous visit. Built screens at home and returned to install Measured out all screenless windows. Purchased required materials and built screens at home. Installed screens all windows are screened. I apologize I didn\u2019t see the stove and rug added to the ticket I can return to get those taken care of Billed separately from paid . Owner approved screens quote 8/27/26 via Colleen",
+      "photoBefore": 7,
+      "photoProcess": 0,
+      "photoAfter": 6
     },
     {
       "src": "GalleryImages/before-after-replacing-this-main-shut-off-and-hose-bib-copper.webp",
