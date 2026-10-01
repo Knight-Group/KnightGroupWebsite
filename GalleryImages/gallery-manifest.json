@@ -2832,6 +2832,38 @@
       "photoAfter": 3
     },
     {
+      "id": "roof-vent-flashing-4d9a013-before-after",
+      "title": "Roof vent / flashing \u2014 before & after",
+      "description": "Before-and-after proof from a roof vent / flashing job completed by Knight Group in Tampa.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-roof-vent-flashing-4d9a013.webp",
+          "filename": "before-after-roof-vent-flashing-4d9a013.webp",
+          "step": 1,
+          "title": "Roof vent / flashing before and after",
+          "seoAlt": "Roof vent / flashing before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a roof vent / flashing job completed in a Tampa home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Tampa",
+      "citySlug": "tampa",
+      "countyName": "Hillsborough County",
+      "completedMonth": "September 2026",
+      "workNotes": "Roof vent / flashing: Adjusted and raised vent where it was busted through ceiling. Cut off all excess and damaged area and installed new rain hood. Sealed all damaged penetrations and non essential openings with roofing sealant; Master-bath ceiling / moisture: Cut back and removed all damaged ceiling and scrapped failed texture. Installed new drywall and spackled. Added new texture (knockdown) to match the rest\u2026",
+      "photoBefore": 3,
+      "photoProcess": 1,
+      "photoAfter": 2
+    },
+    {
       "id": "room-restoration-before-after",
       "title": "Room restoration \u2014 before & after",
       "description": "Interior room work shown from damage and tear-out through the restored finish.",
@@ -6639,6 +6671,32 @@
       "photoBefore": 2,
       "photoProcess": 0,
       "photoAfter": 3
+    },
+    {
+      "src": "GalleryImages/before-after-roof-vent-flashing-4d9a013.webp",
+      "filename": "before-after-roof-vent-flashing-4d9a013.webp",
+      "group": "roof-vent-flashing-4d9a013-before-after",
+      "step": 1,
+      "title": "Roof vent / flashing before and after",
+      "seoAlt": "Roof vent / flashing before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a roof vent / flashing job completed in a Tampa home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Roof vent / flashing \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a roof vent / flashing job completed by Knight Group in Tampa.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Tampa",
+      "citySlug": "tampa",
+      "countyName": "Hillsborough County",
+      "completedMonth": "September 2026",
+      "workNotes": "Roof vent / flashing: Adjusted and raised vent where it was busted through ceiling. Cut off all excess and damaged area and installed new rain hood. Sealed all damaged penetrations and non essential openings with roofing sealant; Master-bath ceiling / moisture: Cut back and removed all damaged ceiling and scrapped failed texture. Installed new drywall and spackled. Added new texture (knockdown) to match the rest\u2026",
+      "photoBefore": 3,
+      "photoProcess": 1,
+      "photoAfter": 2
     },
     {
       "src": "GalleryImages/before-after-secure-outlets-5be7424.webp",
