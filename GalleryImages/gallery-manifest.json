@@ -3583,6 +3583,37 @@
       "photoAfter": 3
     },
     {
+      "id": "weather-seal-four-exterior-22fe867-before-after",
+      "title": "Weather-seal four exterior \u2014 before & after",
+      "description": "Before-and-after proof from a weather-seal four exterior job completed by Knight Group in Pinellas Park.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-weather-seal-four-exterior-22fe867.webp",
+          "filename": "before-after-weather-seal-four-exterior-22fe867.webp",
+          "step": 1,
+          "title": "Weather-seal four exterior before and after",
+          "seoAlt": "Weather-seal four exterior before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a weather-seal four exterior job completed in a Pinellas Park home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Pinellas Park",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Garage floor and baseboard paint: Cleaned floor and primed heavily. Several coats of primer to the base boards. Painted baseboards with a sealing paint. Painted floor with several coats. Left remaining paint there for touch ups Substantial gap under master bedroom door nearly 3\u201d. Tried several types of door sweeps. Broom style sweep installed on bedrooms. Master bedroom I suspect the wrong size door or a lot of\u2026",
+      "photoBefore": 4,
+      "photoProcess": 2,
+      "photoAfter": 6
+    },
+    {
       "id": "blind-repair-before-after",
       "title": "Window blind repair \u2014 before & after",
       "description": "Damaged slats and headrail hardware corrected so blinds operate smoothly.",
@@ -7045,6 +7076,31 @@
       "photoBefore": 1,
       "photoProcess": 1,
       "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-weather-seal-four-exterior-22fe867.webp",
+      "filename": "before-after-weather-seal-four-exterior-22fe867.webp",
+      "group": "weather-seal-four-exterior-22fe867-before-after",
+      "step": 1,
+      "title": "Weather-seal four exterior before and after",
+      "seoAlt": "Weather-seal four exterior before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a weather-seal four exterior job completed in a Pinellas Park home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Weather-seal four exterior \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a weather-seal four exterior job completed by Knight Group in Pinellas Park.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Pinellas Park",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Garage floor and baseboard paint: Cleaned floor and primed heavily. Several coats of primer to the base boards. Painted baseboards with a sealing paint. Painted floor with several coats. Left remaining paint there for touch ups Substantial gap under master bedroom door nearly 3\u201d. Tried several types of door sweeps. Broom style sweep installed on bedrooms. Master bedroom I suspect the wrong size door or a lot of\u2026",
+      "photoBefore": 4,
+      "photoProcess": 2,
+      "photoAfter": 6
     },
     {
       "src": "GalleryImages/before-after-work-scope-1893a20.webp",
