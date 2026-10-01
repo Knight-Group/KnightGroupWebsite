@@ -3139,5 +3139,30 @@
     "photoBefore": 1,
     "photoProcess": 0,
     "photoAfter": 2
+  },
+  "before-after-scrape-loose-and-peeling-wall-paint-a18d950.webp": {
+    "group": "scrape-loose-and-peeling-wall-paint-a18d950-before-after",
+    "groupTitle": "Scrape loose and peeling wall paint \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a scrape loose and peeling wall paint job completed by Knight Group in Safety Harbor.",
+    "category": "painting",
+    "serviceLink": "/Services/painting-finishing",
+    "step": 1,
+    "title": "Scrape loose and peeling wall paint before and after",
+    "description": "Before-and-after comparison from a scrape loose and peeling wall paint job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "scrape-loose-and-peeling-wall-paint-a18d950",
+    "source": "dispatch",
+    "cluster": "paint",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "",
+    "workNotes": "Floating flooring and quarter-round: Install customer supplied flooring Scrape loose, peeling, and poorly bonded paint from the pictured damaged wall and ceiling-edge areas. Feather-sand the remaining edges and bag the resulting debris so the surfaces are ready for blocking primer. Removal beyond the visibly affected finish or replacement of soft drywall is a revision",
+    "photoBefore": 1,
+    "photoProcess": 1,
+    "photoAfter": 1
   }
 }
