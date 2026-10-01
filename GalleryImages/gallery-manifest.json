@@ -1439,6 +1439,38 @@
       "photoAfter": 1
     },
     {
+      "id": "flooring-perimeter-quarter-round-9804c12-before-after",
+      "title": "Flooring perimeter quarter-round \u2014 before & after",
+      "description": "Before-and-after proof from a flooring perimeter quarter-round job completed by Knight Group in Safety Harbor.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-flooring-perimeter-quarter-round-9804c12.webp",
+          "filename": "before-after-flooring-perimeter-quarter-round-9804c12.webp",
+          "step": 1,
+          "title": "Flooring perimeter quarter-round before and after",
+          "seoAlt": "Flooring perimeter quarter-round before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a flooring perimeter quarter-round job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "floor",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Install matching quarter-round around the perimeter of the new Office Room 2 laminate flooring, assumed to be approximately 40 linear feet. Make standard corner and doorway cuts and fasten the molding to the baseboard rather than through the floating floor. Unusual profiles or additional perimeter footage would be a revision",
+      "photoBefore": 1,
+      "photoProcess": 1,
+      "photoAfter": 1
+    },
+    {
       "id": "front-intrusion-be5d722-before-after",
       "title": "Front Intrusion \u2014 before & after",
       "description": "Before-and-after proof from a front intrusion job completed by Knight Group in St. Petersburg.",
@@ -5801,6 +5833,32 @@
       "workNotes": "Changed lock set. Cleaned then painted front door. Glue down seams of pantry shelves and taped tight til cement cures. Replaced 6 bulbs 2 in bathroom and 4 fluorescent bulbs in kitchen. Repair tracks for kitchen drawer. Glued wall paper back down in bathtub. Replaced all drip trays for stove. Sanded valance down then used wood filler to reshape damaged area. Needs to dry then I can sand smooth and paint",
       "photoBefore": 1,
       "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-flooring-perimeter-quarter-round-9804c12.webp",
+      "filename": "before-after-flooring-perimeter-quarter-round-9804c12.webp",
+      "group": "flooring-perimeter-quarter-round-9804c12-before-after",
+      "step": 1,
+      "title": "Flooring perimeter quarter-round before and after",
+      "seoAlt": "Flooring perimeter quarter-round before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a flooring perimeter quarter-round job completed in a Safety Harbor home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Flooring perimeter quarter-round \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a flooring perimeter quarter-round job completed by Knight Group in Safety Harbor.",
+      "cluster": "floor",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Install matching quarter-round around the perimeter of the new Office Room 2 laminate flooring, assumed to be approximately 40 linear feet. Make standard corner and doorway cuts and fasten the molding to the baseboard rather than through the floating floor. Unusual profiles or additional perimeter footage would be a revision",
+      "photoBefore": 1,
+      "photoProcess": 1,
       "photoAfter": 1
     },
     {

@@ -2889,5 +2889,30 @@
     "photoBefore": 1,
     "photoProcess": 1,
     "photoAfter": 1
+  },
+  "before-after-flooring-perimeter-quarter-round-9804c12.webp": {
+    "group": "flooring-perimeter-quarter-round-9804c12-before-after",
+    "groupTitle": "Flooring perimeter quarter-round \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a flooring perimeter quarter-round job completed by Knight Group in Safety Harbor.",
+    "category": "carpentry",
+    "serviceLink": "/Services/carpentry-framing",
+    "step": 1,
+    "title": "Flooring perimeter quarter-round before and after",
+    "description": "Before-and-after comparison from a flooring perimeter quarter-round job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "flooring-perimeter-quarter-round-9804c12",
+    "source": "dispatch",
+    "cluster": "floor",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Install matching quarter-round around the perimeter of the new Office Room 2 laminate flooring, assumed to be approximately 40 linear feet. Make standard corner and doorway cuts and fasten the molding to the baseboard rather than through the floating floor. Unusual profiles or additional perimeter footage would be a revision",
+    "photoBefore": 1,
+    "photoProcess": 1,
+    "photoAfter": 1
   }
 }
