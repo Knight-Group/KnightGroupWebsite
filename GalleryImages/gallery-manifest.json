@@ -2817,6 +2817,38 @@
       "photoAfter": 2
     },
     {
+      "id": "sliding-bedroom-2011368-before-after",
+      "title": "Sliding bedroom \u2014 before & after",
+      "description": "Before-and-after proof from a sliding bedroom job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-sliding-bedroom-2011368.webp",
+          "filename": "before-after-sliding-bedroom-2011368.webp",
+          "step": 1,
+          "title": "Sliding bedroom before and after",
+          "seoAlt": "Sliding bedroom before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a sliding bedroom job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Get water functional: Curb stop was buried and had to be dug out of the meter pit (city had not touched it). Located the Sensus meter and the whole-house yellow-handle shutoff, confirmed no service-line leaks, checked fixtures, and cleaned the kitchen aerator. Water is on and . Shut off at the ball valve when leaving.; Tile repair: Removed the broken laundry/side-room step tile, packed the void with mortar,\u2026",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 2
+    },
+    {
       "id": "smoke-alarm-battery-swap-before-after",
       "title": "Smoke alarm battery swap \u2014 before & after",
       "description": "Expired batteries replaced and units tested so alarms respond correctly.",
@@ -6180,6 +6212,32 @@
       "workNotes": "Sliding door blocked in bathroom I removed old transition strip was able to find a slimmer style and moved it into the bathroom so door can open. Still very stiff operating door but it is not blocked and will close. Other bathroom sink pop up drain was seized and lever was rusted. Replace with kohler push pop up drain. Replaced hinges on broken door and adjusted to close properly. Repaired drawer bottom all\u2026",
       "photoBefore": 2,
       "photoProcess": 2,
+      "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-sliding-bedroom-2011368.webp",
+      "filename": "before-after-sliding-bedroom-2011368.webp",
+      "group": "sliding-bedroom-2011368-before-after",
+      "step": 1,
+      "title": "Sliding bedroom before and after",
+      "seoAlt": "Sliding bedroom before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a sliding bedroom job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Sliding bedroom \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a sliding bedroom job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Get water functional: Curb stop was buried and had to be dug out of the meter pit (city had not touched it). Located the Sensus meter and the whole-house yellow-handle shutoff, confirmed no service-line leaks, checked fixtures, and cleaned the kitchen aerator. Water is on and . Shut off at the ball valve when leaving.; Tile repair: Removed the broken laundry/side-room step tile, packed the void with mortar,\u2026",
+      "photoBefore": 2,
+      "photoProcess": 0,
       "photoAfter": 2
     },
     {
