@@ -1841,6 +1841,38 @@
       "photoAfter": 2
     },
     {
+      "id": "microwave-loght-11413a9-before-after",
+      "title": "Microwave loght \u2014 before & after",
+      "description": "Before-and-after proof from a microwave loght job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-microwave-loght-11413a9.webp",
+          "filename": "before-after-microwave-loght-11413a9.webp",
+          "step": 1,
+          "title": "Microwave loght before and after",
+          "seoAlt": "Microwave loght before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a microwave loght job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Unplugged microwave to reset. Changed from off setting to bright",
+      "photoBefore": 1,
+      "photoProcess": 2,
+      "photoAfter": 1
+    },
+    {
       "id": "mold-wall-repair",
       "title": "Mold damage on interior wall",
       "description": "Mold-affected wall shown from the initial discovery through later correction work on the same area.",
@@ -5169,6 +5201,32 @@
       "photoBefore": 3,
       "photoProcess": 2,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-microwave-loght-11413a9.webp",
+      "filename": "before-after-microwave-loght-11413a9.webp",
+      "group": "microwave-loght-11413a9-before-after",
+      "step": 1,
+      "title": "Microwave loght before and after",
+      "seoAlt": "Microwave loght before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a microwave loght job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Microwave loght \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a microwave loght job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Unplugged microwave to reset. Changed from off setting to bright",
+      "photoBefore": 1,
+      "photoProcess": 2,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-musty-odor-wall-inspection-f6407f8.webp",

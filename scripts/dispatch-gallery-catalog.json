@@ -2189,5 +2189,30 @@
     "photoBefore": 3,
     "photoProcess": 0,
     "photoAfter": 4
+  },
+  "before-after-microwave-loght-11413a9.webp": {
+    "group": "microwave-loght-11413a9-before-after",
+    "groupTitle": "Microwave loght \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a microwave loght job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Microwave loght before and after",
+    "description": "Before-and-after comparison from a microwave loght job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "microwave-loght-11413a9",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Unplugged microwave to reset. Changed from off setting to bright",
+    "photoBefore": 1,
+    "photoProcess": 2,
+    "photoAfter": 1
   }
 }
