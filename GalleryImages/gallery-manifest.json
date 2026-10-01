@@ -4126,6 +4126,37 @@
       ]
     },
     {
+      "id": "wall-texture-and-finish-blending-c18895c-before-after",
+      "title": "Wall texture and finish blending \u2014 before & after",
+      "description": "Before-and-after proof from a wall texture and finish blending job completed by Knight Group in Safety Harbor.",
+      "category": "painting",
+      "serviceLink": "/Services/drywall-repair",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-wall-texture-and-finish-blending-c18895c.webp",
+          "filename": "before-after-wall-texture-and-finish-blending-c18895c.webp",
+          "step": 1,
+          "title": "Wall texture and finish blending before and after",
+          "seoAlt": "Wall texture and finish blending before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a wall texture and finish blending job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "drywall",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "workNotes": "Floating flooring and quarter-round: Install customer supplied flooring Patch the localized ceiling damage and minor adjacent surface defects, then match and blend the existing texture as closely as practical. Primer and one coat of paint matched to the existing finish are included over the repaired area only; painting the remainder of the ceiling, wall, or room is not included. Replacement of extensive soft\u2026",
+      "photoBefore": 1,
+      "photoProcess": 1,
+      "photoAfter": 3
+    },
+    {
       "id": "wasp-nest-79cfa0f-before-after",
       "title": "Wasp nest \u2014 before & after",
       "description": "Before-and-after proof from a wasp nest job completed by Knight Group in Pinellas County.",
@@ -8210,6 +8241,31 @@
       "beforeAfter": true,
       "groupTitle": "Urgent door lock malfunction \u2014 before & after",
       "groupDescription": "Before-and-after proof from a urgent door lock malfunction job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-wall-texture-and-finish-blending-c18895c.webp",
+      "filename": "before-after-wall-texture-and-finish-blending-c18895c.webp",
+      "group": "wall-texture-and-finish-blending-c18895c-before-after",
+      "step": 1,
+      "title": "Wall texture and finish blending before and after",
+      "seoAlt": "Wall texture and finish blending before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a wall texture and finish blending job completed in a Safety Harbor home.",
+      "category": "painting",
+      "serviceLink": "/Services/drywall-repair",
+      "beforeAfter": true,
+      "groupTitle": "Wall texture and finish blending \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a wall texture and finish blending job completed by Knight Group in Safety Harbor.",
+      "cluster": "drywall",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "workNotes": "Floating flooring and quarter-round: Install customer supplied flooring Patch the localized ceiling damage and minor adjacent surface defects, then match and blend the existing texture as closely as practical. Primer and one coat of paint matched to the existing finish are included over the repaired area only; painting the remainder of the ceiling, wall, or room is not included. Replacement of extensive soft\u2026",
+      "photoBefore": 1,
+      "photoProcess": 1,
+      "photoAfter": 3
     },
     {
       "src": "GalleryImages/before-after-wasp-bee-nest-removal-request-0f9dd4b.webp",

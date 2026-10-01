@@ -3164,5 +3164,30 @@
     "photoBefore": 1,
     "photoProcess": 1,
     "photoAfter": 1
+  },
+  "before-after-wall-texture-and-finish-blending-c18895c.webp": {
+    "group": "wall-texture-and-finish-blending-c18895c-before-after",
+    "groupTitle": "Wall texture and finish blending \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a wall texture and finish blending job completed by Knight Group in Safety Harbor.",
+    "category": "painting",
+    "serviceLink": "/Services/drywall-repair",
+    "step": 1,
+    "title": "Wall texture and finish blending before and after",
+    "description": "Before-and-after comparison from a wall texture and finish blending job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "wall-texture-and-finish-blending-c18895c",
+    "source": "dispatch",
+    "cluster": "drywall",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "",
+    "workNotes": "Floating flooring and quarter-round: Install customer supplied flooring Patch the localized ceiling damage and minor adjacent surface defects, then match and blend the existing texture as closely as practical. Primer and one coat of paint matched to the existing finish are included over the repaired area only; painting the remainder of the ceiling, wall, or room is not included. Replacement of extensive soft\u2026",
+    "photoBefore": 1,
+    "photoProcess": 1,
+    "photoAfter": 3
   }
 }
