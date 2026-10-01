@@ -2913,6 +2913,38 @@
       "photoAfter": 2
     },
     {
+      "id": "sky-light-glass-roof-leaking-and-needs-r-3754f17-before-after",
+      "title": "Sky Light (Glass Roof) - leaking and needs ressealed \u2014 before & after",
+      "description": "Before-and-after proof from a sky light (glass roof) - leaking and needs ressealed job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-sky-light-glass-roof-leaking-and-needs-r-3754f17.webp",
+          "filename": "before-after-sky-light-glass-roof-leaking-and-needs-r-3754f17.webp",
+          "step": 1,
+          "title": "Sky Light (Glass Roof) - leaking and needs ressealed before and after",
+          "seoAlt": "Sky Light (Glass Roof) - leaking and needs ressealed before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a sky light (glass roof) - leaking and needs ressealed job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Install Flashing and proper roofing sealant",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 2
+    },
+    {
       "id": "sliding-bedroom-2011368-before-after",
       "title": "Sliding bedroom \u2014 before & after",
       "description": "Before-and-after proof from a sliding bedroom job completed by Knight Group in St. Petersburg.",
@@ -6386,6 +6418,32 @@
       "workNotes": "Sliding door blocked in bathroom I removed old transition strip was able to find a slimmer style and moved it into the bathroom so door can open. Still very stiff operating door but it is not blocked and will close. Other bathroom sink pop up drain was seized and lever was rusted. Replace with kohler push pop up drain. Replaced hinges on broken door and adjusted to close properly. Repaired drawer bottom all\u2026",
       "photoBefore": 2,
       "photoProcess": 2,
+      "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-sky-light-glass-roof-leaking-and-needs-r-3754f17.webp",
+      "filename": "before-after-sky-light-glass-roof-leaking-and-needs-r-3754f17.webp",
+      "group": "sky-light-glass-roof-leaking-and-needs-r-3754f17-before-after",
+      "step": 1,
+      "title": "Sky Light (Glass Roof) - leaking and needs ressealed before and after",
+      "seoAlt": "Sky Light (Glass Roof) - leaking and needs ressealed before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a sky light (glass roof) - leaking and needs ressealed job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Sky Light (Glass Roof) - leaking and needs ressealed \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a sky light (glass roof) - leaking and needs ressealed job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Install Flashing and proper roofing sealant",
+      "photoBefore": 2,
+      "photoProcess": 0,
       "photoAfter": 2
     },
     {

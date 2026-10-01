@@ -2489,5 +2489,30 @@
     "photoBefore": 2,
     "photoProcess": 4,
     "photoAfter": 1
+  },
+  "before-after-sky-light-glass-roof-leaking-and-needs-r-3754f17.webp": {
+    "group": "sky-light-glass-roof-leaking-and-needs-r-3754f17-before-after",
+    "groupTitle": "Sky Light (Glass Roof) - leaking and needs ressealed \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a sky light (glass roof) - leaking and needs ressealed job completed by Knight Group in Safety Harbor.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Sky Light (Glass Roof) - leaking and needs ressealed before and after",
+    "description": "Before-and-after comparison from a sky light (glass roof) - leaking and needs ressealed job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "sky-light-glass-roof-leaking-and-needs-r-3754f17",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Install Flashing and proper roofing sealant",
+    "photoBefore": 2,
+    "photoProcess": 0,
+    "photoAfter": 2
   }
 }
