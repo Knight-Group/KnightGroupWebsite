@@ -3189,5 +3189,30 @@
     "photoBefore": 1,
     "photoProcess": 1,
     "photoAfter": 3
+  },
+  "before-after-localized-subfloor-leveling-repairs-bac45da.webp": {
+    "group": "localized-subfloor-leveling-repairs-bac45da-before-after",
+    "groupTitle": "Localized subfloor leveling repairs \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a localized subfloor leveling repairs job completed by Knight Group in Safety Harbor.",
+    "category": "carpentry",
+    "serviceLink": "/Services/carpentry-framing",
+    "step": 1,
+    "title": "Localized subfloor leveling repairs before and after",
+    "description": "Before-and-after comparison from a localized subfloor leveling repairs job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "localized-subfloor-leveling-repairs-bac45da",
+    "source": "dispatch",
+    "cluster": "floor",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "",
+    "workNotes": "Floating flooring and quarter-round: Install customer supplied flooring Clean and prepare the visibly recessed and irregular floor areas, then level them with a patching or self-leveling system approved for the existing wood substrate. The allowance covers the pictured damaged section and the two noted cutbacks before the floating flooring is installed. Replacement of rotten or loose structural wood, extensive\u2026",
+    "photoBefore": 1,
+    "photoProcess": 0,
+    "photoAfter": 1
   }
 }
