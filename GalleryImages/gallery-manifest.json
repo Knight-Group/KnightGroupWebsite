@@ -840,6 +840,38 @@
       ]
     },
     {
+      "id": "day-2-laminate-and-quarter-round-1a35833-before-after",
+      "title": "Day 2 \u2014 laminate and quarter-round \u2014 before & after",
+      "description": "Before-and-after proof from a day 2 \u2014 laminate and quarter-round job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-day-2-laminate-and-quarter-round-1a35833.webp",
+          "filename": "before-after-day-2-laminate-and-quarter-round-1a35833.webp",
+          "step": 1,
+          "title": "Day 2 \u2014 laminate and quarter-round before and after",
+          "seoAlt": "Day 2 \u2014 laminate and quarter-round before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a day 2 \u2014 laminate and quarter-round job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Day 1 \u2014 scrape and flatten: Prepped floor by cleaning and leveling. Returned to lay customer supplied floor. Install quarter round at edges and new transition strip Install customer laminate (~100 sq ft). Quarter-round at the baseboards. Underlayment only if the product needs it",
+      "photoBefore": 7,
+      "photoProcess": 5,
+      "photoAfter": 4
+    },
+    {
       "id": "door-lock-repair-before-after",
       "title": "Door lock repair \u2014 before & after",
       "description": "Misaligned lock hardware adjusted and resecured so the door latches smoothly again.",
@@ -5081,6 +5113,32 @@
       "beforeAfter": true,
       "groupTitle": "Curtain rod mount \u2014 before & after",
       "groupDescription": "Loose rod brackets remounted into solid framing for a secure, level hang."
+    },
+    {
+      "src": "GalleryImages/before-after-day-2-laminate-and-quarter-round-1a35833.webp",
+      "filename": "before-after-day-2-laminate-and-quarter-round-1a35833.webp",
+      "group": "day-2-laminate-and-quarter-round-1a35833-before-after",
+      "step": 1,
+      "title": "Day 2 \u2014 laminate and quarter-round before and after",
+      "seoAlt": "Day 2 \u2014 laminate and quarter-round before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a day 2 \u2014 laminate and quarter-round job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Day 2 \u2014 laminate and quarter-round \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a day 2 \u2014 laminate and quarter-round job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Day 1 \u2014 scrape and flatten: Prepped floor by cleaning and leveling. Returned to lay customer supplied floor. Install quarter round at edges and new transition strip Install customer laminate (~100 sq ft). Quarter-round at the baseboards. Underlayment only if the product needs it",
+      "photoBefore": 7,
+      "photoProcess": 5,
+      "photoAfter": 4
     },
     {
       "src": "GalleryImages/before-after-door-lock.webp",

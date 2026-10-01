@@ -2739,5 +2739,30 @@
     "photoBefore": 4,
     "photoProcess": 2,
     "photoAfter": 1
+  },
+  "before-after-day-2-laminate-and-quarter-round-1a35833.webp": {
+    "group": "day-2-laminate-and-quarter-round-1a35833-before-after",
+    "groupTitle": "Day 2 \u2014 laminate and quarter-round \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a day 2 \u2014 laminate and quarter-round job completed by Knight Group in Safety Harbor.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Day 2 \u2014 laminate and quarter-round before and after",
+    "description": "Before-and-after comparison from a day 2 \u2014 laminate and quarter-round job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "day-2-laminate-and-quarter-round-1a35833",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Day 1 \u2014 scrape and flatten: Prepped floor by cleaning and leveling. Returned to lay customer supplied floor. Install quarter round at edges and new transition strip Install customer laminate (~100 sq ft). Quarter-round at the baseboards. Underlayment only if the product needs it",
+    "photoBefore": 7,
+    "photoProcess": 5,
+    "photoAfter": 4
   }
 }
