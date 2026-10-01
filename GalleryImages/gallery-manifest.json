@@ -976,6 +976,36 @@
       "photoAfter": 3
     },
     {
+      "id": "fill-sand-and-paint-valance-ecb97b7-before-after",
+      "title": "Fill sand and paint valance \u2014 before & after",
+      "description": "Before-and-after proof from a fill sand and paint valance job completed by Knight Group in Pinellas County.",
+      "category": "painting",
+      "serviceLink": "/Services/painting-finishing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-fill-sand-and-paint-valance-ecb97b7.webp",
+          "filename": "before-after-fill-sand-and-paint-valance-ecb97b7.webp",
+          "step": 1,
+          "title": "Fill sand and paint valance before and after",
+          "seoAlt": "Fill sand and paint valance before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a fill sand and paint valance job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "paint",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Changed lock set. Cleaned then painted front door. Glue down seams of pantry shelves and taped tight til cement cures. Replaced 6 bulbs 2 in bathroom and 4 fluorescent bulbs in kitchen. Repair tracks for kitchen drawer. Glued wall paper back down in bathtub. Replaced all drip trays for stove. Sanded valance down then used wood filler to reshape damaged area. Needs to dry then I can sand smooth and paint",
+      "photoBefore": 1,
+      "photoProcess": 1,
+      "photoAfter": 3
+    },
+    {
       "id": "fire-extinguisher-mount-before-after",
       "title": "Fire extinguisher mount \u2014 before & after",
       "description": "Extinguisher bracket installed at the correct height with secure fasteners.",
@@ -4119,6 +4149,30 @@
       "beforeAfter": true,
       "groupTitle": "Wooden fence repair \u2014 before & after",
       "groupDescription": "Collapsed and leaning fence sections rebuilt with new posts, bracing, and secure pickets."
+    },
+    {
+      "src": "GalleryImages/before-after-fill-sand-and-paint-valance-ecb97b7.webp",
+      "filename": "before-after-fill-sand-and-paint-valance-ecb97b7.webp",
+      "group": "fill-sand-and-paint-valance-ecb97b7-before-after",
+      "step": 1,
+      "title": "Fill sand and paint valance before and after",
+      "seoAlt": "Fill sand and paint valance before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a fill sand and paint valance job completed in a Pinellas County home.",
+      "category": "painting",
+      "serviceLink": "/Services/painting-finishing",
+      "beforeAfter": true,
+      "groupTitle": "Fill sand and paint valance \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a fill sand and paint valance job completed by Knight Group in Pinellas County.",
+      "cluster": "paint",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Changed lock set. Cleaned then painted front door. Glue down seams of pantry shelves and taped tight til cement cures. Replaced 6 bulbs 2 in bathroom and 4 fluorescent bulbs in kitchen. Repair tracks for kitchen drawer. Glued wall paper back down in bathtub. Replaced all drip trays for stove. Sanded valance down then used wood filler to reshape damaged area. Needs to dry then I can sand smooth and paint",
+      "photoBefore": 1,
+      "photoProcess": 1,
+      "photoAfter": 3
     },
     {
       "src": "GalleryImages/before-after-filter-change.webp",
