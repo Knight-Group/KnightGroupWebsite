@@ -2114,5 +2114,30 @@
     "photoBefore": 2,
     "photoProcess": 0,
     "photoAfter": 1
+  },
+  "before-after-noisy-bathroom-ceiling-fan-light-heater-4c3701f.webp": {
+    "group": "noisy-bathroom-ceiling-fan-light-heater-4c3701f-before-after",
+    "groupTitle": "noisy bathroom ceiling fan/light/heater \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a noisy bathroom ceiling fan/light/heater job completed by Knight Group in St. Petersburg.",
+    "category": "electrical",
+    "serviceLink": "/Services/electrical-work",
+    "step": 1,
+    "title": "noisy bathroom ceiling fan/light/heater before and after",
+    "description": "Before-and-after comparison from a noisy bathroom ceiling fan/light/heater job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "noisy-bathroom-ceiling-fan-light-heater-4c3701f",
+    "source": "dispatch",
+    "cluster": "fan",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Removed fan and cleaned squirrel cage of dust. Sanded down shaft and lubricated moving parts. Wing nuts that held in place were bent/ cross threaded used washers and nuts to secure to ceiling. Was able to get it to be quieter",
+    "photoBefore": 2,
+    "photoProcess": 4,
+    "photoAfter": 3
   }
 }

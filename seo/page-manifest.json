@@ -1212,6 +1212,13 @@
       "path": "gallery/laminate-lvp-installation-d86a9bf-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/laminate-lvp-installation-d86a9bf-before-after",
       "priority": "0.64"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "noisy-bathroom-ceiling-fan-light-heater-4c3701f-before-after",
+      "path": "gallery/noisy-bathroom-ceiling-fan-light-heater-4c3701f-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/noisy-bathroom-ceiling-fan-light-heater-4c3701f-before-after",
+      "priority": "0.64"
     }
   ]
 }
