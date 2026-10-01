@@ -1789,5 +1789,30 @@
     "photoBefore": 2,
     "photoProcess": 0,
     "photoAfter": 3
+  },
+  "before-after-change-locks-93a60c5.webp": {
+    "group": "change-locks-93a60c5-before-after",
+    "groupTitle": "Change locks \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a change locks job completed by Knight Group in Pinellas County.",
+    "category": "doors-windows",
+    "serviceLink": "/Services/doors-windows",
+    "step": 1,
+    "title": "Change locks before and after",
+    "description": "Before-and-after comparison from a change locks job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "change-locks-93a60c5",
+    "source": "dispatch",
+    "cluster": "door_lock",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "",
+    "citySlug": "",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Changed lock set. Cleaned then painted front door. Glue down seams of pantry shelves and taped tight til cement cures. Replaced 6 bulbs 2 in bathroom and 4 fluorescent bulbs in kitchen. Repair tracks for kitchen drawer. Glued wall paper back down in bathtub. Replaced all drip trays for stove. Sanded valance down then used wood filler to reshape damaged area. Needs to dry then I can sand smooth and paint Colleen\u2026",
+    "photoBefore": 1,
+    "photoProcess": 0,
+    "photoAfter": 1
   }
 }
