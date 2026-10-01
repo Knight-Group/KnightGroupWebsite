@@ -3014,5 +3014,30 @@
     "photoBefore": 4,
     "photoProcess": 5,
     "photoAfter": 1
+  },
+  "before-after-fix-toilet-fill-valve-6df05b1.webp": {
+    "group": "fix-toilet-fill-valve-6df05b1-before-after",
+    "groupTitle": "Fix toilet fill valve \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a fix toilet fill valve job completed by Knight Group in St. Petersburg.",
+    "category": "plumbing",
+    "serviceLink": "/Services/plumbing-services",
+    "step": 1,
+    "title": "Fix toilet fill valve before and after",
+    "description": "Before-and-after comparison from a fix toilet fill valve job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "fix-toilet-fill-valve-6df05b1",
+    "source": "dispatch",
+    "cluster": "toilet",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Replace faulty fill valve",
+    "photoBefore": 1,
+    "photoProcess": 0,
+    "photoAfter": 2
   }
 }

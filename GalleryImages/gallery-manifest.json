@@ -1471,6 +1471,38 @@
       "photoAfter": 1
     },
     {
+      "id": "fix-toilet-fill-valve-6df05b1-before-after",
+      "title": "Fix toilet fill valve \u2014 before & after",
+      "description": "Before-and-after proof from a fix toilet fill valve job completed by Knight Group in St. Petersburg.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-fix-toilet-fill-valve-6df05b1.webp",
+          "filename": "before-after-fix-toilet-fill-valve-6df05b1.webp",
+          "step": 1,
+          "title": "Fix toilet fill valve before and after",
+          "seoAlt": "Fix toilet fill valve before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a fix toilet fill valve job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "toilet",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Replace faulty fill valve",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 2
+    },
+    {
       "id": "flooring-perimeter-quarter-round-9804c12-before-after",
       "title": "Flooring perimeter quarter-round \u2014 before & after",
       "description": "Before-and-after proof from a flooring perimeter quarter-round job completed by Knight Group in Safety Harbor.",
@@ -5987,6 +6019,32 @@
       "photoBefore": 1,
       "photoProcess": 0,
       "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-fix-toilet-fill-valve-6df05b1.webp",
+      "filename": "before-after-fix-toilet-fill-valve-6df05b1.webp",
+      "group": "fix-toilet-fill-valve-6df05b1-before-after",
+      "step": 1,
+      "title": "Fix toilet fill valve before and after",
+      "seoAlt": "Fix toilet fill valve before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a fix toilet fill valve job completed in a St. Petersburg home.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "groupTitle": "Fix toilet fill valve \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a fix toilet fill valve job completed by Knight Group in St. Petersburg.",
+      "cluster": "toilet",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Replace faulty fill valve",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 2
     },
     {
       "src": "GalleryImages/before-after-flooring-perimeter-quarter-round-9804c12.webp",
