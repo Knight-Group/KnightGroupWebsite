@@ -683,13 +683,6 @@
     },
     {
       "pageType": "gallery-project",
-      "slug": "bedroom-d9d0055-before-after",
-      "path": "gallery/bedroom-d9d0055-before-after.html",
-      "canonical": "https://www.knightgroup.com/gallery/bedroom-d9d0055-before-after",
-      "priority": "0.64"
-    },
-    {
-      "pageType": "gallery-project",
       "slug": "cabinet-repair-339b0d9-before-after",
       "path": "gallery/cabinet-repair-339b0d9-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/cabinet-repair-339b0d9-before-after",
@@ -718,9 +711,9 @@
     },
     {
       "pageType": "gallery-project",
-      "slug": "change-lock-set-on-2-with-4-matching-key-03d49fa-before-after",
-      "path": "gallery/change-lock-set-on-2-with-4-matching-key-03d49fa-before-after.html",
-      "canonical": "https://www.knightgroup.com/gallery/change-lock-set-on-2-with-4-matching-key-03d49fa-before-after",
+      "slug": "ceiling-water-staining-concern-d4a39ad-before-after",
+      "path": "gallery/ceiling-water-staining-concern-d4a39ad-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/ceiling-water-staining-concern-d4a39ad-before-after",
       "priority": "0.64"
     },
     {
@@ -756,6 +749,13 @@
       "slug": "corner-cabinet-shelf-repair-bc5b1e2-before-after",
       "path": "gallery/corner-cabinet-shelf-repair-bc5b1e2-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/corner-cabinet-shelf-repair-bc5b1e2-before-after",
+      "priority": "0.64"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "bedroom-d9d0055-before-after",
+      "path": "gallery/bedroom-d9d0055-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/bedroom-d9d0055-before-after",
       "priority": "0.64"
     },
     {
@@ -833,13 +833,6 @@
       "slug": "handyman-repair-2ef83e1-before-after",
       "path": "gallery/handyman-repair-2ef83e1-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/handyman-repair-2ef83e1-before-after",
-      "priority": "0.64"
-    },
-    {
-      "pageType": "gallery-project",
-      "slug": "handyman-repair-669cf03-before-after",
-      "path": "gallery/handyman-repair-669cf03-before-after.html",
-      "canonical": "https://www.knightgroup.com/gallery/handyman-repair-669cf03-before-after",
       "priority": "0.64"
     },
     {
