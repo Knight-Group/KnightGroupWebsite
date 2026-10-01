@@ -3239,5 +3239,30 @@
     "photoBefore": 4,
     "photoProcess": 1,
     "photoAfter": 1
+  },
+  "before-after-remove-debris-41db93f.webp": {
+    "group": "remove-debris-41db93f-before-after",
+    "groupTitle": "Remove Debris \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a remove debris job completed by Knight Group in Gulfport.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Remove Debris before and after",
+    "description": "Before-and-after comparison from a remove debris job completed in a Gulfport home.",
+    "beforeAfter": true,
+    "scope_slug": "remove-debris-41db93f",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Nicholas Alexopoulos",
+    "workerRole": "field technician",
+    "workerKey": "tech",
+    "cityName": "Gulfport",
+    "citySlug": "",
+    "countyName": "Pinellas County",
+    "completedMonth": "August 2026",
+    "workNotes": "Cutting posts down to ground level, removing debris all around the house, removing duct tape to replace wiith higher quality tape. Looks better already!",
+    "photoBefore": 2,
+    "photoProcess": 1,
+    "photoAfter": 5
   }
 }

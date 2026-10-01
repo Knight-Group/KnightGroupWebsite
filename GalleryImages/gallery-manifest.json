@@ -2914,6 +2914,37 @@
       ]
     },
     {
+      "id": "remove-debris-41db93f-before-after",
+      "title": "Remove Debris \u2014 before & after",
+      "description": "Before-and-after proof from a remove debris job completed by Knight Group in Gulfport.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-remove-debris-41db93f.webp",
+          "filename": "before-after-remove-debris-41db93f.webp",
+          "step": 1,
+          "title": "Remove Debris before and after",
+          "seoAlt": "Remove Debris before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a remove debris job completed in a Gulfport home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Nicholas Alexopoulos",
+      "workerRole": "field technician",
+      "workerKey": "tech",
+      "cityName": "Gulfport",
+      "countyName": "Pinellas County",
+      "completedMonth": "August 2026",
+      "workNotes": "Cutting posts down to ground level, removing debris all around the house, removing duct tape to replace wiith higher quality tape. Looks better already!",
+      "photoBefore": 2,
+      "photoProcess": 1,
+      "photoAfter": 5
+    },
+    {
       "id": "repair-ceiling-in-bathroom-f739128-before-after",
       "title": "Repair ceiling in bathroom \u2014 before & after",
       "description": "Before-and-after proof from a repair ceiling in bathroom job completed by Knight Group in St. Petersburg.",
@@ -7392,6 +7423,31 @@
       "photoBefore": 5,
       "photoProcess": 5,
       "photoAfter": 4
+    },
+    {
+      "src": "GalleryImages/before-after-remove-debris-41db93f.webp",
+      "filename": "before-after-remove-debris-41db93f.webp",
+      "group": "remove-debris-41db93f-before-after",
+      "step": 1,
+      "title": "Remove Debris before and after",
+      "seoAlt": "Remove Debris before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a remove debris job completed in a Gulfport home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Remove Debris \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a remove debris job completed by Knight Group in Gulfport.",
+      "cluster": "general",
+      "workerName": "Nicholas Alexopoulos",
+      "workerRole": "field technician",
+      "workerKey": "tech",
+      "cityName": "Gulfport",
+      "countyName": "Pinellas County",
+      "completedMonth": "August 2026",
+      "workNotes": "Cutting posts down to ground level, removing debris all around the house, removing duct tape to replace wiith higher quality tape. Looks better already!",
+      "photoBefore": 2,
+      "photoProcess": 1,
+      "photoAfter": 5
     },
     {
       "src": "GalleryImages/before-after-repair-3abf1ba.webp",
