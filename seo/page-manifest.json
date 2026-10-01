@@ -655,13 +655,6 @@
     },
     {
       "pageType": "gallery-project",
-      "slug": "6-locksets-and-2-fake-3b657bc-before-after",
-      "path": "gallery/6-locksets-and-2-fake-3b657bc-before-after.html",
-      "canonical": "https://www.knightgroup.com/gallery/6-locksets-and-2-fake-3b657bc-before-after",
-      "priority": "0.64"
-    },
-    {
-      "pageType": "gallery-project",
       "slug": "a-c-service-request-6963c57-before-after",
       "path": "gallery/a-c-service-request-6963c57-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/a-c-service-request-6963c57-before-after",
@@ -910,6 +903,13 @@
       "slug": "get-water-functional-ea319fe-before-after",
       "path": "gallery/get-water-functional-ea319fe-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/get-water-functional-ea319fe-before-after",
+      "priority": "0.64"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "hvac-drain-flush-and-filters-4f8205d-before-after",
+      "path": "gallery/hvac-drain-flush-and-filters-4f8205d-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/hvac-drain-flush-and-filters-4f8205d-before-after",
       "priority": "0.64"
     },
     {

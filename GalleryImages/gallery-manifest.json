@@ -64,38 +64,6 @@
       "photoAfter": 3
     },
     {
-      "id": "6-locksets-and-2-fake-3b657bc-before-after",
-      "title": "6 locksets and 2 fake \u2014 before & after",
-      "description": "Before-and-after proof from a 6 locksets and 2 fake job completed by Knight Group in St. Petersburg.",
-      "category": "doors-windows",
-      "serviceLink": "/Services/doors-windows",
-      "beforeAfter": true,
-      "progression": false,
-      "images": [
-        {
-          "src": "GalleryImages/before-after-6-locksets-and-2-fake-3b657bc.webp",
-          "filename": "before-after-6-locksets-and-2-fake-3b657bc.webp",
-          "step": 1,
-          "title": "6 locksets and 2 fake before and after",
-          "seoAlt": "6 locksets and 2 fake before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
-          "description": "Before-and-after comparison from a 6 locksets and 2 fake job completed in a St. Petersburg home.",
-          "beforeAfter": true
-        }
-      ],
-      "cluster": "door_lock",
-      "workerName": "Vince Knight",
-      "workerRole": "co-owner and Field Operations Lead",
-      "workerKey": "vince",
-      "cityName": "St. Petersburg",
-      "citySlug": "st-petersburg",
-      "countyName": "Pinellas County",
-      "completedMonth": "September 2026",
-      "workNotes": "Replace a handles and lockets on back porch Moved 1 dummy handle from inside to out on the double door that is not drilled out. Drilled out remainder of middle door install traditional handle. 4 more lock sets installed Replaced 4 door handle/ lock sets on back porch. Replace 1 dumby handle. Behind piano I finished drilling out hole and installed traditional handle in place of 2 dummies. Moved the dummy that was\u2026",
-      "photoBefore": 1,
-      "photoProcess": 0,
-      "photoAfter": 1
-    },
-    {
       "id": "a-c-service-request-6963c57-before-after",
       "title": "A/C service request \u2014 before & after",
       "description": "Before-and-after proof from a a/c service request job completed by Knight Group in St. Petersburg.",
@@ -1425,6 +1393,37 @@
       "workNotes": "Get water functional: Curb stop was buried and had to be dug out of the meter pit (city had not touched it). Located the Sensus meter and the whole-house yellow-handle shutoff, confirmed no service-line leaks, checked fixtures, and cleaned the kitchen aerator. Water is on and . Shut off at the ball valve when leaving.; Tile repair: Removed the broken laundry/side-room step tile, packed the void with mortar,\u2026",
       "photoBefore": 2,
       "photoProcess": 3,
+      "photoAfter": 3
+    },
+    {
+      "id": "hvac-drain-flush-and-filters-4f8205d-before-after",
+      "title": "HVAC drain flush and filters \u2014 before & after",
+      "description": "Before-and-after proof from a hvac drain flush and filters job completed by Knight Group in Pinellas Park.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-hvac-drain-flush-and-filters-4f8205d.webp",
+          "filename": "before-after-hvac-drain-flush-and-filters-4f8205d.webp",
+          "step": 1,
+          "title": "HVAC drain flush and filters before and after",
+          "seoAlt": "HVAC drain flush and filters before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a hvac drain flush and filters job completed in a Pinellas Park home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "filter_hvac",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Pinellas Park",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Garage floor and baseboard paint: Cleaned floor and primed heavily. Several coats of primer to the base boards. Painted baseboards with a sealing paint. Painted floor with several coats. Left remaining paint there for touch ups Flush the HVAC condensate/drain line. Replace the interior HVAC filter and the side-wall filter. Blew out drain confirmed pump is pumping and draining. I unplugged to reset seems to be but\u2026",
+      "photoBefore": 5,
+      "photoProcess": 4,
       "photoAfter": 3
     },
     {
@@ -4145,32 +4144,6 @@
       "photoAfter": 3
     },
     {
-      "src": "GalleryImages/before-after-6-locksets-and-2-fake-3b657bc.webp",
-      "filename": "before-after-6-locksets-and-2-fake-3b657bc.webp",
-      "group": "6-locksets-and-2-fake-3b657bc-before-after",
-      "step": 1,
-      "title": "6 locksets and 2 fake before and after",
-      "seoAlt": "6 locksets and 2 fake before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
-      "description": "Before-and-after comparison from a 6 locksets and 2 fake job completed in a St. Petersburg home.",
-      "category": "doors-windows",
-      "serviceLink": "/Services/doors-windows",
-      "beforeAfter": true,
-      "groupTitle": "6 locksets and 2 fake \u2014 before & after",
-      "groupDescription": "Before-and-after proof from a 6 locksets and 2 fake job completed by Knight Group in St. Petersburg.",
-      "cluster": "door_lock",
-      "workerName": "Vince Knight",
-      "workerRole": "co-owner and Field Operations Lead",
-      "workerKey": "vince",
-      "cityName": "St. Petersburg",
-      "citySlug": "st-petersburg",
-      "countyName": "Pinellas County",
-      "completedMonth": "September 2026",
-      "workNotes": "Replace a handles and lockets on back porch Moved 1 dummy handle from inside to out on the double door that is not drilled out. Drilled out remainder of middle door install traditional handle. 4 more lock sets installed Replaced 4 door handle/ lock sets on back porch. Replace 1 dumby handle. Behind piano I finished drilling out hole and installed traditional handle in place of 2 dummies. Moved the dummy that was\u2026",
-      "photoBefore": 1,
-      "photoProcess": 0,
-      "photoAfter": 1
-    },
-    {
       "src": "GalleryImages/before-after-a-c-service-request-6963c57.webp",
       "filename": "before-after-a-c-service-request-6963c57.webp",
       "group": "a-c-service-request-6963c57-before-after",
@@ -5573,6 +5546,31 @@
       "photoBefore": 1,
       "photoProcess": 0,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-hvac-drain-flush-and-filters-4f8205d.webp",
+      "filename": "before-after-hvac-drain-flush-and-filters-4f8205d.webp",
+      "group": "hvac-drain-flush-and-filters-4f8205d-before-after",
+      "step": 1,
+      "title": "HVAC drain flush and filters before and after",
+      "seoAlt": "HVAC drain flush and filters before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a hvac drain flush and filters job completed in a Pinellas Park home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "HVAC drain flush and filters \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a hvac drain flush and filters job completed by Knight Group in Pinellas Park.",
+      "cluster": "filter_hvac",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Pinellas Park",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Garage floor and baseboard paint: Cleaned floor and primed heavily. Several coats of primer to the base boards. Painted baseboards with a sealing paint. Painted floor with several coats. Left remaining paint there for touch ups Flush the HVAC condensate/drain line. Replace the interior HVAC filter and the side-wall filter. Blew out drain confirmed pump is pumping and draining. I unplugged to reset seems to be but\u2026",
+      "photoBefore": 5,
+      "photoProcess": 4,
+      "photoAfter": 3
     },
     {
       "src": "GalleryImages/before-after-inspect-water-leaks-08cb97a.webp",

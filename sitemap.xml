@@ -703,12 +703,6 @@
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.knightgroup.com/gallery/6-locksets-and-2-fake-3b657bc-before-after</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.64</priority>
-  </url>
-  <url>
     <loc>https://www.knightgroup.com/gallery/a-c-service-request-6963c57-before-after</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -920,6 +914,12 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/gallery/get-water-functional-ea319fe-before-after</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.knightgroup.com/gallery/hvac-drain-flush-and-filters-4f8205d-before-after</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.64</priority>
