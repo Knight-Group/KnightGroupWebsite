@@ -2964,5 +2964,30 @@
     "photoBefore": 3,
     "photoProcess": 0,
     "photoAfter": 1
+  },
+  "before-after-plumbing-504ea7f.webp": {
+    "group": "plumbing-504ea7f-before-after",
+    "groupTitle": "plumbing \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a plumbing job completed by Knight Group in Gulfport.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "plumbing before and after",
+    "description": "Before-and-after comparison from a plumbing job completed in a Gulfport home.",
+    "beforeAfter": true,
+    "scope_slug": "plumbing-504ea7f",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Gulfport",
+    "citySlug": "",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "plumbing: Chip away at concrete to find where pipe broke. Fix broken pipe and install new hose bib Attempt to locate leak on water line in stucco wall. Repair hose bib that sheared off",
+    "photoBefore": 1,
+    "photoProcess": 5,
+    "photoAfter": 2
   }
 }

@@ -1446,6 +1446,13 @@
     },
     {
       "pageType": "gallery-project",
+      "slug": "plumbing-504ea7f-before-after",
+      "path": "gallery/plumbing-504ea7f-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/plumbing-504ea7f-before-after",
+      "priority": "0.64"
+    },
+    {
+      "pageType": "gallery-project",
       "slug": "repair-3abf1ba-before-after",
       "path": "gallery/repair-3abf1ba-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/repair-3abf1ba-before-after",

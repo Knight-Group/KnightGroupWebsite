@@ -4349,6 +4349,37 @@
       "photoAfter": 3
     },
     {
+      "id": "plumbing-504ea7f-before-after",
+      "title": "plumbing \u2014 before & after",
+      "description": "Before-and-after proof from a plumbing job completed by Knight Group in Gulfport.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-plumbing-504ea7f.webp",
+          "filename": "before-after-plumbing-504ea7f.webp",
+          "step": 1,
+          "title": "plumbing before and after",
+          "seoAlt": "plumbing before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a plumbing job completed in a Gulfport home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Gulfport",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "plumbing: Chip away at concrete to find where pipe broke. Fix broken pipe and install new hose bib Attempt to locate leak on water line in stucco wall. Repair hose bib that sheared off",
+      "photoBefore": 1,
+      "photoProcess": 5,
+      "photoAfter": 2
+    },
+    {
       "id": "repair-3abf1ba-before-after",
       "title": "repair \u2014 before & after",
       "description": "Before-and-after proof from a repair job completed by Knight Group in St. Petersburg.",
@@ -6815,6 +6846,31 @@
       "workNotes": "Changed lock set. Cleaned then painted front door. Glue down seams of pantry shelves and taped tight til cement cures. Replaced 6 bulbs 2 in bathroom and 4 fluorescent bulbs in kitchen. Repair tracks for kitchen drawer. Glued wall paper back down in bathtub. Replaced all drip trays for stove. Sanded valance down then used wood filler to reshape damaged area. Needs to dry then I can sand smooth and paint",
       "photoBefore": 4,
       "photoProcess": 0,
+      "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-plumbing-504ea7f.webp",
+      "filename": "before-after-plumbing-504ea7f.webp",
+      "group": "plumbing-504ea7f-before-after",
+      "step": 1,
+      "title": "plumbing before and after",
+      "seoAlt": "plumbing before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a plumbing job completed in a Gulfport home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "plumbing \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a plumbing job completed by Knight Group in Gulfport.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Gulfport",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "plumbing: Chip away at concrete to find where pipe broke. Fix broken pipe and install new hose bib Attempt to locate leak on water line in stucco wall. Repair hose bib that sheared off",
+      "photoBefore": 1,
+      "photoProcess": 5,
       "photoAfter": 2
     },
     {
