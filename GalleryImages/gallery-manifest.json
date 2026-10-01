@@ -2115,6 +2115,36 @@
       "photoAfter": 1
     },
     {
+      "id": "replace-drip-pans-dcbbcb4-before-after",
+      "title": "Replace drip pans \u2014 before & after",
+      "description": "Before-and-after proof from a replace drip pans job completed by Knight Group in Pinellas County.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-replace-drip-pans-dcbbcb4.webp",
+          "filename": "before-after-replace-drip-pans-dcbbcb4.webp",
+          "step": 1,
+          "title": "Replace drip pans before and after",
+          "seoAlt": "Replace drip pans before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a replace drip pans job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Changed lock set. Cleaned then painted front door. Glue down seams of pantry shelves and taped tight til cement cures. Replaced 6 bulbs 2 in bathroom and 4 fluorescent bulbs in kitchen. Repair tracks for kitchen drawer. Glued wall paper back down in bathtub. Replaced all drip trays for stove. Sanded valance down then used wood filler to reshape damaged area. Needs to dry then I can sand smooth and paint",
+      "photoBefore": 1,
+      "photoProcess": 1,
+      "photoAfter": 1
+    },
+    {
       "id": "replace-light-bulbs-6fef00c-before-after",
       "title": "Replace light bulbs \u2014 before & after",
       "description": "Before-and-after proof from a replace light bulbs job completed by Knight Group in Pinellas County.",
@@ -5013,6 +5043,30 @@
       "workNotes": "Replace broken dishwasher: Picked up new dishwasher. Removed old dishwasher. Removed spray foam blocking old lines from coming out & installing new dishwasher lines. Changed dishwasher water inlet. Installed new drain line and hooked up water line and power. Tested for fun Replace broken dishwasher (bad pump)",
       "photoBefore": 3,
       "photoProcess": 3,
+      "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-replace-drip-pans-dcbbcb4.webp",
+      "filename": "before-after-replace-drip-pans-dcbbcb4.webp",
+      "group": "replace-drip-pans-dcbbcb4-before-after",
+      "step": 1,
+      "title": "Replace drip pans before and after",
+      "seoAlt": "Replace drip pans before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a replace drip pans job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Replace drip pans \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a replace drip pans job completed by Knight Group in Pinellas County.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Changed lock set. Cleaned then painted front door. Glue down seams of pantry shelves and taped tight til cement cures. Replaced 6 bulbs 2 in bathroom and 4 fluorescent bulbs in kitchen. Repair tracks for kitchen drawer. Glued wall paper back down in bathtub. Replaced all drip trays for stove. Sanded valance down then used wood filler to reshape damaged area. Needs to dry then I can sand smooth and paint",
+      "photoBefore": 1,
+      "photoProcess": 1,
       "photoAfter": 1
     },
     {
