@@ -1742,6 +1742,37 @@
       "photoAfter": 6
     },
     {
+      "id": "replace-broken-dishwasher-2ce6915-before-after",
+      "title": "Replace broken dishwasher \u2014 before & after",
+      "description": "Before-and-after proof from a replace broken dishwasher job completed by Knight Group in Pinellas Park.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-replace-broken-dishwasher-2ce6915.webp",
+          "filename": "before-after-replace-broken-dishwasher-2ce6915.webp",
+          "step": 1,
+          "title": "Replace broken dishwasher before and after",
+          "seoAlt": "Replace broken dishwasher before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a replace broken dishwasher job completed in a Pinellas Park home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Pinellas Park",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Replace broken dishwasher: Picked up new dishwasher. Removed old dishwasher. Removed spray foam blocking old lines from coming out & installing new dishwasher lines. Changed dishwasher water inlet. Installed new drain line and hooked up water line and power. Tested for fun Replace broken dishwasher (bad pump)",
+      "photoBefore": 3,
+      "photoProcess": 3,
+      "photoAfter": 1
+    },
+    {
       "id": "resecure-loose-screen-door-before-after",
       "title": "Resecure Loose Screen Door \u2014 before & after",
       "description": "Before-and-after proof from a resecure loose screen door job completed by Knight Group.",
@@ -4278,6 +4309,31 @@
       "photoBefore": 7,
       "photoProcess": 0,
       "photoAfter": 6
+    },
+    {
+      "src": "GalleryImages/before-after-replace-broken-dishwasher-2ce6915.webp",
+      "filename": "before-after-replace-broken-dishwasher-2ce6915.webp",
+      "group": "replace-broken-dishwasher-2ce6915-before-after",
+      "step": 1,
+      "title": "Replace broken dishwasher before and after",
+      "seoAlt": "Replace broken dishwasher before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a replace broken dishwasher job completed in a Pinellas Park home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Replace broken dishwasher \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a replace broken dishwasher job completed by Knight Group in Pinellas Park.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Pinellas Park",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Replace broken dishwasher: Picked up new dishwasher. Removed old dishwasher. Removed spray foam blocking old lines from coming out & installing new dishwasher lines. Changed dishwasher water inlet. Installed new drain line and hooked up water line and power. Tested for fun Replace broken dishwasher (bad pump)",
+      "photoBefore": 3,
+      "photoProcess": 3,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-replacing-this-main-shut-off-and-hose-bib-copper.webp",
