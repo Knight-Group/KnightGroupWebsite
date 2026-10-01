@@ -1664,5 +1664,30 @@
     "photoBefore": 1,
     "photoProcess": 1,
     "photoAfter": 1
+  },
+  "before-after-restore-freezer-shelf-9def051.webp": {
+    "group": "restore-freezer-shelf-9def051-before-after",
+    "groupTitle": "Restore freezer shelf \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a restore freezer shelf job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Restore freezer shelf before and after",
+    "description": "Before-and-after comparison from a restore freezer shelf job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "restore-freezer-shelf-9def051",
+    "source": "dispatch",
+    "cluster": "hardware",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Wooden fence gate was sagging moved hinges to correct. Gate hardware was repaired and reset. Changed front gates hardware as well to match. Both functional. Freezer shelf was detailed and painted. Side door was scrubbed and washed off. Cleaned scuff marks off a couple walls. Laundry room was scrubbed and scraped but did not clean up well. Not done yet: would be added to estaimte 3 hours + materials. Wall is made\u2026",
+    "photoBefore": 1,
+    "photoProcess": 1,
+    "photoAfter": 1
   }
 }

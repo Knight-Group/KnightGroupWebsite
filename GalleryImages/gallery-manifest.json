@@ -1857,6 +1857,38 @@
       ]
     },
     {
+      "id": "restore-freezer-shelf-9def051-before-after",
+      "title": "Restore freezer shelf \u2014 before & after",
+      "description": "Before-and-after proof from a restore freezer shelf job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-restore-freezer-shelf-9def051.webp",
+          "filename": "before-after-restore-freezer-shelf-9def051.webp",
+          "step": 1,
+          "title": "Restore freezer shelf before and after",
+          "seoAlt": "Restore freezer shelf before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a restore freezer shelf job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "hardware",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Wooden fence gate was sagging moved hinges to correct. Gate hardware was repaired and reset. Changed front gates hardware as well to match. Both functional. Freezer shelf was detailed and painted. Side door was scrubbed and washed off. Cleaned scuff marks off a couple walls. Laundry room was scrubbed and scraped but did not clean up well. Not done yet: would be added to estaimte 3 hours + materials. Wall is made\u2026",
+      "photoBefore": 1,
+      "photoProcess": 1,
+      "photoAfter": 1
+    },
+    {
       "id": "rodent-hole-sealing-a-b-1c2096d-before-after",
       "title": "Rodent Hole Sealing - A/B \u2014 before & after",
       "description": "Before-and-after proof from a rodent hole sealing - a/b job completed by Knight Group in Clearwater.",
@@ -4478,6 +4510,32 @@
       "beforeAfter": true,
       "groupTitle": "Resecure Loose Screen Door \u2014 before & after",
       "groupDescription": "Before-and-after proof from a resecure loose screen door job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-restore-freezer-shelf-9def051.webp",
+      "filename": "before-after-restore-freezer-shelf-9def051.webp",
+      "group": "restore-freezer-shelf-9def051-before-after",
+      "step": 1,
+      "title": "Restore freezer shelf before and after",
+      "seoAlt": "Restore freezer shelf before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a restore freezer shelf job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Restore freezer shelf \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a restore freezer shelf job completed by Knight Group in St. Petersburg.",
+      "cluster": "hardware",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Wooden fence gate was sagging moved hinges to correct. Gate hardware was repaired and reset. Changed front gates hardware as well to match. Both functional. Freezer shelf was detailed and painted. Side door was scrubbed and washed off. Cleaned scuff marks off a couple walls. Laundry room was scrubbed and scraped but did not clean up well. Not done yet: would be added to estaimte 3 hours + materials. Wall is made\u2026",
+      "photoBefore": 1,
+      "photoProcess": 1,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-rodent-hole-sealing-a-b-1c2096d.webp",
