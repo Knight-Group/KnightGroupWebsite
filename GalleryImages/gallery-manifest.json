@@ -64,6 +64,38 @@
       "photoAfter": 3
     },
     {
+      "id": "6-locksets-and-2-fake-3b657bc-before-after",
+      "title": "6 locksets and 2 fake \u2014 before & after",
+      "description": "Before-and-after proof from a 6 locksets and 2 fake job completed by Knight Group in St. Petersburg.",
+      "category": "doors-windows",
+      "serviceLink": "/Services/doors-windows",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-6-locksets-and-2-fake-3b657bc.webp",
+          "filename": "before-after-6-locksets-and-2-fake-3b657bc.webp",
+          "step": 1,
+          "title": "6 locksets and 2 fake before and after",
+          "seoAlt": "6 locksets and 2 fake before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a 6 locksets and 2 fake job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "door_lock",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Replace a handles and lockets on back porch Moved 1 dummy handle from inside to out on the double door that is not drilled out. Drilled out remainder of middle door install traditional handle. 4 more lock sets installed Replaced 4 door handle/ lock sets on back porch. Replace 1 dumby handle. Behind piano I finished drilling out hole and installed traditional handle in place of 2 dummies. Moved the dummy that was\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "a-c-service-request-6963c57-before-after",
       "title": "A/C service request \u2014 before & after",
       "description": "Before-and-after proof from a a/c service request job completed by Knight Group in St. Petersburg.",
@@ -4111,6 +4143,32 @@
       "photoBefore": 8,
       "photoProcess": 2,
       "photoAfter": 3
+    },
+    {
+      "src": "GalleryImages/before-after-6-locksets-and-2-fake-3b657bc.webp",
+      "filename": "before-after-6-locksets-and-2-fake-3b657bc.webp",
+      "group": "6-locksets-and-2-fake-3b657bc-before-after",
+      "step": 1,
+      "title": "6 locksets and 2 fake before and after",
+      "seoAlt": "6 locksets and 2 fake before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a 6 locksets and 2 fake job completed in a St. Petersburg home.",
+      "category": "doors-windows",
+      "serviceLink": "/Services/doors-windows",
+      "beforeAfter": true,
+      "groupTitle": "6 locksets and 2 fake \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a 6 locksets and 2 fake job completed by Knight Group in St. Petersburg.",
+      "cluster": "door_lock",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Replace a handles and lockets on back porch Moved 1 dummy handle from inside to out on the double door that is not drilled out. Drilled out remainder of middle door install traditional handle. 4 more lock sets installed Replaced 4 door handle/ lock sets on back porch. Replace 1 dumby handle. Behind piano I finished drilling out hole and installed traditional handle in place of 2 dummies. Moved the dummy that was\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-a-c-service-request-6963c57.webp",
