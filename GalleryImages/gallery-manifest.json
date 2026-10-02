@@ -2007,6 +2007,38 @@
       "photoAfter": 2
     },
     {
+      "id": "handyman-repair-e328474-before-after",
+      "title": "Handyman repair \u2014 before & after",
+      "description": "Before-and-after proof from a handyman repair job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-handyman-repair-e328474.webp",
+          "filename": "before-after-handyman-repair-e328474.webp",
+          "step": 1,
+          "title": "Handyman repair before and after",
+          "seoAlt": "Handyman repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a handyman repair job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Baseboards: Reinstall baseboards Starting from the exposed slab shown, scrape loose residue and perform minor spot filling, then install approximately 190 square feet of click-lock LVP or laminate with the required expansion gap. Flooring removal is not included because it is already complete; extensive slab leveling, moisture remediation, glue-down flooring, transitions, or repairs concealed by the old flooring\u2026",
+      "photoBefore": 2,
+      "photoProcess": 2,
+      "photoAfter": 1
+    },
+    {
       "id": "handyman-repair-e8e763c-before-after",
       "title": "Handyman repair \u2014 before & after",
       "description": "Before-and-after proof from a handyman repair job completed by Knight Group in Clearwater.",
@@ -6676,6 +6708,32 @@
       "photoBefore": 3,
       "photoProcess": 3,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-handyman-repair-e328474.webp",
+      "filename": "before-after-handyman-repair-e328474.webp",
+      "group": "handyman-repair-e328474-before-after",
+      "step": 1,
+      "title": "Handyman repair before and after",
+      "seoAlt": "Handyman repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a handyman repair job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Handyman repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a handyman repair job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Baseboards: Reinstall baseboards Starting from the exposed slab shown, scrape loose residue and perform minor spot filling, then install approximately 190 square feet of click-lock LVP or laminate with the required expansion gap. Flooring removal is not included because it is already complete; extensive slab leveling, moisture remediation, glue-down flooring, transitions, or repairs concealed by the old flooring\u2026",
+      "photoBefore": 2,
+      "photoProcess": 2,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-handyman-repair-e8e763c.webp",
