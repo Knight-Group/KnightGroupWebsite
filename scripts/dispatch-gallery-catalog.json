@@ -3389,5 +3389,30 @@
     "photoBefore": 2,
     "photoProcess": 2,
     "photoAfter": 1
+  },
+  "before-after-floor-leveling-3c0d48f.webp": {
+    "group": "floor-leveling-3c0d48f-before-after",
+    "groupTitle": "Floor leveling \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a floor leveling job completed by Knight Group in Safety Harbor.",
+    "category": "carpentry",
+    "serviceLink": "/Services/carpentry-framing",
+    "step": 1,
+    "title": "Floor leveling before and after",
+    "description": "Before-and-after comparison from a floor leveling job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "floor-leveling-3c0d48f",
+    "source": "dispatch",
+    "cluster": "floor",
+    "workerName": "Sergey Ambrosov",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Laminate Floor on Hallway Ramp Transition: New laminate flooring installed over existing and leveled subfloor. New flooring is lined up and connected to earlier installed flooring in the room to create a transition-free uniform floor surface.; Floor leveling: A deep recess in the subfloor was cleaned out and filled with water putty to level Laminate Floor on Hallway Ramp Transition: New laminate flooring\u2026",
+    "photoBefore": 1,
+    "photoProcess": 1,
+    "photoAfter": 1
   }
 }
