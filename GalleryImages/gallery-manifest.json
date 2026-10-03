@@ -3942,6 +3942,37 @@
       "photoAfter": 2
     },
     {
+      "id": "taping-windows-53bb03a-before-after",
+      "title": "Taping Windows \u2014 before & after",
+      "description": "Before-and-after proof from a taping windows job completed by Knight Group in Gulfport.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-taping-windows-53bb03a.webp",
+          "filename": "before-after-taping-windows-53bb03a.webp",
+          "step": 1,
+          "title": "Taping Windows before and after",
+          "seoAlt": "Taping Windows before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a taping windows job completed in a Gulfport home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Nicholas Alexopoulos",
+      "workerRole": "field technician",
+      "workerKey": "tech",
+      "cityName": "Gulfport",
+      "countyName": "Pinellas County",
+      "completedMonth": "August 2026",
+      "workNotes": "Cutting posts down to ground level, removing debris all around the house, removing duct tape to replace wiith higher quality tape. Looks better already!",
+      "photoBefore": 1,
+      "photoProcess": 2,
+      "photoAfter": 3
+    },
+    {
       "id": "the-caulking-around-the-toilet-needs-to-be-repla-before-after",
       "title": "The caulking around the toilet needs to be replaced The AC filter needs to be changed. Filter size is 16 x 20. This is a \u2014 before & after",
       "description": "Before-and-after proof from a the caulking around the toilet needs to be replaced the ac filter needs to be changed. filter size is 16 x 20. this is a job completed by Knight Group.",
@@ -8320,6 +8351,31 @@
       "photoBefore": 1,
       "photoProcess": 0,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-taping-windows-53bb03a.webp",
+      "filename": "before-after-taping-windows-53bb03a.webp",
+      "group": "taping-windows-53bb03a-before-after",
+      "step": 1,
+      "title": "Taping Windows before and after",
+      "seoAlt": "Taping Windows before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a taping windows job completed in a Gulfport home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Taping Windows \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a taping windows job completed by Knight Group in Gulfport.",
+      "cluster": "general",
+      "workerName": "Nicholas Alexopoulos",
+      "workerRole": "field technician",
+      "workerKey": "tech",
+      "cityName": "Gulfport",
+      "countyName": "Pinellas County",
+      "completedMonth": "August 2026",
+      "workNotes": "Cutting posts down to ground level, removing debris all around the house, removing duct tape to replace wiith higher quality tape. Looks better already!",
+      "photoBefore": 1,
+      "photoProcess": 2,
+      "photoAfter": 3
     },
     {
       "src": "GalleryImages/before-after-the-caulking-around-the-toilet-needs-to-be-repla.webp",

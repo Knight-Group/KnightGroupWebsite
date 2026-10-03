@@ -3314,5 +3314,30 @@
     "photoBefore": 4,
     "photoProcess": 2,
     "photoAfter": 3
+  },
+  "before-after-taping-windows-53bb03a.webp": {
+    "group": "taping-windows-53bb03a-before-after",
+    "groupTitle": "Taping Windows \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a taping windows job completed by Knight Group in Gulfport.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Taping Windows before and after",
+    "description": "Before-and-after comparison from a taping windows job completed in a Gulfport home.",
+    "beforeAfter": true,
+    "scope_slug": "taping-windows-53bb03a",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Nicholas Alexopoulos",
+    "workerRole": "field technician",
+    "workerKey": "tech",
+    "cityName": "Gulfport",
+    "citySlug": "",
+    "countyName": "Pinellas County",
+    "completedMonth": "August 2026",
+    "workNotes": "Cutting posts down to ground level, removing debris all around the house, removing duct tape to replace wiith higher quality tape. Looks better already!",
+    "photoBefore": 1,
+    "photoProcess": 2,
+    "photoAfter": 3
   }
 }
