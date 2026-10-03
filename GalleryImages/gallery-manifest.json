@@ -4665,6 +4665,38 @@
       "photoAfter": 4
     },
     {
+      "id": "laminate-flooring-installation-c6bece1-before-after",
+      "title": "laminate flooring installation \u2014 before & after",
+      "description": "Before-and-after proof from a laminate flooring installation job completed by Knight Group in Safety Harbor.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-laminate-flooring-installation-c6bece1.webp",
+          "filename": "before-after-laminate-flooring-installation-c6bece1.webp",
+          "step": 1,
+          "title": "laminate flooring installation before and after",
+          "seoAlt": "laminate flooring installation before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a laminate flooring installation job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "floor",
+      "workerName": "Sergey Ambrosov",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Room 6 laminate flooring installation: Did a 13 / 14 office space of laminate flooring including cuts; Room 6 quarter-round installation: Late quarter round then and nailed it down; Laser-aligned laminate termination cuts: Lineup laser beam with with the whole the hallway and d*** calculate the offset for the first row of tiles in the room Room 6 laminate flooring installation: Did a 13 / 14 office space of\u2026",
+      "photoBefore": 4,
+      "photoProcess": 2,
+      "photoAfter": 3
+    },
+    {
       "id": "laminate-lvp-installation-d86a9bf-before-after",
       "title": "laminate/lvp installation \u2014 before & after",
       "description": "Before-and-after proof from a laminate/lvp installation job completed by Knight Group in Pinellas County.",
@@ -7032,6 +7064,32 @@
       "beforeAfter": true,
       "groupTitle": "Kitchen window blinds repair \u2014 before & after",
       "groupDescription": "Before-and-after proof from a kitchen window blinds repair job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-laminate-flooring-installation-c6bece1.webp",
+      "filename": "before-after-laminate-flooring-installation-c6bece1.webp",
+      "group": "laminate-flooring-installation-c6bece1-before-after",
+      "step": 1,
+      "title": "laminate flooring installation before and after",
+      "seoAlt": "laminate flooring installation before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a laminate flooring installation job completed in a Safety Harbor home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "laminate flooring installation \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a laminate flooring installation job completed by Knight Group in Safety Harbor.",
+      "cluster": "floor",
+      "workerName": "Sergey Ambrosov",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Room 6 laminate flooring installation: Did a 13 / 14 office space of laminate flooring including cuts; Room 6 quarter-round installation: Late quarter round then and nailed it down; Laser-aligned laminate termination cuts: Lineup laser beam with with the whole the hallway and d*** calculate the offset for the first row of tiles in the room Room 6 laminate flooring installation: Did a 13 / 14 office space of\u2026",
+      "photoBefore": 4,
+      "photoProcess": 2,
+      "photoAfter": 3
     },
     {
       "src": "GalleryImages/before-after-laminate-lvp-installation-d86a9bf.webp",
