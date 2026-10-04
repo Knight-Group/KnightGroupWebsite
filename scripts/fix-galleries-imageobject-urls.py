@@ -22,7 +22,7 @@ IMAGE_FILE_TO_PAGE: dict[str, str] = {
     "before-after-door-wedge.webp": "/gallery/door-wedge-before-after",
     "before-after-fire-extinguisher-mount.webp": "/gallery/fire-extinguisher-mount-before-after",
     "GarbageDisposal.webp": "/gallery/garbage-disposal-install",
-    "before-after-copeland-morgan-llc-work-order.webp": "/galleries#image-copeland-morgan-llc-work-order-before-after",
+    "before-after-rental-property-repair.webp": "/galleries#image-rental-property-repair-before-after",
 }
 
 

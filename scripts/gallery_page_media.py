@@ -142,7 +142,7 @@ def _entry(
 
 # Inspected allow-list. Rejected (do not add back):
 # AC filter / vent / battery / smoke-alarm / door-wedge / stair-tape /
-# fire-extinguisher / curtain-rod / Copeland work order / Screen Team card /
+# fire-extinguisher / curtain-rod / PM vendor work order / Screen Team card /
 # KITHCHEN and FACUET typos / "YouTube video link" title / truncated hose-bib
 # title / empty black grids / comic-font flyers / tub-drain-trim-only /
 # raw fixture-junction boxes on hub pages / 640w and social twins.

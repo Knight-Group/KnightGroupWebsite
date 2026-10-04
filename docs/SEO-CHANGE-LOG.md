@@ -107,7 +107,7 @@ GSC last-3-months looking weaker on average position is consistent with **niche 
 
 Rebuilt the existing URL `https://www.knightgroup.com/property-manager-handyman` (it was a generated stub: one repeated sentence and homeowner FAQs). This is **not** a new URL, **not** a new GBP, and **not** a second company’s page.
 
-**Vendor is Knight Group Handyman Services LLC only.** FEIN 33-2557284, Sunbiz L24000528363, Safety Harbor remit address, W-9 / GL COI / officer WC exemptions. Honest that the LLC does **not** yet have a company WC policy. No Copeland/vendor-network rates. No subcontractor LLCs named or listed.
+**Vendor is Knight Group Handyman Services LLC only.** FEIN 33-2557284, Sunbiz L24000528363, Safety Harbor remit address, W-9 / GL COI / officer WC exemptions. Honest that the LLC does **not** yet have a company WC policy. No PM-client/vendor-network rates. No subcontractor LLCs named or listed.
 
 **Keywords:** GSC (Jun 2–Aug 28) already has `commercial handyman near me` (645 imp / 0 clicks / pos 26.5) and `property maintenance handyman` (1 click). Google Trends explore 429’d during research; the page uses those GSC terms plus PM vendor language (work order, AppFolio/Buildium invite, certificate of insurance) instead of homeowner “near me” stuffing. Title: `Property Manager Handyman | Vendor Packet | Pinellas`. ~1,000 unique body words. Internal links to rental turnover, Home Watch, Florida scope, pricing, Pinellas, general repairs.
 
@@ -148,7 +148,7 @@ Misspelled ticket city **Carolwood** did **not** block posting. `KG-20260716-DFC
 | Trinity | KG-20260731-26A9 | toilets, ballast light, wall outlet |
 | Port Richey | KG-20260816-809A | fence reset |
 
-Zero completed Lutz jobs. Zero completed Tampa jobs (one cancelled Copeland WO, no photos). Future Lutz/Tampa jobs will publish the same two surfaces from Dispatch; Lutz copy will not get a `/lutz-handyman` slug.
+Zero completed Lutz jobs. Zero completed Tampa jobs (one cancelled PM work order, no photos). Future Lutz/Tampa jobs will publish the same two surfaces from Dispatch; Lutz copy will not get a `/lutz-handyman` slug.
 
 ---
 
@@ -189,7 +189,7 @@ Astra verified the **live** host: main features were present, but Home Watch int
 
 **1. Home Watch intake + sample report (first).** Pinellas form is now **6 customer-facing fields, 5 required** (name, phone, email, city, plan + optional notes). Dropped property type, sqft, away frequency, interior/pool/gate, start date. Rates sit in the hero and in a table under the first paragraph. New page `/home-watch-sample-report` is a labeled **SAMPLE** (fictional Safety Harbor vacant house, not a real owner file, not a licensed inspection). Generator: `scripts/build-home-watch-pages.py` — edit that or a rebuild overwrites the HTML.
 
-**2. Property-manager proof + trial work order.** `/property-manager-handyman` now has `#sample-closeout` (real Largo gate photos, SAMPLE-WO-1847 label), two documented jobs (Largo gate, Clearwater rodent-hole), and `#first-paid-work-order` — one **paid** ticket at published `$150/$75`, not a free trial. No invented PM company names. No Copeland rates.
+**2. Property-manager proof + trial work order.** `/property-manager-handyman` now has `#sample-closeout` (real Largo gate photos, SAMPLE-WO-1847 label), two documented jobs (Largo gate, Clearwater rodent-hole), and `#first-paid-work-order` — one **paid** ticket at published `$150/$75`, not a free trial. No invented PM company names. No PM-client rates.
 
 **3. Sitewide copy/title cleanup.** Homepage tags no longer say “Local trust layer,” “Geo and route coverage,” or “Google reviews and map proof.” Clearwater opening no longer says “already showing up for Clearwater searches.” Tampa hero/body/FAQ now lead with northwest Tampa / Westchase / Town 'n' Country / Carrollwood; Hyde Park is confirm-first; duplicate kitchen/bath bullet removed. Related-card `Doors &amp;amp;amp; windows` collapsed to `Doors &amp; windows` (52 files); `service_related.py` unescapes before escaping once so a future related-card pass does not re-stack ampersands. Gallery ticket names **Bedroom** and **Attic Drywall - Return Visit** are now customer problem/result titles on those two job pages, related-card labels, catalog, and gallery-manifest. **Did not mass-regenerate galleries** (no lastmod storm).
 
