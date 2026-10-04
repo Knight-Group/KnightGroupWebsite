@@ -81,12 +81,14 @@ def _content_hash(paths: list[Path]) -> str | None:
 def _git_available() -> bool:
     global _git_ok
     if _git_ok is None:
+        # Shallow clones still give a useful (if older-bounded) date; seeding
+        # only happens for URLs missing from seo/sitemap-lastmod.json.
         try:
-            shallow = subprocess.run(
-                ["git", "rev-parse", "--is-shallow-repository"],
+            subprocess.run(
+                ["git", "rev-parse", "--git-dir"],
                 cwd=ROOT, capture_output=True, text=True, check=True,
-            ).stdout.strip()
-            _git_ok = shallow == "false"
+            )
+            _git_ok = True
         except (OSError, subprocess.CalledProcessError):
             _git_ok = False
     return _git_ok
