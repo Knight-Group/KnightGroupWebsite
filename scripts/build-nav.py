@@ -138,6 +138,7 @@ def build_desktop_nav(catalog: dict) -> str:
 <li><a href="/about">About</a></li>
 {services}
 {areas}
+<li><a href="/property-manager-handyman" class="kg-nav-pm">Property Managers</a></li>
 <li><a href="/pricing">Pricing</a></li>
 <li><a href="/contact">Contact</a></li>
 <li><a href="/galleries">Gallery</a></li>
@@ -170,6 +171,7 @@ def build_mobile_nav(catalog: dict) -> str:
   </div>
 </li>
 <li><a href="/booking">Book Estimate</a></li>
+<li><a href="/property-manager-handyman">Property Managers &amp; Businesses</a></li>
 <li><a href="/pricing">Pricing</a></li>
 <li><a href="/contact">Contact</a></li>
 <li><a href="/galleries">Gallery</a></li>
