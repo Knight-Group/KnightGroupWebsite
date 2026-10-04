@@ -75,8 +75,18 @@ def image_exists(filename: str) -> bool:
     return path.is_file() and path.stat().st_size >= 512
 
 
+def card_filename(filename: str) -> str:
+    """Prefer the 640w variant: cards render at <=640px, originals are 200-340 KB."""
+    stem, dot, ext = filename.rpartition(".")
+    if dot and ext.lower() == "webp" and not stem.endswith("-640w"):
+        small = f"{stem}-640w.webp"
+        if image_exists(small):
+            return small
+    return filename
+
+
 def render_card(group: dict, image: dict) -> str:
-    filename = image["filename"]
+    filename = card_filename(image["filename"])
     src = gallery_src(filename)
     alt = html.escape(image.get("seoAlt") or group["title"], quote=True)
     title = html.escape(group["title"], quote=False)
@@ -84,7 +94,7 @@ def render_card(group: dict, image: dict) -> str:
     return (
         f'<article class="kg-job-card"><picture>'
         f'<source srcset="{src}" type="image/webp">'
-        f'<img src="{src}" alt="{alt}" loading="eager" decoding="async" width="640" height="480" data-kg-static="true">'
+        f'<img src="{src}" alt="{alt}" loading="lazy" decoding="async" width="640" height="480" data-kg-static="true" data-kg-carousel-img="true">'
         f"</picture><div><h3>{title}</h3><p>{description}</p></div></article>"
     )
 
@@ -121,7 +131,7 @@ def build_cards() -> str:
 def patch_index(cards_html: str) -> None:
     index_html = INDEX_PATH.read_text(encoding="utf-8")
     pattern = re.compile(
-        r'(<div class="kg-job-track" id="kg-job-track">\s*)(.*?)(\s*</div>\s*</div>\s*<button class="kg-job-btn" type="button" id="kg-job-next")',
+        r'(<div class="kg-job-track" id="kg-job-track">)\s*(.*?)\s*(</div>\s*</div>\s*<button class="kg-job-btn" type="button" id="kg-job-next")',
         re.DOTALL,
     )
     match = pattern.search(index_html)
@@ -129,7 +139,7 @@ def patch_index(cards_html: str) -> None:
         raise RuntimeError("Could not find kg-job-track block in index.html")
 
     updated = pattern.sub(
-        rf"\1\n                            {cards_html}\n                        \3",
+        lambda m: f"{m.group(1)}\n                            {cards_html}\n                        {m.group(3)}",
         index_html,
         count=1,
     )
