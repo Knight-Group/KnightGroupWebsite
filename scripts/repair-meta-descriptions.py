@@ -103,7 +103,7 @@ MAJOR_SERVICE_META = {
     ),
     "pricing.html": (
         "Transparent handyman pricing in Pinellas County: $75–$150/hr with no 2-hour minimum, plus "
-        "flat-rate quotes for defined scopes. Materials markup 10%. Free written estimate."
+        "flat-rate quotes for defined scopes. Free written estimate."
     ),
     "pricing-handyman-by-the-hour.html": (
         "Handyman by the hour in Pinellas County from $75–$150 with no 2-hour minimum. Ideal for punch "
