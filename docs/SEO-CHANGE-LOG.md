@@ -10,6 +10,13 @@ Live HTML ships from `E:\Handyman Ticket Manager\state\deploy\KnightGroupWebsite
 
 ---
 
+## 2026-10-04 (later): Nick's answers applied (Grok Bot)
+
+- **Property manager path (A1, follow-up):** `/property-manager-handyman` keeps its title, meta, H1, and existing sections. It adds "Portfolio pricing for multi-property clients" and "Priority care for repeat clients" (no percentages or rates published), plus a work-order/photo closeout list and one FAQ sentence. Footer gets a sitewide "Property manager or business? Add Knight Group as your vendor" CTA linking to `#vendor-form`. Vendor packet README and zip are refreshed with the same wording; the PDFs are unchanged. `scripts/sync-vendor-packet.py --readme-only` rebuilds them without Vendor Info.
+- **NAP / Maps link (A6, site side only):** Sunbiz L24000528363 (ACTIVE), the site schema, and the live Google listing all read Knight Group, 1225 7th St S, Safety Harbor, FL 34695, (813) 649-3341. Schema `hasMap`/`sameAs`, `seo/business-facts.json`, `seo/knight-group-business-entity.json`, and `llms.txt` now point to cid 11011723676705284668. The old cid 10508624668428370015 resolved to no listing. GBP was not touched.
+- **Expansion order:** Tampa first, Pasco later.
+- No title/meta changes. Sitemap lastmod moved to 2026-10-04 on pages whose schema changed (a real content change).
+
 ## 2026-10-04: safe quick wins (Grok Bot, Nick's standing approval)
 
 No title, meta description, or H1 changes on existing pages. No URL changes. Separate commits so each can be reverted.
