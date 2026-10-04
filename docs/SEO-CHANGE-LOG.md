@@ -10,6 +10,10 @@ Live HTML ships from `E:\Handyman Ticket Manager\state\deploy\KnightGroupWebsite
 
 ---
 
+## 2026-10-04 (evening): free written quotes restored in body copy (Grok Bot, Nick's clarification)
+
+- A free WRITTEN quote from details and photos is accurate; only free IN-PERSON estimates are not offered. Body CTAs now say "Request a free written quote" / "Get a free written quote from photos". FAQ answers now say "Send details and photos for a free written quote. We don’t do free in-person estimates; phone quotes are usually close, get revised on site if the scope changes, and work starts once you sign." /booking FAQ is back to "Is the estimate really free?", answered "Yes, the written quote is free…". ReserveAction name: "Request a free written handyman quote". Generators updated. Titles, meta, and H1 unchanged (they already say "free written estimate", which is accurate).
+
 ## 2026-10-04 (midday): materials markup and estimates policy (Grok Bot, Nick's direction)
 
 - **Materials:** removed the public materials markup percentage from `/pricing` (materials note and FAQ). The page now says materials are billed at cost-plus and itemized on the invoice. Removed the same percentage from the `repair-meta-descriptions.py` template, which was not live. No percentages remain on the site, in llms.txt, or in the vendor packet. The PM page adds "Preferred materials pricing for repeat-work vendors" with no percentage.
