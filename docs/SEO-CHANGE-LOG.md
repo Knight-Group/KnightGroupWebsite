@@ -10,6 +10,14 @@ Live HTML ships from `E:\Handyman Ticket Manager\state\deploy\KnightGroupWebsite
 
 ---
 
+## 2026-10-04 (midday): materials markup and estimates policy (Grok Bot, Nick's direction)
+
+- **Materials:** removed the public materials markup percentage from `/pricing` (materials note and FAQ). The page now says materials are billed at cost-plus and itemized on the invoice. Removed the same percentage from the `repair-meta-descriptions.py` template, which was not live. No percentages remain on the site, in llms.txt, or in the vendor packet. The PM page adds "Preferred materials pricing for repeat-work vendors" with no percentage.
+- **Estimates policy:** there are no free in-person estimates. We quote by phone or from photos; a quote can be revised on site, and work starts with a signed agreement.
+  - Body CTAs, sidebars, gallery CTAs, and FAQ answers were updated on index, about, booking, pricing, Services/handyman, payment policy, and about 280 generated pages, together with their generator sources.
+  - The ReserveAction name is now "Request a handyman quote".
+  - Titles, meta descriptions, and the booking H1 were NOT changed (freeze). About 231 meta descriptions, their JSON-LD description mirrors, and the booking title/H1 still say "free (written) estimate"; they need Nick's call under the 60-day tag rule.
+
 ## 2026-10-04 (later): Nick's answers applied (Grok Bot)
 
 - **Property manager path (A1, follow-up):** `/property-manager-handyman` keeps its title, meta, H1, and existing sections. It adds "Portfolio pricing for multi-property clients" and "Priority care for repeat clients" (no percentages or rates published), plus a work-order/photo closeout list and one FAQ sentence. Footer gets a sitewide "Property manager or business? Add Knight Group as your vendor" CTA linking to `#vendor-form`. Vendor packet README and zip are refreshed with the same wording; the PDFs are unchanged. `scripts/sync-vendor-packet.py --readme-only` rebuilds them without Vendor Info.
