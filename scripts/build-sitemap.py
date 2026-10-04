@@ -3,8 +3,10 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
-from datetime import date, datetime
+import subprocess
+from datetime import date
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
@@ -46,25 +48,100 @@ MAJOR_SERVICES = [
 ]
 
 
-def _mtime_iso(path: Path) -> str | None:
-    if not path.is_file():
+LASTMOD_STATE = ROOT / "seo" / "sitemap-lastmod.json"
+_state: dict[str, dict[str, str]] | None = None
+_state_dirty = False
+_git_ok: bool | None = None
+
+
+def _load_state() -> dict[str, dict[str, str]]:
+    global _state
+    if _state is None:
+        try:
+            _state = json.loads(LASTMOD_STATE.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            _state = {}
+    return _state
+
+
+def _content_hash(paths: list[Path]) -> str | None:
+    """Hash page text with whitespace-only differences removed (CRLF, blank lines)."""
+    digest = hashlib.sha256()
+    found = False
+    for path in paths:
+        if not path.is_file():
+            continue
+        found = True
+        text = path.read_text(encoding="utf-8", errors="replace").replace("\r\n", "\n")
+        lines = [line.rstrip() for line in text.split("\n")]
+        digest.update("\n".join(line for line in lines if line).encode("utf-8"))
+    return digest.hexdigest() if found else None
+
+
+def _git_available() -> bool:
+    global _git_ok
+    if _git_ok is None:
+        try:
+            shallow = subprocess.run(
+                ["git", "rev-parse", "--is-shallow-repository"],
+                cwd=ROOT, capture_output=True, text=True, check=True,
+            ).stdout.strip()
+            _git_ok = shallow == "false"
+        except (OSError, subprocess.CalledProcessError):
+            _git_ok = False
+    return _git_ok
+
+
+def _git_date(path: Path) -> str | None:
+    if not _git_available():
         return None
-    return datetime.fromtimestamp(path.stat().st_mtime).date().isoformat()
+    try:
+        out = subprocess.run(
+            ["git", "log", "-1", "--format=%cs", "--", str(path.relative_to(ROOT))],
+            cwd=ROOT, capture_output=True, text=True, check=True,
+        ).stdout.strip()
+    except (OSError, subprocess.CalledProcessError):
+        return None
+    return out or None
 
 
 def lastmod_for_loc(loc: str) -> str:
-    """Use the HTML file date so Google does not see every URL as rewritten today."""
+    """Content-based lastmod.
+
+    The date only moves when the page text really changes (tracked by hash in
+    seo/sitemap-lastmod.json). File mtimes and build dates are ignored, so
+    fresh checkouts and automated gallery publishes no longer mark every URL
+    as modified today. New pages are seeded from git history when available.
+    """
+    global _state_dirty
     rel = loc.replace(BASE, "").strip("/")
-    candidates: list[Path] = []
     if not rel:
-        candidates.append(ROOT / "index.html")
+        paths = [ROOT / "index.html"]
     elif rel == "galleries":
-        candidates.append(ROOT / "galleries.html")
-        candidates.extend((ROOT / "gallery").glob("*.html"))
+        paths = [ROOT / "galleries.html"]
     else:
-        candidates.append(ROOT / f"{rel}.html")
-    dates = [iso for path in candidates if (iso := _mtime_iso(path))]
-    return max(dates) if dates else TODAY
+        paths = [ROOT / f"{rel}.html"]
+    digest = _content_hash(paths)
+    if digest is None:
+        return TODAY
+    state = _load_state()
+    entry = state.get(loc)
+    if entry and entry.get("sha256") == digest and entry.get("lastmod"):
+        return entry["lastmod"]
+    if entry:
+        lastmod = TODAY
+    else:
+        lastmod = _git_date(paths[0]) or TODAY
+    state[loc] = {"sha256": digest, "lastmod": lastmod}
+    _state_dirty = True
+    return lastmod
+
+
+def _save_state(locs: set[str]) -> None:
+    state = _load_state()
+    pruned = {loc: state[loc] for loc in sorted(state) if loc in locs}
+    if _state_dirty or pruned != state:
+        LASTMOD_STATE.write_text(json.dumps(pruned, indent=1, sort_keys=True) + "\n", encoding="utf-8")
 
 
 def add_url(urlset: ET.Element, loc: str, priority: str, changefreq: str) -> None:
@@ -102,6 +179,7 @@ def main() -> int:
             add_url(urlset, loc, page.get("priority", "0.75"), "monthly")
             seen.add(loc)
 
+    _save_state(seen)
     tree = ET.ElementTree(urlset)
     ET.indent(tree, space="  ")
     tree.write(SITEMAP, encoding="UTF-8", xml_declaration=True)
