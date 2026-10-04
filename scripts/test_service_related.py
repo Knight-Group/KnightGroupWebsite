@@ -66,7 +66,7 @@ def test_plumbing_cards_keep_plumbing_photos():
             ("/plumber-background-handyman", "Journeyman plumbing experience"),
             ("/Services/plumbing-services", "Plumbing assessment"),
             ("/about", "About Knight Group"),
-            ("/booking", "Get a quote by phone or photos"),
+            ("/booking", "Get a free written quote from photos"),
             ("/Services/handyman", "Handyman services"),
         ]
     )

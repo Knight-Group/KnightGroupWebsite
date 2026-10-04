@@ -526,7 +526,7 @@ def inject_gallery_extra(rel: str, html: str) -> str:
     extra = GALLERY_EXTRAS.get(rel)
     if not extra or extra.strip() in html:
         return html
-    needle = "<p>Want similar work at your property? Send photos of your space for a quote.</p>"
+    needle = "<p>Want similar work at your property? Send photos of your space for a free written quote.</p>"
     if needle not in html:
         return html
     return html.replace(needle, extra + needle, 1)

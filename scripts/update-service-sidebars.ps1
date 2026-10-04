@@ -41,7 +41,7 @@ foreach ($svc in $services) {
     $replacement = @"
                         <aside class="kg-service-sidebar" data-kg-enter="right" aria-labelledby="$headingId">
                             <div class="kg-pricing-sidebar-form">
-                                <h4 id="$headingId">Get your quote</h4>
+                                <h4 id="$headingId">Get your free written quote</h4>
                                 <p>Send the basics and we will follow up with clear pricing for your Pinellas County project.</p>
                                 <form class="kg-contact-form" action="https://formspree.io/f/xzzvnpne" method="POST">
                                     <div class="kg-field">
@@ -60,7 +60,7 @@ foreach ($svc in $services) {
                                     <input type="hidden" name="request_type" value="$label / Estimate Request">
                                     <input type="hidden" name="_next" value="https://www.knightgroup.com/thank-you">
                                     <input class="kg-hp" type="text" name="address_2" autocomplete="off" tabindex="-1" aria-hidden="true">
-                                    <button type="submit" class="kg-contact-form__submit">Get a quote</button>
+                                    <button type="submit" class="kg-contact-form__submit">Get a free written quote</button>
                                 </form>
                             </div>
 
@@ -70,7 +70,7 @@ foreach ($svc in $services) {
                                     <li>No 2-hour minimums</li>
                                     <li>Transparent, upfront pricing</li>
                                     <li>Registered and insured</li>
-                                    <li>Quotes by phone or photos</li>
+                                    <li>Free written quotes from photos</li>
                                     <li>Local Safety Harbor business</li>
                                     <li>5.0 Google rating</li>
                                     <li>+15 Years as Journeyman Plumber</li>

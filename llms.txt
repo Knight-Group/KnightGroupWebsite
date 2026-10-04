@@ -21,7 +21,7 @@ Home Watch is a scheduled visual observation and reporting service. It is not a 
 
 - [Home](https://www.knightgroup.com/)
 - [Services overview](https://www.knightgroup.com/services)
-- [Request a quote](https://www.knightgroup.com/booking)
+- [Request a free written quote](https://www.knightgroup.com/booking)
 - [Pricing](https://www.knightgroup.com/pricing)
 - [No 2-hour minimum](https://www.knightgroup.com/pricing-no-2-hour-minimum)
 - [Contact](https://www.knightgroup.com/contact)

@@ -543,7 +543,7 @@ NICHE_FAQ: dict[str, list[tuple[str, str]]] = {
     ],
     "small-jobs": [
         ("Do you take handyman small jobs near me?", "Yes. Knight Group accepts single-item and short punch-list jobs across Pinellas County without requiring a large minimum scope."),
-        ("Is there a minimum charge for a small job?", "Many visits start with a published minimum hour or flat-rate for defined scopes. See our pricing pages or request a quote with photos for your specific task."),
+        ("Is there a minimum charge for a small job?", "Many visits start with a published minimum hour or flat-rate for defined scopes. See our pricing pages or request a free written quote with photos for your specific task."),
         ("Can I combine three unrelated small tasks in one trip?", "Often yes — mention every item when booking so we allocate enough time and materials for the full list."),
         ("How fast can you schedule a small repair?", "Standard small jobs usually schedule within one to two business days. Call directly if water is actively leaking."),
         ("Do you supply hardware for small jobs?", "Consumables and common fasteners are included on many scopes; specialty fixtures or designer hardware are typically owner-supplied unless quoted otherwise."),
@@ -560,7 +560,7 @@ NICHE_FAQ: dict[str, list[tuple[str, str]]] = {
     "sink-faucet-repair": [
         ("Can you fix a leaking sink in Clearwater?", "Yes — many leaks are failed supply lines, traps, or faucet seals. Knight Group serves Clearwater with fixture-level repairs within handyman plumbing scope."),
         ("Do I need a plumber for every sink leak?", "Not always. Accessible fixture and trap repairs often fit handyman scope. Repipes, hidden line failures, and permit work need a licensed plumber."),
-        ("How much does sink repair cost locally?", "Price depends on access, parts, and whether shutoffs or supply lines must be replaced. We provide quotes by phone or photos before work starts."),
+        ("How much does sink repair cost locally?", "Price depends on access, parts, and whether shutoffs or supply lines must be replaced. We provide free written quotes from photos before work starts."),
         ("Can you repair kitchen and bathroom sinks?", "Yes — both are common. We test hot and cold lines and check drains after repairs."),
         ("Will you replace corroded shutoffs during a sink repair?", "Yes when accessible — replacing frozen angle stops prevents bigger emergencies later."),
         ("Can you patch drywall after a sink leak?", "Yes — we often handle cabinet and wall closeout after plumbing is stable. Mention water damage when booking."),

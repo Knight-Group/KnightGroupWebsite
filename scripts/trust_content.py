@@ -296,7 +296,7 @@ def trust_faqs(slug: str) -> list[tuple[str, str]]:
 def trust_related_links(slug: str) -> list[tuple[str, str]]:
     common = [
         ("/about", "About Knight Group"),
-        ("/booking", "Get a quote by phone or photos"),
+        ("/booking", "Get a free written quote from photos"),
         ("/Services/handyman", "Handyman services"),
     ]
     if slug == "plumber-background-handyman":

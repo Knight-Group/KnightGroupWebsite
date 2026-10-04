@@ -118,7 +118,7 @@ GALLERY_BODY: dict[str, str] = {
 </ul>
 <h3>Why homeowners search for tub and window work together</h3>
 <p>Florida bathrooms often combine aging windows, hard-water fixtures, and tile that has separated from backing board. Searching for bathroom remodel photos helps owners see whether a handyman-scope update — rather than a full GC contract — fits their budget and timeline.</p>
-<p>Compare related work on our <a href="/Services/home-renovations">home renovations page</a> or <a href="/booking">request a quote</a> with photos of your tub wall and window.</p>
+<p>Compare related work on our <a href="/Services/home-renovations">home renovations page</a> or <a href="/booking">request a free written quote</a> with photos of your tub wall and window.</p>
 """,
     "blinds-replacement-before-after": """
 <h3>Before and after: broken blinds replacement</h3>
@@ -225,7 +225,7 @@ GALLERY_BODY: dict[str, str] = {
 </ul>
 <h3>When to book vent and filter work</h3>
 <p>Visible dust buildup, weak return airflow, or a loose floor/ceiling grille are signs to schedule service before coil strain or noise issues start. Photos of the vent and any label on the old filter help us bring the right media on the first trip.</p>
-<p>Related: <a href="/Services/general-repairs">general repairs</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a quote</a>.</p>
+<p>Related: <a href="/Services/general-repairs">general repairs</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a free written quote</a>.</p>
 """,
     "fence-repair-before-after": """
 <h3>Backyard wooden fence repair</h3>
@@ -239,7 +239,7 @@ GALLERY_BODY: dict[str, str] = {
 </ul>
 <h3>When to book fence repair</h3>
 <p>Leaning panels, loose gate hardware, or a full section on the ground are safety and security issues — especially with pets or pool access. Photos of the full fence line and any gate latches help us quote parts and labor on the first visit.</p>
-<p>Related: <a href="/Services/carpentry-framing">carpentry and framing</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a quote</a>.</p>
+<p>Related: <a href="/Services/carpentry-framing">carpentry and framing</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a free written quote</a>.</p>
 """,
     "door-lock-repair-before-after": """
 <h3>Door lock alignment and hardware repair</h3>
@@ -250,7 +250,7 @@ GALLERY_BODY: dict[str, str] = {
 <li>Tightened lock set screws and tested key operation</li>
 <li>Left before-and-after proof for the homeowner</li>
 </ul>
-<p>Related: <a href="/Services/general-repairs">general repairs</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a quote</a>.</p>
+<p>Related: <a href="/Services/general-repairs">general repairs</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a free written quote</a>.</p>
 """,
     "curtain-rod-mount-before-after": """
 <h3>Curtain rod bracket remount</h3>
@@ -261,7 +261,7 @@ GALLERY_BODY: dict[str, str] = {
 <li>Reinstalled brackets level across the span</li>
 <li>Verified rod load and finial clearance</li>
 </ul>
-<p>Related: <a href="/Services/carpentry-framing">carpentry and framing</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a quote</a>.</p>
+<p>Related: <a href="/Services/carpentry-framing">carpentry and framing</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a free written quote</a>.</p>
 """,
     "stair-tape-repair-before-after": """
 <h3>Stair tread anti-slip tape replacement</h3>
@@ -272,7 +272,7 @@ GALLERY_BODY: dict[str, str] = {
 <li>Applied new anti-slip tape with firm pressure at noses</li>
 <li>Walk-tested each step before turnover</li>
 </ul>
-<p>Related: <a href="/Services/carpentry-framing">carpentry and framing</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a quote</a>.</p>
+<p>Related: <a href="/Services/carpentry-framing">carpentry and framing</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a free written quote</a>.</p>
 """,
     "smoke-alarm-battery-swap-before-after": """
 <h3>Smoke alarm battery replacement</h3>
@@ -283,7 +283,7 @@ GALLERY_BODY: dict[str, str] = {
 <li>Tested alarm response with the test button</li>
 <li>Confirmed cover plates seated and mounts secure</li>
 </ul>
-<p>Related: <a href="/Services/general-repairs">general repairs</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a quote</a>.</p>
+<p>Related: <a href="/Services/general-repairs">general repairs</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a free written quote</a>.</p>
 """,
     "filter-change-before-after": """
 <h3>HVAC return filter replacement</h3>
@@ -294,7 +294,7 @@ GALLERY_BODY: dict[str, str] = {
 <li>Reinstalled grille and verified secure fit</li>
 <li>Left before-and-after proof for the owner</li>
 </ul>
-<p>Related: <a href="/Services/general-repairs">general repairs</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a quote</a>.</p>
+<p>Related: <a href="/Services/general-repairs">general repairs</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a free written quote</a>.</p>
 """,
     "carpet-removal-before-after": """
 <h3>Carpet and pad removal</h3>
@@ -305,7 +305,7 @@ GALLERY_BODY: dict[str, str] = {
 <li>Bagged debris and swept the exposed subfloor</li>
 <li>Left the room ready for flooring or further prep</li>
 </ul>
-<p>Related: <a href="/Services/carpentry-framing">carpentry and framing</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a quote</a>.</p>
+<p>Related: <a href="/Services/carpentry-framing">carpentry and framing</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a free written quote</a>.</p>
 """,
     "fire-extinguisher-mount-before-after": """
 <h3>Fire extinguisher wall mount</h3>
@@ -316,7 +316,7 @@ GALLERY_BODY: dict[str, str] = {
 <li>Seated extinguisher and verified quick-release pull</li>
 <li>Left before-and-after proof for the homeowner</li>
 </ul>
-<p>Related: <a href="/Services/general-repairs">general repairs</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a quote</a>.</p>
+<p>Related: <a href="/Services/general-repairs">general repairs</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a free written quote</a>.</p>
 """,
     "blind-repair-before-after": """
 <h3>Window blind repair</h3>
@@ -327,7 +327,7 @@ GALLERY_BODY: dict[str, str] = {
 <li>Leveled the headrail and tested raise/lower/title</li>
 <li>Left before-and-after proof for the owner</li>
 </ul>
-<p>Related: <a href="/Services/doors-windows">doors and windows</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a quote</a>.</p>
+<p>Related: <a href="/Services/doors-windows">doors and windows</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a free written quote</a>.</p>
 """,
     "kitchen-sink-leak-before-after": """
 <h3>Under-sink leak repair</h3>
@@ -338,7 +338,7 @@ GALLERY_BODY: dict[str, str] = {
 <li>Flow-tested faucet and disposal lines</li>
 <li>Dried the cabinet base and left proof photos</li>
 </ul>
-<p>Related: <a href="/Services/plumbing-services">plumbing services</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a quote</a>.</p>
+<p>Related: <a href="/Services/plumbing-services">plumbing services</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a free written quote</a>.</p>
 """,
     "ceiling-fan-and-light-repair-c977b5e-before-after": """
 <h3>Ceiling fan and light repair</h3>
@@ -349,7 +349,7 @@ GALLERY_BODY: dict[str, str] = {
 <li>Made the canopy connections and tested fan speeds and the light</li>
 <li>Left before-and-after proof for the homeowner</li>
 </ul>
-<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a quote</a>.</p>
+<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a free written quote</a>.</p>
 """,
     "ceiling-fan-repair-1e73090-before-after": """
 <h3>Ceiling fan repair</h3>
@@ -360,7 +360,7 @@ GALLERY_BODY: dict[str, str] = {
 <li>Balanced blades and tested speeds before turnover</li>
 <li>Left before-and-after proof for the owner</li>
 </ul>
-<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a quote</a>.</p>
+<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a free written quote</a>.</p>
 """,
     "ballast-light-fixture-bbe38e2-before-after": """
 <h3>Ballast and light fixture replacement</h3>
@@ -371,7 +371,7 @@ GALLERY_BODY: dict[str, str] = {
 <li>Installed working lamps and tested the circuit</li>
 <li>Left before-and-after proof for the owner</li>
 </ul>
-<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a quote</a>.</p>
+<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a free written quote</a>.</p>
 """,
     "a-wall-outlet-repair-93788a6-before-after": """
 <h3>Wall outlet repair</h3>
@@ -382,7 +382,7 @@ GALLERY_BODY: dict[str, str] = {
 <li>Seated the cover plate and tested with a plug-in tester</li>
 <li>Left before-and-after proof for the homeowner</li>
 </ul>
-<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a quote</a>.</p>
+<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a free written quote</a>.</p>
 """,
     "secure-outlets-5be7424-before-after": """
 <h3>Securing loose outlets</h3>
@@ -393,7 +393,7 @@ GALLERY_BODY: dict[str, str] = {
 <li>Installed cover plates and tested each location</li>
 <li>Left before-and-after proof for the owner</li>
 </ul>
-<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a quote</a>.</p>
+<p>Related: <a href="/Services/electrical-work">electrical work</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a free written quote</a>.</p>
 """,
     "door-wedge-before-after": """
 <h3>Door wedge installation</h3>
@@ -404,7 +404,7 @@ GALLERY_BODY: dict[str, str] = {
 <li>Verified latch alignment and smooth close</li>
 <li>Left before-and-after proof for the homeowner</li>
 </ul>
-<p>Related: <a href="/Services/general-repairs">general repairs</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a quote</a>.</p>
+<p>Related: <a href="/Services/general-repairs">general repairs</a>, <a href="/galleries">project gallery</a>, or <a href="/booking">request a free written quote</a>.</p>
 """,
 }
 

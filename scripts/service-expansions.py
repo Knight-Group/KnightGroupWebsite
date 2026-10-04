@@ -28,7 +28,7 @@ EXPANSIONS = {
 </ul>
 
 <h2>Local plumbing repair in Safety Harbor and Clearwater</h2>
-<p>Whether you found us searching <strong>plumber knights fl</strong>, <strong>plumbing repair</strong> near Safety Harbor, or a neighbor recommended Knight Group after a Google review, the next step is the same: describe the fixture, the urgency, and the property address. We provide <a href="/booking">quotes by phone or photos</a> before work begins.</p>
+<p>Whether you found us searching <strong>plumber knights fl</strong>, <strong>plumbing repair</strong> near Safety Harbor, or a neighbor recommended Knight Group after a Google review, the next step is the same: describe the fixture, the urgency, and the property address. We provide <a href="/booking">free written quotes from photos</a> before work begins.</p>
 <p>See also: <a href="/Services/emergency-services">emergency services</a> for urgent leaks, <a href="/Services/general-repairs">general repairs</a> for drywall and water-damage follow-up, and <a href="/pinellas-handyman">Pinellas handyman coverage</a> for mixed trade punch lists.</p>
 """,
     "general-repairs": """
@@ -54,7 +54,7 @@ EXPANSIONS = {
 """,
     "handyman": """
 <h2>Handyman company serving Pinellas County</h2>
-<p>If you searched <strong>handyman company pinellas</strong>, <strong>handyman pinellas county</strong>, or <strong>handyman near me small jobs</strong>, you are usually looking for one dependable local team for mixed repairs — not a franchise with a minimum job size. Knight Group is locally co-owned and centrally managed from Safety Harbor with a 5.0 Google rating and quotes by phone or photos.</p>
+<p>If you searched <strong>handyman company pinellas</strong>, <strong>handyman pinellas county</strong>, or <strong>handyman near me small jobs</strong>, you are usually looking for one dependable local team for mixed repairs — not a franchise with a minimum job size. Knight Group is locally co-owned and centrally managed from Safety Harbor with a 5.0 Google rating and free written quotes from photos.</p>
 
 <h3>Small jobs and punch-list repairs</h3>
 <ul>
@@ -186,7 +186,7 @@ EXTRA_FAQ = {
     "plumbing-services": [
         ("Can a handyman fix a leaking sink in Clearwater?", "Yes — many sink leaks are failed supply lines, traps, or faucet gaskets. Knight Group serves Clearwater and Pinellas County with fixture-level plumbing repairs and will tell you if a licensed plumber is required."),
         ("What plumbing jobs can Knight Group handle without a master plumber license?", "Fixture replacement on existing connections, drain clearing, running toilet repairs, shutoff swaps, caulk/seal work, and minor leak corrections are typical handyman-scope jobs. Repipes, sewer mains, and permitted rough-in require a licensed plumber."),
-        ("How much does sink repair cost in Clearwater?", "Cost depends on access, parts, and whether supply lines or valves need replacement. We provide quotes by phone or photos before work begins so you know the price upfront."),
+        ("How much does sink repair cost in Clearwater?", "Cost depends on access, parts, and whether supply lines or valves need replacement. We provide free written quotes from photos before work begins so you know the price upfront."),
     ],
     "general-repairs": [
         ("Do you repair mobile homes in Pinellas County?", "Yes — we handle many mobile home repair and maintenance tasks including drywall, trim, flooring transitions, and punch-list work. Describe the unit and access when requesting an estimate."),
