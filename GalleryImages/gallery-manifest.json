@@ -3103,6 +3103,38 @@
       "photoAfter": 4
     },
     {
+      "id": "repair-wall-and-add-wall-protection-b0d3de5-before-after",
+      "title": "Repair wall and add wall protection \u2014 before & after",
+      "description": "Before-and-after proof from a repair wall and add wall protection job completed by Knight Group in Clearwater.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-repair-wall-and-add-wall-protection-b0d3de5.webp",
+          "filename": "before-after-repair-wall-and-add-wall-protection-b0d3de5.webp",
+          "step": 1,
+          "title": "Repair wall and add wall protection before and after",
+          "seoAlt": "Repair wall and add wall protection before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a repair wall and add wall protection job completed in a Clearwater home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Clearwater",
+      "citySlug": "clearwater",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Clean any defects on cabinet and paint any too bad. Checked both smoke detectors. Replaced faucet in kitchen. Replace air filter and clean off all vents. Patch hole in wall by door and in living room. Textured living room wall needs to dry before paint. Paint is in laundry room storage Drywall kicked in. Cut away loose paint. Skim coat with 5 minute mud then texture. Returned following day to paint. Used paint in\u2026",
+      "photoBefore": 3,
+      "photoProcess": 1,
+      "photoAfter": 4
+    },
+    {
       "id": "repair-water-damage-and-cabinets-2a643f3-before-after",
       "title": "Repair water damage and cabinets \u2014 before & after",
       "description": "Before-and-after proof from a repair water damage and cabinets job completed by Knight Group in St. Petersburg.",
@@ -7844,6 +7876,32 @@
       "workNotes": "Laundry lock was repaired had to lower deadbolt receiver. Replace lock set/ deadbolt. Cleaned 2 ac /filters. Repair the tracks/hinges on 5 cabinet drawers/doors. Remove trash from laundry and haul to city dump. Replace handle and chain to flapper in toilet. Removed wasp nest from mailbox also swept up laundry room Laundry lock was repaired had to lower deadbolt receiver. Replace lock set/ deadbolt. Cleaned 2 ac\u2026",
       "photoBefore": 3,
       "photoProcess": 0,
+      "photoAfter": 4
+    },
+    {
+      "src": "GalleryImages/before-after-repair-wall-and-add-wall-protection-b0d3de5.webp",
+      "filename": "before-after-repair-wall-and-add-wall-protection-b0d3de5.webp",
+      "group": "repair-wall-and-add-wall-protection-b0d3de5-before-after",
+      "step": 1,
+      "title": "Repair wall and add wall protection before and after",
+      "seoAlt": "Repair wall and add wall protection before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a repair wall and add wall protection job completed in a Clearwater home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Repair wall and add wall protection \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a repair wall and add wall protection job completed by Knight Group in Clearwater.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Clearwater",
+      "citySlug": "clearwater",
+      "countyName": "Pinellas County",
+      "completedMonth": "September 2026",
+      "workNotes": "Clean any defects on cabinet and paint any too bad. Checked both smoke detectors. Replaced faucet in kitchen. Replace air filter and clean off all vents. Patch hole in wall by door and in living room. Textured living room wall needs to dry before paint. Paint is in laundry room storage Drywall kicked in. Cut away loose paint. Skim coat with 5 minute mud then texture. Returned following day to paint. Used paint in\u2026",
+      "photoBefore": 3,
+      "photoProcess": 1,
       "photoAfter": 4
     },
     {
