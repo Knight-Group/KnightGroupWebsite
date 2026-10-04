@@ -53,6 +53,15 @@ Contact: Nicholas Knight · (813) 649-3341 · nknight@knightgroup.com
 
 This zip is what most Pinellas property managers need to add us as a vendor.
 
+How we work with property managers and businesses
+  - Fast response on work orders during business hours
+  - Work-order or PO number and unit/area on every invoice; one invoice per work order
+  - Before-and-after photos and plain-language notes on every job
+  - Portfolio pricing for multi-property clients
+  - Priority care for repeat clients
+
+Start here: https://www.knightgroup.com/property-manager-handyman#vendor-form
+
 Included
 """ + "\n".join(
     f"  - {dest}: {label}" for _src, dest, label in PUBLIC_DOCS
@@ -101,6 +110,25 @@ def copy_public_doc(src: Path, dest: Path, dest_name: str) -> None:
     dest.write_bytes(data)
 
 
+def refresh_readme_only() -> int:
+    """Rewrite README.txt and rebuild the zip from the public files already in vendor/.
+
+    Used when only the README wording changes (no access to Vendor Info needed).
+    """
+    readme = SITE_VENDOR / "README.txt"
+    readme.write_text(README, encoding="utf-8")
+    zip_path = SITE_VENDOR / ZIP_NAME
+    with zipfile.ZipFile(zip_path, "w", compression=zipfile.ZIP_DEFLATED) as zf:
+        zf.writestr("README.txt", README)
+        for _src, dest_name, _label in PUBLIC_DOCS:
+            dest = SITE_VENDOR / dest_name
+            if not dest.is_file():
+                raise FileNotFoundError(f"Missing public packet file: {dest}")
+            zf.write(dest, dest.name)
+    print(f"refreshed vendor/README.txt and vendor/{ZIP_NAME}")
+    return 0
+
+
 def main() -> int:
     SITE_VENDOR.mkdir(parents=True, exist_ok=True)
     copied: list[Path] = []
@@ -126,4 +154,8 @@ def main() -> int:
 
 
 if __name__ == "__main__":
+    import sys
+
+    if "--readme-only" in sys.argv:
+        raise SystemExit(refresh_readme_only())
     raise SystemExit(main())
