@@ -10,6 +10,17 @@ Live HTML ships from `E:\Handyman Ticket Manager\state\deploy\KnightGroupWebsite
 
 ---
 
+## 2026-10-04: safe quick wins (Grok Bot, Nick's standing approval)
+
+No title, meta description, or H1 changes on existing pages. No URL changes. Separate commits so each can be reverted.
+
+- **Client names out of public files:** 5 unreferenced gallery images renamed to `before-after-rental-property-repair*`; client name removed from this log. Old names remain in git history (public repo). The Dispatch worker already sanitizes new asset slugs (since Oct 1).
+- **Home page speed:** `build-homepage-job-carousel.py` now serves `-640w` carousel images with `loading="lazy"` and is idempotent. It was adding 2 blank lines to `index.html` on every run (2,360 blank lines, ~63 KB), which also made ~337 of 357 worker commits in 24 h whitespace-only deploys. index.html 181 KB -> ~118 KB.
+- **Sitemap lastmod:** content-hash based (`seo/sitemap-lastmod.json`), seeded from git history. Unchanged pages keep their date instead of all reading "today".
+- **Property manager / commercial path:** header link "Property Managers" (desktop + mobile), `/property-manager-handyman` body: who we serve (PMs/HOAs, realtors/investors, commercial facilities), anonymous vendor work, `#vendor-form` CTA, intake fields (client type, portfolio size, `form_type=property_manager`). Title/meta/H1 unchanged. No new response-time or NTE promises.
+- **New page:** `/Services/tv-mounting` (specialty $200/$100, license-safe: no new outlets). Linked from small jobs and home repair (link only, words unchanged on the money page).
+---
+
 ## Freeze (in effect 2026-08-31 — lifted for one title test 2026-09-12)
 
 Do **not** rewrite titles, meta descriptions, H1s, or first-300-word intros on money pages (city URLs, `/`, `/pricing`, `/Services/handyman`, `/Services/home-repair-near-me`) until **both**:
