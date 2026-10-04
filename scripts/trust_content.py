@@ -72,6 +72,7 @@ def _property_manager_vendor_prose() -> str:
 <li>One invoice per work order, materials listed separately</li>
 <li>Portfolio pricing for multi-property clients</li>
 <li>Priority care for repeat clients</li>
+<li>Preferred materials pricing for repeat-work vendors</li>
 </ul>
 <p class="kg-vendor-download"><a class="kg-btn kg-btn--solid" href="#vendor-form">Add us as your vendor</a></p>
 <p>Or <a href="/vendor/knight-group-vendor-packet.zip" download>download the vendor packet (ZIP)</a> first: W-9, certificate of insurance, WC officer exemptions, Sunbiz record, and services one-pager.</p>
