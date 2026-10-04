@@ -3439,5 +3439,30 @@
     "photoBefore": 3,
     "photoProcess": 1,
     "photoAfter": 4
+  },
+  "before-after-clean-touch-up-cabinets-e256da2.webp": {
+    "group": "clean-touch-up-cabinets-e256da2-before-after",
+    "groupTitle": "Clean/touch up cabinets \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a clean/touch up cabinets job completed by Knight Group in Clearwater.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Clean/touch up cabinets before and after",
+    "description": "Before-and-after comparison from a clean/touch up cabinets job completed in a Clearwater home.",
+    "beforeAfter": true,
+    "scope_slug": "clean-touch-up-cabinets-e256da2",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Clearwater",
+    "citySlug": "clearwater",
+    "countyName": "Pinellas County",
+    "completedMonth": "September 2026",
+    "workNotes": "Clean any defects on cabinet and paint any too bad. Checked both smoke detectors. Replaced faucet in kitchen. Replace air filter and clean off all vents. Patch hole in wall by door and in living room. Textured living room wall needs to dry before paint. Paint is in laundry room storage Scrubbed out all scuffs and marks several areas needed touched up with paint",
+    "photoBefore": 4,
+    "photoProcess": 0,
+    "photoAfter": 4
   }
 }
