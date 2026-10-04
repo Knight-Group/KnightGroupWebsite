@@ -74,6 +74,17 @@ CITIES = [
 
 NICHE_SERVICES = [
     {
+        "slug": "tv-mounting",
+        "parent": "handyman",
+        "title": "TV Mounting in Pinellas County FL | Knight Group",
+        "h1": "TV mounting in Pinellas County",
+        "lead": "TV mounting on studs, block, or brick in Safety Harbor, Clearwater, and Pinellas County. Level, secure, cables hidden neatly. No electrical rewiring.",
+        "queries": ["tv mounting near me", "tv mounting clearwater fl", "tv mounting safety harbor"],
+        "hero": "handyman.webp",
+        "scope": False,
+        "inline_gallery": False,
+    },
+    {
         "slug": "home-repair-near-me",
         "parent": "handyman",
         "title": "Home Repair Near Me in Pinellas County FL | Knight Group",

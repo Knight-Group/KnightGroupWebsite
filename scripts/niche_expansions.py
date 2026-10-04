@@ -3,6 +3,17 @@
 from __future__ import annotations
 
 NICHE_BODY: dict[str, str] = {
+    "tv-mounting": """
+<h2>TV mounting pricing</h2>
+<p>TV mounting is billed at our specialty rate: <strong>$200 for the first hour and $100 for each hour after</strong>, with no two-hour minimum. Mount hardware is supplied by you unless we quote it. Adding a soundbar, shelf, or second TV in the same visit usually costs less than a second trip. See the <a href="/pricing">pricing hub</a> for how we bill.</p>
+<h3>What is outside TV-mounting scope</h3>
+<ul>
+<li>New electrical outlets, circuits, or moving power behind the TV (we refer a licensed electrician)</li>
+<li>Structural changes, or mounting into walls with unknown or damaged framing</li>
+<li>Ceiling mounts, which we assess case by case on site</li>
+</ul>
+<p>Removing an old TV and mount? We can patch, texture, and paint the holes in the same visit. See <a href="/Services/drywall-repair">drywall repair</a> and <a href="/Services/small-jobs">small jobs</a> for related work.</p>
+""",
     "home-repair-near-me": """
 <h2>Local home repair when you need one accountable team</h2>
 <p>Searches for home repair near you usually come from homeowners juggling a half-finished punch list — a loose handrail, a drywall scar, and a door that sticks after humidity. Knight Group is locally co-owned and centrally managed from Safety Harbor and drives to Clearwater, Dunedin, Palm Harbor, Largo, Oldsmar, Seminole, and St. Petersburg with one written estimate and one point of contact.</p>
@@ -30,7 +41,7 @@ NICHE_BODY: dict[str, str] = {
 <h3>Examples of small-job calls we accept</h3>
 <ul>
 <li>Single finish or hardware corrections that do not require a licensed trade</li>
-<li>Picture hanging, TV mounts, and blind hardware installs</li>
+<li>Picture hanging, <a href="/Services/tv-mounting">TV mounting</a>, and blind hardware installs</li>
 <li>Baseboard patches, caulk lines, and paint touch-ups in one room</li>
 <li>Closet rod replacement and pantry shelf adjustments</li>
 <li>Storm follow-up: loose soffit pieces, screen tears, and latch fixes</li>
@@ -514,6 +525,14 @@ NICHE_BODY: dict[str, str] = {
 }
 
 NICHE_FAQ: dict[str, list[tuple[str, str]]] = {
+    "tv-mounting": [
+        ("How much does TV mounting cost with Knight Group?", "TV mounting is billed at our specialty rate of $200 for the first hour and $100 for each hour after, with no two-hour minimum. Send photos of the wall and TV for a written estimate before we schedule."),
+        ("Can you mount a TV on a concrete block or brick wall?", "Yes. We use masonry anchors sized for the TV and mount on block and brick walls, which are common in Pinellas County homes."),
+        ("Can you hide the TV cables in the wall?", "We hide low-voltage cables (HDMI, coax, network) with an in-wall pass-through kit where the wall allows, or with paintable surface raceways. We do not add or move power outlets; that requires a licensed electrician."),
+        ("Do I need to buy the mount?", "Usually yes. Tell us the TV size, weight, and model and we can recommend a fixed, tilting, or full-motion mount rated for it."),
+        ("Can you mount a TV above a fireplace?", "Often, if the wall framing, mantel height, and heat clearance allow it. We check on site and tell you if the spot is not a good idea."),
+        ("Which cities do you serve for TV mounting?", "Safety Harbor, Clearwater, Dunedin, Palm Harbor, Oldsmar, Largo, Seminole, and nearby Pinellas County communities."),
+    ],
     "home-repair-near-me": [
         ("Who handles home repair near me in Pinellas County?", "Knight Group Handyman Services LLC is based in Safety Harbor and serves Pinellas County cities with registered, insured repair work. You work with a locally co-owned Safety Harbor team — not a distant call center."),
         ("Can one visit cover drywall, plumbing, and door fixes?", "Yes — mixed punch lists are common. We sequence wet work first, confirm handyman scope for each item, and provide a written estimate before starting."),
@@ -725,6 +744,12 @@ NICHE_FAQ: dict[str, list[tuple[str, str]]] = {
 }
 
 NICHE_RELATED: dict[str, list[tuple[str, str]]] = {
+    "tv-mounting": [
+        ("/Services/small-jobs", "Small jobs"),
+        ("/Services/drywall-repair", "Drywall repair"),
+        ("/Services/custom-shelving", "Custom shelving"),
+        ("/Services/handyman", "Handyman services"),
+    ],
     "home-repair-near-me": [
         ("/Services/handyman", "Handyman services"),
         ("/Services/general-repairs", "General repairs"),

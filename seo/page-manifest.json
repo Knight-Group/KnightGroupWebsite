@@ -4,6 +4,13 @@
   "pages": [
     {
       "pageType": "niche-service",
+      "slug": "tv-mounting",
+      "path": "Services/tv-mounting.html",
+      "canonical": "https://www.knightgroup.com/Services/tv-mounting",
+      "priority": "0.78"
+    },
+    {
+      "pageType": "niche-service",
       "slug": "home-repair-near-me",
       "path": "Services/home-repair-near-me.html",
       "canonical": "https://www.knightgroup.com/Services/home-repair-near-me",

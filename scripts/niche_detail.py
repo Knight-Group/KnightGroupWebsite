@@ -1,6 +1,21 @@
 """Intro service-detail blocks for niche pages — unique lists and process copy per slug."""
 
 NICHE_DETAIL: dict[str, str] = {
+    "tv-mounting": """
+<h2>TV mounting done like a carpenter would do it</h2>
+<p>A wall-mounted TV is a heavy object hanging over your couch, your kids, and your floor. Knight Group mounts flat-screens the way we hang anything that matters: find the framing, use a mount rated for the TV, level it, and hide the cables neatly. We are a registered and insured handyman company based in Safety Harbor, serving Pinellas County.</p>
+<h3>What we mount</h3>
+<ul>
+<li>Fixed, tilting, and full-motion (articulating) wall mounts for most flat-screen sizes</li>
+<li>TVs on drywall over wood or metal studs, and on concrete block or brick with masonry anchors</li>
+<li>Over-fireplace mounts when the wall, mantel height, and heat clearance allow it</li>
+<li>Soundbars, streaming boxes, floating media shelves, and cable boxes</li>
+<li>Remounting or moving a TV to a new room, and patching the old mount holes</li>
+</ul>
+<h3>How a Knight Group TV install runs</h3>
+<p>We confirm the TV size, weight, and VESA pattern against the mount rating before drilling. Lag bolts go into framing, not just drywall. On block and brick walls we use masonry anchors sized for the load. We set the height with you, level the bracket, and check that a full-motion arm clears the wall and nearby trim when it swings.</p>
+<p>For cables, we use paintable surface raceways, or an in-wall pass-through kit rated for low-voltage cables (HDMI, coax, network) where the wall allows. We do not add or relocate power outlets. If you want a new outlet behind the TV, that is licensed electrical work, and we will tell you so up front.</p>
+""",
     "home-repair-near-me": """
 <h3>Home repair scopes we take on every week</h3>
 <p>Pinellas County houses mix block, stucco, and wood-frame construction — each ages differently in salt air. Knight Group addresses the maintenance backlog that accumulates between major remodels.</p>
@@ -11,7 +26,7 @@ NICHE_DETAIL: dict[str, str] = {
 <li>Caulk renewal at tubs, windows, and lanai transitions</li>
 <li>Landlord punch lists spanning multiple rooms in one appointment</li>
 <li>Post-storm touch-ups: screens, soffits, and loose trim</li>
-<li>TV mounts, shelving, and safety hardware in occupied homes</li>
+<li><a href="/Services/tv-mounting">TV mounting</a>, shelving, and safety hardware in occupied homes</li>
 <li>Coordination when a plumber or electrician finishes before paint closeout</li>
 </ul>
 
@@ -454,6 +469,11 @@ NICHE_DETAIL: dict[str, str] = {
 }
 
 NICHE_LOCAL: dict[str, str] = {
+    "tv-mounting": """
+<h2>TV mounting across Pinellas County</h2>
+<p>Knight Group routes daily from Safety Harbor through Clearwater, Dunedin, Palm Harbor, Oldsmar, Largo, and Seminole. Many Pinellas homes have concrete block exterior walls and drywall interior walls, so we ask which wall the TV is going on before we arrive and bring the right anchors.</p>
+<p>Condo owners: check your association rules on drilling into shared or exterior walls. We can work from the rules or a building engineer's note.</p>
+""",
     "home-repair-near-me": """
 <h2>Pinellas County cities we visit for home repair</h2>
 <p>Knight Group routes daily through Safety Harbor, Clearwater, Dunedin, Palm Harbor, Largo, Oldsmar, Tarpon Springs, Seminole, and St. Petersburg. Whether you found us searching <strong>knights home repair</strong> or a neighbor shared a Google review, describe your punch list with photos and we confirm fit before scheduling.</p>
@@ -587,6 +607,10 @@ NICHE_LOCAL: dict[str, str] = {
 }
 
 NICHE_BOOKING: dict[str, str] = {
+    "tv-mounting": """
+<h3>Book a TV mounting estimate</h3>
+<p>Send a photo of the wall, the TV size and model, the mount you have (or want), and where the nearest outlet is. That is usually enough for a written number before we schedule. Use the <a href="/booking">booking form</a> or text photos to <a href="sms:+18136493341">(813) 649-3341</a>.</p>
+""",
     "home-repair-near-me": """
 <h3>Request your home repair estimate</h3>
 <p>List every room and concern in one message — photos of drywall, doors, and fixtures help us bring the right materials on the first drive. Written quotes arrive before work starts; active water issues should be phoned in at (813) 649-3341.</p>

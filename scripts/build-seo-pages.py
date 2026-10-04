@@ -510,7 +510,11 @@ def generate_niche(defn: dict, manifest: list) -> None:
         h1=defn["h1"],
         lead=defn["lead"],
         hero_image=defn["hero"],
-        body_html=prose_with_inline_gallery(
+        # inline_gallery=False: no matching job photos yet, so do not pad the
+        # page with unrelated gallery images (add real photos when available).
+        body_html=build_niche_prose(defn)
+        if defn.get("inline_gallery") is False
+        else prose_with_inline_gallery(
             build_niche_prose(defn),
             slug,
             path_prefix(output),
