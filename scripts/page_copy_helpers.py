@@ -45,7 +45,7 @@ CTA_LEAD_TEMPLATES = (
     "List rooms affected and your target date for {topic}. Mixed punch lists are welcome — we quote the full scope upfront.",
     "Send dimensions, photos, and any parts you already purchased for {topic}. We confirm handyman scope versus licensed trade needs first.",
     "Note whether the property is owner-occupied or a rental turnover — it helps us plan {topic} visits across {county}.",
-    "For {topic}, include close-ups and a wide shot of the work area. We follow up with a free written estimate during business hours.",
+    "For {topic}, include close-ups and a wide shot of the work area. We follow up with a quote during business hours.",
     "Call for active leaks; otherwise book online with photos for {topic} in {county}. We confirm fit and pricing before work starts.",
 )
 

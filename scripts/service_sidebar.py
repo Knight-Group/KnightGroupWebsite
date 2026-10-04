@@ -120,7 +120,7 @@ def render_service_sidebar(
             "No 2-hour minimums",
             "Transparent, upfront pricing",
             "Registered and insured",
-            "Free written estimates",
+            "Quotes by phone or photos",
             "Local Safety Harbor business",
             "5.0 Google rating",
             "+15 Years as Journeyman Plumber",

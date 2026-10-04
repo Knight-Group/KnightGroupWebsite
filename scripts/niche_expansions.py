@@ -560,7 +560,7 @@ NICHE_FAQ: dict[str, list[tuple[str, str]]] = {
     "sink-faucet-repair": [
         ("Can you fix a leaking sink in Clearwater?", "Yes — many leaks are failed supply lines, traps, or faucet seals. Knight Group serves Clearwater with fixture-level repairs within handyman plumbing scope."),
         ("Do I need a plumber for every sink leak?", "Not always. Accessible fixture and trap repairs often fit handyman scope. Repipes, hidden line failures, and permit work need a licensed plumber."),
-        ("How much does sink repair cost locally?", "Price depends on access, parts, and whether shutoffs or supply lines must be replaced. We provide free written estimates before work starts."),
+        ("How much does sink repair cost locally?", "Price depends on access, parts, and whether shutoffs or supply lines must be replaced. We provide quotes by phone or photos before work starts."),
         ("Can you repair kitchen and bathroom sinks?", "Yes — both are common. We test hot and cold lines and check drains after repairs."),
         ("Will you replace corroded shutoffs during a sink repair?", "Yes when accessible — replacing frozen angle stops prevents bigger emergencies later."),
         ("Can you patch drywall after a sink leak?", "Yes — we often handle cabinet and wall closeout after plumbing is stable. Mention water damage when booking."),

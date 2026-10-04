@@ -123,7 +123,7 @@ def build_county_body(county_slug: str, county_name: str, city_names: list[str])
     )
     scheduling = _linkify_contact(
         seo.get("scheduling")
-        or f'Request a free written estimate through our <a href="/booking">booking form</a> with photos, or call <a href="tel:+18136493341">(813) 649-3341</a>.'
+        or f'Request a quote through our <a href="/booking">booking form</a> with photos, or call <a href="tel:+18136493341">(813) 649-3341</a>.'
     )
     scope_note = seo.get("scope_note") or (
         "Handyman-scope repairs only. Licensed trades are referred when permits or specialists are required."

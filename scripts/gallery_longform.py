@@ -547,7 +547,7 @@ def _related(
     links.extend(_sibling_links(group, siblings, rng))
     extras = [
         ("/pricing", "Handyman pricing"),
-        ("/booking", "Book a free estimate"),
+        ("/booking", "Request a quote"),
         ("/handyman-scope-florida", "Handyman scope in Florida"),
         ("/hurricane-repair-handyman-pinellas", "Storm repair notes"),
         ("/about", "About Knight Group"),
@@ -587,7 +587,7 @@ def _faqs(
         ),
         (
             "How do I get a price before anyone starts?",
-            "Request a free written estimate. Defined small scopes can often be flat-rate; mixed punch lists may be hourly depending on access and materials. Standard published rates are $150 first hour and $75 after, with specialty work at $200 and $100. This gallery page does not publish what this specific job billed.",
+            "Request a quote. Defined small scopes can often be flat-rate; mixed punch lists may be hourly depending on access and materials. Standard published rates are $150 first hour and $75 after, with specialty work at $200 and $100. This gallery page does not publish what this specific job billed.",
         ),
         (
             "Are you registered and insured?",
@@ -721,7 +721,7 @@ def build_gallery_longform(
     sections.append(
         f"<p>Standard published rates remain <strong>$150 first hour / $75 after</strong>, with specialty work at "
         f"<strong>$200 / $100</strong>, and no two-hour minimum on small eligible jobs. This page never lists what "
-        f"this specific property paid. Get a free written estimate through "
+        f"this specific property paid. Get a quote through "
         f'<a href="/booking">the booking form</a> or call <a href="tel:+18136493341">{KG_PHONE}</a>. '
         f'Read <a href="{service_href}">{_esc(service_label)}</a>, '
         f'<a href="{county_href(county)}">{_esc(county)} coverage</a>, and '

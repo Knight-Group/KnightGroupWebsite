@@ -227,7 +227,7 @@ def write_entity_json_files() -> None:
         "slogan": biz["slogan"],
         "potentialAction": {
             "@type": "ReserveAction",
-            "name": "Book a free handyman estimate",
+            "name": "Request a handyman quote",
             "target": f"{BASE}/booking",
         },
         "knowsAbout": list(facts["knowsAbout"]),

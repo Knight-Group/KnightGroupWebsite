@@ -33,7 +33,7 @@ NICHE_DETAIL: dict[str, str] = {
 <h3>Local accountability from Safety Harbor</h3>
 <p>Knight Group Handyman Services LLC is registered and insured in Florida. Vince Knight answers the phone, walks the property, and performs or directly supervises handyman-scope work. That matters when keys must be returned to a tenant by Friday or a listing photo shoot is Monday.</p>
 <ul>
-<li>Free written estimates before tools come out of the truck</li>
+<li>Quotes by phone or photos before tools come out of the truck</li>
 <li>5.0 Google rating from local homeowners and property managers</li>
 <li>Safety Harbor headquarters with daily Pinellas County routes</li>
 <li>Clear handyman vs. licensed trade boundaries on every job</li>

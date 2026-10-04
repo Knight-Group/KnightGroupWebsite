@@ -79,7 +79,7 @@ META_OVERRIDES: dict[str, str] = {
     ),
     "pricing.html": (
         "Handyman pricing in Pinellas County: $150 first hour, $75 after with no 2-hour minimum. "
-        "Compare visit packages and request a free written estimate today."
+        "Compare visit packages and request a quote today."
     ),
     "clearwater-handyman.html": (
         "Clearwater handyman for drywall, fixture plumbing, doors, and punch-list repairs. Local "

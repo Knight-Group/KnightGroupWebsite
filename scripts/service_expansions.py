@@ -25,7 +25,7 @@ EXPANSIONS = {
 </ul>
 
 <h2>Local plumbing questions in Safety Harbor and Clearwater</h2>
-<p>Describe the fixture, urgency, and address. We provide <a href="/booking">free written estimates</a> for fixture plumbing and route permit or in-wall work to a licensed plumber.</p>
+<p>Describe the fixture, urgency, and address. We provide <a href="/booking">quotes by phone or photos</a> for fixture plumbing and route permit or in-wall work to a licensed plumber.</p>
 <p>See also: <a href="/Services/emergency-services">urgent property-damage response</a>, <a href="/Services/general-repairs">general repairs</a> for drywall follow-up, and <a href="/pinellas-handyman">Pinellas coverage</a>.</p>
 """,
     "general-repairs": """
@@ -51,7 +51,7 @@ EXPANSIONS = {
 """,
     "handyman": """
 <h2>Handyman company serving Pinellas County</h2>
-<p>If you searched for a Pinellas County handyman, you usually want one dependable local team for mixed repairs — not a franchise with a two-hour minimum. Knight Group is locally co-owned and centrally managed from Safety Harbor with a 5.0 Google rating and free written estimates.</p>
+<p>If you searched for a Pinellas County handyman, you usually want one dependable local team for mixed repairs — not a franchise with a two-hour minimum. Knight Group is locally co-owned and centrally managed from Safety Harbor with a 5.0 Google rating and quotes by phone or photos.</p>
 
 <h3>Small jobs and punch-list repairs</h3>
 <ul>

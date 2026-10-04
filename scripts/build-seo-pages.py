@@ -102,7 +102,7 @@ def default_faqs(topic: str, city: str = "Pinellas County") -> list[tuple[str, s
         ),
         (
             "How do I get a price before work starts?",
-            "Request a free written estimate online or call (813) 649-3341. For defined small scopes we can often quote a flat rate; mixed punch lists may be hourly depending on access and materials.",
+            "Request a quote online or call (813) 649-3341. For defined small scopes we can often quote a flat rate; mixed punch lists may be hourly depending on access and materials.",
         ),
         (
             "Are you registered and insured?",
@@ -194,7 +194,7 @@ def build_niche_prose(defn: dict) -> str:
         body = prose_block(
             [
                 f"Knight Group handles {h1.lower()} across Safety Harbor, Clearwater, and Pinellas County as part of our {parent.lower()} work.",
-                "Request a free written estimate with photos before work begins.",
+                "Request a quote with photos before work begins.",
             ]
         )
     parts: list[str] = []
@@ -218,7 +218,7 @@ def build_city_prose(city_slug: str, city_name: str, county_name: str, county_sl
     return prose_block(
         [
             f"Knight Group provides local handyman services in {city_name}, Florida.",
-            "Request a free estimate online or call (813) 649-3341.",
+            "Request a quote online or call (813) 649-3341.",
         ]
     )
 
@@ -272,7 +272,7 @@ def build_pricing_prose(defn: dict) -> str:
                 "Many Tampa Bay handyman franchises bill a two-hour minimum even when the repair takes forty-five minutes. Knight Group’s published standard rate is <strong>$150 for the first hour and $75 each additional hour, with no two-hour minimum</strong> — not a $75 first-hour rate and not a 20-minute visit billed at a few dollars.",
                 "That matters for small jobs: a single faucet swap, door adjustment, shelf install, or caulk refresh should not cost the same as a half-day block. Punch lists and mixed small tasks are a strong fit for this model.",
                 "For defined scopes with known parts and finish, we still offer written flat-rate quotes after photos or a short visit. See <a href=\"/pricing\">full pricing</a> and <a href=\"/pricing-handyman-by-the-hour\">hourly handyman rates</a> for comparison.",
-                "Request a free written estimate online or call (813) 649-3341 to describe your list and confirm fit before we schedule.",
+                "Request a quote online or call (813) 649-3341 to describe your list and confirm fit before we schedule.",
             ]
         )
     return prose_block(
@@ -327,7 +327,7 @@ def page_shell(
     json_ld: dict,
     scope: bool = False,
     eyebrow: str = "Safety Harbor · Pinellas County",
-    sidebar_lead: str = "Free written estimates across Pinellas County.",
+    sidebar_lead: str = "Quotes by phone or photos across Pinellas County.",
     sidebar_label: str = "service",
     sidebar_county: str = "Pinellas County",
     cta_lead_text: str | None = None,
@@ -413,7 +413,7 @@ def page_shell(
                         <p>{esc(cta_text)}</p>
                     </div>
                     <div class="kg-service-cta__actions">
-                        <a href="/booking" class="kg-btn kg-btn--solid">Get a free written estimate</a>
+                        <a href="/booking" class="kg-btn kg-btn--solid">Get a quote by phone or photos</a>
                         <a href="/pricing" class="kg-btn kg-btn--ghost">View pricing</a>
                     </div>
             </section>
@@ -595,7 +595,7 @@ def generate_city(
         related_html=render_related(related, ""),
         json_ld=graph,
         eyebrow=f"Safety Harbor · {county_name}",
-        sidebar_lead=f"Free written estimates across {county_name} and nearby Tampa Bay communities.",
+        sidebar_lead=f"Quotes by phone or photos across {county_name} and nearby Tampa Bay communities.",
         sidebar_label=f"{city_name} handyman",
         sidebar_county=county_name,
     )
@@ -662,7 +662,7 @@ def generate_county_hub(region: dict, manifest: list) -> None:
         related_html=render_related(related, ""),
         json_ld=graph,
         eyebrow=f"Safety Harbor · {county_name}",
-        sidebar_lead=f"Free written estimates across {county_name} and nearby Tampa Bay communities.",
+        sidebar_lead=f"Quotes by phone or photos across {county_name} and nearby Tampa Bay communities.",
         sidebar_label=f"{county_name} handyman",
         sidebar_county=county_name,
     )
@@ -871,7 +871,7 @@ def generate_gallery_project(
     if licensed_trade_gallery:
         cta_copy = "Ask us to confirm lawful scope or coordinate the licensed trade before scheduling."
     else:
-        cta_copy = "Want similar work at your property? Get a free written estimate with photos of your space."
+        cta_copy = "Want similar work at your property? Send photos of your space for a quote."
     body = longform["body_html"] + f"<p>{esc(cta_copy)}</p>"
     images_block = f'<div class="kg-gallery-project-images">{img_html}</div>' if img_html else ""
     body_with_images = insert_gallery_images_before_first_h2(body, images_block)

@@ -421,7 +421,7 @@ def render_page(slug: str, page_html: str) -> str:
                         <p>{esc(cta_text)}</p>
                     </div>
                     <div class="kg-service-cta__actions">
-                        <a href="/booking" class="kg-btn kg-btn--solid">Book a free estimate</a>
+                        <a href="/booking" class="kg-btn kg-btn--solid">Request a quote</a>
                         <a href="/services" class="kg-btn kg-btn--ghost">Browse all services</a>
                         <a href="/galleries" class="kg-btn kg-btn--ghost">See project gallery</a>
                     </div>
