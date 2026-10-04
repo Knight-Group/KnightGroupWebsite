@@ -55,12 +55,39 @@ def render_service_sidebar(
     packet_html = ""
     is_pm = slug == "property-manager-handyman"
     extra_fields = ""
+    form_id_attr = ' id="vendor-form"' if is_pm else ""
+    form_type_html = (
+        '                                    <input type="hidden" name="form_type" value="property_manager">\n'
+        if is_pm
+        else ""
+    )
     message_placeholder = "Job type, city, or timing"
     name_placeholder = "First and last name"
     if is_pm:
         extra_fields = f"""                                    <div class="kg-field">
-                                        <label for="{token}-sidebar-company">Management company</label>
+                                        <label for="{token}-sidebar-company">Company</label>
                                         <input type="text" id="{token}-sidebar-company" name="company" autocomplete="organization" placeholder="Legal name for the COI" required>
+                                    </div>
+                                    <div class="kg-field">
+                                        <label for="{token}-sidebar-role">You are</label>
+                                        <select id="{token}-sidebar-role" name="client_type" required>
+                                            <option value="">Choose one</option>
+                                            <option>Property manager or landlord</option>
+                                            <option>HOA or association</option>
+                                            <option>Realtor or investor</option>
+                                            <option>Commercial facility</option>
+                                            <option>Other business</option>
+                                        </select>
+                                    </div>
+                                    <div class="kg-field kg-field--optional">
+                                        <label for="{token}-sidebar-portfolio">Doors or locations <span>(optional)</span></label>
+                                        <select id="{token}-sidebar-portfolio" name="portfolio_size">
+                                            <option value="">Choose one</option>
+                                            <option>1-10</option>
+                                            <option>11-50</option>
+                                            <option>51-200</option>
+                                            <option>200+</option>
+                                        </select>
                                     </div>
                                     <div class="kg-field">
                                         <label for="{token}-sidebar-email">Email</label>
@@ -81,6 +108,7 @@ def render_service_sidebar(
             "Pinellas first — selected Hillsborough/Pasco",
         ]
         form_title = "Add Knight Group as a vendor"
+        subject = "Knight Group Vendor Setup Request (Property Manager / Business)"
         submit_label = "Send vendor request"
         packet_html = (
             f'                                <p><a class="kg-btn kg-btn--solid" href="/vendor/knight-group-vendor-packet.zip" '
@@ -107,7 +135,7 @@ def render_service_sidebar(
                             <div class="kg-pricing-sidebar-form">
                                 <h3 class="kg-sidebar-title" id="{token}-sidebar-heading">{form_title}</h3>
                                 <p>{html.escape(sidebar_lead)}</p>
-{packet_html}                                <form class="kg-contact-form" action="https://formspree.io/f/xzzvnpne" method="POST" data-kg-guard>
+{packet_html}                                <form class="kg-contact-form"{form_id_attr} action="https://formspree.io/f/xzzvnpne" method="POST" data-kg-guard>
                                     <div class="kg-field">
                                         <label for="{token}-sidebar-name">Your name</label>
                                         <input type="text" id="{token}-sidebar-name" name="name" autocomplete="name" placeholder="{html.escape(name_placeholder)}" required>
@@ -120,7 +148,7 @@ def render_service_sidebar(
                                         <label for="{token}-sidebar-message">Project details <span>(optional)</span></label>
                                         <textarea id="{token}-sidebar-message" name="message" rows="3" placeholder="{html.escape(message_placeholder)}"></textarea>
                                     </div>
-{render_photo_fields(token + "-sidebar")}                                    <input type="hidden" name="_subject" value="{html.escape(subject)}">
+{render_photo_fields(token + "-sidebar")}{form_type_html}                                    <input type="hidden" name="_subject" value="{html.escape(subject)}">
                                     <input type="hidden" name="request_type" value="{html.escape(book_label)}">
                                     <input type="hidden" name="service_page" value="{html.escape(slug)}">
                                     <input type="hidden" name="_next" value="https://www.knightgroup.com/thank-you">

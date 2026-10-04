@@ -64,6 +64,29 @@ def _property_manager_vendor_prose() -> str:
 <p>This page is the vendor file for <strong>Knight Group Handyman Services LLC</strong> — the company property managers, landlords, HOA boards, and small commercial desks add when they need a registered, insured handyman on work orders. It is not a homeowner “handyman near me” landing page, and it is not a second brand. You add this LLC. Overflow help is dispatched as Knight Group, not as a roster of other companies on this website.</p>
 <p>Property managers searching <em>commercial handyman near me</em> or <em>property maintenance handyman</em> are usually looking for a vendor packet: legal name, FEIN, certificate of insurance, photo standards, and a written number — not another city page written for homeowners.</p>
 
+<ul class="kg-proof-list kg-pm-proof" aria-label="What property managers get">
+<li>Fast response on work orders during business hours</li>
+<li>COI and filled W-9 ready to send today</li>
+<li>Work orders by email, portal invite, or text photos</li>
+<li>Before-and-after photo documentation on every job</li>
+<li>One invoice per work order, materials listed separately</li>
+</ul>
+<p class="kg-vendor-download"><a class="kg-btn kg-btn--solid" href="#vendor-form">Add us as your vendor</a></p>
+<p>Or <a href="/vendor/knight-group-vendor-packet.zip" download>download the vendor packet (ZIP)</a> first: W-9, certificate of insurance, WC officer exemptions, Sunbiz record, and services one-pager.</p>
+
+<h2>Who adds Knight Group as a vendor</h2>
+<h3>Property managers, landlords, and HOAs</h3>
+<p>Scattered single-family rentals, small multifamily, and association common areas. Send work orders from your maintenance platform or by email; we coordinate access, document the job with photos, and invoice that work order on its own. Turnovers, rekeys, drywall and paint, doors and hardware, fixtures, caulk, smoke-detector batteries before move-in, and appliance checks within handyman scope.</p>
+<h3>Realtors, investors, and flippers</h3>
+<p>Pre-listing punch lists and inspection-report repair lists. Send the report or photos and get a written scope before anyone shows up. Drywall, doors, paint touch-ups, caulk, fixtures, and small flooring repairs, with before-and-after photos you can drop into the listing file.</p>
+<h3>Offices, clinics, retail, and hospitality</h3>
+<p>Commercial facilities that need repairs finished without shutting down. Work can be split into phases, room by room, so each area is finished before the next starts. Flooring repairs and transitions, baseboards, doors and closers, ceiling tiles, drywall and paint, and punch lists after a move-out or another vendor, documented per area.</p>
+
+<h3>Recent vendor work (clients kept anonymous)</h3>
+<p><strong>A regional property management firm.</strong> Ongoing work orders through the firm’s maintenance platform across Pinellas rentals: vacant-unit patch and paint, rekeys between tenants, move-in safety checks, appliance diagnostics, and fixture repairs. Each order is closed out with photos and its own invoice.</p>
+<p><strong>A local spa resort.</strong> A phased flooring project across a series of back-office rooms, including floor prep, new flooring, reinstalled baseboards, and a transition on a hallway ramp, completed room by room.</p>
+<p>We do not name clients on this website. References are available to property managers on request, with the client’s permission.</p>
+
 <h3>Vendor packet — copy these fields, or download the PDFs</h3>
 <p>Use the same legal entity on AppFolio, Buildium, RentVine, Property Meld, or a paper vendor folder. The zip below is the packet we already send when a property manager adds Knight Group Handyman Services LLC: filled W-9 (EIN, not a Social Security number), GL certificate, both managers’ Florida workers’ compensation officer exemptions, Sunbiz LLC proof, and the services one-pager.</p>
 <p class="kg-vendor-download">
@@ -245,6 +268,10 @@ def trust_faqs(slug: str) -> list[tuple[str, str]]:
             (
                 "What does a property manager pay?",
                 "Published retail is $150 first hour and $75 each hour after on standard handyman work, $200 / $100 on specialty, with no two-hour minimum. Mixed work orders are often hourly; defined make-ready lists can be flat-rate after photos. Private vendor-network rates are not listed on this site.",
+            ),
+            (
+                "Do you work with realtors, investors, and commercial facilities?",
+                "Yes. Realtors and investors send inspection reports or photos for pre-listing repair lists and get a written scope first. Offices, clinics, retail, and hospitality facilities can have work phased room by room, documented per area, with the same W-9 and certificate of insurance on file.",
             ),
             (
                 "Is this the same page as rental turnover?",
