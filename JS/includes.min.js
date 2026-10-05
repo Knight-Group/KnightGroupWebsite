@@ -623,6 +623,9 @@ ${data.message}
         if (request.indexOf('property manager') !== -1 || path.indexOf('property-manager') !== -1 || path.indexOf('rental-turnover') !== -1) {
             return 'property_manager';
         }
+        if (request.indexOf('contractor') !== -1 || path.indexOf('/join') !== -1) {
+            return 'contractor_application';
+        }
         return 'homeowner';
     }
 

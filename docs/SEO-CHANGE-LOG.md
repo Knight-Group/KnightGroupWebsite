@@ -10,6 +10,11 @@ Live HTML ships from `E:\Handyman Ticket Manager\state\deploy\KnightGroupWebsite
 
 ---
 
+## 2026-10-05: /join form_type + no Formspree file uploads (Grok Bot)
+
+- Hidden `form_type` on `/join` is now `contractor_application` (was inferred as `homeowner` by `JS/includes*.js` / `kg-analytics.js`).
+- File upload inputs stay removed; applicants email W-9, GL COI, and workers' comp/exemption to nknight@knightgroup.com. Form fields kept: confirm_1099, gl_carrier, workers_comp_status, email_docs, etc. Titles/meta/H1 unchanged.
+
 ## 2026-10-04 (evening): free written quotes restored in body copy (Grok Bot, Nick's clarification)
 
 - A free WRITTEN quote from details and photos is accurate; only free IN-PERSON estimates are not offered. Body CTAs now say "Request a free written quote" / "Get a free written quote from photos". FAQ answers now say "Send details and photos for a free written quote. We don’t do free in-person estimates; phone quotes are usually close, get revised on site if the scope changes, and work starts once you sign." /booking FAQ is back to "Is the estimate really free?", answered "Yes, the written quote is free…". ReserveAction name: "Request a free written handyman quote". Generators updated. Titles, meta, and H1 unchanged (they already say "free written estimate", which is accurate).
