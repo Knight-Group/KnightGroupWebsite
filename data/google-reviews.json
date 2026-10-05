@@ -1,13 +1,41 @@
 {
   "ratingValue": 5,
-  "reviewCount": 14,
-  "fetchedAt": "2026-09-21T12:41:16.146Z",
+  "reviewCount": 16,
+  "fetchedAt": "2026-10-05T14:07:53.309Z",
   "source": {
     "account": "accounts/114830235101160247472",
     "location": "locations/15551195498878135337",
     "locationTitle": "Knight Group"
   },
   "reviews": [
+    {
+      "name": "Shireen Brathwaite",
+      "meta": "Google review",
+      "date": "2026-09-24",
+      "text": "We had a great experience with getting our kitchen sink repair. Vince was able to fix 3 things at once including the garbage disposal, replacing the basket strainer, and replacing the faucet which were all broken. He worked quickly and professionally and even fixed the weatherproofing strip on our front door since he was here and it was quick 5 minute job to put in the new strip. In addition to being a very skilled handyman, Vince was friendly and kind to my elderly mother and brother as he was getting the job done. We'll definitely contact them again for future jobs as needed. Highly recommend the Knight Group for anyone looking for an honest, skilled handyman.",
+      "stars": 5,
+      "avatarColor": "#0f766e",
+      "replied": true,
+      "ownerReply": {
+        "name": "Knight Group Handyman Services",
+        "date": "2026-09-24",
+        "text": "Thank you very much! The plumbing work is certainly his specialty =D"
+      }
+    },
+    {
+      "name": "Nik Karpinsky",
+      "meta": "Google review",
+      "date": "2026-09-23",
+      "text": "They did a great job with our small drywall install project and had fair pricing. Would use them again!",
+      "stars": 5,
+      "avatarColor": "#274690",
+      "replied": true,
+      "ownerReply": {
+        "name": "Knight Group Handyman Services",
+        "date": "2026-09-24",
+        "text": "Thank you very much! Look forward hopefully to the next project! Was a pleasure doing business with you."
+      }
+    },
     {
       "name": "Jeanette Kunz",
       "meta": "Google review",
