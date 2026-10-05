@@ -2990,6 +2990,37 @@
       "photoAfter": 1
     },
     {
+      "id": "qaurter-round-across-entire-hallway-8961fae-before-after",
+      "title": "Qaurter Round Across Entire Hallway \u2014 before & after",
+      "description": "Before-and-after proof from a qaurter round across entire hallway job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-qaurter-round-across-entire-hallway-8961fae.webp",
+          "filename": "before-after-qaurter-round-across-entire-hallway-8961fae.webp",
+          "step": 1,
+          "title": "Qaurter Round Across Entire Hallway before and after",
+          "seoAlt": "Qaurter Round Across Entire Hallway before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a qaurter round across entire hallway job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Perry Lyons",
+      "workerRole": "field technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "workNotes": "Finish the rest of the hallway: Did remaining hallway of back office hallway laminate floor: Scrape / sweep floor and lay laminate from transition ramp to the rest of the hallway (approximately 30'x 5.5'; Qaurter Round Across Entire Hallway: Laid Quarter Round in back Office Hallway Finish the rest of the hallway: Did remaining hallway of back office hallway laminate floor: Scrape / sweep floor and lay laminate\u2026",
+      "photoBefore": 1,
+      "photoProcess": 3,
+      "photoAfter": 1
+    },
+    {
       "id": "recaulk-around-kitchen-windowsill-custom-5cca131-before-after",
       "title": "Recaulk around kitchen windowsill (customer request) \u2014 before & after",
       "description": "Before-and-after proof from a recaulk around kitchen windowsill (customer request) job completed by Knight Group in Gulfport.",
@@ -7812,6 +7843,31 @@
       "workNotes": "Dug out post to set plumb and install new latch for fence. Remove old cable wires. Patch ceiling scrapped then skim coat then texture and paint. Replaced both lock sets. Pressure washed walk way and cleaned front of house",
       "photoBefore": 1,
       "photoProcess": 1,
+      "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-qaurter-round-across-entire-hallway-8961fae.webp",
+      "filename": "before-after-qaurter-round-across-entire-hallway-8961fae.webp",
+      "group": "qaurter-round-across-entire-hallway-8961fae-before-after",
+      "step": 1,
+      "title": "Qaurter Round Across Entire Hallway before and after",
+      "seoAlt": "Qaurter Round Across Entire Hallway before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a qaurter round across entire hallway job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Qaurter Round Across Entire Hallway \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a qaurter round across entire hallway job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Perry Lyons",
+      "workerRole": "field technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "workNotes": "Finish the rest of the hallway: Did remaining hallway of back office hallway laminate floor: Scrape / sweep floor and lay laminate from transition ramp to the rest of the hallway (approximately 30'x 5.5'; Qaurter Round Across Entire Hallway: Laid Quarter Round in back Office Hallway Finish the rest of the hallway: Did remaining hallway of back office hallway laminate floor: Scrape / sweep floor and lay laminate\u2026",
+      "photoBefore": 1,
+      "photoProcess": 3,
       "photoAfter": 1
     },
     {

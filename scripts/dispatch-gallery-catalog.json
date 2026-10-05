@@ -3489,5 +3489,30 @@
     "photoBefore": 4,
     "photoProcess": 0,
     "photoAfter": 1
+  },
+  "before-after-qaurter-round-across-entire-hallway-8961fae.webp": {
+    "group": "qaurter-round-across-entire-hallway-8961fae-before-after",
+    "groupTitle": "Qaurter Round Across Entire Hallway \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a qaurter round across entire hallway job completed by Knight Group in Safety Harbor.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Qaurter Round Across Entire Hallway before and after",
+    "description": "Before-and-after comparison from a qaurter round across entire hallway job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "qaurter-round-across-entire-hallway-8961fae",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Perry Lyons",
+    "workerRole": "field technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "",
+    "workNotes": "Finish the rest of the hallway: Did remaining hallway of back office hallway laminate floor: Scrape / sweep floor and lay laminate from transition ramp to the rest of the hallway (approximately 30'x 5.5'; Qaurter Round Across Entire Hallway: Laid Quarter Round in back Office Hallway Finish the rest of the hallway: Did remaining hallway of back office hallway laminate floor: Scrape / sweep floor and lay laminate\u2026",
+    "photoBefore": 1,
+    "photoProcess": 3,
+    "photoAfter": 1
   }
 }
