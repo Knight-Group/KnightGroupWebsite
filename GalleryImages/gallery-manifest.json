@@ -1454,6 +1454,37 @@
       "photoAfter": 3
     },
     {
+      "id": "finish-the-rest-of-the-hallway-faae6ab-before-after",
+      "title": "Finish the rest of the hallway \u2014 before & after",
+      "description": "Before-and-after proof from a finish the rest of the hallway job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-finish-the-rest-of-the-hallway-faae6ab.webp",
+          "filename": "before-after-finish-the-rest-of-the-hallway-faae6ab.webp",
+          "step": 1,
+          "title": "Finish the rest of the hallway before and after",
+          "seoAlt": "Finish the rest of the hallway before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a finish the rest of the hallway job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Perry Lyons",
+      "workerRole": "field technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "workNotes": "Finish the rest of the hallway: Did remaining hallway of back office hallway laminate floor: Scrape / sweep floor and lay laminate from transition ramp to the rest of the hallway (approximately 30'x 5.5'; Qaurter Round Across Entire Hallway: Laid Quarter Round in back Office Hallway Finish the rest of the hallway: Did remaining hallway of back office hallway laminate floor: Scrape / sweep floor and lay laminate\u2026",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "finish-two-drywall-cutouts-6f3dbf5-before-after",
       "title": "Finish two drywall cutouts \u2014 before & after",
       "description": "Before-and-after proof from a finish two drywall cutouts job completed by Knight Group in Pinellas Park.",
@@ -6545,6 +6576,31 @@
       "beforeAfter": true,
       "groupTitle": "HVAC filter change \u2014 before & after",
       "groupDescription": "Clogged return filter swapped for clean media and proper airflow."
+    },
+    {
+      "src": "GalleryImages/before-after-finish-the-rest-of-the-hallway-faae6ab.webp",
+      "filename": "before-after-finish-the-rest-of-the-hallway-faae6ab.webp",
+      "group": "finish-the-rest-of-the-hallway-faae6ab-before-after",
+      "step": 1,
+      "title": "Finish the rest of the hallway before and after",
+      "seoAlt": "Finish the rest of the hallway before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a finish the rest of the hallway job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Finish the rest of the hallway \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a finish the rest of the hallway job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Perry Lyons",
+      "workerRole": "field technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "workNotes": "Finish the rest of the hallway: Did remaining hallway of back office hallway laminate floor: Scrape / sweep floor and lay laminate from transition ramp to the rest of the hallway (approximately 30'x 5.5'; Qaurter Round Across Entire Hallway: Laid Quarter Round in back Office Hallway Finish the rest of the hallway: Did remaining hallway of back office hallway laminate floor: Scrape / sweep floor and lay laminate\u2026",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-finish-two-drywall-cutouts-6f3dbf5.webp",
