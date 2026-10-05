@@ -289,3 +289,9 @@ Seven complete GSC days after the Sep 17 recrawl are Sep 18–24. Measure on or 
 
 
 
+
+## 2026-10-05 (KG Web Growth weekly review)
+
+- **GBP review feed:** review sync now runs from a fresh worktree off `origin/main` (the old run in the stale local checkout had failed daily since about Sep 26). Live count 14 -> 16 reviews (commit 7615d1e2). No tags changed.
+- **Lead tracking (`JS/kg-analytics.js`):** `generate_lead` now fires once on a validated form submit instead of only on `/thank-you`. GA4 logged 67 `form_submit` and 0 `form_success` in the 90 days to Oct 5, which means Formspree isn't sending people back to `/thank-you`. The thank-you event is skipped if the submit was already counted; contractor applications are excluded. No tags changed.
+- **`/property-manager-handyman` body:** "A local spa resort" -> "A local hospitality business" (anonymity). Title, meta, H1, and canonical unchanged.

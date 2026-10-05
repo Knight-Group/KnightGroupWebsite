@@ -13,6 +13,9 @@
  *    pages left the tag in dead HTML; GTM was click-gated; localhost/Electron
  *    sessions were polluting the Clarity project.
  *
+ * generate_lead is sent once per lead: on a validated form_submit, or on
+ * /thank-you form_success if the submit was not already counted (Oct 5, 2026).
+ *
  * Do not also add a GTM GA4 Event tag for generate_lead — the page already
  * sends it. Optional GTM triggers are only needed for ads / other non-GA4 tags.
  */
@@ -249,6 +252,28 @@
         return Object.assign(params, cleanDetails(details));
     }
 
+    var LEAD_COUNTED_KEY = 'kg:leadCountedAt';
+
+    function isNonLeadForm(details) {
+        var path = (window.location.pathname || '').toLowerCase();
+        if (path.indexOf('/join') === 0) return true;
+        var id = String((details && (details.form_id || details.form_class)) || '').toLowerCase();
+        return /contractor|join|apply|application/.test(id);
+    }
+
+    function leadAlreadyCounted(eventName) {
+        try {
+            var now = Date.now();
+            var prev = parseInt(window.sessionStorage.getItem(LEAD_COUNTED_KEY) || '0', 10) || 0;
+            if (eventName === 'form_success' && prev && now - prev < 30 * 60 * 1000) return true;
+            if (eventName === 'form_submit' && prev && now - prev < 10 * 1000) return true;
+            window.sessionStorage.setItem(LEAD_COUNTED_KEY, String(now));
+        } catch (error) {
+            // Storage blocked: still count the lead.
+        }
+        return false;
+    }
+
     function track(eventName, details) {
         var attr = attribution();
         var merged = Object.assign({}, attr, details || {});
@@ -278,9 +303,15 @@
         var params = ga4Params(details);
         window.gtag('event', eventName, params);
 
-        if (eventName === 'form_success') {
+        // generate_lead fires once per lead. Formspree does not reliably send people
+        // back to /thank-you (GA4 logged 67 form_submit and 0 form_success over 90 days
+        // to Oct 5, 2026), so count the lead when a validated form is submitted and
+        // skip the thank-you duplicate if the visitor does land there.
+        var isLeadEvent = eventName === 'form_submit' || eventName === 'form_success';
+        if (isLeadEvent && !isNonLeadForm(merged) && !leadAlreadyCounted(eventName)) {
+            var leadSource = eventName === 'form_submit' ? 'form_submit' : 'form';
             var leadParams = Object.assign({}, params, {
-                lead_source: 'form',
+                lead_source: leadSource,
                 form_type: formType
             });
             window.dataLayer.push(Object.assign({
@@ -289,7 +320,7 @@
                 page_title: payload.page_title,
                 page_type: payload.page_type,
                 landing_page: payload.landing_page,
-                lead_source: 'form',
+                lead_source: leadSource,
                 form_type: formType
             }, cleanDetails(details)));
             window.gtag('event', 'generate_lead', leadParams);

@@ -1,7 +1,7 @@
 {
  "https://www.knightgroup.com/": {
   "lastmod": "2026-10-05",
-  "sha256": "65846c83e90687b7e6f64feac02b497f310e0ae7482d35f4ad319e028faa7faa"
+  "sha256": "8b8bdf0b8a312ea89ba6c8ffc90045985b8c10c267360b3175e54707b4f9e544"
  },
  "https://www.knightgroup.com/Services/cabinet-repair": {
   "lastmod": "2026-10-04",
@@ -152,8 +152,8 @@
   "sha256": "a99af7af204c631ebf31d9479aabff0e795adee17a97dab7025ce99b6fce5de9"
  },
  "https://www.knightgroup.com/about": {
-  "lastmod": "2026-10-04",
-  "sha256": "a8166808b19a0dc279b963d20aebd09dc457cdae0ed0dfac0d415962dd388d10"
+  "lastmod": "2026-10-05",
+  "sha256": "7c9236177360c625fc540cfcfb9233ed16cd00ba2407bb8464d62066470312a4"
  },
  "https://www.knightgroup.com/beacon-square-handyman": {
   "lastmod": "2026-10-04",
@@ -944,8 +944,8 @@
   "sha256": "b4e2b856ff0e5ecf86be641f9ef5c8e195ed9cde299f9b187023764205d7a934"
  },
  "https://www.knightgroup.com/property-manager-handyman": {
-  "lastmod": "2026-10-04",
-  "sha256": "6b9686a27b9cda058e1ec9486d0f0dc03fa733d577b8465a780bf23c89adceb8"
+  "lastmod": "2026-10-05",
+  "sha256": "25a89de966aad12c756256bc994acf4d2ac3c5027c742e0e4d45d8684a092776"
  },
  "https://www.knightgroup.com/rental-turnover-handyman": {
   "lastmod": "2026-10-04",
