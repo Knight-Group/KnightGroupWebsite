@@ -35,7 +35,7 @@
 
 (function kgEarlyPartialPrefetch() {
     window.__kgPartialCache = window.__kgPartialCache || {};
-    var version = '20261005-header';
+    var version = '20261005-nav';
     ['/header.html?v=' + version, '/footer.html?v=' + version].forEach(function (path) {
         if (window.__kgPartialCache[path]) return;
         window.__kgPartialCache[path] = fetch(path, { credentials: 'same-origin' })
@@ -55,7 +55,7 @@ class HTMLInclude {
     }
 
     ensureHeaderStyles() {
-        const headerVersion = '20261005-header';
+        const headerVersion = '20261005-nav';
         const desiredHref = '/CSS/header.min.css?v=' + headerVersion;
         const existing = document.getElementById('kg-header-css') || document.querySelector('link[href*="header.min.css"]');
         if (existing) {
@@ -292,7 +292,7 @@ class HTMLInclude {
         if (window._knightGroupIncludesLoaded) return;
         window._knightGroupIncludesLoaded = true;
 
-        const includeVersion = '20261005-header';
+        const includeVersion = '20261005-nav';
 
         const headerElement = document.getElementById('header-include');
         const footerElement = document.getElementById('footer-include');
