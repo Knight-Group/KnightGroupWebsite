@@ -176,8 +176,8 @@
   "sha256": "0d21929821fe0d2ce8ad7b2d6d7d1c2096fb006ad7a26c2c2f1964517ae0bc72"
  },
  "https://www.knightgroup.com/clearwater-handyman": {
-  "lastmod": "2026-10-04",
-  "sha256": "ca177cc1fc018a3ef6868a065e9e5d6e10ab3c577826acdcebdcba7b0bca6d01"
+  "lastmod": "2026-10-06",
+  "sha256": "dce2cee8d404f4343739631ddc330236de5d1913238a6746bdb9c4926435906e"
  },
  "https://www.knightgroup.com/clearwater-sink-repair": {
   "lastmod": "2026-10-04",
@@ -188,8 +188,8 @@
   "sha256": "7d67e9488943876a1d739b2c4bd6cc17e6edea262b90803352d1d8eda9d09341"
  },
  "https://www.knightgroup.com/dunedin-handyman": {
-  "lastmod": "2026-10-04",
-  "sha256": "f6d99bff613fd99d705fd4d6ec8f1b054b1347005892f54ae56bb4cf73b49703"
+  "lastmod": "2026-10-06",
+  "sha256": "8f55db8af321be72af978a5d3f8c6e188dc6f417b68b5729c9695f22d3cd1bb7"
  },
  "https://www.knightgroup.com/dunedin-trim-repair": {
   "lastmod": "2026-10-04",
@@ -209,7 +209,7 @@
  },
  "https://www.knightgroup.com/galleries": {
   "lastmod": "2026-10-06",
-  "sha256": "a52c97f20aaaae29ca17e27cf9bc403932c8ef6e20ffcbc983df8e33e9a4eff5"
+  "sha256": "407a866bd5c12adf3006f627f5885bb67b21baf482640abb87f777bfe2394533"
  },
  "https://www.knightgroup.com/gallery/2-toilets-7f8c499-before-after": {
   "lastmod": "2026-10-04",
@@ -868,8 +868,8 @@
   "sha256": "c7d18129c2d75cfb86093ede4fa9047aa6d6dd4833dec1fdbc44f90e366c33b7"
  },
  "https://www.knightgroup.com/hillsborough-handyman": {
-  "lastmod": "2026-10-04",
-  "sha256": "c164feef0a60da5153f762d9a790a0a55f74e5991b84d816571045400f0fb72b"
+  "lastmod": "2026-10-06",
+  "sha256": "e237ae07074481b797540fe09048ffa7fe9e059f54b531b83a20175bb672d72d"
  },
  "https://www.knightgroup.com/holiday-handyman": {
   "lastmod": "2026-10-04",
@@ -908,8 +908,8 @@
   "sha256": "17186fdb8aae9350d15ab347063cdab7fe16cd74e1e251a703b0da26812e54ce"
  },
  "https://www.knightgroup.com/largo-handyman": {
-  "lastmod": "2026-10-04",
-  "sha256": "03aa116e69d57ef081e272d654d1cf621e599bcf6c439b2842794a5e713d8812"
+  "lastmod": "2026-10-06",
+  "sha256": "313baf1eab45c057cfe563e65a7db23aa80413d146a5f3b6cf8e7be5f769430f"
  },
  "https://www.knightgroup.com/largo-toilet-repair": {
   "lastmod": "2026-10-04",
@@ -928,24 +928,24 @@
   "sha256": "58d99992332cb6fcdfeeffe92a22e15f661c17d640006d90ebf32dd4595a9c4d"
  },
  "https://www.knightgroup.com/oldsmar-handyman": {
-  "lastmod": "2026-10-04",
-  "sha256": "a94fd20fdcb0f544b1d765c6b63cb11c4d5954c508d3fa62c75973493448e91b"
+  "lastmod": "2026-10-06",
+  "sha256": "96b4f9f1cdbcdebe148c1ee4e55b446737a48d9a11cb57fb8c5d011a7f9d8e10"
  },
  "https://www.knightgroup.com/palm-harbor-drywall-repair": {
   "lastmod": "2026-10-04",
   "sha256": "c24f5eaa731be841a7bab05eece26e558045e179f0cb73338171ff6ae125d75c"
  },
  "https://www.knightgroup.com/palm-harbor-handyman": {
-  "lastmod": "2026-10-04",
-  "sha256": "d72c4696497a5078abaae8deb8dd69dfc5eeb9d55a5765a21da0ceadbcea3dce"
+  "lastmod": "2026-10-06",
+  "sha256": "075e66555174e8972f4f6e23e94f463de552c24d7d2e107200f791ab154f2e8f"
  },
  "https://www.knightgroup.com/pasco-handyman": {
-  "lastmod": "2026-10-04",
-  "sha256": "420ee16853172dcce44bb999a4f95caa2af610cd4c9e7557099c563c1d283512"
+  "lastmod": "2026-10-06",
+  "sha256": "68863fc645861c85c3a9a468b7b070cf28ec2eb3813a9a1cb3147677df478f3a"
  },
  "https://www.knightgroup.com/pinellas-handyman": {
-  "lastmod": "2026-10-04",
-  "sha256": "d46e764f4149247b6fea1985e5cff0dad5372acfc0c5f47fde045f44827afee9"
+  "lastmod": "2026-10-06",
+  "sha256": "cbc10cfc0d87c1315c7efda2682d39d870b1065bf5ced7f278e9184b0d003929"
  },
  "https://www.knightgroup.com/plumber-background-handyman": {
   "lastmod": "2026-10-04",
@@ -984,16 +984,16 @@
   "sha256": "4ec07a7525ba23cc17a3ad6819aa783693831503e3fce3d1346d1eb8fb005538"
  },
  "https://www.knightgroup.com/safety-harbor-handyman": {
-  "lastmod": "2026-10-04",
-  "sha256": "b867f8bb87d81898092c4ffa9f603642f87e238427b9428d7d3f50d53c1723e5"
+  "lastmod": "2026-10-06",
+  "sha256": "f31e30c5b793cd0afff932206ec3bd63f46fe58b7a65e51b06ec41ebe93ac81d"
  },
  "https://www.knightgroup.com/safety-harbor-home-repair": {
   "lastmod": "2026-10-04",
   "sha256": "64995366072c02d85b3b6fa308ab13e3879316ebd559984736f185a96b14a06c"
  },
  "https://www.knightgroup.com/seminole-handyman": {
-  "lastmod": "2026-10-04",
-  "sha256": "86f884176c75b15312eebadc1c79fbf676b9c11e436abcabebacbb0574039a20"
+  "lastmod": "2026-10-06",
+  "sha256": "ae4bfd643393a91444c2850bbdd6d624040f82bc6a0dd5845bec8ac4fb89c67b"
  },
  "https://www.knightgroup.com/seminole-interior-painting": {
   "lastmod": "2026-10-04",
@@ -1012,16 +1012,16 @@
   "sha256": "8cf8fe69263b7dc0c40ecd5b4176b8c7b2eaa57c6de6b15a598d97d61e17dfdb"
  },
  "https://www.knightgroup.com/st-petersburg-handyman": {
-  "lastmod": "2026-10-04",
-  "sha256": "ba562dd3614954404d40f83ff37cc5d8d48a00d86e6dabd0ffa58b738cc1fcc0"
+  "lastmod": "2026-10-06",
+  "sha256": "0413da4baa3bb3d1b5182530db63594256edc610a81abd9c0d9598b583ba20f5"
  },
  "https://www.knightgroup.com/tampa-handyman": {
-  "lastmod": "2026-10-04",
-  "sha256": "13dde053ec84e42a6cce97eff3eff10c0eb398bed7f4b321fd7e8f3e10d1e9d1"
+  "lastmod": "2026-10-06",
+  "sha256": "e45aa82afbe4c76cb98eb9ea21af0a86f1e90863f57db042bce9576e1de1010b"
  },
  "https://www.knightgroup.com/tarpon-springs-handyman": {
-  "lastmod": "2026-10-04",
-  "sha256": "746f90e3b40f7698eb5490949645935b38fa25d08f63e50848de6aa3604cc7fe"
+  "lastmod": "2026-10-06",
+  "sha256": "adb28556c5875cbf1379c35788bb9208fedba9c39155422a55152f8263fbd21f"
  },
  "https://www.knightgroup.com/temple-terrace-handyman": {
   "lastmod": "2026-10-04",
