@@ -2888,6 +2888,38 @@
       "photoAfter": 1
     },
     {
+      "id": "office-transition-strips-3fed62c-before-after",
+      "title": "Office Transition Strips \u2014 before & after",
+      "description": "Before-and-after proof from a office transition strips job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-office-transition-strips-3fed62c.webp",
+          "filename": "before-after-office-transition-strips-3fed62c.webp",
+          "step": 1,
+          "title": "Office Transition Strips before and after",
+          "seoAlt": "Office Transition Strips before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a office transition strips job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Hallway #2 laminate installation: Installing hallway laminate flooring; Angled entryway laminate installation: Install staged laminate flooring in the approximately 11-foot by 5.5-foot entryway, including layout through the angled walls and detailed cuts around the visible door frames. Maintain manufacturer-required expansion gaps and complete basic subfloor scraping and cleaning. Significant leveling, moisture\u2026",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 4
+    },
+    {
       "id": "office-ceiling-fan-malfunction-before-after",
       "title": "Office ceiling fan malfunction \u2014 before & after",
       "description": "Before-and-after proof from a office ceiling fan malfunction job completed by Knight Group.",
@@ -7923,6 +7955,32 @@
       "photoBefore": 5,
       "photoProcess": 3,
       "photoAfter": 5
+    },
+    {
+      "src": "GalleryImages/before-after-office-transition-strips-3fed62c.webp",
+      "filename": "before-after-office-transition-strips-3fed62c.webp",
+      "group": "office-transition-strips-3fed62c-before-after",
+      "step": 1,
+      "title": "Office Transition Strips before and after",
+      "seoAlt": "Office Transition Strips before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a office transition strips job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Office Transition Strips \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a office transition strips job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Hallway #2 laminate installation: Installing hallway laminate flooring; Angled entryway laminate installation: Install staged laminate flooring in the approximately 11-foot by 5.5-foot entryway, including layout through the angled walls and detailed cuts around the visible door frames. Maintain manufacturer-required expansion gaps and complete basic subfloor scraping and cleaning. Significant leveling, moisture\u2026",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 4
     },
     {
       "src": "GalleryImages/before-after-paint-ceiling-stains-1daac32.webp",
