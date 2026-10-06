@@ -3213,6 +3213,37 @@
       "photoAfter": 1
     },
     {
+      "id": "quarter-round-in-hallways-and-room-7-d0877dc-before-after",
+      "title": "Quarter Round in Hallways and Room #7 \u2014 before & after",
+      "description": "Before-and-after proof from a quarter round in hallways and room #7 job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-quarter-round-in-hallways-and-room-7-d0877dc.webp",
+          "filename": "before-after-quarter-round-in-hallways-and-room-7-d0877dc.webp",
+          "step": 1,
+          "title": "Quarter Round in Hallways and Room #7 before and after",
+          "seoAlt": "Quarter Round in Hallways and Room #7 before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a quarter round in hallways and room #7 job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Perry Lyons",
+      "workerRole": "field technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 4
+    },
+    {
       "id": "ramp-transition-36c1780-before-after",
       "title": "Ramp Transition \u2014 before & after",
       "description": "Before-and-after proof from a ramp transition job completed by Knight Group in Safety Harbor.",
@@ -8249,6 +8280,31 @@
       "photoBefore": 1,
       "photoProcess": 3,
       "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-quarter-round-in-hallways-and-room-7-d0877dc.webp",
+      "filename": "before-after-quarter-round-in-hallways-and-room-7-d0877dc.webp",
+      "group": "quarter-round-in-hallways-and-room-7-d0877dc-before-after",
+      "step": 1,
+      "title": "Quarter Round in Hallways and Room #7 before and after",
+      "seoAlt": "Quarter Round in Hallways and Room #7 before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a quarter round in hallways and room #7 job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Quarter Round in Hallways and Room #7 \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a quarter round in hallways and room #7 job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Perry Lyons",
+      "workerRole": "field technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 4
     },
     {
       "src": "GalleryImages/before-after-quarter-round-installation-c020e8a.webp",

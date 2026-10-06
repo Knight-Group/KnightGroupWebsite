@@ -3689,5 +3689,30 @@
     "photoBefore": 1,
     "photoProcess": 1,
     "photoAfter": 2
+  },
+  "before-after-quarter-round-in-hallways-and-room-7-d0877dc.webp": {
+    "group": "quarter-round-in-hallways-and-room-7-d0877dc-before-after",
+    "groupTitle": "Quarter Round in Hallways and Room #7 \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a quarter round in hallways and room #7 job completed by Knight Group in Safety Harbor.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Quarter Round in Hallways and Room #7 before and after",
+    "description": "Before-and-after comparison from a quarter round in hallways and room #7 job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "quarter-round-in-hallways-and-room-7-d0877dc",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Perry Lyons",
+    "workerRole": "field technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "",
+    "photoBefore": 4,
+    "photoProcess": 0,
+    "photoAfter": 4
   }
 }
