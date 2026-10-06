@@ -1600,6 +1600,38 @@
       ]
     },
     {
+      "id": "fix-laminate-scratches-on-floor-af40cee-before-after",
+      "title": "Fix Laminate Scratches on Floor \u2014 before & after",
+      "description": "Before-and-after proof from a fix laminate scratches on floor job completed by Knight Group in Safety Harbor.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-fix-laminate-scratches-on-floor-af40cee.webp",
+          "filename": "before-after-fix-laminate-scratches-on-floor-af40cee.webp",
+          "step": 1,
+          "title": "Fix Laminate Scratches on Floor before and after",
+          "seoAlt": "Fix Laminate Scratches on Floor before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a fix laminate scratches on floor job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "floor",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Fix Laminate Scratches on Floor: Scratches were made when moving furniture over some of the laminate in one of the office rooms, when back and touched it out and fixed the scratches",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 2
+    },
+    {
       "id": "fix-kitchen-drawer-901493a-before-after",
       "title": "Fix kitchen drawer \u2014 before & after",
       "description": "Before-and-after proof from a fix kitchen drawer job completed by Knight Group in Pinellas County.",
@@ -6907,6 +6939,32 @@
       "photoBefore": 1,
       "photoProcess": 0,
       "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-fix-laminate-scratches-on-floor-af40cee.webp",
+      "filename": "before-after-fix-laminate-scratches-on-floor-af40cee.webp",
+      "group": "fix-laminate-scratches-on-floor-af40cee-before-after",
+      "step": 1,
+      "title": "Fix Laminate Scratches on Floor before and after",
+      "seoAlt": "Fix Laminate Scratches on Floor before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a fix laminate scratches on floor job completed in a Safety Harbor home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Fix Laminate Scratches on Floor \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a fix laminate scratches on floor job completed by Knight Group in Safety Harbor.",
+      "cluster": "floor",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Fix Laminate Scratches on Floor: Scratches were made when moving furniture over some of the laminate in one of the office rooms, when back and touched it out and fixed the scratches",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 2
     },
     {
       "src": "GalleryImages/before-after-fix-toilet-fill-valve-6df05b1.webp",

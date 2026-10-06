@@ -3639,5 +3639,30 @@
     "photoBefore": 2,
     "photoProcess": 0,
     "photoAfter": 4
+  },
+  "before-after-fix-laminate-scratches-on-floor-af40cee.webp": {
+    "group": "fix-laminate-scratches-on-floor-af40cee-before-after",
+    "groupTitle": "Fix Laminate Scratches on Floor \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a fix laminate scratches on floor job completed by Knight Group in Safety Harbor.",
+    "category": "carpentry",
+    "serviceLink": "/Services/carpentry-framing",
+    "step": 1,
+    "title": "Fix Laminate Scratches on Floor before and after",
+    "description": "Before-and-after comparison from a fix laminate scratches on floor job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "fix-laminate-scratches-on-floor-af40cee",
+    "source": "dispatch",
+    "cluster": "floor",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Fix Laminate Scratches on Floor: Scratches were made when moving furniture over some of the laminate in one of the office rooms, when back and touched it out and fixed the scratches",
+    "photoBefore": 2,
+    "photoProcess": 0,
+    "photoAfter": 2
   }
 }
