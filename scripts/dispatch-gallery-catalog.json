@@ -3664,5 +3664,30 @@
     "photoBefore": 2,
     "photoProcess": 0,
     "photoAfter": 2
+  },
+  "before-after-office-room-7-laminate-flooring-12x14-1894b42.webp": {
+    "group": "office-room-7-laminate-flooring-12x14-1894b42-before-after",
+    "groupTitle": "Office Room #7 Laminate Flooring 12x14' \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a office room #7 laminate flooring 12x14' job completed by Knight Group in Safety Harbor.",
+    "category": "carpentry",
+    "serviceLink": "/Services/carpentry-framing",
+    "step": 1,
+    "title": "Office Room #7 Laminate Flooring 12x14' before and after",
+    "description": "Before-and-after comparison from a office room #7 laminate flooring 12x14' job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "office-room-7-laminate-flooring-12x14-1894b42",
+    "source": "dispatch",
+    "cluster": "floor",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Office Room #7 Laminate Flooring 12x14': Install staged laminate flooring in the approximately 14-foot by 12-foot room over the exposed subfloor, including layout, perimeter cuts, and required expansion gaps. Basic scraping and cleaning needed for installation are included Install staged laminate flooring in the approximately 14-foot by 12-foot room over the exposed subfloor, including layout, perimeter cuts, and\u2026",
+    "photoBefore": 1,
+    "photoProcess": 1,
+    "photoAfter": 2
   }
 }
