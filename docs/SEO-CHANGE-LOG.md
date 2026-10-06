@@ -10,6 +10,12 @@ Live HTML ships from `E:\Handyman Ticket Manager\state\deploy\KnightGroupWebsite
 
 ---
 
+## 2026-10-06: Home Watch discovery + Tampa/Pasco upgrades + orphan gallery links (Grok Bot)
+
+- **Home Watch:** top-nav + mobile link to `/home-watch-pinellas`; footer adds Home Watch pricing. Pinellas city/hub pages get a "Leaving town? Schedule Pinellas Home Watch" CTA (pricing + sample report links). `geo_expansions.py` keeps the HW related-resources line for future regenerations. No title/meta/H1 changes.
+- **Tampa / Pasco / Hillsborough:** body sections explaining Safety Harbor dispatch (no storefront), route-fit booking CTA, and cross-links between hubs/cities.
+- **Orphans:** 12 gallery URLs with zero inbound HTML links (matches Ahrefs count) added to `/galleries` crawlable list.
+
 ## 2026-10-05: /join form_type + no Formspree file uploads (Grok Bot)
 
 - Hidden `form_type` on `/join` is now `contractor_application` (was inferred as `homeowner` by `JS/includes*.js` / `kg-analytics.js`).

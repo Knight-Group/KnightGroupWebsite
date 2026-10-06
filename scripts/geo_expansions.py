@@ -95,6 +95,7 @@ def build_city_body(city_slug: str, city_name: str, county_name: str, county_slu
 
 <h3>Related resources</h3>
 <p>{closing}</p>
+<p>Leaving town for the season? See <a href="/home-watch-pinellas">Pinellas Home Watch</a> (weekly, biweekly, or one-time photo-documented checks) and <a href="/home-watch-pricing">Home Watch pricing</a>.</p>
 {combo_links}
 """
 
