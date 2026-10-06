@@ -3514,5 +3514,30 @@
     "photoBefore": 1,
     "photoProcess": 3,
     "photoAfter": 1
+  },
+  "before-after-change-lock-set-on-2-with-4-matching-key-03d49fa.webp": {
+    "group": "change-lock-set-on-2-with-4-matching-key-03d49fa-before-after",
+    "groupTitle": "Change lock set on 2 with 4 matching keys \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a change lock set on 2 with 4 matching keys job completed by Knight Group in St. Petersburg.",
+    "category": "doors-windows",
+    "serviceLink": "/Services/doors-windows",
+    "step": 1,
+    "title": "Change lock set on 2 with 4 matching keys before and after",
+    "description": "Before-and-after comparison from a change lock set on 2 with 4 matching keys job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "change-lock-set-on-2-with-4-matching-key-03d49fa",
+    "source": "dispatch",
+    "cluster": "door_lock",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "August 2026",
+    "workNotes": "Dug out post to set plumb and install new latch for fence. Remove old cable wires. Patch ceiling scrapped then skim coat then texture and paint. Replaced both lock sets. Pressure washed walk way and cleaned front of house",
+    "photoBefore": 2,
+    "photoProcess": 0,
+    "photoAfter": 3
   }
 }
