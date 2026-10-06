@@ -616,6 +616,38 @@
       "photoAfter": 2
     },
     {
+      "id": "change-front-key-entries-588ccb1-before-after",
+      "title": "Change front key entries \u2014 before & after",
+      "description": "Before-and-after proof from a change front key entries job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-change-front-key-entries-588ccb1.webp",
+          "filename": "before-after-change-front-key-entries-588ccb1.webp",
+          "step": 1,
+          "title": "Change front key entries before and after",
+          "seoAlt": "Change front key entries before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a change front key entries job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Replaced all locksets. 3 knob 3 dead bolts and had them keyed the same",
+      "photoBefore": 3,
+      "photoProcess": 1,
+      "photoAfter": 3
+    },
+    {
       "id": "change-locks-93a60c5-before-after",
       "title": "Change locks \u2014 before & after",
       "description": "Before-and-after proof from a change locks job completed by Knight Group in Pinellas County.",
@@ -5901,6 +5933,32 @@
       "photoBefore": 6,
       "photoProcess": 3,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-change-front-key-entries-588ccb1.webp",
+      "filename": "before-after-change-front-key-entries-588ccb1.webp",
+      "group": "change-front-key-entries-588ccb1-before-after",
+      "step": 1,
+      "title": "Change front key entries before and after",
+      "seoAlt": "Change front key entries before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a change front key entries job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Change front key entries \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a change front key entries job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Replaced all locksets. 3 knob 3 dead bolts and had them keyed the same",
+      "photoBefore": 3,
+      "photoProcess": 1,
+      "photoAfter": 3
     },
     {
       "src": "GalleryImages/before-after-change-locks-93a60c5.webp",
