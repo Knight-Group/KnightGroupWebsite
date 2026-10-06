@@ -1976,6 +1976,38 @@
       ]
     },
     {
+      "id": "hallway-2-laminate-installation-bb50fbd-before-after",
+      "title": "Hallway #2 laminate installation \u2014 before & after",
+      "description": "Before-and-after proof from a hallway #2 laminate installation job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-hallway-2-laminate-installation-bb50fbd.webp",
+          "filename": "before-after-hallway-2-laminate-installation-bb50fbd.webp",
+          "step": 1,
+          "title": "Hallway #2 laminate installation before and after",
+          "seoAlt": "Hallway #2 laminate installation before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a hallway #2 laminate installation job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Hallway #2 laminate installation: Installing hallway laminate flooring; Angled entryway laminate installation: Install staged laminate flooring in the approximately 11-foot by 5.5-foot entryway, including layout through the angled walls and detailed cuts around the visible door frames. Maintain manufacturer-required expansion gaps and complete basic subfloor scraping and cleaning. Significant leveling, moisture\u2026",
+      "photoBefore": 3,
+      "photoProcess": 2,
+      "photoAfter": 2
+    },
+    {
       "id": "handyman-repair-163b4a6-before-after",
       "title": "Handyman repair \u2014 before & after",
       "description": "Before-and-after proof from a handyman repair job completed by Knight Group in Clearwater.",
@@ -7000,6 +7032,32 @@
       "photoBefore": 2,
       "photoProcess": 3,
       "photoAfter": 3
+    },
+    {
+      "src": "GalleryImages/before-after-hallway-2-laminate-installation-bb50fbd.webp",
+      "filename": "before-after-hallway-2-laminate-installation-bb50fbd.webp",
+      "group": "hallway-2-laminate-installation-bb50fbd-before-after",
+      "step": 1,
+      "title": "Hallway #2 laminate installation before and after",
+      "seoAlt": "Hallway #2 laminate installation before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a hallway #2 laminate installation job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Hallway #2 laminate installation \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a hallway #2 laminate installation job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Hallway #2 laminate installation: Installing hallway laminate flooring; Angled entryway laminate installation: Install staged laminate flooring in the approximately 11-foot by 5.5-foot entryway, including layout through the angled walls and detailed cuts around the visible door frames. Maintain manufacturer-required expansion gaps and complete basic subfloor scraping and cleaning. Significant leveling, moisture\u2026",
+      "photoBefore": 3,
+      "photoProcess": 2,
+      "photoAfter": 2
     },
     {
       "src": "GalleryImages/before-after-handyman-repair-163b4a6.webp",
