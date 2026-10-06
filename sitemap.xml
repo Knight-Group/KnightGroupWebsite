@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/galleries</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -733,6 +733,12 @@
     <priority>0.64</priority>
   </url>
   <url>
+    <loc>https://www.knightgroup.com/gallery/angled-entryway-laminate-installation-3c4887c-before-after</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
     <loc>https://www.knightgroup.com/gallery/attic-drywall-return-visit-54b0dce-before-after</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -1034,7 +1040,7 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/gallery/handyman-repair-163b4a6-before-after</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.64</priority>
   </url>

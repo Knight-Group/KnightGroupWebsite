@@ -212,6 +212,38 @@
       "photoAfter": 2
     },
     {
+      "id": "angled-entryway-laminate-installation-3c4887c-before-after",
+      "title": "Angled entryway laminate installation \u2014 before & after",
+      "description": "Before-and-after proof from a angled entryway laminate installation job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-angled-entryway-laminate-installation-3c4887c.webp",
+          "filename": "before-after-angled-entryway-laminate-installation-3c4887c.webp",
+          "step": 1,
+          "title": "Angled entryway laminate installation before and after",
+          "seoAlt": "Angled entryway laminate installation before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a angled entryway laminate installation job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Hallway #2 laminate installation: Installing hallway laminate flooring; Angled entryway laminate installation: Install staged laminate flooring in the approximately 11-foot by 5.5-foot entryway, including layout through the angled walls and detailed cuts around the visible door frames. Maintain manufacturer-required expansion gaps and complete basic subfloor scraping and cleaning. Significant leveling, moisture\u2026",
+      "photoBefore": 2,
+      "photoProcess": 1,
+      "photoAfter": 1
+    },
+    {
       "id": "attic-drywall-return-visit-54b0dce-before-after",
       "title": "Attic drywall reseat after plumbing trap \u2014 before & after",
       "description": "Return visit to screw drywall back after replacing a flex trap. Paint-ready closeout, not a new remodel.",
@@ -5553,6 +5585,32 @@
       "photoBefore": 1,
       "photoProcess": 0,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-angled-entryway-laminate-installation-3c4887c.webp",
+      "filename": "before-after-angled-entryway-laminate-installation-3c4887c.webp",
+      "group": "angled-entryway-laminate-installation-3c4887c-before-after",
+      "step": 1,
+      "title": "Angled entryway laminate installation before and after",
+      "seoAlt": "Angled entryway laminate installation before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a angled entryway laminate installation job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Angled entryway laminate installation \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a angled entryway laminate installation job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Hallway #2 laminate installation: Installing hallway laminate flooring; Angled entryway laminate installation: Install staged laminate flooring in the approximately 11-foot by 5.5-foot entryway, including layout through the angled walls and detailed cuts around the visible door frames. Maintain manufacturer-required expansion gaps and complete basic subfloor scraping and cleaning. Significant leveling, moisture\u2026",
+      "photoBefore": 2,
+      "photoProcess": 1,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-attic-drywall-return-visit-54b0dce.webp",

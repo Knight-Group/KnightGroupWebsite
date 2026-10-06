@@ -3564,5 +3564,30 @@
     "photoBefore": 3,
     "photoProcess": 2,
     "photoAfter": 2
+  },
+  "before-after-angled-entryway-laminate-installation-3c4887c.webp": {
+    "group": "angled-entryway-laminate-installation-3c4887c-before-after",
+    "groupTitle": "Angled entryway laminate installation \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a angled entryway laminate installation job completed by Knight Group in Safety Harbor.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Angled entryway laminate installation before and after",
+    "description": "Before-and-after comparison from a angled entryway laminate installation job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "angled-entryway-laminate-installation-3c4887c",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Hallway #2 laminate installation: Installing hallway laminate flooring; Angled entryway laminate installation: Install staged laminate flooring in the approximately 11-foot by 5.5-foot entryway, including layout through the angled walls and detailed cuts around the visible door frames. Maintain manufacturer-required expansion gaps and complete basic subfloor scraping and cleaning. Significant leveling, moisture\u2026",
+    "photoBefore": 2,
+    "photoProcess": 1,
+    "photoAfter": 1
   }
 }
