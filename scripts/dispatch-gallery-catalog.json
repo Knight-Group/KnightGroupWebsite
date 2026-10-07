@@ -3839,5 +3839,30 @@
     "photoBefore": 2,
     "photoProcess": 0,
     "photoAfter": 2
+  },
+  "before-after-remove-furniture-from-room-6a2115f.webp": {
+    "group": "remove-furniture-from-room-6a2115f-before-after",
+    "groupTitle": "Remove Furniture from Room \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a remove furniture from room job completed by Knight Group in Pinellas County.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Remove Furniture from Room before and after",
+    "description": "Before-and-after comparison from a remove furniture from room job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "remove-furniture-from-room-6a2115f",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "",
+    "citySlug": "",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Remove Furniture from Room: Had to shuffle and move furniture as we laid laiment, so this wasn't so much a three hour process but more of an \"Ongoing\" process - in all the time was; Remove Carpet: Removing the carpet while moving furniture; Laminate Floor 360 sq ft: Laid 360 ft of laminate flooring while moving furniture; Quarter Round / Baseboards: placed quarter round and caulked; Moving Furniture back to\u2026",
+    "photoBefore": 6,
+    "photoProcess": 1,
+    "photoAfter": 6
   }
 }
