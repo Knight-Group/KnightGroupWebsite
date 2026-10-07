@@ -3739,5 +3739,30 @@
     "photoBefore": 1,
     "photoProcess": 0,
     "photoAfter": 1
+  },
+  "before-after-office-wall-surface-growth-cleaning-b10ba5d.webp": {
+    "group": "office-wall-surface-growth-cleaning-b10ba5d-before-after",
+    "groupTitle": "Office wall surface-growth cleaning \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a office wall surface-growth cleaning job completed by Knight Group in Safety Harbor.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Office wall surface-growth cleaning before and after",
+    "description": "Before-and-after comparison from a office wall surface-growth cleaning job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "office-wall-surface-growth-cleaning-b10ba5d",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "",
+    "workNotes": "Office area flooring installation: Installed flooring in front of reception not yet completed; Front doorway hallway flooring finish: Finished all cuts had to run flooring into reception to continue on into hallway; Hallway door kick-out flooring finish: Complete the remaining hallway flooring through the doorway kick-outs and wall offsets, including the visible staggered infill and detailed jamb cuts. This\u2026",
+    "photoBefore": 1,
+    "photoProcess": 1,
+    "photoAfter": 1
   }
 }
