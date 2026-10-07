@@ -2072,6 +2072,37 @@
       "photoAfter": 2
     },
     {
+      "id": "hallway-flooring-finish-bf39ea1-before-after",
+      "title": "Hallway flooring finish \u2014 before & after",
+      "description": "Before-and-after proof from a hallway flooring finish job completed by Knight Group in Safety Harbor.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-hallway-flooring-finish-bf39ea1.webp",
+          "filename": "before-after-hallway-flooring-finish-bf39ea1.webp",
+          "step": 1,
+          "title": "Hallway flooring finish before and after",
+          "seoAlt": "Hallway flooring finish before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a hallway flooring finish job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "floor",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "workNotes": "Office area flooring installation: Installed flooring in front of reception not yet completed; Front doorway hallway flooring finish: Finished all cuts had to run flooring into reception to continue on into hallway; Hallway door kick-out flooring finish: Complete the remaining hallway flooring through the doorway kick-outs and wall offsets, including the visible staggered infill and detailed jamb cuts. This\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "handyman-repair-163b4a6-before-after",
       "title": "Handyman repair \u2014 before & after",
       "description": "Before-and-after proof from a handyman repair job completed by Knight Group in Clearwater.",
@@ -7301,6 +7332,31 @@
       "photoBefore": 3,
       "photoProcess": 2,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-hallway-flooring-finish-bf39ea1.webp",
+      "filename": "before-after-hallway-flooring-finish-bf39ea1.webp",
+      "group": "hallway-flooring-finish-bf39ea1-before-after",
+      "step": 1,
+      "title": "Hallway flooring finish before and after",
+      "seoAlt": "Hallway flooring finish before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a hallway flooring finish job completed in a Safety Harbor home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Hallway flooring finish \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a hallway flooring finish job completed by Knight Group in Safety Harbor.",
+      "cluster": "floor",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "workNotes": "Office area flooring installation: Installed flooring in front of reception not yet completed; Front doorway hallway flooring finish: Finished all cuts had to run flooring into reception to continue on into hallway; Hallway door kick-out flooring finish: Complete the remaining hallway flooring through the doorway kick-outs and wall offsets, including the visible staggered infill and detailed jamb cuts. This\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-handyman-repair-163b4a6.webp",
