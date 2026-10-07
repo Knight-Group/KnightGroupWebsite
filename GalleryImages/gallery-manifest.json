@@ -4086,6 +4086,38 @@
       "photoAfter": 3
     },
     {
+      "id": "set-drying-equipment-f960403-before-after",
+      "title": "Set drying equipment \u2014 before & after",
+      "description": "Before-and-after proof from a set drying equipment job completed by Knight Group in Tampa.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-set-drying-equipment-f960403.webp",
+          "filename": "before-after-set-drying-equipment-f960403.webp",
+          "step": 1,
+          "title": "Set drying equipment before and after",
+          "seoAlt": "Set drying equipment before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a set drying equipment job completed in a Tampa home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Nick Knight",
+      "workerRole": "co-owner",
+      "workerKey": "nick",
+      "cityName": "Tampa",
+      "citySlug": "tampa",
+      "countyName": "Hillsborough County",
+      "completedMonth": "October 2026",
+      "workNotes": "This visit is only to set drying equipment at after the sink was left running and the house flooded. A cleaning crew has already removed the standing water. Knight Group will place one dehumidifier and one air mover so the rooms can keep drying. This is not the roof-vent repair. That work was a separate job and is not billed again here. This visit is not mold removal, not a plumbing repair, not a ceiling or\u2026",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 2
+    },
+    {
       "id": "shower-2cf7af0-before-after",
       "title": "Shower \u2014 before & after",
       "description": "Before-and-after proof from a shower job completed by Knight Group in St. Petersburg.",
@@ -9119,6 +9151,32 @@
       "photoBefore": 5,
       "photoProcess": 0,
       "photoAfter": 3
+    },
+    {
+      "src": "GalleryImages/before-after-set-drying-equipment-f960403.webp",
+      "filename": "before-after-set-drying-equipment-f960403.webp",
+      "group": "set-drying-equipment-f960403-before-after",
+      "step": 1,
+      "title": "Set drying equipment before and after",
+      "seoAlt": "Set drying equipment before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a set drying equipment job completed in a Tampa home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Set drying equipment \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a set drying equipment job completed by Knight Group in Tampa.",
+      "cluster": "general",
+      "workerName": "Nick Knight",
+      "workerRole": "co-owner",
+      "workerKey": "nick",
+      "cityName": "Tampa",
+      "citySlug": "tampa",
+      "countyName": "Hillsborough County",
+      "completedMonth": "October 2026",
+      "workNotes": "This visit is only to set drying equipment at after the sink was left running and the house flooded. A cleaning crew has already removed the standing water. Knight Group will place one dehumidifier and one air mover so the rooms can keep drying. This is not the roof-vent repair. That work was a separate job and is not billed again here. This visit is not mold removal, not a plumbing repair, not a ceiling or\u2026",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 2
     },
     {
       "src": "GalleryImages/before-after-shower-2cf7af0.webp",
