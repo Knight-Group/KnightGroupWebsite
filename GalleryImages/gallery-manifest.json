@@ -3338,6 +3338,38 @@
       "photoAfter": 1
     },
     {
+      "id": "reaplce-range-hood-vent-97f35ca-before-after",
+      "title": "Reaplce Range Hood Vent \u2014 before & after",
+      "description": "Before-and-after proof from a reaplce range hood vent job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-reaplce-range-hood-vent-97f35ca.webp",
+          "filename": "before-after-reaplce-range-hood-vent-97f35ca.webp",
+          "step": 1,
+          "title": "Reaplce Range Hood Vent before and after",
+          "seoAlt": "Reaplce Range Hood Vent before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a reaplce range hood vent job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Replace ductless hood vent",
+      "photoBefore": 1,
+      "photoProcess": 1,
+      "photoAfter": 2
+    },
+    {
       "id": "recaulk-around-kitchen-windowsill-custom-5cca131-before-after",
       "title": "Recaulk around kitchen windowsill (customer request) \u2014 before & after",
       "description": "Before-and-after proof from a recaulk around kitchen windowsill (customer request) job completed by Knight Group in Gulfport.",
@@ -8469,6 +8501,32 @@
       "photoBefore": 2,
       "photoProcess": 0,
       "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-reaplce-range-hood-vent-97f35ca.webp",
+      "filename": "before-after-reaplce-range-hood-vent-97f35ca.webp",
+      "group": "reaplce-range-hood-vent-97f35ca-before-after",
+      "step": 1,
+      "title": "Reaplce Range Hood Vent before and after",
+      "seoAlt": "Reaplce Range Hood Vent before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a reaplce range hood vent job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Reaplce Range Hood Vent \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a reaplce range hood vent job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Replace ductless hood vent",
+      "photoBefore": 1,
+      "photoProcess": 1,
+      "photoAfter": 2
     },
     {
       "src": "GalleryImages/before-after-recaulk-around-kitchen-windowsill-custom-5cca131.webp",
