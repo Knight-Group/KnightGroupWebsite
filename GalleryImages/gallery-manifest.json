@@ -1518,6 +1518,37 @@
       "photoAfter": 3
     },
     {
+      "id": "fill-valve-f6e4347-before-after",
+      "title": "Fill valve \u2014 before & after",
+      "description": "Before-and-after proof from a fill valve job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-fill-valve-f6e4347.webp",
+          "filename": "before-after-fill-valve-f6e4347.webp",
+          "step": 1,
+          "title": "Fill valve before and after",
+          "seoAlt": "Fill valve before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a fill valve job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "photoBefore": 1,
+      "photoProcess": 2,
+      "photoAfter": 1
+    },
+    {
       "id": "finish-the-rest-of-the-hallway-faae6ab-before-after",
       "title": "Finish the rest of the hallway \u2014 before & after",
       "description": "Before-and-after proof from a finish the rest of the hallway job completed by Knight Group in Safety Harbor.",
@@ -6994,6 +7025,31 @@
       "photoBefore": 1,
       "photoProcess": 1,
       "photoAfter": 3
+    },
+    {
+      "src": "GalleryImages/before-after-fill-valve-f6e4347.webp",
+      "filename": "before-after-fill-valve-f6e4347.webp",
+      "group": "fill-valve-f6e4347-before-after",
+      "step": 1,
+      "title": "Fill valve before and after",
+      "seoAlt": "Fill valve before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a fill valve job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Fill valve \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a fill valve job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "photoBefore": 1,
+      "photoProcess": 2,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-filter-change.webp",
