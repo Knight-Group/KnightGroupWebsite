@@ -1980,6 +1980,38 @@
       "photoAfter": 2
     },
     {
+      "id": "front-stripping-replacement-9eef6fa-before-after",
+      "title": "Front stripping replacement \u2014 before & after",
+      "description": "Before-and-after proof from a front stripping replacement job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-front-stripping-replacement-9eef6fa.webp",
+          "filename": "before-after-front-stripping-replacement-9eef6fa.webp",
+          "step": 1,
+          "title": "Front stripping replacement before and after",
+          "seoAlt": "Front stripping replacement before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a front stripping replacement job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Front door weather stripping replacement: Removed old damaged weather stripping to install new. Replace door sweep and adjusted to air tight. Replaced any loose or short screws for hinges. Moved door knob receiver back a hair. Door is aligned and functional Remove the failed weather stripping and install a matching perimeter weather-strip kit on the standard-size front door. Inspect the door sweep, threshold,\u2026",
+      "photoBefore": 4,
+      "photoProcess": 3,
+      "photoAfter": 4
+    },
+    {
       "id": "garbage-cabinet-repair-youtube-video-lin-54b1f44-before-after",
       "title": "Garbage cabinet repair - YouTube Video link below \u2014 before & after",
       "description": "Before-and-after proof from a garbage cabinet repair - youtube video link below job completed by Knight Group in Clearwater.",
@@ -7640,6 +7672,32 @@
       "photoBefore": 3,
       "photoProcess": 3,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-front-stripping-replacement-9eef6fa.webp",
+      "filename": "before-after-front-stripping-replacement-9eef6fa.webp",
+      "group": "front-stripping-replacement-9eef6fa-before-after",
+      "step": 1,
+      "title": "Front stripping replacement before and after",
+      "seoAlt": "Front stripping replacement before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a front stripping replacement job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Front stripping replacement \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a front stripping replacement job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Front door weather stripping replacement: Removed old damaged weather stripping to install new. Replace door sweep and adjusted to air tight. Replaced any loose or short screws for hinges. Moved door knob receiver back a hair. Door is aligned and functional Remove the failed weather stripping and install a matching perimeter weather-strip kit on the standard-size front door. Inspect the door sweep, threshold,\u2026",
+      "photoBefore": 4,
+      "photoProcess": 3,
+      "photoAfter": 4
     },
     {
       "src": "GalleryImages/before-after-garbage-cabinet-repair-youtube-video-lin-54b1f44.webp",
