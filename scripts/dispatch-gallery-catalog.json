@@ -3914,5 +3914,30 @@
     "photoBefore": 3,
     "photoProcess": 0,
     "photoAfter": 1
+  },
+  "before-after-entrance-lock-rekey-a497f1c.webp": {
+    "group": "entrance-lock-rekey-a497f1c-before-after",
+    "groupTitle": "entrance lock rekey \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a entrance lock rekey job completed by Knight Group in St. Petersburg.",
+    "category": "doors-windows",
+    "serviceLink": "/Services/doors-windows",
+    "step": 1,
+    "title": "entrance lock rekey before and after",
+    "description": "Before-and-after comparison from a entrance lock rekey job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "entrance-lock-rekey-a497f1c",
+    "source": "dispatch",
+    "cluster": "door_lock",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Room 5 entrance lock rekey: Replace back door lock set and deadbolt; Clean ceiling, fan, walls and AC vent: Used several different brushes and cleaners to scrub the room and ceiling thoroughly. Scrubbed each individual brick to remove soot. Removed fan blades to scrub down and reinstall. Cleaned fan and register vents. Some areas are stained the room could use a fresh coat of paint; Misc: Tighten down toilet\u2026",
+    "photoBefore": 3,
+    "photoProcess": 2,
+    "photoAfter": 3
   }
 }
