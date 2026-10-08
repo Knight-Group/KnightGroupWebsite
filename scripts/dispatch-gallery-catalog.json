@@ -3864,5 +3864,30 @@
     "photoBefore": 6,
     "photoProcess": 1,
     "photoAfter": 6
+  },
+  "before-after-laminate-office-and-back-two-9244bf7.webp": {
+    "group": "laminate-office-and-back-two-9244bf7-before-after",
+    "groupTitle": "Laminate Office and back two \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a laminate office and back two job completed by Knight Group in Safety Harbor.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Laminate Office and back two before and after",
+    "description": "Before-and-after comparison from a laminate office and back two job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "laminate-office-and-back-two-9244bf7",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Perry Lyons",
+    "workerRole": "field technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "",
+    "photoBefore": 3,
+    "photoProcess": 3,
+    "photoAfter": 6
   }
 }

@@ -2730,6 +2730,37 @@
       "photoAfter": 1
     },
     {
+      "id": "laminate-office-and-back-two-9244bf7-before-after",
+      "title": "Laminate Office and back two \u2014 before & after",
+      "description": "Before-and-after proof from a laminate office and back two job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-laminate-office-and-back-two-9244bf7.webp",
+          "filename": "before-after-laminate-office-and-back-two-9244bf7.webp",
+          "step": 1,
+          "title": "Laminate Office and back two before and after",
+          "seoAlt": "Laminate Office and back two before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a laminate office and back two job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Perry Lyons",
+      "workerRole": "field technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "photoBefore": 3,
+      "photoProcess": 3,
+      "photoAfter": 6
+    },
+    {
       "id": "laundry-closet-walls-23abb3e-before-after",
       "title": "Laundry / closet walls \u2014 before & after",
       "description": "Before-and-after proof from a laundry / closet walls job completed by Knight Group in St. Petersburg.",
@@ -8066,6 +8097,31 @@
       "photoBefore": 2,
       "photoProcess": 6,
       "photoAfter": 3
+    },
+    {
+      "src": "GalleryImages/before-after-laminate-office-and-back-two-9244bf7.webp",
+      "filename": "before-after-laminate-office-and-back-two-9244bf7.webp",
+      "group": "laminate-office-and-back-two-9244bf7-before-after",
+      "step": 1,
+      "title": "Laminate Office and back two before and after",
+      "seoAlt": "Laminate Office and back two before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a laminate office and back two job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Laminate Office and back two \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a laminate office and back two job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Perry Lyons",
+      "workerRole": "field technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "photoBefore": 3,
+      "photoProcess": 3,
+      "photoAfter": 6
     },
     {
       "src": "GalleryImages/before-after-laundry-closet-walls-23abb3e.webp",
