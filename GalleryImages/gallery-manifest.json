@@ -1032,6 +1032,38 @@
       ]
     },
     {
+      "id": "damaged-screen-above-window-repair-177c36d-before-after",
+      "title": "Damaged screen above window repair \u2014 before & after",
+      "description": "Before-and-after proof from a damaged screen above window repair job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-damaged-screen-above-window-repair-177c36d.webp",
+          "filename": "before-after-damaged-screen-above-window-repair-177c36d.webp",
+          "step": 1,
+          "title": "Damaged screen above window repair before and after",
+          "seoAlt": "Damaged screen above window repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a damaged screen above window repair job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "July 2026",
+      "workNotes": "Soffit had blow off had mesh installed which was torn thru. Removed bent soffit Located corrected vented soffit and installed to eliminate any openings Removed bent soffit. Located and purchased correct vented soffit and installed to eliminate and openings Remove the torn insect screening visible above the window and install new exterior-grade mesh across the accessible opening. Secure the mesh at the perimeter\u2026",
+      "photoBefore": 3,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "day-2-laminate-and-quarter-round-1a35833-before-after",
       "title": "Day 2 \u2014 laminate and quarter-round \u2014 before & after",
       "description": "Before-and-after proof from a day 2 \u2014 laminate and quarter-round job completed by Knight Group in Safety Harbor.",
@@ -6692,6 +6724,32 @@
       "beforeAfter": true,
       "groupTitle": "Curtain rod mount \u2014 before & after",
       "groupDescription": "Loose rod brackets remounted into solid framing for a secure, level hang."
+    },
+    {
+      "src": "GalleryImages/before-after-damaged-screen-above-window-repair-177c36d.webp",
+      "filename": "before-after-damaged-screen-above-window-repair-177c36d.webp",
+      "group": "damaged-screen-above-window-repair-177c36d-before-after",
+      "step": 1,
+      "title": "Damaged screen above window repair before and after",
+      "seoAlt": "Damaged screen above window repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a damaged screen above window repair job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Damaged screen above window repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a damaged screen above window repair job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "July 2026",
+      "workNotes": "Soffit had blow off had mesh installed which was torn thru. Removed bent soffit Located corrected vented soffit and installed to eliminate any openings Removed bent soffit. Located and purchased correct vented soffit and installed to eliminate and openings Remove the torn insect screening visible above the window and install new exterior-grade mesh across the accessible opening. Secure the mesh at the perimeter\u2026",
+      "photoBefore": 3,
+      "photoProcess": 0,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-day-2-laminate-and-quarter-round-1a35833.webp",

@@ -3889,5 +3889,30 @@
     "photoBefore": 3,
     "photoProcess": 3,
     "photoAfter": 6
+  },
+  "before-after-damaged-screen-above-window-repair-177c36d.webp": {
+    "group": "damaged-screen-above-window-repair-177c36d-before-after",
+    "groupTitle": "Damaged screen above window repair \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a damaged screen above window repair job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Damaged screen above window repair before and after",
+    "description": "Before-and-after comparison from a damaged screen above window repair job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "damaged-screen-above-window-repair-177c36d",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "July 2026",
+    "workNotes": "Soffit had blow off had mesh installed which was torn thru. Removed bent soffit Located corrected vented soffit and installed to eliminate any openings Removed bent soffit. Located and purchased correct vented soffit and installed to eliminate and openings Remove the torn insect screening visible above the window and install new exterior-grade mesh across the accessible opening. Secure the mesh at the perimeter\u2026",
+    "photoBefore": 3,
+    "photoProcess": 0,
+    "photoAfter": 1
   }
 }
