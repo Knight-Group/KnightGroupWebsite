@@ -802,6 +802,38 @@
       "photoAfter": 1
     },
     {
+      "id": "clean-ceiling-fan-walls-and-ac-vent-03c193c-before-after",
+      "title": "Clean ceiling, fan, walls and AC vent \u2014 before & after",
+      "description": "Before-and-after proof from a clean ceiling, fan, walls and ac vent job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-clean-ceiling-fan-walls-and-ac-vent-03c193c.webp",
+          "filename": "before-after-clean-ceiling-fan-walls-and-ac-vent-03c193c.webp",
+          "step": 1,
+          "title": "Clean ceiling, fan, walls and AC vent before and after",
+          "seoAlt": "Clean ceiling, fan, walls and AC vent before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a clean ceiling, fan, walls and ac vent job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "filter_hvac",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Room 5 entrance lock rekey: Replace back door lock set and deadbolt; Clean ceiling, fan, walls and AC vent: Used several different brushes and cleaners to scrub the room and ceiling thoroughly. Scrubbed each individual brick to remove soot. Removed fan blades to scrub down and reinstall. Cleaned fan and register vents. Some areas are stained the room could use a fresh coat of paint; Misc: Tighten down toilet\u2026",
+      "photoBefore": 7,
+      "photoProcess": 7,
+      "photoAfter": 3
+    },
+    {
       "id": "clean-exterior-front-of-house-70a4580-before-after",
       "title": "Clean exterior front of house \u2014 before & after",
       "description": "Before-and-after proof from a clean exterior front of house job completed by Knight Group in St. Petersburg.",
@@ -6562,6 +6594,32 @@
       "photoBefore": 2,
       "photoProcess": 0,
       "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-clean-ceiling-fan-walls-and-ac-vent-03c193c.webp",
+      "filename": "before-after-clean-ceiling-fan-walls-and-ac-vent-03c193c.webp",
+      "group": "clean-ceiling-fan-walls-and-ac-vent-03c193c-before-after",
+      "step": 1,
+      "title": "Clean ceiling, fan, walls and AC vent before and after",
+      "seoAlt": "Clean ceiling, fan, walls and AC vent before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a clean ceiling, fan, walls and ac vent job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Clean ceiling, fan, walls and AC vent \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a clean ceiling, fan, walls and ac vent job completed by Knight Group in St. Petersburg.",
+      "cluster": "filter_hvac",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Room 5 entrance lock rekey: Replace back door lock set and deadbolt; Clean ceiling, fan, walls and AC vent: Used several different brushes and cleaners to scrub the room and ceiling thoroughly. Scrubbed each individual brick to remove soot. Removed fan blades to scrub down and reinstall. Cleaned fan and register vents. Some areas are stained the room could use a fresh coat of paint; Misc: Tighten down toilet\u2026",
+      "photoBefore": 7,
+      "photoProcess": 7,
+      "photoAfter": 3
     },
     {
       "src": "GalleryImages/before-after-clean-exterior-front-of-house-70a4580.webp",

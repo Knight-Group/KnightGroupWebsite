@@ -224,12 +224,12 @@
   "sha256": "3fd304eae2b9706646cf95620dfd8521dc6eb5367d9177e5e86086d488f6ec89"
  },
  "https://www.knightgroup.com/gallery/ac-filter-and-airflow-service-3b3c0e8-before-after": {
-  "lastmod": "2026-10-04",
-  "sha256": "0b168cf9f067f9844a0b0b46f1cf7e278f38b573ad13d941c288b7074ee2906c"
+  "lastmod": "2026-10-08",
+  "sha256": "a26a9809c0ef8abc79986bf4b4356a0436a0668205f3774f685435482a6f67bb"
  },
  "https://www.knightgroup.com/gallery/ac-filter-replacement-and-cleaning-e220546-before-after": {
-  "lastmod": "2026-10-04",
-  "sha256": "884dd3dae74ad54def01b6072d8c670d17d092c88423462a749ef6fe66ff851d"
+  "lastmod": "2026-10-08",
+  "sha256": "b8f3aa643e6d5bf7270af1033e445a97148a584b3fa7ae229cd14f5ed4f6759a"
  },
  "https://www.knightgroup.com/gallery/ac-vent-filter-change-before-after": {
   "lastmod": "2026-10-04",
@@ -281,7 +281,7 @@
  },
  "https://www.knightgroup.com/gallery/blinds-and-ac-cosmetics-3d1ea5f-before-after": {
   "lastmod": "2026-10-08",
-  "sha256": "9fc14a0b1a3566ce5b5da6d91452d982f6ff376b81ea647667dfc17edea82c4d"
+  "sha256": "2f74bebd735c571b3c57e83f9783dfb8afc69cdf5fe190714d51f8b9ce9bad0b"
  },
  "https://www.knightgroup.com/gallery/blinds-replacement-before-after": {
   "lastmod": "2026-10-04",
@@ -332,8 +332,12 @@
   "sha256": "57e705587c72a83c5d096d07a0b845f29ddfdc49b6713f747b68b19119ebec4a"
  },
  "https://www.knightgroup.com/gallery/clean-both-ac-filters-46965b4-before-after": {
-  "lastmod": "2026-10-04",
-  "sha256": "96d59e8f352a131e11915f89cc9d52a6b26cea5d14287339727e4217e3ad22bb"
+  "lastmod": "2026-10-08",
+  "sha256": "2dcbb6d688a2ccf5a06f75a3767458690dae2d16d4946db0fe95b5d41e15096f"
+ },
+ "https://www.knightgroup.com/gallery/clean-ceiling-fan-walls-and-ac-vent-03c193c-before-after": {
+  "lastmod": "2026-10-08",
+  "sha256": "a5ce05bd2110dc1870ed03603a745cd0ca90019bd11ba7473cc57ee38814a668"
  },
  "https://www.knightgroup.com/gallery/clean-exterior-front-of-house-70a4580-before-after": {
   "lastmod": "2026-10-08",
@@ -560,8 +564,8 @@
   "sha256": "e085c1ec91e294a28c7fc1b75f3feb2dfe302096e5b2d2db0e7ecf5c91ca4e82"
  },
  "https://www.knightgroup.com/gallery/hvac-drain-flush-and-filters-4f8205d-before-after": {
-  "lastmod": "2026-10-04",
-  "sha256": "c41fb075e52453c371b1cb53e8401be67f9de04438e43c8852282d9a95ef5978"
+  "lastmod": "2026-10-08",
+  "sha256": "1c64c8b2e8e0d77c1da198840810ce8817d0ba4257fb6ce18364a5835ad57471"
  },
  "https://www.knightgroup.com/gallery/inspect-water-leaks-08cb97a-before-after": {
   "lastmod": "2026-10-08",
