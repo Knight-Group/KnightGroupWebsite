@@ -5676,6 +5676,38 @@
       "photoAfter": 5
     },
     {
+      "id": "repair-or-replace-the-nonworking-light-f-b51bc9e-before-after",
+      "title": "repair or replace the nonworking light fixture \u2014 before & after",
+      "description": "Before-and-after proof from a repair or replace the nonworking light fixture job completed by Knight Group in St. Petersburg.",
+      "category": "electrical",
+      "serviceLink": "/Services/electrical-work",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-repair-or-replace-the-nonworking-light-f-b51bc9e.webp",
+          "filename": "before-after-repair-or-replace-the-nonworking-light-f-b51bc9e.webp",
+          "step": 1,
+          "title": "repair or replace the nonworking light fixture before and after",
+          "seoAlt": "repair or replace the nonworking light fixture before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a repair or replace the nonworking light fixture job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "electrical_fixture",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "repair or replace the nonworking light fixture: Replaced faulty fixture with same model.; replace the bathroom light fixture at the top: Spent about 3 hours on this, couldn't fix it - mats cost still is applied it is \"installed\" just not correctly because it won't shut off.; Fill holes in wood floor: Fill all holes in both bedrooms with filler; Sand texture and paint patch jobs: Fill and sand spots where repaired\u2026",
+      "photoBefore": 1,
+      "photoProcess": 1,
+      "photoAfter": 1
+    },
+    {
       "id": "repair-3abf1ba-before-after",
       "title": "repair \u2014 before & after",
       "description": "Before-and-after proof from a repair job completed by Knight Group in St. Petersburg.",
@@ -9167,6 +9199,32 @@
       "photoBefore": 3,
       "photoProcess": 0,
       "photoAfter": 4
+    },
+    {
+      "src": "GalleryImages/before-after-repair-or-replace-the-nonworking-light-f-b51bc9e.webp",
+      "filename": "before-after-repair-or-replace-the-nonworking-light-f-b51bc9e.webp",
+      "group": "repair-or-replace-the-nonworking-light-f-b51bc9e-before-after",
+      "step": 1,
+      "title": "repair or replace the nonworking light fixture before and after",
+      "seoAlt": "repair or replace the nonworking light fixture before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a repair or replace the nonworking light fixture job completed in a St. Petersburg home.",
+      "category": "electrical",
+      "serviceLink": "/Services/electrical-work",
+      "beforeAfter": true,
+      "groupTitle": "repair or replace the nonworking light fixture \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a repair or replace the nonworking light fixture job completed by Knight Group in St. Petersburg.",
+      "cluster": "electrical_fixture",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "repair or replace the nonworking light fixture: Replaced faulty fixture with same model.; replace the bathroom light fixture at the top: Spent about 3 hours on this, couldn't fix it - mats cost still is applied it is \"installed\" just not correctly because it won't shut off.; Fill holes in wood floor: Fill all holes in both bedrooms with filler; Sand texture and paint patch jobs: Fill and sand spots where repaired\u2026",
+      "photoBefore": 1,
+      "photoProcess": 1,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-repair-wall-and-add-wall-protection-b0d3de5.webp",

@@ -4014,5 +4014,30 @@
     "photoBefore": 2,
     "photoProcess": 4,
     "photoAfter": 14
+  },
+  "before-after-repair-or-replace-the-nonworking-light-f-b51bc9e.webp": {
+    "group": "repair-or-replace-the-nonworking-light-f-b51bc9e-before-after",
+    "groupTitle": "repair or replace the nonworking light fixture \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a repair or replace the nonworking light fixture job completed by Knight Group in St. Petersburg.",
+    "category": "electrical",
+    "serviceLink": "/Services/electrical-work",
+    "step": 1,
+    "title": "repair or replace the nonworking light fixture before and after",
+    "description": "Before-and-after comparison from a repair or replace the nonworking light fixture job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "repair-or-replace-the-nonworking-light-f-b51bc9e",
+    "source": "dispatch",
+    "cluster": "electrical_fixture",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "repair or replace the nonworking light fixture: Replaced faulty fixture with same model.; replace the bathroom light fixture at the top: Spent about 3 hours on this, couldn't fix it - mats cost still is applied it is \"installed\" just not correctly because it won't shut off.; Fill holes in wood floor: Fill all holes in both bedrooms with filler; Sand texture and paint patch jobs: Fill and sand spots where repaired\u2026",
+    "photoBefore": 1,
+    "photoProcess": 1,
+    "photoAfter": 1
   }
 }
