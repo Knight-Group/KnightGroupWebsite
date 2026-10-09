@@ -3989,5 +3989,30 @@
     "photoBefore": 4,
     "photoProcess": 3,
     "photoAfter": 4
+  },
+  "before-after-finish-quarter-round-6ad62a8.webp": {
+    "group": "finish-quarter-round-6ad62a8-before-after",
+    "groupTitle": "Finish quarter round \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a finish quarter round job completed by Knight Group in Safety Harbor.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Finish quarter round before and after",
+    "description": "Before-and-after comparison from a finish quarter round job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "finish-quarter-round-6ad62a8",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Perry Lyons",
+    "workerRole": "field technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Finish quarter round: Quarter round finished reception area/hallway/office",
+    "photoBefore": 2,
+    "photoProcess": 4,
+    "photoAfter": 14
   }
 }
