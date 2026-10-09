@@ -1552,6 +1552,38 @@
       "photoAfter": 3
     },
     {
+      "id": "fill-holes-in-wood-floor-6b485f2-before-after",
+      "title": "Fill holes in wood floor \u2014 before & after",
+      "description": "Before-and-after proof from a fill holes in wood floor job completed by Knight Group in St. Petersburg.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-fill-holes-in-wood-floor-6b485f2.webp",
+          "filename": "before-after-fill-holes-in-wood-floor-6b485f2.webp",
+          "step": 1,
+          "title": "Fill holes in wood floor before and after",
+          "seoAlt": "Fill holes in wood floor before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a fill holes in wood floor job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "floor",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "repair or replace the nonworking light fixture: Replaced faulty fixture with same model.; replace the bathroom light fixture at the top: Spent about 3 hours on this, couldn't fix it - mats cost still is applied it is \"installed\" just not correctly because it won't shut off.; Fill holes in wood floor: Fill all holes in both bedrooms with filler; Sand texture and paint patch jobs: Fill and sand spots where repaired\u2026",
+      "photoBefore": 2,
+      "photoProcess": 2,
+      "photoAfter": 2
+    },
+    {
       "id": "fill-sand-and-paint-valance-ecb97b7-before-after",
       "title": "Fill sand and paint valance \u2014 before & after",
       "description": "Before-and-after proof from a fill sand and paint valance job completed by Knight Group in Pinellas County.",
@@ -7396,6 +7428,32 @@
       "beforeAfter": true,
       "groupTitle": "Wooden fence repair \u2014 before & after",
       "groupDescription": "Collapsed and leaning fence sections rebuilt with new posts, bracing, and secure pickets."
+    },
+    {
+      "src": "GalleryImages/before-after-fill-holes-in-wood-floor-6b485f2.webp",
+      "filename": "before-after-fill-holes-in-wood-floor-6b485f2.webp",
+      "group": "fill-holes-in-wood-floor-6b485f2-before-after",
+      "step": 1,
+      "title": "Fill holes in wood floor before and after",
+      "seoAlt": "Fill holes in wood floor before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a fill holes in wood floor job completed in a St. Petersburg home.",
+      "category": "carpentry",
+      "serviceLink": "/Services/carpentry-framing",
+      "beforeAfter": true,
+      "groupTitle": "Fill holes in wood floor \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a fill holes in wood floor job completed by Knight Group in St. Petersburg.",
+      "cluster": "floor",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "repair or replace the nonworking light fixture: Replaced faulty fixture with same model.; replace the bathroom light fixture at the top: Spent about 3 hours on this, couldn't fix it - mats cost still is applied it is \"installed\" just not correctly because it won't shut off.; Fill holes in wood floor: Fill all holes in both bedrooms with filler; Sand texture and paint patch jobs: Fill and sand spots where repaired\u2026",
+      "photoBefore": 2,
+      "photoProcess": 2,
+      "photoAfter": 2
     },
     {
       "src": "GalleryImages/before-after-fill-sand-and-paint-valance-ecb97b7.webp",
