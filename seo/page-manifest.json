@@ -1758,6 +1758,13 @@
       "path": "gallery/repair-3abf1ba-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/repair-3abf1ba-before-after",
       "priority": "0.64"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "replace-the-bathroom-light-fixture-at-th-cd5e010-before-after",
+      "path": "gallery/replace-the-bathroom-light-fixture-at-th-cd5e010-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/replace-the-bathroom-light-fixture-at-th-cd5e010-before-after",
+      "priority": "0.64"
     }
   ]
 }

@@ -5740,6 +5740,38 @@
       "photoAfter": 3
     },
     {
+      "id": "replace-the-bathroom-light-fixture-at-th-cd5e010-before-after",
+      "title": "replace the bathroom light fixture at the top \u2014 before & after",
+      "description": "Before-and-after proof from a replace the bathroom light fixture at the top job completed by Knight Group in St. Petersburg.",
+      "category": "electrical",
+      "serviceLink": "/Services/electrical-work",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-replace-the-bathroom-light-fixture-at-th-cd5e010.webp",
+          "filename": "before-after-replace-the-bathroom-light-fixture-at-th-cd5e010.webp",
+          "step": 1,
+          "title": "replace the bathroom light fixture at the top before and after",
+          "seoAlt": "replace the bathroom light fixture at the top before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a replace the bathroom light fixture at the top job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "electrical_fixture",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "repair or replace the nonworking light fixture: Replaced faulty fixture with same model.; replace the bathroom light fixture at the top: Spent about 3 hours on this, couldn't fix it - mats cost still is applied it is \"installed\" just not correctly because it won't shut off.; Fill holes in wood floor: Fill all holes in both bedrooms with filler; Sand texture and paint patch jobs: Fill and sand spots where repaired\u2026",
+      "photoBefore": 2,
+      "photoProcess": 3,
+      "photoAfter": 1
+    },
+    {
       "id": "replacing-this-main-shut-off-and-hose-bib-copper-before-after",
       "title": "replacing this main shut off and hose bib (copper) \u2014 before & after",
       "description": "Before-and-after proof from a replacing this main shut off and hose bib (copper) job completed by Knight Group.",
@@ -9427,6 +9459,32 @@
       "photoBefore": 3,
       "photoProcess": 0,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-replace-the-bathroom-light-fixture-at-th-cd5e010.webp",
+      "filename": "before-after-replace-the-bathroom-light-fixture-at-th-cd5e010.webp",
+      "group": "replace-the-bathroom-light-fixture-at-th-cd5e010-before-after",
+      "step": 1,
+      "title": "replace the bathroom light fixture at the top before and after",
+      "seoAlt": "replace the bathroom light fixture at the top before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a replace the bathroom light fixture at the top job completed in a St. Petersburg home.",
+      "category": "electrical",
+      "serviceLink": "/Services/electrical-work",
+      "beforeAfter": true,
+      "groupTitle": "replace the bathroom light fixture at the top \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a replace the bathroom light fixture at the top job completed by Knight Group in St. Petersburg.",
+      "cluster": "electrical_fixture",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "repair or replace the nonworking light fixture: Replaced faulty fixture with same model.; replace the bathroom light fixture at the top: Spent about 3 hours on this, couldn't fix it - mats cost still is applied it is \"installed\" just not correctly because it won't shut off.; Fill holes in wood floor: Fill all holes in both bedrooms with filler; Sand texture and paint patch jobs: Fill and sand spots where repaired\u2026",
+      "photoBefore": 2,
+      "photoProcess": 3,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-replacing-this-main-shut-off-and-hose-bib-copper.webp",
