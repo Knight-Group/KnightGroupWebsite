@@ -4114,5 +4114,30 @@
     "photoBefore": 8,
     "photoProcess": 3,
     "photoAfter": 3
+  },
+  "before-after-recaulk-shower-fb598d0.webp": {
+    "group": "recaulk-shower-fb598d0-before-after",
+    "groupTitle": "Recaulk shower \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a recaulk shower job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/caulking-repair",
+    "step": 1,
+    "title": "Recaulk shower before and after",
+    "description": "Before-and-after comparison from a recaulk shower job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "recaulk-shower-fb598d0",
+    "source": "dispatch",
+    "cluster": "caulk",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "repair or replace the nonworking light fixture: Replaced faulty fixture with same model.; replace the bathroom light fixture at the top: Spent about 3 hours on this, couldn't fix it - mats cost still is applied it is \"installed\" just not correctly because it won't shut off.; Fill holes in wood floor: Fill all holes in both bedrooms with filler; Sand texture and paint patch jobs: Fill and sand spots where repaired\u2026",
+    "photoBefore": 1,
+    "photoProcess": 0,
+    "photoAfter": 1
   }
 }
