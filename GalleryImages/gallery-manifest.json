@@ -4245,6 +4245,38 @@
       ]
     },
     {
+      "id": "sand-texture-and-paint-patch-jobs-af68b88-before-after",
+      "title": "Sand texture and paint patch jobs \u2014 before & after",
+      "description": "Before-and-after proof from a sand texture and paint patch jobs job completed by Knight Group in St. Petersburg.",
+      "category": "painting",
+      "serviceLink": "/Services/drywall-repair",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-sand-texture-and-paint-patch-jobs-af68b88.webp",
+          "filename": "before-after-sand-texture-and-paint-patch-jobs-af68b88.webp",
+          "step": 1,
+          "title": "Sand texture and paint patch jobs before and after",
+          "seoAlt": "Sand texture and paint patch jobs before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a sand texture and paint patch jobs job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "drywall",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "repair or replace the nonworking light fixture: Replaced faulty fixture with same model.; replace the bathroom light fixture at the top: Spent about 3 hours on this, couldn't fix it - mats cost still is applied it is \"installed\" just not correctly because it won't shut off.; Fill holes in wood floor: Fill all holes in both bedrooms with filler; Sand texture and paint patch jobs: Fill and sand spots where repaired\u2026",
+      "photoBefore": 8,
+      "photoProcess": 3,
+      "photoAfter": 3
+    },
+    {
       "id": "scrape-loose-and-peeling-wall-paint-a18d950-before-after",
       "title": "Scrape loose and peeling wall paint \u2014 before & after",
       "description": "Before-and-after proof from a scrape loose and peeling wall paint job completed by Knight Group in Safety Harbor.",
@@ -9674,6 +9706,32 @@
       "workNotes": "Bed supports broken off and side rails were collapsed, screwed them in and fixed the problem Bed supports broken off and side rails were collapsed from screws pulling out",
       "photoBefore": 4,
       "photoProcess": 0,
+      "photoAfter": 3
+    },
+    {
+      "src": "GalleryImages/before-after-sand-texture-and-paint-patch-jobs-af68b88.webp",
+      "filename": "before-after-sand-texture-and-paint-patch-jobs-af68b88.webp",
+      "group": "sand-texture-and-paint-patch-jobs-af68b88-before-after",
+      "step": 1,
+      "title": "Sand texture and paint patch jobs before and after",
+      "seoAlt": "Sand texture and paint patch jobs before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a sand texture and paint patch jobs job completed in a St. Petersburg home.",
+      "category": "painting",
+      "serviceLink": "/Services/drywall-repair",
+      "beforeAfter": true,
+      "groupTitle": "Sand texture and paint patch jobs \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a sand texture and paint patch jobs job completed by Knight Group in St. Petersburg.",
+      "cluster": "drywall",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "repair or replace the nonworking light fixture: Replaced faulty fixture with same model.; replace the bathroom light fixture at the top: Spent about 3 hours on this, couldn't fix it - mats cost still is applied it is \"installed\" just not correctly because it won't shut off.; Fill holes in wood floor: Fill all holes in both bedrooms with filler; Sand texture and paint patch jobs: Fill and sand spots where repaired\u2026",
+      "photoBefore": 8,
+      "photoProcess": 3,
       "photoAfter": 3
     },
     {

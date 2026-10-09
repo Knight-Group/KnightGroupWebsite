@@ -244,8 +244,8 @@
   "sha256": "fc8c549d76b75647ce36fb3b9cd19085d9a26b75872939fbd9116d7b8d3c7c12"
  },
  "https://www.knightgroup.com/gallery/attic-drywall-return-visit-54b0dce-before-after": {
-  "lastmod": "2026-10-04",
-  "sha256": "6336d6445c4cec9db88be58cfee91f6a53eb6af1feeccb117fcc2f34a28e2cbc"
+  "lastmod": "2026-10-09",
+  "sha256": "1b2bc840ac230903cf199dfd7402cc2b8bd4fb22d9e3fb6fab2c87695df4a16f"
  },
  "https://www.knightgroup.com/gallery/ballast-light-fixture-bbe38e2-before-after": {
   "lastmod": "2026-10-09",
@@ -288,8 +288,8 @@
   "sha256": "76203e68de3e7ad83c1af51ac64baf5c87f09e55c15107fcf36949ddf5970460"
  },
  "https://www.knightgroup.com/gallery/bubbled-wall-surface-and-texture-repair-2d93e5a-before-after": {
-  "lastmod": "2026-10-04",
-  "sha256": "409086e5c2c42b4ea8f3e45ae62d69ca93e31b944da875d335b211954dfeedb3"
+  "lastmod": "2026-10-09",
+  "sha256": "03d1acb0a430eb77c6a981970cb2ae8bba22fab979f717f84b898bc867783ec3"
  },
  "https://www.knightgroup.com/gallery/cabinet-repair-339b0d9-before-after": {
   "lastmod": "2026-10-09",
@@ -304,8 +304,8 @@
   "sha256": "5f61e34da361697ad7e7e80586f0261308c1c442bd3bd77ebee72edd4ea1b6c0"
  },
  "https://www.knightgroup.com/gallery/ceiling-drywall-patch-2f1127e-before-after": {
-  "lastmod": "2026-10-04",
-  "sha256": "a8d56c386654e4656bb6f8ea2124d1194d303f53e66217995613f8e79e2f6bf1"
+  "lastmod": "2026-10-09",
+  "sha256": "9a416e893670ed63e4e0a3671d29cb9c8f7b9259988051cda357f4a19fa79bbf"
  },
  "https://www.knightgroup.com/gallery/ceiling-fan-and-light-repair-c977b5e-before-after": {
   "lastmod": "2026-10-04",
@@ -396,16 +396,16 @@
   "sha256": "5499bf804e2069f1bf9965504870efde899af3e5cbcf1741702b4a7e80738502"
  },
  "https://www.knightgroup.com/gallery/drywall-patch-beneath-mini-split-fe90f67-before-after": {
-  "lastmod": "2026-10-04",
-  "sha256": "49fc6562f11c947437f65e9893c34140dc690fde0d3738dd8c4ba0f73002107d"
+  "lastmod": "2026-10-09",
+  "sha256": "7c0eb5e7ecf433481a243dc6d1a4830ae40d1996fe8c67656e1bda81f04624f2"
  },
  "https://www.knightgroup.com/gallery/drywall-patch-beneath-window-3f5cd07-before-after": {
   "lastmod": "2026-10-04",
   "sha256": "6b3a7f3722815fe91038422f043b6a31d08556a186556bef1ba480babe2c2905"
  },
  "https://www.knightgroup.com/gallery/drywall-repair-6798260-before-after": {
-  "lastmod": "2026-10-04",
-  "sha256": "5eacd21e472c31277f4fabc525e7254693cd2171bf9c78cad095e09b29b2df87"
+  "lastmod": "2026-10-09",
+  "sha256": "1825e6f4643790eea69be08e9e20b0d9c20ccf8c8052121f1c2c77b1d96bc2d4"
  },
  "https://www.knightgroup.com/gallery/drywall-repair-paint-ef28bb4-before-after": {
   "lastmod": "2026-10-04",
@@ -472,8 +472,8 @@
   "sha256": "d421435de90f4a4b1829abb6e03bbd8b85b13a018b77f0392335896ba3ac2704"
  },
  "https://www.knightgroup.com/gallery/finish-two-drywall-cutouts-6f3dbf5-before-after": {
-  "lastmod": "2026-10-04",
-  "sha256": "53cabf06e794c979a5f1a3805a6d90ab938370ee648e3e645e66294984276690"
+  "lastmod": "2026-10-09",
+  "sha256": "d674a149b155f309891f762c2bf1d5b0cc6542b1a2b38a4724d0729084be5296"
  },
  "https://www.knightgroup.com/gallery/fire-extinguisher-mount-before-after": {
   "lastmod": "2026-10-04",
@@ -807,6 +807,10 @@
   "lastmod": "2026-10-09",
   "sha256": "c3abecfa72a10933a32efed0fbe4603386d94f719c77507ff27f654cc716b56e"
  },
+ "https://www.knightgroup.com/gallery/sand-texture-and-paint-patch-jobs-af68b88-before-after": {
+  "lastmod": "2026-10-09",
+  "sha256": "0e856eb530b7bb1ea2509b48586df9dde11bcd3284cfd7f2f3458be8ca21e12c"
+ },
  "https://www.knightgroup.com/gallery/scrape-loose-and-peeling-wall-paint-a18d950-before-after": {
   "lastmod": "2026-10-04",
   "sha256": "7b8a6ad2f8e282598bcc8557e0c8131c7bd76f9445d4850c075ef4be7bf61e5d"
@@ -908,8 +912,8 @@
   "sha256": "8bed22438e42588c6370b5b68a755a9ede5d3473539ca4f7a2fde2f8ba49624b"
  },
  "https://www.knightgroup.com/gallery/wall-texture-and-finish-blending-c18895c-before-after": {
-  "lastmod": "2026-10-04",
-  "sha256": "fb7e6ea363818b4ef4267d78dd44c8bb508d52c7aa2bc930621ab6ae58e0a513"
+  "lastmod": "2026-10-09",
+  "sha256": "f90d0c6bce248ac37c48259ec9c0d4d77847734eefd1dd51f3fe29374517c47f"
  },
  "https://www.knightgroup.com/gallery/wasp-bee-nest-removal-request-0f9dd4b-before-after": {
   "lastmod": "2026-10-09",
