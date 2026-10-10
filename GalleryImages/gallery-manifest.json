@@ -5101,6 +5101,38 @@
       "photoAfter": 3
     },
     {
+      "id": "transitions-f975ab3-before-after",
+      "title": "Transitions \u2014 before & after",
+      "description": "Before-and-after proof from a transitions job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-transitions-f975ab3.webp",
+          "filename": "before-after-transitions-f975ab3.webp",
+          "step": 1,
+          "title": "Transitions before and after",
+          "seoAlt": "Transitions before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a transitions job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Transitions: Completed 9 will return Monday for last 4 due to concrete drilling being too loud for guests; Quarter Round: Cut and installed all quarter round Glued the piece against the tile Transitions: Completed 9 will return Monday for last 4 due to concrete drilling being too loud for guests Quarter Round: Cut and installed all quarter round Glued the piece against the tile 14 thresholds drilled out to tapcon\u2026",
+      "photoBefore": 23,
+      "photoProcess": 1,
+      "photoAfter": 6
+    },
+    {
       "id": "tub-drain-before-after",
       "title": "Tub drain repair \u2014 before & after",
       "description": "Side-by-side proof of a tub drain correction from the failed condition through the completed fix.",
@@ -10407,6 +10439,32 @@
       "photoBefore": 2,
       "photoProcess": 0,
       "photoAfter": 3
+    },
+    {
+      "src": "GalleryImages/before-after-transitions-f975ab3.webp",
+      "filename": "before-after-transitions-f975ab3.webp",
+      "group": "transitions-f975ab3-before-after",
+      "step": 1,
+      "title": "Transitions before and after",
+      "seoAlt": "Transitions before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a transitions job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Transitions \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a transitions job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Transitions: Completed 9 will return Monday for last 4 due to concrete drilling being too loud for guests; Quarter Round: Cut and installed all quarter round Glued the piece against the tile Transitions: Completed 9 will return Monday for last 4 due to concrete drilling being too loud for guests Quarter Round: Cut and installed all quarter round Glued the piece against the tile 14 thresholds drilled out to tapcon\u2026",
+      "photoBefore": 23,
+      "photoProcess": 1,
+      "photoAfter": 6
     },
     {
       "src": "GalleryImages/before-after-urgent-door-lock-malfunction.webp",
