@@ -4164,5 +4164,30 @@
     "photoBefore": 23,
     "photoProcess": 1,
     "photoAfter": 6
+  },
+  "before-after-quarter-round-b1a6d55.webp": {
+    "group": "quarter-round-b1a6d55-before-after",
+    "groupTitle": "Quarter Round \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a quarter round job completed by Knight Group in Safety Harbor.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Quarter Round before and after",
+    "description": "Before-and-after comparison from a quarter round job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "quarter-round-b1a6d55",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Transitions: Completed 9 will return Monday for last 4 due to concrete drilling being too loud for guests; Quarter Round: Cut and installed all quarter round Glued the piece against the tile Transitions: Completed 9 will return Monday for last 4 due to concrete drilling being too loud for guests Quarter Round: Cut and installed all quarter round Glued the piece against the tile Install and caulk quarter round in\u2026",
+    "photoBefore": 5,
+    "photoProcess": 0,
+    "photoAfter": 3
   }
 }

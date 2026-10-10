@@ -1341,6 +1341,13 @@
     },
     {
       "pageType": "gallery-project",
+      "slug": "quarter-round-b1a6d55-before-after",
+      "path": "gallery/quarter-round-b1a6d55-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/quarter-round-b1a6d55-before-after",
+      "priority": "0.64"
+    },
+    {
+      "pageType": "gallery-project",
       "slug": "ramp-transition-36c1780-before-after",
       "path": "gallery/ramp-transition-36c1780-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/ramp-transition-36c1780-before-after",
