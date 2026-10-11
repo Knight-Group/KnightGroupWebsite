@@ -648,6 +648,38 @@
       "photoAfter": 2
     },
     {
+      "id": "change-3-521baf7-before-after",
+      "title": "Change 3 \u2014 before & after",
+      "description": "Before-and-after proof from a change 3 job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-change-3-521baf7.webp",
+          "filename": "before-after-change-3-521baf7.webp",
+          "step": 1,
+          "title": "Change 3 before and after",
+          "seoAlt": "Change 3 before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a change 3 job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Nicholas Alexopoulos",
+      "workerRole": "field technician",
+      "workerKey": "tech",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "August 2026",
+      "workNotes": "2 Keyed Knobs and 2 Deadbolt Locks swapped out for new ones. Old knobs/deadbolts and key left on mantle in parlor room. Property thoroughly scanned for wasp nests, wasp nests and live wasps treated with wasp spray. Leftover spray was left in the shed out back for future treatments if necessary Changed door knobs and deadlocks on 3 doors",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 4
+    },
+    {
       "id": "change-front-key-entries-588ccb1-before-after",
       "title": "Change front key entries \u2014 before & after",
       "description": "Before-and-after proof from a change front key entries job completed by Knight Group in St. Petersburg.",
@@ -6816,6 +6848,32 @@
       "photoBefore": 6,
       "photoProcess": 3,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-change-3-521baf7.webp",
+      "filename": "before-after-change-3-521baf7.webp",
+      "group": "change-3-521baf7-before-after",
+      "step": 1,
+      "title": "Change 3 before and after",
+      "seoAlt": "Change 3 before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a change 3 job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Change 3 \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a change 3 job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Nicholas Alexopoulos",
+      "workerRole": "field technician",
+      "workerKey": "tech",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "August 2026",
+      "workNotes": "2 Keyed Knobs and 2 Deadbolt Locks swapped out for new ones. Old knobs/deadbolts and key left on mantle in parlor room. Property thoroughly scanned for wasp nests, wasp nests and live wasps treated with wasp spray. Leftover spray was left in the shed out back for future treatments if necessary Changed door knobs and deadlocks on 3 doors",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 4
     },
     {
       "src": "GalleryImages/before-after-change-front-key-entries-588ccb1.webp",
