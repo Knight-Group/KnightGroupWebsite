@@ -4189,5 +4189,30 @@
     "photoBefore": 5,
     "photoProcess": 0,
     "photoAfter": 3
+  },
+  "before-after-remove-wasps-from-windows-outside-280cd99.webp": {
+    "group": "remove-wasps-from-windows-outside-280cd99-before-after",
+    "groupTitle": "Remove wasps from windows outside \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a remove wasps from windows outside job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Remove wasps from windows outside before and after",
+    "description": "Before-and-after comparison from a remove wasps from windows outside job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "remove-wasps-from-windows-outside-280cd99",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Nicholas Alexopoulos",
+    "workerRole": "field technician",
+    "workerKey": "tech",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "August 2026",
+    "workNotes": "2 Keyed Knobs and 2 Deadbolt Locks swapped out for new ones. Old knobs/deadbolts and key left on mantle in parlor room. Property thoroughly scanned for wasp nests, wasp nests and live wasps treated with wasp spray. Leftover spray was left in the shed out back for future treatments if necessary Wasp Spray, removed wasps near windows",
+    "photoBefore": 5,
+    "photoProcess": 0,
+    "photoAfter": 4
   }
 }
