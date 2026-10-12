@@ -4214,5 +4214,30 @@
     "photoBefore": 5,
     "photoProcess": 0,
     "photoAfter": 4
+  },
+  "before-after-finish-remaining-transitions-work-69b61fe.webp": {
+    "group": "finish-remaining-transitions-work-69b61fe-before-after",
+    "groupTitle": "Finish remaining transitions / Work \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a finish remaining transitions / work job completed by Knight Group in Safety Harbor.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Finish remaining transitions / Work before and after",
+    "description": "Before-and-after comparison from a finish remaining transitions / work job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "finish-remaining-transitions-work-69b61fe",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Finish remaining transitions / Work: Cut and fit five existing transition strips, enlarge the mounting holes as needed, drill the concrete, and secure the strips with larger silver concrete screws Cut and fit five existing transition strips, enlarge the mounting holes as needed, drill the concrete, and secure the strips with larger silver concrete screws. This estimate covers only the remaining transition work\u2026",
+    "photoBefore": 2,
+    "photoProcess": 0,
+    "photoAfter": 2
   }
 }
