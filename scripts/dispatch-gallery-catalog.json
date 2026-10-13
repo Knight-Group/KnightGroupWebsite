@@ -4264,5 +4264,30 @@
     "photoBefore": 1,
     "photoProcess": 1,
     "photoAfter": 1
+  },
+  "before-after-dishwasher-removal-and-replacement-2756308.webp": {
+    "group": "dishwasher-removal-and-replacement-2756308-before-after",
+    "groupTitle": "Dishwasher removal and replacement \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a dishwasher removal and replacement job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Dishwasher removal and replacement before and after",
+    "description": "Before-and-after comparison from a dishwasher removal and replacement job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "dishwasher-removal-and-replacement-2756308",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Dishwasher removal and replacement: Removed old dish washer and install provided dish washer. Test cycle everything . Take old washer to the dump Extract the standing water, disconnect the existing standard-size dishwasher, and remove it from the cabinet opening. Install the property-management-supplied replacement using the accessible existing water, drain, and electrical connections, then level and secure the\u2026",
+    "photoBefore": 2,
+    "photoProcess": 3,
+    "photoAfter": 2
   }
 }
