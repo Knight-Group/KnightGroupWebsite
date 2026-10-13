@@ -220,8 +220,8 @@
   "sha256": "ae01941b6102fe500bafe7205c49a29a18306dacb1ea741ad7bbfc6d238644f5"
  },
  "https://www.knightgroup.com/gallery/a-wall-outlet-repair-93788a6-before-after": {
-  "lastmod": "2026-10-09",
-  "sha256": "37958c60ed8c70ad223983bcddacd1be436a84df007ceca9107fa877e7bb5a5e"
+  "lastmod": "2026-10-13",
+  "sha256": "5bbf374738c71a87b9eb9b55a36cc9745166b99a5f4cff551afbb1a7904b0132"
  },
  "https://www.knightgroup.com/gallery/ac-filter-and-airflow-service-3b3c0e8-before-after": {
   "lastmod": "2026-10-08",
@@ -248,8 +248,8 @@
   "sha256": "1b2bc840ac230903cf199dfd7402cc2b8bd4fb22d9e3fb6fab2c87695df4a16f"
  },
  "https://www.knightgroup.com/gallery/ballast-light-fixture-bbe38e2-before-after": {
-  "lastmod": "2026-10-09",
-  "sha256": "2d5a1deb1bc9b1c34e34440f3163b9e62e59e87f4271d40a091676695cb10acb"
+  "lastmod": "2026-10-13",
+  "sha256": "45ff219eb3faac69d1653fbfb408c5aea9ecbd7a26f229058e2f123cf3cf850b"
  },
  "https://www.knightgroup.com/gallery/baseboard-cap-molding-replacement-056b4de-before-after": {
   "lastmod": "2026-10-12",
@@ -281,7 +281,7 @@
  },
  "https://www.knightgroup.com/gallery/blinds-and-ac-cosmetics-3d1ea5f-before-after": {
   "lastmod": "2026-10-13",
-  "sha256": "dd576bf4405ec0c284663d6deeeef2f94337e0a165e297573c3b3f8c180b9427"
+  "sha256": "62d506468d1ec8d467058dc10d7842b9fc20110e70fc0bc2379c3c3c1a25c00f"
  },
  "https://www.knightgroup.com/gallery/blinds-replacement-before-after": {
   "lastmod": "2026-10-04",
@@ -591,9 +591,13 @@
   "lastmod": "2026-10-12",
   "sha256": "36ddfa608e5878e1d0ab23abc7798488de88946fcfd4afc665728f8643c7d002"
  },
+ "https://www.knightgroup.com/gallery/kitchen-cabinet-outlet-repair-e5d5832-before-after": {
+  "lastmod": "2026-10-13",
+  "sha256": "dc50529b0c539172c4f6853570fe73d7dc3295a1ff40d7297d8c0c7c5afb4bfd"
+ },
  "https://www.knightgroup.com/gallery/kitchen-ceiling-light-fixture-9fd0b59-before-after": {
-  "lastmod": "2026-10-09",
-  "sha256": "007aa89e60e9c57041d4b1e2e27a0c682bc7583d59c416f4193086fc32aa516a"
+  "lastmod": "2026-10-13",
+  "sha256": "54105d81c89ca528751e78669a48162dc3ccfbfccfe1e7b1aced1ca595a6d110"
  },
  "https://www.knightgroup.com/gallery/kitchen-drawer-and-ceiling-damage-6f1d487-before-after": {
   "lastmod": "2026-10-09",
@@ -768,8 +772,8 @@
   "sha256": "8bbb8c3aeba566b976eca9ea8ff43cded40b96a70633a9099891c9310ed1499e"
  },
  "https://www.knightgroup.com/gallery/repair-or-replace-the-nonworking-light-f-b51bc9e-before-after": {
-  "lastmod": "2026-10-09",
-  "sha256": "672baae0e81e56d5dc7cd149066d8abdad2d7c92ebaf8278783b599479b09e72"
+  "lastmod": "2026-10-13",
+  "sha256": "a02e802df0db6c542ae551e9f1a84c7f1fbe2aa25deeadbbde46dfd2b900febd"
  },
  "https://www.knightgroup.com/gallery/repair-wall-and-add-wall-protection-b0d3de5-before-after": {
   "lastmod": "2026-10-10",
@@ -804,8 +808,8 @@
   "sha256": "6252f0dac1c0258dd46adf3b218fde406dc6540e67a150f2ddf0b41f6cf0042b"
  },
  "https://www.knightgroup.com/gallery/replace-the-bathroom-light-fixture-at-th-cd5e010-before-after": {
-  "lastmod": "2026-10-09",
-  "sha256": "b050751cb7bbde9b37135166c8390683533edee824378727a3349d95b008c2df"
+  "lastmod": "2026-10-13",
+  "sha256": "ff4798bd98fa589cb8588dd930d03486b10b09db2bba905603c3922a1a99c354"
  },
  "https://www.knightgroup.com/gallery/restore-freezer-shelf-9def051-before-after": {
   "lastmod": "2026-10-04",
@@ -832,8 +836,8 @@
   "sha256": "7b8a6ad2f8e282598bcc8557e0c8131c7bd76f9445d4850c075ef4be7bf61e5d"
  },
  "https://www.knightgroup.com/gallery/secure-outlets-5be7424-before-after": {
-  "lastmod": "2026-10-09",
-  "sha256": "bb00ae1b2af15c0c364842b5e41adb91a3045419e89fc1a0428ff71838b431aa"
+  "lastmod": "2026-10-13",
+  "sha256": "74dd1b24bdde809f1c56eea43b800bd1f8544afc5dbe13cdfe9434b889529718"
  },
  "https://www.knightgroup.com/gallery/set-drying-equipment-f960403-before-after": {
   "lastmod": "2026-10-12",

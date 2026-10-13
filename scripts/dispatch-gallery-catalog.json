@@ -4239,5 +4239,30 @@
     "photoBefore": 2,
     "photoProcess": 0,
     "photoAfter": 2
+  },
+  "before-after-kitchen-cabinet-outlet-repair-e5d5832.webp": {
+    "group": "kitchen-cabinet-outlet-repair-e5d5832-before-after",
+    "groupTitle": "Kitchen Cabinet Outlet Repair \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a kitchen cabinet outlet repair job completed by Knight Group in St. Petersburg.",
+    "category": "electrical",
+    "serviceLink": "/Services/electrical-work",
+    "step": 1,
+    "title": "Kitchen Cabinet Outlet Repair before and after",
+    "description": "Before-and-after comparison from a kitchen cabinet outlet repair job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "kitchen-cabinet-outlet-repair-e5d5832",
+    "source": "dispatch",
+    "cluster": "electrical_fixture",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Kitchen Cabinet Outlet Repair: Checked outlets on kitchen wall no power Reset breaker and reset all kitchen outlets power restored Device swap as described. New wiring or a new box is a revision",
+    "photoBefore": 1,
+    "photoProcess": 1,
+    "photoAfter": 1
   }
 }
