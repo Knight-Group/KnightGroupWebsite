@@ -4289,5 +4289,30 @@
     "photoBefore": 2,
     "photoProcess": 3,
     "photoAfter": 2
+  },
+  "before-after-gutter-downspout-appears-to-be-clogged-8c068d4.webp": {
+    "group": "gutter-downspout-appears-to-be-clogged-8c068d4-before-after",
+    "groupTitle": "Gutter downspout appears to be clogged \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a gutter downspout appears to be clogged job completed by Knight Group in Clearwater.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Gutter downspout appears to be clogged before and after",
+    "description": "Before-and-after comparison from a gutter downspout appears to be clogged job completed in a Clearwater home.",
+    "beforeAfter": true,
+    "scope_slug": "gutter-downspout-appears-to-be-clogged-8c068d4",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Clearwater",
+    "citySlug": "clearwater",
+    "countyName": "Pinellas County",
+    "completedMonth": "August 2026",
+    "workNotes": "Gutters are full of pollen. Fished garden hose from ground all the way to last 45 couldn\u2019t get passed it. Removed downspout from gutter found packed with pollen. Was able to get garden hose in gutter and wash out as much as possible. Reinstalled downspout added screws for stability. Front downspout I pulled the off gutter and removed debris. Both downspouts are clear of debris issue either with slope on the\u2026",
+    "photoBefore": 7,
+    "photoProcess": 2,
+    "photoAfter": 1
   }
 }
