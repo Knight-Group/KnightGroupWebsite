@@ -4364,5 +4364,30 @@
     "photoBefore": 1,
     "photoProcess": 0,
     "photoAfter": 1
+  },
+  "before-after-jeff-clean-out-the-dryer-vent-6180603.webp": {
+    "group": "jeff-clean-out-the-dryer-vent-6180603-before-after",
+    "groupTitle": "Jeff: clean out the dryer vent \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a jeff: clean out the dryer vent job completed by Knight Group in Pinellas County.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Jeff: clean out the dryer vent before and after",
+    "description": "Before-and-after comparison from a jeff: clean out the dryer vent job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "jeff-clean-out-the-dryer-vent-6180603",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "",
+    "citySlug": "",
+    "countyName": "Pinellas County",
+    "completedMonth": "August 2026",
+    "workNotes": "2nd floor dryer vent clogged. Removed screen and scrubbed clean. Had turn on dryer to push out lint after removing a handful and the screen. Reinstalled screen and we tested function 2nd floor dryer vent clogged. Removed screen and scrubbed clean. Had turn on dryer to push out lint after removing a handful and the screen. Reinstalled screen and we tested function. I\u2019m just",
+    "photoBefore": 1,
+    "photoProcess": 4,
+    "photoAfter": 1
   }
 }
