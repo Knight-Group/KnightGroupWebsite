@@ -3960,6 +3960,38 @@
       "photoAfter": 4
     },
     {
+      "id": "repair-kitchen-cabinet-probably-just-rem-a4cc980-before-after",
+      "title": "Repair Kitchen Cabinet - probably just removed petruding wood \u2014 before & after",
+      "description": "Before-and-after proof from a repair kitchen cabinet - probably just removed petruding wood job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-repair-kitchen-cabinet-probably-just-rem-a4cc980.webp",
+          "filename": "before-after-repair-kitchen-cabinet-probably-just-rem-a4cc980.webp",
+          "step": 1,
+          "title": "Repair Kitchen Cabinet - probably just removed petruding wood before and after",
+          "seoAlt": "Repair Kitchen Cabinet - probably just removed petruding wood before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a repair kitchen cabinet - probably just removed petruding wood job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "August 2026",
+      "workNotes": "Repair Kitchen Cabinet - probably just removed petruding wood, fill in with putty, sand it down, she has the paint and paint over it. 1 hours depending on the putty drying and sanding part Cut 2 pieces of underlayment to size and sanded smooth. Glued to cabinets and paint to match",
+      "photoBefore": 2,
+      "photoProcess": 2,
+      "photoAfter": 2
+    },
+    {
       "id": "repair-ceiling-in-bathroom-f739128-before-after",
       "title": "Repair ceiling in bathroom \u2014 before & after",
       "description": "Before-and-after proof from a repair ceiling in bathroom job completed by Knight Group in St. Petersburg.",
@@ -9734,6 +9766,32 @@
       "workNotes": "Dug out post to set plumb and install new latch for fence. Remove old cable wires. Patch ceiling scrapped then skim coat then texture and paint. Replaced both lock sets. Pressure washed walk way and cleaned front of house",
       "photoBefore": 1,
       "photoProcess": 4,
+      "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-repair-kitchen-cabinet-probably-just-rem-a4cc980.webp",
+      "filename": "before-after-repair-kitchen-cabinet-probably-just-rem-a4cc980.webp",
+      "group": "repair-kitchen-cabinet-probably-just-rem-a4cc980-before-after",
+      "step": 1,
+      "title": "Repair Kitchen Cabinet - probably just removed petruding wood before and after",
+      "seoAlt": "Repair Kitchen Cabinet - probably just removed petruding wood before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a repair kitchen cabinet - probably just removed petruding wood job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Repair Kitchen Cabinet - probably just removed petruding wood \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a repair kitchen cabinet - probably just removed petruding wood job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "August 2026",
+      "workNotes": "Repair Kitchen Cabinet - probably just removed petruding wood, fill in with putty, sand it down, she has the paint and paint over it. 1 hours depending on the putty drying and sanding part Cut 2 pieces of underlayment to size and sanded smooth. Glued to cabinets and paint to match",
+      "photoBefore": 2,
+      "photoProcess": 2,
       "photoAfter": 2
     },
     {
