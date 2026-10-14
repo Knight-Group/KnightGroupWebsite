@@ -2757,6 +2757,38 @@
       "photoAfter": 3
     },
     {
+      "id": "jeff-snake-bathtub-drains-and-make-sure-4511e27-before-after",
+      "title": "Jeff - Snake bathtub drains and make sure all water drains \u2014 before & after",
+      "description": "Before-and-after proof from a jeff - snake bathtub drains and make sure all water drains job completed by Knight Group in Largo.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-jeff-snake-bathtub-drains-and-make-sure-4511e27.webp",
+          "filename": "before-after-jeff-snake-bathtub-drains-and-make-sure-4511e27.webp",
+          "step": 1,
+          "title": "Jeff - Snake bathtub drains and make sure all water drains before and after",
+          "seoAlt": "Jeff - Snake bathtub drains and make sure all water drains before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a jeff - snake bathtub drains and make sure all water drains job completed in a Largo home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "sink_drain",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Largo",
+      "citySlug": "largo",
+      "countyName": "Pinellas County",
+      "completedMonth": "August 2026",
+      "workNotes": "Scald guard was set incorrectly. Tub drain is clogged removed overflow plate and cabled line. Line is flowing tub functions properly. Yellow in water is already starting to clear up must have had a break/repair in city line before house. Tested yellow tint from front yard hose bib",
+      "photoBefore": 2,
+      "photoProcess": 2,
+      "photoAfter": 1
+    },
+    {
       "id": "jeff-clean-out-the-dryer-vent-6180603-before-after",
       "title": "Jeff: clean out the dryer vent \u2014 before & after",
       "description": "Before-and-after proof from a jeff: clean out the dryer vent job completed by Knight Group in Pinellas County.",
@@ -8759,6 +8791,32 @@
       "workNotes": "2nd floor dryer vent clogged. Removed screen and scrubbed clean. Had turn on dryer to push out lint after removing a handful and the screen. Reinstalled screen and we tested function 2nd floor dryer vent clogged. Removed screen and scrubbed clean. Had turn on dryer to push out lint after removing a handful and the screen. Reinstalled screen and we tested function. I\u2019m just",
       "photoBefore": 1,
       "photoProcess": 4,
+      "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-jeff-snake-bathtub-drains-and-make-sure-4511e27.webp",
+      "filename": "before-after-jeff-snake-bathtub-drains-and-make-sure-4511e27.webp",
+      "group": "jeff-snake-bathtub-drains-and-make-sure-4511e27-before-after",
+      "step": 1,
+      "title": "Jeff - Snake bathtub drains and make sure all water drains before and after",
+      "seoAlt": "Jeff - Snake bathtub drains and make sure all water drains before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a jeff - snake bathtub drains and make sure all water drains job completed in a Largo home.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "groupTitle": "Jeff - Snake bathtub drains and make sure all water drains \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a jeff - snake bathtub drains and make sure all water drains job completed by Knight Group in Largo.",
+      "cluster": "sink_drain",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Largo",
+      "citySlug": "largo",
+      "countyName": "Pinellas County",
+      "completedMonth": "August 2026",
+      "workNotes": "Scald guard was set incorrectly. Tub drain is clogged removed overflow plate and cabled line. Line is flowing tub functions properly. Yellow in water is already starting to clear up must have had a break/repair in city line before house. Tested yellow tint from front yard hose bib",
+      "photoBefore": 2,
+      "photoProcess": 2,
       "photoAfter": 1
     },
     {
