@@ -4054,6 +4054,36 @@
       "photoAfter": 4
     },
     {
+      "id": "repair-upstairs-fan-8c7bf88-before-after",
+      "title": "Repair upstairs fan \u2014 before & after",
+      "description": "Before-and-after proof from a repair upstairs fan job completed by Knight Group in Pinellas County.",
+      "category": "electrical",
+      "serviceLink": "/Services/electrical-work",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-repair-upstairs-fan-8c7bf88.webp",
+          "filename": "before-after-repair-upstairs-fan-8c7bf88.webp",
+          "step": 1,
+          "title": "Repair upstairs fan before and after",
+          "seoAlt": "Repair upstairs fan before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a repair upstairs fan job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "fan",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "countyName": "Pinellas County",
+      "completedMonth": "August 2026",
+      "workNotes": "Ceiling fan fell off labor to remount to a stud this time",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "repair-wall-and-add-wall-protection-b0d3de5-before-after",
       "title": "Repair wall and add wall protection \u2014 before & after",
       "description": "Before-and-after proof from a repair wall and add wall protection job completed by Knight Group in Clearwater.",
@@ -9842,6 +9872,30 @@
       "workNotes": "repair or replace the nonworking light fixture: Replaced faulty fixture with same model.; replace the bathroom light fixture at the top: Spent about 3 hours on this, couldn't fix it - mats cost still is applied it is \"installed\" just not correctly because it won't shut off.; Fill holes in wood floor: Fill all holes in both bedrooms with filler; Sand texture and paint patch jobs: Fill and sand spots where repaired\u2026",
       "photoBefore": 1,
       "photoProcess": 1,
+      "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-repair-upstairs-fan-8c7bf88.webp",
+      "filename": "before-after-repair-upstairs-fan-8c7bf88.webp",
+      "group": "repair-upstairs-fan-8c7bf88-before-after",
+      "step": 1,
+      "title": "Repair upstairs fan before and after",
+      "seoAlt": "Repair upstairs fan before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a repair upstairs fan job completed in a Pinellas County home.",
+      "category": "electrical",
+      "serviceLink": "/Services/electrical-work",
+      "beforeAfter": true,
+      "groupTitle": "Repair upstairs fan \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a repair upstairs fan job completed by Knight Group in Pinellas County.",
+      "cluster": "fan",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "countyName": "Pinellas County",
+      "completedMonth": "August 2026",
+      "workNotes": "Ceiling fan fell off labor to remount to a stud this time",
+      "photoBefore": 1,
+      "photoProcess": 0,
       "photoAfter": 1
     },
     {

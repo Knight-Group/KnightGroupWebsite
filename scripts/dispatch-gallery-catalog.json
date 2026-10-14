@@ -4339,5 +4339,30 @@
     "photoBefore": 2,
     "photoProcess": 2,
     "photoAfter": 2
+  },
+  "before-after-repair-upstairs-fan-8c7bf88.webp": {
+    "group": "repair-upstairs-fan-8c7bf88-before-after",
+    "groupTitle": "Repair upstairs fan \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a repair upstairs fan job completed by Knight Group in Pinellas County.",
+    "category": "electrical",
+    "serviceLink": "/Services/electrical-work",
+    "step": 1,
+    "title": "Repair upstairs fan before and after",
+    "description": "Before-and-after comparison from a repair upstairs fan job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "repair-upstairs-fan-8c7bf88",
+    "source": "dispatch",
+    "cluster": "fan",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "",
+    "citySlug": "",
+    "countyName": "Pinellas County",
+    "completedMonth": "August 2026",
+    "workNotes": "Ceiling fan fell off labor to remount to a stud this time",
+    "photoBefore": 1,
+    "photoProcess": 0,
+    "photoAfter": 1
   }
 }

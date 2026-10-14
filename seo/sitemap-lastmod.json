@@ -281,7 +281,7 @@
  },
  "https://www.knightgroup.com/gallery/blinds-and-ac-cosmetics-3d1ea5f-before-after": {
   "lastmod": "2026-10-14",
-  "sha256": "e01cfee8c401ed846fc9cb8bcbde44c8962ad1c0c4742338e3a4a844292c6da3"
+  "sha256": "5c85a5824638bc33e8014fa35cfa414ce25aa2a40212814bdb14b9f151777807"
  },
  "https://www.knightgroup.com/gallery/blinds-replacement-before-after": {
   "lastmod": "2026-10-04",
@@ -308,12 +308,12 @@
   "sha256": "9a416e893670ed63e4e0a3671d29cb9c8f7b9259988051cda357f4a19fa79bbf"
  },
  "https://www.knightgroup.com/gallery/ceiling-fan-and-light-repair-c977b5e-before-after": {
-  "lastmod": "2026-10-04",
-  "sha256": "edb8087e53a63f2a25ee5dfd0bed597565ec0e081e2baf545474aecabd6e5170"
+  "lastmod": "2026-10-14",
+  "sha256": "b2be0a43dca8f7396bd2c43a1bb96c91de689d8601f2f68ba2c59f93a9ab9447"
  },
  "https://www.knightgroup.com/gallery/ceiling-fan-repair-1e73090-before-after": {
-  "lastmod": "2026-10-04",
-  "sha256": "0a14a90ec27f67c792609621fbfc29028258778fdca1c893be4b0aafae9e6daa"
+  "lastmod": "2026-10-14",
+  "sha256": "e4cabecc64a048f8094c7f4e2655989572ae4eda32d7d05b96d11c7965523a66"
  },
  "https://www.knightgroup.com/gallery/ceiling-water-staining-concern-d4a39ad-before-after": {
   "lastmod": "2026-10-14",
@@ -432,8 +432,8 @@
   "sha256": "c5157ea8712344c070bce0d3b7b48e7707cbf052bf78a9a2e9bf3c8a42ecfd30"
  },
  "https://www.knightgroup.com/gallery/fan-repair-57c8acf-before-after": {
-  "lastmod": "2026-10-04",
-  "sha256": "c156a4b201224ff6c5cab20596104009d2353907bccfe53e62c72c4063f35612"
+  "lastmod": "2026-10-14",
+  "sha256": "7971c1a185aea17fd3c4043948c932f6c40f52709ac02a0963358db66174f217"
  },
  "https://www.knightgroup.com/gallery/fence-and-garage-5544008-before-after": {
   "lastmod": "2026-10-04",
@@ -676,8 +676,8 @@
   "sha256": "758b88b0708666e11c8dddfcce0a97f2f2dcd68a5e2c74bf4e6a7255ce792182"
  },
  "https://www.knightgroup.com/gallery/noisy-bathroom-ceiling-fan-light-heater-4c3701f-before-after": {
-  "lastmod": "2026-10-04",
-  "sha256": "1d746cd35f798f88b7bcb38f38f2baf608406dc2d3ca74f612bebe3ce04a943a"
+  "lastmod": "2026-10-14",
+  "sha256": "7b79f3c6d5e63bf9f32fa5652344c69c008bda393806d66b6e415a573da8d9e2"
  },
  "https://www.knightgroup.com/gallery/office-flooring-and-quarter-round-instal-eb3403d-before-after": {
   "lastmod": "2026-10-09",
@@ -786,6 +786,10 @@
  "https://www.knightgroup.com/gallery/repair-or-replace-the-nonworking-light-f-b51bc9e-before-after": {
   "lastmod": "2026-10-13",
   "sha256": "a02e802df0db6c542ae551e9f1a84c7f1fbe2aa25deeadbbde46dfd2b900febd"
+ },
+ "https://www.knightgroup.com/gallery/repair-upstairs-fan-8c7bf88-before-after": {
+  "lastmod": "2026-10-14",
+  "sha256": "a427c5f4e07837657aaba45c611ee7456aa39385b5c8e7635f4f427cb0af33ec"
  },
  "https://www.knightgroup.com/gallery/repair-wall-and-add-wall-protection-b0d3de5-before-after": {
   "lastmod": "2026-10-13",
