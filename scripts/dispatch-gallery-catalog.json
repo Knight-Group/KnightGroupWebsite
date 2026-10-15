@@ -4414,5 +4414,30 @@
     "photoBefore": 2,
     "photoProcess": 2,
     "photoAfter": 1
+  },
+  "before-after-replace-five-wired-smoke-detectors-af5c992.webp": {
+    "group": "replace-five-wired-smoke-detectors-af5c992-before-after",
+    "groupTitle": "Replace five wired smoke detectors \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a replace five wired smoke detectors job completed by Knight Group in Pinellas County.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Replace five wired smoke detectors before and after",
+    "description": "Before-and-after comparison from a replace five wired smoke detectors job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "replace-five-wired-smoke-detectors-af5c992",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "",
+    "citySlug": "",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Replace and test five existing wired smoke detectors without rebilling work completed under the prior ticket Remove five existing wired smoke detectors and install five new compatible detectors on the existing wiring and ceiling boxes. Install included backup batteries, restore power, and test each detector and the interconnected alarm function. This only these five replacements and excludes work already\u2026",
+    "photoBefore": 1,
+    "photoProcess": 0,
+    "photoAfter": 1
   }
 }
