@@ -620,8 +620,8 @@
   "sha256": "19b0998630921592059145c5f027a0c6ad22dd5540b100e19294e3dd15dc7605"
  },
  "https://www.knightgroup.com/gallery/kitchen-faucet-sprayer-04f0250-before-after": {
-  "lastmod": "2026-10-04",
-  "sha256": "6ae031bb761000cf2e9fbae54effa8f1d88876bd8537d9b40635c51a0d6e889f"
+  "lastmod": "2026-10-16",
+  "sha256": "f0a5a3da4ef03490efda4d75ab5fe3dac9476d3277f6e57f4491cc57c8c54ff3"
  },
  "https://www.knightgroup.com/gallery/kitchen-sink-drain-service-c8d521c-before-after": {
   "lastmod": "2026-10-14",
@@ -824,8 +824,12 @@
   "sha256": "23728a5287c1921303c0f5c7a72866b6071e7f5a3c33b7966dd3234dee67f6ef"
  },
  "https://www.knightgroup.com/gallery/replace-faucet-99420dc-before-after": {
-  "lastmod": "2026-10-04",
-  "sha256": "2c2305aeb27ac7630e6928c759c7fea0d947b6a9c81726237db892b2b933b2c4"
+  "lastmod": "2026-10-16",
+  "sha256": "b674d4cf22f504f482be775946d822b5ba859cc6d618c2cf87ca99620a4bd8b8"
+ },
+ "https://www.knightgroup.com/gallery/replace-faucet-d8cc4d7-before-after": {
+  "lastmod": "2026-10-16",
+  "sha256": "dad3e7f497ed8a6576a21f5cc3f6555da77b745f80543ae35e121b200cc9282a"
  },
  "https://www.knightgroup.com/gallery/replace-five-wired-smoke-detectors-af5c992-before-after": {
   "lastmod": "2026-10-15",
