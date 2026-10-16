@@ -4971,6 +4971,38 @@
       "photoAfter": 2
     },
     {
+      "id": "sliding-glass-replaced-c70ed5b-before-after",
+      "title": "Sliding glass replaced \u2014 before & after",
+      "description": "Before-and-after proof from a sliding glass replaced job completed by Knight Group in Seven Springs.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-sliding-glass-replaced-c70ed5b.webp",
+          "filename": "before-after-sliding-glass-replaced-c70ed5b.webp",
+          "step": 1,
+          "title": "Sliding glass replaced before and after",
+          "seoAlt": "Sliding glass replaced before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a sliding glass replaced job completed in a Seven Springs home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Rudy Wilson",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Seven Springs",
+      "citySlug": "seven-springs",
+      "countyName": "Pasco County",
+      "completedMonth": "October 2026",
+      "workNotes": "Sliding glass door rollers replaced: Removed old bearings and installed a brand new track bearings. Confirmed door operation. Confirmed door is level and customer is satisfied",
+      "photoBefore": 2,
+      "photoProcess": 6,
+      "photoAfter": 1
+    },
+    {
       "id": "smoke-alarm-battery-swap-before-after",
       "title": "Smoke alarm battery swap \u2014 before & after",
       "description": "Expired batteries replaced and units tested so alarms respond correctly.",
@@ -10737,6 +10769,32 @@
       "photoBefore": 2,
       "photoProcess": 0,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-sliding-glass-replaced-c70ed5b.webp",
+      "filename": "before-after-sliding-glass-replaced-c70ed5b.webp",
+      "group": "sliding-glass-replaced-c70ed5b-before-after",
+      "step": 1,
+      "title": "Sliding glass replaced before and after",
+      "seoAlt": "Sliding glass replaced before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a sliding glass replaced job completed in a Seven Springs home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Sliding glass replaced \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a sliding glass replaced job completed by Knight Group in Seven Springs.",
+      "cluster": "general",
+      "workerName": "Rudy Wilson",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Seven Springs",
+      "citySlug": "seven-springs",
+      "countyName": "Pasco County",
+      "completedMonth": "October 2026",
+      "workNotes": "Sliding glass door rollers replaced: Removed old bearings and installed a brand new track bearings. Confirmed door operation. Confirmed door is level and customer is satisfied",
+      "photoBefore": 2,
+      "photoProcess": 6,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-smoke-alarm-battery-swap.webp",

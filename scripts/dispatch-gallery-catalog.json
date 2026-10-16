@@ -4464,5 +4464,30 @@
     "photoBefore": 1,
     "photoProcess": 2,
     "photoAfter": 1
+  },
+  "before-after-sliding-glass-replaced-c70ed5b.webp": {
+    "group": "sliding-glass-replaced-c70ed5b-before-after",
+    "groupTitle": "Sliding glass replaced \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a sliding glass replaced job completed by Knight Group in Seven Springs.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Sliding glass replaced before and after",
+    "description": "Before-and-after comparison from a sliding glass replaced job completed in a Seven Springs home.",
+    "beforeAfter": true,
+    "scope_slug": "sliding-glass-replaced-c70ed5b",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Rudy Wilson",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Seven Springs",
+    "citySlug": "seven-springs",
+    "countyName": "Pasco County",
+    "completedMonth": "October 2026",
+    "workNotes": "Sliding glass door rollers replaced: Removed old bearings and installed a brand new track bearings. Confirmed door operation. Confirmed door is level and customer is satisfied",
+    "photoBefore": 2,
+    "photoProcess": 6,
+    "photoAfter": 1
   }
 }
