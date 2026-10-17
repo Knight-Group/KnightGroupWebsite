@@ -2915,6 +2915,37 @@
       "photoAfter": 6
     },
     {
+      "id": "kitchen-ceiling-stain-and-drywall-repair-0f15934-before-after",
+      "title": "Kitchen ceiling stain and drywall repair \u2014 before & after",
+      "description": "Before-and-after proof from a kitchen ceiling stain and drywall repair job completed by Knight Group in Tampa.",
+      "category": "painting",
+      "serviceLink": "/Services/drywall-repair",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-kitchen-ceiling-stain-and-drywall-repair-0f15934.webp",
+          "filename": "before-after-kitchen-ceiling-stain-and-drywall-repair-0f15934.webp",
+          "step": 1,
+          "title": "Kitchen ceiling stain and drywall repair before and after",
+          "seoAlt": "Kitchen ceiling stain and drywall repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a kitchen ceiling stain and drywall repair job completed in a Tampa home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "drywall",
+      "workerName": "Sergey Ambrosov",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Tampa",
+      "citySlug": "tampa",
+      "countyName": "Hillsborough County",
+      "workNotes": "Kitchen ceiling stain and drywall repair: 10\"X12\" opening in the ceiling patched with new drywall. Disintegrated sections of ceiling coating and taping removed. Damaged areas re-taped and re-coated. Texture applied. Water spots coated with oil-based primer. Section of the ceiling with signs of water damage painted Protect the kitchen work area, remove and replace up to approximately 4 square feet of visibly\u2026",
+      "photoBefore": 4,
+      "photoProcess": 4,
+      "photoAfter": 1
+    },
+    {
       "id": "kitchen-faucet-sprayer-04f0250-before-after",
       "title": "Kitchen faucet sprayer \u2014 before & after",
       "description": "Before-and-after proof from a kitchen faucet sprayer job completed by Knight Group in Pinellas Park.",
@@ -8964,6 +8995,31 @@
       "photoBefore": 1,
       "photoProcess": 3,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-kitchen-ceiling-stain-and-drywall-repair-0f15934.webp",
+      "filename": "before-after-kitchen-ceiling-stain-and-drywall-repair-0f15934.webp",
+      "group": "kitchen-ceiling-stain-and-drywall-repair-0f15934-before-after",
+      "step": 1,
+      "title": "Kitchen ceiling stain and drywall repair before and after",
+      "seoAlt": "Kitchen ceiling stain and drywall repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a kitchen ceiling stain and drywall repair job completed in a Tampa home.",
+      "category": "painting",
+      "serviceLink": "/Services/drywall-repair",
+      "beforeAfter": true,
+      "groupTitle": "Kitchen ceiling stain and drywall repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a kitchen ceiling stain and drywall repair job completed by Knight Group in Tampa.",
+      "cluster": "drywall",
+      "workerName": "Sergey Ambrosov",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Tampa",
+      "citySlug": "tampa",
+      "countyName": "Hillsborough County",
+      "workNotes": "Kitchen ceiling stain and drywall repair: 10\"X12\" opening in the ceiling patched with new drywall. Disintegrated sections of ceiling coating and taping removed. Damaged areas re-taped and re-coated. Texture applied. Water spots coated with oil-based primer. Section of the ceiling with signs of water damage painted Protect the kitchen work area, remove and replace up to approximately 4 square feet of visibly\u2026",
+      "photoBefore": 4,
+      "photoProcess": 4,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-kitchen-drawer-and-ceiling-damage-6f1d487.webp",
