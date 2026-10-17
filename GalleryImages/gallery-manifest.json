@@ -6359,6 +6359,37 @@
           "beforeAfter": true
         }
       ]
+    },
+    {
+      "id": "very-little-hot-water-43b73e4-before-after",
+      "title": "very little hot water \u2014 before & after",
+      "description": "Before-and-after proof from a very little hot water job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-very-little-hot-water-43b73e4.webp",
+          "filename": "before-after-very-little-hot-water-43b73e4.webp",
+          "step": 1,
+          "title": "very little hot water before and after",
+          "seoAlt": "very little hot water before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a very little hot water job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "workNotes": "very little hot water: Diagnose and repair 3 faucets. Kitchen faucet was loose and supply lines were crossed. Bathroom sink replaced an aerator. The shower diverter must have been installed backwards. Cold supply to hot and hot to cold everything functioning and no leaks anywhere as long as they know to use the shower handle backwards there will be no issues",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 2
     }
   ],
   "images": [
@@ -11277,6 +11308,31 @@
       "beforeAfter": true,
       "groupTitle": "Urgent door lock malfunction \u2014 before & after",
       "groupDescription": "Before-and-after proof from a urgent door lock malfunction job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-very-little-hot-water-43b73e4.webp",
+      "filename": "before-after-very-little-hot-water-43b73e4.webp",
+      "group": "very-little-hot-water-43b73e4-before-after",
+      "step": 1,
+      "title": "very little hot water before and after",
+      "seoAlt": "very little hot water before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a very little hot water job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "very little hot water \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a very little hot water job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "workNotes": "very little hot water: Diagnose and repair 3 faucets. Kitchen faucet was loose and supply lines were crossed. Bathroom sink replaced an aerator. The shower diverter must have been installed backwards. Cold supply to hot and hot to cold everything functioning and no leaks anywhere as long as they know to use the shower handle backwards there will be no issues",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 2
     },
     {
       "src": "GalleryImages/before-after-wall-texture-and-finish-blending-c18895c.webp",

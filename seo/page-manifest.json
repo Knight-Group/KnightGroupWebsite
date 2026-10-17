@@ -1891,6 +1891,13 @@
       "path": "gallery/replace-the-bathroom-light-fixture-at-th-cd5e010-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/replace-the-bathroom-light-fixture-at-th-cd5e010-before-after",
       "priority": "0.64"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "very-little-hot-water-43b73e4-before-after",
+      "path": "gallery/very-little-hot-water-43b73e4-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/very-little-hot-water-43b73e4-before-after",
+      "priority": "0.64"
     }
   ]
 }
