@@ -281,7 +281,7 @@
  },
  "https://www.knightgroup.com/gallery/blinds-and-ac-cosmetics-3d1ea5f-before-after": {
   "lastmod": "2026-10-19",
-  "sha256": "77d2be275a20adc0111d49c2aab8b1bedc4dae1507699a566faeada37ec97c90"
+  "sha256": "5b87a2018dfd35e7677abffc325d95fbc6e864c89cfd47126df6beba0a302b99"
  },
  "https://www.knightgroup.com/gallery/blinds-replacement-before-after": {
   "lastmod": "2026-10-04",
@@ -289,7 +289,7 @@
  },
  "https://www.knightgroup.com/gallery/blinds-with-crank-clearance-fb91d1d-before-after": {
   "lastmod": "2026-10-19",
-  "sha256": "5e37e3a2454fa42486b7c5fa2f3339db6e32608b613b57b5fcc332a6a19f34f9"
+  "sha256": "c51cb85f15f60ccfd6396ec93c5eca6ccd5d1b8582b42f51f236edcacca9bb25"
  },
  "https://www.knightgroup.com/gallery/bubbled-wall-surface-and-texture-repair-2d93e5a-before-after": {
   "lastmod": "2026-10-09",
@@ -862,6 +862,10 @@
  "https://www.knightgroup.com/gallery/replace-the-bathroom-light-fixture-at-th-cd5e010-before-after": {
   "lastmod": "2026-10-13",
   "sha256": "ff4798bd98fa589cb8588dd930d03486b10b09db2bba905603c3922a1a99c354"
+ },
+ "https://www.knightgroup.com/gallery/replacement-blinds-kitchen-window-8ce39b7-before-after": {
+  "lastmod": "2026-10-19",
+  "sha256": "085552cefb7c792f726b5c4401a6b97be0683278d18d295f9ce6aa1866ae3ad0"
  },
  "https://www.knightgroup.com/gallery/restore-freezer-shelf-9def051-before-after": {
   "lastmod": "2026-10-04",
