@@ -4739,5 +4739,30 @@
     "photoBefore": 4,
     "photoProcess": 0,
     "photoAfter": 4
+  },
+  "before-after-exterior-wooden-gate-mounting-repair-a13a082.webp": {
+    "group": "exterior-wooden-gate-mounting-repair-a13a082-before-after",
+    "groupTitle": "Exterior wooden gate mounting repair \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a exterior wooden gate mounting repair job completed by Knight Group in Pinellas Park.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Exterior wooden gate mounting repair before and after",
+    "description": "Before-and-after comparison from a exterior wooden gate mounting repair job completed in a Pinellas Park home.",
+    "beforeAfter": true,
+    "scope_slug": "exterior-wooden-gate-mounting-repair-a13a082",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Pinellas Park",
+    "citySlug": "",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Exterior wooden gate mounting repair: Cut out old screws where needed Reinforced old lag bolt holes and re installed large lag bolt Drilled out for 7 new large tapcons and installed in differing depths in the wood/ stucco for maximum hold Re aligned gate for proper closure Temporarily brace the single exterior wooden gate, remove the failed fasteners, and realign the existing gate post shown in the photos. Secure\u2026",
+    "photoBefore": 4,
+    "photoProcess": 0,
+    "photoAfter": 3
   }
 }

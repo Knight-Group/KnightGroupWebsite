@@ -1488,6 +1488,37 @@
       "photoAfter": 1
     },
     {
+      "id": "exterior-wooden-gate-mounting-repair-a13a082-before-after",
+      "title": "Exterior wooden gate mounting repair \u2014 before & after",
+      "description": "Before-and-after proof from a exterior wooden gate mounting repair job completed by Knight Group in Pinellas Park.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-exterior-wooden-gate-mounting-repair-a13a082.webp",
+          "filename": "before-after-exterior-wooden-gate-mounting-repair-a13a082.webp",
+          "step": 1,
+          "title": "Exterior wooden gate mounting repair before and after",
+          "seoAlt": "Exterior wooden gate mounting repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a exterior wooden gate mounting repair job completed in a Pinellas Park home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Pinellas Park",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Exterior wooden gate mounting repair: Cut out old screws where needed Reinforced old lag bolt holes and re installed large lag bolt Drilled out for 7 new large tapcons and installed in differing depths in the wood/ stucco for maximum hold Re aligned gate for proper closure Temporarily brace the single exterior wooden gate, remove the failed fasteners, and realign the existing gate post shown in the photos. Secure\u2026",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 3
+    },
+    {
       "id": "facuet-replacement-d864caa-before-after",
       "title": "Facuet Replacement \u2014 before & after",
       "description": "Before-and-after proof from a facuet replacement job completed by Knight Group in St. Petersburg.",
@@ -8212,6 +8243,31 @@
       "photoBefore": 2,
       "photoProcess": 2,
       "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-exterior-wooden-gate-mounting-repair-a13a082.webp",
+      "filename": "before-after-exterior-wooden-gate-mounting-repair-a13a082.webp",
+      "group": "exterior-wooden-gate-mounting-repair-a13a082-before-after",
+      "step": 1,
+      "title": "Exterior wooden gate mounting repair before and after",
+      "seoAlt": "Exterior wooden gate mounting repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a exterior wooden gate mounting repair job completed in a Pinellas Park home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Exterior wooden gate mounting repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a exterior wooden gate mounting repair job completed by Knight Group in Pinellas Park.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Pinellas Park",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Exterior wooden gate mounting repair: Cut out old screws where needed Reinforced old lag bolt holes and re installed large lag bolt Drilled out for 7 new large tapcons and installed in differing depths in the wood/ stucco for maximum hold Re aligned gate for proper closure Temporarily brace the single exterior wooden gate, remove the failed fasteners, and realign the existing gate post shown in the photos. Secure\u2026",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 3
     },
     {
       "src": "GalleryImages/before-after-facuet-replacement-d864caa.webp",
