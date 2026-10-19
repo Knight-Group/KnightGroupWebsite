@@ -4689,5 +4689,30 @@
     "photoBefore": 1,
     "photoProcess": 0,
     "photoAfter": 1
+  },
+  "before-after-leaking-shower-valve-and-handle-repair-606abac.webp": {
+    "group": "leaking-shower-valve-and-handle-repair-606abac-before-after",
+    "groupTitle": "Leaking shower valve and handle repair \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a leaking shower valve and handle repair job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Leaking shower valve and handle repair before and after",
+    "description": "Before-and-after comparison from a leaking shower valve and handle repair job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "leaking-shower-valve-and-handle-repair-606abac",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Leaking shower valve and handle repair: Handles were loose and not catching splines 1 handle not installed and saddle was too tight not allowing handle to turn Diagnose the leaking three-handle shower faucet, remove the failed right-side control components, and replace the stripped handle, stem or cartridge, washers, O-rings, and related trim as needed to restore reliable shutoff. Reassemble and test the faucet\u2026",
+    "photoBefore": 1,
+    "photoProcess": 0,
+    "photoAfter": 1
   }
 }
