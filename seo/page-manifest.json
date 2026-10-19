@@ -438,6 +438,13 @@
     },
     {
       "pageType": "trust-guide",
+      "slug": "pre-listing-punch-list",
+      "path": "pre-listing-punch-list.html",
+      "canonical": "https://www.knightgroup.com/pre-listing-punch-list",
+      "priority": "0.74"
+    },
+    {
+      "pageType": "trust-guide",
       "slug": "property-manager-handyman",
       "path": "property-manager-handyman.html",
       "canonical": "https://www.knightgroup.com/property-manager-handyman",

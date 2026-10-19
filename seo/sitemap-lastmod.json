@@ -1,7 +1,7 @@
 {
  "https://www.knightgroup.com/": {
-  "lastmod": "2026-10-05",
-  "sha256": "8b8bdf0b8a312ea89ba6c8ffc90045985b8c10c267360b3175e54707b4f9e544"
+  "lastmod": "2026-10-19",
+  "sha256": "5c5ca827cf8d133e7f9985e68b405700b4aad4e90e2658e8920d8aa1801188d9"
  },
  "https://www.knightgroup.com/Services/cabinet-repair": {
   "lastmod": "2026-10-04",
@@ -1095,6 +1095,10 @@
   "lastmod": "2026-10-06",
   "sha256": "cfd8063483f4e29a727e0eeb5ba8f47dacff09f686ca3dd0393c94957bd6a5ca"
  },
+ "https://www.knightgroup.com/pre-listing-punch-list": {
+  "lastmod": "2026-10-19",
+  "sha256": "c95be0112b0f77b8e2c8d64c78675c1df045ad0cc9a429f05014563a251bf4d3"
+ },
  "https://www.knightgroup.com/pricing": {
   "lastmod": "2026-10-04",
   "sha256": "2ed57ba99c7bfa922c65c61a1e838b682a0a308ea8e3f3fa8cdfbc283ff92519"
@@ -1116,8 +1120,8 @@
   "sha256": "b4e2b856ff0e5ecf86be641f9ef5c8e195ed9cde299f9b187023764205d7a934"
  },
  "https://www.knightgroup.com/property-manager-handyman": {
-  "lastmod": "2026-10-05",
-  "sha256": "25a89de966aad12c756256bc994acf4d2ac3c5027c742e0e4d45d8684a092776"
+  "lastmod": "2026-10-19",
+  "sha256": "d0fe41dc65af16da83664b6afd672b3d98b7fbb23ebc450e4c3a535e98ca1b08"
  },
  "https://www.knightgroup.com/rental-turnover-handyman": {
   "lastmod": "2026-10-04",
@@ -1144,8 +1148,8 @@
   "sha256": "3ffd4a6ce90bd2176631809910ddd77a9b42cebfa72660ec0a6b591b76b69cc2"
  },
  "https://www.knightgroup.com/services": {
-  "lastmod": "2026-10-04",
-  "sha256": "405d0ee2677e07ee1716eb2690bb80c2620a2ad2b2244ff12b884c7b20a4a5a8"
+  "lastmod": "2026-10-19",
+  "sha256": "1a9b4a271986e5aa801259922d7fa66575624298e8f60c595a4eba30b10d5ada"
  },
  "https://www.knightgroup.com/seven-springs-handyman": {
   "lastmod": "2026-10-06",

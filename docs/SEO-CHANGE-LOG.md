@@ -10,6 +10,14 @@ Live HTML ships from `E:\Handyman Ticket Manager\state\deploy\KnightGroupWebsite
 
 ---
 
+## 2026-10-19: C3 answer page `/pre-listing-punch-list` (Grok Bot)
+
+- **New URL:** `/pre-listing-punch-list` — checklist-style pre-sale punch list for Pinellas/Tampa Bay homeowners and realtors (doors, paint, drywall, hardware, screens, caulk, minor fixture work on existing connections). Free written quotes from photos; no free in-person estimates. Anonymous; no client names.
+- **Not** a commercial realtor hub (deferred to avoid cannibalizing `/property-manager-handyman`).
+- **Internal links (body only):** home Guides band → snowbird, rental turnover, hurricane, pre-listing; `/services` hub card; light link + related card on `/property-manager-handyman` realtor section.
+- **No title / meta / H1 / canonical changes** on any existing page (60-day SEO tag rule).
+- Sitemap regenerated via `scripts/build-sitemap.py` (page-manifest trust-guide entry).
+
 ## 2026-10-06: Home Watch discovery + Tampa/Pasco upgrades + orphan gallery links (Grok Bot)
 
 - **Home Watch:** top-nav + mobile link to `/home-watch-pinellas`; footer adds Home Watch pricing. Pinellas city/hub pages get a "Leaving town? Schedule Pinellas Home Watch" CTA (pricing + sample report links). `geo_expansions.py` keeps the HW related-resources line for future regenerations. No title/meta/H1 changes.
