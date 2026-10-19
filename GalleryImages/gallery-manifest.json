@@ -2320,6 +2320,38 @@
       "photoAfter": 3
     },
     {
+      "id": "get-windows-to-open-and-secure-screens-6f74b01-before-after",
+      "title": "Get windows to open and secure screens \u2014 before & after",
+      "description": "Before-and-after proof from a get windows to open and secure screens job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-get-windows-to-open-and-secure-screens-6f74b01.webp",
+          "filename": "before-after-get-windows-to-open-and-secure-screens-6f74b01.webp",
+          "step": 1,
+          "title": "Get windows to open and secure screens before and after",
+          "seoAlt": "Get windows to open and secure screens before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a get windows to open and secure screens job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Leaking shower valve and handle repair: Handles were loose and not catching splines 1 handle not installed and saddle was too tight not allowing handle to turn",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 4
+    },
+    {
       "id": "gutter-downspout-appears-to-be-clogged-8c068d4-before-after",
       "title": "Gutter downspout appears to be clogged \u2014 before & after",
       "description": "Before-and-after proof from a gutter downspout appears to be clogged job completed by Knight Group in Clearwater.",
@@ -8878,6 +8910,32 @@
       "photoBefore": 2,
       "photoProcess": 3,
       "photoAfter": 3
+    },
+    {
+      "src": "GalleryImages/before-after-get-windows-to-open-and-secure-screens-6f74b01.webp",
+      "filename": "before-after-get-windows-to-open-and-secure-screens-6f74b01.webp",
+      "group": "get-windows-to-open-and-secure-screens-6f74b01-before-after",
+      "step": 1,
+      "title": "Get windows to open and secure screens before and after",
+      "seoAlt": "Get windows to open and secure screens before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a get windows to open and secure screens job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Get windows to open and secure screens \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a get windows to open and secure screens job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Leaking shower valve and handle repair: Handles were loose and not catching splines 1 handle not installed and saddle was too tight not allowing handle to turn",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 4
     },
     {
       "src": "GalleryImages/before-after-gutter-downspout-appears-to-be-clogged-8c068d4.webp",

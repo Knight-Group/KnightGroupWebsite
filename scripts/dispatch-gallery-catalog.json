@@ -4714,5 +4714,30 @@
     "photoBefore": 1,
     "photoProcess": 0,
     "photoAfter": 1
+  },
+  "before-after-get-windows-to-open-and-secure-screens-6f74b01.webp": {
+    "group": "get-windows-to-open-and-secure-screens-6f74b01-before-after",
+    "groupTitle": "Get windows to open and secure screens \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a get windows to open and secure screens job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Get windows to open and secure screens before and after",
+    "description": "Before-and-after comparison from a get windows to open and secure screens job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "get-windows-to-open-and-secure-screens-6f74b01",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Leaking shower valve and handle repair: Handles were loose and not catching splines 1 handle not installed and saddle was too tight not allowing handle to turn",
+    "photoBefore": 4,
+    "photoProcess": 0,
+    "photoAfter": 4
   }
 }
