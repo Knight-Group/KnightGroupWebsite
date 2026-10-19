@@ -4639,5 +4639,30 @@
     "photoBefore": 2,
     "photoProcess": 0,
     "photoAfter": 7
+  },
+  "before-after-clean-both-a-c-mini-splits-be28eee.webp": {
+    "group": "clean-both-a-c-mini-splits-be28eee-before-after",
+    "groupTitle": "Clean Both A/C Mini-Splits \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a clean both a/c mini-splits job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Clean Both A/C Mini-Splits before and after",
+    "description": "Before-and-after comparison from a clean both a/c mini-splits job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "clean-both-a-c-mini-splits-be28eee",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Room 5 blinds with crank clearance: Replaced 7 window cranks with collapsible cranks to clear blinds. And moved blinds out where they were getting hung. In total installed 6 blinds. Left old cranks in closet; Clean Both A/C Mini-Splits: Quick wipe down and clean filters Room 5 blinds with crank clearance: Replaced 7 window cranks with collapsible cranks to clear blinds. And moved blinds out where they were\u2026",
+    "photoBefore": 1,
+    "photoProcess": 0,
+    "photoAfter": 1
   }
 }
