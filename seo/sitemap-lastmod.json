@@ -280,8 +280,8 @@
   "sha256": "a16c3f0b93152444c739bc5939243ce29d68f8b92016e47396be8e437f96aae9"
  },
  "https://www.knightgroup.com/gallery/blinds-and-ac-cosmetics-3d1ea5f-before-after": {
-  "lastmod": "2026-10-17",
-  "sha256": "c41173947ddc7aed341e5e22d233867c720e469a7ab8823a3d3119cad57460aa"
+  "lastmod": "2026-10-19",
+  "sha256": "aaf4e23ecf82b4c934a72cf4dbeb8434a60c87a0e7f1dd1932aaf078be6674b1"
  },
  "https://www.knightgroup.com/gallery/blinds-replacement-before-after": {
   "lastmod": "2026-10-04",
@@ -539,6 +539,10 @@
   "lastmod": "2026-10-04",
   "sha256": "2df83052da5ce7df07d8643df19f5f1272ac194058fe4d46cd23904181ba9af9"
  },
+ "https://www.knightgroup.com/gallery/garbage-disposal-not-d5d1cbb-before-after": {
+  "lastmod": "2026-10-19",
+  "sha256": "b9bf525d890563b7b1087c3505e06faf1a16897e29ccea26ccc06ad425f7a3bd"
+ },
  "https://www.knightgroup.com/gallery/get-water-functional-ea319fe-before-after": {
   "lastmod": "2026-10-17",
   "sha256": "98f8a3ca65db07bdee2d12fee887733153617fa355c674a6fceb838926527af6"
@@ -604,8 +608,8 @@
   "sha256": "6fedd69910a6e40a8c54e722e1931185894a454f9733d87892e905f01db08918"
  },
  "https://www.knightgroup.com/gallery/jeff-snake-bathtub-drains-and-make-sure-4511e27-before-after": {
-  "lastmod": "2026-10-14",
-  "sha256": "f6ec0c5f8435cb446cc01f0b021b5754ec359eb935aeb3699fccb1c363bdec59"
+  "lastmod": "2026-10-19",
+  "sha256": "50ac295c9c12c965b237f09cf43f3fdad196b2a52b1cb79c2d27e916be673ce0"
  },
  "https://www.knightgroup.com/gallery/kitchen-cabinet-outlet-repair-e5d5832-before-after": {
   "lastmod": "2026-10-13",
@@ -628,16 +632,16 @@
   "sha256": "f0a5a3da4ef03490efda4d75ab5fe3dac9476d3277f6e57f4491cc57c8c54ff3"
  },
  "https://www.knightgroup.com/gallery/kitchen-sink-drain-service-c8d521c-before-after": {
-  "lastmod": "2026-10-14",
-  "sha256": "23f41554fdec1e85b6c921c277acd66dc0fb2e71cb26a32720c646af1cf2a073"
+  "lastmod": "2026-10-19",
+  "sha256": "9de83fc27683e6132bb4cec04193b4f9e390d200028212e5d958c503b845e129"
  },
  "https://www.knightgroup.com/gallery/kitchen-sink-leak-before-after": {
   "lastmod": "2026-10-04",
   "sha256": "50f0d54257d7f5c934f44f3d07eca126d029b67af3473f8fcb34c9a196ab275e"
  },
  "https://www.knightgroup.com/gallery/kitchen-sink-slow-drain-923620a-before-after": {
-  "lastmod": "2026-10-14",
-  "sha256": "d931447ab9e0da80afdf2013a915ebaa522d97eb657e39125839e7b46b3a4318"
+  "lastmod": "2026-10-19",
+  "sha256": "63aa2539f2db030578c4588b67a1ca85e640273f4db89c177fea3fe85768771d"
  },
  "https://www.knightgroup.com/gallery/laminate-floor-on-hallway-ramp-transitio-32347a1-before-after": {
   "lastmod": "2026-10-09",
@@ -668,8 +672,8 @@
   "sha256": "9b5c6a0d64d565e650fe1e29809295db8d40222878abc756050cb43e4c0b0189"
  },
  "https://www.knightgroup.com/gallery/master-bathroom-sink-pop-up-stopper-repa-d7ea620-before-after": {
-  "lastmod": "2026-10-14",
-  "sha256": "7ef863d7286362846a9b2a5f0df77c29ac303216c3febbd057ed12c348a539a3"
+  "lastmod": "2026-10-19",
+  "sha256": "3f8d60fe20a0e0e3c75b7018924b55c05b476f6ebc3b21469ec1158ea3753122"
  },
  "https://www.knightgroup.com/gallery/match-then-paint-middle-bedroom-a5e92c6-before-after": {
   "lastmod": "2026-10-04",
@@ -892,8 +896,8 @@
   "sha256": "04297220a0b3a894508b8ca4e79ae324d97162b81c79d1574b41bc7ea89579c9"
  },
  "https://www.knightgroup.com/gallery/sink-drain-pop-up-assembly-36b860c-before-after": {
-  "lastmod": "2026-10-14",
-  "sha256": "287c03b6ddec0d373a001087203f04e85c794930cffabe7a6621d539782ab498"
+  "lastmod": "2026-10-19",
+  "sha256": "77d9b7d6410c07e19b22bfef6affba36e091577ee4bae9e507c6fa8156485dd1"
  },
  "https://www.knightgroup.com/gallery/sky-light-glass-roof-leaking-and-needs-r-3754f17-before-after": {
   "lastmod": "2026-10-17",
@@ -1095,10 +1099,6 @@
   "lastmod": "2026-10-06",
   "sha256": "cfd8063483f4e29a727e0eeb5ba8f47dacff09f686ca3dd0393c94957bd6a5ca"
  },
- "https://www.knightgroup.com/pre-listing-punch-list": {
-  "lastmod": "2026-10-19",
-  "sha256": "c95be0112b0f77b8e2c8d64c78675c1df045ad0cc9a429f05014563a251bf4d3"
- },
  "https://www.knightgroup.com/pricing": {
   "lastmod": "2026-10-04",
   "sha256": "2ed57ba99c7bfa922c65c61a1e838b682a0a308ea8e3f3fa8cdfbc283ff92519"
@@ -1121,7 +1121,7 @@
  },
  "https://www.knightgroup.com/property-manager-handyman": {
   "lastmod": "2026-10-19",
-  "sha256": "d0fe41dc65af16da83664b6afd672b3d98b7fbb23ebc450e4c3a535e98ca1b08"
+  "sha256": "25a89de966aad12c756256bc994acf4d2ac3c5027c742e0e4d45d8684a092776"
  },
  "https://www.knightgroup.com/rental-turnover-handyman": {
   "lastmod": "2026-10-04",

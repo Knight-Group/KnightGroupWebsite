@@ -2140,6 +2140,38 @@
       "photoAfter": 4
     },
     {
+      "id": "garbage-disposal-not-d5d1cbb-before-after",
+      "title": "Garbage Disposal Not \u2014 before & after",
+      "description": "Before-and-after proof from a garbage disposal not job completed by Knight Group in St. Petersburg.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-garbage-disposal-not-d5d1cbb.webp",
+          "filename": "before-after-garbage-disposal-not-d5d1cbb.webp",
+          "step": 1,
+          "title": "Garbage Disposal Not before and after",
+          "seoAlt": "Garbage Disposal Not before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a garbage disposal not job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "sink_drain",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Garbage Disposal Not : Remove disposal from flange and disconnect lines. Took outside and shook out any debris was metal in disposal. Reinstalled and flushed out. Tested as it should now",
+      "photoBefore": 1,
+      "photoProcess": 1,
+      "photoAfter": 1
+    },
+    {
       "id": "garbage-cabinet-repair-youtube-video-lin-54b1f44-before-after",
       "title": "Garbage cabinet repair - YouTube Video link below \u2014 before & after",
       "description": "Before-and-after proof from a garbage cabinet repair - youtube video link below job completed by Knight Group in Clearwater.",
@@ -8524,6 +8556,32 @@
       "photoBefore": 1,
       "photoProcess": 3,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-garbage-disposal-not-d5d1cbb.webp",
+      "filename": "before-after-garbage-disposal-not-d5d1cbb.webp",
+      "group": "garbage-disposal-not-d5d1cbb-before-after",
+      "step": 1,
+      "title": "Garbage Disposal Not before and after",
+      "seoAlt": "Garbage Disposal Not before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a garbage disposal not job completed in a St. Petersburg home.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "groupTitle": "Garbage Disposal Not \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a garbage disposal not job completed by Knight Group in St. Petersburg.",
+      "cluster": "sink_drain",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Garbage Disposal Not : Remove disposal from flange and disconnect lines. Took outside and shook out any debris was metal in disposal. Reinstalled and flushed out. Tested as it should now",
+      "photoBefore": 1,
+      "photoProcess": 1,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-get-water-functional-ea319fe.webp",
