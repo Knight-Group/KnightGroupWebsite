@@ -1392,6 +1392,38 @@
       "photoAfter": 3
     },
     {
+      "id": "electric-stove-fault-diagnosis-0c172f8-before-after",
+      "title": "Electric stove fault diagnosis \u2014 before & after",
+      "description": "Before-and-after proof from a electric stove fault diagnosis job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-electric-stove-fault-diagnosis-0c172f8.webp",
+          "filename": "before-after-electric-stove-fault-diagnosis-0c172f8.webp",
+          "step": 1,
+          "title": "Electric stove fault diagnosis before and after",
+          "seoAlt": "Electric stove fault diagnosis before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a electric stove fault diagnosis job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Under-sink drain leak repair: Locate leaks under sink. Replace basket strainer left side. Faucet was leaking internally was replaced with same faucet in kitchen.; Electric stove fault diagnosis: Diagnose and locate issue with burner. Installed new range receptacle everything works Under-sink drain leak repair: Locate leaks under sink. Replace basket strainer left side. Faucet was leaking internally was replaced\u2026",
+      "photoBefore": 4,
+      "photoProcess": 1,
+      "photoAfter": 1
+    },
+    {
       "id": "exterior-coping-and-screens-f1920f7-before-after",
       "title": "Exterior coping and screens \u2014 before & after",
       "description": "Before-and-after proof from a exterior coping and screens job completed by Knight Group in St. Petersburg.",
@@ -7866,6 +7898,32 @@
       "photoBefore": 7,
       "photoProcess": 1,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-electric-stove-fault-diagnosis-0c172f8.webp",
+      "filename": "before-after-electric-stove-fault-diagnosis-0c172f8.webp",
+      "group": "electric-stove-fault-diagnosis-0c172f8-before-after",
+      "step": 1,
+      "title": "Electric stove fault diagnosis before and after",
+      "seoAlt": "Electric stove fault diagnosis before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a electric stove fault diagnosis job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Electric stove fault diagnosis \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a electric stove fault diagnosis job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Under-sink drain leak repair: Locate leaks under sink. Replace basket strainer left side. Faucet was leaking internally was replaced with same faucet in kitchen.; Electric stove fault diagnosis: Diagnose and locate issue with burner. Installed new range receptacle everything works Under-sink drain leak repair: Locate leaks under sink. Replace basket strainer left side. Faucet was leaking internally was replaced\u2026",
+      "photoBefore": 4,
+      "photoProcess": 1,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-entrance-lock-rekey-a497f1c.webp",

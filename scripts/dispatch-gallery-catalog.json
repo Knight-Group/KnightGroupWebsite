@@ -4589,5 +4589,30 @@
     "photoBefore": 4,
     "photoProcess": 3,
     "photoAfter": 2
+  },
+  "before-after-electric-stove-fault-diagnosis-0c172f8.webp": {
+    "group": "electric-stove-fault-diagnosis-0c172f8-before-after",
+    "groupTitle": "Electric stove fault diagnosis \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a electric stove fault diagnosis job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Electric stove fault diagnosis before and after",
+    "description": "Before-and-after comparison from a electric stove fault diagnosis job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "electric-stove-fault-diagnosis-0c172f8",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Under-sink drain leak repair: Locate leaks under sink. Replace basket strainer left side. Faucet was leaking internally was replaced with same faucet in kitchen.; Electric stove fault diagnosis: Diagnose and locate issue with burner. Installed new range receptacle everything works Under-sink drain leak repair: Locate leaks under sink. Replace basket strainer left side. Faucet was leaking internally was replaced\u2026",
+    "photoBefore": 4,
+    "photoProcess": 1,
+    "photoAfter": 1
   }
 }
