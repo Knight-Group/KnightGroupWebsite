@@ -4564,5 +4564,30 @@
     "photoBefore": 1,
     "photoProcess": 1,
     "photoAfter": 1
+  },
+  "before-after-under-sink-drain-leak-repair-403f4d3.webp": {
+    "group": "under-sink-drain-leak-repair-403f4d3-before-after",
+    "groupTitle": "Under-sink drain leak repair \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a under-sink drain leak repair job completed by Knight Group in St. Petersburg.",
+    "category": "plumbing",
+    "serviceLink": "/Services/plumbing-services",
+    "step": 1,
+    "title": "Under-sink drain leak repair before and after",
+    "description": "Before-and-after comparison from a under-sink drain leak repair job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "under-sink-drain-leak-repair-403f4d3",
+    "source": "dispatch",
+    "cluster": "sink_drain",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Under-sink drain leak repair: Locate leaks under sink. Replace basket strainer left side. Faucet was leaking internally was replaced with same faucet in kitchen.; Electric stove fault diagnosis: Diagnose and locate issue with burner. Installed new range receptacle everything works Under-sink drain leak repair: Locate leaks under sink. Replace basket strainer left side. Faucet was leaking internally was replaced\u2026",
+    "photoBefore": 4,
+    "photoProcess": 3,
+    "photoAfter": 2
   }
 }
