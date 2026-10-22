@@ -4839,5 +4839,30 @@
     "photoBefore": 1,
     "photoProcess": 0,
     "photoAfter": 2
+  },
+  "before-after-transitions-356c7ea.webp": {
+    "group": "transitions-356c7ea-before-after",
+    "groupTitle": "transitions \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a transitions job completed by Knight Group in Safety Harbor.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "transitions before and after",
+    "description": "Before-and-after comparison from a transitions job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "transitions-356c7ea",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Laminate flooring: Used 2 bags self leveler on floor to reduce drastic dips Installed flooring cut where needed; Quarter-round: Cut and installed and caulked all quarter round; Doorway transitions: Cut thresholds to size drilled out concrete Widened transition holes Installed silver tapcons; Sagging textured ceiling repair: Scraped damaged ceiling areas Screwed in ceiling where sagging Floated mud across low\u2026",
+    "photoBefore": 1,
+    "photoProcess": 0,
+    "photoAfter": 2
   }
 }
