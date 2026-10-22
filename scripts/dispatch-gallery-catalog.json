@@ -4864,5 +4864,30 @@
     "photoBefore": 1,
     "photoProcess": 0,
     "photoAfter": 2
+  },
+  "before-after-sagging-textured-ceiling-repair-381b549.webp": {
+    "group": "sagging-textured-ceiling-repair-381b549-before-after",
+    "groupTitle": "Sagging textured ceiling repair \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a sagging textured ceiling repair job completed by Knight Group in Safety Harbor.",
+    "category": "painting",
+    "serviceLink": "/Services/drywall-repair",
+    "step": 1,
+    "title": "Sagging textured ceiling repair before and after",
+    "description": "Before-and-after comparison from a sagging textured ceiling repair job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "sagging-textured-ceiling-repair-381b549",
+    "source": "dispatch",
+    "cluster": "drywall",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Laminate flooring: Used 2 bags self leveler on floor to reduce drastic dips Installed flooring cut where needed; Quarter-round: Cut and installed and caulked all quarter round; Doorway transitions: Cut thresholds to size drilled out concrete Widened transition holes Installed silver tapcons; Sagging textured ceiling repair: Scraped damaged ceiling areas Screwed in ceiling where sagging Floated mud across low\u2026",
+    "photoBefore": 3,
+    "photoProcess": 0,
+    "photoAfter": 1
   }
 }
