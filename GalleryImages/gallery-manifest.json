@@ -4004,6 +4004,38 @@
       "photoAfter": 3
     },
     {
+      "id": "quarter-round-6f382b0-before-after",
+      "title": "Quarter-round \u2014 before & after",
+      "description": "Before-and-after proof from a quarter-round job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-quarter-round-6f382b0.webp",
+          "filename": "before-after-quarter-round-6f382b0.webp",
+          "step": 1,
+          "title": "Quarter-round before and after",
+          "seoAlt": "Quarter-round before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a quarter-round job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Laminate flooring: Used 2 bags self leveler on floor to reduce drastic dips Installed flooring cut where needed; Quarter-round: Cut and installed and caulked all quarter round; Doorway transitions: Cut thresholds to size drilled out concrete Widened transition holes Installed silver tapcons; Sagging textured ceiling repair: Scraped damaged ceiling areas Screwed in ceiling where sagging Floated mud across low\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 2
+    },
+    {
       "id": "ramp-transition-36c1780-before-after",
       "title": "Ramp Transition \u2014 before & after",
       "description": "Before-and-after proof from a ramp transition job completed by Knight Group in Safety Harbor.",
@@ -10341,6 +10373,32 @@
       "photoBefore": 1,
       "photoProcess": 3,
       "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-quarter-round-6f382b0.webp",
+      "filename": "before-after-quarter-round-6f382b0.webp",
+      "group": "quarter-round-6f382b0-before-after",
+      "step": 1,
+      "title": "Quarter-round before and after",
+      "seoAlt": "Quarter-round before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a quarter-round job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Quarter-round \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a quarter-round job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Laminate flooring: Used 2 bags self leveler on floor to reduce drastic dips Installed flooring cut where needed; Quarter-round: Cut and installed and caulked all quarter round; Doorway transitions: Cut thresholds to size drilled out concrete Widened transition holes Installed silver tapcons; Sagging textured ceiling repair: Scraped damaged ceiling areas Screwed in ceiling where sagging Floated mud across low\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 2
     },
     {
       "src": "GalleryImages/before-after-quarter-round-b1a6d55.webp",
