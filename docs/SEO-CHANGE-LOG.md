@@ -314,3 +314,10 @@ Seven complete GSC days after the Sep 17 recrawl are Sep 18–24. Measure on or 
 - **GBP review feed:** review sync now runs from a fresh worktree off `origin/main` (the old run in the stale local checkout had failed daily since about Sep 26). Live count 14 -> 16 reviews (commit 7615d1e2). No tags changed.
 - **Lead tracking (`JS/kg-analytics.js`):** `generate_lead` now fires once on a validated form submit instead of only on `/thank-you`. GA4 logged 67 `form_submit` and 0 `form_success` in the 90 days to Oct 5, which means Formspree isn't sending people back to `/thank-you`. The thank-you event is skipped if the submit was already counted; contractor applications are excluded. No tags changed.
 - **`/property-manager-handyman` body:** "A local spa resort" -> "A local hospitality business" (anonymity). Title, meta, H1, and canonical unchanged.
+
+## 2026-10-22 - Form spam guard v2 (JS only)
+- Extended the KG spam guard in JS/includes.js + includes.min.js (shared on all pages): on top of the existing _gotcha/address_2 honeypot + 3s minimum fill (commit 76cec5b7), it now blocks Formspree submits whose name/message fields contain injection patterns (('", <script, ' OR, UNION SELECT) and caps each browser at 3 submits per 10 minutes (localStorage key kg_form_submits). Shows a short inline note when blocked.
+- Reason: ~23 injection-style junk submissions to the by-the-hour form on 2026-10-21 ~10:50 PM ET (50% of Formspree's 50/mo free quota).
+- No titles, meta, headings, URLs, form_type or generate_lead tracking changed. Rollback: git revert this commit.
+- Note: npm run seo:all currently fails (scripts/sync-gallery-hub.py missing) and its earlier steps rewrite meta descriptions on ~316 pages; output was discarded, not shipped.
+
