@@ -472,8 +472,8 @@
   "sha256": "71795dfd36a1d306edf492aa5782c5498cfe628eef660423ccd26134d05b2cce"
  },
  "https://www.knightgroup.com/gallery/fill-holes-in-wood-floor-6b485f2-before-after": {
-  "lastmod": "2026-10-09",
-  "sha256": "6aef82004c1835c87efc63616931015e6a0f9f5955fd2d7178c42c64d5368237"
+  "lastmod": "2026-10-21",
+  "sha256": "10ca27eddf4798579429b05aed7791c085adf93987f42b01aa33962edbf7cc8e"
  },
  "https://www.knightgroup.com/gallery/fill-sand-and-paint-valance-ecb97b7-before-after": {
   "lastmod": "2026-10-04",
@@ -512,28 +512,28 @@
   "sha256": "880c2d528eba38b97bb6974d8e01a737d0616275a172fcbfb188d727ca53f3f3"
  },
  "https://www.knightgroup.com/gallery/fix-laminate-scratches-on-floor-af40cee-before-after": {
-  "lastmod": "2026-10-09",
-  "sha256": "c64175b6421c1352565b7fc4ef27b3e18e8b954309b6c3c996808d410700fb47"
+  "lastmod": "2026-10-21",
+  "sha256": "4e91c6b299811055be0a4ab6e2fbb5b492c104ad2a4d8cd4b0263a1ab9beb65f"
  },
  "https://www.knightgroup.com/gallery/fix-toilet-fill-valve-6df05b1-before-after": {
   "lastmod": "2026-10-04",
   "sha256": "76c5bb576f89a1c761587660c7a01532441586a2613ac33328db3b1077311578"
  },
  "https://www.knightgroup.com/gallery/floating-flooring-and-quarter-round-5169f20-before-after": {
-  "lastmod": "2026-10-09",
-  "sha256": "294bba55747cc74a5c29853c4e7cd0335aaf4a7240a06928a6b5487f1e4b6ce4"
+  "lastmod": "2026-10-21",
+  "sha256": "c83453e14e81298e984a8253eff2ec33275470c10277e530d74b24f17314d20a"
  },
  "https://www.knightgroup.com/gallery/floor-leveling-3c0d48f-before-after": {
-  "lastmod": "2026-10-09",
-  "sha256": "1a8d38b99994ead7d915d1b902777c545453e68d28c37d5b883292218a1cb9b6"
+  "lastmod": "2026-10-21",
+  "sha256": "c8f95c718cb64ac95de802b47d71a545ce807ec05df3151142ba296724e88d75"
  },
  "https://www.knightgroup.com/gallery/floor-subfloor-repair": {
   "lastmod": "2026-10-04",
   "sha256": "ac9a80e0d9cea65354341bac64de7e38028f43092e4fec7e2da5c1152a60b4b4"
  },
  "https://www.knightgroup.com/gallery/flooring-perimeter-quarter-round-9804c12-before-after": {
-  "lastmod": "2026-10-09",
-  "sha256": "587f695ec40a115903417422c1f7bcf6886f1f8aa8d5894c94367551557f8104"
+  "lastmod": "2026-10-21",
+  "sha256": "6abb0ca826bdea967841fe3a5f7abddad53bb1b7c10f94324da7e692d9342018"
  },
  "https://www.knightgroup.com/gallery/front-fence-repair-08fc100-before-after": {
   "lastmod": "2026-10-04",
@@ -580,8 +580,8 @@
   "sha256": "d18ae730644029a79edceed1b5e5091fc1ac6ff1ce54975bf84f9b5df702a8e7"
  },
  "https://www.knightgroup.com/gallery/hallway-flooring-finish-bf39ea1-before-after": {
-  "lastmod": "2026-10-09",
-  "sha256": "155f9a4cda7474b853d79a1851618bc64426e3d007392da6b827259710c97d34"
+  "lastmod": "2026-10-21",
+  "sha256": "2f815bf96f475937d277ce0d121b55e55c721f00626b37b1fe5a5ebfb9712a4d"
  },
  "https://www.knightgroup.com/gallery/handyman-repair-163b4a6-before-after": {
   "lastmod": "2026-10-19",
@@ -668,12 +668,16 @@
   "sha256": "63aa2539f2db030578c4588b67a1ca85e640273f4db89c177fea3fe85768771d"
  },
  "https://www.knightgroup.com/gallery/laminate-floor-on-hallway-ramp-transitio-32347a1-before-after": {
-  "lastmod": "2026-10-09",
-  "sha256": "716b5ac138ce4b792cc1ac75852e74e032b936f56fddb90ad8d5e6bbee3f30f3"
+  "lastmod": "2026-10-21",
+  "sha256": "d3bd0532c0ee36e50e950f96c50c8be53eeb9e5a0ccc6c705097792b1795d748"
+ },
+ "https://www.knightgroup.com/gallery/laminate-flooring-0563ec2-before-after": {
+  "lastmod": "2026-10-21",
+  "sha256": "884dbc2f347fe248b8221e88cc863d5209419b079a8960f99980b0751359ecd3"
  },
  "https://www.knightgroup.com/gallery/laminate-flooring-installation-c6bece1-before-after": {
-  "lastmod": "2026-10-09",
-  "sha256": "8609c40dbf244385e9827112f2a45e93c710f996a601a4b3924cd700b930d2a8"
+  "lastmod": "2026-10-21",
+  "sha256": "ef06991ae1910e24796fcb7a3cb91c9aaa9a11fe7156b7790f6141b069434c6b"
  },
  "https://www.knightgroup.com/gallery/laminate-lvp-installation-d86a9bf-before-after": {
   "lastmod": "2026-10-19",
@@ -692,8 +696,8 @@
   "sha256": "fd5068294983e4b9442e3649d608898f61e319b86d5e28710ea192a0cdb909b6"
  },
  "https://www.knightgroup.com/gallery/localized-subfloor-leveling-repairs-bac45da-before-after": {
-  "lastmod": "2026-10-09",
-  "sha256": "56bd18947db9e6539a00f6f69eb3d3914b4ebd8c5ee929ae35071d381c921384"
+  "lastmod": "2026-10-21",
+  "sha256": "2cd6bc0056fbf1cafc7b1fbbcde9ae5577840db3facab374eb49b855203b8dc3"
  },
  "https://www.knightgroup.com/gallery/master-bath-ceiling-moisture-bdb5734-before-after": {
   "lastmod": "2026-10-19",
@@ -724,8 +728,8 @@
   "sha256": "7b79f3c6d5e63bf9f32fa5652344c69c008bda393806d66b6e415a573da8d9e2"
  },
  "https://www.knightgroup.com/gallery/office-flooring-and-quarter-round-instal-eb3403d-before-after": {
-  "lastmod": "2026-10-09",
-  "sha256": "c5cf87c70d91761cbff2efaa730b49edf6f51ff78508d0cecdbf3dfa4c36aef9"
+  "lastmod": "2026-10-21",
+  "sha256": "f265aaed71dee9d793fb3d30a9137bf343e21786901a46333f7635b66802487c"
  },
  "https://www.knightgroup.com/gallery/office-room-7-laminate-flooring-12x14-1894b42-before-after": {
   "lastmod": "2026-10-09",
@@ -796,8 +800,8 @@
   "sha256": "1e70d6ab94c9cb5a763f776f674a8e3b7f7a08c6b0ebaced52f596e4394f10ce"
  },
  "https://www.knightgroup.com/gallery/refrigerator-leak-and-floor-damage-8e0dedc-before-after": {
-  "lastmod": "2026-10-09",
-  "sha256": "3ad8e079f122c65d9d1d40947e7066eecece8e424a5667c2cba7e183d1a8e743"
+  "lastmod": "2026-10-21",
+  "sha256": "82d27d7777e4c9061201e97b24258de4fa946189d52e3eb240bf3863f63bc5ae"
  },
  "https://www.knightgroup.com/gallery/remove-debris-41db93f-before-after": {
   "lastmod": "2026-10-19",

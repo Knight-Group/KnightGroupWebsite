@@ -4789,5 +4789,30 @@
     "photoBefore": 1,
     "photoProcess": 0,
     "photoAfter": 2
+  },
+  "before-after-laminate-flooring-0563ec2.webp": {
+    "group": "laminate-flooring-0563ec2-before-after",
+    "groupTitle": "Laminate flooring \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a laminate flooring job completed by Knight Group in Safety Harbor.",
+    "category": "carpentry",
+    "serviceLink": "/Services/carpentry-framing",
+    "step": 1,
+    "title": "Laminate flooring before and after",
+    "description": "Before-and-after comparison from a laminate flooring job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "laminate-flooring-0563ec2",
+    "source": "dispatch",
+    "cluster": "floor",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Laminate flooring: Used 2 bags self leveler on floor to reduce drastic dips Installed flooring cut where needed; Quarter-round: Cut and installed and caulked all quarter round; Doorway transitions: Cut thresholds to size drilled out concrete Widened transition holes Installed silver tapcons; Sagging textured ceiling repair: Scraped damaged ceiling areas Screwed in ceiling where sagging Floated mud across low\u2026",
+    "photoBefore": 1,
+    "photoProcess": 2,
+    "photoAfter": 1
   }
 }
