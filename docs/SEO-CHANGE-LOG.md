@@ -10,6 +10,14 @@ Live HTML ships from `E:\Handyman Ticket Manager\state\deploy\KnightGroupWebsite
 
 ---
 
+## 2026-10-22: materials wording on pricing and payment policy
+
+Body copy only. Titles, meta descriptions, and H1s unchanged. Labor rates unchanged: $150/$75 standard, $200/$100 specialty.
+
+- `/pricing` materials note and FAQ no longer say materials are billed at cost-plus. They say materials are priced separately and the charge is on the written estimate. No percentage.
+- Payment policy section 7 no longer says "Material Markup" or "industry-standard markup." Purchased materials are charged as shown on the written estimate.
+- The franchise comparison sentence on `/pricing` is unchanged. It describes other companies' markups.
+
 ## 2026-10-19: C3 answer page `/pre-listing-punch-list` (Grok Bot)
 
 - **New URL:** `/pre-listing-punch-list` — checklist-style pre-sale punch list for Pinellas/Tampa Bay homeowners and realtors (doors, paint, drywall, hardware, screens, caulk, minor fixture work on existing connections). Free written quotes from photos; no free in-person estimates. Anonymous; no client names.
@@ -35,7 +43,7 @@ Live HTML ships from `E:\Handyman Ticket Manager\state\deploy\KnightGroupWebsite
 
 ## 2026-10-04 (midday): materials markup and estimates policy (Grok Bot, Nick's direction)
 
-- **Materials:** removed the public materials markup percentage from `/pricing` (materials note and FAQ). The page now says materials are billed at cost-plus and itemized on the invoice. Removed the same percentage from the `repair-meta-descriptions.py` template, which was not live. No percentages remain on the site, in llms.txt, or in the vendor packet. The PM page adds "Preferred materials pricing for repeat-work vendors" with no percentage.
+- **Materials:** removed the public materials markup percentage from `/pricing` (materials note and FAQ). The page then said materials are billed at cost-plus and itemized on the invoice. That cost-plus wording was replaced on 2026-10-22; see the entry above. Removed the same percentage from the `repair-meta-descriptions.py` template, which was not live. No percentages remain on the site, in llms.txt, or in the vendor packet. The PM page adds "Preferred materials pricing for repeat-work vendors" with no percentage.
 - **Estimates policy:** there are no free in-person estimates. We quote by phone or from photos; a quote can be revised on site, and work starts with a signed agreement.
   - Body CTAs, sidebars, gallery CTAs, and FAQ answers were updated on index, about, booking, pricing, Services/handyman, payment policy, and about 280 generated pages, together with their generator sources.
   - The ReserveAction name is now "Request a handyman quote".
