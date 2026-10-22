@@ -238,6 +238,7 @@ QUAL_FORM = """                                <form class="kg-contact-form" act
                                     <input type="hidden" name="_next" value="https://www.knightgroup.com/thank-you">
                                     <label class="visually-hidden" for="hw-hp">Leave this field blank</label>
                                     <input class="kg-hp" id="hw-hp" type="text" name="address_2" autocomplete="off" tabindex="-1">
+                                    <input type="text" name="_gotcha" class="kg-hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none !important">
                                     <button type="submit" class="kg-contact-form__submit" data-kg-sending="Sending">Request Home Watch consultation</button>
                                 </form>"""
 
@@ -468,6 +469,7 @@ SIMPLE_FORM = """                                <form class="kg-contact-form" a
                                     <input type="hidden" name="_next" value="https://www.knightgroup.com/thank-you">
                                     <label class="visually-hidden" for="{fid}-hp">Leave this field blank</label>
                                     <input class="kg-hp" id="{fid}-hp" type="text" name="address_2" autocomplete="off" tabindex="-1">
+                                    <input type="text" name="_gotcha" class="kg-hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none !important">
                                     <button type="submit" class="kg-contact-form__submit" data-kg-sending="Sending">Request consultation</button>
                                 </form>"""
 

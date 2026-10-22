@@ -992,3 +992,6 @@ ${data.message}
     document.addEventListener('DOMContentLoaded', window.kgInitLeadTracking);
     document.addEventListener('kg-includes-ready', window.kgInitLeadTracking);
 })();
+
+/* KG spam guard (2026-10-22): honeypot + minimum fill time for Formspree forms. Runs in capture phase before other submit handlers. */
+(function(){var t0=Date.now(),MIN=3000;document.addEventListener('submit',function(e){var f=e.target;if(!f||!f.getAttribute||(f.getAttribute('action')||'').indexOf('formspree.io')===-1)return;var hp=f.querySelector('[name="_gotcha"]'),hp2=f.querySelector('[name="address_2"]');if((hp&&hp.value)||(hp2&&hp2.value)){e.preventDefault();e.stopImmediatePropagation();return;}var wait=MIN-(Date.now()-t0);if(wait>0&&f.dataset.kgTimed!=='1'){e.preventDefault();e.stopImmediatePropagation();f.dataset.kgTimed='1';setTimeout(function(){if(f.requestSubmit){f.requestSubmit();}else{f.submit();}},wait);}},true);})();

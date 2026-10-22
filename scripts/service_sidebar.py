@@ -154,6 +154,7 @@ def render_service_sidebar(
                                     <input type="hidden" name="_next" value="https://www.knightgroup.com/thank-you">
                                     <label class="visually-hidden" for="{token}-sidebar-hp">Leave this field blank</label>
                                     <input class="kg-hp" id="{token}-sidebar-hp" type="text" name="address_2" autocomplete="off" tabindex="-1">
+                                    <input type="text" name="_gotcha" class="kg-hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none !important">
                                     <button type="submit" class="kg-contact-form__submit" data-kg-sending="Sending">{html.escape(submit_label)}</button>
                                 </form>
                             </div>
