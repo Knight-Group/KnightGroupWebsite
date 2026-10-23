@@ -3238,6 +3238,38 @@
       ]
     },
     {
+      "id": "kitchen-window-screen-repair-4410a01-before-after",
+      "title": "Kitchen window screen repair \u2014 before & after",
+      "description": "Before-and-after proof from a kitchen window screen repair job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-kitchen-window-screen-repair-4410a01.webp",
+          "filename": "before-after-kitchen-window-screen-repair-4410a01.webp",
+          "step": 1,
+          "title": "Kitchen window screen repair before and after",
+          "seoAlt": "Kitchen window screen repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a kitchen window screen repair job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Kitchen window screen repair: Built new screen and installed Remove and inspect the bowed kitchen window screen, straighten and reseat it where practical, and adjust the retaining hardware so the panel sits flush without insect gaps. If the removable panel cannot be straightened, rebuild one approximately 3-by -foot screen panel with new aluminum frame, mesh, and spline. This assumes the main window frame and\u2026",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "laminate-floor-on-hallway-ramp-transitio-32347a1-before-after",
       "title": "Laminate Floor on Hallway Ramp Transition \u2014 before & after",
       "description": "Before-and-after proof from a laminate floor on hallway ramp transition job completed by Knight Group in Safety Harbor.",
@@ -9840,6 +9872,32 @@
       "beforeAfter": true,
       "groupTitle": "Kitchen window blinds repair \u2014 before & after",
       "groupDescription": "Before-and-after proof from a kitchen window blinds repair job completed by Knight Group."
+    },
+    {
+      "src": "GalleryImages/before-after-kitchen-window-screen-repair-4410a01.webp",
+      "filename": "before-after-kitchen-window-screen-repair-4410a01.webp",
+      "group": "kitchen-window-screen-repair-4410a01-before-after",
+      "step": 1,
+      "title": "Kitchen window screen repair before and after",
+      "seoAlt": "Kitchen window screen repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a kitchen window screen repair job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Kitchen window screen repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a kitchen window screen repair job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Kitchen window screen repair: Built new screen and installed Remove and inspect the bowed kitchen window screen, straighten and reseat it where practical, and adjust the retaining hardware so the panel sits flush without insect gaps. If the removable panel cannot be straightened, rebuild one approximately 3-by -foot screen panel with new aluminum frame, mesh, and spline. This assumes the main window frame and\u2026",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-laminate-floor-on-hallway-ramp-transitio-32347a1.webp",

@@ -4914,5 +4914,30 @@
     "photoBefore": 2,
     "photoProcess": 0,
     "photoAfter": 1
+  },
+  "before-after-kitchen-window-screen-repair-4410a01.webp": {
+    "group": "kitchen-window-screen-repair-4410a01-before-after",
+    "groupTitle": "Kitchen window screen repair \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a kitchen window screen repair job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Kitchen window screen repair before and after",
+    "description": "Before-and-after comparison from a kitchen window screen repair job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "kitchen-window-screen-repair-4410a01",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Kitchen window screen repair: Built new screen and installed Remove and inspect the bowed kitchen window screen, straighten and reseat it where practical, and adjust the retaining hardware so the panel sits flush without insect gaps. If the removable panel cannot be straightened, rebuild one approximately 3-by -foot screen panel with new aluminum frame, mesh, and spline. This assumes the main window frame and\u2026",
+    "photoBefore": 4,
+    "photoProcess": 0,
+    "photoAfter": 1
   }
 }
