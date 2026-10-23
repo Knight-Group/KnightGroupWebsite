@@ -4889,5 +4889,30 @@
     "photoBefore": 3,
     "photoProcess": 0,
     "photoAfter": 1
+  },
+  "before-after-mailbox-is-swinging-needs-secured-01d7753.webp": {
+    "group": "mailbox-is-swinging-needs-secured-01d7753-before-after",
+    "groupTitle": "Mailbox is swinging needs secured \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a mailbox is swinging needs secured job completed by Knight Group in Tampa.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Mailbox is swinging needs secured before and after",
+    "description": "Before-and-after comparison from a mailbox is swinging needs secured job completed in a Tampa home.",
+    "beforeAfter": true,
+    "scope_slug": "mailbox-is-swinging-needs-secured-01d7753",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Tampa",
+    "citySlug": "tampa",
+    "countyName": "Hillsborough County",
+    "completedMonth": "October 2026",
+    "workNotes": "Mailbox is swinging needs secured: Used long wood lag screws to re secure mailbox where broken",
+    "photoBefore": 2,
+    "photoProcess": 0,
+    "photoAfter": 1
   }
 }
