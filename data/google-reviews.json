@@ -1,13 +1,22 @@
 {
   "ratingValue": 5,
-  "reviewCount": 16,
-  "fetchedAt": "2026-10-05T14:16:44.044Z",
+  "reviewCount": 17,
+  "fetchedAt": "2026-10-24T12:15:36.765Z",
   "source": {
     "account": "accounts/114830235101160247472",
     "location": "locations/15551195498878135337",
     "locationTitle": "Knight Group"
   },
   "reviews": [
+    {
+      "name": "Justin Mandel, DOM AP",
+      "meta": "Google review",
+      "date": "2026-10-23",
+      "text": "Gavin with the 500 IQ came over to adjust a screen that was seriously out of whack. It was misshapen to the point that it would let in massive bugs. It took multiple tries for him to fix it because it was such a challenge, but he nailed it. Now I can finally open my window and let the cool breeze in for the first time.",
+      "stars": 5,
+      "avatarColor": "#8a5a00",
+      "replied": false
+    },
     {
       "name": "Shireen Brathwaite",
       "meta": "Google review",
