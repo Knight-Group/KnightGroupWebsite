@@ -4939,5 +4939,30 @@
     "photoBefore": 4,
     "photoProcess": 0,
     "photoAfter": 1
+  },
+  "before-after-curbside-mailbox-and-post-replacement-9000475.webp": {
+    "group": "curbside-mailbox-and-post-replacement-9000475-before-after",
+    "groupTitle": "Curbside mailbox and post replacement \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a curbside mailbox and post replacement job completed by Knight Group in Gulfport.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Curbside mailbox and post replacement before and after",
+    "description": "Before-and-after comparison from a curbside mailbox and post replacement job completed in a Gulfport home.",
+    "beforeAfter": true,
+    "scope_slug": "curbside-mailbox-and-post-replacement-9000475",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Gulfport",
+    "citySlug": "",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Curbside mailbox and post replacement: Dug out remaining post in ground. With post hole digger dug down carefully to about 34 inches. Set post and poured cement for base. Leveled off. Cut out old hard and mounted with new Make any sharp edges or trip hazards safe, then inspect and remove the rusted mailbox, damaged post, and accessible existing footing. Install one standard-size galvanized rural mailbox on a\u2026",
+    "photoBefore": 4,
+    "photoProcess": 2,
+    "photoAfter": 2
   }
 }
