@@ -4964,5 +4964,30 @@
     "photoBefore": 4,
     "photoProcess": 2,
     "photoAfter": 2
+  },
+  "before-after-washer-leak-and-drain-cycle-diagnosis-a476f97.webp": {
+    "group": "washer-leak-and-drain-cycle-diagnosis-a476f97-before-after",
+    "groupTitle": "Washer leak and drain-cycle diagnosis \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a washer leak and drain-cycle diagnosis job completed by Knight Group in Largo.",
+    "category": "plumbing",
+    "serviceLink": "/Services/plumbing-services",
+    "step": 1,
+    "title": "Washer leak and drain-cycle diagnosis before and after",
+    "description": "Before-and-after comparison from a washer leak and drain-cycle diagnosis job completed in a Largo home.",
+    "beforeAfter": true,
+    "scope_slug": "washer-leak-and-drain-cycle-diagnosis-a476f97",
+    "source": "dispatch",
+    "cluster": "sink_drain",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Largo",
+    "citySlug": "largo",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Washer leak and drain-cycle diagnosis: Took off panels to diagnose washing machine. Drain hose the goes to pump slipped off fitting. I put it back a little higher on barb and tightened back down. Locking switch also loose cleaned off and put back together. Tested function. No leaks works as it should. Approx 40 square feet of flooring got wet but vacuumed up quickly. I see no water damage soft spots or swelling\u2026",
+    "photoBefore": 3,
+    "photoProcess": 3,
+    "photoAfter": 2
   }
 }
