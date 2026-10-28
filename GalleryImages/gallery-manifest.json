@@ -3712,6 +3712,36 @@
       "photoAfter": 1
     },
     {
+      "id": "no-hot-in-water-shower-4d13b15-before-after",
+      "title": "No Hot in Water Shower \u2014 before & after",
+      "description": "Before-and-after proof from a no hot in water shower job completed by Knight Group in Pinellas County.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-no-hot-in-water-shower-4d13b15.webp",
+          "filename": "before-after-no-hot-in-water-shower-4d13b15.webp",
+          "step": 1,
+          "title": "No Hot in Water Shower before and after",
+          "seoAlt": "No Hot in Water Shower before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a no hot in water shower job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "No Hot in Water Shower: Removed handle to expose scald guard. I moved the guard over 5 spots to the hotter side and tested function seems to work fine",
+      "photoBefore": 1,
+      "photoProcess": 1,
+      "photoAfter": 1
+    },
+    {
       "id": "office-room-7-laminate-flooring-12x14-1894b42-before-after",
       "title": "Office Room #7 Laminate Flooring 12x14' \u2014 before & after",
       "description": "Before-and-after proof from a office room #7 laminate flooring 12x14' job completed by Knight Group in Safety Harbor.",
@@ -10345,6 +10375,30 @@
       "workNotes": "I\u2019m not sure exactly how sensitive my meter is or what the moisture level usually is but it for sure is saying that behind the stove was the most saturated. Odor wasn\u2019t very powerful at the moment but there is a musty/moldy smell on the left wall in the hallway behind the switch and behind the stove. I Did not see any plumbing issues, water damage or standing water anywhere can return with a pinned moisture meter\u2026",
       "photoBefore": 1,
       "photoProcess": 2,
+      "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-no-hot-in-water-shower-4d13b15.webp",
+      "filename": "before-after-no-hot-in-water-shower-4d13b15.webp",
+      "group": "no-hot-in-water-shower-4d13b15-before-after",
+      "step": 1,
+      "title": "No Hot in Water Shower before and after",
+      "seoAlt": "No Hot in Water Shower before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a no hot in water shower job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "No Hot in Water Shower \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a no hot in water shower job completed by Knight Group in Pinellas County.",
+      "cluster": "general",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "No Hot in Water Shower: Removed handle to expose scald guard. I moved the guard over 5 spots to the hotter side and tested function seems to work fine",
+      "photoBefore": 1,
+      "photoProcess": 1,
       "photoAfter": 1
     },
     {

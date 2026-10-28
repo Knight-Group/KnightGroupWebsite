@@ -4989,5 +4989,30 @@
     "photoBefore": 3,
     "photoProcess": 3,
     "photoAfter": 2
+  },
+  "before-after-no-hot-in-water-shower-4d13b15.webp": {
+    "group": "no-hot-in-water-shower-4d13b15-before-after",
+    "groupTitle": "No Hot in Water Shower \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a no hot in water shower job completed by Knight Group in Pinellas County.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "No Hot in Water Shower before and after",
+    "description": "Before-and-after comparison from a no hot in water shower job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "no-hot-in-water-shower-4d13b15",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "",
+    "citySlug": "",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "No Hot in Water Shower: Removed handle to expose scald guard. I moved the guard over 5 spots to the hotter side and tested function seems to work fine",
+    "photoBefore": 1,
+    "photoProcess": 1,
+    "photoAfter": 1
   }
 }
