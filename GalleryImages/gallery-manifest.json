@@ -3460,6 +3460,38 @@
       "photoAfter": 1
     },
     {
+      "id": "leaky-sink-e154113-before-after",
+      "title": "Leaky sink \u2014 before & after",
+      "description": "Before-and-after proof from a leaky sink job completed by Knight Group in St. Petersburg.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-leaky-sink-e154113.webp",
+          "filename": "before-after-leaky-sink-e154113.webp",
+          "step": 1,
+          "title": "Leaky sink before and after",
+          "seoAlt": "Leaky sink before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a leaky sink job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "sink_drain",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Leaky sink: Slip nut and faucet were leaking both very old. Removed old pop up assembly. Install new slip nut for trap. New faucet with new supply lines and new pop up assembly",
+      "photoBefore": 3,
+      "photoProcess": 3,
+      "photoAfter": 3
+    },
+    {
       "id": "localized-subfloor-leveling-repairs-bac45da-before-after",
       "title": "Localized subfloor leveling repairs \u2014 before & after",
       "description": "Before-and-after proof from a localized subfloor leveling repairs job completed by Knight Group in Safety Harbor.",
@@ -10195,6 +10227,32 @@
       "photoBefore": 1,
       "photoProcess": 0,
       "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-leaky-sink-e154113.webp",
+      "filename": "before-after-leaky-sink-e154113.webp",
+      "group": "leaky-sink-e154113-before-after",
+      "step": 1,
+      "title": "Leaky sink before and after",
+      "seoAlt": "Leaky sink before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a leaky sink job completed in a St. Petersburg home.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "groupTitle": "Leaky sink \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a leaky sink job completed by Knight Group in St. Petersburg.",
+      "cluster": "sink_drain",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "October 2026",
+      "workNotes": "Leaky sink: Slip nut and faucet were leaking both very old. Removed old pop up assembly. Install new slip nut for trap. New faucet with new supply lines and new pop up assembly",
+      "photoBefore": 3,
+      "photoProcess": 3,
+      "photoAfter": 3
     },
     {
       "src": "GalleryImages/before-after-localized-subfloor-leveling-repairs-bac45da.webp",

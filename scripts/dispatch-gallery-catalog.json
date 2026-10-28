@@ -5014,5 +5014,30 @@
     "photoBefore": 1,
     "photoProcess": 1,
     "photoAfter": 1
+  },
+  "before-after-leaky-sink-e154113.webp": {
+    "group": "leaky-sink-e154113-before-after",
+    "groupTitle": "Leaky sink \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a leaky sink job completed by Knight Group in St. Petersburg.",
+    "category": "plumbing",
+    "serviceLink": "/Services/plumbing-services",
+    "step": 1,
+    "title": "Leaky sink before and after",
+    "description": "Before-and-after comparison from a leaky sink job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "leaky-sink-e154113",
+    "source": "dispatch",
+    "cluster": "sink_drain",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Leaky sink: Slip nut and faucet were leaking both very old. Removed old pop up assembly. Install new slip nut for trap. New faucet with new supply lines and new pop up assembly",
+    "photoBefore": 3,
+    "photoProcess": 3,
+    "photoAfter": 3
   }
 }
