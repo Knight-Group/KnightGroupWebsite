@@ -5039,5 +5039,30 @@
     "photoBefore": 3,
     "photoProcess": 3,
     "photoAfter": 3
+  },
+  "before-after-holes-around-the-exterior-outlet-a3bc464.webp": {
+    "group": "holes-around-the-exterior-outlet-a3bc464-before-after",
+    "groupTitle": "Holes around the exterior outlet \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a holes around the exterior outlet job completed by Knight Group in St. Petersburg.",
+    "category": "electrical",
+    "serviceLink": "/Services/electrical-work",
+    "step": 1,
+    "title": "Holes around the exterior outlet before and after",
+    "description": "Before-and-after comparison from a holes around the exterior outlet job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "holes-around-the-exterior-outlet-a3bc464",
+    "source": "dispatch",
+    "cluster": "electrical_fixture",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "",
+    "workNotes": "The bank-approved price stays to . Signed estimate #95 is unchanged. On this ticket we are completing only three lines. Crawl-space openings: hardware cloth over the vents and the gap. We do not go into the crawl space, and we do not repair piers. A framed crawl-in cover is not included. Exterior outlet: patch the holes around the outlet and paint to the wall. This is not electrical work. If the box is loose or a\u2026",
+    "photoBefore": 6,
+    "photoProcess": 0,
+    "photoAfter": 1
   }
 }

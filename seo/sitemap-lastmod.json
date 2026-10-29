@@ -220,8 +220,8 @@
   "sha256": "3612811e94a6e4f72433e2dd5d38a88c2aaa355de404e1132230cee89c8f09a3"
  },
  "https://www.knightgroup.com/gallery/a-wall-outlet-repair-93788a6-before-after": {
-  "lastmod": "2026-10-23",
-  "sha256": "c6f96d28d8c5c39e3e2406eab187dc2506a5d6f7adbb907f38f506890bc9eb9f"
+  "lastmod": "2026-10-29",
+  "sha256": "65a611a72ce914e1604724d39805d743080989dbe01020234773536b7a7fcc20"
  },
  "https://www.knightgroup.com/gallery/ac-filter-and-airflow-service-3b3c0e8-before-after": {
   "lastmod": "2026-10-23",
@@ -248,8 +248,8 @@
   "sha256": "8c782a1cc72a6d3c943f6efb9a4b416a6c1ccd65492542501949255745504563"
  },
  "https://www.knightgroup.com/gallery/ballast-light-fixture-bbe38e2-before-after": {
-  "lastmod": "2026-10-23",
-  "sha256": "b67a26bb0d04b24ceec4c43b52bfeaa0cc4310df5ea3c3d88e133c7335ba3a7f"
+  "lastmod": "2026-10-29",
+  "sha256": "3937fe19e1ca692561dd7192a5b33eb686ca97c4039bb65fa46cfba1b8e78993"
  },
  "https://www.knightgroup.com/gallery/baseboard-cap-molding-replacement-056b4de-before-after": {
   "lastmod": "2026-10-28",
@@ -615,6 +615,10 @@
   "lastmod": "2026-10-28",
   "sha256": "8332fcd56e5f4ac9266875ffd34733496c35c19d062299f42381d1c01ef16ce3"
  },
+ "https://www.knightgroup.com/gallery/holes-around-the-exterior-outlet-a3bc464-before-after": {
+  "lastmod": "2026-10-29",
+  "sha256": "2d2e25c33dc94344a921ae6edcdde0416efd765c3410959a687eb92d08a2b9c2"
+ },
  "https://www.knightgroup.com/gallery/hot-water-only-in-bath-tub-745e031-before-after": {
   "lastmod": "2026-10-28",
   "sha256": "06c4d341d5fafa8bc48800f6cb07e389bcec410b09532484d3c2f5b09241176f"
@@ -640,12 +644,12 @@
   "sha256": "ce425e608a4f7d283f2b10fdcad4cdced5b8299cb6529e0b12921991ab7a23ad"
  },
  "https://www.knightgroup.com/gallery/kitchen-cabinet-outlet-repair-e5d5832-before-after": {
-  "lastmod": "2026-10-23",
-  "sha256": "709acb1dd206f5912437e720f9c6133d177ba905605fff0bff108cfefbaadda8"
+  "lastmod": "2026-10-29",
+  "sha256": "565dd512a017b6aaa2ffb958373bcab54241e23f2e0c18c08a3fb142eba67eb7"
  },
  "https://www.knightgroup.com/gallery/kitchen-ceiling-light-fixture-9fd0b59-before-after": {
-  "lastmod": "2026-10-23",
-  "sha256": "5796084b9f8fe421307e6bf7258c6440e4c6dfe8574559d4b75ae595913626df"
+  "lastmod": "2026-10-29",
+  "sha256": "e848735ef99d0ae25c985bd066992f021d0e21d1d5c35f9e7882553685d77b43"
  },
  "https://www.knightgroup.com/gallery/kitchen-ceiling-stain-and-drywall-repair-0f15934-before-after": {
   "lastmod": "2026-10-23",
@@ -856,8 +860,8 @@
   "sha256": "da5477d7c620ac410a713863c187d1aee74bad7456bf5dfeea6129e35f2ab41e"
  },
  "https://www.knightgroup.com/gallery/repair-or-replace-the-nonworking-light-f-b51bc9e-before-after": {
-  "lastmod": "2026-10-23",
-  "sha256": "e8cfed5b61afa3d38cf09436e33bb4f8c79f0265cdab848c16114f9b08be0728"
+  "lastmod": "2026-10-29",
+  "sha256": "eb44946a3273a72872df34619d7f59bbc0a255926c85991c6d03b4aa16d37677"
  },
  "https://www.knightgroup.com/gallery/repair-upstairs-fan-8c7bf88-before-after": {
   "lastmod": "2026-10-23",
@@ -904,8 +908,8 @@
   "sha256": "d37523aa885e00dc74dcc4414f7a5bdcbc31aec9f2d0fdf8e567f2bb2ecb672a"
  },
  "https://www.knightgroup.com/gallery/replace-the-bathroom-light-fixture-at-th-cd5e010-before-after": {
-  "lastmod": "2026-10-23",
-  "sha256": "f60063047aa5276e278b75026031e1f16a518368ea597e35311c6f2f81446961"
+  "lastmod": "2026-10-29",
+  "sha256": "ac18d0625f60818272833bae0a1413fdddf023ca8cee8e72bef6308b8fc2b40d"
  },
  "https://www.knightgroup.com/gallery/replacement-blinds-kitchen-window-8ce39b7-before-after": {
   "lastmod": "2026-10-23",
@@ -940,8 +944,8 @@
   "sha256": "aacd0ca70b2e8f877a969b5f02da89126785a48b3317006ccd155eeebedb99ef"
  },
  "https://www.knightgroup.com/gallery/secure-outlets-5be7424-before-after": {
-  "lastmod": "2026-10-23",
-  "sha256": "abe030dab41a3e982656a8f9f816d7b36f09e9751e3b9112a09d3907a3bb1a32"
+  "lastmod": "2026-10-29",
+  "sha256": "9fdc9731ef3ccc51a75b74a7078cbaa8cd84aa277574d4c926dc21d492fd26bf"
  },
  "https://www.knightgroup.com/gallery/set-drying-equipment-f960403-before-after": {
   "lastmod": "2026-10-27",

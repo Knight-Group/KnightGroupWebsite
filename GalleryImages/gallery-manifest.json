@@ -2802,6 +2802,37 @@
       "photoAfter": 2
     },
     {
+      "id": "holes-around-the-exterior-outlet-a3bc464-before-after",
+      "title": "Holes around the exterior outlet \u2014 before & after",
+      "description": "Before-and-after proof from a holes around the exterior outlet job completed by Knight Group in St. Petersburg.",
+      "category": "electrical",
+      "serviceLink": "/Services/electrical-work",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-holes-around-the-exterior-outlet-a3bc464.webp",
+          "filename": "before-after-holes-around-the-exterior-outlet-a3bc464.webp",
+          "step": 1,
+          "title": "Holes around the exterior outlet before and after",
+          "seoAlt": "Holes around the exterior outlet before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a holes around the exterior outlet job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "electrical_fixture",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "workNotes": "The bank-approved price stays to . Signed estimate #95 is unchanged. On this ticket we are completing only three lines. Crawl-space openings: hardware cloth over the vents and the gap. We do not go into the crawl space, and we do not repair piers. A framed crawl-in cover is not included. Exterior outlet: patch the holes around the outlet and paint to the wall. This is not electrical work. If the box is loose or a\u2026",
+      "photoBefore": 6,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "hornet-removal-wall-sealed-before-after",
       "title": "Hornet nest removal and wall sealed \u2014 before & after",
       "description": "Hornet nest removed from the wall and the opening sealed and finished cleanly.",
@@ -9649,6 +9680,31 @@
       "photoBefore": 2,
       "photoProcess": 0,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-holes-around-the-exterior-outlet-a3bc464.webp",
+      "filename": "before-after-holes-around-the-exterior-outlet-a3bc464.webp",
+      "group": "holes-around-the-exterior-outlet-a3bc464-before-after",
+      "step": 1,
+      "title": "Holes around the exterior outlet before and after",
+      "seoAlt": "Holes around the exterior outlet before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a holes around the exterior outlet job completed in a St. Petersburg home.",
+      "category": "electrical",
+      "serviceLink": "/Services/electrical-work",
+      "beforeAfter": true,
+      "groupTitle": "Holes around the exterior outlet \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a holes around the exterior outlet job completed by Knight Group in St. Petersburg.",
+      "cluster": "electrical_fixture",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "workNotes": "The bank-approved price stays to . Signed estimate #95 is unchanged. On this ticket we are completing only three lines. Crawl-space openings: hardware cloth over the vents and the gap. We do not go into the crawl space, and we do not repair piers. A framed crawl-in cover is not included. Exterior outlet: patch the holes around the outlet and paint to the wall. This is not electrical work. If the box is loose or a\u2026",
+      "photoBefore": 6,
+      "photoProcess": 0,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-horney-removal-wall-sealed.webp",
