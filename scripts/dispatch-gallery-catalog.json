@@ -5064,5 +5064,30 @@
     "photoBefore": 6,
     "photoProcess": 0,
     "photoAfter": 1
+  },
+  "before-after-crawl-space-openings-8cc8291.webp": {
+    "group": "crawl-space-openings-8cc8291-before-after",
+    "groupTitle": "Crawl-space openings \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a crawl-space openings job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Crawl-space openings before and after",
+    "description": "Before-and-after comparison from a crawl-space openings job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "crawl-space-openings-8cc8291",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "",
+    "workNotes": "The bank-approved price stays to . Signed estimate #95 is unchanged. On this ticket we are completing only three lines. Crawl-space openings: hardware cloth over the vents and the gap. We do not go into the crawl space, and we do not repair piers. A framed crawl-in cover is not included. Exterior outlet: patch the holes around the outlet and paint to the wall. This is not electrical work. If the box is loose or a\u2026",
+    "photoBefore": 1,
+    "photoProcess": 0,
+    "photoAfter": 2
   }
 }
