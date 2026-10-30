@@ -1,7 +1,7 @@
 {
   "ratingValue": 5,
-  "reviewCount": 17,
-  "fetchedAt": "2026-10-24T12:15:36.765Z",
+  "reviewCount": 18,
+  "fetchedAt": "2026-10-30T12:18:31.900Z",
   "source": {
     "account": "accounts/114830235101160247472",
     "location": "locations/15551195498878135337",
@@ -9,13 +9,32 @@
   },
   "reviews": [
     {
+      "name": "Donna Altshul",
+      "meta": "Google review",
+      "date": "2026-10-29",
+      "text": "I highly recommend the Knight Group Handyman Service!! Nick sent me an estimate within minutes and scheduled my appointment within days. Gavin arrived on time and was a pleasure to work with! He was super nice, professional, and took great pride in his work. His attention to detail and quality workmanship were excellent. It’s so refreshing to find someone who is both skilled and a pleasure to work with. I highly recommend Gavin and Knight Group Handyman Services and would definitely use their services again!",
+      "stars": 5,
+      "avatarColor": "#274690",
+      "replied": true,
+      "ownerReply": {
+        "name": "Knight Group Handyman Services",
+        "date": "2026-10-29",
+        "text": "Thank you very much! "
+      }
+    },
+    {
       "name": "Justin Mandel, DOM AP",
       "meta": "Google review",
       "date": "2026-10-23",
       "text": "Gavin with the 500 IQ came over to adjust a screen that was seriously out of whack. It was misshapen to the point that it would let in massive bugs. It took multiple tries for him to fix it because it was such a challenge, but he nailed it. Now I can finally open my window and let the cool breeze in for the first time.",
       "stars": 5,
       "avatarColor": "#8a5a00",
-      "replied": false
+      "replied": true,
+      "ownerReply": {
+        "name": "Knight Group Handyman Services",
+        "date": "2026-10-29",
+        "text": "Thank you!!"
+      }
     },
     {
       "name": "Shireen Brathwaite",
