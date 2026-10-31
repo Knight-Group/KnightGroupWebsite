@@ -5089,5 +5089,30 @@
     "photoBefore": 1,
     "photoProcess": 0,
     "photoAfter": 2
+  },
+  "before-after-cracked-cross-joint-grout-replacement-292911e.webp": {
+    "group": "cracked-cross-joint-grout-replacement-292911e-before-after",
+    "groupTitle": "Cracked cross-joint grout replacement \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a cracked cross-joint grout replacement job completed by Knight Group in Oldsmar.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/caulking-repair",
+    "step": 1,
+    "title": "Cracked cross-joint grout replacement before and after",
+    "description": "Before-and-after comparison from a cracked cross-joint grout replacement job completed in a Oldsmar home.",
+    "beforeAfter": true,
+    "scope_slug": "cracked-cross-joint-grout-replacement-292911e",
+    "source": "dispatch",
+    "cluster": "caulk",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Oldsmar",
+    "citySlug": "oldsmar",
+    "countyName": "Pinellas County",
+    "completedMonth": "October 2026",
+    "workNotes": "Cracked cross-joint grout replacement: Removed all grout throughout shower and installed new grout Wiped down excess grout and hazing Remove and replace the accessible grout throughout the approximately 3-by -foot shower, including the mosaic floor, tiled bench, accent band, and tiled walls about 7.5 to 8 feet tall. Clean the joints and tile faces, install closely matched grout, and use color-matched bathroom\u2026",
+    "photoBefore": 9,
+    "photoProcess": 4,
+    "photoAfter": 4
   }
 }

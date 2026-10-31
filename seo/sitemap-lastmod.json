@@ -1,7 +1,7 @@
 {
  "https://www.knightgroup.com/": {
-  "lastmod": "2026-10-27",
-  "sha256": "9d6991e359b6f67d19e923adbfbba8fb9b5d8a2e82d9bb3aba61b7b8d6c3c67c"
+  "lastmod": "2026-10-31",
+  "sha256": "b9e81cf745f9caa8a44de4910d3ec9f7f23390a606f4996ff2e735ea27fcb4d6"
  },
  "https://www.knightgroup.com/Services/cabinet-repair": {
   "lastmod": "2026-10-23",
@@ -152,8 +152,8 @@
   "sha256": "696f7f2aa5e06add60567ea635630e85e6778cf5fd3a5312ba9fc43da1885cee"
  },
  "https://www.knightgroup.com/about": {
-  "lastmod": "2026-10-27",
-  "sha256": "365edeff86be7dbc91b503c7e6f21b4ac74b901b7dfb07323aeff8c68b4b1262"
+  "lastmod": "2026-10-31",
+  "sha256": "b68bd46eff4d17d6215c3be3e7bd4cbce3913053112819d632a57b71cac88dbe"
  },
  "https://www.knightgroup.com/beacon-square-handyman": {
   "lastmod": "2026-10-23",
@@ -308,8 +308,8 @@
   "sha256": "180dcb0ae15be169f8c16f3872bcdb5b6c285aa09b6f1ad2cfec3b8c67dfe688"
  },
  "https://www.knightgroup.com/gallery/caulking-on-roof-by-vents-ac2c2af-before-after": {
-  "lastmod": "2026-10-23",
-  "sha256": "a2561e22d284c904ce8dfff78fed7d495782388c06a99f289ade13c7eded56d4"
+  "lastmod": "2026-10-31",
+  "sha256": "edc7f4ce886c8c127d7c9054ecdf707cfad7ea116a01f316d2d7032318b187e3"
  },
  "https://www.knightgroup.com/gallery/ceiling-drywall-patch-2f1127e-before-after": {
   "lastmod": "2026-10-23",
@@ -378,6 +378,10 @@
  "https://www.knightgroup.com/gallery/corner-cabinet-shelf-repair-bc5b1e2-before-after": {
   "lastmod": "2026-10-23",
   "sha256": "168662c46b559e2c15f3410da57358d45d7c51612290fcd1cb42fb581ce00c97"
+ },
+ "https://www.knightgroup.com/gallery/cracked-cross-joint-grout-replacement-292911e-before-after": {
+  "lastmod": "2026-10-31",
+  "sha256": "82debbc3e20a6006f002c9d189bc2360b61cda9c2ad8ded8a049906e9b1ecc2f"
  },
  "https://www.knightgroup.com/gallery/crawl-space-openings-8cc8291-before-after": {
   "lastmod": "2026-10-29",
@@ -824,12 +828,12 @@
   "sha256": "b2005b15fce5accbd14c4636dc1e80cbf68af3aa809f2ada1dbe500e4ed6c303"
  },
  "https://www.knightgroup.com/gallery/recaulk-around-kitchen-windowsill-custom-5cca131-before-after": {
-  "lastmod": "2026-10-23",
-  "sha256": "be69e2e1606f1d9cbe8c9e57f12d88a04548d9ff6654400420433bdd87d6e8fd"
+  "lastmod": "2026-10-31",
+  "sha256": "5144823d16ca13c3ad280ced8634636b44de746a54c95a87d29f4bbee1a030e4"
  },
  "https://www.knightgroup.com/gallery/recaulk-shower-fb598d0-before-after": {
-  "lastmod": "2026-10-23",
-  "sha256": "afce071acea4a7aa7b142b782bc148d1821e87fc5485d42683453e0a08bb7c88"
+  "lastmod": "2026-10-31",
+  "sha256": "478a1c0e79bae60e890d2484e7ec8714e6556143d4bc5ef6f9474a9eceb415a0"
  },
  "https://www.knightgroup.com/gallery/refrigerator-leak-and-floor-damage-8e0dedc-before-after": {
   "lastmod": "2026-10-23",
@@ -964,8 +968,8 @@
   "sha256": "9109c860263aefd0785c0ad83959fa595d02ff9f2a13e95f5e18c0f757079336"
  },
  "https://www.knightgroup.com/gallery/sink-drain-caulk-trap-leak-7843b10-before-after": {
-  "lastmod": "2026-10-23",
-  "sha256": "f0a2cf6b0c7301e25ca6cf58e8c0dc90e6e9465c2add83d537908c0ce8f36d14"
+  "lastmod": "2026-10-31",
+  "sha256": "df8d867d4c1cb6f9524ee7aa21ee2220c33d0f58d178ed7a8befd4c419fb7a09"
  },
  "https://www.knightgroup.com/gallery/sink-drain-pop-up-assembly-36b860c-before-after": {
   "lastmod": "2026-10-28",
