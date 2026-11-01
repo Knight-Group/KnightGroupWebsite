@@ -68,7 +68,8 @@ def load_types(path: Path) -> tuple[set[str], list[str]]:
                 types.update(node_type)
             elif node_type:
                 types.add(node_type)
-            if node_type in {"ContactPage", "AboutPage"}:
+            type_list = node_type if isinstance(node_type, list) else [node_type]
+            if any(t in {"ContactPage", "AboutPage"} for t in type_list):
                 types.add("WebPage")
             action = node.get("potentialAction")
             if isinstance(action, dict) and action.get("@type"):
