@@ -335,3 +335,8 @@ Seven complete GSC days after the Sep 17 recrawl are Sep 18–24. Measure on or 
 - Added 'Recent Tampa handyman jobs' (4 real Tampa gallery jobs, tech first names, no client info), Tampa neighborhood links (Westchase, Town 'n' Country, Carrollwood, Citrus Park, Northdale, Egypt Lake-Leto, Temple Terrace, Hillsborough), 4-step quote process (free written quote from photos, no free in-person estimates, signed agreement first, on-site revision if scope changes), service internal links, call/quote CTAs.
 - 3 new visible FAQs; FAQPage JSON-LD node (8 Q&A) added to the page graph, matching visible text.
 - Why: biggest impression page (~9.6k impr/90d, pos 22.9, 0.23% CTR). Hand-added block marked kg-tampa-upgrade; geo_seo_copy.py regen would drop it (seo:all is broken anyway).
+
+## 2026-10-31 ~10:30 PM ET - KG Web Growth
+- galleries.html: hand-added 17 static links to orphan gallery pages (0 inbound links before) inside the existing crawl-hub list, between KGWG hand-added comment markers (same spot as the Oct 6 hand edit, which has survived Dispatch pushes). Skipped 6 thin titles (change-3, work-scope-33fc78f, handyman-repair-669cf03, front-need, replace-battery, remove-furniture) pending Nick. Wasp page linked; flagged to Nick. No title/meta/H1/URL change.
+- scripts/verify-schema-graph.py: fixed crash on list-valued @type (commit 1bc1f358). Tooling only.
+
