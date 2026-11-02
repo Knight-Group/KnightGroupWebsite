@@ -340,3 +340,11 @@ Seven complete GSC days after the Sep 17 recrawl are Sep 18–24. Measure on or 
 - galleries.html: hand-added 17 static links to orphan gallery pages (0 inbound links before) inside the existing crawl-hub list, between KGWG hand-added comment markers (same spot as the Oct 6 hand edit, which has survived Dispatch pushes). Skipped 6 thin titles (change-3, work-scope-33fc78f, handyman-repair-669cf03, front-need, replace-battery, remove-furniture) pending Nick. Wasp page linked; flagged to Nick. No title/meta/H1/URL change.
 - scripts/verify-schema-graph.py: fixed crash on list-valued @type (commit 1bc1f358). Tooling only.
 
+
+
+## 2026-11-02 - /clearwater-handyman body content upgrade (KG Web Growth)
+- Body only. Title, meta description, H1, canonical, URL unchanged (60-day rule respected; next title window ~Nov 12).
+- Added 'Recent Clearwater handyman jobs' (7 real Clearwater gallery jobs across 6 short write-ups, tech first names Vince and Gavin, no client info, no prices), nearby-area links (Safety Harbor, Dunedin, Largo, Palm Harbor, Oldsmar, Pinellas), 4-step quote process (free written quote from photos, no free in-person estimates, signed agreement first, on-site revision if scope changes), service internal links, call/quote CTAs.
+- 3 new visible FAQs; FAQPage JSON-LD node (8 Q&A) added to the page graph, matching visible text.
+- Why: ~3.95k impr/90d, 0 clicks, pos 15.3, and the page linked to none of its 12 local gallery proofs. Hand-added block marked kg-clearwater-upgrade; geo_seo_copy.py regen would drop it (seo:all still broken: scripts/sync-gallery-hub.py missing).
+- Sitemap rebuilt: lastmod moved only for /clearwater-handyman, /tampa-handyman and /galleries (real content changes Oct 31 / Nov 2).
