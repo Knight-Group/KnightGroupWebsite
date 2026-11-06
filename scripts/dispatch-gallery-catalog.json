@@ -5139,5 +5139,30 @@
     "photoBefore": 2,
     "photoProcess": 0,
     "photoAfter": 1
+  },
+  "before-after-pull-wood-flooring-and-moving-equipment-6cae8d3.webp": {
+    "group": "pull-wood-flooring-and-moving-equipment-6cae8d3-before-after",
+    "groupTitle": "Pull Wood Flooring and Moving Equipment \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a pull wood flooring and moving equipment job completed by Knight Group in Safety Harbor.",
+    "category": "carpentry",
+    "serviceLink": "/Services/carpentry-framing",
+    "step": 1,
+    "title": "Pull Wood Flooring and Moving Equipment before and after",
+    "description": "Before-and-after comparison from a pull wood flooring and moving equipment job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "pull-wood-flooring-and-moving-equipment-6cae8d3",
+    "source": "dispatch",
+    "cluster": "floor",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "November 2026",
+    "workNotes": "Replace laminate flooring: Had to get room clear of equipment. Pulled all existing floor much was wet. Cleaned floor and prepped for leveling. Used about 230 lbs of leveler most near bathroom and some in middle of room. Once cured installed provided flooring in accordance to manufacturer specifications. Miter and install quarter round for perimeter of room; Pull Wood Flooring and Moving Equipment: Removed office\u2026",
+    "photoBefore": 1,
+    "photoProcess": 1,
+    "photoAfter": 1
   }
 }
