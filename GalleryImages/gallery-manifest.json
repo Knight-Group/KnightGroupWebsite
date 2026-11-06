@@ -4129,6 +4129,37 @@
       "photoAfter": 3
     },
     {
+      "id": "pocket-and-hardware-repair-aaddceb-before-after",
+      "title": "Pocket and hardware repair \u2014 before & after",
+      "description": "Before-and-after proof from a pocket and hardware repair job completed by Knight Group in Pinellas Park.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-pocket-and-hardware-repair-aaddceb.webp",
+          "filename": "before-after-pocket-and-hardware-repair-aaddceb.webp",
+          "step": 1,
+          "title": "Pocket and hardware repair before and after",
+          "seoAlt": "Pocket and hardware repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a pocket and hardware repair job completed in a Pinellas Park home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Pinellas Park",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Pocket door track and hardware repair: Door is back on it's rails, slides open and shut although the railing is crooked and impossible to fix without taking apart the drywall. Customer was satisfied and left a glowing review Inspect the bathroom pocket door track, rollers, hangers, floor guide, and stops, then re-seat and align the door and test it for smooth travel and proper closure. Adjust or replace\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "pressure-wash-walk-way-b49a8fd-before-after",
       "title": "Pressure wash walk way \u2014 before & after",
       "description": "Before-and-after proof from a pressure wash walk way job completed by Knight Group in St. Petersburg.",
@@ -10936,6 +10967,31 @@
       "photoBefore": 3,
       "photoProcess": 2,
       "photoAfter": 3
+    },
+    {
+      "src": "GalleryImages/before-after-pocket-and-hardware-repair-aaddceb.webp",
+      "filename": "before-after-pocket-and-hardware-repair-aaddceb.webp",
+      "group": "pocket-and-hardware-repair-aaddceb-before-after",
+      "step": 1,
+      "title": "Pocket and hardware repair before and after",
+      "seoAlt": "Pocket and hardware repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a pocket and hardware repair job completed in a Pinellas Park home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Pocket and hardware repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a pocket and hardware repair job completed by Knight Group in Pinellas Park.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Pinellas Park",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Pocket door track and hardware repair: Door is back on it's rails, slides open and shut although the railing is crooked and impossible to fix without taking apart the drywall. Customer was satisfied and left a glowing review Inspect the bathroom pocket door track, rollers, hangers, floor guide, and stops, then re-seat and align the door and test it for smooth travel and proper closure. Adjust or replace\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-pressure-wash-walk-way-b49a8fd.webp",
