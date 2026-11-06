@@ -1,13 +1,22 @@
 {
   "ratingValue": 5,
-  "reviewCount": 18,
-  "fetchedAt": "2026-10-30T12:18:31.900Z",
+  "reviewCount": 19,
+  "fetchedAt": "2026-11-06T12:15:23.827Z",
   "source": {
     "account": "accounts/114830235101160247472",
     "location": "locations/15551195498878135337",
     "locationTitle": "Knight Group"
   },
   "reviews": [
+    {
+      "name": "Stephen",
+      "meta": "Google review",
+      "date": "2026-11-06",
+      "text": "Gavin was on schedule and was efficient in his repairs, he's been on ball with all repairs provided so far and I would HIGHLY recommend these guys, they've been great to work with",
+      "stars": 5,
+      "avatarColor": "#156f43",
+      "replied": false
+    },
     {
       "name": "Donna Altshul",
       "meta": "Google review",
