@@ -648,6 +648,37 @@
       "photoAfter": 2
     },
     {
+      "id": "change-5-window-panes-on-3-windows-2601b0c-before-after",
+      "title": "Change 5 window panes on 3 windows \u2014 before & after",
+      "description": "Before-and-after proof from a change 5 window panes on 3 windows job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-change-5-window-panes-on-3-windows-2601b0c.webp",
+          "filename": "before-after-change-5-window-panes-on-3-windows-2601b0c.webp",
+          "step": 1,
+          "title": "Change 5 window panes on 3 windows before and after",
+          "seoAlt": "Change 5 window panes on 3 windows before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a change 5 window panes on 3 windows job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "workNotes": "Remove and replace the two pictured lower window panes and restore the glazing seals in the existing aluminum frames. The allowance assumes single panes measuring approximately 46 by 14 inches and 33 by 15 inches based on the pictured tapes; final glass must be ordered from verified field measurements. Insulated, laminated, tempered, tinted, or otherwise specialty glass and damaged window-frame components will\u2026",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 3
+    },
+    {
       "id": "change-front-key-entries-588ccb1-before-after",
       "title": "Change front key entries \u2014 before & after",
       "description": "Before-and-after proof from a change front key entries job completed by Knight Group in St. Petersburg.",
@@ -8225,6 +8256,31 @@
       "photoBefore": 6,
       "photoProcess": 3,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-change-5-window-panes-on-3-windows-2601b0c.webp",
+      "filename": "before-after-change-5-window-panes-on-3-windows-2601b0c.webp",
+      "group": "change-5-window-panes-on-3-windows-2601b0c-before-after",
+      "step": 1,
+      "title": "Change 5 window panes on 3 windows before and after",
+      "seoAlt": "Change 5 window panes on 3 windows before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a change 5 window panes on 3 windows job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Change 5 window panes on 3 windows \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a change 5 window panes on 3 windows job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "workNotes": "Remove and replace the two pictured lower window panes and restore the glazing seals in the existing aluminum frames. The allowance assumes single panes measuring approximately 46 by 14 inches and 33 by 15 inches based on the pictured tapes; final glass must be ordered from verified field measurements. Insulated, laminated, tempered, tinted, or otherwise specialty glass and damaged window-frame components will\u2026",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 3
     },
     {
       "src": "GalleryImages/before-after-change-front-key-entries-588ccb1.webp",
