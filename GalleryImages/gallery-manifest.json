@@ -3261,6 +3261,38 @@
       "photoAfter": 1
     },
     {
+      "id": "kitchen-flush-mount-led-light-repair-b731715-before-after",
+      "title": "Kitchen flush-mount LED light repair \u2014 before & after",
+      "description": "Before-and-after proof from a kitchen flush-mount led light repair job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-kitchen-flush-mount-led-light-repair-b731715.webp",
+          "filename": "before-after-kitchen-flush-mount-led-light-repair-b731715.webp",
+          "step": 1,
+          "title": "Kitchen flush-mount LED light repair before and after",
+          "seoAlt": "Kitchen flush-mount LED light repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a kitchen flush-mount led light repair job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Kitchen flush-mount LED light repair: During replacement of the light fixture, I found that the existing wiring had been spliced outside a junction box or other approved enclosure, creating a potential fire hazard. To address the condition under National Electrical Code (NEC) Section , I sourced and installed a suitable junction box, enclosed the wiring connections, and completed installation of the new light\u2026",
+      "photoBefore": 7,
+      "photoProcess": 0,
+      "photoAfter": 4
+    },
+    {
       "id": "kitchen-sink-drain-service-c8d521c-before-after",
       "title": "Kitchen sink drain service \u2014 before & after",
       "description": "Before-and-after proof from a kitchen sink drain service job completed by Knight Group in St. Petersburg.",
@@ -10209,6 +10241,32 @@
       "photoBefore": 1,
       "photoProcess": 1,
       "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-kitchen-flush-mount-led-light-repair-b731715.webp",
+      "filename": "before-after-kitchen-flush-mount-led-light-repair-b731715.webp",
+      "group": "kitchen-flush-mount-led-light-repair-b731715-before-after",
+      "step": 1,
+      "title": "Kitchen flush-mount LED light repair before and after",
+      "seoAlt": "Kitchen flush-mount LED light repair before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a kitchen flush-mount led light repair job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Kitchen flush-mount LED light repair \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a kitchen flush-mount led light repair job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Kitchen flush-mount LED light repair: During replacement of the light fixture, I found that the existing wiring had been spliced outside a junction box or other approved enclosure, creating a potential fire hazard. To address the condition under National Electrical Code (NEC) Section , I sourced and installed a suitable junction box, enclosed the wiring connections, and completed installation of the new light\u2026",
+      "photoBefore": 7,
+      "photoProcess": 0,
+      "photoAfter": 4
     },
     {
       "src": "GalleryImages/before-after-kitchen-sink-drain-service-c8d521c.webp",

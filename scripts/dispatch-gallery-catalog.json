@@ -5189,5 +5189,30 @@
     "photoBefore": 1,
     "photoProcess": 0,
     "photoAfter": 1
+  },
+  "before-after-kitchen-flush-mount-led-light-repair-b731715.webp": {
+    "group": "kitchen-flush-mount-led-light-repair-b731715-before-after",
+    "groupTitle": "Kitchen flush-mount LED light repair \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a kitchen flush-mount led light repair job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Kitchen flush-mount LED light repair before and after",
+    "description": "Before-and-after comparison from a kitchen flush-mount led light repair job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "kitchen-flush-mount-led-light-repair-b731715",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Kevin Harrison",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "November 2026",
+    "workNotes": "Kitchen flush-mount LED light repair: During replacement of the light fixture, I found that the existing wiring had been spliced outside a junction box or other approved enclosure, creating a potential fire hazard. To address the condition under National Electrical Code (NEC) Section , I sourced and installed a suitable junction box, enclosed the wiring connections, and completed installation of the new light\u2026",
+    "photoBefore": 7,
+    "photoProcess": 0,
+    "photoAfter": 4
   }
 }
