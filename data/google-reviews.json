@@ -1,13 +1,22 @@
 {
   "ratingValue": 5,
-  "reviewCount": 19,
-  "fetchedAt": "2026-11-06T12:15:23.827Z",
+  "reviewCount": 20,
+  "fetchedAt": "2026-11-07T12:15:46.714Z",
   "source": {
     "account": "accounts/114830235101160247472",
     "location": "locations/15551195498878135337",
     "locationTitle": "Knight Group"
   },
   "reviews": [
+    {
+      "name": "Debi Allen",
+      "meta": "Google review",
+      "date": "2026-11-06",
+      "text": "Kevin from the Knight Group Handyman Services  came out and fixed a few things in the house and was very professional,knowledgeable,Courteous and fixed the issues quickly. I recommend his services. Thank You!",
+      "stars": 5,
+      "avatarColor": "#0f766e",
+      "replied": false
+    },
     {
       "name": "Stephen",
       "meta": "Google review",

@@ -3,6 +3,20 @@
     "@type": "Review",
     "author": {
       "@type": "Person",
+      "name": "Debi Allen"
+    },
+    "datePublished": "2026-11-06",
+    "reviewBody": "Kevin from the Knight Group Handyman Services  came out and fixed a few things in the house and was very professional,knowledgeable,Courteous and fixed the issues quickly. I recommend his services. Thank You!",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    }
+  },
+  {
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
       "name": "Stephen"
     },
     "datePublished": "2026-11-06",
@@ -21,20 +35,6 @@
     },
     "datePublished": "2026-10-29",
     "reviewBody": "I highly recommend the Knight Group Handyman Service!! Nick sent me an estimate within minutes and scheduled my appointment within days. Gavin arrived on time and was a pleasure to work with! He was super nice, professional, and took great pride in his work. His attention to detail and quality workmanship were excellent. It’s so refreshing to find someone who is both skilled and a pleasure to work with. I highly recommend Gavin and Knight Group Handyman Services and would definitely use their services again!",
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "5",
-      "bestRating": "5"
-    }
-  },
-  {
-    "@type": "Review",
-    "author": {
-      "@type": "Person",
-      "name": "Justin Mandel, DOM AP"
-    },
-    "datePublished": "2026-10-23",
-    "reviewBody": "Gavin with the 500 IQ came over to adjust a screen that was seriously out of whack. It was misshapen to the point that it would let in massive bugs. It took multiple tries for him to fix it because it was such a challenge, but he nailed it. Now I can finally open my window and let the cool breeze in for the first time.",
     "reviewRating": {
       "@type": "Rating",
       "ratingValue": "5",
