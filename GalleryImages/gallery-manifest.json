@@ -5946,6 +5946,36 @@
       ]
     },
     {
+      "id": "stove-hood-light-bulb-replacement-86d144e-before-after",
+      "title": "Stove hood light bulb replacement \u2014 before & after",
+      "description": "Before-and-after proof from a stove hood light bulb replacement job completed by Knight Group in Pinellas County.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-stove-hood-light-bulb-replacement-86d144e.webp",
+          "filename": "before-after-stove-hood-light-bulb-replacement-86d144e.webp",
+          "step": 1,
+          "title": "Stove hood light bulb replacement before and after",
+          "seoAlt": "Stove hood light bulb replacement before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a stove hood light bulb replacement job completed in a Pinellas County home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Kitchen garbage disposal repair: Troubleshot the kitchen garbage disposal after it failed to start when the sink-mounted button was pressed. The InSinkErator air-switch control module, which allows the sink-mounted button to turn the disposal on and off, was also receiving no power. Unplugged the disposal from the existing outlet and tested it on a separate power source, where it operated normally. Reconnected\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "stove-indicator-light-issue-before-after",
       "title": "Stove indicator light issue \u2014 before & after",
       "description": "Before-and-after proof from a stove indicator light issue job completed by Knight Group.",
@@ -12568,6 +12598,30 @@
       "countyName": "Pinellas County",
       "completedMonth": "September 2026",
       "workNotes": "Stove Handle: Installed OEM Stove handle after ordering part from HnK Parts Stove is missing handle, ordering OEM handle replacement",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-stove-hood-light-bulb-replacement-86d144e.webp",
+      "filename": "before-after-stove-hood-light-bulb-replacement-86d144e.webp",
+      "group": "stove-hood-light-bulb-replacement-86d144e-before-after",
+      "step": 1,
+      "title": "Stove hood light bulb replacement before and after",
+      "seoAlt": "Stove hood light bulb replacement before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a stove hood light bulb replacement job completed in a Pinellas County home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Stove hood light bulb replacement \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a stove hood light bulb replacement job completed by Knight Group in Pinellas County.",
+      "cluster": "general",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Kitchen garbage disposal repair: Troubleshot the kitchen garbage disposal after it failed to start when the sink-mounted button was pressed. The InSinkErator air-switch control module, which allows the sink-mounted button to turn the disposal on and off, was also receiving no power. Unplugged the disposal from the existing outlet and tested it on a separate power source, where it operated normally. Reconnected\u2026",
       "photoBefore": 1,
       "photoProcess": 0,
       "photoAfter": 1

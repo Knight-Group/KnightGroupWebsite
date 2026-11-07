@@ -5264,5 +5264,30 @@
     "photoBefore": 1,
     "photoProcess": 1,
     "photoAfter": 1
+  },
+  "before-after-stove-hood-light-bulb-replacement-86d144e.webp": {
+    "group": "stove-hood-light-bulb-replacement-86d144e-before-after",
+    "groupTitle": "Stove hood light bulb replacement \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a stove hood light bulb replacement job completed by Knight Group in Pinellas County.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Stove hood light bulb replacement before and after",
+    "description": "Before-and-after comparison from a stove hood light bulb replacement job completed in a Pinellas County home.",
+    "beforeAfter": true,
+    "scope_slug": "stove-hood-light-bulb-replacement-86d144e",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Kevin Harrison",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "",
+    "citySlug": "",
+    "countyName": "Pinellas County",
+    "completedMonth": "November 2026",
+    "workNotes": "Kitchen garbage disposal repair: Troubleshot the kitchen garbage disposal after it failed to start when the sink-mounted button was pressed. The InSinkErator air-switch control module, which allows the sink-mounted button to turn the disposal on and off, was also receiving no power. Unplugged the disposal from the existing outlet and tested it on a separate power source, where it operated normally. Reconnected\u2026",
+    "photoBefore": 1,
+    "photoProcess": 0,
+    "photoAfter": 1
   }
 }
