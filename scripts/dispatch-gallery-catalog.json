@@ -5214,5 +5214,30 @@
     "photoBefore": 7,
     "photoProcess": 0,
     "photoAfter": 4
+  },
+  "before-after-junction-box-ce7bd6f.webp": {
+    "group": "junction-box-ce7bd6f-before-after",
+    "groupTitle": "Junction box \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a junction box job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Junction box before and after",
+    "description": "Before-and-after comparison from a junction box job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "junction-box-ce7bd6f",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Kevin Harrison",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "November 2026",
+    "workNotes": "Kitchen flush-mount LED light repair: During replacement of the light fixture, I found that the existing wiring had been spliced outside a junction box or other approved enclosure, creating a potential fire hazard. To address the condition under National Electrical Code (NEC) Section , I sourced and installed a suitable junction box, enclosed the wiring connections, and completed installation of the new light\u2026",
+    "photoBefore": 1,
+    "photoProcess": 1,
+    "photoAfter": 2
   }
 }
