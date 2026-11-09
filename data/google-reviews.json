@@ -1,7 +1,7 @@
 {
   "ratingValue": 5,
   "reviewCount": 20,
-  "fetchedAt": "2026-11-07T12:15:46.714Z",
+  "fetchedAt": "2026-11-09T12:15:06.613Z",
   "source": {
     "account": "accounts/114830235101160247472",
     "location": "locations/15551195498878135337",
@@ -15,7 +15,12 @@
       "text": "Kevin from the Knight Group Handyman Services  came out and fixed a few things in the house and was very professional,knowledgeable,Courteous and fixed the issues quickly. I recommend his services. Thank You!",
       "stars": 5,
       "avatarColor": "#0f766e",
-      "replied": false
+      "replied": true,
+      "ownerReply": {
+        "name": "Knight Group Handyman Services",
+        "date": "2026-11-08",
+        "text": "Thank you very much! We all appreciate it, especially Kevin =D"
+      }
     },
     {
       "name": "Stephen",
@@ -24,7 +29,12 @@
       "text": "Gavin was on schedule and was efficient in his repairs, he's been on ball with all repairs provided so far and I would HIGHLY recommend these guys, they've been great to work with",
       "stars": 5,
       "avatarColor": "#156f43",
-      "replied": false
+      "replied": true,
+      "ownerReply": {
+        "name": "Knight Group Handyman Services",
+        "date": "2026-11-08",
+        "text": "Thank you!"
+      }
     },
     {
       "name": "Donna Altshul",
