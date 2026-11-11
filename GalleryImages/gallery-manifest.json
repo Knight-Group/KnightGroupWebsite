@@ -4686,6 +4686,38 @@
       ]
     },
     {
+      "id": "reglaze-3-cracked-window-lites-fc739e3-before-after",
+      "title": "Reglaze 3 cracked window lites \u2014 before & after",
+      "description": "Before-and-after proof from a reglaze 3 cracked window lites job completed by Knight Group in Tampa.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-reglaze-3-cracked-window-lites-fc739e3.webp",
+          "filename": "before-after-reglaze-3-cracked-window-lites-fc739e3.webp",
+          "step": 1,
+          "title": "Reglaze 3 cracked window lites before and after",
+          "seoAlt": "Reglaze 3 cracked window lites before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a reglaze 3 cracked window lites job completed in a Tampa home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Tampa",
+      "citySlug": "tampa",
+      "countyName": "Hillsborough County",
+      "completedMonth": "November 2026",
+      "workNotes": "Reglaze 3 cracked window lites: Reglaze three cracked lites in the old metal awning window in the photos. These are single panes, not a sealed double-pane unit. The rest of that window stays.; 2 doorways: remove hinges, fill mortises, paint: Two cased openings, shown in the photos. Remove the leftover hinge leaves, fill every mortise, sand, prime, and paint the jambs and casings on both openings. This is both\u2026",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 3
+    },
+    {
       "id": "remove-debris-41db93f-before-after",
       "title": "Remove Debris \u2014 before & after",
       "description": "Before-and-after proof from a remove debris job completed by Knight Group in Gulfport.",
@@ -11647,6 +11679,32 @@
       "photoBefore": 5,
       "photoProcess": 5,
       "photoAfter": 4
+    },
+    {
+      "src": "GalleryImages/before-after-reglaze-3-cracked-window-lites-fc739e3.webp",
+      "filename": "before-after-reglaze-3-cracked-window-lites-fc739e3.webp",
+      "group": "reglaze-3-cracked-window-lites-fc739e3-before-after",
+      "step": 1,
+      "title": "Reglaze 3 cracked window lites before and after",
+      "seoAlt": "Reglaze 3 cracked window lites before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a reglaze 3 cracked window lites job completed in a Tampa home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Reglaze 3 cracked window lites \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a reglaze 3 cracked window lites job completed by Knight Group in Tampa.",
+      "cluster": "general",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Tampa",
+      "citySlug": "tampa",
+      "countyName": "Hillsborough County",
+      "completedMonth": "November 2026",
+      "workNotes": "Reglaze 3 cracked window lites: Reglaze three cracked lites in the old metal awning window in the photos. These are single panes, not a sealed double-pane unit. The rest of that window stays.; 2 doorways: remove hinges, fill mortises, paint: Two cased openings, shown in the photos. Remove the leftover hinge leaves, fill every mortise, sand, prime, and paint the jambs and casings on both openings. This is both\u2026",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 3
     },
     {
       "src": "GalleryImages/before-after-remove-debris-41db93f.webp",
