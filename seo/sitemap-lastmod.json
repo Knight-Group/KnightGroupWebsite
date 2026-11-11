@@ -208,8 +208,12 @@
   "sha256": "c7b527c1e92bb914cac19d8dbe494ab80749dedfbf4b3b46da2d22f221d481d3"
  },
  "https://www.knightgroup.com/galleries": {
-  "lastmod": "2026-11-02",
-  "sha256": "fa2faa0b0088a2fbfd0a172be274f6cc45ba772692f2101d90956507dcbcf0e3"
+  "lastmod": "2026-11-11",
+  "sha256": "32c2f29cb084c225376403e1af9b27d40b7558283fc36569571fd6efd4e983a8"
+ },
+ "https://www.knightgroup.com/gallery/2-remove-hinges-fill-mortises-paint-f10238e-before-after": {
+  "lastmod": "2026-11-11",
+  "sha256": "d72c8df7542ea4c0ffeac7459b29b2b67a5da0d3e21cc8d31a450428f8696b71"
  },
  "https://www.knightgroup.com/gallery/2-toilets-7f8c499-before-after": {
   "lastmod": "2026-10-23",
@@ -493,7 +497,7 @@
  },
  "https://www.knightgroup.com/gallery/fill-sand-and-paint-valance-ecb97b7-before-after": {
   "lastmod": "2026-11-11",
-  "sha256": "cb727bacaafeff94b6f4186fb61e459394f52066732b459d63b0f09a0fe668d7"
+  "sha256": "da1692e2f01e10b0527b652c91d7c11af2495507232205d22449c38956b28d83"
  },
  "https://www.knightgroup.com/gallery/fill-valve-f6e4347-before-after": {
   "lastmod": "2026-11-11",
@@ -753,7 +757,7 @@
  },
  "https://www.knightgroup.com/gallery/match-then-paint-middle-bedroom-a5e92c6-before-after": {
   "lastmod": "2026-11-11",
-  "sha256": "b24e55eab06d39dc9e8e6bb932073ad962717a42eea1d784c689b9e8ed5b7fd3"
+  "sha256": "f3347ccf17af4e7510bcb0645d47cb4da74ba7854460f5f4384e15a42ad5c910"
  },
  "https://www.knightgroup.com/gallery/microwave-loght-11413a9-before-after": {
   "lastmod": "2026-11-11",
@@ -793,7 +797,7 @@
  },
  "https://www.knightgroup.com/gallery/paint-ceiling-stains-1daac32-before-after": {
   "lastmod": "2026-11-11",
-  "sha256": "32aeffc546deeb4bef7f9ae229ef19b4c06252c1f9208c68d83c40b9bd8f4810"
+  "sha256": "797254466bb8db631925ce279d0b1c0150504838bcc1942c8294f5996b48b944"
  },
  "https://www.knightgroup.com/gallery/pantry-cabinets-c33ea57-before-after": {
   "lastmod": "2026-11-11",
@@ -981,11 +985,11 @@
  },
  "https://www.knightgroup.com/gallery/scrape-loose-and-peeling-wall-paint-a18d950-before-after": {
   "lastmod": "2026-11-11",
-  "sha256": "c0eaa8573df1dfb84ab66b99b728dfda109635c9f5c04bf9de963993807aeafa"
+  "sha256": "3abdbd48ba56aa58b0aa33a210e1b28cd321f53ad3c22864c719d733ad83797f"
  },
  "https://www.knightgroup.com/gallery/scrape-prime-paint-fascia-rake-soffit-abbb7e4-before-after": {
   "lastmod": "2026-11-11",
-  "sha256": "4ad5d7f515fe774ae8cfb878768146d8fbdf9cb1803c0955f96a92b317437c7f"
+  "sha256": "1b78780516711a17e70115a0067c8a4cee7268fba099b4e57b9f394e258d5137"
  },
  "https://www.knightgroup.com/gallery/secure-outlets-5be7424-before-after": {
   "lastmod": "2026-10-29",

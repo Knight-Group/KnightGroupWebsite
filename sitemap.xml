@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/galleries</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -699,6 +699,12 @@
   <url>
     <loc>https://www.knightgroup.com/gallery/door-wedge-before-after</loc>
     <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.knightgroup.com/gallery/2-remove-hinges-fill-mortises-paint-f10238e-before-after</loc>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.64</priority>
   </url>

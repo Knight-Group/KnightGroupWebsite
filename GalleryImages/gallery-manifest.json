@@ -32,6 +32,38 @@
   ],
   "groups": [
     {
+      "id": "2-remove-hinges-fill-mortises-paint-f10238e-before-after",
+      "title": "2 : remove hinges, fill mortises, paint \u2014 before & after",
+      "description": "Before-and-after proof from a 2 : remove hinges, fill mortises, paint job completed by Knight Group in Tampa.",
+      "category": "painting",
+      "serviceLink": "/Services/painting-finishing",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-2-remove-hinges-fill-mortises-paint-f10238e.webp",
+          "filename": "before-after-2-remove-hinges-fill-mortises-paint-f10238e.webp",
+          "step": 1,
+          "title": "2 : remove hinges, fill mortises, paint before and after",
+          "seoAlt": "2 : remove hinges, fill mortises, paint before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a 2 : remove hinges, fill mortises, paint job completed in a Tampa home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "paint",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Tampa",
+      "citySlug": "tampa",
+      "countyName": "Hillsborough County",
+      "completedMonth": "November 2026",
+      "workNotes": "Reglaze 3 cracked window lites: Reglaze three cracked lites in the old metal awning window in the photos. These are single panes, not a sealed double-pane unit. The rest of that window stays.; 2 doorways: remove hinges, fill mortises, paint: Two cased openings, shown in the photos. Remove the leftover hinge leaves, fill every mortise, sand, prime, and paint the jambs and casings on both openings. This is both\u2026",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "2-toilets-7f8c499-before-after",
       "title": "2 toilets \u2014 before & after",
       "description": "Before-and-after proof from a 2 toilets job completed by Knight Group in Trinity.",
@@ -7692,6 +7724,32 @@
       "beforeAfter": false,
       "groupTitle": "Window wall repair and rebuild",
       "groupDescription": "Window-area wall damage opened up, corrected, and rebuilt across multiple stages of the same job."
+    },
+    {
+      "src": "GalleryImages/before-after-2-remove-hinges-fill-mortises-paint-f10238e.webp",
+      "filename": "before-after-2-remove-hinges-fill-mortises-paint-f10238e.webp",
+      "group": "2-remove-hinges-fill-mortises-paint-f10238e-before-after",
+      "step": 1,
+      "title": "2 : remove hinges, fill mortises, paint before and after",
+      "seoAlt": "2 : remove hinges, fill mortises, paint before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a 2 : remove hinges, fill mortises, paint job completed in a Tampa home.",
+      "category": "painting",
+      "serviceLink": "/Services/painting-finishing",
+      "beforeAfter": true,
+      "groupTitle": "2 : remove hinges, fill mortises, paint \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a 2 : remove hinges, fill mortises, paint job completed by Knight Group in Tampa.",
+      "cluster": "paint",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Tampa",
+      "citySlug": "tampa",
+      "countyName": "Hillsborough County",
+      "completedMonth": "November 2026",
+      "workNotes": "Reglaze 3 cracked window lites: Reglaze three cracked lites in the old metal awning window in the photos. These are single panes, not a sealed double-pane unit. The rest of that window stays.; 2 doorways: remove hinges, fill mortises, paint: Two cased openings, shown in the photos. Remove the leftover hinge leaves, fill every mortise, sand, prime, and paint the jambs and casings on both openings. This is both\u2026",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-2-toilets-7f8c499.webp",
