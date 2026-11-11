@@ -4507,6 +4507,38 @@
       "photoAfter": 1
     },
     {
+      "id": "re-secure-soffit-and-putty-the-fascia-bf9519d-before-after",
+      "title": "Re-secure soffit and putty the fascia \u2014 before & after",
+      "description": "Before-and-after proof from a re-secure soffit and putty the fascia job completed by Knight Group in Tampa.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-re-secure-soffit-and-putty-the-fascia-bf9519d.webp",
+          "filename": "before-after-re-secure-soffit-and-putty-the-fascia-bf9519d.webp",
+          "step": 1,
+          "title": "Re-secure soffit and putty the fascia before and after",
+          "seoAlt": "Re-secure soffit and putty the fascia before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a re-secure soffit and putty the fascia job completed in a Tampa home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Tampa",
+      "citySlug": "tampa",
+      "countyName": "Hillsborough County",
+      "completedMonth": "November 2026",
+      "workNotes": "Reglaze 3 cracked window lites: Reglaze three cracked lites in the old metal awning window in the photos. These are single panes, not a sealed double-pane unit. The rest of that window stays.; 2 doorways: remove hinges, fill mortises, paint: Two cased openings, shown in the photos. Remove the leftover hinge leaves, fill every mortise, sand, prime, and paint the jambs and casings on both openings. This is both\u2026",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 8
+    },
+    {
       "id": "reaplce-range-hood-vent-97f35ca-before-after",
       "title": "Reaplce Range Hood Vent \u2014 before & after",
       "description": "Before-and-after proof from a reaplce range hood vent job completed by Knight Group in St. Petersburg.",
@@ -11454,6 +11486,32 @@
       "photoBefore": 2,
       "photoProcess": 0,
       "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-re-secure-soffit-and-putty-the-fascia-bf9519d.webp",
+      "filename": "before-after-re-secure-soffit-and-putty-the-fascia-bf9519d.webp",
+      "group": "re-secure-soffit-and-putty-the-fascia-bf9519d-before-after",
+      "step": 1,
+      "title": "Re-secure soffit and putty the fascia before and after",
+      "seoAlt": "Re-secure soffit and putty the fascia before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a re-secure soffit and putty the fascia job completed in a Tampa home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Re-secure soffit and putty the fascia \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a re-secure soffit and putty the fascia job completed by Knight Group in Tampa.",
+      "cluster": "general",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Tampa",
+      "citySlug": "tampa",
+      "countyName": "Hillsborough County",
+      "completedMonth": "November 2026",
+      "workNotes": "Reglaze 3 cracked window lites: Reglaze three cracked lites in the old metal awning window in the photos. These are single panes, not a sealed double-pane unit. The rest of that window stays.; 2 doorways: remove hinges, fill mortises, paint: Two cased openings, shown in the photos. Remove the leftover hinge leaves, fill every mortise, sand, prime, and paint the jambs and casings on both openings. This is both\u2026",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 8
     },
     {
       "src": "GalleryImages/before-after-reaplce-range-hood-vent-97f35ca.webp",
