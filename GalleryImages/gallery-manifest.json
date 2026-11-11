@@ -537,6 +537,38 @@
       "photoAfter": 2
     },
     {
+      "id": "cap-the-open-shower-pipe-835ddf1-before-after",
+      "title": "Cap the open shower pipe \u2014 before & after",
+      "description": "Before-and-after proof from a cap the open shower pipe job completed by Knight Group in Tampa.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-cap-the-open-shower-pipe-835ddf1.webp",
+          "filename": "before-after-cap-the-open-shower-pipe-835ddf1.webp",
+          "step": 1,
+          "title": "Cap the open shower pipe before and after",
+          "seoAlt": "Cap the open shower pipe before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a cap the open shower pipe job completed in a Tampa home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Tampa",
+      "citySlug": "tampa",
+      "countyName": "Hillsborough County",
+      "completedMonth": "November 2026",
+      "workNotes": "Reglaze 3 cracked window lites: Reglaze three cracked lites in the old metal awning window in the photos. These are single panes, not a sealed double-pane unit. The rest of that window stays.; 2 doorways: remove hinges, fill mortises, paint: Two cased openings, shown in the photos. Remove the leftover hinge leaves, fill every mortise, sand, prime, and paint the jambs and casings on both openings. This is both\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "carpet-removal-before-after",
       "title": "Carpet removal \u2014 before & after",
       "description": "Worn carpet and pad removed to expose subfloor ready for the next finish.",
@@ -8303,6 +8335,32 @@
       "photoBefore": 2,
       "photoProcess": 2,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-cap-the-open-shower-pipe-835ddf1.webp",
+      "filename": "before-after-cap-the-open-shower-pipe-835ddf1.webp",
+      "group": "cap-the-open-shower-pipe-835ddf1-before-after",
+      "step": 1,
+      "title": "Cap the open shower pipe before and after",
+      "seoAlt": "Cap the open shower pipe before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a cap the open shower pipe job completed in a Tampa home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Cap the open shower pipe \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a cap the open shower pipe job completed by Knight Group in Tampa.",
+      "cluster": "general",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Tampa",
+      "citySlug": "tampa",
+      "countyName": "Hillsborough County",
+      "completedMonth": "November 2026",
+      "workNotes": "Reglaze 3 cracked window lites: Reglaze three cracked lites in the old metal awning window in the photos. These are single panes, not a sealed double-pane unit. The rest of that window stays.; 2 doorways: remove hinges, fill mortises, paint: Two cased openings, shown in the photos. Remove the leftover hinge leaves, fill every mortise, sand, prime, and paint the jambs and casings on both openings. This is both\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-carpet-removal.webp",
