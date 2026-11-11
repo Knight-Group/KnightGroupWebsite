@@ -5414,5 +5414,30 @@
     "photoBefore": 4,
     "photoProcess": 0,
     "photoAfter": 1
+  },
+  "before-after-drywall-repair-at-the-pass-through-5d56191.webp": {
+    "group": "drywall-repair-at-the-pass-through-5d56191-before-after",
+    "groupTitle": "Drywall repair at the pass-through \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a drywall repair at the pass-through job completed by Knight Group in Tampa.",
+    "category": "painting",
+    "serviceLink": "/Services/drywall-repair",
+    "step": 1,
+    "title": "Drywall repair at the pass-through before and after",
+    "description": "Before-and-after comparison from a drywall repair at the pass-through job completed in a Tampa home.",
+    "beforeAfter": true,
+    "scope_slug": "drywall-repair-at-the-pass-through-5d56191",
+    "source": "dispatch",
+    "cluster": "drywall",
+    "workerName": "Kevin Harrison",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Tampa",
+    "citySlug": "tampa",
+    "countyName": "Hillsborough County",
+    "completedMonth": "November 2026",
+    "workNotes": "Reglaze 3 cracked window lites: Reglaze three cracked lites in the old metal awning window in the photos. These are single panes, not a sealed double-pane unit. The rest of that window stays.; 2 doorways: remove hinges, fill mortises, paint: Two cased openings, shown in the photos. Remove the leftover hinge leaves, fill every mortise, sand, prime, and paint the jambs and casings on both openings. This is both\u2026",
+    "photoBefore": 2,
+    "photoProcess": 0,
+    "photoAfter": 1
   }
 }
