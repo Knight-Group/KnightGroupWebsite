@@ -5514,5 +5514,30 @@
     "photoBefore": 7,
     "photoProcess": 2,
     "photoAfter": 3
+  },
+  "before-after-two-kitchen-sconces-owner-supplied-c205fcf.webp": {
+    "group": "two-kitchen-sconces-owner-supplied-c205fcf-before-after",
+    "groupTitle": "Two kitchen sconces, owner supplied \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a two kitchen sconces, owner supplied job completed by Knight Group in Safety Harbor.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Two kitchen sconces, owner supplied before and after",
+    "description": "Before-and-after comparison from a two kitchen sconces, owner supplied job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "two-kitchen-sconces-owner-supplied-c205fcf",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "November 2026",
+    "workNotes": "Interior walls, one light color: Painted all interior walls; Crown, baseboards, and door and window casing: Painted the crown, baseboards, and door and window casing.; Ceiling touch-up: Touched up the ceiling spots.; Garage interior: Painted the garage interior.; Enclosed lanai: Painted the enclosed lanai walls, ceiling, and beams.; Front door, HOA color: Painted the front door the HOA color.; Bedroom trim and\u2026",
+    "photoBefore": 2,
+    "photoProcess": 0,
+    "photoAfter": 1
   }
 }

@@ -6699,6 +6699,38 @@
       ]
     },
     {
+      "id": "two-kitchen-sconces-owner-supplied-c205fcf-before-after",
+      "title": "Two kitchen sconces, owner supplied \u2014 before & after",
+      "description": "Before-and-after proof from a two kitchen sconces, owner supplied job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-two-kitchen-sconces-owner-supplied-c205fcf.webp",
+          "filename": "before-after-two-kitchen-sconces-owner-supplied-c205fcf.webp",
+          "step": 1,
+          "title": "Two kitchen sconces, owner supplied before and after",
+          "seoAlt": "Two kitchen sconces, owner supplied before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a two kitchen sconces, owner supplied job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Interior walls, one light color: Painted all interior walls; Crown, baseboards, and door and window casing: Painted the crown, baseboards, and door and window casing.; Ceiling touch-up: Touched up the ceiling spots.; Garage interior: Painted the garage interior.; Enclosed lanai: Painted the enclosed lanai walls, ceiling, and beams.; Front door, HOA color: Painted the front door the HOA color.; Bedroom trim and\u2026",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "under-sink-drain-leak-repair-403f4d3-before-after",
       "title": "Under-sink drain leak repair \u2014 before & after",
       "description": "Before-and-after proof from a under-sink drain leak repair job completed by Knight Group in St. Petersburg.",
@@ -13480,6 +13512,32 @@
       "photoBefore": 23,
       "photoProcess": 1,
       "photoAfter": 6
+    },
+    {
+      "src": "GalleryImages/before-after-two-kitchen-sconces-owner-supplied-c205fcf.webp",
+      "filename": "before-after-two-kitchen-sconces-owner-supplied-c205fcf.webp",
+      "group": "two-kitchen-sconces-owner-supplied-c205fcf-before-after",
+      "step": 1,
+      "title": "Two kitchen sconces, owner supplied before and after",
+      "seoAlt": "Two kitchen sconces, owner supplied before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a two kitchen sconces, owner supplied job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Two kitchen sconces, owner supplied \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a two kitchen sconces, owner supplied job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Interior walls, one light color: Painted all interior walls; Crown, baseboards, and door and window casing: Painted the crown, baseboards, and door and window casing.; Ceiling touch-up: Touched up the ceiling spots.; Garage interior: Painted the garage interior.; Enclosed lanai: Painted the enclosed lanai walls, ceiling, and beams.; Front door, HOA color: Painted the front door the HOA color.; Bedroom trim and\u2026",
+      "photoBefore": 2,
+      "photoProcess": 0,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-under-sink-drain-leak-repair-403f4d3.webp",
