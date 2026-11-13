@@ -1677,6 +1677,38 @@
       "photoAfter": 1
     },
     {
+      "id": "enclosed-lanai-80d5146-before-after",
+      "title": "Enclosed lanai \u2014 before & after",
+      "description": "Before-and-after proof from a enclosed lanai job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-enclosed-lanai-80d5146.webp",
+          "filename": "before-after-enclosed-lanai-80d5146.webp",
+          "step": 1,
+          "title": "Enclosed lanai before and after",
+          "seoAlt": "Enclosed lanai before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a enclosed lanai job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Interior walls, one light color: Painted all interior walls; Crown, baseboards, and door and window casing: Painted the crown, baseboards, and door and window casing.; Ceiling touch-up: Touched up the ceiling spots.; Garage interior: Painted the garage interior.; Enclosed lanai: Painted the enclosed lanai walls, ceiling, and beams.; Front door, HOA color: Painted the front door the HOA color.; Bedroom trim and\u2026",
+      "photoBefore": 7,
+      "photoProcess": 2,
+      "photoAfter": 3
+    },
+    {
       "id": "exterior-coping-and-screens-f1920f7-before-after",
       "title": "Exterior coping and screens \u2014 before & after",
       "description": "Before-and-after proof from a exterior coping and screens job completed by Knight Group in St. Petersburg.",
@@ -9289,6 +9321,32 @@
       "photoBefore": 4,
       "photoProcess": 1,
       "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-enclosed-lanai-80d5146.webp",
+      "filename": "before-after-enclosed-lanai-80d5146.webp",
+      "group": "enclosed-lanai-80d5146-before-after",
+      "step": 1,
+      "title": "Enclosed lanai before and after",
+      "seoAlt": "Enclosed lanai before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a enclosed lanai job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Enclosed lanai \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a enclosed lanai job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Interior walls, one light color: Painted all interior walls; Crown, baseboards, and door and window casing: Painted the crown, baseboards, and door and window casing.; Ceiling touch-up: Touched up the ceiling spots.; Garage interior: Painted the garage interior.; Enclosed lanai: Painted the enclosed lanai walls, ceiling, and beams.; Front door, HOA color: Painted the front door the HOA color.; Bedroom trim and\u2026",
+      "photoBefore": 7,
+      "photoProcess": 2,
+      "photoAfter": 3
     },
     {
       "src": "GalleryImages/before-after-entrance-lock-rekey-a497f1c.webp",
