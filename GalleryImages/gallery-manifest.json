@@ -96,6 +96,38 @@
       "photoAfter": 3
     },
     {
+      "id": "28-inch-bathroom-door-898e50b-before-after",
+      "title": "28-inch bathroom door \u2014 before & after",
+      "description": "Before-and-after proof from a 28-inch bathroom door job completed by Knight Group in Safety Harbor.",
+      "category": "doors-windows",
+      "serviceLink": "/Services/doors-windows",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-28-inch-bathroom-door-898e50b.webp",
+          "filename": "before-after-28-inch-bathroom-door-898e50b.webp",
+          "step": 1,
+          "title": "28-inch bathroom door before and after",
+          "seoAlt": "28-inch bathroom door before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a 28-inch bathroom door job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "door_lock",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Interior walls, one light color: Painted all interior walls; Crown, baseboards, and door and window casing: Painted the crown, baseboards, and door and window casing.; Ceiling touch-up: Touched up the ceiling spots.; Garage interior: Painted the garage interior.; Enclosed lanai: Painted the enclosed lanai walls, ceiling, and beams.; Front door, HOA color: Painted the front door the HOA color.; Bedroom trim and\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "a-c-service-request-6963c57-before-after",
       "title": "A/C service request \u2014 before & after",
       "description": "Before-and-after proof from a a/c service request job completed by Knight Group in St. Petersburg.",
@@ -7936,6 +7968,32 @@
       "photoBefore": 8,
       "photoProcess": 2,
       "photoAfter": 3
+    },
+    {
+      "src": "GalleryImages/before-after-28-inch-bathroom-door-898e50b.webp",
+      "filename": "before-after-28-inch-bathroom-door-898e50b.webp",
+      "group": "28-inch-bathroom-door-898e50b-before-after",
+      "step": 1,
+      "title": "28-inch bathroom door before and after",
+      "seoAlt": "28-inch bathroom door before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a 28-inch bathroom door job completed in a Safety Harbor home.",
+      "category": "doors-windows",
+      "serviceLink": "/Services/doors-windows",
+      "beforeAfter": true,
+      "groupTitle": "28-inch bathroom door \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a 28-inch bathroom door job completed by Knight Group in Safety Harbor.",
+      "cluster": "door_lock",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Interior walls, one light color: Painted all interior walls; Crown, baseboards, and door and window casing: Painted the crown, baseboards, and door and window casing.; Ceiling touch-up: Touched up the ceiling spots.; Garage interior: Painted the garage interior.; Enclosed lanai: Painted the enclosed lanai walls, ceiling, and beams.; Front door, HOA color: Painted the front door the HOA color.; Bedroom trim and\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-a-c-service-request-6963c57.webp",
