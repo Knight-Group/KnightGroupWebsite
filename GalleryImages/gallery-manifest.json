@@ -3136,6 +3136,38 @@
       ]
     },
     {
+      "id": "interior-walls-one-light-color-320d2ed-before-after",
+      "title": "Interior walls, one light color \u2014 before & after",
+      "description": "Before-and-after proof from a interior walls, one light color job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-interior-walls-one-light-color-320d2ed.webp",
+          "filename": "before-after-interior-walls-one-light-color-320d2ed.webp",
+          "step": 1,
+          "title": "Interior walls, one light color before and after",
+          "seoAlt": "Interior walls, one light color before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a interior walls, one light color job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Interior walls, one light color: Painted all interior walls; Crown, baseboards, and door and window casing: Painted the crown, baseboards, and door and window casing.; Ceiling touch-up: Touched up the ceiling spots.; Garage interior: Painted the garage interior.; Enclosed lanai: Painted the enclosed lanai walls, ceiling, and beams.; Front door, HOA color: Painted the front door the HOA color.; Bedroom trim and\u2026",
+      "photoBefore": 21,
+      "photoProcess": 18,
+      "photoAfter": 6
+    },
+    {
       "id": "investigate-low-water-pressure-d125420-before-after",
       "title": "Investigate Low Water Pressure \u2014 before & after",
       "description": "Before-and-after proof from a investigate low water pressure job completed by Knight Group in St. Petersburg.",
@@ -10455,6 +10487,32 @@
       "photoBefore": 2,
       "photoProcess": 0,
       "photoAfter": 3
+    },
+    {
+      "src": "GalleryImages/before-after-interior-walls-one-light-color-320d2ed.webp",
+      "filename": "before-after-interior-walls-one-light-color-320d2ed.webp",
+      "group": "interior-walls-one-light-color-320d2ed-before-after",
+      "step": 1,
+      "title": "Interior walls, one light color before and after",
+      "seoAlt": "Interior walls, one light color before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a interior walls, one light color job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Interior walls, one light color \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a interior walls, one light color job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Interior walls, one light color: Painted all interior walls; Crown, baseboards, and door and window casing: Painted the crown, baseboards, and door and window casing.; Ceiling touch-up: Touched up the ceiling spots.; Garage interior: Painted the garage interior.; Enclosed lanai: Painted the enclosed lanai walls, ceiling, and beams.; Front door, HOA color: Painted the front door the HOA color.; Bedroom trim and\u2026",
+      "photoBefore": 21,
+      "photoProcess": 18,
+      "photoAfter": 6
     },
     {
       "src": "GalleryImages/before-after-investigate-low-water-pressure-d125420.webp",
