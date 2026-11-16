@@ -531,6 +531,17 @@ def generate_niche(defn: dict, manifest: list) -> None:
     manifest.append(manifest_entry("niche-service", slug, f"Services/{slug}.html", canonical, "0.78"))
 
 
+GEO_PROOF_DIR = ROOT / "seo" / "geo-proof"
+
+
+def geo_proof_block(slug: str) -> str:
+    """Hand-maintained job-proof section for a town page (seo/geo-proof/<slug>.html), or ''."""
+    path = GEO_PROOF_DIR / f"{slug}.html"
+    if not path.is_file():
+        return ""
+    return path.read_text(encoding="utf-8").strip() + "\n            \n            "
+
+
 def generate_city(
     city_slug: str,
     city_name: str,
@@ -591,7 +602,7 @@ def generate_city(
             alt_fallback=f"{city_name} handyman project in {county_name}",
             cache_bust=VERSION,
         ),
-        faq_html=render_faq(faqs, slug, county_name, h1=f"{city_name} handyman services"),
+        faq_html=geo_proof_block(slug) + render_faq(faqs, slug, county_name, h1=f"{city_name} handyman services"),
         related_html=render_related(related, ""),
         json_ld=graph,
         eyebrow=f"Safety Harbor · {county_name}",

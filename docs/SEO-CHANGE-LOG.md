@@ -348,3 +348,12 @@ Seven complete GSC days after the Sep 17 recrawl are Sep 18–24. Measure on or 
 - 3 new visible FAQs; FAQPage JSON-LD node (8 Q&A) added to the page graph, matching visible text.
 - Why: ~3.95k impr/90d, 0 clicks, pos 15.3, and the page linked to none of its 12 local gallery proofs. Hand-added block marked kg-clearwater-upgrade; geo_seo_copy.py regen would drop it (seo:all still broken: scripts/sync-gallery-hub.py missing).
 - Sitemap rebuilt: lastmod moved only for /clearwater-handyman, /tampa-handyman and /galleries (real content changes Oct 31 / Nov 2).
+
+
+## 2026-11-16 - Restore Tampa + Clearwater job-proof blocks, regeneration-safe (KG Web Growth)
+- Body only. Title, meta description, H1, canonical, URL, robots, sitemap and JSON-LD unchanged (sitemap not rebuilt by this commit).
+- Cause: Dispatch gallery publish c4851841 (Nov 5) re-ran scripts/build-seo-pages.py, which regenerated /tampa-handyman and /clearwater-handyman and dropped the hand-added Oct 31 (176be8a6) and Nov 2 (25f592f6) blocks and their FAQPage nodes.
+- Fix: blocks now live in seo/geo-proof/<slug>.html; build-seo-pages.py generate_city() injects them before the FAQ section on every build, so gallery publishes keep them. Verified: build-seo-pages.py + build-schema-graph.py on origin/main reproduce it byte-for-byte except these two page bodies.
+- /tampa-handyman: Oct 31 block restored plus one new real Tampa job (Nov 2026, tech Kevin: window reglazing, two doorways, pass-through drywall, soffit/fascia) linked to its 4 gallery pages.
+- /clearwater-handyman: Nov 2 block restored as-is.
+- Not restored: the extra visible FAQs and FAQPage JSON-LD nodes (schema change; proposed to Nick separately).
