@@ -6,7 +6,7 @@ from geo_city_data import CITY_PROFILES, COMBO_PROFILES, COUNTY_PROFILES
 from geo_seo_copy import city_copy, combo_copy, county_copy
 from seo_page_data import COUNTY_REGIONS
 
-GEO_FAQ: dict[str, list[tuple[str, str]]] = {}
+from geo_faq_overrides import GEO_FAQ
 
 
 def _city_slug_from_combo(combo_slug: str) -> str | None:
@@ -54,6 +54,13 @@ def _linkify_contact(text: str) -> str:
     return updated
 
 
+
+CITY_NEARBY_LINKS: dict[str, list[tuple[str, str]]] = {
+    "largo": [("/pinellas-park-handyman", "Pinellas Park handyman")],
+    "seminole": [("/pinellas-park-handyman", "Pinellas Park handyman")],
+    "st-petersburg": [("/pinellas-park-handyman", "Pinellas Park handyman")],
+}
+
 def build_city_body(city_slug: str, city_name: str, county_name: str, county_slug: str) -> str:
     profile = CITY_PROFILES.get(city_slug)
     if not profile:
@@ -77,6 +84,11 @@ def build_city_body(city_slug: str, city_name: str, county_name: str, county_slu
     )
     closing = closing_template.replace("{county_link}", county_link)
     combo_links = _city_combo_links_html(city_slug, city_name)
+    nearby = CITY_NEARBY_LINKS.get(city_slug) or []
+    nearby_html = ""
+    if nearby:
+        links = ", ".join(f'<a href="{href}">{label}</a>' for href, label in nearby)
+        nearby_html = f"<p>Nearby: {links}.</p>"
 
     return f"""
 <h2>Handyman services in {city_name}</h2>
@@ -97,6 +109,7 @@ def build_city_body(city_slug: str, city_name: str, county_name: str, county_slu
 <p>{closing}</p>
 <p>Leaving town for the season? See <a href="/home-watch-pinellas">Pinellas Home Watch</a> (weekly, biweekly, or one-time photo-documented checks) and <a href="/home-watch-pricing">Home Watch pricing</a>.</p>
 {combo_links}
+{nearby_html}
 """
 
 
@@ -106,15 +119,18 @@ def build_county_body(county_slug: str, county_name: str, city_names: list[str])
         return ""
 
     seo = county_copy(county_slug)
-    sample = ", ".join(city_names[:6])
-    if len(city_names) > 6:
-        sample += f", and {len(city_names) - 6} more communities"
+    if len(city_names) <= 1:
+        sample = city_names[0] if city_names else county_name
+    elif len(city_names) == 2:
+        sample = f"{city_names[0]} and {city_names[1]}"
+    else:
+        sample = ", ".join(city_names[:-1]) + f", and {city_names[-1]}"
     themes_html = _jobs_list(profile["themes"])
 
     link_parts = []
     for region in COUNTY_REGIONS:
         if region["hub_slug"] == county_slug:
-            for city in region["cities"][:5]:
+            for city in region["cities"]:
                 link_parts.append(f'<a href="/{city["slug"]}-handyman">{city["name"]}</a>')
             break
     city_links = ", ".join(link_parts)
@@ -134,10 +150,12 @@ def build_county_body(county_slug: str, county_name: str, city_names: list[str])
     )
     combo_links = ""
     if county_slug == "pinellas":
+        pinellas_cities = next((region["cities"] for region in COUNTY_REGIONS if region["hub_slug"] == "pinellas"), [])
+        pinellas_slugs = {city["slug"] for city in pinellas_cities}
         combo_bits = ", ".join(
             f'<a href="/{combo_slug}">{profile.get("service_label", combo_slug).title()}</a>'
             for combo_slug, profile in COMBO_PROFILES.items()
-            if _city_slug_from_combo(combo_slug)
+            if _city_slug_from_combo(combo_slug) in pinellas_slugs
         )
         if combo_bits:
             combo_links = f"<p>Popular city + service pages: {combo_bits}.</p>"

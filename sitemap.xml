@@ -44,7 +44,7 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/service-areas</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -182,7 +182,7 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/Services/drywall-repair</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
@@ -314,7 +314,7 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/pinellas-handyman</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.84</priority>
   </url>
@@ -326,7 +326,7 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/clearwater-handyman</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
@@ -344,7 +344,7 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/largo-handyman</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
@@ -362,25 +362,25 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/seminole-handyman</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.knightgroup.com/st-petersburg-handyman</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.knightgroup.com/hillsborough-handyman</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.84</priority>
   </url>
   <url>
     <loc>https://www.knightgroup.com/tampa-handyman</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
@@ -428,7 +428,7 @@
   </url>
   <url>
     <loc>https://www.knightgroup.com/pasco-handyman</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.84</priority>
   </url>
@@ -2015,5 +2015,23 @@
     <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.knightgroup.com/pinellas-park-handyman</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://www.knightgroup.com/tampa-drywall-repair</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.77</priority>
+  </url>
+  <url>
+    <loc>https://www.knightgroup.com/pre-listing-punch-list</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.74</priority>
   </url>
 </urlset>

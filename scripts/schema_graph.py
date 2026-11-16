@@ -910,9 +910,26 @@ def build_graph_for_page(
         )
     )
 
-    # Keep the FAQs visible in HTML. Google currently limits FAQ rich results
-    # to authoritative government and health sites, so local-service pages do
-    # not emit mass FAQPage markup.
+    # Keep FAQs visible in HTML. Google limits FAQ rich results to government
+    # and health sites, so most local-service pages do not emit FAQPage markup.
+    # An explicit allowlist keeps restored Q&A graph nodes on selected pages
+    # so gallery republishes that run this builder do not strip them again.
+    FAQ_SCHEMA_SLUGS = {
+        "tampa-handyman",
+        "clearwater-handyman",
+        "pinellas-park-handyman",
+        "tampa-drywall-repair",
+    }
+    slug = url.replace(f"{BASE}/", "").strip("/")
+    if slug in FAQ_SCHEMA_SLUGS and faq_entities:
+        graph.append(
+            {
+                "@type": "FAQPage",
+                "@id": f"{url}#faq",
+                "isPartOf": {"@id": f"{url}#webpage"},
+                "mainEntity": faq_entities,
+            }
+        )
 
     howto = extract_howto(html_content)
     if howto:

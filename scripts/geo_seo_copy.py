@@ -91,6 +91,15 @@ CITY_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
         "faq_licensed": ('Can Knight Group do plumbing or electrical work in Seminole?', 'Florida requires a DBPR license for electrical connection work and for plumbing that connects to drinking water. Vince Knight’s journeyman plumbing background helps diagnose the issue in Seminole; licensed trades are referred when the law requires it.'),
         "faq_schedule": ('How soon can you reach Seminole?', 'Most Seminole requests schedule within one to two business days on existing Pinellas County routes. Active leaks should be called in at (813) 649-3341 so we can triage and involve a licensed plumber when needed.'),
     },
+    "pinellas-park": {
+        "hero_lead": "Pinellas Park handyman from Safety Harbor — regular mid-county Pinellas routes between Largo, Seminole, and St. Petersburg.",
+        "meta_description": "Pinellas Park handyman from Safety Harbor: drywall, doors, paint-ready finish work, and punch-list repairs. Registered and insured. Free written estimate.",
+        "opening": "Knight Group schedules Pinellas Park visits from Safety Harbor with a written estimate and an insured crew on regular mid-county Pinellas routes. Pinellas Park sits between Largo, Seminole, and St. Petersburg, so it is a natural stop on those route days rather than a special trip.",
+        "scheduling": "Planning a Pinellas Park repair? Knight Group confirms Pinellas County routing first, then locks an arrival window. Weekend and after-hours slots are for emergency calls only.",
+        "closing": "See related service pages, then schedule a Pinellas Park visit. Active leaks should be called in so we can triage licensed-trade needs.",
+        "faq_price": ("How much does a typical handyman visit cost in Pinellas Park?", "Standard visits are $150 for the first hour and $75 each additional hour, with no two-hour minimum. Defined Pinellas Park scopes can be quoted as a flat rate after photos."),
+        "faq_schedule": ("How soon can you reach Pinellas Park?", "Most Pinellas Park requests schedule within one to two business days on existing Pinellas County routes. Active leaks should be called in at (813) 649-3341 so we can triage and involve a licensed plumber when needed."),
+    },
     "st-petersburg": {
         "hero_lead": 'Handyman repairs in St. Petersburg — registered, insured Safety Harbor crew serving Kenwood.',
         "meta_description": 'St. Petersburg handyman: drywall, doors, paint-ready finish work, and punch-list repairs from Safety Harbor. Registered and insured. Free estimate.',
@@ -332,6 +341,13 @@ COMBO_PAGE_COPY: dict[str, dict[str, str | tuple[str, str]]] = {
         "opening": 'Searches for drywall repair in Clearwater should land on a crew that knows local housing — not a generic statewide ad. Knight Group serves Clearwater from Safety Harbor with documented scope on real homes.',
         "follow_through": 'After the primary drywall repair task, we sequence drywall, caulk, or paint so Clearwater homeowners are not hiring a second vendor for finish work.',
         "booking": 'Book Clearwater drywall repair with photos, call (813) 649-3341 for active leaks, or view the city handyman page for broader repair lists.',
+    },
+    "tampa-drywall-repair": {
+        "hero_lead": "Drywall Repair in Tampa — written estimates and paint-ready finish work from Safety Harbor.",
+        "meta_description": "Drywall Repair in Tampa: documented scope, registered and insured Safety Harbor crew. Free written estimate. Knight Group Handyman.",
+        "opening": "Searches for drywall repair in Tampa should land on a crew that knows local housing — not a generic statewide ad. Knight Group serves Tampa from Safety Harbor with documented scope on real homes.",
+        "follow_through": "After the primary drywall repair task, we sequence drywall, caulk, or paint so Tampa homeowners are not hiring a second vendor for finish work.",
+        "booking": "Book Tampa drywall repair with photos, call (813) 649-3341 for active leaks, or view the city handyman page for broader repair lists.",
     },
     "safety-harbor-home-repair": {
         "hero_lead": 'Home Repair in Safety Harbor — written estimates and paint-ready finish work from Safety Harbor.',

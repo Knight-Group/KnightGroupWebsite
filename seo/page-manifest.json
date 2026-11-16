@@ -2185,6 +2185,27 @@
       "path": "gallery/very-little-hot-water-43b73e4-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/very-little-hot-water-43b73e4-before-after",
       "priority": "0.64"
+    },
+    {
+      "pageType": "city",
+      "slug": "pinellas-park-handyman",
+      "path": "pinellas-park-handyman.html",
+      "canonical": "https://www.knightgroup.com/pinellas-park-handyman",
+      "priority": "0.82"
+    },
+    {
+      "pageType": "city-service",
+      "slug": "tampa-drywall-repair",
+      "path": "tampa-drywall-repair.html",
+      "canonical": "https://www.knightgroup.com/tampa-drywall-repair",
+      "priority": "0.77"
+    },
+    {
+      "pageType": "trust-guide",
+      "slug": "pre-listing-punch-list",
+      "path": "pre-listing-punch-list.html",
+      "canonical": "https://www.knightgroup.com/pre-listing-punch-list",
+      "priority": "0.74"
     }
   ]
 }

@@ -129,7 +129,22 @@ CITY_PROFILES: dict[str, dict] = {
         "angle": "Seminole homeowners along Park Boulevard often need paint-ready drywall repair after humidity stains — we sequence primer, texture, and topcoat so patches do not flash under afternoon sun.",
         "gallery_category": "painting",
     },
+    "pinellas-park": {
+        "housing": "Pinellas Park is a mid-county city of ranch homes, smaller lots, and some condo and townhome infill along Park Boulevard, 49th Street, and the Ulmerton / Gateway corridor.",
+        "areas": "Park Boulevard, 49th Street, and the Ulmerton / Gateway corridors, plus nearby addresses toward Largo, Seminole, and St. Petersburg",
+        "climate": "Mature trees and older gutter lines on mid-county ranches often overflow into fascia and soffits after summer storms.",
+        "jobs": [
+            "Exterior wooden gate remounts and post anchoring",
+            "Drywall cutout patches and paint-ready finish work",
+            "Window screen builds and installs",
+            "Dishwasher replacements on existing connections",
+            "Pocket door track and hardware repairs",
+        ],
+        "angle": "Pinellas Park sits between Largo, Seminole, and St. Petersburg, so it is a regular mid-county stop on Pinellas routes from Safety Harbor rather than a special trip.",
+        "gallery_category": "general-repairs",
+    },
     "st-petersburg": {
+
         "housing": "St. Petersburg spans historic Kenwood bungalows, downtown high-rises, Shore Acres flood-zone cottages, and mid-century homes in Greater Pinellas Point. Housing age and elevation vary block by block.",
         "areas": "Kenwood, Old Northeast, Shore Acres, Greater Pinellas Point, and western St. Pete near Tyrone",
         "climate": "Tropical storms test soffits, fascia, and window caulking; older pier-and-beam pockets need careful moisture diagnosis before drywall closeout.",
@@ -405,7 +420,7 @@ COUNTY_PROFILES: dict[str, dict] = {
     "pinellas": {
         "hub_name": "Pinellas County",
         "character": "Pinellas is a peninsula county — Gulf beaches on one side, Tampa Bay on the other, and a dense mix of block ranches, mid-rise condos, and historic bungalows in between.",
-        "routing": "Knight Group runs Pinellas routes daily from Safety Harbor headquarters. Clearwater, Dunedin, Largo, Palm Harbor, and St. Petersburg are regular stops — not occasional overflow trips.",
+        "routing": "Knight Group runs Pinellas routes daily from Safety Harbor headquarters. Clearwater, Dunedin, Largo, Pinellas Park, Palm Harbor, and St. Petersburg are regular stops — not occasional overflow trips.",
         "themes": [
             "Salt air and humidity drive lanai door, screen, and exterior caulk work",
             "Older block homes need fixture-level plumbing without opening walls",
@@ -468,6 +483,17 @@ COMBO_PROFILES: dict[str, dict] = {
             "Paint-ready finishing for listing photos inland and on the beach",
         ],
     },
+    "tampa-drywall-repair": {
+        "service_label": "drywall repair",
+        "niche_slug": "drywall-repair",
+        "focus": "Recent Tampa drywall visits include a kitchen ceiling water-stain patch, a pass-through repair, and a master bath ceiling replaced after moisture.",
+        "jobs": [
+            "Kitchen ceiling water-stain and drywall patch with texture match",
+            "Drywall repair at a pass-through opening",
+            "Master bath ceiling replacement after moisture, with knockdown texture",
+        ],
+    },
+
     "safety-harbor-home-repair": {
         "service_label": "home repair",
         "niche_slug": "home-repair-near-me",

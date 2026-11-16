@@ -357,3 +357,14 @@ Seven complete GSC days after the Sep 17 recrawl are Sep 18–24. Measure on or 
 - /tampa-handyman: Oct 31 block restored plus one new real Tampa job (Nov 2026, tech Kevin: window reglazing, two doorways, pass-through drywall, soffit/fascia) linked to its 4 gallery pages.
 - /clearwater-handyman: Nov 2 block restored as-is.
 - Not restored: the extra visible FAQs and FAQPage JSON-LD nodes (schema change; proposed to Nick separately).
+
+## 2026-11-16 - FAQ restore, durable new pages, llms.txt additions (KG Web Growth)
+
+- Backup: tag `backup/pre-durable-20261116-1041` at 5fa8e16c, zip `E:\Grok Bot\workspaces\KG Web Growth\backups\kg-20261116-1041-durable.zip`.
+- Restored the 3 extra visible FAQs and FAQPage JSON-LD (8 Q&A matching visible text) on `/tampa-handyman` and `/clearwater-handyman`. Source is `scripts/geo_faq_overrides.py` plus an allowlist in `scripts/schema_graph.py`, so `build-seo-pages.py` and `build-schema-graph.py` keep them on gallery republishes. Questions use only previously shipped Knight Group facts. Title, meta, H1, and canonical unchanged on both pages.
+- New `/pinellas-park-handyman` and `/tampa-drywall-repair` (neither existed on origin/main or the live site/sitemap). Built through the city/combo generators, with job-proof blocks in `seo/geo-proof/` and the same FAQ allowlist, so the Dispatch gallery publisher will not wipe them. Five real Pinellas Park jobs (Gavin, Vince) and three real Tampa drywall jobs (Sergey, Kevin, Gavin). No client names or job prices.
+- Added `/pre-listing-punch-list` to `seo/page-manifest.json` via a hand-maintained hook in `build_manifest()` (the HTML already existed live but was missing from the sitemap). Sitemap now has 339 URLs.
+- Durable internal links: service-areas (hand-maintained page), Pinellas/Hillsborough/Pasco county hubs now list every city page, nearby links on Largo, Seminole, and St. Petersburg, Tampa and drywall-repair service pages link the new Tampa drywall URL.
+- `llms.txt`: added live, already-indexed Tampa, Temple Terrace, St. Petersburg, and TV mounting pages. Did not change the 1099 pay figures or any other pricing.
+- Not shipped: Clearwater title/meta test (planned about Nov 24; today would break recrawl-before-rewrite because the body just went live at 10:16 AM ET). Homepage LCP skipped (Oct 26 tests of preload/deferral showed no clear gain; still optional/risky).
+- Rollback: `git revert` the commit, then fetch, rebase, and push (never force).

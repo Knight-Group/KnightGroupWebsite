@@ -181,6 +181,15 @@ def prose_block(paragraphs: list[str]) -> str:
     return "\n".join(f"<p>{p.strip()}</p>" for p in paragraphs)
 
 
+
+NICHE_CITY_PAGES = {
+    "drywall-repair": [
+        ("/clearwater-drywall-repair", "Drywall Repair in Clearwater"),
+        ("/palm-harbor-drywall-repair", "Drywall Repair in Palm Harbor"),
+        ("/tampa-drywall-repair", "Drywall Repair in Tampa"),
+    ],
+}
+
 def build_niche_prose(defn: dict) -> str:
     slug = defn["slug"]
     h1 = defn["h1"].rstrip(".")
@@ -208,6 +217,10 @@ def build_niche_prose(defn: dict) -> str:
         parts.append(local)
     if booking:
         parts.append(booking)
+    city_pages = NICHE_CITY_PAGES.get(slug)
+    if city_pages:
+        links = ", ".join(f'<a href="{href}">{label}</a>' for href, label in city_pages)
+        parts.append(f"<p>City pages: {links}.</p>")
     return "\n".join(parts)
 
 
@@ -816,7 +829,7 @@ def generate_combo(city_slug: str, service_slug: str, city_name: str, service_la
             alt_fallback=f"{city_name} {service_label} in {county_name}",
             cache_bust=VERSION,
         ),
-        faq_html=render_faq(faqs, slug, county_name, h1=f"{service_label} in {city_name}"),
+        faq_html=geo_proof_block(slug) + render_faq(faqs, slug, county_name, h1=f"{service_label} in {city_name}"),
         related_html=render_related(related, ""),
         json_ld=graph,
         scope=parent == "plumbing-services",
@@ -957,6 +970,7 @@ def build_manifest() -> list[dict]:
         generate_combo(city_slug, service_slug, city_name, service_label, parent, niche_slug, manifest)
     extra_combos = [
         ("palm-harbor", "drywall-repair", "Palm Harbor", "drywall repair", "general-repairs", "drywall-repair"),
+        ("tampa", "drywall-repair", "Tampa", "drywall repair", "general-repairs", "drywall-repair"),
         ("largo", "toilet-repair", "Largo", "toilet problem assessment", "plumbing-services", "toilet-repair"),
         ("oldsmar", "door-adjustment", "Oldsmar", "door adjustment", "doors-windows", "door-adjustment"),
         ("dunedin", "trim-repair", "Dunedin", "trim repair", "carpentry-framing", "trim-repair"),
@@ -985,6 +999,18 @@ def build_manifest() -> list[dict]:
                 indexable=gallery_should_index(group, curated_picks),
                 siblings=all_groups,
             )
+    # Hand-maintained pages that must stay in the sitemap when this script
+    # rewrites page-manifest.json. Do not run generate_trust on these.
+    if not any(entry.get("slug") == "pre-listing-punch-list" for entry in manifest):
+        manifest.append(
+            manifest_entry(
+                "trust-guide",
+                "pre-listing-punch-list",
+                "pre-listing-punch-list.html",
+                f"{BASE}/pre-listing-punch-list",
+                "0.74",
+            )
+        )
     return manifest
 
 

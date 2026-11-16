@@ -22,6 +22,7 @@ COUNTY_REGIONS = [
             {"slug": "dunedin", "name": "Dunedin", "seo_primary": True},
             {"slug": "palm-harbor", "name": "Palm Harbor", "seo_primary": True},
             {"slug": "largo", "name": "Largo", "seo_primary": True},
+            {"slug": "pinellas-park", "name": "Pinellas Park", "seo_primary": True},
             {"slug": "oldsmar", "name": "Oldsmar", "seo_primary": True},
             {"slug": "tarpon-springs", "name": "Tarpon Springs", "seo_primary": True},
             {"slug": "seminole", "name": "Seminole", "seo_primary": True},
