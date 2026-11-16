@@ -5564,5 +5564,30 @@
     "photoBefore": 1,
     "photoProcess": 0,
     "photoAfter": 1
+  },
+  "before-after-exterior-gate-realign-and-hardware-b250388.webp": {
+    "group": "exterior-gate-realign-and-hardware-b250388-before-after",
+    "groupTitle": "Exterior gate realign and hardware \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a exterior gate realign and hardware job completed by Knight Group in Largo.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Exterior gate realign and hardware before and after",
+    "description": "Before-and-after comparison from a exterior gate realign and hardware job completed in a Largo home.",
+    "beforeAfter": true,
+    "scope_slug": "exterior-gate-realign-and-hardware-b250388",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Largo",
+    "citySlug": "largo",
+    "countyName": "Pinellas County",
+    "completedMonth": "November 2026",
+    "workNotes": "Exterior gate realign and hardware: Screws were backed out on Hinges, latch, and lock. Still plenty of good wood for them to bite into so torqued them all down well for proper function and no more rattling/ jiggling Inspect the exterior gate lock and latch, tighten or adjust the hardware, and replace the lock and latch if they are loose, rattling, or falling apart so the gate locks smoothly and securely. Assumed\u2026",
+    "photoBefore": 1,
+    "photoProcess": 0,
+    "photoAfter": 4
   }
 }

@@ -235,6 +235,13 @@
     },
     {
       "pageType": "city",
+      "slug": "pinellas-park-handyman",
+      "path": "pinellas-park-handyman.html",
+      "canonical": "https://www.knightgroup.com/pinellas-park-handyman",
+      "priority": "0.82"
+    },
+    {
+      "pageType": "city",
       "slug": "oldsmar-handyman",
       "path": "oldsmar-handyman.html",
       "canonical": "https://www.knightgroup.com/oldsmar-handyman",
@@ -483,6 +490,13 @@
       "slug": "palm-harbor-drywall-repair",
       "path": "palm-harbor-drywall-repair.html",
       "canonical": "https://www.knightgroup.com/palm-harbor-drywall-repair",
+      "priority": "0.77"
+    },
+    {
+      "pageType": "city-service",
+      "slug": "tampa-drywall-repair",
+      "path": "tampa-drywall-repair.html",
+      "canonical": "https://www.knightgroup.com/tampa-drywall-repair",
       "priority": "0.77"
     },
     {
@@ -1001,6 +1015,13 @@
       "slug": "exterior-coping-and-screens-f1920f7-before-after",
       "path": "gallery/exterior-coping-and-screens-f1920f7-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/exterior-coping-and-screens-f1920f7-before-after",
+      "priority": "0.64"
+    },
+    {
+      "pageType": "gallery-project",
+      "slug": "exterior-gate-realign-and-hardware-b250388-before-after",
+      "path": "gallery/exterior-gate-realign-and-hardware-b250388-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/exterior-gate-realign-and-hardware-b250388-before-after",
       "priority": "0.64"
     },
     {
@@ -2185,20 +2206,6 @@
       "path": "gallery/very-little-hot-water-43b73e4-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/very-little-hot-water-43b73e4-before-after",
       "priority": "0.64"
-    },
-    {
-      "pageType": "city",
-      "slug": "pinellas-park-handyman",
-      "path": "pinellas-park-handyman.html",
-      "canonical": "https://www.knightgroup.com/pinellas-park-handyman",
-      "priority": "0.82"
-    },
-    {
-      "pageType": "city-service",
-      "slug": "tampa-drywall-repair",
-      "path": "tampa-drywall-repair.html",
-      "canonical": "https://www.knightgroup.com/tampa-drywall-repair",
-      "priority": "0.77"
     },
     {
       "pageType": "trust-guide",

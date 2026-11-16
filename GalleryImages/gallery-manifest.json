@@ -1773,6 +1773,38 @@
       "photoAfter": 1
     },
     {
+      "id": "exterior-gate-realign-and-hardware-b250388-before-after",
+      "title": "Exterior gate realign and hardware \u2014 before & after",
+      "description": "Before-and-after proof from a exterior gate realign and hardware job completed by Knight Group in Largo.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-exterior-gate-realign-and-hardware-b250388.webp",
+          "filename": "before-after-exterior-gate-realign-and-hardware-b250388.webp",
+          "step": 1,
+          "title": "Exterior gate realign and hardware before and after",
+          "seoAlt": "Exterior gate realign and hardware before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a exterior gate realign and hardware job completed in a Largo home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Largo",
+      "citySlug": "largo",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Exterior gate realign and hardware: Screws were backed out on Hinges, latch, and lock. Still plenty of good wood for them to bite into so torqued them all down well for proper function and no more rattling/ jiggling Inspect the exterior gate lock and latch, tighten or adjust the hardware, and replace the lock and latch if they are loose, rattling, or falling apart so the gate locks smoothly and securely. Assumed\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 4
+    },
+    {
       "id": "exterior-wooden-gate-mounting-repair-a13a082-before-after",
       "title": "Exterior wooden gate mounting repair \u2014 before & after",
       "description": "Before-and-after proof from a exterior wooden gate mounting repair job completed by Knight Group in Pinellas Park.",
@@ -9513,6 +9545,32 @@
       "photoBefore": 2,
       "photoProcess": 2,
       "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-exterior-gate-realign-and-hardware-b250388.webp",
+      "filename": "before-after-exterior-gate-realign-and-hardware-b250388.webp",
+      "group": "exterior-gate-realign-and-hardware-b250388-before-after",
+      "step": 1,
+      "title": "Exterior gate realign and hardware before and after",
+      "seoAlt": "Exterior gate realign and hardware before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a exterior gate realign and hardware job completed in a Largo home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Exterior gate realign and hardware \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a exterior gate realign and hardware job completed by Knight Group in Largo.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Largo",
+      "citySlug": "largo",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Exterior gate realign and hardware: Screws were backed out on Hinges, latch, and lock. Still plenty of good wood for them to bite into so torqued them all down well for proper function and no more rattling/ jiggling Inspect the exterior gate lock and latch, tighten or adjust the hardware, and replace the lock and latch if they are loose, rattling, or falling apart so the gate locks smoothly and securely. Assumed\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 4
     },
     {
       "src": "GalleryImages/before-after-exterior-wooden-gate-mounting-repair-a13a082.webp",
