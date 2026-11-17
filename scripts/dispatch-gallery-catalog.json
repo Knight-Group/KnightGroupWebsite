@@ -5589,5 +5589,30 @@
     "photoBefore": 1,
     "photoProcess": 0,
     "photoAfter": 4
+  },
+  "before-after-6-inch-k-style-gutter-and-downspout-and-38e5357.webp": {
+    "group": "6-inch-k-style-gutter-and-downspout-and-38e5357-before-after",
+    "groupTitle": "6-inch K-style gutter and downspout and gutter removal \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a 6-inch k-style gutter and downspout and gutter removal job completed by Knight Group in Safety Harbor.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "6-inch K-style gutter and downspout and gutter removal before and after",
+    "description": "Before-and-after comparison from a 6-inch k-style gutter and downspout and gutter removal job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "6-inch-k-style-gutter-and-downspout-and-38e5357",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Gavin Mccandlish",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "",
+    "workNotes": "6-inch K-style gutter and downspout and gutter removal: Removed stucco around the A/C unit, approximately 4\u20136 inches of surrounding spray foam, and interior drywall to access and remove the unit. Removed and disposed of the A/C unit, covered the opening with pressure-treated plywood, and sealed gaps with spray foam and 885 silicone. Cut the existing gutter into sections and removed it. Cleared approximately 10\u2026",
+    "photoBefore": 3,
+    "photoProcess": 6,
+    "photoAfter": 3
   }
 }
