@@ -64,6 +64,37 @@
       "photoAfter": 1
     },
     {
+      "id": "2-panes-of-glass-8446432-before-after",
+      "title": "2 Panes of Glass \u2014 before & after",
+      "description": "Before-and-after proof from a 2 panes of glass job completed by Knight Group in Safety Harbor.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-2-panes-of-glass-8446432.webp",
+          "filename": "before-after-2-panes-of-glass-8446432.webp",
+          "step": 1,
+          "title": "2 Panes of Glass before and after",
+          "seoAlt": "2 Panes of Glass before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a 2 panes of glass job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "workNotes": "There we two panes of glass broken on a window, that have now been repaired",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "2-toilets-7f8c499-before-after",
       "title": "2 toilets \u2014 before & after",
       "description": "Before-and-after proof from a 2 toilets job completed by Knight Group in Trinity.",
@@ -7979,6 +8010,31 @@
       "beforeAfter": false,
       "groupTitle": "Window wall repair and rebuild",
       "groupDescription": "Window-area wall damage opened up, corrected, and rebuilt across multiple stages of the same job."
+    },
+    {
+      "src": "GalleryImages/before-after-2-panes-of-glass-8446432.webp",
+      "filename": "before-after-2-panes-of-glass-8446432.webp",
+      "group": "2-panes-of-glass-8446432-before-after",
+      "step": 1,
+      "title": "2 Panes of Glass before and after",
+      "seoAlt": "2 Panes of Glass before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a 2 panes of glass job completed in a Safety Harbor home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "2 Panes of Glass \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a 2 panes of glass job completed by Knight Group in Safety Harbor.",
+      "cluster": "general",
+      "workerName": "Gavin Mccandlish",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "workNotes": "There we two panes of glass broken on a window, that have now been repaired",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-2-remove-hinges-fill-mortises-paint-f10238e.webp",
