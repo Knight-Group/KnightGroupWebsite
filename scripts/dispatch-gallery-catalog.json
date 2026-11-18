@@ -5639,5 +5639,30 @@
     "photoBefore": 1,
     "photoProcess": 0,
     "photoAfter": 1
+  },
+  "before-after-replace-two-window-panes-about-40-x-20-677c6bf.webp": {
+    "group": "replace-two-window-panes-about-40-x-20-677c6bf-before-after",
+    "groupTitle": "Replace two window panes, about 40 x 20 \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a replace two window panes, about 40 x 20 job completed by Knight Group in Oldsmar.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Replace two window panes, about 40 x 20 before and after",
+    "description": "Before-and-after comparison from a replace two window panes, about 40 x 20 job completed in a Oldsmar home.",
+    "beforeAfter": true,
+    "scope_slug": "replace-two-window-panes-about-40-x-20-677c6bf",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Oldsmar",
+    "citySlug": "oldsmar",
+    "countyName": "Pinellas County",
+    "completedMonth": "November 2026",
+    "workNotes": "Replace two window panes, about 40 x 20: 2 broken impact windows. Bedroom window was removed and cut glass out to prep for new window pack. Removed office window and took to city glass and mirror to order and install correct glass. Picked up from store and installed in the home Remove the broken glass from two windows, cut and set clear single-strength glass about 40 by 20 inches each, and reset the stops.\u2026",
+    "photoBefore": 6,
+    "photoProcess": 2,
+    "photoAfter": 6
   }
 }
