@@ -5065,6 +5065,38 @@
       "photoAfter": 6
     },
     {
+      "id": "remove-gas-dryer-from-top-88aa9b4-before-after",
+      "title": "Remove gas dryer from top \u2014 before & after",
+      "description": "Before-and-after proof from a remove gas dryer from top job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-remove-gas-dryer-from-top-88aa9b4.webp",
+          "filename": "before-after-remove-gas-dryer-from-top-88aa9b4.webp",
+          "step": 1,
+          "title": "Remove gas dryer from top before and after",
+          "seoAlt": "Remove gas dryer from top before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a remove gas dryer from top job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Alex Tkachev",
+      "workerRole": "field technician",
+      "workerKey": "tech",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Remove gas dryer from top: Pulled both out to shut off and disconnect gas line. Removed dryer from washer, set aside.; come back after appliance repairmen fix washer: Placed dryer back on top of washer, reconnected the gas line and vent, plugged into outlet and tested up. Repositioned stacked to customers satisfaction Remove gas dryer from top: Pulled both out to shut off and disconnect gas line. Removed dryer\u2026",
+      "photoBefore": 1,
+      "photoProcess": 3,
+      "photoAfter": 1
+    },
+    {
       "id": "remove-wasps-from-windows-outside-280cd99-before-after",
       "title": "Remove wasps from windows outside \u2014 before & after",
       "description": "Before-and-after proof from a remove wasps from windows outside job completed by Knight Group in St. Petersburg.",
@@ -12336,6 +12368,32 @@
       "photoBefore": 6,
       "photoProcess": 1,
       "photoAfter": 6
+    },
+    {
+      "src": "GalleryImages/before-after-remove-gas-dryer-from-top-88aa9b4.webp",
+      "filename": "before-after-remove-gas-dryer-from-top-88aa9b4.webp",
+      "group": "remove-gas-dryer-from-top-88aa9b4-before-after",
+      "step": 1,
+      "title": "Remove gas dryer from top before and after",
+      "seoAlt": "Remove gas dryer from top before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a remove gas dryer from top job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Remove gas dryer from top \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a remove gas dryer from top job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Alex Tkachev",
+      "workerRole": "field technician",
+      "workerKey": "tech",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Remove gas dryer from top: Pulled both out to shut off and disconnect gas line. Removed dryer from washer, set aside.; come back after appliance repairmen fix washer: Placed dryer back on top of washer, reconnected the gas line and vent, plugged into outlet and tested up. Repositioned stacked to customers satisfaction Remove gas dryer from top: Pulled both out to shut off and disconnect gas line. Removed dryer\u2026",
+      "photoBefore": 1,
+      "photoProcess": 3,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-remove-wasps-from-windows-outside-280cd99.webp",
