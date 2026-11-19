@@ -3,6 +3,20 @@
     "@type": "Review",
     "author": {
       "@type": "Person",
+      "name": "Sarah Fulton"
+    },
+    "datePublished": "2026-11-18",
+    "reviewBody": "amazing job!! he was very kind, prompt and efficient. they squeezed me in last minute too!",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    }
+  },
+  {
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
       "name": "Debi Allen"
     },
     "datePublished": "2026-11-06",
@@ -21,20 +35,6 @@
     },
     "datePublished": "2026-11-06",
     "reviewBody": "Gavin was on schedule and was efficient in his repairs, he's been on ball with all repairs provided so far and I would HIGHLY recommend these guys, they've been great to work with",
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "5",
-      "bestRating": "5"
-    }
-  },
-  {
-    "@type": "Review",
-    "author": {
-      "@type": "Person",
-      "name": "Donna Altshul"
-    },
-    "datePublished": "2026-10-29",
-    "reviewBody": "I highly recommend the Knight Group Handyman Service!! Nick sent me an estimate within minutes and scheduled my appointment within days. Gavin arrived on time and was a pleasure to work with! He was super nice, professional, and took great pride in his work. His attention to detail and quality workmanship were excellent. It’s so refreshing to find someone who is both skilled and a pleasure to work with. I highly recommend Gavin and Knight Group Handyman Services and would definitely use their services again!",
     "reviewRating": {
       "@type": "Rating",
       "ratingValue": "5",

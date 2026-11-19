@@ -1,13 +1,22 @@
 {
   "ratingValue": 5,
-  "reviewCount": 20,
-  "fetchedAt": "2026-11-09T12:15:06.613Z",
+  "reviewCount": 21,
+  "fetchedAt": "2026-11-19T12:15:25.340Z",
   "source": {
     "account": "accounts/114830235101160247472",
     "location": "locations/15551195498878135337",
     "locationTitle": "Knight Group"
   },
   "reviews": [
+    {
+      "name": "Sarah Fulton",
+      "meta": "Google review",
+      "date": "2026-11-18",
+      "text": "amazing job!! he was very kind, prompt and efficient. they squeezed me in last minute too!",
+      "stars": 5,
+      "avatarColor": "#b42318",
+      "replied": false
+    },
     {
       "name": "Debi Allen",
       "meta": "Google review",
