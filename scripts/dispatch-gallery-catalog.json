@@ -5814,5 +5814,30 @@
     "photoBefore": 1,
     "photoProcess": 0,
     "photoAfter": 3
+  },
+  "before-after-rescreen-lanai-4-by-7-screen-panels-1391a4d.webp": {
+    "group": "rescreen-lanai-4-by-7-screen-panels-1391a4d-before-after",
+    "groupTitle": "Rescreen lanai 4 by 7 screen panels \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a rescreen lanai 4 by 7 screen panels job completed by Knight Group in Safety Harbor.",
+    "category": "doors-windows",
+    "serviceLink": "/Services/doors-windows",
+    "step": 1,
+    "title": "Rescreen lanai 4 by 7 screen panels before and after",
+    "description": "Before-and-after comparison from a rescreen lanai 4 by 7 screen panels job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "rescreen-lanai-4-by-7-screen-panels-1391a4d",
+    "source": "dispatch",
+    "cluster": "screen",
+    "workerName": "Alex Tkachev",
+    "workerRole": "field technician",
+    "workerKey": "tech",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "November 2026",
+    "workNotes": "Rescreen two first-floor window screens: Removed and rescreened two first-floor windows using new charcoal fiberglass screen and spline. Existing frames remain. Screen materials cover all other screens on this ticket.; Rebuild and rescreen second-story screens: Rescreened three second-story windows. Rebuilt two frames with new aluminum framing and corners; rescreened the third existing frame.; Rescreen lanai 4 by\u2026",
+    "photoBefore": 3,
+    "photoProcess": 0,
+    "photoAfter": 3
   }
 }
