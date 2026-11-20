@@ -919,6 +919,7 @@ def build_graph_for_page(
         "clearwater-handyman",
         "pinellas-park-handyman",
         "tampa-drywall-repair",
+        "largo-handyman",
     }
     slug = url.replace(f"{BASE}/", "").strip("/")
     if slug in FAQ_SCHEMA_SLUGS and faq_entities:

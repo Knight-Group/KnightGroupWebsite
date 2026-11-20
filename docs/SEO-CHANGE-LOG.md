@@ -368,3 +368,14 @@ Seven complete GSC days after the Sep 17 recrawl are Sep 18–24. Measure on or 
 - `llms.txt`: added live, already-indexed Tampa, Temple Terrace, St. Petersburg, and TV mounting pages. Did not change the 1099 pay figures or any other pricing.
 - Not shipped: Clearwater title/meta test (planned about Nov 24; today would break recrawl-before-rewrite because the body just went live at 10:16 AM ET). Homepage LCP skipped (Oct 26 tests of preload/deferral showed no clear gain; still optional/risky).
 - Rollback: `git revert` the commit, then fetch, rebase, and push (never force).
+
+## 2026-11-20 - /largo-handyman body content upgrade (KG Web Growth)
+- Body only. Title, meta description, H1, canonical, and URL unchanged (60-day rule respected).
+- Shipped after Nick's approval at 1:31 PM ET, Nov 20 2026: "Yes, ship the Largo page and publish the GBP posts." GBP posts are handled separately; this commit is the page only.
+- Added "Recent Largo handyman jobs" (8 real Largo gallery jobs across 6 short write-ups; tech first names Vince and Gavin; no client info, no prices), nearby-area links (Safety Harbor, Clearwater, Pinellas Park, Seminole, St. Petersburg, Pinellas), and a 4-step quote process (free written quote from photos, no free in-person estimates, signed agreement first, on-site revision if scope changes).
+- 9 visible FAQs; FAQPage JSON-LD node (9 Q&A) added to the page graph, matching visible text.
+- Durable hook: `seo/geo-proof/largo-handyman.html`, FAQ overrides in `scripts/geo_faq_overrides.py`, and a FAQPage allowlist entry in `scripts/schema_graph.py`, so gallery publishes keep the upgrade.
+- Why: GSC last 90 days, 1,788 impressions and 1 click, average position 11.6. Highest-impression Pinellas local service page just outside the top 10 that still had real local jobs to show and had not been given this body upgrade.
+- Sitemap lastmod moved only for /largo-handyman (real content change Nov 20).
+- Backup: tag `backup/pre-kgwg-largo-handyman-20261120` at f9554cf0 (the draft branch base) and tag `backup/pre-largo-ship-20261120` at a72e46f8 (origin/main at ship time, after 3 later gallery commits).
+- Rollback: `git revert` the ship commit, then fetch and push (never force-push).

@@ -111,6 +111,44 @@ GEO_FAQ: dict[str, list[tuple[str, str]]] = {
             "A Knight Group tech such as Vince, Gavin, Sergey, or Nick. Each completed job is photographed and credited to the tech who did it on our before and after gallery.",
         ),
     ],
+    "largo-handyman": [
+        (
+            "Do you provide handyman services in Largo?",
+            "Yes. Knight Group serves Largo as part of our regular Pinellas County routes from Safety Harbor. Share photos or a short description and we will confirm fit before scheduling.",
+        ),
+        (
+            "Are you a handyman company serving Largo, FL?",
+            "Yes. Knight Group Handyman Services LLC is a registered and insured Florida handyman company based in Safety Harbor. We run regular mid-county routes through Largo for repairs, fixtures, and punch-list work. We are not a licensed plumber or electrician.",
+        ),
+        (
+            "Which Largo neighborhoods do you cover?",
+            "We work throughout Largo, including Bardmoor, Ridgecrest, Southwest Largo, and the Ulmerton corridor, plus nearby addresses toward Clearwater, Pinellas Park, Seminole, and St. Petersburg. If you are near the city limits, mention your address when booking so we confirm the route.",
+        ),
+        (
+            "Can you handle home repairs in Largo?",
+            "Yes. Typical Largo home repairs include drywall and ceiling patches, door and lock fixes, faucet and toilet work on existing connections, tub drain clogs, washer hookups, and yard gate repairs. Send photos so we can confirm the scope. Work that needs a licensed plumber, electrician, or contractor is referred.",
+        ),
+        (
+            "How much does a typical handyman visit cost in Largo?",
+            "Standard visits are $150 for the first hour and $75 each additional hour, with no two-hour minimum. Defined Largo scopes can be quoted as a flat rate after photos.",
+        ),
+        (
+            "Do you give free estimates in Largo?",
+            "Yes, from photos. Send a description and photos and we send a free written quote. We do not do free in-person estimate visits. If the scope changes once we are on site, we revise the quote with you before doing extra work.",
+        ),
+        (
+            "Do you repair drywall in Largo?",
+            "Yes. We patch and paint-ready finish ceiling and wall drywall after a leak or impact, once the source is fixed. A recent Largo visit was a water-stained ceiling that Vince skimmed and painted. Larger water-damage closeout is quoted from photos.",
+        ),
+        (
+            "Can Knight Group do plumbing or electrical work in Largo?",
+            "Yes. Ceiling fans, light fixtures, switches, outlets, and basic plumbing (faucets, toilets, sinks, shutoffs) on existing connections are Knight Group work in Largo. Opening walls, sewer mains, new circuits, and panel work are referred. We are not a licensed plumber or electrician.",
+        ),
+        (
+            "How soon can you reach Largo?",
+            "Most Largo requests schedule within one to two business days on existing Pinellas County routes. Active leaks should be called in at (813) 649-3341 so we can triage and involve a licensed plumber when needed.",
+        ),
+    ],
     "tampa-drywall-repair": [
         (
             "Do you offer drywall repair in Tampa?",
