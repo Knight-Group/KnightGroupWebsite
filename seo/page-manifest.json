@@ -2118,6 +2118,13 @@
     },
     {
       "pageType": "gallery-project",
+      "slug": "welcome-mat-b873f9b-before-after",
+      "path": "gallery/welcome-mat-b873f9b-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/welcome-mat-b873f9b-before-after",
+      "priority": "0.64"
+    },
+    {
+      "pageType": "gallery-project",
       "slug": "work-scope-1893a20-before-after",
       "path": "gallery/work-scope-1893a20-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/work-scope-1893a20-before-after",

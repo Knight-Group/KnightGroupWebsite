@@ -7225,6 +7225,38 @@
       "photoAfter": 6
     },
     {
+      "id": "welcome-mat-b873f9b-before-after",
+      "title": "Welcome Mat \u2014 before & after",
+      "description": "Before-and-after proof from a welcome mat job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-welcome-mat-b873f9b.webp",
+          "filename": "before-after-welcome-mat-b873f9b.webp",
+          "step": 1,
+          "title": "Welcome Mat before and after",
+          "seoAlt": "Welcome Mat before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a welcome mat job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Reinstall bifold closet doors: Reinstall bifold closet doors. Took the pivot out adjusted it extended the pivot extended the wheel loosened the wheel place back in track; Reglue Plastic Trim to Bathtub: Removed base cove cleaned up adhesive reapplied with new adhesive waited for it to dry; Welcome Mat: Drove to the hardware store purchased welcome. Matt placed it over the area of flooring that\u2019s missing Reinstall\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
+    },
+    {
       "id": "blind-repair-before-after",
       "title": "Window blind repair \u2014 before & after",
       "description": "Damaged slats and headrail hardware corrected so blinds operate smoothly.",
@@ -14215,6 +14247,32 @@
       "photoBefore": 4,
       "photoProcess": 2,
       "photoAfter": 6
+    },
+    {
+      "src": "GalleryImages/before-after-welcome-mat-b873f9b.webp",
+      "filename": "before-after-welcome-mat-b873f9b.webp",
+      "group": "welcome-mat-b873f9b-before-after",
+      "step": 1,
+      "title": "Welcome Mat before and after",
+      "seoAlt": "Welcome Mat before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a welcome mat job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Welcome Mat \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a welcome mat job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Reinstall bifold closet doors: Reinstall bifold closet doors. Took the pivot out adjusted it extended the pivot extended the wheel loosened the wheel place back in track; Reglue Plastic Trim to Bathtub: Removed base cove cleaned up adhesive reapplied with new adhesive waited for it to dry; Welcome Mat: Drove to the hardware store purchased welcome. Matt placed it over the area of flooring that\u2019s missing Reinstall\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 1
     },
     {
       "src": "GalleryImages/before-after-work-scope-1893a20.webp",
