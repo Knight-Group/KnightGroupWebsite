@@ -5689,5 +5689,30 @@
     "photoBefore": 1,
     "photoProcess": 3,
     "photoAfter": 1
+  },
+  "before-after-reinstall-bifold-closet-f0a1c2d.webp": {
+    "group": "reinstall-bifold-closet-f0a1c2d-before-after",
+    "groupTitle": "Reinstall bifold closet \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a reinstall bifold closet job completed by Knight Group in St. Petersburg.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Reinstall bifold closet before and after",
+    "description": "Before-and-after comparison from a reinstall bifold closet job completed in a St. Petersburg home.",
+    "beforeAfter": true,
+    "scope_slug": "reinstall-bifold-closet-f0a1c2d",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Kevin Harrison",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "St. Petersburg",
+    "citySlug": "st-petersburg",
+    "countyName": "Pinellas County",
+    "completedMonth": "November 2026",
+    "workNotes": "Reinstall bifold closet doors: Reinstall bifold closet doors. Took the pivot out adjusted it extended the pivot extended the wheel loosened the wheel place back in track; Reglue Plastic Trim to Bathtub: Removed base cove cleaned up adhesive reapplied with new adhesive waited for it to dry; Welcome Mat: Drove to the hardware store purchased welcome. Matt placed it over the area of flooring that\u2019s missing Reinstall\u2026",
+    "photoBefore": 2,
+    "photoProcess": 0,
+    "photoAfter": 1
   }
 }
