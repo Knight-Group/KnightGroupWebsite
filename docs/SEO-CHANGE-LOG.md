@@ -10,6 +10,14 @@ Live HTML ships from `E:\Handyman Ticket Manager\state\deploy\KnightGroupWebsite
 
 ---
 
+## 2026-11-21 11:57 AM ET: homepage reposition, Pinellas first (KG Web Growth, local commit, not pushed)
+
+- **What:** `index.html` body only. New hero H1 "Pinellas County repairs and punch lists, handled without the runaround.", Safety Harbor-based eyebrow, core team plus bench, PM/HOA/commercial scope section, permitted and licensed-trade work "through licensed partners", Pinellas city links (St. Petersburg, Clearwater, Safety Harbor, Largo, Pinellas Park, Dunedin, Palm Harbor, Oldsmar, Seminole, Tarpon Springs, Gulfport), and a small secondary Pasco/Hillsborough card. Removed the visible "shop at 1225 7th St S" line. Added a plain promise to reply within 24 hours (hero lead and process step 1). Commercial card no longer lists fixture or lighting swaps. Homepage sitemap lastmod updated by `scripts/build-sitemap.py`.
+- **Unchanged:** title, meta description, canonical, URLs, JSON-LD (the LocalBusiness streetAddress is untouched), and the existing sitewide licensing wording (fan/fixture/switch/outlet service card, Journeyman Plumber mentions), which is a separate fix Nick has not approved.
+- **Why:** Nick's Nov 20 Pinellas-first positioning; picks relayed by Grok Bot as approved Nov 21, 11:50 AM ET; Nick's own approval to be verified before push.
+- **Checks:** `validate-static-site.py` pass, sitemap idempotent, compileall pass, JSON-LD parses, 91 homepage internal refs resolve, no horizontal overflow at 390x844 or 1440x900, Lighthouse mobile local 66/100/100/100 (origin/main baseline 64/100/100/100).
+- **Undo:** `git revert <sha of this commit>`. Backup tag (local): `backup/pre-kgwg-reposition-ship-20261121` = 6f7f4358.
+
 ## 2026-10-22: materials wording on pricing and payment policy
 
 Body copy only. Titles, meta descriptions, and H1s unchanged. Labor rates unchanged: $150/$75 standard, $200/$100 specialty.
