@@ -2195,6 +2195,13 @@
     },
     {
       "pageType": "gallery-project",
+      "slug": "corner-patch-283cca7-before-after",
+      "path": "gallery/corner-patch-283cca7-before-after.html",
+      "canonical": "https://www.knightgroup.com/gallery/corner-patch-283cca7-before-after",
+      "priority": "0.64"
+    },
+    {
+      "pageType": "gallery-project",
       "slug": "drywall-repair-paint-ef28bb4-before-after",
       "path": "gallery/drywall-repair-paint-ef28bb4-before-after.html",
       "canonical": "https://www.knightgroup.com/gallery/drywall-repair-paint-ef28bb4-before-after",

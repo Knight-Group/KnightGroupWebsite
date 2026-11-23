@@ -7646,6 +7646,38 @@
       "photoAfter": 4
     },
     {
+      "id": "corner-patch-283cca7-before-after",
+      "title": "corner patch \u2014 before & after",
+      "description": "Before-and-after proof from a corner patch job completed by Knight Group in Clearwater.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-corner-patch-283cca7.webp",
+          "filename": "before-after-corner-patch-283cca7.webp",
+          "step": 1,
+          "title": "corner patch before and after",
+          "seoAlt": "corner patch before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a corner patch job completed in a Clearwater home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Clearwater",
+      "citySlug": "clearwater",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Additional hours explained: Once work began, there was more drywall damage than the original estimate covered, and you asked us to focus on the walls. We patched ceiling sprinkler cuts and extra holes, taped the lower bathroom wall, and did a second skim coat with final sanding. We also removed rotted shims, old caulk and rusty screws and sourced replacement material on site. Tile work was left for you to finish,\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 5
+    },
+    {
       "id": "drywall-repair-paint-ef28bb4-before-after",
       "title": "drywall repair & paint \u2014 before & after",
       "description": "Before-and-after proof from a drywall repair & paint job completed by Knight Group in Pinellas County.",
@@ -9467,6 +9499,32 @@
       "photoBefore": 6,
       "photoProcess": 2,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-corner-patch-283cca7.webp",
+      "filename": "before-after-corner-patch-283cca7.webp",
+      "group": "corner-patch-283cca7-before-after",
+      "step": 1,
+      "title": "corner patch before and after",
+      "seoAlt": "corner patch before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a corner patch job completed in a Clearwater home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "corner patch \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a corner patch job completed by Knight Group in Clearwater.",
+      "cluster": "general",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Clearwater",
+      "citySlug": "clearwater",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Additional hours explained: Once work began, there was more drywall damage than the original estimate covered, and you asked us to focus on the walls. We patched ceiling sprinkler cuts and extra holes, taped the lower bathroom wall, and did a second skim coat with final sanding. We also removed rotted shims, old caulk and rusty screws and sourced replacement material on site. Tile work was left for you to finish,\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 5
     },
     {
       "src": "GalleryImages/before-after-cracked-cross-joint-grout-replacement-292911e.webp",
