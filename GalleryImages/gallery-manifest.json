@@ -6018,6 +6018,38 @@
       ]
     },
     {
+      "id": "round-soffit-vent-hole-a104109-before-after",
+      "title": "Round soffit vent hole \u2014 before & after",
+      "description": "Before-and-after proof from a round soffit vent hole job completed by Knight Group in Clearwater.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-round-soffit-vent-hole-a104109.webp",
+          "filename": "before-after-round-soffit-vent-hole-a104109.webp",
+          "step": 1,
+          "title": "Round soffit vent hole before and after",
+          "seoAlt": "Round soffit vent hole before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a round soffit vent hole job completed in a Clearwater home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Clearwater",
+      "citySlug": "clearwater",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Additional hours explained: Once work began, there was more drywall damage than the original estimate covered, and you asked us to focus on the walls. We patched ceiling sprinkler cuts and extra holes, taped the lower bathroom wall, and did a second skim coat with final sanding. We also removed rotted shims, old caulk and rusty screws and sourced replacement material on site. Tile work was left for you to finish,\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 2
+    },
+    {
       "id": "sagging-textured-ceiling-repair-381b549-before-after",
       "title": "Sagging textured ceiling repair \u2014 before & after",
       "description": "Before-and-after proof from a sagging textured ceiling repair job completed by Knight Group in Safety Harbor.",
@@ -13472,6 +13504,32 @@
       "photoBefore": 4,
       "photoProcess": 0,
       "photoAfter": 3
+    },
+    {
+      "src": "GalleryImages/before-after-round-soffit-vent-hole-a104109.webp",
+      "filename": "before-after-round-soffit-vent-hole-a104109.webp",
+      "group": "round-soffit-vent-hole-a104109-before-after",
+      "step": 1,
+      "title": "Round soffit vent hole before and after",
+      "seoAlt": "Round soffit vent hole before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a round soffit vent hole job completed in a Clearwater home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Round soffit vent hole \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a round soffit vent hole job completed by Knight Group in Clearwater.",
+      "cluster": "general",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Clearwater",
+      "citySlug": "clearwater",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Additional hours explained: Once work began, there was more drywall damage than the original estimate covered, and you asked us to focus on the walls. We patched ceiling sprinkler cuts and extra holes, taped the lower bathroom wall, and did a second skim coat with final sanding. We also removed rotted shims, old caulk and rusty screws and sourced replacement material on site. Tile work was left for you to finish,\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 2
     },
     {
       "src": "GalleryImages/before-after-sagging-textured-ceiling-repair-381b549.webp",
