@@ -7896,6 +7896,38 @@
       "photoAfter": 3
     },
     {
+      "id": "opening-closed-and-taped-including-corne-067f528-before-after",
+      "title": "opening closed and taped, including corner panel \u2014 before & after",
+      "description": "Before-and-after proof from a opening closed and taped, including corner panel job completed by Knight Group in Clearwater.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-opening-closed-and-taped-including-corne-067f528.webp",
+          "filename": "before-after-opening-closed-and-taped-including-corne-067f528.webp",
+          "step": 1,
+          "title": "opening closed and taped, including corner panel before and after",
+          "seoAlt": "opening closed and taped, including corner panel before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a opening closed and taped, including corner panel job completed in a Clearwater home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Clearwater",
+      "citySlug": "clearwater",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Additional hours explained: Once work began, there was more drywall damage than the original estimate covered, and you asked us to focus on the walls. We patched ceiling sprinkler cuts and extra holes, taped the lower bathroom wall, and did a second skim coat with final sanding. We also removed rotted shims, old caulk and rusty screws and sourced replacement material on site. Tile work was left for you to finish,\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 2
+    },
+    {
       "id": "plumbing-504ea7f-before-after",
       "title": "plumbing \u2014 before & after",
       "description": "Before-and-after proof from a plumbing job completed by Knight Group in Gulfport.",
@@ -12172,6 +12204,32 @@
       "photoBefore": 1,
       "photoProcess": 1,
       "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-opening-closed-and-taped-including-corne-067f528.webp",
+      "filename": "before-after-opening-closed-and-taped-including-corne-067f528.webp",
+      "group": "opening-closed-and-taped-including-corne-067f528-before-after",
+      "step": 1,
+      "title": "opening closed and taped, including corner panel before and after",
+      "seoAlt": "opening closed and taped, including corner panel before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a opening closed and taped, including corner panel job completed in a Clearwater home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "opening closed and taped, including corner panel \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a opening closed and taped, including corner panel job completed by Knight Group in Clearwater.",
+      "cluster": "general",
+      "workerName": "Kevin Harrison",
+      "workerRole": "Knight Group technician",
+      "workerKey": "tech",
+      "cityName": "Clearwater",
+      "citySlug": "clearwater",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Additional hours explained: Once work began, there was more drywall damage than the original estimate covered, and you asked us to focus on the walls. We patched ceiling sprinkler cuts and extra holes, taped the lower bathroom wall, and did a second skim coat with final sanding. We also removed rotted shims, old caulk and rusty screws and sourced replacement material on site. Tile work was left for you to finish,\u2026",
+      "photoBefore": 1,
+      "photoProcess": 0,
+      "photoAfter": 2
     },
     {
       "src": "GalleryImages/before-after-paint-ceiling-stains-1daac32.webp",

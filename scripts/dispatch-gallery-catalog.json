@@ -5914,5 +5914,30 @@
     "photoBefore": 1,
     "photoProcess": 0,
     "photoAfter": 2
+  },
+  "before-after-opening-closed-and-taped-including-corne-067f528.webp": {
+    "group": "opening-closed-and-taped-including-corne-067f528-before-after",
+    "groupTitle": "opening closed and taped, including corner panel \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a opening closed and taped, including corner panel job completed by Knight Group in Clearwater.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "opening closed and taped, including corner panel before and after",
+    "description": "Before-and-after comparison from a opening closed and taped, including corner panel job completed in a Clearwater home.",
+    "beforeAfter": true,
+    "scope_slug": "opening-closed-and-taped-including-corne-067f528",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Kevin Harrison",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Clearwater",
+    "citySlug": "clearwater",
+    "countyName": "Pinellas County",
+    "completedMonth": "November 2026",
+    "workNotes": "Additional hours explained: Once work began, there was more drywall damage than the original estimate covered, and you asked us to focus on the walls. We patched ceiling sprinkler cuts and extra holes, taped the lower bathroom wall, and did a second skim coat with final sanding. We also removed rotted shims, old caulk and rusty screws and sourced replacement material on site. Tile work was left for you to finish,\u2026",
+    "photoBefore": 1,
+    "photoProcess": 0,
+    "photoAfter": 2
   }
 }
