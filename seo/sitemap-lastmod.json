@@ -212,8 +212,8 @@
   "sha256": "2a91067e4fcd1af97109cbe9de109ef891b34d517590d2d2b006265a126e73e0"
  },
  "https://www.knightgroup.com/gallery/2-panes-of-glass-8446432-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "c952e2a816ca87e4641aa07997e88ae71779e96217148890928f0729961327ff"
+  "lastmod": "2026-11-23",
+  "sha256": "a33a7d03aabd7a22795f9a447ec2313f01b294276632cd5dbabfd3e16f9e953c"
  },
  "https://www.knightgroup.com/gallery/2-remove-hinges-fill-mortises-paint-f10238e-before-after": {
   "lastmod": "2026-11-11",
@@ -228,12 +228,12 @@
   "sha256": "3bf5abf0c52c1ef45c08aabc031d5858e08c194322ef6ec4ce5349492feb0f34"
  },
  "https://www.knightgroup.com/gallery/6-inch-k-style-gutter-and-downspout-and-38e5357-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "05d7821ce0a0eef0540467d7bdaf384ef8970b9bca0256040272e32ebfbe6bf1"
+  "lastmod": "2026-11-23",
+  "sha256": "4e74883f11dacbdae5aa4a5452bd058b625d138e63a679f9f65681caa6f4ee4f"
  },
  "https://www.knightgroup.com/gallery/a-c-service-request-6963c57-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "d62426bb6708286bf9cc97d79c506b8a58997be7526b9e51ee7b83d6c2536c0f"
+  "lastmod": "2026-11-23",
+  "sha256": "a4f45a3eca73efa879e9c8dd93c5c0064c742a4964e06c05724306e142fb95f6"
  },
  "https://www.knightgroup.com/gallery/a-wall-outlet-repair-93788a6-before-after": {
   "lastmod": "2026-10-29",
@@ -256,20 +256,24 @@
   "sha256": "ee0b57e8f7ddc169d2806d6fe7c4636049df4272a8586375d1883664eb697b67"
  },
  "https://www.knightgroup.com/gallery/angled-entryway-laminate-installation-3c4887c-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "50436e282be11f27b4aa6841eef9a6abb83a6e63b548db54b542458da1a3de3a"
+  "lastmod": "2026-11-23",
+  "sha256": "ab646e2358285e719219a87f63420896aeff115ff2659091755586c547a7348a"
  },
  "https://www.knightgroup.com/gallery/attic-drywall-return-visit-54b0dce-before-after": {
   "lastmod": "2026-11-11",
   "sha256": "a572af43fed7af591b722807ec20cd2eb5c78e4239aed8a9588ef63761b9ae15"
+ },
+ "https://www.knightgroup.com/gallery/back-wall-strip-patch-and-mud-b38ad09-before-after": {
+  "lastmod": "2026-11-23",
+  "sha256": "4d6e1b177d7d9de1c9d35f7b50490c9b0916c70447e3514e8f5d66331b620a96"
  },
  "https://www.knightgroup.com/gallery/ballast-light-fixture-bbe38e2-before-after": {
   "lastmod": "2026-10-29",
   "sha256": "3937fe19e1ca692561dd7192a5b33eb686ca97c4039bb65fa46cfba1b8e78993"
  },
  "https://www.knightgroup.com/gallery/baseboard-cap-molding-replacement-056b4de-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "e19764d0ba7e80fe82e50539e179de64e04bd89505d38b8f45bfa6ba160d452a"
+  "lastmod": "2026-11-23",
+  "sha256": "b1046f561d66f7d1757afe300cb492da98cf219aafae8b53d5f1f4d82c865280"
  },
  "https://www.knightgroup.com/gallery/baseboard-receptacle-reset-a2b21b6-before-after": {
   "lastmod": "2026-11-19",
@@ -284,12 +288,12 @@
   "sha256": "579bc77db02d1ad22be672564b4496f7054227b6e05a9ce3255d1c4f68c7be94"
  },
  "https://www.knightgroup.com/gallery/bedroom-d9d0055-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "9e816ddbbd3da86966691d184a99798293dcd76cbb76ace3606bbbe8a3604bed"
+  "lastmod": "2026-11-23",
+  "sha256": "139ca38aea3536ab99d1ec2c43c028ccc638b62e05b4040b0901532f35e61c2d"
  },
  "https://www.knightgroup.com/gallery/blemishes-trim-123a8c6-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "a7f88411985cd5e61740189ea18142c76f57da8a2fd9946f23ca3540d5b9ef60"
+  "lastmod": "2026-11-23",
+  "sha256": "f6549cb941f181c59ee1d6f4819f861c3f8ca00807d4e758c20a601e82b58688"
  },
  "https://www.knightgroup.com/gallery/blind-repair-before-after": {
   "lastmod": "2026-10-23",
@@ -316,12 +320,12 @@
   "sha256": "3be688623e0666a45deb547da91877447c20d763c25feb14fa79fa6dabc8f9a2"
  },
  "https://www.knightgroup.com/gallery/cabinet-repair-339b0d9-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "4636e472a5278a338deb5101bc0b3ffe117280a648b2070deb3c2da262d7385e"
+  "lastmod": "2026-11-23",
+  "sha256": "21f7d5e46d26f2fd8a24443b05b82b340146a1bd65bc44e1cea7cd6e722e5d71"
  },
  "https://www.knightgroup.com/gallery/cap-the-open-shower-pipe-835ddf1-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "7fdcdde50fa495bd09bf64e30ad5fb6ba8fc2cc846b435f768c2effd4980e07f"
+  "lastmod": "2026-11-23",
+  "sha256": "febee184b169e76829444b861aab40d620351f607186f8113209b3bfa109dcbe"
  },
  "https://www.knightgroup.com/gallery/carpet-removal-before-after": {
   "lastmod": "2026-10-23",
@@ -344,16 +348,16 @@
   "sha256": "45c2eafda77a0e66fd38e70cf67b773feedf80840693e25c26d26164de82b6b4"
  },
  "https://www.knightgroup.com/gallery/ceiling-water-staining-concern-d4a39ad-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "89fe67ba8a519fdd8fb57893c078e65fc30d1134fe6ad30e35043362d78bba83"
+  "lastmod": "2026-11-23",
+  "sha256": "f1cb4fbdbdda885896da8a6e917f67e45ed81cd701b3b594426340ce6fde6802"
  },
  "https://www.knightgroup.com/gallery/change-5-window-panes-on-3-windows-2601b0c-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "bc991f7c0ee6a83e23a4939e47b3b9d327bbe0f55f8d308d3b342d69b7844c5a"
+  "lastmod": "2026-11-23",
+  "sha256": "8444e4cbdbc03198f09d89523073fc52732b4199676abfb1aa41f8dffc340d54"
  },
  "https://www.knightgroup.com/gallery/change-front-key-entries-588ccb1-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "0f6fb7d299d99c0d494b3d45461331a3211be641edf3d5789bde7c74c57e07c4"
+  "lastmod": "2026-11-23",
+  "sha256": "2f37b253c28ba49d6180b59d44bbcc716c0843d1f56f05b17f994ae852899a93"
  },
  "https://www.knightgroup.com/gallery/change-locks-93a60c5-before-after": {
   "lastmod": "2026-11-13",
@@ -364,8 +368,8 @@
   "sha256": "82f9f73865144538981f6fce8525857f60dc630ad5c057b1edeb3734bd502675"
  },
  "https://www.knightgroup.com/gallery/clean-both-a-c-mini-splits-be28eee-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "8ad13f96f49b6f9132fcdda2edf40fe28f271f5dc583e40ff470f39ce8375a9b"
+  "lastmod": "2026-11-23",
+  "sha256": "5ac0e6e6de03aa8dd5988ebd22ca4ef1d74f39d8aaad05564e3bb6bf9cd70306"
  },
  "https://www.knightgroup.com/gallery/clean-both-ac-filters-46965b4-before-after": {
   "lastmod": "2026-10-23",
@@ -376,8 +380,8 @@
   "sha256": "9850abc6a4ea77432bbf874df2e8c8c7aa6cf1ad487c9ab1258309d4daf10a91"
  },
  "https://www.knightgroup.com/gallery/clean-exterior-front-of-house-70a4580-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "ace8dee9ab8843892dc9005e26c303c6a867d70f152f9f2c3fd5121cab9999ba"
+  "lastmod": "2026-11-23",
+  "sha256": "1f01fe12fe020a28d157d063f78b0ec6880fbba23c65afe2e860b2ee5895bca8"
  },
  "https://www.knightgroup.com/gallery/clean-or-paint-door-a6804f2-before-after": {
   "lastmod": "2026-11-13",
@@ -388,16 +392,16 @@
   "sha256": "d6a2b6f9ba5448769fd00864bd09acd1684af2a49e19f6692349f62c8367f358"
  },
  "https://www.knightgroup.com/gallery/clean-touch-up-cabinets-e256da2-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "26af667d29835272efdc438591e69c6984a33b4431a785bd2e757a645a314fae"
+  "lastmod": "2026-11-23",
+  "sha256": "2bee15cd56b531840565975075fa38f912bacde4b3f7d85e4c0b3e7d0eceef83"
  },
  "https://www.knightgroup.com/gallery/clean-vent-cover-8cca52c-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "0cd92a4af6ebb37c6246c391eb5ec8111423e0f91dd1e2ba5530781b1fce7528"
+  "lastmod": "2026-11-23",
+  "sha256": "23542e70bc2a5fbb87938dfdecdc799eb87aa1c9af7a62cead754b357e338829"
  },
  "https://www.knightgroup.com/gallery/clean-vent-register-7860ef9-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "b9c1f1adcad116b9a40d3759f221659470bc8be6fb4b9302d532efbbcca06aa0"
+  "lastmod": "2026-11-23",
+  "sha256": "d85e20b0527c10b624193a1bae7d0c7355dd2f01a0d7a398ed9b209a85fe51db"
  },
  "https://www.knightgroup.com/gallery/corner-cabinet-shelf-repair-bc5b1e2-before-after": {
   "lastmod": "2026-10-23",
@@ -408,28 +412,28 @@
   "sha256": "82debbc3e20a6006f002c9d189bc2360b61cda9c2ad8ded8a049906e9b1ecc2f"
  },
  "https://www.knightgroup.com/gallery/crawl-space-openings-8cc8291-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "f357643f99b87165d226a5cf29e9187b02e3c2913237cf5d138ba2ebf8a08ee1"
+  "lastmod": "2026-11-23",
+  "sha256": "854133ae4dda2dc3db6fe0695e7f9ec86844a4e332cbda224cf83120b4cc8d0e"
  },
  "https://www.knightgroup.com/gallery/curbside-mailbox-and-post-replacement-9000475-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "9663f7e2b8791f8fe6aeb37b42dc82fe4d42ad9b43b633ec9789cb304a99f730"
+  "lastmod": "2026-11-23",
+  "sha256": "2a9c744eac587039e27ff8ac172f286f00e06fbff00267713bb93fc74493912e"
  },
  "https://www.knightgroup.com/gallery/curtain-rod-mount-before-after": {
   "lastmod": "2026-10-23",
   "sha256": "19f2741b1b31ed8610380e4bf494f8193e761c0633ff0fa8ad91ddd3561766a3"
  },
  "https://www.knightgroup.com/gallery/damaged-screen-above-window-repair-177c36d-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "c57d258a850876831a9c903a3d6189efe57780e46e0f208d286d4c28b6b0d172"
+  "lastmod": "2026-11-23",
+  "sha256": "41fa89c85bb87311cfe7250e8af710deba631e8d3901cd4871e47a520898cf96"
  },
  "https://www.knightgroup.com/gallery/day-2-laminate-and-quarter-round-1a35833-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "32ee96de36a3438b20143fade8e992f6bbf5db3faef018620cd3c145281b8b13"
+  "lastmod": "2026-11-23",
+  "sha256": "ef530a2f6e4c2eaa12f93ca98b3d585666afbca22cee2fe9c8a3efd70ef8c36d"
  },
  "https://www.knightgroup.com/gallery/dishwasher-removal-and-replacement-2756308-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "213915a41134f984c2c89b4a24970edebc0a032de2db7def85b830de4c055970"
+  "lastmod": "2026-11-23",
+  "sha256": "7296352d8a73b3e9d90b8443a99d96f9f833fab27480e1d1e7f7a5570c72415d"
  },
  "https://www.knightgroup.com/gallery/door-lock-repair-9d81b62-before-after": {
   "lastmod": "2026-11-13",
@@ -468,32 +472,32 @@
   "sha256": "91ac58c75978d6824e52ea541cbf0b77932234e4ce4f4465858df48090712c88"
  },
  "https://www.knightgroup.com/gallery/electric-stove-fault-diagnosis-0c172f8-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "414c3425f85b72284a4f7b3b262f73dca748bf57666f29c26277f29271d24556"
+  "lastmod": "2026-11-23",
+  "sha256": "d1dd2f2db04160ed052fb54e968ce9c7a0ba7f52c0932ee06674c2a559af1e14"
  },
  "https://www.knightgroup.com/gallery/enclosed-lanai-80d5146-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "2723486b450b84df9c2a9c9f33b383cc408d6241e67e0d7ecdad23d6cd5e5581"
+  "lastmod": "2026-11-23",
+  "sha256": "6b7116331219679ec67ab70d5af43573fe19ad684e89579651213108fec16faf"
  },
  "https://www.knightgroup.com/gallery/entrance-lock-rekey-a497f1c-before-after": {
   "lastmod": "2026-11-13",
   "sha256": "4362841eb010ade9836565a88d22bf656d3b9baec1cb49e28b20694173c4a405"
  },
  "https://www.knightgroup.com/gallery/entrusion-ff4cabe-before-after": {
-  "lastmod": "2026-11-18",
-  "sha256": "dfcf9c404bf69e8d396625bca5ca3e92b7a37a14fca07b8fe417920113ff4f5f"
+  "lastmod": "2026-11-23",
+  "sha256": "8b2dc8ece555ee15e97456462f155d412945407984aba385b046b5bb28547ea5"
  },
  "https://www.knightgroup.com/gallery/exterior-coping-and-screens-f1920f7-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "afe6bd56edf3a653924d2ff0d803137f3059acef47a49c6fb1474552828fc3ae"
+  "lastmod": "2026-11-23",
+  "sha256": "b5b0b6ffc7a6fff1dd9d44f7e24cf41c02e00ac3649a7e6f414590acb29a74ea"
  },
  "https://www.knightgroup.com/gallery/exterior-gate-realign-and-hardware-b250388-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "5104f0a93166f12a066237b987cf31857a4c6f8b65378c6812d13690d5dc6987"
+  "lastmod": "2026-11-23",
+  "sha256": "c4264aded5b72b7f257df7417b10f4048298397cdda3271778714338a0d641ba"
  },
  "https://www.knightgroup.com/gallery/exterior-wooden-gate-mounting-repair-a13a082-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "defbf07155e5661aa6224407eb02d969f2aa47624afbf948cac9e24f6e6a52ce"
+  "lastmod": "2026-11-23",
+  "sha256": "ae0a25f31865a4e2bbefd8eb66c05d04a3827088f3859b75de86bb80d8afd8c2"
  },
  "https://www.knightgroup.com/gallery/facuet-replacement-d864caa-before-after": {
   "lastmod": "2026-11-19",
@@ -528,24 +532,24 @@
   "sha256": "da1692e2f01e10b0527b652c91d7c11af2495507232205d22449c38956b28d83"
  },
  "https://www.knightgroup.com/gallery/fill-valve-f6e4347-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "efafc75f0a585770764976bd35d38b9c58f079a03099cbfbccb69fd4648a201b"
+  "lastmod": "2026-11-23",
+  "sha256": "42ff5e384f22c5f38cd46ad927d660bcfb324b3d1544bef93f95995759a5d005"
  },
  "https://www.knightgroup.com/gallery/filter-change-before-after": {
   "lastmod": "2026-10-23",
   "sha256": "6b6821257c3d5c13d29ab71b4f9f502b81725fc0b2033df7c7dff79c3840329b"
  },
  "https://www.knightgroup.com/gallery/finish-quarter-round-6ad62a8-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "0628be70d581435baf8ef010002006eb8bb407bd102c8e1b9b6958ac4f605515"
+  "lastmod": "2026-11-23",
+  "sha256": "ca00a92f66574b3a0a6c09393c4f8a46f0ed7557b19bd8badf779cdc2e7609c9"
  },
  "https://www.knightgroup.com/gallery/finish-remaining-transitions-work-69b61fe-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "20fc1899b145ca9860646a0b909e50f27192205d51afe369f5d0916a0069ade4"
+  "lastmod": "2026-11-23",
+  "sha256": "308f6e73706a4d45178a0937c6f2ffd566925a43748f66c1cab81516f918be00"
  },
  "https://www.knightgroup.com/gallery/finish-the-rest-of-the-hallway-faae6ab-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "63ea3233f1dc95ab52f5b0dd9300a894cb1773e7b05cb7a9e5dd324fb961675b"
+  "lastmod": "2026-11-23",
+  "sha256": "0beb80c48d5a3ff02ab12ddba9fc9106e793869df90fd6fa122e251d93d9bf38"
  },
  "https://www.knightgroup.com/gallery/finish-two-drywall-cutouts-6f3dbf5-before-after": {
   "lastmod": "2026-11-11",
@@ -556,8 +560,8 @@
   "sha256": "b7036649978e7ff407f5a7f25177e44954122d1667856d47de7f7be5b2fec3da"
  },
  "https://www.knightgroup.com/gallery/fix-kitchen-drawer-901493a-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "9a66a0b64616d22ce6ec3429a9c6c7fd3a40ea69d7f5b65a999ec7c27f5a6ea7"
+  "lastmod": "2026-11-23",
+  "sha256": "f44466cf9c99565c44c71df79b7e793b267f57179b3ba9092579c08b45683734"
  },
  "https://www.knightgroup.com/gallery/fix-laminate-scratches-on-floor-af40cee-before-after": {
   "lastmod": "2026-11-05",
@@ -588,20 +592,20 @@
   "sha256": "da5bac3b5c5ee6c680755683bbd9f69249c919b7a36949263380e85e0cb29b93"
  },
  "https://www.knightgroup.com/gallery/front-intrusion-be5d722-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "fafc96591fd7111f0583ce7a5f93b3d00a14fb8b2888a55ff9f6f00fdbb0a09d"
+  "lastmod": "2026-11-23",
+  "sha256": "facde4a1a74a51dfd413a26edceea4fc2790d98e6f58726627ca0ade69676cb7"
  },
  "https://www.knightgroup.com/gallery/front-need-0394870-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "4773bdce57ad24f767134ce0d86a29e3993a58135a3fe3de55aeebea9ea14ef1"
+  "lastmod": "2026-11-23",
+  "sha256": "ab849ac22ad92340c33747871f94e6e383316a6609f7512cadc574417bc1b91f"
  },
  "https://www.knightgroup.com/gallery/front-stripping-replacement-9eef6fa-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "ee3901b177f5ffe2fef72c83e9e6e69c94398130a9370040aadcdba0056c1da1"
+  "lastmod": "2026-11-23",
+  "sha256": "cb0d36621492823bbee7b55ef9686ec40f096605c2140140897a5dcb01149ca0"
  },
  "https://www.knightgroup.com/gallery/garbage-cabinet-repair-youtube-video-lin-54b1f44-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "198da35c69dc0a46084ebf1aee0db1a15fdfe7cd4a4e087218fc1db75d4f4543"
+  "lastmod": "2026-11-23",
+  "sha256": "4a572bffbf4862b75301220f2e4ea2692d84c0aa7b8a3ae63273fd9add371d86"
  },
  "https://www.knightgroup.com/gallery/garbage-disposal-install": {
   "lastmod": "2026-10-23",
@@ -612,80 +616,80 @@
   "sha256": "c93cb8e99c9f7549de63e74175b9d5af4460f9765f5afede3f5d9930a4099a69"
  },
  "https://www.knightgroup.com/gallery/get-water-functional-ea319fe-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "65fb9d4ba8e3041c4d976df0a628c46ebb75b2f5daaa9767be9537cbebb46956"
+  "lastmod": "2026-11-23",
+  "sha256": "29e123ce89e77aa52e538c0f2e9bfeec3caf999bb02928df58dcacfb6c9c2c48"
  },
  "https://www.knightgroup.com/gallery/get-windows-to-open-and-secure-screens-6f74b01-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "f8901e4446889f9192235d21376819135753ef922db500d0e5a0619f1fd67e45"
+  "lastmod": "2026-11-23",
+  "sha256": "c4eb13b302e26d0ca9fc2d29a8276d452b7cd4c7534edb219de12f2348bdf9b4"
  },
  "https://www.knightgroup.com/gallery/gutter-downspout-appears-to-be-clogged-8c068d4-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "a707c876d08df7877e2ba9e5804e5494d7152b2bcc3ff981951526702fe4cf98"
+  "lastmod": "2026-11-23",
+  "sha256": "9963b3ae4a766dd37c1ba0b5406754ad955c6870ce360d58f89549fa961a82e5"
  },
  "https://www.knightgroup.com/gallery/hallway-2-laminate-installation-bb50fbd-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "8eaf11197d49596fc6e004294371281ae8d1b27a6e400277d050b617496fae03"
+  "lastmod": "2026-11-23",
+  "sha256": "cbe76242dd4159449a26dfb6f437a8afe4c820ca0952a719003e8d184a1374ce"
  },
  "https://www.knightgroup.com/gallery/hallway-flooring-finish-bf39ea1-before-after": {
   "lastmod": "2026-11-05",
   "sha256": "8f78b81efe4a9869c8ce82545307cbab9967fad21d6bb71dae0282d87e0ced22"
  },
  "https://www.knightgroup.com/gallery/handyman-repair-163b4a6-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "cec8abf709d0c76ef5713817c15aa82f4f877e8b6b08c5405d96a42ec7a5f5a4"
+  "lastmod": "2026-11-23",
+  "sha256": "3e25110220d133b4912c49d43c879d31e36afcb95da1621093dfe59f43eb230f"
  },
  "https://www.knightgroup.com/gallery/handyman-repair-23ebf3d-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "0e2c4eaaad132a98996f8a136a9f626088bcb83413e4e3a8e3cef81b8385a8bf"
+  "lastmod": "2026-11-23",
+  "sha256": "e744e03f384f9384f6ffb0dc7ff8236aa438e7b30a5a5d16366acfdd26b6d2a6"
  },
  "https://www.knightgroup.com/gallery/handyman-repair-2ef83e1-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "272c895760733d14f4374bdf21249e1cbcf5ee08215bc97dcf7da495de2a211a"
+  "lastmod": "2026-11-23",
+  "sha256": "7b63333a4f46f5d3e8e8bd916e3d513c993f8e3a8d3843338486565ed9b5915b"
  },
  "https://www.knightgroup.com/gallery/handyman-repair-8ff963a-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "2535564bba4bc50b6d22ddcd0dc745d1d20312768c5f00e6e31fb2924b975916"
+  "lastmod": "2026-11-23",
+  "sha256": "1cb6cbf2247418c18532487b8f105afc5a7d80937d4817f8a45d036403232284"
  },
  "https://www.knightgroup.com/gallery/handyman-repair-dbeaf48-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "20e4d650de1acc8d90e0f4b51b99c149d4105180fd9f099fe1de45e3656a745c"
+  "lastmod": "2026-11-23",
+  "sha256": "afcffc767fc37ab814ebf7ee353b92405e3c1a98591938ca68d9e482cf867b0e"
  },
  "https://www.knightgroup.com/gallery/handyman-repair-e328474-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "06c91520e981f164069224d54c7732bb19f9dd9e110657b746678fa8a5b5abc5"
+  "lastmod": "2026-11-23",
+  "sha256": "b50bd1114a2b24dac8eaf9d22efe59df2555fa1ca81ce4fb432ede3bbc33479c"
  },
  "https://www.knightgroup.com/gallery/handyman-repair-e8e763c-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "0a582b94f0f092dd1b50a04d2ece538316125326e99c2623bc6e96dcffc13795"
+  "lastmod": "2026-11-23",
+  "sha256": "b2e884cf84e11306de2ee54c8e4a6a24e23c235fa4451eca1eec26ff9b7432af"
  },
  "https://www.knightgroup.com/gallery/holes-around-the-exterior-outlet-a3bc464-before-after": {
   "lastmod": "2026-10-29",
   "sha256": "2d2e25c33dc94344a921ae6edcdde0416efd765c3410959a687eb92d08a2b9c2"
  },
  "https://www.knightgroup.com/gallery/hot-water-only-in-bath-tub-745e031-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "0904b6235f170bbb90792e9921dff01bc036758687c201f9a2b9edd4a52d748c"
+  "lastmod": "2026-11-23",
+  "sha256": "7f206b285803c9d0510cad17bd38e1756d95bb5c80bdfdb81d262e6ac5ef0982"
  },
  "https://www.knightgroup.com/gallery/hvac-drain-flush-and-filters-4f8205d-before-after": {
   "lastmod": "2026-10-23",
   "sha256": "7502c8beedd2af038b27e25290ccab24b920ed5d5b6925cf5782b7f4bb003a13"
  },
  "https://www.knightgroup.com/gallery/inspect-water-leaks-08cb97a-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "dd5a9b5e9e12c484ab7a8694edd0b866eb686efc14804919811664694413ca8e"
+  "lastmod": "2026-11-23",
+  "sha256": "4c478dad762411ed6e9e9318407dd4ae3b3380b90e33f8cfe8947be4b9b3b051"
  },
  "https://www.knightgroup.com/gallery/interior-walls-one-light-color-320d2ed-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "cf112511bf210fefd1d316a5da475d1d95da59bf45830c0923900ef41585739b"
+  "lastmod": "2026-11-23",
+  "sha256": "12055f5a8ba177fe01361f35b63d4d94958020952b4afd3409bcb4089a18bd15"
  },
  "https://www.knightgroup.com/gallery/investigate-low-water-pressure-d125420-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "a8be5ad477402cf4dc768a91a564b8687dd511e72525a25c82c6d04f1165990f"
+  "lastmod": "2026-11-23",
+  "sha256": "9638b6c57a788fa40801b5c610899327bfef1bada6b0e38b644395d8253c557e"
  },
  "https://www.knightgroup.com/gallery/jeff-clean-out-the-dryer-vent-6180603-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "6d819c93181fd6c8f3d15f91ea6289538417b2d3139e9b7a259debf84d625ad6"
+  "lastmod": "2026-11-23",
+  "sha256": "3fb166f3824ba78d0b368b5879958182ecf80566b9aed9dd12bbbe9844361fa3"
  },
  "https://www.knightgroup.com/gallery/jeff-snake-bathtub-drains-and-make-sure-4511e27-before-after": {
   "lastmod": "2026-11-06",
@@ -708,16 +712,16 @@
   "sha256": "38e4e6422d65253134f04cf5049244fb11c7d42eb17367272bcae35117711e67"
  },
  "https://www.knightgroup.com/gallery/kitchen-drawer-and-ceiling-damage-6f1d487-before-after": {
-  "lastmod": "2026-11-17",
-  "sha256": "7500a1a605926f4665d6eb9c09566631b94071b48ff91000ca6f38ebfac3dd5b"
+  "lastmod": "2026-11-23",
+  "sha256": "e20e8c2b9d79d90b23dec5a7bb1708176451cbb29d90923e1c3806906023c9b3"
  },
  "https://www.knightgroup.com/gallery/kitchen-faucet-sprayer-04f0250-before-after": {
   "lastmod": "2026-10-23",
   "sha256": "2d5169d9ec58329aa15275fda07b7356595d0a4706800c0493eb77ddca08f1b4"
  },
  "https://www.knightgroup.com/gallery/kitchen-flush-mount-led-light-repair-b731715-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "dbf5b99f63a9b7d16aa9a98c0bfd4552ef9b4c8447034f22a7fb14117e806638"
+  "lastmod": "2026-11-23",
+  "sha256": "117ebdff4b4b7cdb6862e7fee9d9181c85712c42dd1d2b6df91a4b9d213670c6"
  },
  "https://www.knightgroup.com/gallery/kitchen-garbage-disposal-repair-3468841-before-after": {
   "lastmod": "2026-11-06",
@@ -736,8 +740,8 @@
   "sha256": "89425ad51bd18f860308abff3c55c08a6d17ea9cff84e10f3f0f7a4c4875c09c"
  },
  "https://www.knightgroup.com/gallery/kitchen-window-screen-repair-4410a01-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "61b1bbd446db64670ccba69329b23154fbc7d1d7da814906836d9705c4702376"
+  "lastmod": "2026-11-23",
+  "sha256": "d8d99c8a050c024655e1d96c68d1145510533d5c2a960f820599fc65521b57af"
  },
  "https://www.knightgroup.com/gallery/laminate-floor-on-hallway-ramp-transitio-32347a1-before-after": {
   "lastmod": "2026-11-05",
@@ -752,20 +756,20 @@
   "sha256": "65fbd10e506daf24ac5d90a692135340bdcf5f1d9d1a3beb4c6b0143a67d89ba"
  },
  "https://www.knightgroup.com/gallery/laminate-lvp-installation-d86a9bf-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "29c99446c716b4c7c024c396058d7618e0ebd913b22119ff8df66553f265282a"
+  "lastmod": "2026-11-23",
+  "sha256": "72cb7ddb85cb60985224e09056d92b8b50d6fc2e4b99df3c310b73eee2f3bb54"
  },
  "https://www.knightgroup.com/gallery/laminate-office-and-back-two-9244bf7-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "806f2d04d405e499de9c7d7e7eef1cf2908e5a95e6149467aef082dc2143cdda"
+  "lastmod": "2026-11-23",
+  "sha256": "0b8f6ebb87f6ea4ac6c9db1524fc75a30d54f51383c21d2fadfcde8d9cd2159a"
  },
  "https://www.knightgroup.com/gallery/laundry-closet-walls-23abb3e-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "a5fda27354030a549b9205530a1bfeea196422a477ca4e67a8ebf6ea015a673f"
+  "lastmod": "2026-11-23",
+  "sha256": "6fd4eb44d7fbba119381c51caf124715049a09597b1f11d196d17ff58488f70c"
  },
  "https://www.knightgroup.com/gallery/leaking-shower-valve-and-handle-repair-606abac-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "ebe391a9527c5ae43d529286d8873393d2708d8e6e3d6a1dc98fcf9449689367"
+  "lastmod": "2026-11-23",
+  "sha256": "692cd588374f2c164c0ca09b5f62889af20f03c8c754a1e36b0c6ca97f58276f"
  },
  "https://www.knightgroup.com/gallery/leaky-sink-e154113-before-after": {
   "lastmod": "2026-11-06",
@@ -776,12 +780,12 @@
   "sha256": "ae323650309cab23bec6ed3f980059bdc6ef2240e8503d940b15965b429f12fa"
  },
  "https://www.knightgroup.com/gallery/mailbox-is-swinging-needs-secured-01d7753-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "667666aedfdd52a3033876d0594aea6aaca9e7eea154df9d7fe9161d312ac384"
+  "lastmod": "2026-11-23",
+  "sha256": "bb610a96bc3a506dcf80d70fa948b33e2d4849a82cd24051f955a9f2594251b6"
  },
  "https://www.knightgroup.com/gallery/master-bath-ceiling-moisture-bdb5734-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "d0ab53872bfaac20161cd9833a4dbe62182991513396191ca23b45150569cb53"
+  "lastmod": "2026-11-23",
+  "sha256": "06c5dd770307f5b822bef97ac61f8565e0c2710bce9567f46814d5e78877893b"
  },
  "https://www.knightgroup.com/gallery/master-bathroom-sink-pop-up-stopper-repa-d7ea620-before-after": {
   "lastmod": "2026-11-06",
@@ -792,20 +796,20 @@
   "sha256": "f3347ccf17af4e7510bcb0645d47cb4da74ba7854460f5f4384e15a42ad5c910"
  },
  "https://www.knightgroup.com/gallery/microwave-loght-11413a9-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "98b2a4a7ecf6560e154f4ff08cb050fb71f20f155aad91f0cd3ff72007b635a9"
+  "lastmod": "2026-11-23",
+  "sha256": "054b97cd3bbcbd9525a38c425d0cb5849d36afbb99d01c98f3ce0ddb2b15ce67"
  },
  "https://www.knightgroup.com/gallery/mold-wall-repair": {
   "lastmod": "2026-10-23",
   "sha256": "bcfc5fa095f5cb551b4a56f599e7ed365a1ac4a67a78c776febbcfd902ffaf76"
  },
  "https://www.knightgroup.com/gallery/musty-odor-wall-inspection-f6407f8-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "cb2777cd284e0316846a24a6f74bbff772c2fc905e92fa6f738148b5df115207"
+  "lastmod": "2026-11-23",
+  "sha256": "c4a7e09ee818f86683ea9b8bfe3510085ff30603270308cb25fd125782d366d8"
  },
  "https://www.knightgroup.com/gallery/no-hot-in-water-shower-4d13b15-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "2f5bb03fcc4ef73ac35624b18ebfc9c46d32966a4adf10cd19b4bc4305c28d1d"
+  "lastmod": "2026-11-23",
+  "sha256": "73b87673e2134141ba7e6b0432fefea4e2d3f978dbf4ad9e31d4ef70eb77b471"
  },
  "https://www.knightgroup.com/gallery/noisy-bathroom-ceiling-fan-light-heater-4c3701f-before-after": {
   "lastmod": "2026-10-23",
@@ -820,76 +824,76 @@
   "sha256": "b9f4fb56ac1bd575ccac9c7e23509f43f88cbc442597d2cf7f3ec7cdbd74087c"
  },
  "https://www.knightgroup.com/gallery/office-transition-strips-3fed62c-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "47c39a3302c6fc7bab984094e113b7d6c5013ef3c439ec2a9f7d9e1964087b2a"
+  "lastmod": "2026-11-23",
+  "sha256": "9e261bb3b37f8cf7ab392101d7dfcc77129205a75308d052a24a94674d7228ce"
  },
  "https://www.knightgroup.com/gallery/office-wall-surface-growth-cleaning-b10ba5d-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "7af29993a9fa0f3f8c13be9eccdf0293ae9a777882ca76a57ed0bab7696c46cb"
+  "lastmod": "2026-11-23",
+  "sha256": "afd892a6af653ed00c60099e2fbd317074eccd2e007fe9bb357fcb3f1c883e78"
  },
  "https://www.knightgroup.com/gallery/paint-ceiling-stains-1daac32-before-after": {
   "lastmod": "2026-11-11",
   "sha256": "797254466bb8db631925ce279d0b1c0150504838bcc1942c8294f5996b48b944"
  },
  "https://www.knightgroup.com/gallery/pantry-cabinets-c33ea57-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "e6338db1b0cd61af9b3971f87584d64bd9f5984b21e22c357c0888d5c5fbdbcc"
+  "lastmod": "2026-11-23",
+  "sha256": "02ce8ebc0cbbea545a2457ef6c44f03a832b2878143c647aa704ba186e74b582"
  },
  "https://www.knightgroup.com/gallery/pipe-repair-before-after": {
   "lastmod": "2026-10-23",
   "sha256": "70aaa190f7b92169a160e475cf195817ddceeb631e6bcad8859790796643122d"
  },
  "https://www.knightgroup.com/gallery/plumbing-504ea7f-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "e8c4c540da663fe5d0190fe1de6ab7c0a90c1ad302be66cbf90443dd05d790f0"
+  "lastmod": "2026-11-23",
+  "sha256": "95f660783bbd9fae242d2fda833d8986ee7317cd3c5529533f3bfd7a2fa089cd"
  },
  "https://www.knightgroup.com/gallery/plumbing-repairs-d624583-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "173ed45a0d6e6a95c6f2914c74a9ec101d4967d5c6acc3bd2496a705d45a45c1"
+  "lastmod": "2026-11-23",
+  "sha256": "9a49c387777d99abd58e1a7548f9b5282c32b1a31059332692c26c88956cab9f"
  },
  "https://www.knightgroup.com/gallery/pocket-and-hardware-repair-aaddceb-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "d77270ca4975f2e3ce60c79d642037818bee95c15032dc2d9da9b8b9a10f2ab2"
+  "lastmod": "2026-11-23",
+  "sha256": "b722382d2ed3ca3dfc606fe27caa850eab1575a33259dc4487f88e8c84f18285"
  },
  "https://www.knightgroup.com/gallery/pressure-wash-walk-way-b49a8fd-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "69bff3b5acf1c21ed9a68ed2be307ffdf6ebf8dc24d78e9457743e40e25dcfb6"
+  "lastmod": "2026-11-23",
+  "sha256": "2669343d3e7a15344805eb28ddc3e6997a2ba53aa02f1270acfb00789e5277d0"
  },
  "https://www.knightgroup.com/gallery/pull-wood-flooring-and-moving-equipment-6cae8d3-before-after": {
   "lastmod": "2026-11-05",
   "sha256": "8ffd895d488e442dc6437c297043e4e9c2f32b26e6196680d6d1cb34a72f1c11"
  },
  "https://www.knightgroup.com/gallery/qaurter-round-across-entire-hallway-8961fae-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "b8f155d6be64789192a25f7155a54ebce24a9f8c388f66995e8183c72c7bdcf5"
+  "lastmod": "2026-11-23",
+  "sha256": "ce4562461ea987b86a41d9764bc2d810d96c2ec22e850974f941a971c7f01c11"
  },
  "https://www.knightgroup.com/gallery/quarter-round-6f382b0-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "b96310683c60e2002a399668504827d710e57ef8529cf9570845aeb70f932033"
+  "lastmod": "2026-11-23",
+  "sha256": "ef87277ff7766832ef6b6bc6de90bda0892f7e91179ea7e237137c9ae070fcfe"
  },
  "https://www.knightgroup.com/gallery/quarter-round-b1a6d55-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "55e550938c8444999c5604514ab8fd9ee19461aa510c5a8344ca277ac461ba47"
+  "lastmod": "2026-11-23",
+  "sha256": "8a2e335e7526a7caa45500d38dcfd12a9a71897648ec9096974185ea2f78f979"
  },
  "https://www.knightgroup.com/gallery/quarter-round-in-hallways-and-room-7-d0877dc-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "9216836e5e29adce24d0b9ef380a930c57f2296f7674bc275a594cb858610ae8"
+  "lastmod": "2026-11-23",
+  "sha256": "aad3574fe181d2106eedb24e82a760da736442548e42120d262c58fb869bfb1d"
  },
  "https://www.knightgroup.com/gallery/quarter-round-installation-c020e8a-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "78a54b30475870b99c0e71fcde5c11ca213f13d5a3b28a1867ea69ab0e8b87f8"
+  "lastmod": "2026-11-23",
+  "sha256": "a9a6af600367a3eed3c8bb15088b4af102bc221132e7500c477c8649c1a5d103"
  },
  "https://www.knightgroup.com/gallery/ramp-transition-36c1780-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "889402c344395d59c09b2c9ec0db452a8c5b581ee1d8f97500acf220e9886ff1"
+  "lastmod": "2026-11-23",
+  "sha256": "0234801af73e7dbd6959cfb6bd76640503ee60f6927cf348a6e38ee47c5a8bf0"
  },
  "https://www.knightgroup.com/gallery/re-secure-soffit-and-putty-the-fascia-bf9519d-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "7cfedbba105b91ddc693d093cc4112f061ca8fa038a6507ee89b2722b8e43eaa"
+  "lastmod": "2026-11-23",
+  "sha256": "87eedfc3d47bd712e97725c9bdf2cd3ad4198a8c8fcc59a793eb0c8eada18b8a"
  },
  "https://www.knightgroup.com/gallery/reaplce-range-hood-vent-97f35ca-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "bb3b7f138f661fab98e0e8fc60154a001da2b6df7933c4fe91e1a60dd8679c1b"
+  "lastmod": "2026-11-23",
+  "sha256": "5f89401d5fe70d9e06f39937a0140b7569fce405f8f2d8a0b2e7548b34cec5ba"
  },
  "https://www.knightgroup.com/gallery/rebuild-and-rescreen-second-story-screen-8e4ac97-before-after": {
   "lastmod": "2026-11-20",
@@ -908,48 +912,48 @@
   "sha256": "ff997445e1667009e82b1496695b341ab29e301b76687d94cbe7386b5fc4a069"
  },
  "https://www.knightgroup.com/gallery/reglaze-3-cracked-window-lites-fc739e3-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "2344a826e6dcdf52618cd99252e12a1e2d6240c849a77ae0f64bcb0f29ba2ba0"
+  "lastmod": "2026-11-23",
+  "sha256": "5237a21ea5a3e13618760a595567a83e2aed264286a927c8c6a392a2dbbd8fb6"
  },
  "https://www.knightgroup.com/gallery/reglue-plastic-trim-to-bathtub-6d9ee62-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "2fb4fca1a5729572a4c9a66ff40a410f20693ef3c624518d9726e5a5f6fa36cd"
+  "lastmod": "2026-11-23",
+  "sha256": "426f92f2b8ac2f89ef528f26508c254f2d9ed4cde773c5920f4d9e39569e25c3"
  },
  "https://www.knightgroup.com/gallery/reinstall-bifold-closet-f0a1c2d-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "aa4f6542c8f13a3d1c262f913fcc40ec93694de86fa0ea7fcb7ea19aa6db5b04"
+  "lastmod": "2026-11-23",
+  "sha256": "c0938b6b981758d0eff8afd8fa077b1bc325ac7855f82e545d2bb863d196eb49"
  },
  "https://www.knightgroup.com/gallery/remove-debris-41db93f-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "af9babc407743eeb0be3ea9cfeb6c8d2421c1ff64c6b9b2e38387f839b82a749"
+  "lastmod": "2026-11-23",
+  "sha256": "9f0553f5fde8d323c73157d791410accb4da386e567ffb706cc6802550296bc7"
  },
  "https://www.knightgroup.com/gallery/remove-furniture-from-room-6a2115f-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "29c95a55b1a813fa3e943c4a75b83a41532bdc8035d59c1a5aa8c73b3e4bec43"
+  "lastmod": "2026-11-23",
+  "sha256": "06a52678d560c5b1726b5e7b02315506a98ded190033d590bdcb8d55f01cbcaf"
  },
  "https://www.knightgroup.com/gallery/remove-gas-dryer-from-top-88aa9b4-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "8599c9de339ff47553b87e39304e524778b46e937d97d56288a5af3b8e79696e"
+  "lastmod": "2026-11-23",
+  "sha256": "ab99c931852a8318a422b16be7c70306dbfec20c7bfead344c636e27257d9bf6"
  },
  "https://www.knightgroup.com/gallery/remove-wasps-from-windows-outside-280cd99-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "a210c9cd8e6e99bd46d97c8db54417f82085d3b4b459857bb0ab02df3bc324de"
+  "lastmod": "2026-11-23",
+  "sha256": "5dbc36dc002f5aeb27d35dd3e740689ca5fb22739683a153a8fc4a359b1692bb"
  },
  "https://www.knightgroup.com/gallery/repair-3abf1ba-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "e2b75fac36d9ef125ea507476427b599fac5fb80cdfb1d21287489159ddc5f96"
+  "lastmod": "2026-11-23",
+  "sha256": "9fd9b16ed4ae9e6aeae12e6560c9fa758b564ea14fc674aa929d045dfcc69193"
  },
  "https://www.knightgroup.com/gallery/repair-ceiling-in-bathroom-f739128-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "69031db513bdc37e718c1c76fbe225e67f5423973a14af953d8201456f8204e5"
+  "lastmod": "2026-11-23",
+  "sha256": "ca4d6035311c4ded334a9addd0d46020657477936eb0a45b69e0e14bc4150248"
  },
  "https://www.knightgroup.com/gallery/repair-kitchen-cabinet-probably-just-rem-a4cc980-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "4e158feebe370e9e4b18b1e97127caa863b80e88648cbd7b7fd6b95a05c1d093"
+  "lastmod": "2026-11-23",
+  "sha256": "7dc5f40b36095af7ead002f0dcc130ee906df86b1fcb78cca66970758e0ab09b"
  },
  "https://www.knightgroup.com/gallery/repair-kithchen-cabinets-9e04de2-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "1e8f19132c104a2baa8c2800ec58803d082b43f99a2ff28b8b453e58bc4afb56"
+  "lastmod": "2026-11-23",
+  "sha256": "dc69e03fcd23c2c3ebcaaca9a17d805196e3d9760636ae2f2244bd8433409ab1"
  },
  "https://www.knightgroup.com/gallery/repair-or-replace-the-nonworking-light-f-b51bc9e-before-after": {
   "lastmod": "2026-10-29",
@@ -960,28 +964,28 @@
   "sha256": "372002a8dc87a3297783a3e0f897ad1b8a3e0c70b8e4a368f7f537e37fa90e73"
  },
  "https://www.knightgroup.com/gallery/repair-wall-and-add-wall-protection-b0d3de5-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "705e0ae772e0ba9be525fbc2b15b8219f9703b54244c232becf04b3edc76e755"
+  "lastmod": "2026-11-23",
+  "sha256": "56248e8028e8e599035fb505f7f1851e2126f09a06cb9a50e204ea968eb7d7f6"
  },
  "https://www.knightgroup.com/gallery/repair-water-damage-and-cabinets-2a643f3-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "81622350730f684a39c0e8da9f4c427c164f933e172a9f9735d9de22168902c9"
+  "lastmod": "2026-11-23",
+  "sha256": "8336476861796e4500d7088c49c7f1d365dbeb1e18815d2d66a9bbd649397d2b"
  },
  "https://www.knightgroup.com/gallery/replace-7-window-screens-c2796ec-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "b822a26a5fb04f73a2622035a2480bdeba7aacdbb1cfc506cc8abf5e5cb1da90"
+  "lastmod": "2026-11-23",
+  "sha256": "501da0174627162496a7d8afc67e546063572f64456af912211134c51b8ffed1"
  },
  "https://www.knightgroup.com/gallery/replace-batteries-for-back-door-a39e712-before-after": {
   "lastmod": "2026-11-13",
   "sha256": "01d50617220da5b4e003845d0c5e903f9728ebd4ee304ce1e7d7fab5a09a721f"
  },
  "https://www.knightgroup.com/gallery/replace-broken-dishwasher-2ce6915-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "dff2d263b587b9fd585f6c1c5dfcff41ff0af491be8a373e6fefc4f00d68229c"
+  "lastmod": "2026-11-23",
+  "sha256": "07c0315b377798cf0c86c7b1aca3755f5d3dd65a876f7e827765b4dba727a187"
  },
  "https://www.knightgroup.com/gallery/replace-drip-pans-dcbbcb4-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "cad12c1ce8a120681d38e290a974c8db3038e87efeb3556dc42bd0ca7751b048"
+  "lastmod": "2026-11-23",
+  "sha256": "dd60bbdfa963adf56bb7338e4d0a2718777c3e564a7d21fc843f940e1457ef7b"
  },
  "https://www.knightgroup.com/gallery/replace-faucet-99420dc-before-after": {
   "lastmod": "2026-10-23",
@@ -992,20 +996,20 @@
   "sha256": "dc23ca425e4f88f515dcf2c73dc53549901b843e1ddbafd541ebca77ec221b8a"
  },
  "https://www.knightgroup.com/gallery/replace-five-wired-smoke-detectors-af5c992-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "7dfdec8396e87cb1418ec567e34dbda848078fa81c48ca124003ca0300ca5ba9"
+  "lastmod": "2026-11-23",
+  "sha256": "1e977613b254749590c55eaeb28ce6d5f8d127da9d5090104355080027065086"
  },
  "https://www.knightgroup.com/gallery/replace-light-bulbs-6fef00c-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "c83b913fad0e7e828be8dedb52a24e15b4bc74cce8a2a0f0c565e2bfec88aa58"
+  "lastmod": "2026-11-23",
+  "sha256": "c9dd6d0ffafa88e5cac1546fb02f7280b674357725d58c1ce241a60293226bb9"
  },
  "https://www.knightgroup.com/gallery/replace-the-bathroom-light-fixture-at-th-cd5e010-before-after": {
   "lastmod": "2026-10-29",
   "sha256": "ac18d0625f60818272833bae0a1413fdddf023ca8cee8e72bef6308b8fc2b40d"
  },
  "https://www.knightgroup.com/gallery/replace-two-window-panes-about-40-x-20-677c6bf-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "634fd81f01a8fc9ab6108c9ad84274c37eab22422de4ab1efa05a5a1945c4950"
+  "lastmod": "2026-11-23",
+  "sha256": "99af1dc1ee687efa41e20ad180b1524ed82b92afc598da92fc629ab27767430c"
  },
  "https://www.knightgroup.com/gallery/replacement-blinds-kitchen-window-8ce39b7-before-after": {
   "lastmod": "2026-10-23",
@@ -1024,16 +1028,16 @@
   "sha256": "e969edc499ad0602eee1bc2604346c9e927c7849b51fd562bb012c3b4e0c8898"
  },
  "https://www.knightgroup.com/gallery/rodent-hole-sealing-a-b-1c2096d-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "82fe0734af2aa5931bc560f09066c0687b5fea43b7b4b6aac0fd893f12c1af07"
+  "lastmod": "2026-11-23",
+  "sha256": "97c2ea5420a29e53692afeb3c8738aa3fb34bcd26a18e5fe4cf4c6e6cbff6165"
  },
  "https://www.knightgroup.com/gallery/roof-vent-flashing-4d9a013-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "7b68cac4e3330e46252ce490d882924842f19740463e19654ed50b0cda6f8431"
+  "lastmod": "2026-11-23",
+  "sha256": "c653fdd3e1959277e277ced4b55ae291c24f92a2a5ab8ddcc5d478762110f884"
  },
  "https://www.knightgroup.com/gallery/room-3-bed-is-faulty-7deda4e-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "9f1569defaf7103bfe1b045e01aa5a04009bea8766d8f410772dac7d70706027"
+  "lastmod": "2026-11-23",
+  "sha256": "c5afe294567cc8ec4e2a0e73d1ee1e8d7c0ecd22f2b4f565d335533b6543f9e0"
  },
  "https://www.knightgroup.com/gallery/sagging-textured-ceiling-repair-381b549-before-after": {
   "lastmod": "2026-11-11",
@@ -1056,20 +1060,20 @@
   "sha256": "9fdc9731ef3ccc51a75b74a7078cbaa8cd84aa277574d4c926dc21d492fd26bf"
  },
  "https://www.knightgroup.com/gallery/self-leveler-ca9b2de-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "956c0fb6fbc9de6610fb8b6d4877f4460a1f5f73b3750741380381ea993e0c58"
+  "lastmod": "2026-11-23",
+  "sha256": "406348055d13a3b865ce8ccba34bcd374295bd7efe39651a0c672841711abc75"
  },
  "https://www.knightgroup.com/gallery/set-drying-equipment-f960403-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "41bc21a25dbf3a018fefa5a5f7ddf71b1720a4dd99e42131110dfbf52b2954d4"
+  "lastmod": "2026-11-23",
+  "sha256": "d499ba70fb9fd032ab317630d66fd759131974d7fdf284accff799cfccb6c0b1"
  },
  "https://www.knightgroup.com/gallery/shower-2cf7af0-before-after": {
   "lastmod": "2026-11-19",
   "sha256": "56e3ca7e590653929413fd57acc43445245651187b4e6835f87925e375dfa005"
  },
  "https://www.knightgroup.com/gallery/side-yard-gate-repair-18bb381-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "ead87c5bb6e1ae79b2c65ebf151ccf012fe88fcbc0e38e6f91d2582ff87ab365"
+  "lastmod": "2026-11-23",
+  "sha256": "201595dedb6111bd22a1c2375d7ced4ead4e3b908a83bec3583452577851a851"
  },
  "https://www.knightgroup.com/gallery/sink-drain-caulk-trap-leak-7843b10-before-after": {
   "lastmod": "2026-10-31",
@@ -1080,16 +1084,16 @@
   "sha256": "76c42edcf4bed002bb313ea10c5a31ca5ce75dabd44a46c348c77aea1ea5f578"
  },
  "https://www.knightgroup.com/gallery/sky-light-glass-roof-leaking-and-needs-r-3754f17-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "d97183a730a0743d1278633bfb4bfe81ad359632e368352ff17da679c50a8070"
+  "lastmod": "2026-11-23",
+  "sha256": "0dae61d133b9ceeeefaa7977d742ae8dc4876fd392cab2e092e11ac920f8ffb8"
  },
  "https://www.knightgroup.com/gallery/sliding-bedroom-2011368-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "effdfaf036cb83e3730fec97fa4cbeddad73814e73d9670967a67beb64f83794"
+  "lastmod": "2026-11-23",
+  "sha256": "7d83fceedc88b1c6732dde716e5219d8c22b7f952d87972b26be6386fcba7370"
  },
  "https://www.knightgroup.com/gallery/sliding-glass-replaced-c70ed5b-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "a2287e19e0e58db94e64616f52c7ecf1a0fe728f501d84f22d7aae0382eb1357"
+  "lastmod": "2026-11-23",
+  "sha256": "3d0099505e03d2c37e6156d5b3f136f9b6c373559029f0cbecd8fa7fbf71b428"
  },
  "https://www.knightgroup.com/gallery/smoke-alarm-battery-swap-before-after": {
   "lastmod": "2026-10-23",
@@ -1108,36 +1112,36 @@
   "sha256": "774e4182ab7e97135eca5db4706b1638e5eb45d8ca95c7744e611f46b499233b"
  },
  "https://www.knightgroup.com/gallery/stove-handle-af86c23-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "ff053707f911a0fe76ad269bf96dc6db278c99939bbcd853a34cb376f10840a7"
+  "lastmod": "2026-11-23",
+  "sha256": "5cd31314ab914efe8d4473cc4c8e491370fa83187f4ecffd5078429a6508f455"
  },
  "https://www.knightgroup.com/gallery/stove-hood-light-bulb-replacement-86d144e-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "4ad231e4812d1616ad55ff063ac35e27492dd8192a1f938bd154971c24d411eb"
+  "lastmod": "2026-11-23",
+  "sha256": "92568173277b1a6aaa04a3681f7a86d71a4bdfd225418540ed9df763d513e89d"
  },
  "https://www.knightgroup.com/gallery/stucco-mailbox-f467b97-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "e9dda8d3082970adb155a340854f662a38d36437431712b36962d57b95b82114"
+  "lastmod": "2026-11-23",
+  "sha256": "18a68cef491903e1267b126b477520ee820ac315d8f0cc6ddb460a5699edf19f"
  },
  "https://www.knightgroup.com/gallery/surface-treatment-of-damaged-walls-03c8264-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "9e5b21ea9b434ea9817336639b3ea585c8f128e33b6bc0ac0ecd1aeef5a03a1e"
+  "lastmod": "2026-11-23",
+  "sha256": "3e3e560f86dc2e04538dbb5a7c420a5699da622d5a7270b5027e576174696cbf"
  },
  "https://www.knightgroup.com/gallery/taping-windows-53bb03a-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "8a0fda0eb51962a22dc0131be1416c5be33103733048435cc47eda7440333708"
+  "lastmod": "2026-11-23",
+  "sha256": "425da5373665bb7e16dd88a035df05c5d969f439eb85e08db0eaaa334e01645e"
  },
  "https://www.knightgroup.com/gallery/threshold-6dd1cbb-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "c435882c7d287403e0d676ede011c9030896772dea9cf92c5d6a4607ec10f387"
+  "lastmod": "2026-11-23",
+  "sha256": "e6fba968707e66efe8fac5d8d5401331205954860d328dcf2d715877d74c647f"
  },
  "https://www.knightgroup.com/gallery/threshold-9826926-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "b49b24aa345849ff015cdfe4c6167730a09e05cf5046a3267012ee91cede8203"
+  "lastmod": "2026-11-23",
+  "sha256": "bbe0a3a23a49b2b9f385aa0a925ec54aa8cfaa564bd85092073bf172a1847d64"
  },
  "https://www.knightgroup.com/gallery/tile-repair-90f6f26-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "924ba296de4bdcc36296363b861c0bdf5c9857307ad7af84e71cab95cd55d731"
+  "lastmod": "2026-11-23",
+  "sha256": "8a46d4eb74f33ba12fb32bd16d9171e0ff42ba74171fc1cf1ff7e07c721316c7"
  },
  "https://www.knightgroup.com/gallery/toilet-0ff372e-before-after": {
   "lastmod": "2026-10-23",
@@ -1152,32 +1156,32 @@
   "sha256": "08d366274e9146ddce1d647c57166b51f2a836b7ce63f46f0d0b37d0e511a19f"
  },
  "https://www.knightgroup.com/gallery/transition-strip-98fcc0e-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "5180d522a8697c2150cefc55f16678422b7d1b7ee0775f999eb9187fe6b45f73"
+  "lastmod": "2026-11-23",
+  "sha256": "63d9e092bed709ae177bde9a814de9ff5d200688bdaf0b0378f1bb7ac8fc671d"
  },
  "https://www.knightgroup.com/gallery/transitions-356c7ea-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "eb1002fcec15050eb408adf9b0e4f7ef0760c106f060b13925ada284d35d74b2"
+  "lastmod": "2026-11-23",
+  "sha256": "46a3bb36e98a339847df47ae74667f14e4d5e8d7f1cf7404798e9ab43d5366e1"
  },
  "https://www.knightgroup.com/gallery/transitions-f975ab3-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "a1476e592faa0f84803cd23a376abb66fd04a73c406567263be5f875bebf7d90"
+  "lastmod": "2026-11-23",
+  "sha256": "9936823d87954f8a7b0dcdd1581f7088c330f02d813548971eecd89f76cc70ac"
  },
  "https://www.knightgroup.com/gallery/tub-drain-replacement": {
   "lastmod": "2026-10-23",
   "sha256": "c86f440dbde4306eb175eacfc62677c5defaff72fa111b736df85efe832daa07"
  },
  "https://www.knightgroup.com/gallery/two-kitchen-sconces-owner-supplied-c205fcf-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "1ed1fb9e7dc1319d30b09db9445c8999075122930e1a4d45eec679b80bcc0919"
+  "lastmod": "2026-11-23",
+  "sha256": "b38566a2510ec1aac20720eb2f99ff6623594a6e79ed272548c7777ea9e97c80"
  },
  "https://www.knightgroup.com/gallery/under-sink-drain-leak-repair-403f4d3-before-after": {
   "lastmod": "2026-11-06",
   "sha256": "e810ec977f3435d8c1e2c023dc56c574461f34f92df85d3a49b32efca2881a6f"
  },
  "https://www.knightgroup.com/gallery/very-little-hot-water-43b73e4-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "e5e8a8a5bd943eb705f41982039f28cd5c1422060dc059aa7588739933a20cc1"
+  "lastmod": "2026-11-23",
+  "sha256": "23c1a1cba98d8d401c809bd82821284a1f0ed74ad744e9f3105afd883702fc69"
  },
  "https://www.knightgroup.com/gallery/wall-texture-and-finish-blending-c18895c-before-after": {
   "lastmod": "2026-11-11",
@@ -1188,28 +1192,28 @@
   "sha256": "570f135bf203ccc19152052f54121ba8b308270b51b42947de6d7d2930234060"
  },
  "https://www.knightgroup.com/gallery/wasp-bee-nest-removal-request-0f9dd4b-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "4bb6bdcb6926d9e650501aa63aa17c953d1b41b6ab6be8914ece9c849d713c89"
+  "lastmod": "2026-11-23",
+  "sha256": "1c8d62de8126387b423ec77f210f0165e0f1a5c28c572fc5482248bff55bb6b2"
  },
  "https://www.knightgroup.com/gallery/wasp-nest-79cfa0f-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "79414624a94299d5eb2384c39b1b928ff403f90fc64b90dce3493b6dc3bc46d6"
+  "lastmod": "2026-11-23",
+  "sha256": "c5797791bc35a5324990cbfc88fb18dcfed857756bd280e3e80b5ed6174c350e"
  },
  "https://www.knightgroup.com/gallery/water-damaged-baseboard-replacement-2e7595f-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "9c88405f8edd20ae7f7c13ffcbf9402162f2a1d3a25c580f1f652b354000b095"
+  "lastmod": "2026-11-23",
+  "sha256": "80e9af61c40c9bf4c557446fdd7b1dac07360d1691d3010595137d25b972b3e5"
  },
  "https://www.knightgroup.com/gallery/weather-seal-four-exterior-22fe867-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "de3d02bfcaf8df092b7df6b312a5ceef6d6dd410e9ce9fa4af15735aac041d79"
+  "lastmod": "2026-11-23",
+  "sha256": "5c29e23dddaa15074a4b7ac8ddc6389915297050f5aa181dcfef881b9d91edfd"
  },
  "https://www.knightgroup.com/gallery/welcome-mat-b873f9b-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "2bf1fdd4ac5747573a53ecc5d8be81f7cb6d5904ef55280df6ed696d253ec75a"
+  "lastmod": "2026-11-23",
+  "sha256": "9200b5a54a1d20ac61a4c27f005081ae7c75b96a1ac8412ae2083fa4104d4755"
  },
  "https://www.knightgroup.com/gallery/work-scope-1893a20-before-after": {
-  "lastmod": "2026-11-19",
-  "sha256": "eec4e2082124fa3f9fc556db73baa63115dffba0871cbe851eb9edfe09ae3ec0"
+  "lastmod": "2026-11-23",
+  "sha256": "390be0f38a83e662d2642538037b1f4c4f94ccae7763c3de6e2b19af0b873314"
  },
  "https://www.knightgroup.com/handyman-scope-florida": {
   "lastmod": "2026-10-23",
@@ -1256,8 +1260,8 @@
   "sha256": "e61ddb833c4af7322bf5296cc5f70a818e464a045170c15d84973f3e4ee6e615"
  },
  "https://www.knightgroup.com/largo-handyman": {
-  "lastmod": "2026-11-20",
-  "sha256": "d536970a635220442be51675bd6d8e5af8d06848f31e5454f2d3c6ccc29ba336"
+  "lastmod": "2026-11-23",
+  "sha256": "fa55331bd36c3e97bacfbe8eed221d4e1877a4e95448d898483959bc947678cd"
  },
  "https://www.knightgroup.com/largo-toilet-repair": {
   "lastmod": "2026-10-23",

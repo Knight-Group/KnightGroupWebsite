@@ -5839,5 +5839,30 @@
     "photoBefore": 3,
     "photoProcess": 0,
     "photoAfter": 3
+  },
+  "before-after-back-wall-strip-patch-and-mud-b38ad09.webp": {
+    "group": "back-wall-strip-patch-and-mud-b38ad09-before-after",
+    "groupTitle": "Back- wall strip: patch and mud \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a back- wall strip: patch and mud job completed by Knight Group in Clearwater.",
+    "category": "general-repairs",
+    "serviceLink": "/Services/general-repairs",
+    "step": 1,
+    "title": "Back- wall strip: patch and mud before and after",
+    "description": "Before-and-after comparison from a back- wall strip: patch and mud job completed in a Clearwater home.",
+    "beforeAfter": true,
+    "scope_slug": "back-wall-strip-patch-and-mud-b38ad09",
+    "source": "dispatch",
+    "cluster": "general",
+    "workerName": "Kevin Harrison",
+    "workerRole": "Knight Group technician",
+    "workerKey": "tech",
+    "cityName": "Clearwater",
+    "citySlug": "clearwater",
+    "countyName": "Pinellas County",
+    "completedMonth": "November 2026",
+    "workNotes": "Additional hours explained: Once work began, there was more drywall damage than the original estimate covered, and you asked us to focus on the walls. We patched ceiling sprinkler cuts and extra holes, taped the lower bathroom wall, and did a second skim coat with final sanding. We also removed rotted shims, old caulk and rusty screws and sourced replacement material on site. Tile work was left for you to finish,\u2026",
+    "photoBefore": 2,
+    "photoProcess": 0,
+    "photoAfter": 4
   }
 }
