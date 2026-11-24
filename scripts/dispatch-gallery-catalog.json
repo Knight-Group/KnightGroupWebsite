@@ -5939,5 +5939,30 @@
     "photoBefore": 1,
     "photoProcess": 0,
     "photoAfter": 2
+  },
+  "before-after-diagnose-leak-at-toilet-base-dd79469.webp": {
+    "group": "diagnose-leak-at-toilet-base-dd79469-before-after",
+    "groupTitle": "Diagnose leak at toilet base \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a diagnose leak at toilet base job completed by Knight Group in Safety Harbor.",
+    "category": "plumbing",
+    "serviceLink": "/Services/plumbing-services",
+    "step": 1,
+    "title": "Diagnose leak at toilet base before and after",
+    "description": "Before-and-after comparison from a diagnose leak at toilet base job completed in a Safety Harbor home.",
+    "beforeAfter": true,
+    "scope_slug": "diagnose-leak-at-toilet-base-dd79469",
+    "source": "dispatch",
+    "cluster": "toilet",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Safety Harbor",
+    "citySlug": "safety-harbor",
+    "countyName": "Pinellas County",
+    "completedMonth": "November 2026",
+    "workNotes": "Diagnose leak at toilet base: Pull toilet remove old wax and install new wax ring with John bolts and nuts Inspect and leak-test the pictured floor-mounted toilet to determine whether water is escaping from the base seal, supply connection, tank, or bowl. This diagnosis precedes the wax-ring replacement, and any unrelated source of leakage will be documented before additional repairs are performed. Customer\u2026",
+    "photoBefore": 3,
+    "photoProcess": 0,
+    "photoAfter": 2
   }
 }

@@ -1475,6 +1475,38 @@
       "photoAfter": 4
     },
     {
+      "id": "diagnose-leak-at-toilet-base-dd79469-before-after",
+      "title": "Diagnose leak at toilet base \u2014 before & after",
+      "description": "Before-and-after proof from a diagnose leak at toilet base job completed by Knight Group in Safety Harbor.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-diagnose-leak-at-toilet-base-dd79469.webp",
+          "filename": "before-after-diagnose-leak-at-toilet-base-dd79469.webp",
+          "step": 1,
+          "title": "Diagnose leak at toilet base before and after",
+          "seoAlt": "Diagnose leak at toilet base before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a diagnose leak at toilet base job completed in a Safety Harbor home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "toilet",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Diagnose leak at toilet base: Pull toilet remove old wax and install new wax ring with John bolts and nuts Inspect and leak-test the pictured floor-mounted toilet to determine whether water is escaping from the base seal, supply connection, tank, or bowl. This diagnosis precedes the wax-ring replacement, and any unrelated source of leakage will be documented before additional repairs are performed. Customer\u2026",
+      "photoBefore": 3,
+      "photoProcess": 0,
+      "photoAfter": 2
+    },
+    {
       "id": "dishwasher-removal-and-replacement-2756308-before-after",
       "title": "Dishwasher removal and replacement \u2014 before & after",
       "description": "Before-and-after proof from a dishwasher removal and replacement job completed by Knight Group in St. Petersburg.",
@@ -9731,6 +9763,32 @@
       "photoBefore": 7,
       "photoProcess": 5,
       "photoAfter": 4
+    },
+    {
+      "src": "GalleryImages/before-after-diagnose-leak-at-toilet-base-dd79469.webp",
+      "filename": "before-after-diagnose-leak-at-toilet-base-dd79469.webp",
+      "group": "diagnose-leak-at-toilet-base-dd79469-before-after",
+      "step": 1,
+      "title": "Diagnose leak at toilet base before and after",
+      "seoAlt": "Diagnose leak at toilet base before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a diagnose leak at toilet base job completed in a Safety Harbor home.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "groupTitle": "Diagnose leak at toilet base \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a diagnose leak at toilet base job completed by Knight Group in Safety Harbor.",
+      "cluster": "toilet",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Safety Harbor",
+      "citySlug": "safety-harbor",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Diagnose leak at toilet base: Pull toilet remove old wax and install new wax ring with John bolts and nuts Inspect and leak-test the pictured floor-mounted toilet to determine whether water is escaping from the base seal, supply connection, tank, or bowl. This diagnosis precedes the wax-ring replacement, and any unrelated source of leakage will be documented before additional repairs are performed. Customer\u2026",
+      "photoBefore": 3,
+      "photoProcess": 0,
+      "photoAfter": 2
     },
     {
       "src": "GalleryImages/before-after-dishwasher-removal-and-replacement-2756308.webp",
