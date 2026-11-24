@@ -13,11 +13,7 @@
         document.head.appendChild(s);
         window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
     }
-    if ('requestIdleCallback' in window) {
-        requestIdleCallback(_loadGTM, { timeout: 5000 });
-    } else {
-        setTimeout(_loadGTM, 5000);
-    }
+    window.addEventListener('load', function () { setTimeout(_loadGTM, 2000); }, { once: true });
     </script>
 
     <meta charset="UTF-8">
@@ -572,6 +568,7 @@
     <script>window.addEventListener('load',function(){setTimeout(function(){var l=document.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional';document.head.appendChild(l)},1500)})</script>
     <script src="/JS/kg-analytics.js?v=20260912-lead"></script>
     <link rel="preload" as="image" href="/Images/knight-hero-cutout-680w.webp" fetchpriority="high" imagesrcset="/Images/knight-hero-cutout-400w.webp 400w, /Images/knight-hero-cutout-680w.webp 680w, /Images/knight-hero-cutout-960w.webp 960w" imagesizes="(max-width: 760px) 72vw, 340px">
+    <link rel="preload" as="image" href="/Images/Knight-Hammer.webp" fetchpriority="high">
 </head>
 <body class="kg-page kg-service">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNHVDBHG" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>

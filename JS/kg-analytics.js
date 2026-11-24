@@ -342,19 +342,52 @@
         }
     }
 
+    var analyticsScheduled = false;
+    var analyticsBooted = false;
+
     function ensureAnalytics() {
         captureFirstTouch();
         if (!shouldSendAnalytics()) return;
+        analyticsBooted = true;
         loadGtm();
-        loadGtagFallback();
         loadClarity();
+        window.setTimeout(function () {
+            if (!document.querySelector('script[src*="googletagmanager.com/gtag/js?id=' + GA4_ID + '"]')) {
+                loadGtagFallback();
+            }
+        }, 1500);
+    }
+
+    function scheduleAnalytics() {
+        captureFirstTouch();
+        if (!shouldSendAnalytics() || analyticsScheduled) return;
+        analyticsScheduled = true;
+        var events = ['pointerdown', 'keydown', 'touchstart', 'scroll'];
+        function bootNow() {
+            if (analyticsBooted) return;
+            events.forEach(function (ev) {
+                window.removeEventListener(ev, bootNow, false);
+            });
+            ensureAnalytics();
+        }
+        events.forEach(function (ev) {
+            window.addEventListener(ev, bootNow, { passive: true, once: true });
+        });
+        function afterLoad() {
+            window.setTimeout(bootNow, 1500);
+        }
+        if (document.readyState === 'complete') {
+            afterLoad();
+        } else {
+            window.addEventListener('load', afterLoad, { once: true });
+        }
     }
 
     window.kgAnalyticsTrack = track;
-    window.kgEnsureAnalytics = ensureAnalytics;
+    window.kgEnsureAnalytics = scheduleAnalytics;
     window.kgAttribution = attribution;
     if (typeof window.kgTrackLeadEvent !== 'function') {
         window.kgTrackLeadEvent = track;
     }
-    ensureAnalytics();
+    scheduleAnalytics();
 })(window, document);
