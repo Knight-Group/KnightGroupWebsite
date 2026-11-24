@@ -497,6 +497,7 @@
     <link rel="stylesheet" href="/CSS/kg-redesign.css?v=20260822-pagehero">
     <script>window.addEventListener('load',function(){setTimeout(function(){var l=document.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional';document.head.appendChild(l)},1500)})</script>
     <script src="/JS/kg-analytics.js?v=20260823-analytics"></script>
+    <link rel="preload" as="image" href="/Images/knight-hero-cutout-680w.webp" fetchpriority="high" imagesrcset="/Images/knight-hero-cutout-400w.webp 400w, /Images/knight-hero-cutout-680w.webp 680w, /Images/knight-hero-cutout-960w.webp 960w" imagesizes="(max-width: 760px) 72vw, 340px">
 </head>
 <body class="kg-page kg-services-hub">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNHVDBHG" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
@@ -505,10 +506,10 @@
 
     <main id="main-content">
         <section class="kg-page-hero kg-service-hero" aria-labelledby="services-hub-heading">
-            <div class="kg-page-hero__cutout-wrap" aria-hidden="true" data-kg-enter="right">
+            <div class="kg-page-hero__cutout-wrap" aria-hidden="true">
                 <picture>
-                    <source srcset="/Images/knight-hero-cutout.webp?v=20260622-compact-vince-hero" type="image/webp">
-                    <img class="kg-page-hero-cutout" src="/Images/knight-hero-cutout.png" alt="Vince Knight, co-owner and Field Operations Lead of Knight Group Handyman Services" width="1200" height="800" decoding="async" loading="eager">
+                    <source type="image/webp" srcset="/Images/knight-hero-cutout-400w.webp 400w, /Images/knight-hero-cutout-680w.webp 680w, /Images/knight-hero-cutout-960w.webp 960w" sizes="(max-width: 760px) 72vw, 340px">
+                    <img class="kg-page-hero-cutout" src="/Images/knight-hero-cutout-680w.webp" alt="Vince Knight, co-owner and Field Operations Lead of Knight Group Handyman Services" width="680" height="454" decoding="async" loading="eager" fetchpriority="high">
                 </picture>
             </div>
             <div class="kg-shell kg-page-hero__grid">
@@ -519,8 +520,8 @@
                         <span aria-current="page">Services</span>
                     </nav>
                     <span class="kg-eyebrow">Safety Harbor · Pinellas County</span>
-                    <h1 id="services-hub-heading" data-kg-enter="left">Handyman services overview</h1>
-                    <p class="kg-page-hero__lead" data-kg-enter="left" style="--kg-enter-delay: 80ms;">Choose the service category that best matches the repair, installation, or home project you need handled — then book a free written estimate when you are ready.</p>
+                    <h1 id="services-hub-heading">Handyman services overview</h1>
+                    <p class="kg-page-hero__lead">Choose the service category that best matches the repair, installation, or home project you need handled — then book a free written estimate when you are ready.</p>
                     <div class="kg-service-cta__actions" data-kg-enter="left" style="margin-top:1.25rem;--kg-enter-delay:120ms;">
                         <a href="/Services/handyman" class="kg-btn kg-btn--solid">Start with handyman services</a>
                         <a href="/booking" class="kg-btn kg-btn--ghost">Request a free written quote</a>

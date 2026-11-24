@@ -568,6 +568,7 @@
     <script src="/JS/kg-redesign.js?v=20260610-booking" defer></script>
     <script>window.addEventListener('load',function(){setTimeout(function(){var l=document.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional';document.head.appendChild(l)},1500)})</script>
     <script src="/JS/kg-analytics.js?v=20260912-lead"></script>
+    <link rel="preload" as="image" href="/Images/knight-hero-cutout-680w.webp" fetchpriority="high" imagesrcset="/Images/knight-hero-cutout-400w.webp 400w, /Images/knight-hero-cutout-680w.webp 680w, /Images/knight-hero-cutout-960w.webp 960w" imagesizes="(max-width: 760px) 72vw, 340px">
 </head>
 <body class="kg-page kg-booking">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNHVDBHG" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
@@ -576,17 +577,17 @@
 
     <main id="main-content">
         <section class="kg-page-hero kg-booking-hero" aria-labelledby="booking-hero-heading">
-            <div class="kg-page-hero__cutout-wrap" aria-hidden="true" data-kg-enter="right">
+            <div class="kg-page-hero__cutout-wrap" aria-hidden="true">
                 <picture>
-                    <source srcset="/Images/knight-hero-cutout.webp?v=20260622-compact-vince-hero" type="image/webp">
-                    <img class="kg-page-hero-cutout" src="/Images/knight-hero-cutout.png" alt="Vince Knight, co-owner and Field Operations Lead of Knight Group Handyman Services" width="1200" height="800" decoding="async" loading="eager">
+                    <source type="image/webp" srcset="/Images/knight-hero-cutout-400w.webp 400w, /Images/knight-hero-cutout-680w.webp 680w, /Images/knight-hero-cutout-960w.webp 960w" sizes="(max-width: 760px) 72vw, 340px">
+                    <img class="kg-page-hero-cutout" src="/Images/knight-hero-cutout-680w.webp" alt="Vince Knight, co-owner and Field Operations Lead of Knight Group Handyman Services" width="680" height="454" decoding="async" loading="eager" fetchpriority="high">
                 </picture>
             </div>
             <div class="kg-shell kg-page-hero__grid">
                 <div class="kg-page-hero__copy">
                     <span class="kg-eyebrow">Free written quotes  Pinellas County</span>
-                    <h1 id="booking-hero-heading" data-kg-enter="left">Book your free handyman estimate</h1>
-                    <p class="kg-page-hero__lead" data-kg-enter="left" style="--kg-enter-delay: 80ms;">The full intake route when you are ready to send job location, scope, and timing in one request. Just four quick fields  we will follow up with clear next steps.</p>
+                    <h1 id="booking-hero-heading">Book your free handyman estimate</h1>
+                    <p class="kg-page-hero__lead">The full intake route when you are ready to send job location, scope, and timing in one request. Just four quick fields  we will follow up with clear next steps.</p>
                 </div>
             </div>
         </section>

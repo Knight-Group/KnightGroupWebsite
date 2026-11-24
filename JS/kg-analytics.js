@@ -128,7 +128,13 @@
             utm_source: params.get('utm_source') || (ai && ai.source) || '',
             utm_medium: params.get('utm_medium') || (ai && ai.medium) || '',
             utm_campaign: params.get('utm_campaign') || '',
+            utm_term: params.get('utm_term') || '',
             utm_content: params.get('utm_content') || '',
+            source: params.get('source') || '',
+            thread_id: params.get('thread_id') || '',
+            service: params.get('service') || '',
+            gclid: params.get('gclid') || '',
+            fbclid: params.get('fbclid') || '',
             captured_at: new Date().toISOString()
         };
         try {
@@ -148,7 +154,13 @@
             utm_source: params.get('utm_source') || first.utm_source || '',
             utm_medium: params.get('utm_medium') || first.utm_medium || '',
             utm_campaign: params.get('utm_campaign') || first.utm_campaign || '',
-            utm_content: params.get('utm_content') || first.utm_content || ''
+            utm_term: params.get('utm_term') || first.utm_term || '',
+            utm_content: params.get('utm_content') || first.utm_content || '',
+            source: params.get('source') || first.source || '',
+            thread_id: params.get('thread_id') || first.thread_id || '',
+            service: params.get('service') || first.service || '',
+            gclid: params.get('gclid') || first.gclid || '',
+            fbclid: params.get('fbclid') || first.fbclid || ''
         };
     }
 
