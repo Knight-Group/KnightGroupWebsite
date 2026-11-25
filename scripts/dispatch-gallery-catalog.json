@@ -6014,5 +6014,30 @@
     "photoBefore": 35,
     "photoProcess": 2,
     "photoAfter": 5
+  },
+  "before-after-re-pipe-handsink-drains-in-pvc-3e85fb3.webp": {
+    "group": "re-pipe-handsink-drains-in-pvc-3e85fb3-before-after",
+    "groupTitle": "Re-pipe handsink drains in PVC \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a re-pipe handsink drains in pvc job completed by Knight Group in Clearwater.",
+    "category": "plumbing",
+    "serviceLink": "/Services/plumbing-services",
+    "step": 1,
+    "title": "Re-pipe handsink drains in PVC before and after",
+    "description": "Before-and-after comparison from a re-pipe handsink drains in pvc job completed in a Clearwater home.",
+    "beforeAfter": true,
+    "scope_slug": "re-pipe-handsink-drains-in-pvc-3e85fb3",
+    "source": "dispatch",
+    "cluster": "sink_drain",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Clearwater",
+    "citySlug": "clearwater",
+    "countyName": "Pinellas County",
+    "completedMonth": "November 2026",
+    "workNotes": "Secure three moved kitchen handsinks: Remounted the kitchen wall handsinks that were coming off the wall, including one behind the bar, and moved the second bar handsink to the other side of the bar. Installed 90-degree nipples so the supply lines had room, and added valves under the handwashing sink. In the defrost room, fished water lines to the triple-bowl sink.; Repair exposed plumbing leaks: Traced the\u2026",
+    "photoBefore": 2,
+    "photoProcess": 4,
+    "photoAfter": 2
   }
 }

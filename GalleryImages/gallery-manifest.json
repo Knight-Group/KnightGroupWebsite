@@ -4889,6 +4889,38 @@
       "photoAfter": 1
     },
     {
+      "id": "re-pipe-handsink-drains-in-pvc-3e85fb3-before-after",
+      "title": "Re-pipe handsink drains in PVC \u2014 before & after",
+      "description": "Before-and-after proof from a re-pipe handsink drains in pvc job completed by Knight Group in Clearwater.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-re-pipe-handsink-drains-in-pvc-3e85fb3.webp",
+          "filename": "before-after-re-pipe-handsink-drains-in-pvc-3e85fb3.webp",
+          "step": 1,
+          "title": "Re-pipe handsink drains in PVC before and after",
+          "seoAlt": "Re-pipe handsink drains in PVC before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a re-pipe handsink drains in pvc job completed in a Clearwater home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "sink_drain",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Clearwater",
+      "citySlug": "clearwater",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Secure three moved kitchen handsinks: Remounted the kitchen wall handsinks that were coming off the wall, including one behind the bar, and moved the second bar handsink to the other side of the bar. Installed 90-degree nipples so the supply lines had room, and added valves under the handwashing sink. In the defrost room, fished water lines to the triple-bowl sink.; Repair exposed plumbing leaks: Traced the\u2026",
+      "photoBefore": 2,
+      "photoProcess": 4,
+      "photoAfter": 2
+    },
+    {
       "id": "re-secure-soffit-and-putty-the-fascia-bf9519d-before-after",
       "title": "Re-secure soffit and putty the fascia \u2014 before & after",
       "description": "Before-and-after proof from a re-secure soffit and putty the fascia job completed by Knight Group in Tampa.",
@@ -12710,6 +12742,32 @@
       "photoBefore": 2,
       "photoProcess": 0,
       "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-re-pipe-handsink-drains-in-pvc-3e85fb3.webp",
+      "filename": "before-after-re-pipe-handsink-drains-in-pvc-3e85fb3.webp",
+      "group": "re-pipe-handsink-drains-in-pvc-3e85fb3-before-after",
+      "step": 1,
+      "title": "Re-pipe handsink drains in PVC before and after",
+      "seoAlt": "Re-pipe handsink drains in PVC before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a re-pipe handsink drains in pvc job completed in a Clearwater home.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "groupTitle": "Re-pipe handsink drains in PVC \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a re-pipe handsink drains in pvc job completed by Knight Group in Clearwater.",
+      "cluster": "sink_drain",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Clearwater",
+      "citySlug": "clearwater",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Secure three moved kitchen handsinks: Remounted the kitchen wall handsinks that were coming off the wall, including one behind the bar, and moved the second bar handsink to the other side of the bar. Installed 90-degree nipples so the supply lines had room, and added valves under the handwashing sink. In the defrost room, fished water lines to the triple-bowl sink.; Repair exposed plumbing leaks: Traced the\u2026",
+      "photoBefore": 2,
+      "photoProcess": 4,
+      "photoAfter": 2
     },
     {
       "src": "GalleryImages/before-after-re-secure-soffit-and-putty-the-fascia-bf9519d.webp",
