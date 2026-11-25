@@ -220,8 +220,8 @@
   "sha256": "d72c8df7542ea4c0ffeac7459b29b2b67a5da0d3e21cc8d31a450428f8696b71"
  },
  "https://www.knightgroup.com/gallery/2-toilets-7f8c499-before-after": {
-  "lastmod": "2026-11-24",
-  "sha256": "253708431061b1b77f67e42dd4b55134e789949066833b46805255340f38f02f"
+  "lastmod": "2026-11-25",
+  "sha256": "2a9a2ecaeb3988ea3e7d17dc57e38de1f7510546a3ace8a946d333761d7d7689"
  },
  "https://www.knightgroup.com/gallery/28-inch-bathroom-door-898e50b-before-after": {
   "lastmod": "2026-11-13",
@@ -436,8 +436,8 @@
   "sha256": "d603e516140b0213fb0664164ae89e0bb02c87181d1538d8b01f518d507e4d9d"
  },
  "https://www.knightgroup.com/gallery/diagnose-leak-at-toilet-base-dd79469-before-after": {
-  "lastmod": "2026-11-24",
-  "sha256": "9f7842b202e69a92f2c04ec64ad3658011725b4cf64cbba2ab9b52c6e7b48e76"
+  "lastmod": "2026-11-25",
+  "sha256": "ee78746213c14c4fc44bfde640be7af0bba9452220c573022e5678f5eb559e3a"
  },
  "https://www.knightgroup.com/gallery/dishwasher-removal-and-replacement-2756308-before-after": {
   "lastmod": "2026-11-24",
@@ -576,8 +576,8 @@
   "sha256": "da83c6d0fc30e43344d3e109ec945dbe62bd1f4c58081d4deaa6e5640c339d52"
  },
  "https://www.knightgroup.com/gallery/fix-toilet-fill-valve-6df05b1-before-after": {
-  "lastmod": "2026-11-24",
-  "sha256": "995ddeb4ee9b2d74c8db0c1e607b7e6397e8e8eaeadf870892ac26f6ff10c754"
+  "lastmod": "2026-11-25",
+  "sha256": "2742cd9b25efdf7f2a7fc94d5fd3a350784cd02abbc210e6275d247746919b8f"
  },
  "https://www.knightgroup.com/gallery/floating-flooring-and-quarter-round-5169f20-before-after": {
   "lastmod": "2026-11-05",
@@ -1047,6 +1047,10 @@
   "lastmod": "2026-10-23",
   "sha256": "e969edc499ad0602eee1bc2604346c9e927c7849b51fd562bb012c3b4e0c8898"
  },
+ "https://www.knightgroup.com/gallery/restroom-flush-valves-and-toilet-supplie-834a924-before-after": {
+  "lastmod": "2026-11-25",
+  "sha256": "f605bbb183e82ef7acc8a4e9ad850332e15080e77aa46bf2bc9917ac7497c392"
+ },
  "https://www.knightgroup.com/gallery/rodent-hole-sealing-a-b-1c2096d-before-after": {
   "lastmod": "2026-11-24",
   "sha256": "9774dfe93ce1cee07c7feb08145c005aede079a7a7aa8286fa3c093a0ad4ae5a"
@@ -1176,12 +1180,12 @@
   "sha256": "8cf8d7cffbb850df53717e9bce0395ebb64c5334ef9e95bbd63b82e38bc3de30"
  },
  "https://www.knightgroup.com/gallery/toilet-check-89a6c48-before-after": {
-  "lastmod": "2026-11-24",
-  "sha256": "41a79e79143b03bfb966c3b14a6d351b870e96e56688523b36b3a9ce0f4fa81a"
+  "lastmod": "2026-11-25",
+  "sha256": "5d942336c35359a8e195254ea4331c451e84ebb4052a7ee6775bc794fcb3672c"
  },
  "https://www.knightgroup.com/gallery/toilet-seat-loose-e6ce96f-before-after": {
-  "lastmod": "2026-11-24",
-  "sha256": "8ea725c672d3b17a18193d52ffd0c2a78bed59fae1130bceb2ed15793caf6a1b"
+  "lastmod": "2026-11-25",
+  "sha256": "fc88939c9903f061800d34106fa9d30cf062b75e5664bb4983557b123016645d"
  },
  "https://www.knightgroup.com/gallery/transition-strip-98fcc0e-before-after": {
   "lastmod": "2026-11-24",

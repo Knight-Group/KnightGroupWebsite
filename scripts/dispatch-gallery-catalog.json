@@ -6039,5 +6039,30 @@
     "photoBefore": 2,
     "photoProcess": 4,
     "photoAfter": 2
+  },
+  "before-after-restroom-flush-valves-and-toilet-supplie-834a924.webp": {
+    "group": "restroom-flush-valves-and-toilet-supplie-834a924-before-after",
+    "groupTitle": "Restroom flush valves and toilet supplies \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a restroom flush valves and toilet supplies job completed by Knight Group in Clearwater.",
+    "category": "plumbing",
+    "serviceLink": "/Services/plumbing-services",
+    "step": 1,
+    "title": "Restroom flush valves and toilet supplies before and after",
+    "description": "Before-and-after comparison from a restroom flush valves and toilet supplies job completed in a Clearwater home.",
+    "beforeAfter": true,
+    "scope_slug": "restroom-flush-valves-and-toilet-supplie-834a924",
+    "source": "dispatch",
+    "cluster": "toilet",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Clearwater",
+    "citySlug": "clearwater",
+    "countyName": "Pinellas County",
+    "completedMonth": "November 2026",
+    "workNotes": "Secure three moved kitchen handsinks: Remounted the kitchen wall handsinks that were coming off the wall, including one behind the bar, and moved the second bar handsink to the other side of the bar. Installed 90-degree nipples so the supply lines had room, and added valves under the handwashing sink. In the defrost room, fished water lines to the triple-bowl sink.; Repair exposed plumbing leaks: Traced the\u2026",
+    "photoBefore": 4,
+    "photoProcess": 12,
+    "photoAfter": 4
   }
 }

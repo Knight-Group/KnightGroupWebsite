@@ -5969,6 +5969,38 @@
       "photoAfter": 1
     },
     {
+      "id": "restroom-flush-valves-and-toilet-supplie-834a924-before-after",
+      "title": "Restroom flush valves and toilet supplies \u2014 before & after",
+      "description": "Before-and-after proof from a restroom flush valves and toilet supplies job completed by Knight Group in Clearwater.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-restroom-flush-valves-and-toilet-supplie-834a924.webp",
+          "filename": "before-after-restroom-flush-valves-and-toilet-supplie-834a924.webp",
+          "step": 1,
+          "title": "Restroom flush valves and toilet supplies before and after",
+          "seoAlt": "Restroom flush valves and toilet supplies before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a restroom flush valves and toilet supplies job completed in a Clearwater home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "toilet",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Clearwater",
+      "citySlug": "clearwater",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Secure three moved kitchen handsinks: Remounted the kitchen wall handsinks that were coming off the wall, including one behind the bar, and moved the second bar handsink to the other side of the bar. Installed 90-degree nipples so the supply lines had room, and added valves under the handwashing sink. In the defrost room, fished water lines to the triple-bowl sink.; Repair exposed plumbing leaks: Traced the\u2026",
+      "photoBefore": 4,
+      "photoProcess": 12,
+      "photoAfter": 4
+    },
+    {
       "id": "rodent-hole-sealing-a-b-1c2096d-before-after",
       "title": "Rodent Hole Sealing - A/B \u2014 before & after",
       "description": "Before-and-after proof from a rodent hole sealing - a/b job completed by Knight Group in Clearwater.",
@@ -13690,6 +13722,32 @@
       "photoBefore": 1,
       "photoProcess": 1,
       "photoAfter": 1
+    },
+    {
+      "src": "GalleryImages/before-after-restroom-flush-valves-and-toilet-supplie-834a924.webp",
+      "filename": "before-after-restroom-flush-valves-and-toilet-supplie-834a924.webp",
+      "group": "restroom-flush-valves-and-toilet-supplie-834a924-before-after",
+      "step": 1,
+      "title": "Restroom flush valves and toilet supplies before and after",
+      "seoAlt": "Restroom flush valves and toilet supplies before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a restroom flush valves and toilet supplies job completed in a Clearwater home.",
+      "category": "plumbing",
+      "serviceLink": "/Services/plumbing-services",
+      "beforeAfter": true,
+      "groupTitle": "Restroom flush valves and toilet supplies \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a restroom flush valves and toilet supplies job completed by Knight Group in Clearwater.",
+      "cluster": "toilet",
+      "workerName": "Vince Knight",
+      "workerRole": "co-owner and Field Operations Lead",
+      "workerKey": "vince",
+      "cityName": "Clearwater",
+      "citySlug": "clearwater",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Secure three moved kitchen handsinks: Remounted the kitchen wall handsinks that were coming off the wall, including one behind the bar, and moved the second bar handsink to the other side of the bar. Installed 90-degree nipples so the supply lines had room, and added valves under the handwashing sink. In the defrost room, fished water lines to the triple-bowl sink.; Repair exposed plumbing leaks: Traced the\u2026",
+      "photoBefore": 4,
+      "photoProcess": 12,
+      "photoAfter": 4
     },
     {
       "src": "GalleryImages/before-after-rodent-hole-sealing-a-b-1c2096d.webp",
