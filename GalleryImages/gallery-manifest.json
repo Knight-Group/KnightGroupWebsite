@@ -4490,6 +4490,38 @@
       "photoAfter": 1
     },
     {
+      "id": "over-the-range-microwave-replacement-bd8d228-before-after",
+      "title": "Over-the-range microwave replacement \u2014 before & after",
+      "description": "Before-and-after proof from a over-the-range microwave replacement job completed by Knight Group in St. Petersburg.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "progression": false,
+      "images": [
+        {
+          "src": "GalleryImages/before-after-over-the-range-microwave-replacement-bd8d228.webp",
+          "filename": "before-after-over-the-range-microwave-replacement-bd8d228.webp",
+          "step": 1,
+          "title": "Over-the-range microwave replacement before and after",
+          "seoAlt": "Over-the-range microwave replacement before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+          "description": "Before-and-after comparison from a over-the-range microwave replacement job completed in a St. Petersburg home.",
+          "beforeAfter": true
+        }
+      ],
+      "cluster": "general",
+      "workerName": "Alex Tkachev",
+      "workerRole": "field technician",
+      "workerKey": "tech",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Over-the-range microwave replacement: Took old microwave out, drilled new holes for bracket and bolts, connected vent and power Pick up the spare over-the-range microwave from the shop and install it. The the pictures is a GE, model JVM6175SK1SS. The shop stop is part of the trip. No price is set",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 3
+    },
+    {
       "id": "paint-ceiling-stains-1daac32-before-after",
       "title": "Paint ceiling stains \u2014 before & after",
       "description": "Before-and-after proof from a paint ceiling stains job completed by Knight Group in St. Petersburg.",
@@ -12288,6 +12320,32 @@
       "photoBefore": 1,
       "photoProcess": 0,
       "photoAfter": 2
+    },
+    {
+      "src": "GalleryImages/before-after-over-the-range-microwave-replacement-bd8d228.webp",
+      "filename": "before-after-over-the-range-microwave-replacement-bd8d228.webp",
+      "group": "over-the-range-microwave-replacement-bd8d228-before-after",
+      "step": 1,
+      "title": "Over-the-range microwave replacement before and after",
+      "seoAlt": "Over-the-range microwave replacement before and after \u2014 handyman project photo in Pinellas County FL by Knight Group",
+      "description": "Before-and-after comparison from a over-the-range microwave replacement job completed in a St. Petersburg home.",
+      "category": "general-repairs",
+      "serviceLink": "/Services/general-repairs",
+      "beforeAfter": true,
+      "groupTitle": "Over-the-range microwave replacement \u2014 before & after",
+      "groupDescription": "Before-and-after proof from a over-the-range microwave replacement job completed by Knight Group in St. Petersburg.",
+      "cluster": "general",
+      "workerName": "Alex Tkachev",
+      "workerRole": "field technician",
+      "workerKey": "tech",
+      "cityName": "St. Petersburg",
+      "citySlug": "st-petersburg",
+      "countyName": "Pinellas County",
+      "completedMonth": "November 2026",
+      "workNotes": "Over-the-range microwave replacement: Took old microwave out, drilled new holes for bracket and bolts, connected vent and power Pick up the spare over-the-range microwave from the shop and install it. The the pictures is a GE, model JVM6175SK1SS. The shop stop is part of the trip. No price is set",
+      "photoBefore": 4,
+      "photoProcess": 0,
+      "photoAfter": 3
     },
     {
       "src": "GalleryImages/before-after-paint-ceiling-stains-1daac32.webp",
