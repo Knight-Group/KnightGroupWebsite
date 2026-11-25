@@ -5989,5 +5989,30 @@
     "photoBefore": 4,
     "photoProcess": 0,
     "photoAfter": 3
+  },
+  "before-after-secure-three-moved-kitchen-handsinks-35b0a30.webp": {
+    "group": "secure-three-moved-kitchen-handsinks-35b0a30-before-after",
+    "groupTitle": "Secure three moved kitchen handsinks \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a secure three moved kitchen handsinks job completed by Knight Group in Clearwater.",
+    "category": "plumbing",
+    "serviceLink": "/Services/plumbing-services",
+    "step": 1,
+    "title": "Secure three moved kitchen handsinks before and after",
+    "description": "Before-and-after comparison from a secure three moved kitchen handsinks job completed in a Clearwater home.",
+    "beforeAfter": true,
+    "scope_slug": "secure-three-moved-kitchen-handsinks-35b0a30",
+    "source": "dispatch",
+    "cluster": "sink_drain",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Clearwater",
+    "citySlug": "clearwater",
+    "countyName": "Pinellas County",
+    "completedMonth": "November 2026",
+    "workNotes": "Secure three moved kitchen handsinks: Remounted the kitchen wall handsinks that were coming off the wall, including one behind the bar, and moved the second bar handsink to the other side of the bar. Installed 90-degree nipples so the supply lines had room, and added valves under the handwashing sink. In the defrost room, fished water lines to the triple-bowl sink.; Repair exposed plumbing leaks: Traced the\u2026",
+    "photoBefore": 35,
+    "photoProcess": 2,
+    "photoAfter": 5
   }
 }
