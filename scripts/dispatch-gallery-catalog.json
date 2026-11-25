@@ -6064,5 +6064,30 @@
     "photoBefore": 4,
     "photoProcess": 12,
     "photoAfter": 4
+  },
+  "before-after-remount-restroom-sinks-3981920.webp": {
+    "group": "remount-restroom-sinks-3981920-before-after",
+    "groupTitle": "Remount restroom sinks \u2014 before & after",
+    "groupDescription": "Before-and-after proof from a remount restroom sinks job completed by Knight Group in Clearwater.",
+    "category": "plumbing",
+    "serviceLink": "/Services/plumbing-services",
+    "step": 1,
+    "title": "Remount restroom sinks before and after",
+    "description": "Before-and-after comparison from a remount restroom sinks job completed in a Clearwater home.",
+    "beforeAfter": true,
+    "scope_slug": "remount-restroom-sinks-3981920",
+    "source": "dispatch",
+    "cluster": "sink_drain",
+    "workerName": "Vince Knight",
+    "workerRole": "co-owner and Field Operations Lead",
+    "workerKey": "vince",
+    "cityName": "Clearwater",
+    "citySlug": "clearwater",
+    "countyName": "Pinellas County",
+    "completedMonth": "November 2026",
+    "workNotes": "Secure three moved kitchen handsinks: Remounted the kitchen wall handsinks that were coming off the wall, including one behind the bar, and moved the second bar handsink to the other side of the bar. Installed 90-degree nipples so the supply lines had room, and added valves under the handwashing sink. In the defrost room, fished water lines to the triple-bowl sink.; Repair exposed plumbing leaks: Traced the\u2026",
+    "photoBefore": 4,
+    "photoProcess": 7,
+    "photoAfter": 3
   }
 }
