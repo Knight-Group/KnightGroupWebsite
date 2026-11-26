@@ -3,6 +3,20 @@
     "@type": "Review",
     "author": {
       "@type": "Person",
+      "name": "Brett Lesser"
+    },
+    "datePublished": "2026-11-26",
+    "reviewBody": "Great communication.\nExcellent service.\nVery fair price.\nHighly recommend!",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    }
+  },
+  {
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
       "name": "Sarah Fulton"
     },
     "datePublished": "2026-11-18",
@@ -21,20 +35,6 @@
     },
     "datePublished": "2026-11-06",
     "reviewBody": "Kevin from the Knight Group Handyman Services  came out and fixed a few things in the house and was very professional,knowledgeable,Courteous and fixed the issues quickly. I recommend his services. Thank You!",
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "5",
-      "bestRating": "5"
-    }
-  },
-  {
-    "@type": "Review",
-    "author": {
-      "@type": "Person",
-      "name": "Stephen"
-    },
-    "datePublished": "2026-11-06",
-    "reviewBody": "Gavin was on schedule and was efficient in his repairs, he's been on ball with all repairs provided so far and I would HIGHLY recommend these guys, they've been great to work with",
     "reviewRating": {
       "@type": "Rating",
       "ratingValue": "5",
