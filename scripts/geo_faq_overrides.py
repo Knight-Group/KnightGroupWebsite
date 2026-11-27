@@ -183,4 +183,38 @@ GEO_FAQ: dict[str, list[tuple[str, str]]] = {
             "A Knight Group tech such as Sergey, Kevin, Gavin, Vince, or Nick. Each completed job is photographed and credited to the tech who did it on our before and after gallery.",
         ),
     ],
+    "pinellas-handyman": [
+        (
+            "Do you serve all of Pinellas County?",
+            "Yes. Knight Group dispatches from Safety Harbor on regular routes across Clearwater, Dunedin, Palm Harbor, Largo, Pinellas Park, Oldsmar, Tarpon Springs, Seminole, and St. Petersburg. Share your city and photos when booking so we confirm the route.",
+        ),
+        (
+            "How much does a handyman visit cost in Pinellas County?",
+            "Standard handyman visits are $150 for the first hour and $75 each additional hour, with no two-hour minimum. Specialty work is $200 for the first hour and $100 each additional hour. Defined scopes can be quoted as a flat rate in writing from your photos.",
+        ),
+        (
+            "Do you give free estimates in Pinellas County?",
+            "Yes, from photos and details. Send a short description and photos for a free written quote. We do not do free in-person estimate visits. Work starts after you sign the written estimate, and any on-site scope change is revised with you before extra work begins.",
+        ),
+        (
+            "Can Knight Group do plumbing or electrical work in Pinellas County?",
+            "Yes, within handyman scope on existing connections: ceiling fans, light fixtures, switches, like-for-like outlets, faucets, toilets, sinks, shutoffs, and traps. We are an experienced, registered, and insured handyman company — not a licensed plumber, electrician, HVAC contractor, roofer, or general contractor. Opening walls, sewer mains, new circuits, panels, and permitted work are referred.",
+        ),
+        (
+            "What kinds of Pinellas County jobs have you actually completed?",
+            "Recent photographed visits across Safety Harbor, Pinellas Park, Clearwater, and Largo include bathroom door and window glass replacements, K-style gutter repair, exterior gate remounts, drywall cutouts and ceiling patches, seven custom window screens, cabinet touch-ups, and door lockset replacements. Each job is linked to before-and-after photos in our gallery.",
+        ),
+        (
+            "Do you handle property-manager and commercial work orders in Pinellas County?",
+            "Yes. Property managers, landlords, HOA boards, and small commercial desks send work orders by email, portal invite, or text photos. We provide a downloadable W-9 and ACORD 25 general liability COI ($1M/$2M) on our property manager page and close out each work order with before-and-after photos.",
+        ),
+        (
+            "How soon can you schedule in Pinellas County?",
+            "Most Pinellas County requests schedule within one to two business days on our standard arrival windows (8–10, 10–12, or 12–2). Active leaks or urgent property-damage triage should be called in directly at (813) 649-3341.",
+        ),
+        (
+            "Who will come to my Pinellas County property?",
+            "A Knight Group tech such as Vince, Gavin, Sergey, or Nick. Completed work is documented with before-and-after photos and credited to the tech on site.",
+        ),
+    ],
 }

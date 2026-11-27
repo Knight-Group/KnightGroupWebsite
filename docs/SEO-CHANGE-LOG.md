@@ -10,6 +10,15 @@ Live HTML ships from `E:\Handyman Ticket Manager\state\deploy\KnightGroupWebsite
 
 ---
 
+## 2026-11-27: Wave 1 UX, gallery hub 0-orphan sync, and PM/Pinellas body-only upgrades (Neon / kg-web)
+
+Body copy, CSS, and generator fixes only. **Zero title, meta description, H1, canonical, or URL changes** (Recrawl-Before-Rewrite respected: `/clearwater-handyman`, `/largo-handyman`, `/tampa-handyman`, `/pricing` are held on stale-crawl recrawl only).
+
+- **Homepage 390px mobile hero clipping (`CSS/kg-redesign.css`):** Added bounded `@media (max-width: 768px)` width/wrap constraints on `.kg-hero-copy`, `.kg-hero-copy__main`, `.kg-hero__lead`, `.kg-hero__actions`, and `.kg-hero-proof-aside` to prevent right-edge clipping at 390px.
+- **Gallery 0-orphan hub sync (`scripts/sync-gallery-hub.py`, `galleries.html`, `package.json`):** Created deterministic, idempotent `scripts/sync-gallery-hub.py` (with `--check` CI mode) that preserves the `KGWG hand-added` block byte-for-byte, writes `<!-- GALLERY-INDEX:BEGIN/END -->` covering all 266 `gallery/*.html` pages (0 orphans, down from 205/266 unlinked), and sets a valid 1x1 transparent GIF `src` on `#gallery-lightbox-img` (fixing the broken-image audit finding on `/galleries`).
+- **Property Manager / Commercial conversion (`property-manager-handyman.html`, `index.html`):** Upgraded `/property-manager-handyman` hero cutout to responsive WebP `srcset` + `fetchpriority="high"` (removing `data-kg-enter="right"`), added anonymous commercial kitchen/restroom & spa work-order proof (zero client names, zero PM rates, license-safe), and linked the homepage "Commercial and small business" card to `/property-manager-handyman`.
+- **Pinellas County durable job proof & FAQPage (`seo/geo-proof/pinellas-handyman.html`, `scripts/build-seo-pages.py`, `scripts/geo_faq_overrides.py`, `scripts/schema_graph.py`, `pinellas-handyman.html`):** Wired `geo_proof_block(slug)` into county generation, added real photographed Safety Harbor / Pinellas Park / Clearwater / Largo jobs + 8 Pinellas FAQs + `FAQPage` JSON-LD schema.
+
 ## 2026-11-21 11:57 AM ET: homepage reposition, Pinellas first (KG Web Growth, local commit, not pushed)
 
 - **What:** `index.html` body only. New hero H1 "Pinellas County repairs and punch lists, handled without the runaround.", Safety Harbor-based eyebrow, core team plus bench, PM/HOA/commercial scope section, permitted and licensed-trade work "through licensed partners", Pinellas city links (St. Petersburg, Clearwater, Safety Harbor, Largo, Pinellas Park, Dunedin, Palm Harbor, Oldsmar, Seminole, Tarpon Springs, Gulfport), and a small secondary Pasco/Hillsborough card. Removed the visible "shop at 1225 7th St S" line. Added a plain promise to reply within 24 hours (hero lead and process step 1). Commercial card no longer lists fixture or lighting swaps. Homepage sitemap lastmod updated by `scripts/build-sitemap.py`.

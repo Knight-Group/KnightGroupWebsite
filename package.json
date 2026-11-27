@@ -13,6 +13,8 @@
     "seo:nav": "python scripts/build-nav.py",
     "seo:pages": "python scripts/build-seo-pages.py",
     "seo:sitemap": "python scripts/build-sitemap.py",
+    "seo:gallery-hub": "python scripts/sync-gallery-hub.py",
+    "seo:gallery-hub:check": "python scripts/sync-gallery-hub.py --check",
     "seo:encoding": "python scripts/fix-encoding.py",
     "seo:services": "python scripts/migrate-service-pages.py",
     "seo:all": "python scripts/enforce_license_safe_scope.py && python scripts/business_facts.py && python scripts/repair-meta-descriptions.py && python scripts/migrate-service-pages.py && python scripts/build-nav.py && python scripts/build-seo-pages.py && python scripts/sync-gallery-hub.py && python scripts/build-home-watch-pages.py && python scripts/fix-encoding.py && python scripts/fix-image-alt.py && python scripts/sync-meta-descriptions.py && python scripts/sync-og-titles.py && python scripts/remove-meta-keywords.py && python scripts/build-schema-graph.py && python scripts/enforce_license_safe_scope.py && python scripts/build-sitemap.py && python scripts/verify-schema-graph.py && python scripts/scan-encoding.py && python scripts/seo-audit.py"

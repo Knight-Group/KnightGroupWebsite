@@ -8,3 +8,4 @@ Added 2026-11-16 by KG Web Growth after gallery commit c4851841 (Nov 5) regenera
 
 Also added 2026-11-16: pinellas-park-handyman.html and tampa-drywall-repair.html so those new pages stay intact on gallery publishes.
 Also added 2026-11-20: largo-handyman.html so the Largo body upgrade (real gallery jobs, quote steps, nearby links) stays intact on gallery publishes. Shipped 2026-11-20 after Nick approved the Largo page at 1:31 PM ET.
+Also added 2026-11-27: pinellas-handyman.html (with generate_county() hook in build-seo-pages.py + GEO_FAQ/FAQPage allowlist) so Pinellas County job proofs and FAQs stay intact on gallery publishes.

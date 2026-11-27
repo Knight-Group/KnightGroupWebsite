@@ -7352,3 +7352,26 @@ body.kg-page.kg-policy-page {
     font-size: 0.64rem;
   }
 }
+
+/* Wave 1 fix (2026-11-27): prevent 390px mobile homepage hero copy/CTA right-edge clipping */
+@media (max-width: 768px) {
+  .kg-home .kg-hero-copy,
+  .kg-home .kg-hero-copy__main {
+    width: 100%;
+    max-width: 100vw;
+    min-width: 0;
+    box-sizing: border-box;
+    padding-inline: 16px;
+    margin-inline: 0;
+  }
+  .kg-home .kg-hero__lead,
+  .kg-home .kg-hero__actions,
+  .kg-home .kg-hero__actions .kg-btn,
+  .kg-home .kg-hero-copy .kg-proof-list.kg-hero-proof-aside,
+  .kg-home .kg-hero-copy .kg-proof-list.kg-hero-proof-aside li {
+    max-width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+}

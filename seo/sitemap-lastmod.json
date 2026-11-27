@@ -1,7 +1,7 @@
 {
  "https://www.knightgroup.com/": {
-  "lastmod": "2026-11-21",
-  "sha256": "516bf5d54042e909b3aafa4b3435935145e0cc7b839aae59da2dd252ab314378"
+  "lastmod": "2026-11-27",
+  "sha256": "4b9c964fb01006b30dcfdbacaaac55de4d6fe373207dccfff23f37ad1c51211d"
  },
  "https://www.knightgroup.com/Services/cabinet-repair": {
   "lastmod": "2026-10-23",
@@ -152,8 +152,8 @@
   "sha256": "696f7f2aa5e06add60567ea635630e85e6778cf5fd3a5312ba9fc43da1885cee"
  },
  "https://www.knightgroup.com/about": {
-  "lastmod": "2026-11-24",
-  "sha256": "d9d0950f687832d2a155887f3a47146fe914297b4f429044290ee59464b586e2"
+  "lastmod": "2026-11-27",
+  "sha256": "8b03d376ae603c83b0d9a3fdde2ddb3d4690f8d3d2ae54e796fb6db0a2854612"
  },
  "https://www.knightgroup.com/beacon-square-handyman": {
   "lastmod": "2026-10-23",
@@ -208,8 +208,8 @@
   "sha256": "c7b527c1e92bb914cac19d8dbe494ab80749dedfbf4b3b46da2d22f221d481d3"
  },
  "https://www.knightgroup.com/galleries": {
-  "lastmod": "2026-11-17",
-  "sha256": "2a91067e4fcd1af97109cbe9de109ef891b34d517590d2d2b006265a126e73e0"
+  "lastmod": "2026-11-27",
+  "sha256": "240a6179cdc313e8946206f717499abbe30c8333f3a9a4f9f9bab8e0d81df0d5"
  },
  "https://www.knightgroup.com/gallery/2-panes-of-glass-8446432-before-after": {
   "lastmod": "2026-11-24",
@@ -1332,8 +1332,8 @@
   "sha256": "b598f431e015b289139b780c996d4d0e1c0b48233f0afed4a101541f015d2260"
  },
  "https://www.knightgroup.com/pinellas-handyman": {
-  "lastmod": "2026-11-16",
-  "sha256": "a57bd9c269f5290c37c20d7c89fb44a13b2182916ae9e0ea0004f8ac5efde9f6"
+  "lastmod": "2026-11-27",
+  "sha256": "36a7fe1acf9ee7d626eed1cadbbcc579e9800acaf2c7e1ab953c1bd20c4eaa5b"
  },
  "https://www.knightgroup.com/pinellas-park-handyman": {
   "lastmod": "2026-11-16",
@@ -1372,8 +1372,8 @@
   "sha256": "dcda3dacf92cb13225635c11933325257af7f53f27faf89131693409583fddce"
  },
  "https://www.knightgroup.com/property-manager-handyman": {
-  "lastmod": "2026-10-23",
-  "sha256": "c8bb462ee22470e032c2d0f6be1eabeaff44b64c62503ca0b1d53809bbc8107b"
+  "lastmod": "2026-11-27",
+  "sha256": "91b2013b15b9235d7691bbd0bcea9d05024378c751e4191307ec883cf0c14bd0"
  },
  "https://www.knightgroup.com/rental-turnover-handyman": {
   "lastmod": "2026-10-23",

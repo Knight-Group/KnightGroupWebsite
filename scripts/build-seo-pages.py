@@ -682,7 +682,7 @@ def generate_county_hub(region: dict, manifest: list) -> None:
             alt_fallback=f"{county_name} handyman project",
             cache_bust=VERSION,
         ),
-        faq_html=render_faq(faqs, slug, county_name, h1=f"{county_name} handyman services"),
+        faq_html=geo_proof_block(slug) + render_faq(faqs, slug, county_name, h1=f"{county_name} handyman services"),
         related_html=render_related(related, ""),
         json_ld=graph,
         eyebrow=f"Safety Harbor · {county_name}",

@@ -917,6 +917,7 @@ def build_graph_for_page(
     FAQ_SCHEMA_SLUGS = {
         "tampa-handyman",
         "clearwater-handyman",
+        "pinellas-handyman",
         "pinellas-park-handyman",
         "tampa-drywall-repair",
         "largo-handyman",
